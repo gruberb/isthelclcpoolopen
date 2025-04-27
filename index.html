@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Is The LCLC Pool Open?</title>
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230056b3'/><path d='M30 50 Q40 35 50 50 T70 50' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/><path d='M30 65 Q40 50 50 65 T70 65' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Is The LCLC Pool Open?</h1>
+
+            <div class="tabs">
+                <div class="tab active" data-tab="status">Current Status</div>
+                <div class="tab" data-tab="schedule">Full Schedule</div>
+            </div>
+
+            <div id="status-tab" class="tab-content active">
+                <div class="status-container">
+                    <div class="status-box">
+                        <h2>LANE SWIMMING</h2>
+                        <div id="lanes-status" class="status-indicator">-</div>
+                        <div id="lanes-time" class="time-remaining"></div>
+                    </div>
+
+                    <div class="status-box">
+                        <h2>KIDS SWIMMING</h2>
+                        <div id="kids-status" class="status-indicator">-</div>
+                        <div id="kids-time" class="time-remaining"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="schedule-tab" class="tab-content">
+                <div class="date-selector">
+                    <div class="date-buttons">
+                        <button id="today-btn" class="active">Today</button>
+                        <button id="tomorrow-btn">Tomorrow</button>
+                    </div>
+                    <select id="date-select">
+                        <!-- Options will be populated dynamically -->
+                    </select>
+                </div>
+                <div id="schedule" class="schedule">
+                    <h3>Swimming Schedule</h3>
+                    <div id="schedule-content" class="loading">
+                        Loading schedule...
+                    </div>
+                </div>
+            </div>
+
+            <div class="last-updated">
+                Last updated: <span id="last-updated"></span>
+            </div>
+        </div>
+
+        <script src="constants.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
