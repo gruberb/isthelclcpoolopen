@@ -39,10 +39,9 @@ async function fetchSchedule() {
     processSchedule(data);
   } catch (error) {
     console.error("Error:", error);
-    const scheduleContent = document.getElementById("schedule-content");
+    const scheduleContent = document.getElementById(DOM_IDS.SCHEDULE_CONTENT);
     if (scheduleContent) {
-      scheduleContent.innerHTML =
-        '<div class="error">Unable to load schedule. Please try again later.</div>';
+      scheduleContent.innerHTML = `<div class="${CSS_CLASSES.ERROR}">Unable to load schedule. Please try again later.</div>`;
     }
   }
 }
@@ -52,7 +51,7 @@ function isSwimmingEvent(event) {
   const lower = title.toLowerCase();
 
   // Always include "Busy" events
-  if (title === "Busy") {
+  if (title === EVENT_TITLES.BUSY) {
     return true;
   }
 
@@ -68,7 +67,10 @@ function isSwimmingEvent(event) {
     }
 
     // Filter out specific events
-    if (title === "Pool Party" || title === "Private Pool Party Rental") {
+    if (
+      title === EVENT_TITLES.POOL_PARTY ||
+      title === EVENT_TITLES.PRIVATE_POOL_PARTY
+    ) {
       return false;
     }
 
@@ -90,32 +92,51 @@ function analyzeEvent(event) {
     lanes: false,
     kids: false,
     membersOnly: false,
+    restrictedAccess: false,
     type: "",
     details: {},
   };
 
   // Check for Busy events
-  if (title === "Busy") {
+  if (title === EVENT_TITLES.BUSY) {
     analysis.lanes = false;
     analysis.kids = false;
-    analysis.type = "Busy/Maintenance";
+    analysis.type = EVENT_TYPES.BUSY_MAINTENANCE;
     return analysis;
   }
 
   // Check for members-only events
-  if (title === "Members Swim") {
+  if (title === EVENT_TITLES.MEMBERS_SWIM) {
     analysis.lanes = true;
     analysis.kids = true;
     analysis.membersOnly = true;
-    analysis.type = "Members Only";
+    analysis.type = EVENT_TYPES.MEMBERS_ONLY;
+    return analysis;
+  }
+
+  // Check for women's only events
+  if (title === EVENT_TITLES.WOMENS_ONLY_SWIM) {
+    analysis.lanes = true;
+    analysis.kids = true;
+    analysis.restrictedAccess = true;
+    analysis.type = EVENT_TYPES.WOMENS_ONLY_FULL;
+    return analysis;
+  }
+
+  // Check for senior swim 60+ events
+  if (title === EVENT_TITLES.SENIOR_SWIM_60) {
+    analysis.lanes = true;
+    analysis.kids = true;
+    analysis.restrictedAccess = true;
+    analysis.type = EVENT_TYPES.SENIOR_ONLY_60;
     return analysis;
   }
 
   // Check for specific event types based on patterns in the title
-  if (lower.includes("recreational swim")) {
+  if (lower.includes(PARSE_KEYWORDS.RECREATIONAL_SWIM)) {
     analysis.lanes = true;
     analysis.kids = true;
-    analysis.type = "Recreational";
+    analysis.type = EVENT_TYPES.RECREATIONAL;
 
     // Parse lane information
     const laneMatch = title.match(/(\d+)\s*lanes?/i);
@@ -123,12 +144,11 @@ function analyzeEvent(event) {
       analysis.details.lanes = parseInt(laneMatch[1]);
     }
   } else if (
-    lower.includes("lessons & lanes") ||
-    lower.includes("lessons and lanes")
+    PARSE_KEYWORDS.LESSONS_LANES.some((keyword) => lower.includes(keyword))
   ) {
     analysis.lanes = true;
     analysis.kids = false;
-    analysis.type = "Lessons & Lanes";
+    analysis.type = EVENT_TYPES.LESSONS_LANES;
 
     // Parse lane information
     const laneMatch = title.match(/(\d+)\s*lanes?/i);
@@ -136,76 +156,85 @@ function analyzeEvent(event) {
       analysis.details.lanes = parseInt(laneMatch[1]);
     }
   } else if (
-    lower.includes("public swim") ||
-    lower.includes("public swimming")
+    PARSE_KEYWORDS.PUBLIC_SWIM.some((keyword) => lower.includes(keyword))
   ) {
     analysis.kids = true;
-    if (lower.includes("no lanes")) {
+    if (lower.includes(PARSE_KEYWORDS.NO_LANES)) {
       analysis.lanes = false;
-      analysis.type = "Public Swimming (No Lanes)";
+      analysis.type = EVENT_TYPES.PUBLIC_NO_LANES;
     } else {
       analysis.lanes = true;
-      analysis.type = "Public Swimming";
+      analysis.type = EVENT_TYPES.PUBLIC_SWIMMING;
     }
-  } else if (lower.includes("elderfit") || lower.includes("senior swim")) {
-    analysis.lanes = false;
-    analysis.kids = false;
-    if (lower.includes("play") && lower.includes("therapy")) {
-      analysis.kids = true;
-    }
-    analysis.type = "Senior Program";
-  } else if (lower.includes("aquafit")) {
-    analysis.lanes = false;
-    analysis.kids = false;
-    if (lower.includes("play") && lower.includes("therapy")) {
-      analysis.kids = true;
-    }
-    analysis.type = "Aquafit";
   } else if (
-    lower.includes("parent & tot") ||
-    lower.includes("parent and tot")
+    lower.includes(PARSE_KEYWORDS.ELDERFIT) ||
+    (lower.includes(PARSE_KEYWORDS.SENIOR_SWIM) && !title.includes("60+"))
+  ) {
+    analysis.lanes = false;
+    analysis.kids = false;
+    if (
+      lower.includes(PARSE_KEYWORDS.PLAY) &&
+      lower.includes(PARSE_KEYWORDS.THERAPY_POOL)
+    ) {
+      analysis.kids = true;
+    }
+    analysis.type = EVENT_TYPES.SENIOR_PROGRAM;
+  } else if (lower.includes(PARSE_KEYWORDS.AQUAFIT)) {
+    analysis.lanes = false;
+    analysis.kids = false;
+    if (
+      lower.includes(PARSE_KEYWORDS.PLAY) &&
+      lower.includes(PARSE_KEYWORDS.THERAPY_POOL)
+    ) {
+      analysis.kids = true;
+    }
+    analysis.type = EVENT_TYPES.AQUAFIT;
+  } else if (
+    PARSE_KEYWORDS.PARENT_TOT.some((keyword) => lower.includes(keyword))
   ) {
     analysis.lanes = false;
     analysis.kids = true;
-    analysis.type = "Parent & Tot";
-  } else if (lower.includes("sensory swim")) {
+    analysis.type = EVENT_TYPES.PARENT_TOT;
+  } else if (lower.includes(PARSE_KEYWORDS.SENSORY_SWIM)) {
     analysis.lanes = false;
     analysis.kids = true;
-    analysis.type = "Sensory Swim";
-  } else if (lower.includes("women's only") || lower.includes("women only")) {
+    analysis.type = EVENT_TYPES.SENSORY_SWIM;
+  } else if (
+    PARSE_KEYWORDS.WOMENS_ONLY.some((keyword) => lower.includes(keyword)) &&
+    !title.includes("MODL")
+  ) {
     analysis.lanes = true;
     analysis.kids = false;
-    analysis.type = "Women's Only";
+    analysis.type = EVENT_TYPES.WOMENS_ONLY;
   } else if (
-    lower.includes("private rental") ||
-    lower.includes("closed to the public") ||
-    lower.includes("closed to public")
+    lower.includes(PARSE_KEYWORDS.PRIVATE_RENTAL) ||
+    PARSE_KEYWORDS.CLOSED_TO_PUBLIC.some((keyword) => lower.includes(keyword))
   ) {
     analysis.lanes = false;
     analysis.kids = false;
-    analysis.type = "Private/Closed";
+    analysis.type = EVENT_TYPES.PRIVATE_CLOSED;
   } else {
     // Default parsing for other events
-    if (lower.includes("lane") || lower.includes("lanes")) {
+    if (PARSE_KEYWORDS.LANE.some((keyword) => lower.includes(keyword))) {
       analysis.lanes = true;
     }
 
     if (
-      lower.includes("play") ||
-      lower.includes("family") ||
-      lower.includes("recreational")
+      lower.includes(PARSE_KEYWORDS.PLAY) ||
+      lower.includes(PARSE_KEYWORDS.FAMILY) ||
+      lower.includes(PARSE_KEYWORDS.RECREATIONAL)
     ) {
       analysis.kids = true;
     }
   }
 
   // Check if therapy pool is mentioned
-  if (lower.includes("therapy pool")) {
+  if (lower.includes(PARSE_KEYWORDS.THERAPY_POOL)) {
     analysis.details.therapyPool = true;
   }
 
   // Check if play pool is mentioned
-  if (lower.includes("play pool")) {
+  if (lower.includes(PARSE_KEYWORDS.PLAY_POOL)) {
     analysis.details.playPool = true;
   }
 
@@ -321,14 +350,14 @@ function processSchedule(data) {
   updateDateButtons(now);
 
   // Update last updated time
-  const lastUpdatedElement = document.getElementById("last-updated");
+  const lastUpdatedElement = document.getElementById(DOM_IDS.LAST_UPDATED);
   if (lastUpdatedElement) {
     lastUpdatedElement.textContent = now.toLocaleTimeString();
   }
 
   // Display user's timezone
   const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  const timezoneElement = document.getElementById("user-timezone");
+  const timezoneElement = document.getElementById(DOM_IDS.USER_TIMEZONE);
   if (timezoneElement) {
     timezoneElement.textContent = userTimezone;
   }
@@ -338,6 +367,7 @@ function updateCurrentStatus(now) {
   let currentLanes = false;
   let currentKids = false;
   let currentMembersOnly = false;
+  let currentRestrictedAccess = false;
   let currentLanesEnd = null;
   let currentKidsEnd = null;
   let currentEventDetails = null;
@@ -347,6 +377,13 @@ function updateCurrentStatus(now) {
       const analysis = analyzeEvent(event);
       if (analysis.membersOnly) {
         currentMembersOnly = true;
+        currentLanes = true;
+        currentKids = true;
+        currentLanesEnd = event.end;
+        currentKidsEnd = event.end;
+        currentEventDetails = analysis;
+      } else if (analysis.restrictedAccess) {
+        currentRestrictedAccess = true;
         currentLanes = true;
         currentKids = true;
         currentLanesEnd = event.end;
@@ -368,21 +405,28 @@ function updateCurrentStatus(now) {
   });
 
   // Update status indicators
-  const lanesStatus = document.getElementById("lanes-status");
-  const kidsStatus = document.getElementById("kids-status");
-  const lanesTime = document.getElementById("lanes-time");
-  const kidsTime = document.getElementById("kids-time");
+  const lanesStatus = document.getElementById(DOM_IDS.LANES_STATUS);
+  const kidsStatus = document.getElementById(DOM_IDS.KIDS_STATUS);
+  const lanesTime = document.getElementById(DOM_IDS.LANES_TIME);
+  const kidsTime = document.getElementById(DOM_IDS.KIDS_TIME);
 
   lanesStatus.textContent = currentLanes ? "YES" : "NO";
-  lanesStatus.className = `status-indicator ${currentMembersOnly ? "members" : currentLanes ? "open" : "closed"}`;
+  lanesStatus.className = `${CSS_CLASSES.STATUS_INDICATOR} ${currentRestrictedAccess ? CSS_CLASSES.RESTRICTED : currentMembersOnly ? CSS_CLASSES.MEMBERS : currentLanes ? CSS_CLASSES.OPEN : CSS_CLASSES.CLOSED}`;
   kidsStatus.textContent = currentKids ? "YES" : "NO";
-  kidsStatus.className = `status-indicator ${currentMembersOnly ? "members" : currentKids ? "open" : "closed"}`;
+  kidsStatus.className = `${CSS_CLASSES.STATUS_INDICATOR} ${currentRestrictedAccess ? CSS_CLASSES.RESTRICTED : currentMembersOnly ? CSS_CLASSES.MEMBERS : currentKids ? CSS_CLASSES.OPEN : CSS_CLASSES.CLOSED}`;
 
   if (currentMembersOnly) {
     lanesTime.textContent =
       "Members only - " + formatTimeRemaining(currentLanesEnd);
     kidsTime.textContent =
       "Members only - " + formatTimeRemaining(currentKidsEnd);
+  } else if (currentRestrictedAccess) {
+    const restrictionType =
+      currentEventDetails.type === EVENT_TYPES.WOMENS_ONLY_FULL
+        ? "Women only"
+        : "Seniors 60+";
+    lanesTime.textContent = `${restrictionType} - ${formatTimeRemaining(currentLanesEnd)}`;
+    kidsTime.textContent = `${restrictionType} - ${formatTimeRemaining(currentKidsEnd)}`;
   } else {
     if (currentLanes && currentLanesEnd) {
       let lanesDetail = formatTimeRemaining(currentLanesEnd);
@@ -417,7 +461,7 @@ function updateCurrentStatus(now) {
 }
 
 function populateDateSelector() {
-  const dateSelect = document.getElementById("date-select");
+  const dateSelect = document.getElementById(DOM_IDS.DATE_SELECT);
   const today = new Date();
   const dates = [];
 
@@ -462,18 +506,20 @@ function populateDateSelector() {
   });
 
   // Event listeners for today/tomorrow buttons
-  document.getElementById("today-btn").addEventListener("click", () => {
+  document.getElementById(DOM_IDS.TODAY_BTN).addEventListener("click", () => {
     dateSelect.value = today.toDateString();
     showScheduleForDate(today);
     updateDateButtons(today);
   });
 
-  document.getElementById("tomorrow-btn").addEventListener("click", () => {
-    const tomorrow = new Date(today.getTime() + 86400000);
-    dateSelect.value = tomorrow.toDateString();
-    showScheduleForDate(tomorrow);
-    updateDateButtons(tomorrow);
-  });
+  document
+    .getElementById(DOM_IDS.TOMORROW_BTN)
+    .addEventListener("click", () => {
+      const tomorrow = new Date(today.getTime() + 86400000);
+      dateSelect.value = tomorrow.toDateString();
+      showScheduleForDate(tomorrow);
+      updateDateButtons(tomorrow);
+    });
 }
 
 function updateDateButtons(selectedDate) {
@@ -481,15 +527,15 @@ function updateDateButtons(selectedDate) {
   const tomorrow = new Date(today.getTime() + 86400000);
 
   document
-    .getElementById("today-btn")
+    .getElementById(DOM_IDS.TODAY_BTN)
     .classList.toggle(
-      "active",
+      CSS_CLASSES.ACTIVE,
       selectedDate.toDateString() === today.toDateString(),
     );
   document
-    .getElementById("tomorrow-btn")
+    .getElementById(DOM_IDS.TOMORROW_BTN)
     .classList.toggle(
-      "active",
+      CSS_CLASSES.ACTIVE,
       selectedDate.toDateString() === tomorrow.toDateString(),
     );
 }
@@ -527,46 +573,52 @@ function showScheduleForDate(date) {
 
         let eventClass = "";
         if (isCurrent) {
-          if (analysis.type === "Busy/Maintenance") {
-            eventClass = "busy";
+          if (analysis.type === EVENT_TYPES.BUSY_MAINTENANCE) {
+            eventClass = CSS_CLASSES.BUSY;
+          } else if (analysis.restrictedAccess) {
+            eventClass = CSS_CLASSES.RESTRICTED;
           } else {
-            eventClass = analysis.membersOnly ? "members" : "current";
+            eventClass = analysis.membersOnly
+              ? CSS_CLASSES.MEMBERS
+              : CSS_CLASSES.CURRENT;
           }
         } else if (isPast) {
-          eventClass = "past";
+          eventClass = CSS_CLASSES.PAST;
         } else if (analysis.membersOnly) {
-          eventClass = "members";
-        } else if (analysis.type === "Busy/Maintenance") {
-          eventClass = "busy";
+          eventClass = CSS_CLASSES.MEMBERS;
+        } else if (analysis.restrictedAccess) {
+          eventClass = CSS_CLASSES.RESTRICTED;
+        } else if (analysis.type === EVENT_TYPES.BUSY_MAINTENANCE) {
+          eventClass = CSS_CLASSES.BUSY;
         }
 
-        const lanesClass = analysis.membersOnly
-          ? "members-checkmark"
-          : analysis.lanes
-            ? "checkmark"
-            : "cross";
-        const kidsClass = analysis.membersOnly
-          ? "members-checkmark"
-          : analysis.kids
-            ? "checkmark"
-            : "cross";
+        const lanesClass = analysis.restrictedAccess
+          ? CSS_CLASSES.RESTRICTED_CHECKMARK
+          : analysis.membersOnly
+            ? CSS_CLASSES.MEMBERS_CHECKMARK
+            : analysis.lanes
+              ? CSS_CLASSES.CHECKMARK
+              : CSS_CLASSES.CROSS;
+        const kidsClass = analysis.restrictedAccess
+          ? CSS_CLASSES.RESTRICTED_CHECKMARK
+          : analysis.membersOnly
+            ? CSS_CLASSES.MEMBERS_CHECKMARK
+            : analysis.kids
+              ? CSS_CLASSES.CHECKMARK
+              : CSS_CLASSES.CROSS;
 
-        let eventDetails = "";
-        if (analysis.details.lanes) {
-          eventDetails += `${analysis.details.lanes} lanes`;
-        }
-        if (analysis.type && analysis.type !== "Mixed Use") {
-          eventDetails += (eventDetails ? " • " : "") + analysis.type;
-        }
-        if (analysis.details.therapyPool) {
-          eventDetails += (eventDetails ? " • " : "") + "Therapy pool";
-        }
-        if (analysis.details.playPool) {
-          eventDetails += (eventDetails ? " • " : "") + "Play pool";
+        let restrictionLabel = "";
+        if (analysis.membersOnly) {
+          restrictionLabel = "(Members Only)";
+        } else if (analysis.restrictedAccess) {
+          restrictionLabel =
+            analysis.type === EVENT_TYPES.WOMENS_ONLY_FULL
+              ? "(Women Only)"
+              : "(Seniors 60+ Only)";
         }
 
         return `
-                <div class="event ${eventClass}" ${isCurrent ? 'id="current-event"' : ""}>
+                <div class="${CSS_CLASSES.EVENT} ${eventClass}" ${isCurrent ? `id="${DOM_IDS.CURRENT_EVENT}"` : ""}>
                     <div class="event-time">
                         ${formatTime(event.start)} -
                         ${formatTime(event.end)}
@@ -576,8 +628,7 @@ function showScheduleForDate(date) {
                     <div class="event-details">
                         Lanes: <span class="${lanesClass}">${analysis.lanes ? "✓" : "✗"}</span> |
                         Kids: <span class="${kidsClass}">${analysis.kids ? "✓" : "✗"}</span>
-                        ${eventDetails ? '<br><small style="color: #666;">' + eventDetails + "</small>" : ""}
-                        ${analysis.membersOnly ? '<span style="margin-left: 10px; color: #0056b3; font-weight: bold;">(Members Only)</span>' : ""}
+                        ${restrictionLabel ? `<br><span style="margin-left: 10px; color: ${analysis.restrictedAccess ? "#9c27b0" : "#0056b3"}; font-weight: bold;">${restrictionLabel}</span>` : ""}
                     </div>
                 </div>
             `;
@@ -597,27 +648,29 @@ function showScheduleForDate(date) {
 }
 
 // Tab switching
-document.querySelectorAll(".tab").forEach((tab) => {
+document.querySelectorAll(`.${CSS_CLASSES.TAB}`).forEach((tab) => {
   tab.addEventListener("click", () => {
     document
-      .querySelectorAll(".tab")
-      .forEach((t) => t.classList.remove("active"));
+      .querySelectorAll(`.${CSS_CLASSES.TAB}`)
+      .forEach((t) => t.classList.remove(CSS_CLASSES.ACTIVE));
     document
-      .querySelectorAll(".tab-content")
-      .forEach((c) => c.classList.remove("active"));
+      .querySelectorAll(`.${CSS_CLASSES.TAB_CONTENT}`)
+      .forEach((c) => c.classList.remove(CSS_CLASSES.ACTIVE));
 
-    tab.classList.add("active");
-    document.getElementById(`${tab.dataset.tab}-tab`).classList.add("active");
+    tab.classList.add(CSS_CLASSES.ACTIVE);
+    document
+      .getElementById(`${tab.dataset.tab}-tab`)
+      .classList.add(CSS_CLASSES.ACTIVE);
 
     // If switching to schedule tab and showing today's schedule, scroll to current event
     if (tab.dataset.tab === "schedule") {
-      const dateSelect = document.getElementById("date-select");
+      const dateSelect = document.getElementById(DOM_IDS.DATE_SELECT);
       const selectedDate = new Date(dateSelect.value);
       const today = new Date();
 
       if (selectedDate.toDateString() === today.toDateString()) {
         setTimeout(() => {
-          const currentEvent = document.getElementById("current-event");
+          const currentEvent = document.getElementById(DOM_IDS.CURRENT_EVENT);
           if (currentEvent) {
             currentEvent.scrollIntoView({
               behavior: "smooth",

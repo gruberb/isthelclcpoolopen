@@ -87,6 +87,10 @@ h1 {
     color: #0056b3;
 }
 
+.restricted {
+    color: #9c27b0;
+}
+
 .time-remaining {
     font-size: 1.2em;
     color: #666;
@@ -162,6 +166,11 @@ h1 {
     border-left: 4px solid #0056b3;
 }
 
+.event.restricted {
+    background-color: #f3e5f5;
+    border-left: 4px solid #9c27b0;
+}
+
 .event.busy {
     background-color: #fff3e0;
     border-left: 4px solid #ff9800;
@@ -204,6 +213,11 @@ h1 {
 
 .members-checkmark {
     color: #0056b3;
+    font-weight: bold;
+}
+
+.restricted-checkmark {
+    color: #9c27b0;
     font-weight: bold;
 }
 
