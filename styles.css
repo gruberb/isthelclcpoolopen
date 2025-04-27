@@ -162,6 +162,11 @@ h1 {
     border-left: 4px solid #0056b3;
 }
 
+.event.busy {
+    background-color: #fff3e0;
+    border-left: 4px solid #ff9800;
+}
+
 .event.past {
     background-color: #f5f5f5;
     opacity: 0.7;

@@ -2,7 +2,30 @@ let allEvents = [];
 
 async function fetchSchedule() {
   try {
-    const response = await fetch(CORS_PROXY + encodeURIComponent(API_URL), {
+    // Generate date range for the request
+    const startDate = new Date();
+    startDate.setHours(0, 0, 0, 0);
+
+    const endDate = new Date();
+    endDate.setDate(endDate.getDate() + DATE_RANGE_DAYS);
+    endDate.setHours(0, 0, 0, 0);
+
+    // Format dates for API (using Atlantic timezone)
+    const formatDateForAPI = (date) => {
+      // Format date as YYYY-MM-DD for simplicity
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      const hours = String(date.getHours()).padStart(2, "0");
+      const minutes = String(date.getMinutes()).padStart(2, "0");
+
+      // Use Atlantic Time offset (-03:00 for daylight savings)
+      return `${year}-${month}-${day}T${hours}:${minutes}:00-03:00`;
+    };
+
+    const apiUrl = `${API_BASE_URL}?selectedId=${FACILITY_ID}&start=${formatDateForAPI(startDate)}&end=${formatDateForAPI(endDate)}`;
+
+    const response = await fetch(CORS_PROXY + encodeURIComponent(apiUrl), {
       headers: {
         Accept: "application/json",
       },
@@ -16,8 +39,11 @@ async function fetchSchedule() {
     processSchedule(data);
   } catch (error) {
     console.error("Error:", error);
-    document.getElementById("schedule-content").innerHTML =
-      '<div class="error">Unable to load schedule. Please try again later.</div>';
+    const scheduleContent = document.getElementById("schedule-content");
+    if (scheduleContent) {
+      scheduleContent.innerHTML =
+        '<div class="error">Unable to load schedule. Please try again later.</div>';
+    }
   }
 }
 
@@ -25,39 +51,59 @@ function isSwimmingEvent(event) {
   const title = event.title || "";
   const lower = title.toLowerCase();
 
-  // Exclude non-pool events
-  if (
-    lower.includes("skating club") ||
-    lower.includes("hockey") ||
-    lower.includes("ice")
-  ) {
-    return false;
+  // Always include "Busy" events
+  if (title === "Busy") {
+    return true;
   }
 
-  // Check if it has swimming keywords
+  // Check backgroundColor first - blue (#0000FF) indicates pool events
+  if (event.backgroundColor === EVENT_COLORS.POOL) {
+    // Exclude non-pool events even if they have blue background
+    if (
+      lower.includes("skating club") ||
+      lower.includes("hockey") ||
+      lower.includes("ice")
+    ) {
+      return false;
+    }
+
+    // Filter out specific events
+    if (title === "Pool Party" || title === "Private Pool Party Rental") {
+      return false;
+    }
+
+    return true;
+  }
+
+  // For events without blue background, check keywords
   const hasSwimKeyword = SWIM_KEYWORDS.some((keyword) =>
     lower.includes(keyword),
   );
 
-  // Filter out specific events
-  if (title === "Pool Party" || title === "Private Pool Party Rental") {
-    return false;
-  }
-
   return hasSwimKeyword;
 }
 
-function analyzeEvent(title) {
+function analyzeEvent(event) {
+  const title = event.title || "";
   const lower = title.toLowerCase();
   const analysis = {
     lanes: false,
     kids: false,
     membersOnly: false,
     type: "",
+    details: {},
   };
 
+  // Check for Busy events
+  if (title === "Busy") {
+    analysis.lanes = false;
+    analysis.kids = false;
+    analysis.type = "Busy/Maintenance";
+    return analysis;
+  }
+
   // Check for members-only events
-  if (lower.includes("members swim") || lower.includes("member swim")) {
+  if (title === "Members Swim") {
     analysis.lanes = true;
     analysis.kids = true;
     analysis.membersOnly = true;
@@ -65,56 +111,102 @@ function analyzeEvent(title) {
     return analysis;
   }
 
-  // Check for lanes
-  if (lower.includes("lane") || lower.includes("lanes")) {
+  // Check for specific event types based on patterns in the title
+  if (lower.includes("recreational swim")) {
     analysis.lanes = true;
+    analysis.kids = true;
+    analysis.type = "Recreational";
+
+    // Parse lane information
+    const laneMatch = title.match(/(\d+)\s*lanes?/i);
+    if (laneMatch) {
+      analysis.details.lanes = parseInt(laneMatch[1]);
+    }
+  } else if (
+    lower.includes("lessons & lanes") ||
+    lower.includes("lessons and lanes")
+  ) {
+    analysis.lanes = true;
+    analysis.kids = false;
+    analysis.type = "Lessons & Lanes";
+
+    // Parse lane information
+    const laneMatch = title.match(/(\d+)\s*lanes?/i);
+    if (laneMatch) {
+      analysis.details.lanes = parseInt(laneMatch[1]);
+    }
+  } else if (
+    lower.includes("public swim") ||
+    lower.includes("public swimming")
+  ) {
+    analysis.kids = true;
+    if (lower.includes("no lanes")) {
+      analysis.lanes = false;
+      analysis.type = "Public Swimming (No Lanes)";
+    } else {
+      analysis.lanes = true;
+      analysis.type = "Public Swimming";
+    }
+  } else if (lower.includes("elderfit") || lower.includes("senior swim")) {
+    analysis.lanes = false;
+    analysis.kids = false;
+    if (lower.includes("play") && lower.includes("therapy")) {
+      analysis.kids = true;
+    }
+    analysis.type = "Senior Program";
+  } else if (lower.includes("aquafit")) {
+    analysis.lanes = false;
+    analysis.kids = false;
+    if (lower.includes("play") && lower.includes("therapy")) {
+      analysis.kids = true;
+    }
+    analysis.type = "Aquafit";
+  } else if (
+    lower.includes("parent & tot") ||
+    lower.includes("parent and tot")
+  ) {
+    analysis.lanes = false;
+    analysis.kids = true;
+    analysis.type = "Parent & Tot";
+  } else if (lower.includes("sensory swim")) {
+    analysis.lanes = false;
+    analysis.kids = true;
+    analysis.type = "Sensory Swim";
+  } else if (lower.includes("women's only") || lower.includes("women only")) {
+    analysis.lanes = true;
+    analysis.kids = false;
+    analysis.type = "Women's Only";
+  } else if (
+    lower.includes("private rental") ||
+    lower.includes("closed to the public") ||
+    lower.includes("closed to public")
+  ) {
+    analysis.lanes = false;
+    analysis.kids = false;
+    analysis.type = "Private/Closed";
+  } else {
+    // Default parsing for other events
+    if (lower.includes("lane") || lower.includes("lanes")) {
+      analysis.lanes = true;
+    }
+
+    if (
+      lower.includes("play") ||
+      lower.includes("family") ||
+      lower.includes("recreational")
+    ) {
+      analysis.kids = true;
+    }
   }
 
-  // Check for kids/public swimming
-  if (
-    lower.includes("public swimming") ||
-    lower.includes("play") ||
-    lower.includes("public") ||
-    lower.includes("family") ||
-    lower.includes("recreational")
-  ) {
-    analysis.kids = true;
+  // Check if therapy pool is mentioned
+  if (lower.includes("therapy pool")) {
+    analysis.details.therapyPool = true;
   }
 
-  // Special cases based on specific event titles
-  if (
-    lower.includes("public swim - no lanes") ||
-    lower.includes("public swimming - no lanes")
-  ) {
-    analysis.lanes = false;
-    analysis.kids = true;
-    analysis.type = "Public Swimming (Kids only)";
-  } else if (
-    lower.includes("lessons & lanes") &&
-    lower.includes("therapy pool open")
-  ) {
-    analysis.lanes = true;
-    analysis.kids = false;
-    analysis.type = "Lane Swimming (Adults only)";
-  } else if (lower.includes("recreational swim") && lower.includes("lanes")) {
-    analysis.lanes = true;
-    analysis.kids = true;
-    analysis.type = "Mixed Use";
-  } else if (
-    lower.includes("all pools closed to public") ||
-    lower.includes("all pools closed to the public")
-  ) {
-    analysis.lanes = false;
-    analysis.kids = false;
-    analysis.type = "Closed to Public";
-  } else if (lower.includes("pools closed to the public")) {
-    analysis.lanes = false;
-    analysis.kids = false;
-    analysis.type = "Closed to Public";
-  } else if (lower.includes("private pool party") || title === "Pool Party") {
-    analysis.lanes = false;
-    analysis.kids = false;
-    analysis.type = "Private Event";
+  // Check if play pool is mentioned
+  if (lower.includes("play pool")) {
+    analysis.details.playPool = true;
   }
 
   return analysis;
@@ -136,9 +228,52 @@ function formatTimeRemaining(endTime) {
   }
 }
 
+function formatTime(date) {
+  let hours = date.getHours();
+  const minutes = date.getMinutes();
+  const ampm = hours >= 12 ? "pm" : "am";
+  hours = hours % 12;
+  hours = hours ? hours : 12; // Convert 0 to 12
+  const strTime =
+    minutes === 0
+      ? `${hours}${ampm}`
+      : `${hours}:${minutes.toString().padStart(2, "0")}${ampm}`;
+  return strTime;
+}
+
+// Convert a date string from Atlantic Time to user's local timezone
+function convertToLocalTime(dateString) {
+  // Parse the input date string as is
+  const inputDate = new Date(dateString);
+
+  // If the date is invalid, return null
+  if (isNaN(inputDate.getTime())) {
+    console.error("Invalid date:", dateString);
+    return null;
+  }
+
+  // The API returns times without timezone information,
+  // but we know they're in Atlantic Time
+  // We need to convert to the user's local timezone
+
+  // Get the user's current timezone offset
+  const userOffset = new Date().getTimezoneOffset();
+
+  // Atlantic Time is UTC-4 during standard time, UTC-3 during daylight savings
+  // We'll use a simple check for daylight savings based on the date
+  const isSummer = inputDate.getMonth() >= 3 && inputDate.getMonth() <= 10;
+  const atlanticOffset = isSummer ? -3 * 60 : -4 * 60; // Convert hours to minutes
+
+  // Calculate the difference in minutes
+  const offsetDiff = userOffset + atlanticOffset;
+
+  // Apply the offset
+  return new Date(inputDate.getTime() + offsetDiff * 60 * 1000);
+}
+
 function getNextEvent(events, now, type) {
   return events.find((event) => {
-    const analysis = analyzeEvent(event.title);
+    const analysis = analyzeEvent(event);
     return (
       event.start > now && (type === "lanes" ? analysis.lanes : analysis.kids)
     );
@@ -148,15 +283,31 @@ function getNextEvent(events, now, type) {
 function processSchedule(data) {
   const now = new Date();
 
-  // Filter for swimming events only
+  // Filter for swimming events only and handle timezone conversion
   allEvents = data
     .filter(isSwimmingEvent)
-    .map((event) => ({
-      title: event.title,
-      start: new Date(event.start),
-      end: new Date(event.end),
-      facility: event.facility || "LCLC > BMO Financial Group Aquatic Centre",
-    }))
+    .map((event) => {
+      const start = convertToLocalTime(event.start);
+      const end = convertToLocalTime(event.end);
+
+      // Skip events with invalid dates
+      if (!start || !end) {
+        console.warn("Skipping event with invalid dates:", event);
+        return null;
+      }
+
+      return {
+        id: event.id,
+        title: event.title,
+        start: start,
+        end: end,
+        backgroundColor: event.backgroundColor,
+        textColor: event.textColor,
+        allDay: event.allDay,
+        facility: event.facility || "LCLC > BMO Financial Group Aquatic Centre",
+      };
+    })
+    .filter((event) => event !== null) // Remove any null events
     .sort((a, b) => a.start - b.start);
 
   // Update current status
@@ -170,8 +321,17 @@ function processSchedule(data) {
   updateDateButtons(now);
 
   // Update last updated time
-  document.getElementById("last-updated").textContent =
-    now.toLocaleTimeString();
+  const lastUpdatedElement = document.getElementById("last-updated");
+  if (lastUpdatedElement) {
+    lastUpdatedElement.textContent = now.toLocaleTimeString();
+  }
+
+  // Display user's timezone
+  const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const timezoneElement = document.getElementById("user-timezone");
+  if (timezoneElement) {
+    timezoneElement.textContent = userTimezone;
+  }
 }
 
 function updateCurrentStatus(now) {
@@ -180,24 +340,28 @@ function updateCurrentStatus(now) {
   let currentMembersOnly = false;
   let currentLanesEnd = null;
   let currentKidsEnd = null;
+  let currentEventDetails = null;
 
   allEvents.forEach((event) => {
     if (event.start <= now && event.end >= now) {
-      const analysis = analyzeEvent(event.title);
+      const analysis = analyzeEvent(event);
       if (analysis.membersOnly) {
         currentMembersOnly = true;
         currentLanes = true;
         currentKids = true;
         currentLanesEnd = event.end;
         currentKidsEnd = event.end;
+        currentEventDetails = analysis;
       } else {
         if (analysis.lanes) {
           currentLanes = true;
           currentLanesEnd = event.end;
+          currentEventDetails = analysis;
         }
         if (analysis.kids) {
           currentKids = true;
           currentKidsEnd = event.end;
+          currentEventDetails = analysis;
         }
       }
     }
@@ -221,22 +385,30 @@ function updateCurrentStatus(now) {
       "Members only - " + formatTimeRemaining(currentKidsEnd);
   } else {
     if (currentLanes && currentLanesEnd) {
-      lanesTime.textContent = formatTimeRemaining(currentLanesEnd);
+      let lanesDetail = formatTimeRemaining(currentLanesEnd);
+      if (currentEventDetails?.details?.lanes) {
+        lanesDetail += ` (${currentEventDetails.details.lanes} lanes)`;
+      }
+      lanesTime.textContent = lanesDetail;
     } else {
       const nextLanesEvent = getNextEvent(allEvents, now, "lanes");
       if (nextLanesEvent) {
-        lanesTime.textContent = `Opens at ${nextLanesEvent.start.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`;
+        lanesTime.textContent = `Opens at ${formatTime(nextLanesEvent.start)}`;
       } else {
         lanesTime.textContent = "No more lane swimming today";
       }
     }
 
     if (currentKids && currentKidsEnd) {
-      kidsTime.textContent = formatTimeRemaining(currentKidsEnd);
+      let kidsDetail = formatTimeRemaining(currentKidsEnd);
+      if (currentEventDetails?.type) {
+        kidsDetail += ` (${currentEventDetails.type})`;
+      }
+      kidsTime.textContent = kidsDetail;
     } else {
       const nextKidsEvent = getNextEvent(allEvents, now, "kids");
       if (nextKidsEvent) {
-        kidsTime.textContent = `Opens at ${nextKidsEvent.start.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`;
+        kidsTime.textContent = `Opens at ${formatTime(nextKidsEvent.start)}`;
       } else {
         kidsTime.textContent = "No more kids swimming today";
       }
@@ -346,7 +518,7 @@ function showScheduleForDate(date) {
 
     scheduleContent.innerHTML = dayEvents
       .map((event) => {
-        const analysis = analyzeEvent(event.title);
+        const analysis = analyzeEvent(event);
         const isCurrent =
           event.start <= now &&
           event.end >= now &&
@@ -355,11 +527,17 @@ function showScheduleForDate(date) {
 
         let eventClass = "";
         if (isCurrent) {
-          eventClass = analysis.membersOnly ? "members" : "current";
+          if (analysis.type === "Busy/Maintenance") {
+            eventClass = "busy";
+          } else {
+            eventClass = analysis.membersOnly ? "members" : "current";
+          }
         } else if (isPast) {
           eventClass = "past";
         } else if (analysis.membersOnly) {
           eventClass = "members";
+        } else if (analysis.type === "Busy/Maintenance") {
+          eventClass = "busy";
         }
 
         const lanesClass = analysis.membersOnly
@@ -373,17 +551,32 @@ function showScheduleForDate(date) {
             ? "checkmark"
             : "cross";
 
+        let eventDetails = "";
+        if (analysis.details.lanes) {
+          eventDetails += `${analysis.details.lanes} lanes`;
+        }
+        if (analysis.type && analysis.type !== "Mixed Use") {
+          eventDetails += (eventDetails ? " • " : "") + analysis.type;
+        }
+        if (analysis.details.therapyPool) {
+          eventDetails += (eventDetails ? " • " : "") + "Therapy pool";
+        }
+        if (analysis.details.playPool) {
+          eventDetails += (eventDetails ? " • " : "") + "Play pool";
+        }
+
         return `
                 <div class="event ${eventClass}" ${isCurrent ? 'id="current-event"' : ""}>
                     <div class="event-time">
-                        ${event.start.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })} -
-                        ${event.end.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
+                        ${formatTime(event.start)} -
+                        ${formatTime(event.end)}
                         ${isCurrent ? '<span style="margin-left: 10px; color: #28a745;">◉ NOW</span>' : ""}
                     </div>
                     <div class="event-title">${event.title}</div>
                     <div class="event-details">
                         Lanes: <span class="${lanesClass}">${analysis.lanes ? "✓" : "✗"}</span> |
                         Kids: <span class="${kidsClass}">${analysis.kids ? "✓" : "✗"}</span>
+                        ${eventDetails ? '<br><small style="color: #666;">' + eventDetails + "</small>" : ""}
                         ${analysis.membersOnly ? '<span style="margin-left: 10px; color: #0056b3; font-weight: bold;">(Members Only)</span>' : ""}
                     </div>
                 </div>
