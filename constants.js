@@ -1,10 +1,11 @@
-const FACILITY_ID = "3121e68a-d46d-4865-b4ce-fc085f688529";
-const API_BASE_URL =
+// Facility information
+export const FACILITY_ID = "3121e68a-d46d-4865-b4ce-fc085f688529";
+export const API_BASE_URL =
   "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments";
-const CORS_PROXY = "https://corsproxy.io/?";
+export const CORS_PROXY = "https://corsproxy.io/?";
 
 // Keywords for identifying swimming events
-const SWIM_KEYWORDS = [
+export const SWIM_KEYWORDS = [
   "swim",
   "aqua",
   "pool",
@@ -18,23 +19,23 @@ const SWIM_KEYWORDS = [
 ];
 
 // Time intervals
-const REFRESH_INTERVAL = 5 * 60 * 1000; // 5 minutes
-const TIME_UPDATE_INTERVAL = 60 * 1000; // 1 minute
+export const REFRESH_INTERVAL = 5 * 60 * 1000; // 5 minutes
+export const TIME_UPDATE_INTERVAL = 60 * 1000; // 1 minute
 
 // Date range
-const DATE_RANGE_DAYS = 8; // Today + 7 days
+export const DATE_RANGE_DAYS = 8; // Today + 7 days
 
 // Timezone settings
-const FACILITY_TIMEZONE = "America/Halifax"; // Atlantic Time
+export const FACILITY_TIMEZONE = "America/Halifax"; // Atlantic Time
 
 // Event colors from the API
-const EVENT_COLORS = {
+export const EVENT_COLORS = {
   POOL: "#0000FF", // Blue for pool events
   BUSY: "#00FF00", // Green for busy events
 };
 
 // Event titles
-const EVENT_TITLES = {
+export const EVENT_TITLES = {
   MEMBERS_SWIM: "Members Swim",
   BUSY: "Busy",
   POOL_PARTY: "Pool Party",
@@ -44,7 +45,7 @@ const EVENT_TITLES = {
 };
 
 // Event types
-const EVENT_TYPES = {
+export const EVENT_TYPES = {
   MEMBERS_ONLY: "Members Only",
   BUSY_MAINTENANCE: "Busy/Maintenance",
   RECREATIONAL: "Recreational",
@@ -63,7 +64,7 @@ const EVENT_TYPES = {
 };
 
 // CSS Classes
-const CSS_CLASSES = {
+export const CSS_CLASSES = {
   STATUS_INDICATOR: "status-indicator",
   OPEN: "open",
   CLOSED: "closed",
@@ -85,7 +86,7 @@ const CSS_CLASSES = {
 };
 
 // DOM Element IDs
-const DOM_IDS = {
+export const DOM_IDS = {
   LANES_STATUS: "lanes-status",
   KIDS_STATUS: "kids-status",
   LANES_TIME: "lanes-time",
@@ -101,7 +102,7 @@ const DOM_IDS = {
 };
 
 // Keywords for parsing events
-const PARSE_KEYWORDS = {
+export const PARSE_KEYWORDS = {
   RECREATIONAL_SWIM: "recreational swim",
   LESSONS_LANES: ["lessons & lanes", "lessons and lanes"],
   PUBLIC_SWIM: ["public swim", "public swimming"],
