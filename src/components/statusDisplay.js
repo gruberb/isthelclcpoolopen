@@ -3,34 +3,102 @@ import { analyzeEvent, getNextEvent } from "../utils/eventParser.js";
 import { formatTimeRemaining, formatTime } from "../utils/dateUtils.js";
 import { DOM_IDS, CSS_CLASSES } from "/constants.js";
 
-/*
- * Find the last event end time for the current day
+/**
+ * Find the current status and next time change for a particular feature (lanes or kids)
+ * This accounts for gaps in the schedule and finds when the feature will actually end or begin
  * @param {Array} events List of events
  * @param {Date} now Current date/time
  * @param {string} type Type to look for ("lanes" or "kids")
- * @returns {Date|null} End time of the last event or null if not found
+ * @returns {Object} Information about the current status and next time change
  */
-function findLastEventEndTime(events, now, type) {
-  // Get only events from today
+function findFeatureStatus(events, now, type) {
+  // Get today's events
   const todayStr = now.toDateString();
   const todayEvents = events.filter(
-    (event) => event.start.toDateString() === todayStr,
+    (event) => new Date(event.start).toDateString() === todayStr,
   );
 
-  // Sort by end time descending
-  todayEvents.sort((a, b) => b.end - a.end);
+  // Sort by start time
+  todayEvents.sort((a, b) => new Date(a.start) - new Date(b.start));
 
-  // Find the last event of the specified type
+  // Find currently active and next events
+  let currentEvent = null;
+  let nextEvent = null;
+
+  // Find the current event that provides the feature
   for (const event of todayEvents) {
-    const analysis = analyzeEvent(event);
-    if (type === "lanes" && analysis.lanes) {
-      return event.end;
-    } else if (type === "kids" && analysis.kids) {
-      return event.end;
+    const eventStart = new Date(event.start);
+    const eventEnd = new Date(event.end);
+
+    // Check if this event is happening now
+    if (eventStart <= now && eventEnd > now) {
+      const analysis = analyzeEvent(event);
+
+      // Check if this event has the feature we're looking for
+      const hasFeature =
+        (type === "lanes" && analysis.lanes) ||
+        (type === "kids" && analysis.kids);
+
+      // Special case: LAP POOL CLOSED overrides
+      const explicitlyClosed =
+        type === "lanes" && event.title.includes("LAP POOL CLOSED");
+
+      if (hasFeature && !explicitlyClosed) {
+        currentEvent = event;
+        break; // Found a current event with the feature
+      }
     }
   }
 
-  return null;
+  // Find the next event that will provide the feature
+  for (const event of todayEvents) {
+    const eventStart = new Date(event.start);
+
+    // Only look at future events
+    if (eventStart > now) {
+      const analysis = analyzeEvent(event);
+      const hasFeature =
+        (type === "lanes" && analysis.lanes) ||
+        (type === "kids" && analysis.kids);
+
+      // Special case: LAP POOL CLOSED overrides
+      const explicitlyClosed =
+        type === "lanes" && event.title.includes("LAP POOL CLOSED");
+
+      if (hasFeature && !explicitlyClosed) {
+        nextEvent = event;
+        break; // Found the next event with the feature
+      }
+    }
+  }
+
+  // If we have a current event with the feature
+  if (currentEvent) {
+    const analysis = analyzeEvent(currentEvent);
+    return {
+      isActive: true,
+      endTime: new Date(currentEvent.end),
+      details: analysis.details || {},
+      restrictedAccess: analysis.restrictedAccess,
+      membersOnly: analysis.membersOnly,
+      restrictionType: analysis.type,
+    };
+  }
+
+  // If we're in a gap but have a future event with the feature
+  if (!currentEvent && nextEvent) {
+    return {
+      isActive: false,
+      inGap: true,
+      nextStartTime: new Date(nextEvent.start),
+    };
+  }
+
+  // No more events with this feature today
+  return {
+    isActive: false,
+    inGap: false,
+  };
 }
 
 /**
@@ -38,131 +106,89 @@ function findLastEventEndTime(events, now, type) {
  */
 export function updateCurrentStatus() {
   const now = new Date();
-  let currentLanes = false;
-  let currentKids = false;
-  let currentMembersOnly = false;
-  let currentRestrictedAccess = false;
-  let currentLanesEnd = null;
-  let currentKidsEnd = null;
-  let currentEventDetails = null;
 
-  const lastLanesEnd = findLastEventEndTime(appState.allEvents, now, "lanes");
-  const lastKidsEnd = findLastEventEndTime(appState.allEvents, now, "kids");
-
-  appState.allEvents.forEach((event) => {
-    if (event.start <= now && event.end >= now) {
-      const analysis = analyzeEvent(event);
-
-      if (analysis.membersOnly) {
-        currentMembersOnly = true;
-        currentLanes = true;
-        currentKids = true;
-        currentLanesEnd = event.end;
-        currentKidsEnd = event.end;
-        currentEventDetails = analysis;
-      } else if (analysis.restrictedAccess) {
-        currentRestrictedAccess = true;
-        currentLanes = true;
-        currentKids = true;
-        currentLanesEnd = event.end;
-        currentKidsEnd = event.end;
-        currentEventDetails = analysis;
-      } else {
-        if (analysis.lanes) {
-          currentLanes = true;
-          currentLanesEnd = event.end;
-          currentEventDetails = analysis;
-        }
-        if (analysis.kids) {
-          currentKids = true;
-          currentKidsEnd = event.end;
-          currentEventDetails = analysis;
-        }
-
-        // If an event explicitly marks the lap pool as closed, override any other setting
-        if (event.title.includes("LAP POOL CLOSED")) {
-          currentLanes = false;
-        }
-      }
-    }
-  });
+  // Get status for lanes and kids pools
+  const lanesStatus = findFeatureStatus(appState.allEvents, now, "lanes");
+  const kidsStatus = findFeatureStatus(appState.allEvents, now, "kids");
 
   // Update status indicators
-  const lanesStatus = document.getElementById(DOM_IDS.LANES_STATUS);
-  const kidsStatus = document.getElementById(DOM_IDS.KIDS_STATUS);
-  const lanesTime = document.getElementById(DOM_IDS.LANES_TIME);
-  const kidsTime = document.getElementById(DOM_IDS.KIDS_TIME);
+  const lanesStatusEl = document.getElementById(DOM_IDS.LANES_STATUS);
+  const kidsStatusEl = document.getElementById(DOM_IDS.KIDS_STATUS);
+  const lanesTimeEl = document.getElementById(DOM_IDS.LANES_TIME);
+  const kidsTimeEl = document.getElementById(DOM_IDS.KIDS_TIME);
 
-  if (!lanesStatus || !kidsStatus || !lanesTime || !kidsTime) {
+  if (!lanesStatusEl || !kidsStatusEl || !lanesTimeEl || !kidsTimeEl) {
     console.warn("Status elements not found");
     return;
   }
 
-  lanesStatus.textContent = currentLanes ? "YES" : "NO";
-  lanesStatus.className = `${CSS_CLASSES.STATUS_INDICATOR} ${
-    currentRestrictedAccess
+  // Update lanes status
+  lanesStatusEl.textContent = lanesStatus.isActive ? "YES" : "NO";
+  lanesStatusEl.className = `${CSS_CLASSES.STATUS_INDICATOR} ${
+    lanesStatus.restrictedAccess
       ? CSS_CLASSES.RESTRICTED
-      : currentMembersOnly
+      : lanesStatus.membersOnly
         ? CSS_CLASSES.MEMBERS
-        : currentLanes
+        : lanesStatus.isActive
           ? CSS_CLASSES.OPEN
           : CSS_CLASSES.CLOSED
   }`;
 
-  kidsStatus.textContent = currentKids ? "YES" : "NO";
-  kidsStatus.className = `${CSS_CLASSES.STATUS_INDICATOR} ${
-    currentRestrictedAccess
+  // Update kids status
+  kidsStatusEl.textContent = kidsStatus.isActive ? "YES" : "NO";
+  kidsStatusEl.className = `${CSS_CLASSES.STATUS_INDICATOR} ${
+    kidsStatus.restrictedAccess
       ? CSS_CLASSES.RESTRICTED
-      : currentMembersOnly
+      : kidsStatus.membersOnly
         ? CSS_CLASSES.MEMBERS
-        : currentKids
+        : kidsStatus.isActive
           ? CSS_CLASSES.OPEN
           : CSS_CLASSES.CLOSED
   }`;
 
-  if (currentMembersOnly) {
-    lanesTime.textContent =
-      "Members only - " + formatTimeRemaining(currentLanesEnd);
-    kidsTime.textContent =
-      "Members only - " + formatTimeRemaining(currentKidsEnd);
-  } else if (currentRestrictedAccess) {
-    const restrictionType =
-      currentEventDetails.type === "Women's Only (All Pools)"
-        ? "Women only"
-        : "Seniors 60+";
-    lanesTime.textContent = `${restrictionType} - ${formatTimeRemaining(currentLanesEnd)}`;
-    kidsTime.textContent = `${restrictionType} - ${formatTimeRemaining(currentKidsEnd)}`;
+  // Update time information for lanes
+  if (lanesStatus.isActive) {
+    let lanesDetail = formatTimeRemaining(lanesStatus.endTime);
+
+    // Add restriction information if applicable
+    if (lanesStatus.restrictedAccess) {
+      const restrictionType =
+        lanesStatus.restrictionType === "Women's Only (All Pools)"
+          ? "Women only"
+          : "Seniors 60+";
+      lanesDetail = `${restrictionType} - ${lanesDetail}`;
+    } else if (lanesStatus.membersOnly) {
+      lanesDetail = `Members only - ${lanesDetail}`;
+    }
+    // Removed lane count information as requested
+
+    lanesTimeEl.textContent = lanesDetail;
+  } else if (lanesStatus.inGap) {
+    lanesTimeEl.textContent = `Opens at ${formatTime(lanesStatus.nextStartTime)}`;
   } else {
-    if (currentLanes) {
-      // If lanes are currently open, show time until the last event ends instead of just the current event
-      let lanesDetail = formatTimeRemaining(lastLanesEnd || currentLanesEnd);
+    lanesTimeEl.textContent = "No more lane swimming today";
+  }
 
-      // Only show lane count if we have that information
-      if (currentEventDetails?.details?.lanes) {
-        lanesDetail += ` (${currentEventDetails.details.lanes} lanes)`;
-      }
-      lanesTime.textContent = lanesDetail;
-    } else {
-      const nextLanesEvent = getNextEvent(appState.allEvents, now, "lanes");
-      if (nextLanesEvent) {
-        lanesTime.textContent = `Opens at ${formatTime(nextLanesEvent.start)}`;
-      } else {
-        lanesTime.textContent = "No more lane swimming today";
-      }
+  // Update time information for kids
+  if (kidsStatus.isActive) {
+    let kidsDetail = formatTimeRemaining(kidsStatus.endTime);
+
+    // Add restriction information if applicable
+    if (kidsStatus.restrictedAccess) {
+      const restrictionType =
+        kidsStatus.restrictionType === "Women's Only (All Pools)"
+          ? "Women only"
+          : "Seniors 60+";
+      kidsDetail = `${restrictionType} - ${kidsDetail}`;
+    } else if (kidsStatus.membersOnly) {
+      kidsDetail = `Members only - ${kidsDetail}`;
     }
 
-    if (currentKids) {
-      // If kids swimming is currently open, show time until the last event ends
-      let kidsDetail = formatTimeRemaining(lastKidsEnd || currentKidsEnd);
-      kidsTime.textContent = kidsDetail;
-    } else {
-      const nextKidsEvent = getNextEvent(appState.allEvents, now, "kids");
-      if (nextKidsEvent) {
-        kidsTime.textContent = `Opens at ${formatTime(nextKidsEvent.start)}`;
-      } else {
-        kidsTime.textContent = "No more kids swimming today";
-      }
-    }
+    kidsTimeEl.textContent = kidsDetail;
+  } else if (kidsStatus.inGap) {
+    kidsTimeEl.textContent = `Opens at ${formatTime(kidsStatus.nextStartTime)}`;
+  } else {
+    kidsTimeEl.textContent = "No more kids swimming today";
   }
 
   // Update last updated time
