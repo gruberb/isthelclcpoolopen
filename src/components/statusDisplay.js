@@ -1,7 +1,7 @@
 import appState from "../state/appState.js";
 import { analyzeEvent } from "../utils/eventParser.js";
 import { formatTimeRemaining, formatTime } from "../utils/dateUtils.js";
-import { DOM_IDS, CSS_CLASSES } from "../../constants.js";
+import { DOM_IDS, CSS_CLASSES } from "../constants.js";
 
 /**
  * Find the current status and next time change for a particular feature (lanes or kids)

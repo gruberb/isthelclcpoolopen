@@ -1,7 +1,7 @@
 import appState from "../state/appState.js";
 import { analyzeEvent } from "../utils/eventParser.js";
 import { formatTime } from "../utils/dateUtils.js";
-import { DOM_IDS, CSS_CLASSES } from "/constants.js";
+import { DOM_IDS, CSS_CLASSES } from "../constants.js";
 
 /**
  * Populate the date selector with options for the next week

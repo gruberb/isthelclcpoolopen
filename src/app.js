@@ -15,7 +15,7 @@ import {
   TIME_UPDATE_INTERVAL,
   DOM_IDS,
   CSS_CLASSES,
-} from "/constants.js";
+} from "./constants.js";
 
 /**
  * Process schedule data from the API

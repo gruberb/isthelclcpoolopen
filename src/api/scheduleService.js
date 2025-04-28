@@ -3,7 +3,7 @@ import {
   API_BASE_URL,
   CORS_PROXY,
   DATE_RANGE_DAYS,
-} from "/constants.js";
+} from "../constants.js";
 
 /**
  * Format a date for API consumption (in Atlantic timezone)

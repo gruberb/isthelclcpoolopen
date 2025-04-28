@@ -4,7 +4,7 @@ import {
   EVENT_COLORS,
   EVENT_TYPES,
   PARSE_KEYWORDS,
-} from "/constants.js";
+} from "../constants.js";
 
 /**
  * Determine if an event is a swimming event
