@@ -33,15 +33,31 @@ export function convertToLocalTime(dateString) {
 }
 
 /**
- * Format time remaining until a given end time
- * @param {Date} endTime End time
- * @returns {string} Formatted time remaining string
+ * Format a time string in a human-readable format
+ * @param {Date} date The date to format
+ * @returns {string} Formatted time string
+ */
+export function formatTime(date) {
+  if (!date) return "";
+
+  return date.toLocaleTimeString([], {
+    hour: "numeric",
+    minute: "2-digit",
+  });
+}
+
+/**
+ * Format the remaining time until a specific date
+ * @param {Date} endTime The end time to calculate remaining time to
+ * @returns {string} Formatted remaining time string
  */
 export function formatTimeRemaining(endTime) {
+  if (!endTime) return "Unknown";
+
   const now = new Date();
   const diff = endTime - now;
 
-  if (diff <= 0) return "Closing now";
+  if (diff <= 0) return "Ended";
 
   const hours = Math.floor(diff / (1000 * 60 * 60));
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
@@ -54,19 +70,17 @@ export function formatTimeRemaining(endTime) {
 }
 
 /**
- * Format a date to a user-friendly time string (e.g., "3pm" or "3:30pm")
- * @param {Date} date Date to format
- * @returns {string} Formatted time string
+ * Format a date in a standard format
+ * @param {Date} date The date to format
+ * @returns {string} Formatted date string
  */
-export function formatTime(date) {
-  let hours = date.getHours();
-  const minutes = date.getMinutes();
-  const ampm = hours >= 12 ? "pm" : "am";
-  hours = hours % 12;
-  hours = hours ? hours : 12; // Convert 0 to 12
-  const strTime =
-    minutes === 0
-      ? `${hours}${ampm}`
-      : `${hours}:${minutes.toString().padStart(2, "0")}${ampm}`;
-  return strTime;
+export function formatDate(date) {
+  if (!date) return "";
+
+  return date.toLocaleDateString([], {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
 }

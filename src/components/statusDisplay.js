@@ -1,7 +1,7 @@
 import appState from "../state/appState.js";
-import { analyzeEvent, getNextEvent } from "../utils/eventParser.js";
+import { analyzeEvent } from "../utils/eventParser.js";
 import { formatTimeRemaining, formatTime } from "../utils/dateUtils.js";
-import { DOM_IDS, CSS_CLASSES } from "/constants.js";
+import { DOM_IDS, CSS_CLASSES } from "../../constants.js";
 
 /**
  * Find the current status and next time change for a particular feature (lanes or kids)
@@ -11,7 +11,7 @@ import { DOM_IDS, CSS_CLASSES } from "/constants.js";
  * @param {string} type Type to look for ("lanes" or "kids")
  * @returns {Object} Information about the current status and next time change
  */
-function findFeatureStatus(events, now, type) {
+export function findFeatureStatus(events, now, type) {
   // Get today's events
   const todayStr = now.toDateString();
   const todayEvents = events.filter(
@@ -23,9 +23,13 @@ function findFeatureStatus(events, now, type) {
 
   // Find currently active and next events
   let currentEvent = null;
-  let nextEvent = null;
+  let featureEndTime = null;
+  let nextFeatureStartTime = null;
+  let restrictedAccess = false;
+  let membersOnly = false;
+  let restrictionType = null;
 
-  // Find the current event that provides the feature
+  // First, check if the feature is currently active
   for (const event of todayEvents) {
     const eventStart = new Date(event.start);
     const eventEnd = new Date(event.end);
@@ -39,59 +43,99 @@ function findFeatureStatus(events, now, type) {
         (type === "lanes" && analysis.lanes) ||
         (type === "kids" && analysis.kids);
 
-      // Special case: LAP POOL CLOSED overrides
-      const explicitlyClosed =
-        type === "lanes" && event.title.includes("LAP POOL CLOSED");
-
-      if (hasFeature && !explicitlyClosed) {
+      if (hasFeature) {
         currentEvent = event;
+        restrictedAccess = analysis.restrictedAccess;
+        membersOnly = analysis.membersOnly;
+        restrictionType = analysis.type;
         break; // Found a current event with the feature
       }
     }
   }
 
-  // Find the next event that will provide the feature
-  for (const event of todayEvents) {
-    const eventStart = new Date(event.start);
+  // If feature is currently active, find when it will end (looking at consecutive events)
+  if (currentEvent) {
+    // Start from when the current event ends
+    featureEndTime = new Date(currentEvent.end);
 
-    // Only look at future events
-    if (eventStart > now) {
+    // Look for consecutive events that have the feature
+    let currentEndTime = featureEndTime;
+
+    // Create a sorted copy of the events for scanning consecutive ones
+    const sortedEvents = [...todayEvents].sort(
+      (a, b) => new Date(a.start) - new Date(b.start),
+    );
+
+    // Look for events starting after our current event
+    for (const event of sortedEvents) {
+      const eventStart = new Date(event.start);
+      const eventEnd = new Date(event.end);
+
+      // Skip events that aren't after our current event
+      if (
+        eventStart <= now ||
+        new Date(event.start) <= new Date(currentEvent.start)
+      ) {
+        continue;
+      }
+
       const analysis = analyzeEvent(event);
+
+      // Check if this event has the feature we're looking for
       const hasFeature =
         (type === "lanes" && analysis.lanes) ||
         (type === "kids" && analysis.kids);
 
-      // Special case: LAP POOL CLOSED overrides
-      const explicitlyClosed =
-        type === "lanes" && event.title.includes("LAP POOL CLOSED");
-
-      if (hasFeature && !explicitlyClosed) {
-        nextEvent = event;
-        break; // Found the next event with the feature
+      // If this event starts exactly when our current sequence ends (no gap)
+      // and has the feature we're looking for, extend our continuous time
+      if (Math.abs(eventStart - currentEndTime) < 60000 && hasFeature) {
+        // Extend the continuous availability time
+        featureEndTime = eventEnd;
+        currentEndTime = eventEnd;
+      } else if (eventStart > currentEndTime) {
+        // We've found a gap or an event without the feature - this is the end of continuous availability
+        break;
       }
     }
-  }
 
-  // If we have a current event with the feature
-  if (currentEvent) {
-    const analysis = analyzeEvent(currentEvent);
+    // If feature is currently active, return its status
     return {
       isActive: true,
-      endTime: new Date(currentEvent.end),
-      details: analysis.details || {},
-      restrictedAccess: analysis.restrictedAccess,
-      membersOnly: analysis.membersOnly,
-      restrictionType: analysis.type,
+      endTime: featureEndTime,
+      details: analyzeEvent(currentEvent).details || {},
+      restrictedAccess,
+      membersOnly,
+      restrictionType,
     };
   }
 
-  // If we're in a gap but have a future event with the feature
-  if (!currentEvent && nextEvent) {
-    return {
-      isActive: false,
-      inGap: true,
-      nextStartTime: new Date(nextEvent.start),
-    };
+  // If feature is not currently active, find when it will next be available
+  if (!currentEvent) {
+    for (const event of todayEvents) {
+      const eventStart = new Date(event.start);
+
+      // Only look at future events
+      if (eventStart > now) {
+        const analysis = analyzeEvent(event);
+        const hasFeature =
+          (type === "lanes" && analysis.lanes) ||
+          (type === "kids" && analysis.kids);
+
+        if (hasFeature) {
+          nextFeatureStartTime = eventStart;
+          break; // Found the next event with the feature
+        }
+      }
+    }
+
+    // If we found a future event with the feature
+    if (nextFeatureStartTime) {
+      return {
+        isActive: false,
+        inGap: true,
+        nextStartTime: nextFeatureStartTime,
+      };
+    }
   }
 
   // No more events with this feature today

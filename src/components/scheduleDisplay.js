@@ -102,7 +102,8 @@ export function updateDateButtons() {
  * Show the schedule for a specific date
  */
 export function showScheduleForDate() {
-  const date = appState.selectedDate;
+  // Make sure selectedDate exists
+  const date = appState.selectedDate || new Date();
   const dateStr = date.toDateString();
   const scheduleContent = document.getElementById(DOM_IDS.SCHEDULE_CONTENT);
 

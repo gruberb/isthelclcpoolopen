@@ -4,62 +4,121 @@
 class AppState {
   constructor() {
     this.allEvents = [];
-    this.selectedDate = new Date();
+    this.currentTab = "current"; // 'current' or 'schedule'
     this.lastUpdated = null;
-    this.listeners = [];
+    this.subscribers = [];
+    this.isLoading = false;
+    this.error = null;
+    this.selectedDate = new Date(); // Initialize with current date
   }
 
   /**
-   * Set the events data
-   * @param {Array} events The events to set
+   * Set events in the state
+   * @param {Array} events The new events data
    */
   setEvents(events) {
-    this.allEvents = events;
+    this.allEvents = events.map((event) => ({
+      ...event,
+      start: new Date(event.start),
+      end: new Date(event.end),
+    }));
+
     this.lastUpdated = new Date();
-    this.notifyListeners();
+    this.isLoading = false;
+    this.error = null;
+
+    this.notifySubscribers();
   }
 
   /**
    * Set the selected date
-   * @param {Date} date The date to set
+   * @param {Date} date The date to select
    */
   setSelectedDate(date) {
-    this.selectedDate = date;
-    this.notifyListeners();
+    if (date instanceof Date && !isNaN(date.getTime())) {
+      this.selectedDate = date;
+      this.notifySubscribers();
+    }
   }
 
   /**
    * Get events for a specific date
    * @param {Date} date The date to get events for
-   * @returns {Array} Events for the date
+   * @returns {Array} Events for the specified date
    */
   getEventsForDate(date) {
+    if (!date) {
+      return [];
+    }
+
     const dateStr = date.toDateString();
     return this.allEvents.filter(
-      (event) => event.start.toDateString() === dateStr,
+      (event) => new Date(event.start).toDateString() === dateStr,
     );
   }
 
   /**
-   * Subscribe to state changes
-   * @param {Function} listener The listener function
-   * @returns {Function} Unsubscribe function
+   * Set the loading state
+   * @param {boolean} isLoading Whether the app is loading data
    */
-  subscribe(listener) {
-    this.listeners.push(listener);
-    return () => {
-      this.listeners = this.listeners.filter((l) => l !== listener);
-    };
+  setLoading(isLoading) {
+    this.isLoading = isLoading;
+    this.notifySubscribers();
   }
 
   /**
-   * Notify all listeners of state changes
+   * Set an error state
+   * @param {string} error The error message
    */
-  notifyListeners() {
-    this.listeners.forEach((listener) => listener());
+  setError(error) {
+    this.error = error;
+    this.isLoading = false;
+    this.notifySubscribers();
+  }
+
+  /**
+   * Change the current tab
+   * @param {string} tab The tab to switch to ('current' or 'schedule')
+   */
+  setTab(tab) {
+    if (tab === "current" || tab === "schedule") {
+      this.currentTab = tab;
+      this.notifySubscribers();
+    }
+  }
+
+  /**
+   * Subscribe to state changes
+   * @param {Function} callback Function to call when state changes
+   */
+  subscribe(callback) {
+    if (typeof callback === "function") {
+      this.subscribers.push(callback);
+    }
+  }
+
+  /**
+   * Unsubscribe from state changes
+   * @param {Function} callback The callback to remove
+   */
+  unsubscribe(callback) {
+    this.subscribers = this.subscribers.filter((sub) => sub !== callback);
+  }
+
+  /**
+   * Notify all subscribers of state changes
+   */
+  notifySubscribers() {
+    this.subscribers.forEach((callback) => {
+      try {
+        callback();
+      } catch (error) {
+        console.error("Error in subscriber callback:", error);
+      }
+    });
   }
 }
 
-// Create a singleton instance
+// Create and export a singleton instance
 const appState = new AppState();
 export default appState;

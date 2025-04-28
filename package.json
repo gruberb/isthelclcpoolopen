@@ -1,0 +1,24 @@
+{
+  "name": "isthelclcopen",
+  "version": "1.0.0",
+  "description": "Shows the current status of the LCLC pool",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "pool",
+    "status",
+    "schedule"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "babel-jest": "^29.6.1",
+    "jest": "^29.6.1",
+    "jest-environment-jsdom": "^29.6.1",
+    "serve": "^14.2.0"
+  }
+}
