@@ -4,6 +4,22 @@ export const API_BASE_URL =
   "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments";
 export const CORS_PROXY = "https://corsproxy.io/?";
 
+// Date range
+export const DATE_RANGE_DAYS = 8; // Today + 7 days
+
+// Time intervals
+export const REFRESH_INTERVAL = 5 * 60 * 1000; // 5 minutes
+export const TIME_UPDATE_INTERVAL = 60 * 1000; // 1 minute
+
+// Timezone settings
+export const FACILITY_TIMEZONE = "America/Halifax"; // Atlantic Time
+
+// Event colors from the API
+export const EVENT_COLORS = {
+  POOL: "#0000FF", // Blue for pool events
+  BUSY: "#00FF00", // Green for busy events
+};
+
 // Keywords for identifying swimming events
 export const SWIM_KEYWORDS = [
   "swim",
@@ -18,33 +34,10 @@ export const SWIM_KEYWORDS = [
   "members swim",
 ];
 
-// Time intervals
-export const REFRESH_INTERVAL = 5 * 60 * 1000; // 5 minutes
-export const TIME_UPDATE_INTERVAL = 60 * 1000; // 1 minute
+// Keywords for excluding non-pool events
+export const NON_POOL_KEYWORDS = ["skating club", "hockey", "ice"];
 
-// Date range
-export const DATE_RANGE_DAYS = 8; // Today + 7 days
-
-// Timezone settings
-export const FACILITY_TIMEZONE = "America/Halifax"; // Atlantic Time
-
-// Event colors from the API
-export const EVENT_COLORS = {
-  POOL: "#0000FF", // Blue for pool events
-  BUSY: "#00FF00", // Green for busy events
-};
-
-// Event titles
-export const EVENT_TITLES = {
-  MEMBERS_SWIM: "Members Swim",
-  BUSY: "Busy",
-  POOL_PARTY: "Pool Party",
-  PRIVATE_POOL_PARTY: "Private Pool Party Rental",
-  WOMENS_ONLY_SWIM: "MODL Women's Only Swim",
-  SENIOR_SWIM_60: "Senior Swim - 60+",
-};
-
-// Event types
+// Event types (used for UI categorization)
 export const EVENT_TYPES = {
   MEMBERS_ONLY: "Members Only",
   BUSY_MAINTENANCE: "Busy/Maintenance",
@@ -61,6 +54,7 @@ export const EVENT_TYPES = {
   SENIOR_ONLY_60: "Seniors 60+ Only",
   PRIVATE_CLOSED: "Private/Closed",
   MIXED_USE: "Mixed Use",
+  REGULAR: "Regular",
 };
 
 // CSS Classes
@@ -101,24 +95,73 @@ export const DOM_IDS = {
   SCHEDULE_TITLE: "#schedule h3",
 };
 
-// Keywords for parsing events
-export const PARSE_KEYWORDS = {
-  RECREATIONAL_SWIM: "recreational swim",
-  LESSONS_LANES: ["lessons & lanes", "lessons and lanes"],
-  PUBLIC_SWIM: ["public swim", "public swimming"],
-  NO_LANES: "no lanes",
-  ELDERFIT: "elderfit",
-  SENIOR_SWIM: "senior swim",
-  AQUAFIT: "aquafit",
-  PARENT_TOT: ["parent & tot", "parent and tot"],
-  SENSORY_SWIM: "sensory swim",
-  WOMENS_ONLY: ["women's only", "women only"],
-  PRIVATE_RENTAL: "private rental",
-  CLOSED_TO_PUBLIC: ["closed to the public", "closed to public"],
-  LANE: ["lane", "lanes"],
-  PLAY: "play",
-  FAMILY: "family",
-  RECREATIONAL: "recreational",
-  THERAPY_POOL: "therapy pool",
+// Keywords for event parsing
+export const KEYWORDS = {
+  // General keywords
+  LANE: "lane",
+  PLAY_OPEN: "play open",
   PLAY_POOL: "play pool",
+  PLAY_POOLS: "play pools",
+  PLAY_THERAPY: ["play & therapy", "play and therapy"],
+  FAMILY: "family",
+  SENSORY: "sensory",
+  THERAPY_POOL: "therapy pool",
+  RECREATIONAL: "recreational",
+
+  // Activities that use the lap pool (no lanes)
+  LAP_POOL_ACTIVITIES: ["aquafit using lap pool", "elderfit using lap pool"],
+
+  // Lessons & Lanes variations
+  LESSONS_AND_LANES: ["lessons & lanes", "lessons and lanes"],
+};
+
+// Pool availability configuration
+export const POOL_AVAILABILITY = {
+  // Special event titles
+  SPECIAL_EVENTS: {
+    BUSY: "Busy",
+    POOL_PARTY: "Pool Party",
+    PRIVATE_POOL_PARTY: "Private Pool Party Rental",
+  },
+
+  // Events where lanes are ALWAYS open
+  LANES_ALWAYS_OPEN: [
+    "members swim",
+    "senior swim",
+    "women's only swim",
+    "modl women's only swim",
+    "lane swim",
+    "recreational swim",
+  ],
+
+  // Events where lanes are ALWAYS closed
+  LANES_ALWAYS_CLOSED: [
+    "lap pool closed",
+    "no lanes",
+    "public swim - no lanes",
+    "public swimming - no lanes",
+    "busy",
+    "aquafit using lap pool",
+    "elderfit using lap pool",
+  ],
+
+  // Events where kids pool is ALWAYS open
+  KIDS_ALWAYS_OPEN: [
+    "members swim",
+    "women's only swim",
+    "modl women's only swim",
+    "public swim - no lanes",
+    "public swim",
+    "public swimming",
+    "recreational swim",
+    "family swim",
+  ],
+
+  // Events where kids pool is ALWAYS closed
+  KIDS_ALWAYS_CLOSED: ["senior swim", "lane swim only", "busy"],
+
+  // Access type indicators
+  ACCESS_MEMBERS: ["members swim", "member only"],
+  ACCESS_WOMENS: ["women's only swim", "modl women's only swim", "women only"],
+  ACCESS_SENIORS: ["senior swim", "seniors 60+"],
 };
