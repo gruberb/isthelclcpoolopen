@@ -25,16 +25,24 @@
                 min-height: 100vh;
                 scroll-behavior: smooth;
             }
-            .container {
+            .header {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
                 width: 100%;
-                max-width: 600px;
+                background: #eef2f5; /* match your page bg so it “hides” content underneath */
+                z-index: 1000; /* so it stays on top of the cards */
+                padding: 30px 0; /* preserve your 30px vertical “breathing room” */
                 text-align: center;
-                margin-bottom: 30px;
+                margin-bottom: 0; /* remove the old 30px bottom gap */
+                box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
             }
             h1 {
                 font-size: 2rem;
                 font-weight: 500;
                 margin-bottom: 12px;
+                padding: 10px;
             }
             .controls {
                 padding: 8px 14px;
@@ -50,6 +58,8 @@
                 gap: 24px;
                 width: 100%;
                 max-width: 600px;
+                margin-top: 170px;
+                margin-bottom: 50px;
             }
             .card {
                 background: #fff;
@@ -60,6 +70,7 @@
                     transform 0.2s,
                     box-shadow 0.2s;
                 width: 100%;
+                scroll-margin-top: 220px;
             }
             .card:hover {
                 transform: translateY(-4px);
@@ -100,16 +111,25 @@
             .error {
                 color: #c0392b;
             }
-            .swimming {
+            .footer {
                 font-size: 0.8em;
                 color: #666;
                 margin-top: 20px;
+                position: fixed;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                background: #eef2f5; /* same bg as page */
+                z-index: 1000; /* above cards */
+                padding: 16px 0; /* adjust as you like */
                 text-align: center;
+                box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
             }
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="header">
             <h1>
                 When can I go skating
                 <select id="week-select" class="controls">
@@ -123,7 +143,7 @@
             <div class="loading">Loading...</div>
         </div>
 
-        <div class="swimming">
+        <div class="footer">
             <a href="https://isthelclcpoolopen.ca">
                 🏊 Want to go swimming? 🏊
             </a>
@@ -233,7 +253,7 @@
                     if (nextCard) {
                         nextCard.scrollIntoView({
                             behavior: "smooth",
-                            block: "center",
+                            block: "start",
                         });
                     }
                 } catch (err) {
