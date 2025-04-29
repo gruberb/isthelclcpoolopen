@@ -1,7 +1,7 @@
 import appState from "../state/appState.js";
 import { analyzeEvent } from "../utils/eventParser.js";
 import { formatTimeRemaining, formatTime } from "../utils/dateUtils.js";
-import { DOM_IDS, CSS_CLASSES } from "../constants.js";
+import { DOM_IDS, CSS_CLASSES, EVENT_TYPES } from "../constants.js";
 
 /**
  * Find the current status and next time change for a particular feature (lanes or kids)
@@ -48,12 +48,28 @@ export function findFeatureStatus(events, now, type) {
         restrictedAccess = analysis.restrictedAccess;
         membersOnly = analysis.membersOnly;
         restrictionType = analysis.type;
+
+        // For special events, just use the event's end time directly instead of looking for consecutive events
+        if (restrictedAccess || membersOnly) {
+          return {
+            isActive: true,
+            endTime: eventEnd,
+            details: analysis.details || {},
+            restrictedAccess,
+            membersOnly,
+            restrictionType,
+            specialEvent: true,
+            eventTitle: event.title,
+          };
+        }
+
         break; // Found a current event with the feature
       }
     }
   }
 
-  // If feature is currently active, find when it will end (looking at consecutive events)
+  // If feature is currently active (and not a special event which was returned above),
+  // find when it will end (looking at consecutive events)
   if (currentEvent) {
     // Start from when the current event ends
     featureEndTime = new Date(currentEvent.end);
@@ -89,6 +105,11 @@ export function findFeatureStatus(events, now, type) {
       // If this event starts exactly when our current sequence ends (no gap)
       // and has the feature we're looking for, extend our continuous time
       if (Math.abs(eventStart - currentEndTime) < 60000 && hasFeature) {
+        // Stop extending if we encounter a special event (members only, restricted access)
+        if (analysis.restrictedAccess || analysis.membersOnly) {
+          break;
+        }
+
         // Extend the continuous availability time
         featureEndTime = eventEnd;
         currentEndTime = eventEnd;
@@ -106,6 +127,8 @@ export function findFeatureStatus(events, now, type) {
       restrictedAccess,
       membersOnly,
       restrictionType,
+      specialEvent: false,
+      eventTitle: currentEvent.title,
     };
   }
 
@@ -123,6 +146,8 @@ export function findFeatureStatus(events, now, type) {
 
         if (hasFeature) {
           nextFeatureStartTime = eventStart;
+          restrictedAccess = analysis.restrictedAccess;
+          membersOnly = analysis.membersOnly;
           break; // Found the next event with the feature
         }
       }
@@ -134,6 +159,8 @@ export function findFeatureStatus(events, now, type) {
         isActive: false,
         inGap: true,
         nextStartTime: nextFeatureStartTime,
+        restrictedAccess,
+        membersOnly,
       };
     }
   }
@@ -143,6 +170,43 @@ export function findFeatureStatus(events, now, type) {
     isActive: false,
     inGap: false,
   };
+}
+
+/**
+ * Format the time detail text based on event type and remaining time
+ * @param {Object} status The feature status object
+ * @returns {string} Formatted time detail string
+ */
+function formatTimeDetail(status) {
+  if (!status.isActive) {
+    if (status.inGap) {
+      let openText = `Opens at ${formatTime(status.nextStartTime)}`;
+      if (status.restrictedAccess) {
+        openText += " (Restricted)";
+      } else if (status.membersOnly) {
+        openText += " (Members Only)";
+      }
+      return openText;
+    }
+    return "No more swimming today";
+  }
+
+  let timeRemaining = formatTimeRemaining(status.endTime);
+
+  // For special events, add access type to the time remaining
+  if (status.restrictedAccess) {
+    const restrictionType =
+      status.restrictionType === EVENT_TYPES.WOMENS_ONLY_FULL
+        ? "Women only"
+        : status.restrictionType === EVENT_TYPES.SENIOR_ONLY_60
+          ? "Seniors 60+"
+          : "Restricted access";
+    return `${restrictionType} - ${timeRemaining}`;
+  } else if (status.membersOnly) {
+    return `Members only - ${timeRemaining}`;
+  }
+
+  return timeRemaining;
 }
 
 /**
@@ -166,8 +230,11 @@ export function updateCurrentStatus() {
     return;
   }
 
-  // Update lanes status
+  // Simplify status indicators to just YES/NO
   lanesStatusEl.textContent = lanesStatus.isActive ? "YES" : "NO";
+  kidsStatusEl.textContent = kidsStatus.isActive ? "YES" : "NO";
+
+  // Set appropriate CSS classes (keep the color coding)
   lanesStatusEl.className = `${CSS_CLASSES.STATUS_INDICATOR} ${
     lanesStatus.restrictedAccess
       ? CSS_CLASSES.RESTRICTED
@@ -178,8 +245,6 @@ export function updateCurrentStatus() {
           : CSS_CLASSES.CLOSED
   }`;
 
-  // Update kids status
-  kidsStatusEl.textContent = kidsStatus.isActive ? "YES" : "NO";
   kidsStatusEl.className = `${CSS_CLASSES.STATUS_INDICATOR} ${
     kidsStatus.restrictedAccess
       ? CSS_CLASSES.RESTRICTED
@@ -190,50 +255,9 @@ export function updateCurrentStatus() {
           : CSS_CLASSES.CLOSED
   }`;
 
-  // Update time information for lanes
-  if (lanesStatus.isActive) {
-    let lanesDetail = formatTimeRemaining(lanesStatus.endTime);
-
-    // Add restriction information if applicable
-    if (lanesStatus.restrictedAccess) {
-      const restrictionType =
-        lanesStatus.restrictionType === "Women's Only (All Pools)"
-          ? "Women only"
-          : "Seniors 60+";
-      lanesDetail = `${restrictionType} - ${lanesDetail}`;
-    } else if (lanesStatus.membersOnly) {
-      lanesDetail = `Members only - ${lanesDetail}`;
-    }
-    // Removed lane count information as requested
-
-    lanesTimeEl.textContent = lanesDetail;
-  } else if (lanesStatus.inGap) {
-    lanesTimeEl.textContent = `Opens at ${formatTime(lanesStatus.nextStartTime)}`;
-  } else {
-    lanesTimeEl.textContent = "No more lane swimming today";
-  }
-
-  // Update time information for kids
-  if (kidsStatus.isActive) {
-    let kidsDetail = formatTimeRemaining(kidsStatus.endTime);
-
-    // Add restriction information if applicable
-    if (kidsStatus.restrictedAccess) {
-      const restrictionType =
-        kidsStatus.restrictionType === "Women's Only (All Pools)"
-          ? "Women only"
-          : "Seniors 60+";
-      kidsDetail = `${restrictionType} - ${kidsDetail}`;
-    } else if (kidsStatus.membersOnly) {
-      kidsDetail = `Members only - ${kidsDetail}`;
-    }
-
-    kidsTimeEl.textContent = kidsDetail;
-  } else if (kidsStatus.inGap) {
-    kidsTimeEl.textContent = `Opens at ${formatTime(kidsStatus.nextStartTime)}`;
-  } else {
-    kidsTimeEl.textContent = "No more kids swimming today";
-  }
+  // Update time information using the formatting function
+  lanesTimeEl.textContent = formatTimeDetail(lanesStatus);
+  kidsTimeEl.textContent = formatTimeDetail(kidsStatus);
 
   // Update last updated time
   const lastUpdatedElement = document.getElementById(DOM_IDS.LAST_UPDATED);
