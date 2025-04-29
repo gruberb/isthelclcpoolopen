@@ -158,7 +158,12 @@ export const POOL_AVAILABILITY = {
   ],
 
   // Events where kids pool is ALWAYS closed
-  KIDS_ALWAYS_CLOSED: ["senior swim", "lane swim only", "busy"],
+  KIDS_ALWAYS_CLOSED: [
+    "senior swim",
+    "lane swim only",
+    "busy",
+    "parent & tot swim",
+  ],
 
   // Access type indicators
   ACCESS_MEMBERS: ["members swim", "member only"],

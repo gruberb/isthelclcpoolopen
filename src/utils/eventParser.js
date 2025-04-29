@@ -104,6 +104,18 @@ export function analyzeEvent(event) {
   const title = event.title;
   const lowerTitle = title.toLowerCase();
 
+  // Check if this is a "Busy" event first
+  if (title === POOL_AVAILABILITY.SPECIAL_EVENTS.BUSY) {
+    return {
+      lanes: false,
+      kids: false,
+      membersOnly: false,
+      restrictedAccess: false,
+      type: EVENT_TYPES.BUSY_MAINTENANCE,
+      details: { lanes: 0 },
+    };
+  }
+
   // Check for lane availability - priority order matters
   let lanes = false;
   if (
@@ -156,8 +168,6 @@ export function analyzeEvent(event) {
     restrictionType = EVENT_TYPES.SENSORY_SWIM;
   } else if (membersOnly) {
     restrictionType = EVENT_TYPES.MEMBERS_ONLY;
-  } else if (matchesAny(title, POOL_AVAILABILITY.SPECIAL_EVENTS.BUSY)) {
-    restrictionType = EVENT_TYPES.BUSY_MAINTENANCE;
   }
 
   // Get lane count
