@@ -229,7 +229,7 @@ h1 {
 
 .loading {
     text-align: center;
-    padding: 40px;
+    padding: 5px 40px;
     font-size: 1.2em;
     color: #666;
 }
@@ -237,6 +237,13 @@ h1 {
 .error {
     color: #dc3545;
     padding: 20px;
+    text-align: center;
+}
+
+.skating {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 20px;
     text-align: center;
 }
 

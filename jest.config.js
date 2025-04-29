@@ -4,7 +4,7 @@ module.exports = {
     "^.+\\.js$": "babel-jest",
   },
   moduleNameMapper: {
-    "^/constants\\.js$": "<rootDir>/constants.js",
+    "^/constants\\.js$": "<rootDir>/src/constants.js",
   },
   moduleDirectories: ["node_modules", "<rootDir>"],
   setupFiles: ["<rootDir>/jest.setup.js"],
