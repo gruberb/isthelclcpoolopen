@@ -289,10 +289,3 @@ h1 {
 .restricted {
     will-change: color;
 }
-
-/* Preconnect to the API domain to speed up connection */
-/* Add this to your HTML head section */
-/*
-<link rel="preconnect" href="https://www.connect2rec.com">
-<link rel="preconnect" href="https://corsproxy.io">
-*/

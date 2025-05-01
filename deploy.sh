@@ -26,17 +26,18 @@ npx terser dist/bundle.js -c -m -o "$DEPLOY_DIR/js/bundle.js"
 # Copy and minify CSS
 echo "  • Processing CSS..."
 if [ -f "src/styles.css" ]; then
-    # Simple CSS minification
-    cat src/styles.css | \
-        sed 's/\/\*.*\*\///g' | \
-        sed 's/^\s*//g' | \
-        sed 's/\s*$//g' | \
-        sed 's/\s*{\s*/\{/g' | \
-        sed 's/\s*}\s*/\}/g' | \
-        sed 's/\s*;\s*/;/g' | \
-        sed 's/\s*:\s*/:/g' | \
-        sed 's/,\s*/,/g' | \
-        tr -d '\n' > "$DEPLOY_DIR/styles.css"
+    cp src/styles.css "$DEPLOY_DIR/styles.css"
+    # # Simple CSS minification
+    # cat src/styles.css | \
+    #     sed 's/\/\*.*\*\///g' | \
+    #     sed 's/^\s*//g' | \
+    #     sed 's/\s*$//g' | \
+    #     sed 's/\s*{\s*/\{/g' | \
+    #     sed 's/\s*}\s*/\}/g' | \
+    #     sed 's/\s*;\s*/;/g' | \
+    #     sed 's/\s*:\s*/:/g' | \
+    #     sed 's/,\s*/,/g' | \
+    #     tr -d '\n' > "$DEPLOY_DIR/styles.css"
 fi
 
 # Copy index.html and just update script reference
