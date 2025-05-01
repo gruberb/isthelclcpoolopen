@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>When can I go skating this week?</title>
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    sans-serif;
+                background: #eef2f5;
+                color: #222;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 100vh;
+                scroll-behavior: smooth;
+            }
+            .header {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                background: #eef2f5; /* match your page bg so it “hides” content underneath */
+                z-index: 1000; /* so it stays on top of the cards */
+                padding: 30px 0; /* preserve your 30px vertical “breathing room” */
+                text-align: center;
+                margin-bottom: 0; /* remove the old 30px bottom gap */
+                box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+            }
+            h1 {
+                font-size: 2rem;
+                font-weight: 500;
+                margin-bottom: 12px;
+                padding: 10px;
+            }
+            .controls {
+                padding: 8px 14px;
+                font-size: 1rem;
+                border-radius: 6px;
+                border: 1px solid #bbb;
+                background: #fff;
+                cursor: pointer;
+            }
+            .cards {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                width: 100%;
+                max-width: 600px;
+                margin-top: 170px;
+                margin-bottom: 50px;
+            }
+            .card {
+                background: #fff;
+                border-radius: 8px;
+                padding: 24px;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+                transition:
+                    transform 0.2s,
+                    box-shadow 0.2s;
+                width: 100%;
+                scroll-margin-top: 220px;
+            }
+            .card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            }
+            .card.past {
+                opacity: 0.4;
+                filter: grayscale(60%);
+            }
+            .card-date {
+                font-size: 1.2em;
+                color: #555;
+                margin-bottom: 6px;
+            }
+            .card-day {
+                font-size: 1.4em;
+                font-weight: 600;
+                margin-bottom: 8px;
+                color: #333;
+            }
+            .card-time {
+                font-size: 1.2em;
+                color: #444;
+                margin-bottom: 12px;
+            }
+            .card-title {
+                font-size: 1.3em;
+                font-weight: bold;
+                color: #0066cc;
+            }
+            .loading,
+            .error {
+                font-size: 1.2em;
+                color: #666;
+                text-align: center;
+                margin-top: 40px;
+            }
+            .error {
+                color: #c0392b;
+            }
+            .footer {
+                font-size: 0.8em;
+                color: #666;
+                margin-top: 20px;
+                position: fixed;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                background: #eef2f5; /* same bg as page */
+                z-index: 1000; /* above cards */
+                padding: 16px 0; /* adjust as you like */
+                text-align: center;
+                box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                When can I go skating
+                <select id="week-select" class="controls">
+                    <option value="0">this week</option>
+                    <option value="1">next week</option>
+                </select>
+                ?
+            </h1>
+        </div>
+        <div id="events" class="cards">
+            <div class="loading">Loading...</div>
+        </div>
+
+        <div class="footer">
+            <a href="https://isthelclcpoolopen.ca">
+                🏊 Want to go swimming? 🏊
+            </a>
+        </div>
+
+        <script>
+            // pad to 2 digits
+            const pad = (n) => n.toString().padStart(2, "0");
+
+            // serialize to YYYY-MM-DDTHH:mm:ss±HH:MM
+            function toLocalApiString(d) {
+                const Y = d.getFullYear();
+                const M = pad(d.getMonth() + 1);
+                const D = pad(d.getDate());
+                const h = pad(d.getHours());
+                const m = pad(d.getMinutes());
+                const s = pad(d.getSeconds());
+                const tzo = -d.getTimezoneOffset();
+                const sign = tzo >= 0 ? "+" : "-";
+                const oz = pad(Math.floor(Math.abs(tzo) / 60));
+                const om = pad(Math.abs(tzo) % 60);
+                return `${Y}-${M}-${D}T${h}:${m}:${s}${sign}${oz}:${om}`;
+            }
+
+            // find Monday of current week
+            function getWeekBounds(offsetWeeks = 0) {
+                const today = new Date();
+                const dow = today.getDay();
+                const deltaToMon = (dow + 6) % 7;
+                const mon = new Date(today);
+                mon.setHours(0, 0, 0, 0);
+                mon.setDate(today.getDate() - deltaToMon + offsetWeeks * 7);
+                const nextMon = new Date(mon);
+                nextMon.setDate(mon.getDate() + 7);
+                return { start: mon, end: nextMon };
+            }
+
+            function formatDate(d) {
+                return d.toLocaleDateString(undefined, {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                });
+            }
+            function getWeekday(d) {
+                return d.toLocaleDateString(undefined, { weekday: "long" });
+            }
+            function formatTime(d) {
+                return d.toLocaleTimeString(undefined, {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                });
+            }
+
+            async function loadEvents() {
+                const sel = document.getElementById("week-select");
+                const idx = parseInt(sel.value, 10);
+                const { start, end } = getWeekBounds(idx);
+                const endpoint =
+                    "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments" +
+                    "?selectedId=3981fb3b-0cd1-42a3-a538-e6c3f35e50ee" +
+                    `&start=${toLocalApiString(start)}` +
+                    `&end=${toLocalApiString(end)}`;
+
+                const container = document.getElementById("events");
+                container.innerHTML = '<div class="loading">Loading...</div>';
+
+                try {
+                    const res = await fetch(endpoint);
+                    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                    const all = await res.json();
+                    const pub = all.filter((e) => {
+                        const t = e.title.toLowerCase();
+                        return (
+                            t.includes("public skate") ||
+                            t.includes("public skating") ||
+                            t.includes("adult skating")
+                        );
+                    });
+
+                    if (pub.length === 0) {
+                        container.innerHTML =
+                            '<div class="error">No public skating this week.</div>';
+                        return;
+                    }
+
+                    container.innerHTML = "";
+                    const now = new Date();
+                    pub.forEach((e) => {
+                        const s = new Date(e.start);
+                        const en = new Date(e.end);
+                        const card = document.createElement("div");
+                        card.className = "card";
+                        if (s < now) card.classList.add("past");
+                        card.innerHTML = `
+            <div class="card-date">${formatDate(s)}</div>
+            <div class="card-day">${getWeekday(s)}</div>
+            <div class="card-time">${formatTime(s)} – ${formatTime(en)}</div>
+            <div class="card-title">${e.title}</div>
+          `;
+                        container.appendChild(card);
+                    });
+
+                    // auto-scroll to next available (first non-past) card
+                    const nextCard =
+                        container.querySelector(".card:not(.past)");
+                    if (nextCard) {
+                        nextCard.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                } catch (err) {
+                    container.innerHTML = `<div class="error">Error: ${err.message}</div>`;
+                    console.error(err);
+                }
+            }
+
+            document
+                .getElementById("week-select")
+                .addEventListener("change", loadEvents);
+
+            document.addEventListener("DOMContentLoaded", loadEvents);
+        </script>
+    </body>
+</html>

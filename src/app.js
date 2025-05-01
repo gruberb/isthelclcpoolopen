@@ -61,6 +61,9 @@ function processSchedule(data) {
   if (timezoneElement) {
     timezoneElement.textContent = userTimezone;
   }
+
+  // Mark loading as complete
+  document.body.classList.remove("loading");
 }
 
 /**
@@ -76,17 +79,37 @@ async function fetchSchedule() {
     if (scheduleContent) {
       scheduleContent.innerHTML = `<div class="${CSS_CLASSES.ERROR}">Unable to load schedule. Please try again later.</div>`;
     }
+
+    // Still remove loading state even on error
+    document.body.classList.remove("loading");
   }
 }
 
 /**
- * Initialize the application
+ * Initialize essential UI components immediately
+ */
+function initializeEssentialUI() {
+  // Initialize status display placeholders immediately for better perceived performance
+  const lanesStatusEl = document.getElementById(DOM_IDS.LANES_STATUS);
+  const kidsStatusEl = document.getElementById(DOM_IDS.KIDS_STATUS);
+
+  if (lanesStatusEl) lanesStatusEl.textContent = "-";
+  if (kidsStatusEl) kidsStatusEl.textContent = "-";
+
+  // Set up tabs right away as this is a simple DOM operation
+  initializeTabs();
+
+  // Add loading indicator to body for initial state
+  document.body.classList.add("loading");
+}
+
+/**
+ * Initialize the full application
  */
 function initializeApp() {
   // Initialize all components
   initializeStatusDisplay();
   initializeScheduleDisplay();
-  initializeTabs();
 
   // Initial fetch
   fetchSchedule();
@@ -102,5 +125,12 @@ function initializeApp() {
   }, TIME_UPDATE_INTERVAL);
 }
 
-// Start the application when the DOM is loaded
-document.addEventListener("DOMContentLoaded", initializeApp);
+// Split initialization into critical and non-critical paths
+document.addEventListener("DOMContentLoaded", () => {
+  // Initialize essential UI immediately for fast initial render
+  initializeEssentialUI();
+
+  // Defer full initialization to let the page render first
+  // This improves perceived performance
+  setTimeout(initializeApp, 10);
+});

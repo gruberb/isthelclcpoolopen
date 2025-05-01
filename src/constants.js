@@ -3,6 +3,7 @@ export const FACILITY_ID = "3121e68a-d46d-4865-b4ce-fc085f688529";
 export const API_BASE_URL =
   "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments";
 export const CORS_PROXY = "https://corsproxy.io/?";
+export const CACHE_DURATION_MS = 30 * 60 * 1000; // 30 minutes
 
 // Date range
 export const DATE_RANGE_DAYS = 8; // Today + 7 days

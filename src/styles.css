@@ -265,3 +265,34 @@ h1 {
         max-width: 300px;
     }
 }
+
+/* Reduce layout shift during loading */
+.status-indicator {
+    min-height: 65px; /* Approximate height of the indicator when it displays YES/NO */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Optimize transitions for smoother UI */
+.tab,
+.status-box,
+.event {
+    transition: all 0.15s ease-out;
+    will-change: transform, opacity; /* Hint for browser optimization */
+}
+
+/* Improve rendering performance for status indicators */
+.open,
+.closed,
+.members,
+.restricted {
+    will-change: color;
+}
+
+/* Preconnect to the API domain to speed up connection */
+/* Add this to your HTML head section */
+/*
+<link rel="preconnect" href="https://www.connect2rec.com">
+<link rel="preconnect" href="https://corsproxy.io">
+*/
