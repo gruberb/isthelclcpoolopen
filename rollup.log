@@ -1,3 +1,57 @@
 [4mrollup v3.29.4[24m
 [36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m49ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m61ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m40ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m42ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m41ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
 [32mcreated [1mdist/bundle.js[22m in [1m48ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m48ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[1m[31m[!] [1mRollupError: Unexpected token[22m[1m[39m[22m
+src/components/statusDisplay.js (206:22)
+[2m204: 
+205:   let timeRemaining = formatTimeRemaining(status.endTime);
+206:   console.log("STATUS": status);
+                           ^
+207:   // For special events, add specific access type to the time remaining
+208:   if (status.restrictedAccess) {[22m
+[2m    at error (/Users/bgruber/CodingIsFun/_personal/isthelclcopen/node_modules/rollup/dist/shared/rollup.js:353:30)
+    at Module.error (/Users/bgruber/CodingIsFun/_personal/isthelclcopen/node_modules/rollup/dist/shared/rollup.js:15237:16)
+    at Module.tryParse (/Users/bgruber/CodingIsFun/_personal/isthelclcopen/node_modules/rollup/dist/shared/rollup.js:15968:25)
+    at Module.setSource (/Users/bgruber/CodingIsFun/_personal/isthelclcopen/node_modules/rollup/dist/shared/rollup.js:15569:39)
+    at ModuleLoader.addModuleSource (/Users/bgruber/CodingIsFun/_personal/isthelclcopen/node_modules/rollup/dist/shared/rollup.js:25804:20)[22m
+
+
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m47ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m48ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m46ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m58ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m40ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m25ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m35ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m35ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m46ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m33ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m48ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m40ms[22m[39m
+[36mbundles [1msrc/app.js[22m → [1mdist/bundle.js[22m...[39m
+[32mcreated [1mdist/bundle.js[22m in [1m40ms[22m[39m

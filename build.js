@@ -1,4 +1,3 @@
-// build.js - A simple build script
 const fs = require("fs");
 const path = require("path");
 const { minify } = require("terser");

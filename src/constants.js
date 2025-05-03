@@ -50,7 +50,7 @@ export const EVENT_TYPES = {
   AQUAFIT: "Aquafit",
   PARENT_TOT: "Parent & Tot",
   SENSORY_SWIM: "Sensory Swim",
-  WOMENS_ONLY: "Women's Only",
+  WOMENS_ONLY: "MODL Women's Only Swim",
   WOMENS_ONLY_FULL: "Women's Only (All Pools)",
   SENIOR_ONLY_60: "Seniors 60+ Only",
   PRIVATE_CLOSED: "Private/Closed",

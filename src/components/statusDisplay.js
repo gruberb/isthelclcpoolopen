@@ -148,6 +148,7 @@ export function findFeatureStatus(events, now, type) {
           nextFeatureStartTime = eventStart;
           restrictedAccess = analysis.restrictedAccess;
           membersOnly = analysis.membersOnly;
+          restrictionType = analysis.type;
           break; // Found the next event with the feature
         }
       }
@@ -161,6 +162,7 @@ export function findFeatureStatus(events, now, type) {
         nextStartTime: nextFeatureStartTime,
         restrictedAccess,
         membersOnly,
+        restrictionType: restrictionType,
       };
     }
   }
@@ -182,7 +184,14 @@ function formatTimeDetail(status) {
     if (status.inGap) {
       let openText = `Opens at ${formatTime(status.nextStartTime)}`;
       if (status.restrictedAccess) {
-        openText += " (Restricted)";
+        // More specific restriction type instead of generic "(Restricted)"
+        if (status.restrictionType === EVENT_TYPES.WOMENS_ONLY_FULL) {
+          openText += " (Women Only)";
+        } else if (status.restrictionType === EVENT_TYPES.SENIOR_ONLY_60) {
+          openText += " (Seniors 60+)";
+        } else {
+          openText += " (Restricted)"; // Fallback for other restrictions
+        }
       } else if (status.membersOnly) {
         openText += " (Members Only)";
       }
@@ -192,8 +201,7 @@ function formatTimeDetail(status) {
   }
 
   let timeRemaining = formatTimeRemaining(status.endTime);
-
-  // For special events, add access type to the time remaining
+  // For special events, add specific access type to the time remaining
   if (status.restrictedAccess) {
     const restrictionType =
       status.restrictionType === EVENT_TYPES.WOMENS_ONLY_FULL
@@ -236,23 +244,23 @@ export function updateCurrentStatus() {
 
   // Set appropriate CSS classes (keep the color coding)
   lanesStatusEl.className = `${CSS_CLASSES.STATUS_INDICATOR} ${
-    lanesStatus.restrictedAccess
-      ? CSS_CLASSES.RESTRICTED
-      : lanesStatus.membersOnly
-        ? CSS_CLASSES.MEMBERS
-        : lanesStatus.isActive
-          ? CSS_CLASSES.OPEN
-          : CSS_CLASSES.CLOSED
+    lanesStatus.isActive
+      ? lanesStatus.restrictedAccess
+        ? CSS_CLASSES.RESTRICTED
+        : lanesStatus.membersOnly
+          ? CSS_CLASSES.MEMBERS
+          : CSS_CLASSES.OPEN
+      : CSS_CLASSES.CLOSED
   }`;
 
   kidsStatusEl.className = `${CSS_CLASSES.STATUS_INDICATOR} ${
-    kidsStatus.restrictedAccess
-      ? CSS_CLASSES.RESTRICTED
-      : kidsStatus.membersOnly
-        ? CSS_CLASSES.MEMBERS
-        : kidsStatus.isActive
-          ? CSS_CLASSES.OPEN
-          : CSS_CLASSES.CLOSED
+    kidsStatus.isActive
+      ? kidsStatus.restrictedAccess
+        ? CSS_CLASSES.RESTRICTED
+        : kidsStatus.membersOnly
+          ? CSS_CLASSES.MEMBERS
+          : CSS_CLASSES.OPEN
+      : CSS_CLASSES.CLOSED
   }`;
 
   // Update time information using the formatting function
