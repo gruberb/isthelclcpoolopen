@@ -2,14 +2,7 @@
   'use strict';
 
   // Facility information
-  const FACILITY_ID = "3121e68a-d46d-4865-b4ce-fc085f688529";
-  const API_BASE_URL =
-    "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments";
-  const CORS_PROXY = "https://corsproxy.io/?";
   const CACHE_DURATION_MS = 30 * 60 * 1000; // 30 minutes
-
-  // Date range
-  const DATE_RANGE_DAYS = 8; // Today + 7 days
 
   // Time intervals
   const REFRESH_INTERVAL = 5 * 60 * 1000; // 5 minutes
@@ -172,28 +165,9 @@
     ACCESS_SENIORS: ["senior swim", "seniors 60+"],
   };
 
-  // Enhanced scheduleService.js with caching
-
   // Cache key for local storage
   const SCHEDULE_CACHE_KEY = "lclc_schedule_cache";
   const CACHE_TIMESTAMP_KEY = "lclc_schedule_timestamp";
-
-  /**
-   * Format a date for API consumption (in Atlantic timezone)
-   * @param {Date} date The date to format
-   * @returns {string} Formatted date string
-   */
-  function formatDateForAPI(date) {
-    // Format date as YYYY-MM-DD for simplicity
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, "0");
-    const day = String(date.getDate()).padStart(2, "0");
-    const hours = String(date.getHours()).padStart(2, "0");
-    const minutes = String(date.getMinutes()).padStart(2, "0");
-
-    // Use Atlantic Time offset (-03:00 for daylight savings)
-    return `${year}-${month}-${day}T${hours}:${minutes}:00-03:00`;
-  }
 
   /**
    * Check if cached data is still valid
@@ -247,55 +221,7 @@
   }
 
   /**
-   * Fetches schedule data from the API with retries
-   * @param {number} retries Number of retries on failure
-   * @returns {Promise<Array>} Schedule data from the API
-   */
-  async function fetchFromAPI(retries = 2) {
-    // Generate date range for the request
-    const startDate = new Date();
-    startDate.setHours(0, 0, 0, 0);
-
-    const endDate = new Date();
-    endDate.setDate(endDate.getDate() + DATE_RANGE_DAYS);
-    endDate.setHours(0, 0, 0, 0);
-
-    const apiUrl = `${API_BASE_URL}?selectedId=${FACILITY_ID}&start=${formatDateForAPI(startDate)}&end=${formatDateForAPI(endDate)}`;
-
-    try {
-      const response = await fetch(CORS_PROXY + encodeURIComponent(apiUrl), {
-        headers: {
-          Accept: "application/json",
-        },
-        // Add timeout to prevent hanging requests
-        signal: AbortSignal.timeout(8000),
-      });
-
-      if (!response.ok) {
-        throw new Error(`Failed to fetch schedule: ${response.status}`);
-      }
-
-      const data = await response.json();
-
-      // Cache successful response
-      cacheSchedule(data);
-
-      return data;
-    } catch (error) {
-      console.error("Error fetching schedule:", error);
-
-      // Retry logic
-      if (retries > 0) {
-        console.log(`Retrying... (${retries} attempts left)`);
-        return await fetchFromAPI(retries - 1);
-      }
-
-      throw error;
-    }
-  }
-
-  /**
-   * Fetches schedule data with cache support
+   * Fetches schedule data from the JSON file
    * @returns {Promise<Array>} Schedule data
    */
   async function fetchScheduleData() {
@@ -307,8 +233,27 @@
         return cachedData;
       }
 
-      // No valid cache, fetch fresh data
-      return await fetchFromAPI();
+      // No valid cache, fetch from JSON file
+      const filePath = `/data/pool.json`; // Fixed path
+      console.log(`Fetching pool data from ${filePath}`);
+
+      const response = await fetch(filePath);
+
+      if (!response.ok) {
+        throw new Error(
+          `Failed to fetch schedule data from JSON: ${response.status}`,
+        );
+      }
+
+      const jsonData = await response.json();
+
+      // Extract the actual data from the wrapper
+      const data = jsonData.data || [];
+
+      // Cache successful response
+      cacheSchedule(data);
+
+      return data;
     } catch (error) {
       console.error("Error in fetchScheduleData:", error);
 
@@ -967,7 +912,7 @@
     // Update last updated time
     const lastUpdatedElement = document.getElementById(DOM_IDS.LAST_UPDATED);
     if (lastUpdatedElement && appState.lastUpdated) {
-      lastUpdatedElement.textContent = appState.lastUpdated.toLocaleTimeString();
+      lastUpdatedElement.textContent = `Last updated: ${appState.lastUpdated.toLocaleString()}`;
     }
   }
 

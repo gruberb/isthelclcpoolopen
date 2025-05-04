@@ -111,20 +111,43 @@
             .error {
                 color: #c0392b;
             }
-            .footer {
-                font-size: 0.8em;
-                color: #666;
-                margin-top: 20px;
+            .footer-container {
                 position: fixed;
                 bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
+                left: 0;
                 width: 100%;
-                background: #eef2f5; /* same bg as page */
-                z-index: 1000; /* above cards */
-                padding: 16px 0; /* adjust as you like */
-                text-align: center;
+                background: #f5f5f5;
+                padding: 15px 0;
                 box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+                z-index: 100;
+            }
+
+            .footer-link {
+                font-size: 0.9em;
+                margin: 2px 0;
+            }
+
+            .footer-link a {
+                color: #0056b3;
+                text-decoration: none;
+            }
+
+            .footer-link a:hover {
+                text-decoration: underline;
+            }
+
+            .last-updated {
+                font-size: 0.8em;
+                color: #666;
+            }
+
+            /* Add padding to prevent content from being hidden behind the footer */
+            body {
+                padding-bottom: 100px;
             }
         </style>
     </head>
@@ -142,11 +165,19 @@
         <div id="events" class="cards">
             <div class="loading">Loading...</div>
         </div>
-
-        <div class="footer">
-            <a href="https://isthelclcpoolopen.ca">
-                🏊 Want to go swimming? 🏊
-            </a>
+        <!-- Updated footer with consistent structure -->
+        <div class="footer-container">
+            <div class="footer-link">
+                <a href="https://isthelclcpoolopen.ca">
+                    🏊 Want to go swimming? 🏊
+                </a>
+            </div>
+            <div class="footer-link">
+                <a href="https://isthelclcpoolopen.ca/libraries/">
+                    📚 Want to read books? 📚
+                </a>
+            </div>
+            <div class="last-updated"></div>
         </div>
 
         <script>
@@ -168,17 +199,30 @@
                 return `${Y}-${M}-${D}T${h}:${m}:${s}${sign}${oz}:${om}`;
             }
 
-            // find Monday of current week
+            // Modified week calculation function that matches your scraper logic
             function getWeekBounds(offsetWeeks = 0) {
-                const today = new Date();
-                const dow = today.getDay();
-                const deltaToMon = (dow + 6) % 7;
-                const mon = new Date(today);
-                mon.setHours(0, 0, 0, 0);
-                mon.setDate(today.getDate() - deltaToMon + offsetWeeks * 7);
-                const nextMon = new Date(mon);
-                nextMon.setDate(mon.getDate() + 7);
-                return { start: mon, end: nextMon };
+                // Use a fixed reference date (May 4, 2025 in Atlantic Time)
+                const referenceDate = new Date("2025-05-04T00:00:00-03:00");
+
+                // Calculate day of week (0 = Sunday, 1 = Monday, etc.)
+                const dow = referenceDate.getDay();
+
+                // Calculate days to subtract to get to Monday of this week
+                const daysToMonday = (dow + 6) % 7; // Convert Sunday=0 to Monday=0
+
+                // Create start date (Monday of the week)
+                const startDate = new Date(referenceDate);
+                startDate.setDate(
+                    referenceDate.getDate() - daysToMonday + offsetWeeks * 7,
+                );
+                startDate.setHours(0, 0, 0, 0);
+
+                // Create end date (Sunday of the week)
+                const endDate = new Date(startDate);
+                endDate.setDate(startDate.getDate() + 6);
+                endDate.setHours(23, 59, 59, 999);
+
+                return { start: startDate, end: endDate };
             }
 
             function formatDate(d) {
@@ -198,54 +242,72 @@
                 });
             }
 
+            // Then in your loadEvents function:
             async function loadEvents() {
                 const sel = document.getElementById("week-select");
                 const idx = parseInt(sel.value, 10);
+
+                // Get correct week bounds based on our calculation
                 const { start, end } = getWeekBounds(idx);
-                const endpoint =
-                    "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments" +
-                    "?selectedId=3981fb3b-0cd1-42a3-a538-e6c3f35e50ee" +
-                    `&start=${toLocalApiString(start)}` +
-                    `&end=${toLocalApiString(end)}`;
 
                 const container = document.getElementById("events");
                 container.innerHTML = '<div class="loading">Loading...</div>';
 
                 try {
-                    const res = await fetch(endpoint);
+                    // Fetch from local JSON file
+                    const res = await fetch("/data/skating.json");
                     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-                    const all = await res.json();
-                    const pub = all.filter((e) => {
-                        const t = e.title.toLowerCase();
-                        return (
-                            t.includes("public skate") ||
-                            t.includes("public skating") ||
-                            t.includes("adult skating")
-                        );
+
+                    const jsonData = await res.json();
+                    const all = jsonData.data;
+
+                    // Filter events for the correct week
+                    const weekEvents = all.filter((e) => {
+                        const eventDate = new Date(e.start);
+                        return eventDate >= start && eventDate <= end;
                     });
 
-                    if (pub.length === 0) {
+                    if (weekEvents.length === 0) {
                         container.innerHTML =
-                            '<div class="error">No public skating this week.</div>';
+                            '<div class="error">No public skating events found for this week.</div>';
                         return;
                     }
 
                     container.innerHTML = "";
                     const now = new Date();
-                    pub.forEach((e) => {
+
+                    // Filter for the selected week
+                    const today = new Date();
+                    const startOfWeek = new Date(today);
+                    startOfWeek.setDate(
+                        today.getDate() - today.getDay() + idx * 7,
+                    );
+                    startOfWeek.setHours(0, 0, 0, 0);
+
+                    const endOfWeek = new Date(startOfWeek);
+                    endOfWeek.setDate(startOfWeek.getDate() + 7);
+
+                    weekEvents.forEach((e) => {
                         const s = new Date(e.start);
                         const en = new Date(e.end);
                         const card = document.createElement("div");
                         card.className = "card";
                         if (s < now) card.classList.add("past");
                         card.innerHTML = `
-            <div class="card-date">${formatDate(s)}</div>
-            <div class="card-day">${getWeekday(s)}</div>
-            <div class="card-time">${formatTime(s)} – ${formatTime(en)}</div>
-            <div class="card-title">${e.title}</div>
-          `;
+                        <div class="card-date">${formatDate(s)}</div>
+                        <div class="card-day">${getWeekday(s)}</div>
+                        <div class="card-time">${formatTime(s)} – ${formatTime(en)}</div>
+                        <div class="card-title">${e.title}</div>
+                      `;
                         container.appendChild(card);
                     });
+
+                    // Update last updated text
+                    const lastUpdatedElement =
+                        document.querySelector(".last-updated");
+                    if (lastUpdatedElement && jsonData.lastUpdated) {
+                        lastUpdatedElement.textContent = `Last updated: ${new Date(jsonData.lastUpdated).toLocaleString()}`;
+                    }
 
                     // auto-scroll to next available (first non-past) card
                     const nextCard =

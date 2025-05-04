@@ -1,0 +1,16 @@
+{
+  "name": "lclc-data-scrapers",
+  "version": "1.0.0",
+  "description": "Data scrapers for LCLC facilities",
+  "main": "index.js",
+  "scripts": {
+    "scrape-pool": "node pool-scraper.js",
+    "scrape-skating": "node skating-scraper.js",
+    "scrape-libraries": "node libraries-scraper.js",
+    "scrape-all": "node pool-scraper.js && node skating-scraper.js && node libraries-scraper.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.9",
+    "jsdom": "^22.1.0"
+  }
+}

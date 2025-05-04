@@ -270,7 +270,7 @@ export function updateCurrentStatus() {
   // Update last updated time
   const lastUpdatedElement = document.getElementById(DOM_IDS.LAST_UPDATED);
   if (lastUpdatedElement && appState.lastUpdated) {
-    lastUpdatedElement.textContent = appState.lastUpdated.toLocaleTimeString();
+    lastUpdatedElement.textContent = `Last updated: ${appState.lastUpdated.toLocaleString()}`;
   }
 }
 
