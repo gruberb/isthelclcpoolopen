@@ -227,7 +227,6 @@
             .last-updated {
                 font-size: 0.8em;
                 color: #666;
-                margin-top: 20px;
             }
 
             .refresh-section {
@@ -339,10 +338,23 @@
 
             <!-- Schedule tab content -->
             <div id="schedule-tab" class="tab-content">
-                <!-- Schedule content remains the same -->
-            </div>
+                <div id="schedule-loading" class="loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading schedule...</p>
+                </div>
 
-            <div id="last-updated" class="last-updated"></div>
+                <div
+                    id="library-tabs"
+                    class="library-tabs"
+                    style="display: none"
+                >
+                    <!-- Library tabs will be inserted here -->
+                </div>
+
+                <div id="library-schedule" class="library-schedule">
+                    <!-- Library schedules will be inserted here -->
+                </div>
+            </div>
 
             <div class="refresh-section">
                 <button id="refresh-btn">Refresh Data</button>
@@ -362,7 +374,7 @@
                     ⛸️ Want to go skating? ⛸️
                 </a>
             </div>
-            <div class="last-updated"></div>
+            <div id="last-updated" class="last-updated"></div>
         </div>
 
         <script>
@@ -705,9 +717,11 @@
                 // Update schedule display - always do this
                 updateScheduleDisplay();
 
-                // Update last updated timestamp
-                if (state.lastUpdated) {
-                    elements.lastUpdated.textContent = `Last updated: ${state.lastUpdated.toLocaleDateString()} ${state.lastUpdated.toLocaleTimeString()}`;
+                // Update last updated text
+                const lastUpdatedElement =
+                    document.getElementById("last-updated");
+                if (lastUpdatedElement && state.lastUpdated) {
+                    lastUpdatedElement.textContent = `Last updated: ${state.lastUpdated.toLocaleString()}`;
                 }
 
                 // Mark as initialized after the first complete update
@@ -907,24 +921,5 @@
             // Initialize when the DOM is fully loaded
             document.addEventListener("DOMContentLoaded", init);
         </script>
-
-        <!-- <div class="refresh-section">
-            <button id="refresh-btn">Refresh Data</button>
-            <p class="note">Data refreshes automatically weekly</p>
-        </div> -->
-
-        <div class="footer-container">
-            <div class="footer-link">
-                <a href="https://isthelclcpoolopen.ca">
-                    🏊 Want to go swimming? 🏊
-                </a>
-            </div>
-            <div class="footer-link">
-                <a href="https://isthelclcpoolopen.ca/skating/">
-                    ⛸️ Want to go skating? ⛸️
-                </a>
-            </div>
-            <div id="last-updated" class="last-updated"></div>
-        </div>
     </body>
 </html>
