@@ -120,31 +120,6 @@
                 justify-content: center;
             }
 
-            .library-tabs {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 20px;
-                gap: 10px;
-                flex-wrap: wrap;
-            }
-
-            .library-tab {
-                padding: 8px 16px;
-                background: white;
-                border: 1px solid #ddd;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: all 50ms;
-                width: 180px; /* Fixed width */
-                text-align: center;
-            }
-
-            .library-tab.active {
-                background: #0056b3;
-                color: white;
-                border-color: #0056b3;
-            }
-
             .library-schedule-content {
                 display: none;
                 background: white;
@@ -331,11 +306,19 @@
                 </div>
 
                 <div
-                    id="library-tabs"
-                    class="library-tabs"
-                    style="display: none"
+                    style="margin-bottom: 20px; display: none"
+                    id="library-select-container"
                 >
-                    <!-- Library tabs will be inserted here -->
+                    <select
+                        id="library-select"
+                        style="
+                            padding: 8px;
+                            margin: 0 10px;
+                            border: 1px solid #ddd;
+                            border-radius: 5px;
+                            box-sizing: border-box;
+                        "
+                    ></select>
                 </div>
 
                 <div id="library-schedule" class="library-schedule">
@@ -377,7 +360,6 @@
             // DOM elements
             const elements = {
                 statusContainer: document.getElementById("status-container"),
-                libraryTabs: document.getElementById("library-tabs"),
                 librarySchedule: document.getElementById("library-schedule"),
                 scheduleLoading: document.getElementById("schedule-loading"),
                 lastUpdated: document.getElementById("last-updated"),
@@ -421,7 +403,6 @@
                         if (tabId === "schedule" && state.libraries) {
                             // Make sure schedule content is visible
                             elements.scheduleLoading.style.display = "none";
-                            elements.libraryTabs.style.display = "flex";
                         }
                     });
                 });
@@ -715,7 +696,9 @@
                 `;
 
                     elements.scheduleLoading.style.display = "block";
-                    elements.libraryTabs.style.display = "none";
+                    document.getElementById(
+                        "library-select-container",
+                    ).style.display = "none";
                 }
             }
 
@@ -781,28 +764,41 @@
 
                 // Hide loading spinner and show content
                 elements.scheduleLoading.style.display = "none";
-                elements.libraryTabs.style.display = "flex";
 
                 // Set default active library tab if not set
                 if (!state.activeLibraryTab) {
                     state.activeLibraryTab = Object.keys(state.libraries)[0];
                 }
 
-                // Generate library tabs
-                let tabsHtml = "";
-                Object.entries(state.libraries).forEach(([key, library]) => {
-                    const displayName =
-                        libraryDisplayNames[library.name] || library.name;
-                    tabsHtml += `
-                        <div
-                            class="library-tab ${state.activeLibraryTab === key ? "active" : ""}"
-                            data-library="${key}"
-                        >
-                            ${displayName}
-                        </div>
-                    `;
-                });
-                elements.libraryTabs.innerHTML = tabsHtml;
+                // Generate library select dropdown
+                const selectContainer = document.getElementById(
+                    "library-select-container",
+                );
+                const selectElement = document.getElementById("library-select");
+                selectContainer.style.display = "block";
+
+                // Populate select options
+                selectElement.innerHTML = Object.entries(state.libraries)
+                    .map(([key, library]) => {
+                        const displayName =
+                            libraryDisplayNames[library.name] || library.name;
+                        return `<option value="${key}" ${state.activeLibraryTab === key ? "selected" : ""}>${displayName}</option>`;
+                    })
+                    .join("");
+
+                // Handle selection change
+                selectElement.onchange = (e) => {
+                    const libraryKey = e.target.value;
+                    state.activeLibraryTab = libraryKey;
+
+                    document
+                        .querySelectorAll(".library-schedule-content")
+                        .forEach((c) => c.classList.remove("active"));
+                    const activeContent = document.querySelector(
+                        `.library-schedule-content[data-library="${libraryKey}"]`,
+                    );
+                    if (activeContent) activeContent.classList.add("active");
+                };
 
                 // Add event listeners to library tabs
                 document.querySelectorAll(".library-tab").forEach((tab) => {
