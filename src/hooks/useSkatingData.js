@@ -7,56 +7,48 @@ const CACHE_TIMESTAMP_KEY = "skating_data_timestamp";
 const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
 
 export function useSkatingData() {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [lastUpdated, setLastUpdated] = useState(null);
+  const [data, setData] = useState([]); // processed events array
+  const [loading, setLoading] = useState(true); // spinner flag
+  const [error, setError] = useState(null); // error message
+  const [lastUpdated, setLastUpdated] = useState(null); // Date
 
   useEffect(() => {
     async function fetchData() {
       try {
-        // First check cache
-        const cachedData = getCachedData();
-        if (cachedData) {
-          setData(cachedData.data);
-          setLastUpdated(new Date(cachedData.timestamp));
+        // 1) Try valid cache
+        const cached = getCachedData();
+        if (cached) {
+          setData(cached.data);
+          setLastUpdated(new Date(cached.timestamp));
           setLoading(false);
           return;
         }
 
-        // No valid cache, fetch new data
-        const response = await fetch("/data/skating.json");
+        // 2) Fetch fresh
+        const res = await fetch("/data/skating.json");
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const json = await res.json();
 
-        if (!response.ok) {
-          throw new Error(`Failed to fetch data: ${response.status}`);
-        }
+        // 3) Parse & process
+        const processed = processData(json.data);
+        const updatedAt = new Date(json.lastUpdated);
 
-        const jsonData = await response.json();
+        setData(processed);
+        setLastUpdated(updatedAt);
 
-        // Process the data
-        const processedData = processData(jsonData.data);
-        const timestamp = new Date(jsonData.lastUpdated);
-
-        // Update state
-        setData(processedData);
-        setLastUpdated(timestamp);
-
-        // Cache the data
-        cacheData(processedData, timestamp);
+        // 4) Cache for next time
+        cacheData(processed, updatedAt);
       } catch (err) {
         console.error("Error fetching skating data:", err);
         setError(err.message);
-
-        // Try to use expired cache as fallback
-        const expiredCache = localStorage.getItem(CACHE_KEY);
-        if (expiredCache) {
+        // fallback to any (even expired) cache
+        const raw = localStorage.getItem(CACHE_KEY);
+        if (raw) {
           try {
-            const { data, timestamp } = JSON.parse(expiredCache);
-            setData(data);
+            const { data: d, timestamp } = JSON.parse(raw);
+            setData(d);
             setLastUpdated(new Date(timestamp));
-          } catch (cacheErr) {
-            console.error("Failed to use expired cache:", cacheErr);
-          }
+          } catch {}
         }
       } finally {
         setLoading(false);
@@ -66,7 +58,7 @@ export function useSkatingData() {
     fetchData();
   }, []);
 
-  // Function to get events for a specific week
+  // Returns only events for the given week offset (0 = this week, 1 = next)
   const getEventsForWeek = useCallback(
     (weekOffset = 0) => {
       const { start, end } = getWeekBounds(weekOffset);
@@ -83,24 +75,28 @@ export function useSkatingData() {
     loading,
     error,
     lastUpdated,
-    getEventsForWeek, // now stable between renders unless `data` changes
+    getEventsForWeek,
   };
 }
 
-// Process skating data
+// ——— Helpers —————————————————————————————————————————————
+
+// Turn raw JSON array into fully‐typed events with Date objects
 function processData(rawData) {
-  if (!rawData || !Array.isArray(rawData)) return [];
+  if (!Array.isArray(rawData)) return [];
 
   return rawData
     .map((event) => {
       const start = convertToLocalTime(event.start);
       const end = convertToLocalTime(event.end);
-
-      // Skip events with invalid dates
-      if (!start || !end) {
+      if (
+        !(start instanceof Date) ||
+        isNaN(start) ||
+        !(end instanceof Date) ||
+        isNaN(end)
+      ) {
         return null;
       }
-
       return {
         id: event.id,
         title: event.title,
@@ -111,58 +107,41 @@ function processData(rawData) {
         allDay: event.allDay,
       };
     })
-    .filter((event) => event !== null)
+    .filter((evt) => evt !== null)
     .sort((a, b) => a.start - b.start);
 }
 
-// Get the bounds of a week (Monday to Sunday)
+// Monday 00:00:00 of this week + offset, through Sunday 23:59:59
 function getWeekBounds(offsetWeeks = 0) {
-  // Use the current date
   const today = new Date();
+  const dow = today.getDay(); // 0=Sun,1=Mon…
+  const toMon = (dow + 6) % 7; // days back to Monday
+  const mon = new Date(today);
+  mon.setDate(today.getDate() - toMon + offsetWeeks * 7);
+  mon.setHours(0, 0, 0, 0);
 
-  // Calculate day of week (0 = Sunday, 1 = Monday, etc.)
-  const dow = today.getDay();
+  const sun = new Date(mon);
+  sun.setDate(mon.getDate() + 6);
+  sun.setHours(23, 59, 59, 999);
 
-  // Calculate days to subtract to get to Monday of this week
-  const daysToMonday = (dow + 6) % 7; // Convert Sunday=0 to Monday=0
-
-  // Create start date (Monday of the week)
-  const startDate = new Date(today);
-  startDate.setDate(today.getDate() - daysToMonday + offsetWeeks * 7);
-  startDate.setHours(0, 0, 0, 0);
-
-  // Create end date (Sunday of the week)
-  const endDate = new Date(startDate);
-  endDate.setDate(startDate.getDate() + 6);
-  endDate.setHours(23, 59, 59, 999);
-
-  return { start: startDate, end: endDate };
+  return { start: mon, end: sun };
 }
 
-// Cache helper functions
+// LocalStorage cache helpers
 function getCachedData() {
   try {
-    const timestamp = localStorage.getItem(CACHE_TIMESTAMP_KEY);
-    const cachedData = localStorage.getItem(CACHE_KEY);
+    const ts = localStorage.getItem(CACHE_TIMESTAMP_KEY);
+    const raw = localStorage.getItem(CACHE_KEY);
+    if (!ts || !raw) return null;
 
-    if (!timestamp || !cachedData) return null;
-
-    const now = Date.now();
-    const cacheTime = parseInt(timestamp, 10);
-
-    // Check if cache is still valid
-    if (now - cacheTime < CACHE_DURATION) {
-      return {
-        data: JSON.parse(cachedData),
-        timestamp: cacheTime,
-      };
+    const age = Date.now() - parseInt(ts, 10);
+    if (age < CACHE_DURATION) {
+      return { data: JSON.parse(raw), timestamp: parseInt(ts, 10) };
     }
-
-    return null;
   } catch (err) {
-    console.warn("Error reading from cache:", err);
-    return null;
+    console.warn("Cache read failed:", err);
   }
+  return null;
 }
 
 function cacheData(data, timestamp) {
@@ -170,6 +149,6 @@ function cacheData(data, timestamp) {
     localStorage.setItem(CACHE_KEY, JSON.stringify(data));
     localStorage.setItem(CACHE_TIMESTAMP_KEY, timestamp.getTime().toString());
   } catch (err) {
-    console.warn("Error writing to cache:", err);
+    console.warn("Cache write failed:", err);
   }
 }

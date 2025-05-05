@@ -10,18 +10,25 @@ function Skating() {
   const [selectedWeek, setSelectedWeek] = useState(0);
   const [events, setEvents] = useState([]);
 
-  // kick off initial
+  // Helper to ensure start/end are Date objects
+  const normalize = (rawEvents) =>
+    rawEvents.map((e) => ({
+      ...e,
+      start: e.start instanceof Date ? e.start : new Date(e.start),
+      end: e.end instanceof Date ? e.end : new Date(e.end),
+    }));
+
+  // On mount (and whenever loading or selectedWeek change), load events
   useEffect(() => {
     if (!loading) {
-      setEvents(getEventsForWeek(0));
+      const weekEvents = getEventsForWeek(selectedWeek);
+      setEvents(normalize(weekEvents));
     }
-  }, [loading, getEventsForWeek]);
+  }, [loading, getEventsForWeek, selectedWeek]);
 
   const handleWeekChange = (weekOffset) => {
-    // always reset to precisely this week's events,
-    // even if it's the same offset as before
-    const filtered = getEventsForWeek(weekOffset);
-    setEvents(filtered);
+    const weekEvents = getEventsForWeek(weekOffset);
+    setEvents(normalize(weekEvents));
     setSelectedWeek(weekOffset);
   };
 
@@ -47,7 +54,7 @@ function Skating() {
   const now = new Date();
 
   return (
-    <Layout title="" lastUpdated={lastUpdated}>
+    <Layout title="When can I go skating?" lastUpdated={lastUpdated}>
       <div className="mb-8">
         <WeekSelector
           selectedWeek={selectedWeek}
@@ -62,12 +69,12 @@ function Skating() {
       ) : (
         <div className="space-y-6 mt-6 mb-12">
           {events.map((event) => {
+            // Now safe to call getTime(), toDateString(), etc.
             const key = `${event.id}-${event.start.getTime()}`;
             const isCurrent =
               event.start <= now &&
               event.end > now &&
               event.start.toDateString() === now.toDateString();
-
             const isPast = event.end < now;
 
             return (
