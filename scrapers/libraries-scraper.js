@@ -28,7 +28,7 @@ async function fetchLibrariesData() {
 
     // Create data directories
     const dataDir = path.join(__dirname, "data");
-    const webDataDir = path.join(__dirname, "..", "src", "data");
+    const webDataDir = path.join(__dirname, "..", "public", "data");
 
     if (!fs.existsSync(dataDir)) {
       fs.mkdirSync(dataDir, { recursive: true });
