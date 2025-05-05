@@ -27,7 +27,7 @@ function LibrarySchedule({ libraries }) {
   ];
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 mb-28">
+    <div className="bg-white rounded-lg shadow-md p-6">
       <div className="mb-6">
         <select
           className="w-full p-2 border border-gray-300 rounded-md"

@@ -11,3 +11,55 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+@layer base {
+    /* Override WebKit-specific styles for common elements */
+    input,
+    select,
+    textarea,
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    /* Normalize backgrounds */
+    input,
+    select,
+    textarea {
+        background-color: white;
+    }
+
+    /* Disable browser-specific mobile features */
+    select::-ms-expand {
+        display: none;
+    }
+}
+
+@layer base {
+    /* Remove browser-specific styling for select elements */
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h8L8 4z'/%3E%3C/svg%3E");
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        background-size: 8px 10px;
+        padding-right: 2rem;
+    }
+
+    /* Remove browser-specific focus styles */
+    *:focus {
+        outline: none;
+    }
+
+    /* Disable automatic zooming on inputs in iOS */
+    input,
+    select,
+    textarea {
+        font-size: 16px; /* Prevent zoom on focus in iOS */
+    }
+}

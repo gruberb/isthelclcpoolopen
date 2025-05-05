@@ -2,7 +2,7 @@ import React from "react";
 
 function WeekSelector({ selectedWeek, onWeekChange }) {
   return (
-    <div className="flex items-center justify-center">
+    <div className="text-3xl font-semibold text-center text-gray-800 pt-3">
       <h1 className="text-2xl font-medium">
         When can I go skating{" "}
         <select
