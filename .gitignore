@@ -3,3 +3,7 @@ digest.txt
 coverage/
 .DS_STORE
 scrapers/node_modules
+dev-script.log
+*.log
+logs
+build
