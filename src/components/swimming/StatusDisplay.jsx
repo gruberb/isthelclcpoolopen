@@ -53,7 +53,7 @@ function StatusDisplay({ data }) {
   }
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 mb-10">
+    <div className="flex flex-wrap justify-center gap-6 mb-28">
       <StatusBox
         title="LANE SWIMMING"
         isOpen={statuses.lanesStatus.isActive}

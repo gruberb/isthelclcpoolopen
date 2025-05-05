@@ -41,7 +41,7 @@ function Libraries() {
       />
 
       {activeTab === "status" ? (
-        <div className="flex flex-wrap justify-center gap-6 mb-10">
+        <div className="flex flex-wrap justify-center gap-6 mb-28">
           {libraries &&
             Object.entries(libraries).map(([key, library]) => (
               <LibraryStatusBox

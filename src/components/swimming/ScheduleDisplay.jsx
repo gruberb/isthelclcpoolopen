@@ -23,7 +23,7 @@ function ScheduleDisplay({ data }) {
     ) {
       currentEventRef.current.scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "start",
       });
     }
   }, [selectedDate, eventsForDate]);
@@ -75,7 +75,7 @@ function ScheduleDisplay({ data }) {
         />
       </div>
 
-      <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-2xl">
+      <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-2xl mb-24">
         <h3 className="text-2xl font-semibold text-center mb-6">
           {selectedDate.toDateString() === new Date().toDateString()
             ? "Today's Swimming Schedule"

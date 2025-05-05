@@ -54,8 +54,8 @@ function Skating() {
   const now = new Date();
 
   return (
-    <Layout title="When can I go skating?" lastUpdated={lastUpdated}>
-      <div className="mb-8">
+    <Layout title="" lastUpdated={lastUpdated}>
+      <div className="mb-2 text-base">
         <WeekSelector
           selectedWeek={selectedWeek}
           onWeekChange={handleWeekChange}
@@ -67,7 +67,7 @@ function Skating() {
           No public skating events found for this week.
         </div>
       ) : (
-        <div className="space-y-6 mt-6 mb-12">
+        <div className="space-y-6 mt-6 mb-28">
           {events.map((event) => {
             // Now safe to call getTime(), toDateString(), etc.
             const key = `${event.id}-${event.start.getTime()}`;

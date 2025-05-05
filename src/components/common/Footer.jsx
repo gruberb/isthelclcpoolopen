@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Footer({ lastUpdated }) {
   return (
     <div className="fixed bottom-0 left-0 w-full bg-gray-100 py-4 px-2 shadow-md flex flex-col items-center gap-2 z-10">
-      <div className="flex flex-col items-center gap-1">
+      <div className="flex flex-col items-center gap-3">
         <FooterLink to="/" emoji="🏊" text="Want to go swimming?" />
         <FooterLink to="/skating" emoji="⛸️" text="Want to go skating?" />
         <FooterLink to="/libraries" emoji="📚" text="Want to read books?" />
