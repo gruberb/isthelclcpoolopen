@@ -68,7 +68,7 @@ function LibrarySchedule({ libraries }) {
             return (
               <tr
                 key={day}
-                className={`${isToday ? "bg-green-50 font-bold" : ""} border-b border-gray-200`}
+                className={`${isToday ? "bg-green-100 font-bold" : ""} border-b border-gray-200`}
               >
                 <td className="p-2 capitalize">{day}</td>
                 <td className="p-2">

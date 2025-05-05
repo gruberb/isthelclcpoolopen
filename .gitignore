@@ -6,3 +6,4 @@ scrapers/node_modules
 dev-script.log
 *.log
 logs
+build

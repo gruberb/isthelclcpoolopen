@@ -2,17 +2,16 @@
 set -euo pipefail
 
 # ─── CONFIG ────────────────────────────────────────────────────────────────────
-SERVER="france"
-REMOTE_WEB="/var/www/isthelclcpoolopen.ca/html"
-# On the remote side, use the SSH user’s $HOME
-REMOTE_SCRAPERS="\$HOME/scrapers"
+SERVER="france"                                      # SSH host alias
+REMOTE_WEB="/var/www/isthelclcpoolopen.ca/html"      # Web root on server
+REMOTE_SCRAPERS="/home/gruberb/scrapers"              # Scrapers dir under your home
 
-BUILD_DIR="build"
+BUILD_DIR="build"            # CRA’s default output
 APP_TAR="app.tar.gz"
 SCRAPERS_TAR="scrapers.tar.gz"
 
 # ─── CLEANUP ON EXIT ───────────────────────────────────────────────────────────
-cleanup(){
+cleanup() {
   rm -f "$APP_TAR" "$SCRAPERS_TAR"
 }
 trap cleanup EXIT
@@ -22,48 +21,43 @@ echo "🔧 Running React build…"
 npm run build
 [ -d "$BUILD_DIR" ] || { echo "❌ Build failed: '$BUILD_DIR' not found"; exit 1; }
 
-# ─── 2) PACKAGE TARBALLS (no xattrs) ────────────────────────────────────────────
+# ─── 2) PACKAGE TARBALLS ───────────────────────────────────────────────────────
 echo "📦 Packaging web app → $APP_TAR"
-# disable macOS extended attributes in the archive
-COPYFILE_DISABLE=1 tar -C "$BUILD_DIR" -czf "$APP_TAR" .
+tar -C "$BUILD_DIR" -czf "$APP_TAR" .
 
 echo "📦 Packaging scrapers → $SCRAPERS_TAR"
-COPYFILE_DISABLE=1 tar \
-  --exclude='node_modules' \
-  --exclude='data/*.json' \
-  -C scrapers -czf "$SCRAPERS_TAR" .
+tar --exclude='node_modules' --exclude='data/*.json' -C scrapers -czf "$SCRAPERS_TAR" .
 
 # ─── 3) UPLOAD ─────────────────────────────────────────────────────────────────
-echo "🚀 Uploading artifacts to $SERVER…"
+echo "🚀 Uploading artifacts to $SERVER..."
 scp "$APP_TAR" "$SCRAPERS_TAR" "$SERVER":/tmp/
 
 # ─── 4) REMOTE DEPLOY ─────────────────────────────────────────────────────────
-ssh "$SERVER" bash <<'EOF'
-set -euo pipefail
+ssh "$SERVER" bash <<EOF
+# First, bring your variables into this remote shell:
+REMOTE_WEB="$REMOTE_WEB"
+REMOTE_SCRAPERS="$REMOTE_SCRAPERS"
+APP_TAR="$APP_TAR"
+SCRAPERS_TAR="$SCRAPERS_TAR"
 
-# Remote‐side variables:
-REMOTE_WEB="/var/www/isthelclcpoolopen.ca/html"
-REMOTE_SCRAPERS="$HOME/scrapers"
-APP_TAR="app.tar.gz"
-SCRAPERS_TAR="scrapers.tar.gz"
+set -euo pipefail
 
 echo "👉 Clearing & extracting web app…"
 rm -rf "\$REMOTE_WEB"/*
 mkdir -p "\$REMOTE_WEB"
-# suppress unknown xattr warnings:
-tar --warning=no-unknown-keyword -xzf /tmp/\$APP_TAR -C "\$REMOTE_WEB" 2>/dev/null
+tar -xzf /tmp/\$APP_TAR -C "\$REMOTE_WEB"
 rm /tmp/\$APP_TAR
 chmod -R 775 "\$REMOTE_WEB"
 
 echo "👉 Deploying scrapers…"
 rm -rf "\$REMOTE_SCRAPERS"
 mkdir -p "\$REMOTE_SCRAPERS/logs" "\$REMOTE_SCRAPERS/data"
-tar --warning=no-unknown-keyword -xzf /tmp/\$SCRAPERS_TAR -C "\$REMOTE_SCRAPERS" 2>/dev/null
+tar -xzf /tmp/\$SCRAPERS_TAR -C "\$REMOTE_SCRAPERS"
 rm /tmp/\$SCRAPERS_TAR
 
 cd "\$REMOTE_SCRAPERS"
-# omit dev deps, hide warnings and funding messages
-npm install --omit=dev --no-audit --no-fund --loglevel=error
+npm install --production
+chmod +x *.js
 
 echo "👉 Ensuring crontab entries…"
 declare -a CRONS=(
@@ -73,6 +67,7 @@ declare -a CRONS=(
   "*/31 * * * * cp \$REMOTE_SCRAPERS/data/*.json \$REMOTE_WEB/data/"
 )
 
+# Rebuild crontab without duplicates
 ( crontab -l 2>/dev/null \
     | grep -Fv -f <(printf "%s\n" "\${CRONS[@]}") \
   ; printf "%s\n" "\${CRONS[@]}" ) \

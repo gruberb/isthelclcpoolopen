@@ -10,15 +10,18 @@ function Skating() {
   const [selectedWeek, setSelectedWeek] = useState(0);
   const [events, setEvents] = useState([]);
 
-  // Update events when week selection changes
+  // kick off initial
   useEffect(() => {
     if (!loading) {
-      setEvents(getEventsForWeek(selectedWeek));
+      setEvents(getEventsForWeek(0));
     }
-  }, [loading, selectedWeek, getEventsForWeek]);
+  }, [loading, getEventsForWeek]);
 
-  // Handle week change
   const handleWeekChange = (weekOffset) => {
+    // always reset to precisely this week's events,
+    // even if it's the same offset as before
+    const filtered = getEventsForWeek(weekOffset);
+    setEvents(filtered);
     setSelectedWeek(weekOffset);
   };
 
@@ -59,6 +62,7 @@ function Skating() {
       ) : (
         <div className="space-y-6 mt-6 mb-12">
           {events.map((event) => {
+            const key = `${event.id}-${event.start.getTime()}`;
             const isCurrent =
               event.start <= now &&
               event.end > now &&
@@ -67,7 +71,7 @@ function Skating() {
             const isPast = event.end < now;
 
             return (
-              <div key={event.id}>
+              <div key={key}>
                 <SkatingCard
                   event={event}
                   isCurrent={isCurrent}

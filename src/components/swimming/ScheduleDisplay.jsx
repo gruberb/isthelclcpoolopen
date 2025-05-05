@@ -32,22 +32,22 @@ function ScheduleDisplay({ data }) {
   const getEventClass = (event, analysis, isCurrent, isPast) => {
     if (isCurrent) {
       if (analysis.type === "Busy/Maintenance") {
-        return "border-l-4 border-orange-500 bg-orange-50";
+        return "border-l-4 border-orange-500 bg-orange-100";
       } else if (analysis.restrictedAccess) {
-        return "border-l-4 border-purple-500 bg-purple-50";
+        return "border-l-4 border-purple-500 bg-purple-100";
       } else {
         return analysis.membersOnly
-          ? "border-l-4 border-blue-700 bg-blue-50"
-          : "border-l-4 border-green-600 bg-green-50";
+          ? "border-l-4 border-blue-700 bg-blue-100"
+          : "border-l-4 border-green-600 bg-green-100";
       }
     } else if (isPast) {
-      return "opacity-50 bg-gray-50";
+      return "opacity-35 bg-gray-50";
     } else if (analysis.membersOnly) {
-      return "border-l-4 border-blue-700 bg-blue-50";
+      return "border-l-4 border-blue-700 bg-blue-100";
     } else if (analysis.restrictedAccess) {
-      return "border-l-4 border-purple-500 bg-purple-50";
+      return "border-l-4 border-purple-500 bg-purple-100";
     } else if (analysis.type === "Busy/Maintenance") {
-      return "border-l-4 border-orange-500 bg-orange-50";
+      return "border-l-4 border-orange-500 bg-orange-100";
     }
     return "";
   };
@@ -66,14 +66,17 @@ function ScheduleDisplay({ data }) {
   };
 
   return (
-    <div>
-      <DateSelector
-        selectedDate={selectedDate}
-        onDateChange={setSelectedDate}
-      />
+    <div className="flex flex-col items-center">
+      {/* Center the date picker */}
+      <div className="w-full max-w-sm mb-6">
+        <DateSelector
+          selectedDate={selectedDate}
+          onDateChange={setSelectedDate}
+        />
+      </div>
 
-      <div className="bg-white rounded-lg shadow-md p-4">
-        <h3 className="text-xl font-medium text-center mb-4">
+      <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-2xl">
+        <h3 className="text-2xl font-semibold text-center mb-6">
           {selectedDate.toDateString() === new Date().toDateString()
             ? "Today's Swimming Schedule"
             : selectedDate.toDateString() ===
@@ -90,16 +93,14 @@ function ScheduleDisplay({ data }) {
         </h3>
 
         {eventsForDate.length === 0 ? (
-          <div className="p-4 text-center text-gray-600">
+          <div className="p-6 text-center text-gray-600">
             No swimming events scheduled for this day.
           </div>
         ) : (
-          <div className="space-y-2">
+          <div className="space-y-4">
             {eventsForDate.map((event) => {
               const now = new Date();
               const analysis = analyzeEvent(event);
-
-              // Safely ensure we're using Date objects
               const eventStart =
                 event.start instanceof Date
                   ? event.start
@@ -113,11 +114,9 @@ function ScheduleDisplay({ data }) {
                 eventStart.toDateString() === now.toDateString();
               const isPast = eventEnd < now;
 
-              // Ensure lap pool closed is properly displayed
               const hasLanes =
                 analysis.lanes && !event.title.includes("LAP POOL CLOSED");
 
-              // Restriction label
               let restrictionLabel = "";
               if (analysis.membersOnly) {
                 restrictionLabel = "(Members Only)";
@@ -130,26 +129,33 @@ function ScheduleDisplay({ data }) {
 
               return (
                 <div
-                  key={event.id}
+                  key={`${event.id}-${eventStart.getTime()}`}
                   ref={isCurrent ? currentEventRef : null}
-                  className={`p-3 rounded-md ${getEventClass(event, analysis, isCurrent, isPast)}`}
+                  className={`
+                    w-full flex flex-col items-center text-center
+                    p-4 rounded-md
+                    ${getEventClass(event, analysis, isCurrent, isPast)}
+                  `}
                 >
-                  <div className="flex justify-between items-center">
-                    <div className="text-sm text-blue-700 font-medium">
-                      {formatTime(eventStart)} - {formatTime(eventEnd)}
-                      {isCurrent && (
-                        <span className="ml-2 text-green-600 inline-flex items-center">
-                          <span className="w-2 h-2 bg-green-600 rounded-full mr-1"></span>
-                          NOW
-                        </span>
-                      )}
-                    </div>
+                  {/* Time */}
+                  <div className="text-lg text-gray-700 font-extralight">
+                    {formatTime(eventStart)} – {formatTime(eventEnd)}{" "}
+                    {isCurrent && (
+                      <span className="ml-2 inline-flex items-center text-green-600">
+                        <span className="w-2 h-2 bg-green-600 rounded-full mr-1" />
+                        NOW
+                      </span>
+                    )}
                   </div>
-                  <div className="text-base font-medium mt-1 text-gray-800">
+
+                  {/* Title */}
+                  <div className="text-xl font-semibold mt-2 text-gray-800">
                     {event.title}
                   </div>
-                  <div className="text-sm mt-1 text-gray-600 flex flex-wrap items-center">
-                    <span className="mr-4">
+
+                  {/* Availability */}
+                  <div className="text-sm mt-2 text-gray-600 flex flex-wrap justify-center items-center">
+                    <span>
                       Lanes:{" "}
                       <span
                         className={getAvailabilityClass(hasLanes, analysis)}
@@ -157,6 +163,7 @@ function ScheduleDisplay({ data }) {
                         {hasLanes ? "✓" : "✗"}
                       </span>
                     </span>
+                    <span className="mx-2 text-gray-400">|</span>
                     <span>
                       Kids:{" "}
                       <span
@@ -168,14 +175,18 @@ function ScheduleDisplay({ data }) {
                         {analysis.kids ? "✓" : "✗"}
                       </span>
                     </span>
-                    {restrictionLabel && (
-                      <span
-                        className={`ml-2 font-medium ${analysis.restrictedAccess ? "text-purple-700" : "text-blue-700"}`}
-                      >
-                        {restrictionLabel}
-                      </span>
-                    )}
                   </div>
+                  {restrictionLabel && (
+                    <span
+                      className={`mt-1 ml-4 font-medium ${
+                        analysis.restrictedAccess
+                          ? "text-purple-700"
+                          : "text-blue-700"
+                      }`}
+                    >
+                      {restrictionLabel}
+                    </span>
+                  )}
                 </div>
               );
             })}

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { convertToLocalTime } from "../utils/dateUtils";
 
 // Cache configuration
@@ -67,21 +67,23 @@ export function useSkatingData() {
   }, []);
 
   // Function to get events for a specific week
-  function getEventsForWeek(weekOffset = 0) {
-    const { start, end } = getWeekBounds(weekOffset);
-
-    return data.filter((event) => {
-      const eventDate = new Date(event.start);
-      return eventDate >= start && eventDate <= end;
-    });
-  }
+  const getEventsForWeek = useCallback(
+    (weekOffset = 0) => {
+      const { start, end } = getWeekBounds(weekOffset);
+      return data.filter((ev) => {
+        const d = new Date(ev.start);
+        return d >= start && d <= end;
+      });
+    },
+    [data],
+  );
 
   return {
     data,
     loading,
     error,
     lastUpdated,
-    getEventsForWeek,
+    getEventsForWeek, // now stable between renders unless `data` changes
   };
 }
 
