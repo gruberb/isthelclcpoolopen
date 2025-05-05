@@ -10,7 +10,8 @@
     "scrape-all": "node pool-scraper.js && node skating-scraper.js && node libraries-scraper.js"
   },
   "dependencies": {
-    "node-fetch": "^2.6.9",
-    "jsdom": "^22.1.0"
+    "dotenv": "^16.5.0",
+    "jsdom": "^22.1.0",
+    "node-fetch": "^2.6.9"
   }
 }

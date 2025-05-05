@@ -24,7 +24,6 @@ npm run build
 
 # ─── 2) PACKAGE TARBALLS (no xattrs) ────────────────────────────────────────────
 echo "📦 Packaging web app → $APP_TAR"
-# disable macOS extended attributes in the archive
 COPYFILE_DISABLE=1 tar -C "$BUILD_DIR" -czf "$APP_TAR" .
 
 echo "📦 Packaging scrapers → $SCRAPERS_TAR"
@@ -43,14 +42,14 @@ set -euo pipefail
 
 # Remote‐side variables:
 REMOTE_WEB="/var/www/isthelclcpoolopen.ca/html"
-REMOTE_SCRAPERS="$HOME/scrapers"
+REMOTE_DATA="/var/www/isthelclcpoolopen.ca/data"
+REMOTE_SCRAPERS="\$HOME/scrapers"
 APP_TAR="app.tar.gz"
 SCRAPERS_TAR="scrapers.tar.gz"
 
 echo "👉 Clearing & extracting web app…"
 rm -rf "\$REMOTE_WEB"/*
 mkdir -p "\$REMOTE_WEB"
-# suppress unknown xattr warnings:
 tar --warning=no-unknown-keyword -xzf /tmp/\$APP_TAR -C "\$REMOTE_WEB" 2>/dev/null
 rm /tmp/\$APP_TAR
 chmod -R 775 "\$REMOTE_WEB"
@@ -62,15 +61,20 @@ tar --warning=no-unknown-keyword -xzf /tmp/\$SCRAPERS_TAR -C "\$REMOTE_SCRAPERS"
 rm /tmp/\$SCRAPERS_TAR
 
 cd "\$REMOTE_SCRAPERS"
-# omit dev deps, hide warnings and funding messages
 npm install --omit=dev --no-audit --no-fund --loglevel=error
+
+echo "👉 Ensuring data directory exists…"
+mkdir -p "\$REMOTE_DATA"
+chmod 775 "\$REMOTE_DATA"
 
 echo "👉 Ensuring crontab entries…"
 declare -a CRONS=(
-  "*/30 * * * * cd \$REMOTE_SCRAPERS && node pool-scraper.js >> \$REMOTE_SCRAPERS/logs/pool-scraper.log 2>&1"
-  "0 1 * * *  cd \$REMOTE_SCRAPERS && node skating-scraper.js >> \$REMOTE_SCRAPERS/logs/skating-scraper.log 2>&1"
-  "0 2 * * *  cd \$REMOTE_SCRAPERS && node libraries-scraper.js >> \$REMOTE_SCRAPERS/logs/libraries-scraper.log 2>&1"
-  "*/31 * * * * cp \$REMOTE_SCRAPERS/data/*.json \$REMOTE_WEB/data/"
+  # pool scraper every 30m
+  "*/30 * * * *  cd \$REMOTE_SCRAPERS && DATA_PATH=\$REMOTE_DATA node pool-scraper.js >> \$REMOTE_SCRAPERS/logs/pool-scraper.log 2>&1"
+  # skating scraper daily at 01:00
+  "0 1 * * *     cd \$REMOTE_SCRAPERS && DATA_PATH=\$REMOTE_DATA node skating-scraper.js >> \$REMOTE_SCRAPERS/logs/skating-scraper.log 2>&1"
+  # libraries scraper daily at 02:00
+  "0 2 * * *     cd \$REMOTE_SCRAPERS && DATA_PATH=\$REMOTE_DATA node libraries-scraper.js >> \$REMOTE_SCRAPERS/logs/libraries-scraper.log 2>&1"
 )
 
 ( crontab -l 2>/dev/null \

@@ -1,4 +1,4 @@
-// scrapers/pool-scraper.js
+require("dotenv").config();
 const fetch = require("node-fetch");
 const fs = require("fs");
 const path = require("path");
@@ -8,6 +8,10 @@ const FACILITY_ID = "3121e68a-d46d-4865-b4ce-fc085f688529";
 const API_BASE_URL =
   "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments";
 const DATE_RANGE_DAYS = 8;
+
+const LOCAL_DATA_DIR = path.join(__dirname, "../../", "public", "data");
+// if DATA_PATH is set in the env, use that; otherwise fall back locally
+const OUTPUT_DIR = process.env.DATA_PATH || LOCAL_DATA_DIR;
 
 // Format date for API
 function formatDateForAPI(date) {
@@ -49,28 +53,13 @@ async function fetchPoolData() {
       data,
       lastUpdated: timestamp.toISOString(),
     };
-
-    // Create data directories
-    const dataDir = path.join(__dirname, "data");
-    const webDataDir = path.join(__dirname, "..", "public", "data");
-
-    if (!fs.existsSync(dataDir)) {
-      fs.mkdirSync(dataDir, { recursive: true });
+    // make sure it exists
+    if (!fs.existsSync(OUTPUT_DIR)) {
+      fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     }
 
-    if (!fs.existsSync(webDataDir)) {
-      fs.mkdirSync(webDataDir, { recursive: true });
-    }
-
-    // Write to scraper's data directory
     fs.writeFileSync(
-      path.join(dataDir, "pool.json"),
-      JSON.stringify(output, null, 2),
-    );
-
-    // Also write to the web directory for development
-    fs.writeFileSync(
-      path.join(webDataDir, "pool.json"),
+      path.join(OUTPUT_DIR, "pool.json"),
       JSON.stringify(output, null, 2),
     );
 

@@ -1,7 +1,12 @@
+require("dotenv").config();
 const fetch = require("node-fetch");
 const fs = require("fs");
 const path = require("path");
 const { JSDOM } = require("jsdom");
+
+const LOCAL_DATA_DIR = path.join(__dirname, "..", "public", "data");
+// if DATA_PATH is set in the env, use that; otherwise fall back locally
+const OUTPUT_DIR = process.env.DATA_PATH || LOCAL_DATA_DIR;
 
 async function fetchLibrariesData() {
   try {
@@ -26,16 +31,9 @@ async function fetchLibrariesData() {
     const html = await response.text();
     const libraries = parseLibraryHours(html);
 
-    // Create data directories
-    const dataDir = path.join(__dirname, "data");
-    const webDataDir = path.join(__dirname, "..", "public", "data");
-
-    if (!fs.existsSync(dataDir)) {
-      fs.mkdirSync(dataDir, { recursive: true });
-    }
-
-    if (!fs.existsSync(webDataDir)) {
-      fs.mkdirSync(webDataDir, { recursive: true });
+    // make sure it exists
+    if (!fs.existsSync(OUTPUT_DIR)) {
+      fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     }
 
     // Store data with timestamp
@@ -45,7 +43,7 @@ async function fetchLibrariesData() {
     };
 
     fs.writeFileSync(
-      path.join(dataDir, "libraries.json"),
+      path.join(OUTPUT_DIR, "libraries.json"),
       JSON.stringify(output, null, 2),
     );
 
