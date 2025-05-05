@@ -19,20 +19,13 @@ function SkatingCard({ event, isCurrent, isPast }) {
 
   // apply a border or fade if past/current/today
   let cardClass =
-    "bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:-translate-y-1 hover:shadow-lg";
+    "rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:-translate-y-1 hover:shadow-lg";
   if (isPast) cardClass += " opacity-50 grayscale-[60%]";
   if (isCurrent) cardClass += " border-2 border-green-500";
-  if (isTodayEvent) cardClass += " bg-lime-200";
+  if (isTodayEvent) cardClass += " bg-green-200";
   console.log("IS TODAY");
   return (
-    <div
-      className={`
-        ${cardClass}
-        bg-white rounded-lg shadow-md p-6
-        flex flex-col items-center text-center
-        transition-transform hover:-translate-y-1 hover:shadow-lg
-      `}
-    >
+    <div className={`${cardClass}`}>
       {/* Day, Date */}
       <div className="text-gray-600 text-sm font-semibold">
         {getWeekday(event.start)}, {formatDate(event.start)}
