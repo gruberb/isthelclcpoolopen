@@ -22,8 +22,8 @@ function SkatingCard({ event, isCurrent, isPast }) {
     "bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:-translate-y-1 hover:shadow-lg";
   if (isPast) cardClass += " opacity-50 grayscale-[60%]";
   if (isCurrent) cardClass += " border-2 border-green-500";
-  if (isTodayEvent) cardClass += " bg-lime-300/50";
-
+  if (isTodayEvent) cardClass += " bg-lime-200";
+  console.log("IS TODAY");
   return (
     <div
       className={`
