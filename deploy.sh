@@ -67,21 +67,6 @@ echo "👉 Ensuring data directory exists…"
 mkdir -p "\$REMOTE_DATA"
 chmod 775 "\$REMOTE_DATA"
 
-echo "👉 Ensuring crontab entries…"
-declare -a CRONS=(
-  # pool scraper every 30m
-  "*/30 * * * *  cd \$REMOTE_SCRAPERS && DATA_PATH=\$REMOTE_DATA node pool-scraper.js >> \$REMOTE_SCRAPERS/logs/pool-scraper.log 2>&1"
-  # skating scraper daily at 01:00
-  "0 1 * * *     cd \$REMOTE_SCRAPERS && DATA_PATH=\$REMOTE_DATA node skating-scraper.js >> \$REMOTE_SCRAPERS/logs/skating-scraper.log 2>&1"
-  # libraries scraper daily at 02:00
-  "0 2 * * *     cd \$REMOTE_SCRAPERS && DATA_PATH=\$REMOTE_DATA node libraries-scraper.js >> \$REMOTE_SCRAPERS/logs/libraries-scraper.log 2>&1"
-)
-
-( crontab -l 2>/dev/null \
-    | grep -Fv -f <(printf "%s\n" "\${CRONS[@]}") \
-  ; printf "%s\n" "\${CRONS[@]}" ) \
-  | crontab -
-
 echo "✅ Deployment complete!"
 EOF
 
