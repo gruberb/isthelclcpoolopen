@@ -201,19 +201,19 @@
 
             // Modified week calculation function that matches your scraper logic
             function getWeekBounds(offsetWeeks = 0) {
-                // Use a fixed reference date (May 4, 2025 in Atlantic Time)
-                const referenceDate = new Date("2025-05-04T00:00:00-03:00");
+                // Use the current date instead of a fixed reference date
+                const today = new Date();
 
                 // Calculate day of week (0 = Sunday, 1 = Monday, etc.)
-                const dow = referenceDate.getDay();
+                const dow = today.getDay();
 
                 // Calculate days to subtract to get to Monday of this week
                 const daysToMonday = (dow + 6) % 7; // Convert Sunday=0 to Monday=0
 
                 // Create start date (Monday of the week)
-                const startDate = new Date(referenceDate);
+                const startDate = new Date(today);
                 startDate.setDate(
-                    referenceDate.getDate() - daysToMonday + offsetWeeks * 7,
+                    today.getDate() - daysToMonday + offsetWeeks * 7,
                 );
                 startDate.setHours(0, 0, 0, 0);
 
