@@ -68,28 +68,28 @@ function ScheduleDisplay({ data }) {
   return (
     <div className="flex flex-col items-center">
       {/* Center the date picker */}
-      <div className="w-full max-w-sm mb-6">
+      <div className="w-full max-w-sm">
         <DateSelector
           selectedDate={selectedDate}
           onDateChange={setSelectedDate}
         />
       </div>
 
-      <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-2xl">
+      <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-2xl mb-[50px]">
         <h3 className="text-2xl font-semibold text-center mb-6">
           {selectedDate.toDateString() === new Date().toDateString()
             ? "Today's Swimming Schedule"
             : selectedDate.toDateString() ===
-                new Date(Date.now() + 86400000).toDateString()
+              new Date(Date.now() + 86400000).toDateString()
               ? "Tomorrow's Swimming Schedule"
               : `Swimming Schedule for ${selectedDate.toLocaleDateString(
-                  "en-US",
-                  {
-                    weekday: "long",
-                    month: "long",
-                    day: "numeric",
-                  },
-                )}`}
+                "en-US",
+                {
+                  weekday: "long",
+                  month: "long",
+                  day: "numeric",
+                },
+              )}`}
         </h3>
 
         {eventsForDate.length === 0 ? (
@@ -178,11 +178,10 @@ function ScheduleDisplay({ data }) {
                   </div>
                   {restrictionLabel && (
                     <span
-                      className={`mt-1 ml-4 font-medium ${
-                        analysis.restrictedAccess
-                          ? "text-purple-700"
-                          : "text-blue-700"
-                      }`}
+                      className={`mt-1 ml-4 font-medium ${analysis.restrictedAccess
+                        ? "text-purple-700"
+                        : "text-blue-700"
+                        }`}
                     >
                       {restrictionLabel}
                     </span>

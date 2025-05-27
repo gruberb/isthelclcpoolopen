@@ -13,6 +13,7 @@ body {
 }
 
 @layer base {
+
     /* Override WebKit-specific styles for common elements */
     input,
     select,
@@ -39,6 +40,7 @@ body {
 }
 
 @layer base {
+
     /* Remove browser-specific styling for select elements */
     select {
         -webkit-appearance: none;
@@ -60,6 +62,15 @@ body {
     input,
     select,
     textarea {
-        font-size: 16px; /* Prevent zoom on focus in iOS */
+        font-size: 16px;
+        /* Prevent zoom on focus in iOS */
     }
+}
+
+.bastian {
+    cursor: pointer;
+}
+
+.footer {
+    box-shadow: inset 0 15px 5px -16px #111;
 }
