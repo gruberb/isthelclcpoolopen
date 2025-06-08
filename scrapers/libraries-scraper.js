@@ -4,54 +4,83 @@ const fs = require("fs");
 const path = require("path");
 const { JSDOM } = require("jsdom");
 
-const LOCAL_DATA_DIR = path.join(__dirname, "..", "public", "data");
-// if DATA_PATH is set in the env, use that; otherwise fall back locally
-const OUTPUT_DIR = process.env.DATA_PATH || LOCAL_DATA_DIR;
+// Environment-aware path configuration
+function getOutputDirectory() {
+  if (process.env.DATA_PATH) {
+    return process.env.DATA_PATH;
+  }
+  return path.join(__dirname, "..", "public", "data");
+}
 
 async function fetchLibrariesData() {
+  const OUTPUT_DIR = getOutputDirectory();
+  console.log(`📚 Starting libraries data scraper...`);
+  console.log(`📁 Output directory: ${OUTPUT_DIR}`);
+
   try {
-    console.log("Fetching South Shore libraries data");
-
     const targetUrl = "https://www.southshorepubliclibraries.ca/libraries/";
-
-    console.log(`Fetching from: ${targetUrl}`);
+    console.log(`🌐 Fetching from: ${targetUrl}`);
 
     const response = await fetch(targetUrl, {
       method: "GET",
       headers: {
         Accept: "text/html",
-        "User-Agent": "Mozilla/5.0 Library Dashboard Scraper",
+        "User-Agent": "LCLC-Libraries-Dashboard/1.0",
       },
+      timeout: 30000
     });
 
     if (!response.ok) {
-      throw new Error(`Failed to fetch data: ${response.status}`);
+      throw new Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
     }
 
     const html = await response.text();
     const libraries = parseLibraryHours(html);
 
-    // make sure it exists
-    if (!fs.existsSync(OUTPUT_DIR)) {
-      fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+    if (Object.keys(libraries).length === 0) {
+      throw new Error("No library data parsed from HTML");
     }
 
-    // Store data with timestamp
+    console.log(`✅ Successfully parsed ${Object.keys(libraries).length} libraries`);
+
+    // Ensure output directory exists
+    if (!fs.existsSync(OUTPUT_DIR)) {
+      fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+      console.log(`📁 Created output directory: ${OUTPUT_DIR}`);
+    }
+
+    // Prepare output data
+    const timestamp = new Date();
     const output = {
       libraries: libraries,
-      lastUpdated: new Date().toISOString(),
+      lastUpdated: timestamp.toISOString(),
+      metadata: {
+        sourceUrl: targetUrl,
+        libraryCount: Object.keys(libraries).length,
+        generatedAt: timestamp.toISOString(),
+        generatedBy: process.env.GITHUB_ACTIONS ? 'GitHub Actions' : 'Local Development'
+      }
     };
 
-    fs.writeFileSync(
-      path.join(OUTPUT_DIR, "libraries.json"),
-      JSON.stringify(output, null, 2),
-    );
+    const outputPath = path.join(OUTPUT_DIR, "libraries.json");
+    fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
 
-    console.log(
-      `Libraries data saved successfully at ${new Date().toLocaleString()}`,
-    );
+    console.log(`💾 Libraries data saved to: ${outputPath}`);
+    console.log(`🕒 Last updated: ${timestamp.toLocaleString()}`);
+    console.log(`🎉 Libraries scraper completed successfully!`);
+
+    if (process.env.GITHUB_ACTIONS) {
+      console.log(`::notice title=Libraries Data Updated::Successfully scraped ${Object.keys(libraries).length} libraries`);
+    }
+
   } catch (error) {
-    console.error("Error fetching libraries data:", error);
+    console.error(`❌ Error in libraries scraper:`, error);
+    
+    if (process.env.GITHUB_ACTIONS) {
+      console.log(`::error title=Libraries Scraper Failed::${error.message}`);
+    }
+    
+    process.exit(1);
   }
 }
 
@@ -106,11 +135,6 @@ function parseLibraryHours(html) {
     };
   }
 
-  // If no library data was found, throw an error
-  if (Object.keys(libraries).length === 0) {
-    throw new Error("Could not parse library data from HTML");
-  }
-
   return libraries;
 }
 
@@ -125,7 +149,6 @@ function parseHoursFromTable(table, window) {
       const day = cells[0].textContent.trim().toLowerCase();
       const timeStr = cells[1].textContent.trim();
 
-      // Parse time (e.g. "10AM-5PM" or "Closed")
       let open = null;
       let close = null;
 
@@ -148,12 +171,10 @@ function parseHoursFromTable(table, window) {
 function convertTo24Hour(timeStr) {
   if (!timeStr || timeStr === "Closed") return null;
 
-  // Handle "12PM-5PM" format
   if (timeStr.includes("-")) {
     timeStr = timeStr.split("-")[0];
   }
 
-  // Remove any spaces
   timeStr = timeStr.trim();
 
   let hours = parseInt(timeStr.replace(/[^0-9]/g, ""));
@@ -169,4 +190,8 @@ function convertTo24Hour(timeStr) {
 }
 
 // Execute the function
-fetchLibrariesData();
+if (require.main === module) {
+  fetchLibrariesData();
+}
+
+module.exports = { fetchLibrariesData };

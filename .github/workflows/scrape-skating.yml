@@ -1,0 +1,48 @@
+name: Update Skating Data
+
+on:
+  schedule:
+    # Daily at 1 AM Atlantic Time (5 AM UTC)
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape-skating:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: 'scrapers/package-lock.json'
+          
+      - name: Install scraper dependencies
+        run: |
+          cd scrapers
+          npm ci
+          
+      - name: Run skating scraper
+        run: |
+          cd scrapers
+          export DATA_PATH="../public/data"
+          node skating-scraper.js
+          
+      - name: Commit updated data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          if [[ `git status --porcelain public/data/skating.json` ]]; then
+            git add public/data/skating.json
+            git commit -m "⛸️ Update skating data - $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "Skating data updated and committed"
+          else
+            echo "No changes to skating data"
+          fi

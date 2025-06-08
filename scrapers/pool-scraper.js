@@ -3,15 +3,21 @@ const fetch = require("node-fetch");
 const fs = require("fs");
 const path = require("path");
 
-// Constants from the original code
+// Constants
 const FACILITY_ID = "3121e68a-d46d-4865-b4ce-fc085f688529";
-const API_BASE_URL =
-  "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments";
+const API_BASE_URL = "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments";
 const DATE_RANGE_DAYS = 8;
 
-const LOCAL_DATA_DIR = path.join(__dirname, "../", "public", "data");
-// if DATA_PATH is set in the env, use that; otherwise fall back locally
-const OUTPUT_DIR = process.env.DATA_PATH || LOCAL_DATA_DIR;
+// Environment-aware path configuration
+function getOutputDirectory() {
+  // For GitHub Actions, DATA_PATH will be set to "../public/data"
+  if (process.env.DATA_PATH) {
+    return process.env.DATA_PATH;
+  }
+  
+  // For local development, default to relative path
+  return path.join(__dirname, "..", "public", "data");
+}
 
 // Format date for API
 function formatDateForAPI(date) {
@@ -26,6 +32,10 @@ function formatDateForAPI(date) {
 }
 
 async function fetchPoolData() {
+  const OUTPUT_DIR = getOutputDirectory();
+  console.log(`🏊 Starting pool data scraper...`);
+  console.log(`📁 Output directory: ${OUTPUT_DIR}`);
+  
   try {
     // Generate date range for the request
     const startDate = new Date();
@@ -37,39 +47,81 @@ async function fetchPoolData() {
 
     const apiUrl = `${API_BASE_URL}?selectedId=${FACILITY_ID}&start=${formatDateForAPI(startDate)}&end=${formatDateForAPI(endDate)}`;
 
-    console.log(`Fetching pool data from: ${apiUrl}`);
+    console.log(`🌐 Fetching data from Connect2Rec API...`);
+    console.log(`📅 Date range: ${startDate.toDateString()} to ${endDate.toDateString()}`);
 
-    const response = await fetch(apiUrl);
+    const response = await fetch(apiUrl, {
+      headers: {
+        'User-Agent': 'LCLC-Pool-Dashboard/1.0'
+      },
+      timeout: 30000 // 30 second timeout
+    });
 
     if (!response.ok) {
-      throw new Error(`Failed to fetch schedule: ${response.status}`);
+      throw new Error(`API request failed: ${response.status} ${response.statusText}`);
     }
 
     const data = await response.json();
-    const timestamp = new Date();
+    
+    if (!Array.isArray(data)) {
+      throw new Error(`Invalid API response: expected array, got ${typeof data}`);
+    }
 
-    // Save data with timestamp
+    console.log(`✅ Successfully fetched ${data.length} events`);
+
+    // Ensure output directory exists
+    if (!fs.existsSync(OUTPUT_DIR)) {
+      fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+      console.log(`📁 Created output directory: ${OUTPUT_DIR}`);
+    }
+
+    // Prepare output data
+    const timestamp = new Date();
     const output = {
       data,
       lastUpdated: timestamp.toISOString(),
+      metadata: {
+        facilityId: FACILITY_ID,
+        dateRange: {
+          start: startDate.toISOString(),
+          end: endDate.toISOString()
+        },
+        eventCount: data.length,
+        generatedAt: timestamp.toISOString(),
+        generatedBy: 'GitHub Actions' // or 'Local Development'
+      }
     };
-    // make sure it exists
-    if (!fs.existsSync(OUTPUT_DIR)) {
-      fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+
+    const outputPath = path.join(OUTPUT_DIR, "pool.json");
+    
+    // Write file with pretty formatting for better git diffs
+    fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
+
+    console.log(`💾 Pool data saved to: ${outputPath}`);
+    console.log(`🕒 Last updated: ${timestamp.toLocaleString()}`);
+    console.log(`🎉 Pool scraper completed successfully!`);
+
+    // For GitHub Actions, also log summary
+    if (process.env.GITHUB_ACTIONS) {
+      console.log(`::notice title=Pool Data Updated::Successfully scraped ${data.length} pool events`);
     }
 
-    fs.writeFileSync(
-      path.join(OUTPUT_DIR, "pool.json"),
-      JSON.stringify(output, null, 2),
-    );
-
-    console.log(
-      `Pool data saved successfully at ${timestamp.toLocaleString()}`,
-    );
   } catch (error) {
-    console.error("Error fetching pool data:", error);
+    console.error(`❌ Error in pool scraper:`, error);
+    
+    // For GitHub Actions, create an error annotation
+    if (process.env.GITHUB_ACTIONS) {
+      console.log(`::error title=Pool Scraper Failed::${error.message}`);
+    }
+    
+    // Exit with error code to fail the GitHub Action
+    process.exit(1);
   }
 }
 
 // Execute the function
-fetchPoolData();
+if (require.main === module) {
+  fetchPoolData();
+}
+
+module.exports = { fetchPoolData };

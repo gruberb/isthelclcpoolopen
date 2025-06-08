@@ -1,0 +1,52 @@
+name: Update Pool Data
+
+on:
+  schedule:
+    # Every 30 minutes during operating hours (6 AM - 11 PM Atlantic Time)
+    # Converted to UTC: 10 AM - 3 AM next day
+    - cron: '0,30 10-23 * * *'
+    - cron: '0,30 0-3 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  scrape-pool:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: 'scrapers/package-lock.json'
+          
+      - name: Install scraper dependencies
+        run: |
+          cd scrapers
+          npm ci
+          
+      - name: Run pool scraper
+        run: |
+          cd scrapers
+          # Set environment for GitHub Pages (data goes to public/data)
+          export DATA_PATH="../public/data"
+          node pool-scraper.js
+          
+      - name: Commit updated data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Check if there are changes
+          if [[ `git status --porcelain public/data/pool.json` ]]; then
+            git add public/data/pool.json
+            git commit -m "🏊 Update pool data - $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "Pool data updated and committed"
+          else
+            echo "No changes to pool data"
+          fi
