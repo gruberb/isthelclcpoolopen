@@ -1,5 +1,6 @@
 {
   "name": "lclc-facilities-dashboard",
+  "homepage": "https://gruberb.github.io/isthelclcpoolopen/",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
