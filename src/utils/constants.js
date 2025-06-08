@@ -116,7 +116,7 @@ export const CONSTANTS = {
     "lane swim only",
     "busy",
     "parent & tot swim",
-    "Play Pool is Closed"
+    "play pool is closed"
   ],
 
   // Access type indicators

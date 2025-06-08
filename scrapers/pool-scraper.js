@@ -9,7 +9,7 @@ const API_BASE_URL =
   "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments";
 const DATE_RANGE_DAYS = 8;
 
-const LOCAL_DATA_DIR = path.join(__dirname, "../../", "public", "data");
+const LOCAL_DATA_DIR = path.join(__dirname, "../", "public", "data");
 // if DATA_PATH is set in the env, use that; otherwise fall back locally
 const OUTPUT_DIR = process.env.DATA_PATH || LOCAL_DATA_DIR;
 
