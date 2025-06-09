@@ -1,69 +1,6 @@
 {
   "data": [
     {
-      "id": "7363f421-8e44-413e-b60f-61707a26a517",
-      "title": "Recreational Swim - 4 Lanes & Therapy Pool Open, Play Pool is Closed",
-      "start": "2025-06-08T07:30:00.000",
-      "end": "2025-06-08T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "69ed52e6-c5db-48bd-b5b3-ddef8110a54d",
-      "title": "Lessons -  Therapy Pool Open",
-      "start": "2025-06-08T09:00:00.000",
-      "end": "2025-06-08T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "75446587-c9ca-4eb9-99f1-d573787d20f7",
-      "title": "Public Swim - No Lanes, Play Pool is Closed",
-      "start": "2025-06-08T12:30:00.000",
-      "end": "2025-06-08T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ed47179f-57c1-45d1-bdb8-308de8fbbe3c",
-      "title": "Busy",
-      "start": "2025-06-08T16:00:00.000",
-      "end": "2025-06-08T17:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
-      "id": "aa9625ae-cbf6-440d-ae57-93090cffa937",
-      "title": "Recreational Swim - 4 Lanes  & Therapy Pools Open, Play Pool is Closed",
-      "start": "2025-06-08T17:00:00.000",
-      "end": "2025-06-08T18:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4360fddb-4b33-4268-b58c-e73671609c2f",
-      "title": "Bridgewater Barracudas & Multi Sport using Lap Pool, Play Pool is Closed",
-      "start": "2025-06-08T18:00:00.000",
-      "end": "2025-06-08T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a7d4bda9-7c38-49dd-95e9-51d2302ea12e",
-      "title": "Recreational Swim - 4 Lanes & Therapy Pools Open, Play Pool is Closed",
-      "start": "2025-06-08T19:00:00.000",
-      "end": "2025-06-08T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "9b13cd66-9b0d-416e-bf9b-13a3210e73f9",
       "title": "Members Swim ",
       "start": "2025-06-09T06:30:00.000",
@@ -566,7 +503,89 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "abd36ff5-6252-468b-acaa-7bf9b86623cf",
+      "title": "Members Swim",
+      "start": "2025-06-16T06:30:00.000",
+      "end": "2025-06-16T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d2cdf8bd-4eec-4844-a999-6af93655a74f",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-06-16T07:30:00.000",
+      "end": "2025-06-16T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "bfe9efba-e8ce-47f8-9483-014914908c7a",
+      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-06-16T10:00:00.000",
+      "end": "2025-06-16T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4bd04153-5758-4803-873c-d83d29c46b1e",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-06-16T11:00:00.000",
+      "end": "2025-06-16T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2d9c79fa-b23b-454a-869c-b4842b2d2ac3",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-06-16T16:00:00.000",
+      "end": "2025-06-16T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f70f1af2-01bf-4bfd-9853-f60ff96ed114",
+      "title": "Special Olympics - 2 Lanes, Play & Therapy Pools Open",
+      "start": "2025-06-16T18:00:00.000",
+      "end": "2025-06-16T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e701e59f-61c0-4021-a0fe-2aff71b57035",
+      "title": "Bridgewater Barracudas - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-06-16T19:00:00.000",
+      "end": "2025-06-16T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c6b28154-cb09-4ef5-9c62-6c1fca71fb99",
+      "title": "Private Full Pool Rental - Lawrencetown Education Centre",
+      "start": "2025-06-16T20:00:00.000",
+      "end": "2025-06-16T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-08T10:22:04.972Z"
+  "lastUpdated": "2025-06-09T00:40:36.946Z",
+  "metadata": {
+    "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
+    "dateRange": {
+      "start": "2025-06-09T00:00:00.000Z",
+      "end": "2025-06-17T00:00:00.000Z"
+    },
+    "eventCount": 64,
+    "generatedAt": "2025-06-09T00:40:36.946Z",
+    "generatedBy": "GitHub Actions"
+  }
 }
