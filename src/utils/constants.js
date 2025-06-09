@@ -24,6 +24,7 @@ export const CONSTANTS = {
     "lane swim",
     "recreational swim",
     "members swim",
+    "member swim",
   ],
 
   // Keywords for excluding non-pool events
@@ -80,6 +81,7 @@ export const CONSTANTS = {
   // Events where lanes are ALWAYS open
   LANES_ALWAYS_OPEN: [
     "members swim",
+    "member swim",
     "senior swim",
     "women's only swim",
     "modl women's only swim",
@@ -101,6 +103,7 @@ export const CONSTANTS = {
   // Events where kids pool is ALWAYS open
   KIDS_ALWAYS_OPEN: [
     "members swim",
+    "member swim",
     "women's only swim",
     "modl women's only swim",
     "public swim - no lanes",
@@ -120,7 +123,7 @@ export const CONSTANTS = {
   ],
 
   // Access type indicators
-  ACCESS_MEMBERS: ["members swim", "member only"],
+  ACCESS_MEMBERS: ["members swim", "member swim", "member only"],
   ACCESS_WOMENS: ["women's only swim", "modl women's only swim", "women only"],
   ACCESS_SENIORS: ["senior swim", "seniors 60+"],
 
