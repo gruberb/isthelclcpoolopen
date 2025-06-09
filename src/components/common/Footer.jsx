@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Footer({ lastUpdated }) {
+function Footer() {
   return (
     <div className="footer fixed bottom-0 left-0 w-full bg-gray-100 py-4 px-2 shadow-md flex flex-col items-center gap-2 z-10">
       <div className="flex flex-col items-center gap-3">
@@ -26,16 +26,12 @@ function Footer({ lastUpdated }) {
           </a>
         </p>
       </div>
-      {lastUpdated && (
-        <div className="text-xs text-gray-500">
-          Last updated: {new Date(lastUpdated).toLocaleString()}
-        </div>
-      )}
     </div>
   );
 }
 
 function FooterLink({ to, emoji, text }) {
+  console.log(`Rendering FooterLink to: ${to}, current path: ${window.location.pathname}`);
   // Don't show link to current page
   const isCurrentPage = window.location.pathname === to;
 
