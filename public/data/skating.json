@@ -1,105 +1,6 @@
 {
   "data": [
     {
-      "id": "1c4e635e-ab5d-4293-92f3-2a15ed576493",
-      "title": "Home School / Public Skating",
-      "start": "2025-06-02T10:00:00.000",
-      "end": "2025-06-02T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "80ee7c75-55fa-4a9c-bd6d-0c706dc4cf16",
-      "title": "Adult Skating",
-      "start": "2025-06-02T12:00:00.000",
-      "end": "2025-06-02T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "6ee3950c-1476-484d-81ae-c8a69a1506b8",
-      "title": "Public Skating (Strollers Welcomed)",
-      "start": "2025-06-03T10:00:00.000",
-      "end": "2025-06-03T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d5acb4b0-fcd8-4986-819d-f8d96360d191",
-      "title": "Adult Skating",
-      "start": "2025-06-03T12:00:00.000",
-      "end": "2025-06-03T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "562b5ea1-bd29-4a8d-80b0-758bdb5b2689",
-      "title": "Adult Skating",
-      "start": "2025-06-04T12:00:00.000",
-      "end": "2025-06-04T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ba010c9a-05d5-49c9-963a-eee13243d954",
-      "title": "Public Skating (Strollers Welcomed)",
-      "start": "2025-06-05T10:00:00.000",
-      "end": "2025-06-05T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b1708a1f-2fb5-41db-b994-369ab57e51f5",
-      "title": "Adult Skating",
-      "start": "2025-06-05T12:00:00.000",
-      "end": "2025-06-05T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "70e41519-04e9-4955-9b09-c8577386d38b",
-      "title": "Public Skating",
-      "start": "2025-06-05T15:00:00.000",
-      "end": "2025-06-05T16:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "09e578e3-3bba-496a-bc61-33129b605763",
-      "title": "Adult Skating",
-      "start": "2025-06-06T12:00:00.000",
-      "end": "2025-06-06T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9afbb71d-0519-4045-9ef9-e859284b8157",
-      "title": "Public Skating",
-      "start": "2025-06-06T16:00:00.000",
-      "end": "2025-06-06T17:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f16bca74-b8b5-4b66-a4f9-0ff3fd6d6b1c",
-      "title": "Public Skating",
-      "start": "2025-06-07T12:00:00.000",
-      "end": "2025-06-07T13:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "d18320e3-3909-4122-9828-63025d4a1cdc",
       "title": "Home School / Public Skating",
       "start": "2025-06-09T10:00:00.000",
@@ -163,5 +64,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-08T10:22:05.713Z"
+  "lastUpdated": "2025-06-09T05:04:13.414Z",
+  "metadata": {
+    "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
+    "weeksToFetch": 2,
+    "totalEvents": 39,
+    "publicEvents": 7,
+    "generatedAt": "2025-06-09T05:04:13.414Z",
+    "generatedBy": "GitHub Actions"
+  }
 }
