@@ -25,7 +25,7 @@ export function useSkatingData() {
         }
 
         // 2) Fetch fresh
-        const res = await fetch("/data/skating.json");
+        const res = await fetch(`${process.env.PUBLIC_URL}/data/skating.json`)
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();
 

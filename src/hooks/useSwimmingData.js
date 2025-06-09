@@ -26,7 +26,7 @@ export function useSwimmingData() {
         }
 
         // No valid cache, fetch new data
-        const response = await fetch("/data/pool.json");
+        const response = await fetch(`${process.env.PUBLIC_URL}/data/pool.json`)
 
         if (!response.ok) {
           throw new Error(`Failed to fetch data: ${response.status}`);

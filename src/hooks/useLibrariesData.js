@@ -24,7 +24,7 @@ export function useLibrariesData() {
         }
 
         // No valid cache, fetch new data
-        const response = await fetch("/data/libraries.json");
+        const response = await fetch(`${process.env.PUBLIC_URL}/data/libraries.json`)
 
         if (!response.ok) {
           throw new Error(`Failed to fetch library data: ${response.status}`);
