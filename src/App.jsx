@@ -7,7 +7,7 @@ import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       {/* Add ScrollToTop component to scroll to top on route change */}
       <ScrollToTop />
       <Routes>
