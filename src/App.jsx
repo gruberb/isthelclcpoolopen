@@ -8,8 +8,7 @@ import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
-    <HashRouter basename={process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : ''}>
-      {/* Add ScrollToTop component to scroll to top on route change */}
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Swimming />} />
