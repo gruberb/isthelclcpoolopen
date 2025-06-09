@@ -2,7 +2,7 @@
   "name": "lclc-facilities-dashboard",
   "homepage": "https://gruberb.github.io/isthelclcpoolopen/",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
