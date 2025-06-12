@@ -46,7 +46,7 @@
       "allDay": false
     },
     {
-      "id": "077d6c81-245c-428d-9049-f9d6714958ec",
+      "id": "640b2b78-0dac-4a07-9a15-ef3f0b61d7e3",
       "title": "Public Skating (Strollers Welcomed)",
       "start": "2025-06-12T10:00:00.000",
       "end": "2025-06-12T11:30:00.000",
@@ -55,7 +55,7 @@
       "allDay": false
     },
     {
-      "id": "0c6f2e7c-b558-4c6d-b09f-9be4c613d8e3",
+      "id": "c24354da-bd3e-42e8-946e-abc7ead3dd36",
       "title": "Adult Skating",
       "start": "2025-06-12T12:00:00.000",
       "end": "2025-06-12T13:00:00.000",
@@ -64,13 +64,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-11T05:04:06.117Z",
+  "lastUpdated": "2025-06-12T05:03:15.689Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 41,
+    "totalEvents": 40,
     "publicEvents": 7,
-    "generatedAt": "2025-06-11T05:04:06.117Z",
+    "generatedAt": "2025-06-12T05:03:15.689Z",
     "generatedBy": "GitHub Actions"
   }
 }
