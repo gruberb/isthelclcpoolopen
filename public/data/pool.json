@@ -92,7 +92,7 @@
     },
     {
       "id": "7bebe7b1-2b9f-4116-bc53-8bc16eab9b93",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "title": "Recreational Swim - 4 Lanes & Play Pool Open",
       "start": "2025-06-14T07:30:00.000",
       "end": "2025-06-14T09:00:00.000",
       "backgroundColor": "#0000FF",
@@ -101,7 +101,7 @@
     },
     {
       "id": "167b9f82-3e98-4de3-824f-13573b7e6678",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "title": "Lessons & Lanes - 2 Lanes Open",
       "start": "2025-06-14T09:00:00.000",
       "end": "2025-06-14T12:00:00.000",
       "backgroundColor": "#0000FF",
@@ -110,7 +110,7 @@
     },
     {
       "id": "f52ffff5-8036-4b42-aebf-c52a0ebe2fc4",
-      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
+      "title": "Aquafit using Lap Pool - Play Pool Open",
       "start": "2025-06-14T12:00:00.000",
       "end": "2025-06-14T12:45:00.000",
       "backgroundColor": "#0000FF",
@@ -119,7 +119,7 @@
     },
     {
       "id": "7363124f-24d2-4e0b-a84d-2ee2381cd535",
-      "title": "Recreational Swim - 2 Lanes, Play & Therapy Pools Open, 2 Lanes being used for NLS Course",
+      "title": "Recreational Swim - 2 Lanes & Play Pool Open, 2 Lanes being used for NLS Course",
       "start": "2025-06-14T13:00:00.000",
       "end": "2025-06-14T14:30:00.000",
       "backgroundColor": "#0000FF",
@@ -155,7 +155,7 @@
     },
     {
       "id": "73e09b32-0279-4219-9b3e-7cee60f856de",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "title": "Recreational Swim - 4 Lanes & Play Pool Open",
       "start": "2025-06-14T18:00:00.000",
       "end": "2025-06-14T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -577,7 +577,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-13T16:06:44.757Z",
+  "lastUpdated": "2025-06-13T16:40:18.680Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -585,7 +585,7 @@
       "end": "2025-06-21T00:00:00.000Z"
     },
     "eventCount": 64,
-    "generatedAt": "2025-06-13T16:06:44.757Z",
+    "generatedAt": "2025-06-13T16:40:18.680Z",
     "generatedBy": "GitHub Actions"
   }
 }
