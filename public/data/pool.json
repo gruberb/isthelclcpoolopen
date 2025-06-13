@@ -289,6 +289,15 @@
       "allDay": false
     },
     {
+      "id": "1032a710-f249-466a-858d-603cf7a69271",
+      "title": "Busy",
+      "start": "2025-06-16T20:00:00.000",
+      "end": "2025-06-16T21:00:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
       "id": "c6b28154-cb09-4ef5-9c62-6c1fca71fb99",
       "title": "Private Full Pool Rental - Lawrencetown Education Centre",
       "start": "2025-06-16T20:00:00.000",
@@ -385,6 +394,15 @@
       "end": "2025-06-18T12:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e90483ed-9036-4acb-8846-f4e83b2fa675",
+      "title": "Busy",
+      "start": "2025-06-18T11:30:00.000",
+      "end": "2025-06-18T12:30:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
       "allDay": false
     },
     {
@@ -577,15 +595,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-13T17:36:35.029Z",
+  "lastUpdated": "2025-06-13T18:07:51.128Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-06-13T00:00:00.000Z",
       "end": "2025-06-21T00:00:00.000Z"
     },
-    "eventCount": 64,
-    "generatedAt": "2025-06-13T17:36:35.029Z",
+    "eventCount": 66,
+    "generatedAt": "2025-06-13T18:07:51.128Z",
     "generatedBy": "GitHub Actions"
   }
 }
