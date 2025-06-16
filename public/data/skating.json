@@ -1,76 +1,12 @@
 {
-  "data": [
-    {
-      "id": "d18320e3-3909-4122-9828-63025d4a1cdc",
-      "title": "Home School / Public Skating",
-      "start": "2025-06-09T10:00:00.000",
-      "end": "2025-06-09T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0c6f2e7c-b558-4c6d-b09f-9be4c613d8e3",
-      "title": "Adult Skating",
-      "start": "2025-06-09T12:00:00.000",
-      "end": "2025-06-09T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b46aefea-2369-42b5-8dfe-92c57c43225f",
-      "title": "Public Skating (Strollers Welcomed)",
-      "start": "2025-06-10T10:00:00.000",
-      "end": "2025-06-10T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "33bebf65-03b3-4d98-ad02-3c1a23c6d367",
-      "title": "Adult Skating",
-      "start": "2025-06-10T12:00:00.000",
-      "end": "2025-06-10T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "37b7fcb8-9f1e-4f10-bf07-18bccc805d4a",
-      "title": "Adult Skating",
-      "start": "2025-06-11T12:00:00.000",
-      "end": "2025-06-11T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "640b2b78-0dac-4a07-9a15-ef3f0b61d7e3",
-      "title": "Public Skating (Strollers Welcomed)",
-      "start": "2025-06-12T10:00:00.000",
-      "end": "2025-06-12T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c24354da-bd3e-42e8-946e-abc7ead3dd36",
-      "title": "Adult Skating",
-      "start": "2025-06-12T12:00:00.000",
-      "end": "2025-06-12T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    }
-  ],
-  "lastUpdated": "2025-06-15T05:03:19.563Z",
+  "data": [],
+  "lastUpdated": "2025-06-16T05:04:29.992Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 40,
-    "publicEvents": 7,
-    "generatedAt": "2025-06-15T05:03:19.563Z",
+    "totalEvents": 11,
+    "publicEvents": 0,
+    "generatedAt": "2025-06-16T05:04:29.992Z",
     "generatedBy": "GitHub Actions"
   }
 }
