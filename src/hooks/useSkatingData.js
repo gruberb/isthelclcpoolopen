@@ -1,11 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { convertToLocalTime } from "../utils/dateUtils";
 
-// Cache configuration
-const CACHE_KEY = "skating_data_cache";
-const CACHE_TIMESTAMP_KEY = "skating_data_timestamp";
-const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
-
 export function useSkatingData() {
   const [data, setData] = useState([]); // processed events array
   const [loading, setLoading] = useState(true); // spinner flag
@@ -15,41 +10,22 @@ export function useSkatingData() {
   useEffect(() => {
     async function fetchData() {
       try {
-        // 1) Try valid cache
-        const cached = getCachedData();
-        if (cached) {
-          setData(cached.data);
-          setLastUpdated(new Date(cached.timestamp));
-          setLoading(false);
-          return;
-        }
+        const res = await fetch(`${process.env.PUBLIC_URL}/data/skating.json}`, {
+          cache: 'no-cache'
+        });
 
-        // 2) Fetch fresh
-        const res = await fetch(`${process.env.PUBLIC_URL}/data/skating.json`)
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();
 
-        // 3) Parse & process
+        // Parse & process
         const processed = processData(json.data);
         const updatedAt = new Date(json.lastUpdated);
 
         setData(processed);
         setLastUpdated(updatedAt);
-
-        // 4) Cache for next time
-        cacheData(processed, updatedAt);
       } catch (err) {
         console.error("Error fetching skating data:", err);
         setError(err.message);
-        // fallback to any (even expired) cache
-        const raw = localStorage.getItem(CACHE_KEY);
-        if (raw) {
-          try {
-            const { data: d, timestamp } = JSON.parse(raw);
-            setData(d);
-            setLastUpdated(new Date(timestamp));
-          } catch {}
-        }
       } finally {
         setLoading(false);
       }
@@ -125,30 +101,4 @@ function getWeekBounds(offsetWeeks = 0) {
   sun.setHours(23, 59, 59, 999);
 
   return { start: mon, end: sun };
-}
-
-// LocalStorage cache helpers
-function getCachedData() {
-  try {
-    const ts = localStorage.getItem(CACHE_TIMESTAMP_KEY);
-    const raw = localStorage.getItem(CACHE_KEY);
-    if (!ts || !raw) return null;
-
-    const age = Date.now() - parseInt(ts, 10);
-    if (age < CACHE_DURATION) {
-      return { data: JSON.parse(raw), timestamp: parseInt(ts, 10) };
-    }
-  } catch (err) {
-    console.warn("Cache read failed:", err);
-  }
-  return null;
-}
-
-function cacheData(data, timestamp) {
-  try {
-    localStorage.setItem(CACHE_KEY, JSON.stringify(data));
-    localStorage.setItem(CACHE_TIMESTAMP_KEY, timestamp.getTime().toString());
-  } catch (err) {
-    console.warn("Cache write failed:", err);
-  }
 }
