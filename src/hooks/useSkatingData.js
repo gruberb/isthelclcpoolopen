@@ -10,7 +10,7 @@ export function useSkatingData() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch(`${process.env.PUBLIC_URL}/data/skating.json}`, {
+        const res = await fetch(`${process.env.PUBLIC_URL}/data/skating.json`, {
           cache: 'no-cache'
         });
 

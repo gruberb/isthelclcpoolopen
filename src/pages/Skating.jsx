@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Layout from "../components/common/Layout";
 import WeekSelector from "../components/skating/WeekSelector";
 import SkatingCard from "../components/skating/SkatingCard";
+import SkatingEmptyState from "../components/skating/SkatingEmptyState"; // NEW: Add this import
 import Loading from "../components/common/Loading";
 import { useSkatingData } from "../hooks/useSkatingData";
 
@@ -113,10 +114,9 @@ function Skating() {
         />
       </div>
 
+      {/* CHANGED: Replace the old empty state with the new component */}
       {events.length === 0 ? (
-        <div className="bg-red-50 p-6 rounded-lg text-center text-red-700">
-          No public skating events found for this week.
-        </div>
+        <SkatingEmptyState selectedWeek={selectedWeek} />
       ) : (
         <div className="space-y-6 mt-6 mb-28">
           {events.map((event, index) => {
