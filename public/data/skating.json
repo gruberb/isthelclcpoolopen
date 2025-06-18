@@ -1,12 +1,12 @@
 {
   "data": [],
-  "lastUpdated": "2025-06-17T05:03:25.077Z",
+  "lastUpdated": "2025-06-18T05:03:32.925Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 12,
     "publicEvents": 0,
-    "generatedAt": "2025-06-17T05:03:25.077Z",
+    "generatedAt": "2025-06-18T05:03:32.925Z",
     "generatedBy": "GitHub Actions"
   }
 }
