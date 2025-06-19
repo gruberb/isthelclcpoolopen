@@ -1,96 +1,6 @@
 {
   "data": [
     {
-      "id": "ba6e7422-a034-431f-a1ae-e462d5a8e5b9",
-      "title": "Members Swim",
-      "start": "2025-06-18T06:30:00.000",
-      "end": "2025-06-18T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f0060c9e-7c6a-4c48-bc70-cb8666268067",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-06-18T07:30:00.000",
-      "end": "2025-06-18T10:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7bde4008-0059-40bd-9794-a5545e7ca8ab",
-      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-06-18T10:00:00.000",
-      "end": "2025-06-18T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "3cc814d3-6386-4fa5-8dba-7d6845128f61",
-      "title": "School Booking",
-      "start": "2025-06-18T11:30:00.000",
-      "end": "2025-06-18T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e90483ed-9036-4acb-8846-f4e83b2fa675",
-      "title": "Busy",
-      "start": "2025-06-18T11:30:00.000",
-      "end": "2025-06-18T12:30:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
-      "id": "9e1d90f2-db80-4cdc-aa8f-8af4a07cb06d",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools",
-      "start": "2025-06-18T12:45:00.000",
-      "end": "2025-06-18T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "6d674b39-47ca-4536-9f29-5251dc704984",
-      "title": "Senior Swim - 60+",
-      "start": "2025-06-18T14:00:00.000",
-      "end": "2025-06-18T15:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "83e3d4f8-3a22-46a9-a874-446567521899",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-06-18T16:00:00.000",
-      "end": "2025-06-18T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9e07aa39-d364-4aa2-a2aa-9f2f5a6ca122",
-      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-06-18T19:00:00.000",
-      "end": "2025-06-18T19:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "992f09c8-7802-4512-b6ea-e68bca966390",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-06-18T20:00:00.000",
-      "end": "2025-06-18T21:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "6952d4fc-78d0-4f6a-bc73-242762b608af",
       "title": "Members Swim",
       "start": "2025-06-19T06:30:00.000",
@@ -602,17 +512,89 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "40295e7d-6e3f-44ed-85cb-2f2fa18aeda8",
+      "title": "Members Swim",
+      "start": "2025-06-26T06:30:00.000",
+      "end": "2025-06-26T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "dba5e400-f29c-405f-956e-6b93e3b623d7",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open to Public",
+      "start": "2025-06-26T07:30:00.000",
+      "end": "2025-06-26T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7a2a4c3c-0a78-4e55-b6aa-b568eb7217ef",
+      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-06-26T10:00:00.000",
+      "end": "2025-06-26T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7321ad86-2cc0-4567-bdd1-a9cfafe4bfdb",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-06-26T10:45:00.000",
+      "end": "2025-06-26T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6d23e8e9-aa10-48b4-a76c-7e0a020d6082",
+      "title": "Private Rental - Bayview Community School",
+      "start": "2025-06-26T11:30:00.000",
+      "end": "2025-06-26T13:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2bce2435-b114-4cc9-b96e-ada9d943e664",
+      "title": "Busy",
+      "start": "2025-06-26T11:30:00.000",
+      "end": "2025-06-26T13:30:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
+      "id": "efad4649-fcb3-4be0-8ced-22e3c397820f",
+      "title": "Parent & Tot Swim",
+      "start": "2025-06-26T13:30:00.000",
+      "end": "2025-06-26T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3d50702d-f202-41bc-8439-3f42a6a6ccd5",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-06-26T16:00:00.000",
+      "end": "2025-06-26T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-18T23:05:56.322Z",
+  "lastUpdated": "2025-06-19T00:35:37.555Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-06-18T00:00:00.000Z",
-      "end": "2025-06-26T00:00:00.000Z"
+      "start": "2025-06-19T00:00:00.000Z",
+      "end": "2025-06-27T00:00:00.000Z"
     },
-    "eventCount": 67,
-    "generatedAt": "2025-06-18T23:05:56.322Z",
+    "eventCount": 65,
+    "generatedAt": "2025-06-19T00:35:37.555Z",
     "generatedBy": "GitHub Actions"
   }
 }
