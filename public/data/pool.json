@@ -496,21 +496,21 @@
       "allDay": false
     },
     {
-      "id": "6d23e8e9-aa10-48b4-a76c-7e0a020d6082",
-      "title": "Private Rental - Bayview Community School",
-      "start": "2025-06-26T11:30:00.000",
-      "end": "2025-06-26T13:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "2bce2435-b114-4cc9-b96e-ada9d943e664",
       "title": "Busy",
       "start": "2025-06-26T11:30:00.000",
       "end": "2025-06-26T13:30:00.000",
       "backgroundColor": "#00FF00",
       "textColor": "#000000",
+      "allDay": false
+    },
+    {
+      "id": "6d23e8e9-aa10-48b4-a76c-7e0a020d6082",
+      "title": "Private Rental - Bayview Community School",
+      "start": "2025-06-26T11:30:00.000",
+      "end": "2025-06-26T13:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
       "allDay": false
     },
     {
@@ -622,7 +622,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-20T12:10:18.260Z",
+  "lastUpdated": "2025-06-20T12:46:48.328Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -630,7 +630,7 @@
       "end": "2025-06-28T00:00:00.000Z"
     },
     "eventCount": 69,
-    "generatedAt": "2025-06-20T12:10:18.260Z",
+    "generatedAt": "2025-06-20T12:46:48.328Z",
     "generatedBy": "GitHub Actions"
   }
 }
