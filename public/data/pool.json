@@ -262,15 +262,6 @@
       "allDay": false
     },
     {
-      "id": "8aae739b-b151-4bcb-b2d7-422031e26f24",
-      "title": "Private Rental - SSRCE - All Pools Closed to Public",
-      "start": "2025-06-27T11:30:00.000",
-      "end": "2025-06-27T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "40079730-e402-478a-a76d-698aff618350",
       "title": "Lessons & Lanes - 2 Lanes, Play & Therapy Pools Open",
       "start": "2025-06-27T13:00:00.000",
@@ -487,15 +478,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-24T00:35:38.313Z",
+  "lastUpdated": "2025-06-24T01:36:32.867Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-06-24T00:00:00.000Z",
       "end": "2025-07-02T00:00:00.000Z"
     },
-    "eventCount": 54,
-    "generatedAt": "2025-06-24T00:35:38.313Z",
+    "eventCount": 53,
+    "generatedAt": "2025-06-24T01:36:32.867Z",
     "generatedBy": "GitHub Actions"
   }
 }
