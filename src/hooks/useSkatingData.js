@@ -10,9 +10,18 @@ export function useSkatingData() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch(`${process.env.PUBLIC_URL}/data/skating.json`, {
-          cache: 'no-cache'
-        });
+        // Cache buster that changes every 30 minutes
+        const cacheBuster = Math.floor(Date.now() / (30 * 60 * 1000));
+        const res = await fetch(
+          `${process.env.PUBLIC_URL}/data/skating.json?t=${cacheBuster}`,
+          {
+            cache: 'no-cache',
+            headers: {
+              'Cache-Control': 'no-cache, no-store, must-revalidate',
+              'Pragma': 'no-cache'
+            }
+          }
+        );
 
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();

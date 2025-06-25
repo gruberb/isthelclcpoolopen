@@ -1,10 +1,5 @@
 import { useState, useEffect } from "react";
 
-// Cache configuration
-const CACHE_KEY = "libraries_data_cache";
-const CACHE_TIMESTAMP_KEY = "libraries_data_timestamp";
-const CACHE_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 days (library hours change less frequently)
-
 export function useLibrariesData() {
   const [libraries, setLibraries] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -14,17 +9,18 @@ export function useLibrariesData() {
   useEffect(() => {
     async function fetchData() {
       try {
-        // First check cache
-        const cachedData = getCachedData();
-        if (cachedData) {
-          setLibraries(cachedData.data);
-          setLastUpdated(new Date(cachedData.timestamp));
-          setLoading(false);
-          return;
-        }
-
-        // No valid cache, fetch new data
-        const response = await fetch(`${process.env.PUBLIC_URL}/data/libraries.json`)
+        // Cache busting - changes every hour (library hours don't change often)
+        const cacheBuster = Math.floor(Date.now() / (60 * 60 * 1000));
+        const response = await fetch(
+          `${process.env.PUBLIC_URL}/data/libraries.json?t=${cacheBuster}`,
+          {
+            cache: 'no-cache',
+            headers: {
+              'Cache-Control': 'no-cache, no-store, must-revalidate',
+              'Pragma': 'no-cache'
+            }
+          }
+        );
 
         if (!response.ok) {
           throw new Error(`Failed to fetch library data: ${response.status}`);
@@ -35,24 +31,9 @@ export function useLibrariesData() {
         // Update state
         setLibraries(jsonData.libraries);
         setLastUpdated(new Date(jsonData.lastUpdated));
-
-        // Cache the data
-        cacheData(jsonData.libraries, new Date(jsonData.lastUpdated));
       } catch (err) {
         console.error("Error fetching library data:", err);
         setError(err.message);
-
-        // Try to use expired cache as fallback
-        const expiredCache = localStorage.getItem(CACHE_KEY);
-        if (expiredCache) {
-          try {
-            const { data, timestamp } = JSON.parse(expiredCache);
-            setLibraries(data);
-            setLastUpdated(new Date(timestamp));
-          } catch (cacheErr) {
-            console.error("Failed to use expired cache:", cacheErr);
-          }
-        }
       } finally {
         setLoading(false);
       }
@@ -176,39 +157,4 @@ function findNextOpenDay(library, now, todayName) {
 
   // If no open days found
   return { isOpen: false, inGap: false };
-}
-
-// Cache helper functions
-function getCachedData() {
-  try {
-    const timestamp = localStorage.getItem(CACHE_TIMESTAMP_KEY);
-    const cachedData = localStorage.getItem(CACHE_KEY);
-
-    if (!timestamp || !cachedData) return null;
-
-    const now = Date.now();
-    const cacheTime = parseInt(timestamp, 10);
-
-    // Check if cache is still valid
-    if (now - cacheTime < CACHE_DURATION) {
-      return {
-        data: JSON.parse(cachedData),
-        timestamp: cacheTime,
-      };
-    }
-
-    return null;
-  } catch (err) {
-    console.warn("Error reading from cache:", err);
-    return null;
-  }
-}
-
-function cacheData(data, timestamp) {
-  try {
-    localStorage.setItem(CACHE_KEY, JSON.stringify(data));
-    localStorage.setItem(CACHE_TIMESTAMP_KEY, timestamp.getTime().toString());
-  } catch (err) {
-    console.warn("Error writing to cache:", err);
-  }
 }
