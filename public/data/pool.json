@@ -109,6 +109,15 @@
       "allDay": false
     },
     {
+      "id": "72ffcf01-4a51-4b7b-b548-1e6c9b2d4661",
+      "title": "School Booking - Pool Closed to the Public",
+      "start": "2025-06-27T11:30:00.000",
+      "end": "2025-06-27T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "40079730-e402-478a-a76d-698aff618350",
       "title": "Lessons & Lanes - 2 Lanes, Play & Therapy Pools Open",
       "start": "2025-06-27T13:00:00.000",
@@ -469,15 +478,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-26T14:06:14.561Z",
+  "lastUpdated": "2025-06-26T14:38:24.834Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-06-26T00:00:00.000Z",
       "end": "2025-07-04T00:00:00.000Z"
     },
-    "eventCount": 52,
-    "generatedAt": "2025-06-26T14:06:14.561Z",
+    "eventCount": 53,
+    "generatedAt": "2025-06-26T14:38:24.834Z",
     "generatedBy": "GitHub Actions"
   }
 }
