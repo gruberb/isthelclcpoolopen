@@ -397,18 +397,9 @@
       "allDay": false
     },
     {
-      "id": "0895b5cf-3ac4-4707-9bdd-0766e5624dc6",
-      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-07-04T10:00:00.000",
-      "end": "2025-07-04T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "75122832-05e8-4e69-923c-f0d87c0e62dd",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-07-04T11:00:00.000",
+      "id": "dd853d8c-8b74-48a9-961c-77ee65d33be1",
+      "title": "Pools Closed for Maintenance",
+      "start": "2025-07-04T06:30:00.000",
       "end": "2025-07-04T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -451,15 +442,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-27T12:10:05.878Z",
+  "lastUpdated": "2025-06-27T12:46:49.729Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-06-27T00:00:00.000Z",
       "end": "2025-07-05T00:00:00.000Z"
     },
-    "eventCount": 50,
-    "generatedAt": "2025-06-27T12:10:05.878Z",
+    "eventCount": 49,
+    "generatedAt": "2025-06-27T12:46:49.729Z",
     "generatedBy": "GitHub Actions"
   }
 }
