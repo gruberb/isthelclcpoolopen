@@ -227,7 +227,7 @@
     },
     {
       "id": "962a5cf1-1bfb-46b9-a0ed-c270ea4d62a6",
-      "title": "School's Out Free Public Swim",
+      "title": "Public Swim",
       "start": "2025-06-30T13:00:00.000",
       "end": "2025-06-30T15:30:00.000",
       "backgroundColor": "#0000FF",
@@ -407,7 +407,7 @@
     },
     {
       "id": "85d13f56-7240-4334-83f1-df66f4936652",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pools Open",
+      "title": "Lessons & Lanes - 2 Lanes, Play & Therapy Pools Open",
       "start": "2025-07-04T13:00:00.000",
       "end": "2025-07-04T13:45:00.000",
       "backgroundColor": "#0000FF",
@@ -442,7 +442,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-27T13:14:31.969Z",
+  "lastUpdated": "2025-06-27T13:41:23.307Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -450,7 +450,7 @@
       "end": "2025-07-05T00:00:00.000Z"
     },
     "eventCount": 49,
-    "generatedAt": "2025-06-27T13:14:31.969Z",
+    "generatedAt": "2025-06-27T13:41:23.307Z",
     "generatedBy": "GitHub Actions"
   }
 }
