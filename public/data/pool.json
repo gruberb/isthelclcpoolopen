@@ -1,69 +1,6 @@
 {
   "data": [
     {
-      "id": "cca06d22-9351-43fa-a0ac-840bcd3a7b95",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-06-28T07:30:00.000",
-      "end": "2025-06-28T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "cefa473a-de91-4a4b-93d2-30e3911b9a46",
-      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-06-28T12:00:00.000",
-      "end": "2025-06-28T12:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0e36f6d3-f647-475f-aee7-8dc05cd42e7b",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-06-28T13:00:00.000",
-      "end": "2025-06-28T14:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "3d473d36-a7ef-4987-a30f-4a5e57a81be6",
-      "title": "Public Swim - No Lanes",
-      "start": "2025-06-28T14:30:00.000",
-      "end": "2025-06-28T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c38c9a54-5846-4732-a70b-bcb8a977cfce",
-      "title": "Private Pool Party Rental ",
-      "start": "2025-06-28T16:00:00.000",
-      "end": "2025-06-28T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "72129b95-ca2b-4207-8b80-71cc92a78699",
-      "title": "MODL Women's Only Swim",
-      "start": "2025-06-28T17:00:00.000",
-      "end": "2025-06-28T18:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9d78499c-85d0-4161-8617-078b59fd4552",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-06-28T18:00:00.000",
-      "end": "2025-06-28T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "d2b90110-4bd3-4a7b-8dcd-6f3cdbcf0b61",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2025-06-29T07:30:00.000",
@@ -395,17 +332,53 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "7ee8cc88-2ffe-4636-94fd-029d38067230",
+      "title": "Members Swim",
+      "start": "2025-07-06T10:00:00.000",
+      "end": "2025-07-06T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "272e4da5-4c5a-48c6-a8aa-6b5bed0f66a7",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-07-06T11:00:00.000",
+      "end": "2025-07-06T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "bd8c3370-fdee-47b2-b141-f884c79a55f5",
+      "title": "Public Swim - No Lanes",
+      "start": "2025-07-06T13:00:00.000",
+      "end": "2025-07-06T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1c7380f1-cfd5-4068-9aae-c83e49df7411",
+      "title": "Private Pool Party Rental",
+      "start": "2025-07-06T16:00:00.000",
+      "end": "2025-07-06T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-06-28T23:34:58.172Z",
+  "lastUpdated": "2025-06-29T00:40:26.823Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-06-28T00:00:00.000Z",
-      "end": "2025-07-06T00:00:00.000Z"
+      "start": "2025-06-29T00:00:00.000Z",
+      "end": "2025-07-07T00:00:00.000Z"
     },
-    "eventCount": 44,
-    "generatedAt": "2025-06-28T23:34:58.172Z",
+    "eventCount": 41,
+    "generatedAt": "2025-06-29T00:40:26.823Z",
     "generatedBy": "GitHub Actions"
   }
 }
