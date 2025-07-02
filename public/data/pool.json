@@ -1,15 +1,6 @@
 {
   "data": [
     {
-      "id": "bffbcf6c-69d3-4514-a96c-4d5e06a32b2a",
-      "title": "Closed for Canada Day",
-      "start": "2025-07-01T09:00:00.000",
-      "end": "2025-07-01T18:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "8d4a7ac4-bc9b-4136-b6bf-1043c942d78a",
       "title": "Members Swim",
       "start": "2025-07-02T06:30:00.000",
@@ -440,17 +431,125 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "c9309a21-f135-4e60-b50a-220ef3b32390",
+      "title": "Members Swim ",
+      "start": "2025-07-09T06:30:00.000",
+      "end": "2025-07-09T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9f508241-c58c-4c07-8be0-259d6a2bfe02",
+      "title": "Bridgewater Barracudas - 3 Lanes, Play & Therapy Pools Open",
+      "start": "2025-07-09T07:30:00.000",
+      "end": "2025-07-09T08:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "994d41e7-dac4-47c7-a5e0-7d0591c38046",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2025-07-09T09:00:00.000",
+      "end": "2025-07-09T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2a91fdf6-1545-4c2b-843b-51501084fd58",
+      "title": "Elderfit using Lap Pool - Therapy Pool Open",
+      "start": "2025-07-09T10:00:00.000",
+      "end": "2025-07-09T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b6d1e85d-e366-451f-bcde-da87e9b24877",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2025-07-09T11:00:00.000",
+      "end": "2025-07-09T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "bb2bdd08-edad-4d10-adab-f0fa4774cbf0",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-07-09T12:00:00.000",
+      "end": "2025-07-09T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3b848a8b-6f17-42bc-a533-82ea42757dc1",
+      "title": "Public Swim - No Lanes",
+      "start": "2025-07-09T13:00:00.000",
+      "end": "2025-07-09T14:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "aeab8390-918a-4826-bbb6-afa5d41af782",
+      "title": "Private Rental - Woodworth Hockey Camp",
+      "start": "2025-07-09T14:30:00.000",
+      "end": "2025-07-09T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7b2bdf91-203b-4751-8d0e-4428e6a3825e",
+      "title": "Lessons & Lanes - 2 Lanes, Play & Therapy Pool Open",
+      "start": "2025-07-09T15:30:00.000",
+      "end": "2025-07-09T16:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d005c51f-69df-4e9d-911f-f10e9c707b79",
+      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-07-09T17:00:00.000",
+      "end": "2025-07-09T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d7136ab1-2da9-475d-bafa-678156df59fb",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-07-09T18:00:00.000",
+      "end": "2025-07-09T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d047c0b4-eb54-4060-8c41-58c6300daab1",
+      "title": "MODL Women's Only Swim",
+      "start": "2025-07-09T19:00:00.000",
+      "end": "2025-07-09T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-01T23:35:34.029Z",
+  "lastUpdated": "2025-07-02T00:35:42.256Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-07-01T00:00:00.000Z",
-      "end": "2025-07-09T00:00:00.000Z"
+      "start": "2025-07-02T00:00:00.000Z",
+      "end": "2025-07-10T00:00:00.000Z"
     },
-    "eventCount": 49,
-    "generatedAt": "2025-07-01T23:35:34.029Z",
+    "eventCount": 60,
+    "generatedAt": "2025-07-02T00:35:42.256Z",
     "generatedBy": "GitHub Actions"
   }
 }
