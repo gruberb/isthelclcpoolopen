@@ -278,19 +278,24 @@ export function findFeatureStatus(events, now, type) {
         (type === "lanes" && analysis.lanes) ||
         (type === "kids" && analysis.kids);
 
-      // If this event starts exactly when our current sequence ends (no gap)
-      // and has the feature we're looking for, extend our continuous time
-      if (Math.abs(eventStart - currentEndTime) < 60000 && hasFeature) {
+      // IMPROVED GAP HANDLING: Bridge reasonable gaps between events with the same feature
+      const gapDuration = eventStart - currentEndTime;
+      const maxGapDuration = 30 * 60 * 1000; // 45 minutes in milliseconds
+
+      if (gapDuration >= 0 && gapDuration <= maxGapDuration && hasFeature) {
         // Stop extending if we encounter a special event (members only, restricted access)
         if (analysis.restrictedAccess || analysis.membersOnly) {
           break;
         }
 
-        // Extend the continuous availability time
+        // Extend the continuous availability time through the gap
         featureEndTime = eventEnd;
         currentEndTime = eventEnd;
-      } else if (eventStart > currentEndTime) {
-        // We've found a gap or an event without the feature - this is the end of continuous availability
+      } else if (eventStart > currentEndTime && !hasFeature) {
+        // We've found an event without the feature - this is the end of continuous availability
+        break;
+      } else if (gapDuration > maxGapDuration) {
+        // Gap is too large to bridge
         break;
       }
     }
