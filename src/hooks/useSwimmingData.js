@@ -11,18 +11,28 @@ export function useSwimmingData() {
   useEffect(() => {
     async function fetchData() {
       try {
-        // Cache buster that changes every 5 minutes
-        const cacheBuster = Math.floor(Date.now() / (5 * 60 * 1000));
-        const response = await fetch(
-          `${process.env.PUBLIC_URL}/data/pool.json?t=${cacheBuster}`,
-          {
-            cache: 'no-cache',
-            headers: {
-              'Cache-Control': 'no-cache, no-store, must-revalidate',
-              'Pragma': 'no-cache'
-            }
+        // Use timestamp cache buster (changes every second)
+        const cacheBuster = Date.now();
+
+        // Check if we're in production (GitHub Pages)
+        const isProduction = window.location.hostname === 'isthelclcpoolopen.ca';
+
+        let dataUrl;
+        if (isProduction) {
+          // In production, use raw GitHub URL to bypass GitHub Pages CDN
+          dataUrl = `https://raw.githubusercontent.com/gruberb/isthelclcpoolopen/main/public/data/pool.json?t=${cacheBuster}`;
+        } else {
+          // In development, use local file
+          dataUrl = `${process.env.PUBLIC_URL}/data/pool.json?t=${cacheBuster}`;
+        }
+
+        const response = await fetch(dataUrl, {
+          cache: 'no-store',
+          headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache'
           }
-        );
+        });
 
         if (!response.ok) {
           throw new Error(`Failed to fetch data: ${response.status}`);

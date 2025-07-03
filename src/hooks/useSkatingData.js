@@ -2,26 +2,36 @@ import { useState, useEffect, useCallback } from "react";
 import { convertToLocalTime } from "../utils/dateUtils";
 
 export function useSkatingData() {
-  const [data, setData] = useState([]); // processed events array
-  const [loading, setLoading] = useState(true); // spinner flag
-  const [error, setError] = useState(null); // error message
-  const [lastUpdated, setLastUpdated] = useState(null); // Date
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [lastUpdated, setLastUpdated] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        // Cache buster that changes every 30 minutes
-        const cacheBuster = Math.floor(Date.now() / (30 * 60 * 1000));
-        const res = await fetch(
-          `${process.env.PUBLIC_URL}/data/skating.json?t=${cacheBuster}`,
-          {
-            cache: 'no-cache',
-            headers: {
-              'Cache-Control': 'no-cache, no-store, must-revalidate',
-              'Pragma': 'no-cache'
-            }
+        // Use timestamp cache buster (changes every second)
+        const cacheBuster = Date.now();
+
+        // Check if we're in production (GitHub Pages)
+        const isProduction = window.location.hostname === 'isthelclcpoolopen.ca';
+
+        let dataUrl;
+        if (isProduction) {
+          // In production, use raw GitHub URL to bypass GitHub Pages CDN
+          dataUrl = `https://raw.githubusercontent.com/gruberb/isthelclcpoolopen/main/public/data/skating.json?t=${cacheBuster}`;
+        } else {
+          // In development, use local file
+          dataUrl = `${process.env.PUBLIC_URL}/data/skating.json?t=${cacheBuster}`;
+        }
+
+        const res = await fetch(dataUrl, {
+          cache: 'no-store',
+          headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache'
           }
-        );
+        });
 
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();
@@ -64,8 +74,6 @@ export function useSkatingData() {
   };
 }
 
-// ——— Helpers —————————————————————————————————————————————
-
 // Turn raw JSON array into fully‐typed events with Date objects
 function processData(rawData) {
   if (!Array.isArray(rawData)) return [];
@@ -99,8 +107,8 @@ function processData(rawData) {
 // Monday 00:00:00 of this week + offset, through Sunday 23:59:59
 function getWeekBounds(offsetWeeks = 0) {
   const today = new Date();
-  const dow = today.getDay(); // 0=Sun,1=Mon…
-  const toMon = (dow + 6) % 7; // days back to Monday
+  const dow = today.getDay();
+  const toMon = (dow + 6) % 7;
   const mon = new Date(today);
   mon.setDate(today.getDate() - toMon + offsetWeeks * 7);
   mon.setHours(0, 0, 0, 0);

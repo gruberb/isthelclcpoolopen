@@ -9,18 +9,28 @@ export function useLibrariesData() {
   useEffect(() => {
     async function fetchData() {
       try {
-        // Cache busting - changes every hour (library hours don't change often)
-        const cacheBuster = Math.floor(Date.now() / (60 * 60 * 1000));
-        const response = await fetch(
-          `${process.env.PUBLIC_URL}/data/libraries.json?t=${cacheBuster}`,
-          {
-            cache: 'no-cache',
-            headers: {
-              'Cache-Control': 'no-cache, no-store, must-revalidate',
-              'Pragma': 'no-cache'
-            }
+        // Use timestamp cache buster (changes every second)
+        const cacheBuster = Date.now();
+
+        // Check if we're in production (GitHub Pages)
+        const isProduction = window.location.hostname === 'isthelclcpoolopen.ca';
+
+        let dataUrl;
+        if (isProduction) {
+          // In production, use raw GitHub URL to bypass GitHub Pages CDN
+          dataUrl = `https://raw.githubusercontent.com/gruberb/isthelclcpoolopen/main/public/data/libraries.json?t=${cacheBuster}`;
+        } else {
+          // In development, use local file
+          dataUrl = `${process.env.PUBLIC_URL}/data/libraries.json?t=${cacheBuster}`;
+        }
+
+        const response = await fetch(dataUrl, {
+          cache: 'no-store',
+          headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache'
           }
-        );
+        });
 
         if (!response.ok) {
           throw new Error(`Failed to fetch library data: ${response.status}`);
@@ -59,7 +69,6 @@ export function useLibrariesData() {
     const todayHours = library.hours[dayOfWeek];
 
     if (!todayHours || !todayHours.open || !todayHours.close) {
-      // Library is closed today, find next open day
       return findNextOpenDay(library, now, dayOfWeek);
     }
 
@@ -72,14 +81,11 @@ export function useLibrariesData() {
       (currentHour < closeHour ||
         (currentHour === closeHour && currentMinute < closeMinute));
 
-    // Calculate time remaining or time until opening
     if (isOpen) {
-      // Calculate minutes until closing
       let minutesUntilClosing =
         (closeHour - currentHour) * 60 + (closeMinute - currentMinute);
       return { isOpen, timeRemaining: minutesUntilClosing };
     } else {
-      // If it's before opening time today
       if (
         currentHour < openHour ||
         (currentHour === openHour && currentMinute < openMinute)
@@ -88,7 +94,6 @@ export function useLibrariesData() {
           (openHour - currentHour) * 60 + (openMinute - currentMinute);
         return { isOpen, minutesUntilOpening, nextOpenDay: dayOfWeek };
       } else {
-        // It's after closing time, find next open day
         return findNextOpenDay(library, now, dayOfWeek);
       }
     }
@@ -105,7 +110,6 @@ export function useLibrariesData() {
 
 // Helper function to find the next open day for a library
 function findNextOpenDay(library, now, todayName) {
-  // Array of all weekdays
   const daysOfWeek = [
     "sunday",
     "monday",
@@ -116,14 +120,11 @@ function findNextOpenDay(library, now, todayName) {
     "saturday",
   ];
   const todayIndex = daysOfWeek.indexOf(todayName);
-
-  // Hours left in the current day
   const hoursLeftToday = 24 - now.getHours() - now.getMinutes() / 60;
 
   let nextOpenDay = null;
   let hoursUntilOpen = 0;
 
-  // Check each day of the week, starting from tomorrow
   for (let i = 1; i <= 7; i++) {
     const nextDayIndex = (todayIndex + i) % 7;
     const nextDay = daysOfWeek[nextDayIndex];
@@ -132,15 +133,11 @@ function findNextOpenDay(library, now, todayName) {
     if (hours && hours.open) {
       nextOpenDay = nextDay;
 
-      // Parse opening hours
       const [openHour, openMinute] = hours.open.split(":").map(Number);
 
-      // Calculate total hours until opening
       if (i === 1) {
-        // For tomorrow, account for remaining hours today
         hoursUntilOpen = hoursLeftToday + openHour + openMinute / 60;
       } else {
-        // For days after tomorrow, add full days
         hoursUntilOpen =
           hoursLeftToday + (i - 1) * 24 + openHour + openMinute / 60;
       }
@@ -150,11 +147,9 @@ function findNextOpenDay(library, now, todayName) {
   }
 
   if (nextOpenDay) {
-    // Convert hours to minutes for consistency
     const minutesUntilOpening = Math.round(hoursUntilOpen * 60);
     return { isOpen: false, minutesUntilOpening, nextOpenDay };
   }
 
-  // If no open days found
   return { isOpen: false, inGap: false };
 }
