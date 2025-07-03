@@ -11,26 +11,23 @@ export function useSwimmingData() {
   useEffect(() => {
     async function fetchData() {
       try {
-        // Use timestamp cache buster (changes every second)
-        const cacheBuster = Date.now();
+        // Aggressive cache busting - timestamp + random string
+        const timestamp = Date.now();
+        const random = Math.random().toString(36).substring(2, 15);
 
-        // Check if we're in production (GitHub Pages)
-        const isProduction = window.location.hostname === 'isthelclcpoolopen.ca';
+        // Use regular GitHub Pages URL with cache busting
+        const dataUrl = `${process.env.PUBLIC_URL}/data/pool.json?_t=${timestamp}&_r=${random}`;
 
-        let dataUrl;
-        if (isProduction) {
-          // In production, use raw GitHub URL to bypass GitHub Pages CDN
-          dataUrl = `https://raw.githubusercontent.com/gruberb/isthelclcpoolopen/main/public/data/pool.json?t=${cacheBuster}`;
-        } else {
-          // In development, use local file
-          dataUrl = `${process.env.PUBLIC_URL}/data/pool.json?t=${cacheBuster}`;
-        }
+        console.log('Fetching pool data from:', dataUrl);
 
         const response = await fetch(dataUrl, {
-          cache: 'no-store',
+          method: 'GET',
+          cache: 'no-store', // Most aggressive cache policy
           headers: {
+            'Accept': 'application/json',
             'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache'
+            'Pragma': 'no-cache',
+            'Expires': '0'
           }
         });
 
@@ -40,13 +37,16 @@ export function useSwimmingData() {
 
         const jsonData = await response.json();
 
+        // Log the timestamp to verify fresh data
+        const fetchedTimestamp = new Date(jsonData.lastUpdated);
+        console.log('Pool data timestamp:', fetchedTimestamp.toISOString());
+
         // Process the data
         const processedData = processData(jsonData.data);
-        const timestamp = new Date(jsonData.lastUpdated);
 
         // Update state
         setData(processedData);
-        setLastUpdated(timestamp);
+        setLastUpdated(fetchedTimestamp);
       } catch (err) {
         console.error("Error fetching swimming data:", err);
         setError(err.message);

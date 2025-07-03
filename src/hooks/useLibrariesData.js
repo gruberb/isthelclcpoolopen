@@ -9,26 +9,23 @@ export function useLibrariesData() {
   useEffect(() => {
     async function fetchData() {
       try {
-        // Use timestamp cache buster (changes every second)
-        const cacheBuster = Date.now();
+        // Aggressive cache busting - timestamp + random string
+        const timestamp = Date.now();
+        const random = Math.random().toString(36).substring(2, 15);
 
-        // Check if we're in production (GitHub Pages)
-        const isProduction = window.location.hostname === 'isthelclcpoolopen.ca';
+        // Use regular GitHub Pages URL with cache busting
+        const dataUrl = `${process.env.PUBLIC_URL}/data/libraries.json?_t=${timestamp}&_r=${random}`;
 
-        let dataUrl;
-        if (isProduction) {
-          // In production, use raw GitHub URL to bypass GitHub Pages CDN
-          dataUrl = `https://raw.githubusercontent.com/gruberb/isthelclcpoolopen/main/public/data/libraries.json?t=${cacheBuster}`;
-        } else {
-          // In development, use local file
-          dataUrl = `${process.env.PUBLIC_URL}/data/libraries.json?t=${cacheBuster}`;
-        }
+        console.log('Fetching library data from:', dataUrl);
 
         const response = await fetch(dataUrl, {
+          method: 'GET',
           cache: 'no-store',
           headers: {
+            'Accept': 'application/json',
             'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache'
+            'Pragma': 'no-cache',
+            'Expires': '0'
           }
         });
 
@@ -38,9 +35,13 @@ export function useLibrariesData() {
 
         const jsonData = await response.json();
 
+        // Log the timestamp to verify fresh data
+        const fetchedTimestamp = new Date(jsonData.lastUpdated);
+        console.log('Library data timestamp:', fetchedTimestamp.toISOString());
+
         // Update state
         setLibraries(jsonData.libraries);
-        setLastUpdated(new Date(jsonData.lastUpdated));
+        setLastUpdated(fetchedTimestamp);
       } catch (err) {
         console.error("Error fetching library data:", err);
         setError(err.message);

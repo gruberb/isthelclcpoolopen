@@ -10,38 +10,38 @@ export function useSkatingData() {
   useEffect(() => {
     async function fetchData() {
       try {
-        // Use timestamp cache buster (changes every second)
-        const cacheBuster = Date.now();
+        // Aggressive cache busting - timestamp + random string
+        const timestamp = Date.now();
+        const random = Math.random().toString(36).substring(2, 15);
 
-        // Check if we're in production (GitHub Pages)
-        const isProduction = window.location.hostname === 'isthelclcpoolopen.ca';
+        // Use regular GitHub Pages URL with cache busting
+        const dataUrl = `${process.env.PUBLIC_URL}/data/skating.json?_t=${timestamp}&_r=${random}`;
 
-        let dataUrl;
-        if (isProduction) {
-          // In production, use raw GitHub URL to bypass GitHub Pages CDN
-          dataUrl = `https://raw.githubusercontent.com/gruberb/isthelclcpoolopen/main/public/data/skating.json?t=${cacheBuster}`;
-        } else {
-          // In development, use local file
-          dataUrl = `${process.env.PUBLIC_URL}/data/skating.json?t=${cacheBuster}`;
-        }
+        console.log('Fetching skating data from:', dataUrl);
 
         const res = await fetch(dataUrl, {
+          method: 'GET',
           cache: 'no-store',
           headers: {
+            'Accept': 'application/json',
             'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache'
+            'Pragma': 'no-cache',
+            'Expires': '0'
           }
         });
 
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const json = await res.json();
 
+        // Log the timestamp to verify fresh data
+        const fetchedTimestamp = new Date(json.lastUpdated);
+        console.log('Skating data timestamp:', fetchedTimestamp.toISOString());
+
         // Parse & process
         const processed = processData(json.data);
-        const updatedAt = new Date(json.lastUpdated);
 
         setData(processed);
-        setLastUpdated(updatedAt);
+        setLastUpdated(fetchedTimestamp);
       } catch (err) {
         console.error("Error fetching skating data:", err);
         setError(err.message);
