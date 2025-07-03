@@ -21,7 +21,7 @@ export function useSkatingData() {
 
         const res = await fetch(dataUrl, {
           method: 'GET',
-          cache: 'no-store',
+          cache: 'reload',
           headers: {
             'Accept': 'application/json',
             'Cache-Control': 'no-cache, no-store, must-revalidate',

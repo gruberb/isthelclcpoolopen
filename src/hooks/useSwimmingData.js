@@ -22,7 +22,7 @@ export function useSwimmingData() {
 
         const response = await fetch(dataUrl, {
           method: 'GET',
-          cache: 'no-store', // Most aggressive cache policy
+          cache: 'reload', // Most aggressive cache policy
           headers: {
             'Accept': 'application/json',
             'Cache-Control': 'no-cache, no-store, must-revalidate',
