@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "dd853d8c-8b74-48a9-961c-77ee65d33be1",
-      "title": "Pools Closed for Maintenance",
-      "start": "2025-07-04T06:30:00.000",
-      "end": "2025-07-04T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "85d13f56-7240-4334-83f1-df66f4936652",
-      "title": "Lessons & Lanes - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2025-07-04T13:00:00.000",
-      "end": "2025-07-04T13:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "419edebf-8c9a-48de-9e87-fd3e0cccf1bf",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-07-04T14:00:00.000",
-      "end": "2025-07-04T15:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f6bdeb09-d42b-419a-aa11-352083108504",
-      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-07-04T15:30:00.000",
-      "end": "2025-07-04T16:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c7bd93e4-4dc0-43d5-b34b-f3d43948fb27",
-      "title": "Public Swim - No Lanes",
-      "start": "2025-07-04T16:30:00.000",
-      "end": "2025-07-04T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "543b10cf-3300-4e42-b75d-75fbbaee970d",
       "title": "Members Swim",
       "start": "2025-07-05T10:00:00.000",
@@ -584,17 +539,53 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "9b87e548-8609-4cbe-b1a3-8e5fa6cf513a",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-07-12T10:00:00.000",
+      "end": "2025-07-12T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ed8a29a9-1fe4-4a54-b830-b22271870675",
+      "title": "Members Swim",
+      "start": "2025-07-12T10:00:00.000",
+      "end": "2025-07-12T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "cc38bc5a-cbf1-42ce-861c-c6e6ffe24f1d",
+      "title": "Public Swim - No Lanes",
+      "start": "2025-07-12T12:00:00.000",
+      "end": "2025-07-12T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4f384a85-d810-4304-bc89-b7e40b68c5a8",
+      "title": "Private Pool Party Rental",
+      "start": "2025-07-12T14:00:00.000",
+      "end": "2025-07-12T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-04T23:34:56.231Z",
+  "lastUpdated": "2025-07-05T00:34:00.389Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-07-04T00:00:00.000Z",
-      "end": "2025-07-12T00:00:00.000Z"
+      "start": "2025-07-05T00:00:00.000Z",
+      "end": "2025-07-13T00:00:00.000Z"
     },
-    "eventCount": 65,
-    "generatedAt": "2025-07-04T23:34:56.231Z",
+    "eventCount": 64,
+    "generatedAt": "2025-07-05T00:34:00.389Z",
     "generatedBy": "GitHub Actions"
   }
 }
