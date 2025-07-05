@@ -3,8 +3,8 @@
     {
       "id": "543b10cf-3300-4e42-b75d-75fbbaee970d",
       "title": "Members Swim",
-      "start": "2025-07-05T10:00:00.000",
-      "end": "2025-07-05T11:00:00.000",
+      "start": "2025-07-05T09:00:00.000",
+      "end": "2025-07-05T10:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -12,7 +12,7 @@
     {
       "id": "4b861937-11d7-4e4a-985d-46f1cf2f5460",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-07-05T11:00:00.000",
+      "start": "2025-07-05T10:00:00.000",
       "end": "2025-07-05T12:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -577,7 +577,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-05T18:06:55.516Z",
+  "lastUpdated": "2025-07-05T18:39:34.024Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -585,7 +585,7 @@
       "end": "2025-07-13T00:00:00.000Z"
     },
     "eventCount": 64,
-    "generatedAt": "2025-07-05T18:06:55.516Z",
+    "generatedAt": "2025-07-05T18:39:34.024Z",
     "generatedBy": "GitHub Actions"
   }
 }
