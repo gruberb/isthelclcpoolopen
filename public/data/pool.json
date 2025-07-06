@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "543b10cf-3300-4e42-b75d-75fbbaee970d",
-      "title": "Members Swim",
-      "start": "2025-07-05T09:00:00.000",
-      "end": "2025-07-05T10:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4b861937-11d7-4e4a-985d-46f1cf2f5460",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-07-05T10:00:00.000",
-      "end": "2025-07-05T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "96036b76-518f-455d-b5f6-c583a23def15",
-      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-07-05T12:00:00.000",
-      "end": "2025-07-05T12:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "29a448d1-6548-42cc-b974-e7a6c8aa8c8f",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-07-05T14:00:00.000",
-      "end": "2025-07-05T15:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a15e7756-85be-4cc2-a901-368f95bbca17",
-      "title": "Private Pool Party Rental",
-      "start": "2025-07-05T16:00:00.000",
-      "end": "2025-07-05T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "7ee8cc88-2ffe-4636-94fd-029d38067230",
       "title": "Members Swim",
       "start": "2025-07-06T09:00:00.000",
@@ -575,17 +530,53 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "5db92fb6-dae9-4fec-9a31-f62c6857e321",
+      "title": "Member Swim",
+      "start": "2025-07-13T10:00:00.000",
+      "end": "2025-07-13T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a42ac71f-c072-4d11-97d1-e1ee57b2d691",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-07-13T11:00:00.000",
+      "end": "2025-07-13T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7fcba050-4637-463b-aa87-53ff0362e658",
+      "title": "Public Swim - No Lanes",
+      "start": "2025-07-13T13:00:00.000",
+      "end": "2025-07-13T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a3163176-d00a-41d4-ae35-5699238513fe",
+      "title": "Private Pool Party Rental",
+      "start": "2025-07-13T16:00:00.000",
+      "end": "2025-07-13T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-05T23:35:36.063Z",
+  "lastUpdated": "2025-07-06T00:39:51.813Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-07-05T00:00:00.000Z",
-      "end": "2025-07-13T00:00:00.000Z"
+      "start": "2025-07-06T00:00:00.000Z",
+      "end": "2025-07-14T00:00:00.000Z"
     },
-    "eventCount": 64,
-    "generatedAt": "2025-07-05T23:35:36.063Z",
+    "eventCount": 63,
+    "generatedAt": "2025-07-06T00:39:51.813Z",
     "generatedBy": "GitHub Actions"
   }
 }
