@@ -460,15 +460,6 @@
       "allDay": false
     },
     {
-      "id": "9b87e548-8609-4cbe-b1a3-8e5fa6cf513a",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-07-12T10:00:00.000",
-      "end": "2025-07-12T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "ed8a29a9-1fe4-4a54-b830-b22271870675",
       "title": "Members Swim",
       "start": "2025-07-12T10:00:00.000",
@@ -478,9 +469,18 @@
       "allDay": false
     },
     {
+      "id": "9b87e548-8609-4cbe-b1a3-8e5fa6cf513a",
+      "title": "Busy",
+      "start": "2025-07-12T11:00:00.000",
+      "end": "2025-07-12T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "cc38bc5a-cbf1-42ce-861c-c6e6ffe24f1d",
       "title": "Public Swim - No Lanes",
-      "start": "2025-07-12T12:00:00.000",
+      "start": "2025-07-12T13:00:00.000",
       "end": "2025-07-12T14:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -622,7 +622,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-07T00:38:44.144Z",
+  "lastUpdated": "2025-07-07T01:37:09.017Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -630,7 +630,7 @@
       "end": "2025-07-15T00:00:00.000Z"
     },
     "eventCount": 69,
-    "generatedAt": "2025-07-07T00:38:44.144Z",
+    "generatedAt": "2025-07-07T01:37:09.017Z",
     "generatedBy": "GitHub Actions"
   }
 }
