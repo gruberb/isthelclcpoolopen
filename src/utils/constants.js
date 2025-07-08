@@ -1,11 +1,4 @@
 export const CONSTANTS = {
-  // Cache durations
-  CACHE_DURATION: {
-    SWIMMING: 30 * 60 * 1000, // 30 minutes
-    SKATING: 30 * 60 * 1000, // 30 minutes
-    LIBRARIES: 7 * 24 * 60 * 60 * 1000, // 7 days (library hours change less frequently)
-  },
-
   // Event colors from the API
   EVENT_COLORS: {
     POOL: "#0000FF", // Blue for pool events
