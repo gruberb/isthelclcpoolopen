@@ -352,6 +352,15 @@
       "allDay": false
     },
     {
+      "id": "5724e95b-52a7-45ff-877c-48e62476310d",
+      "title": "All Pools Closed to the Public",
+      "start": "2025-07-11T17:00:00.000",
+      "end": "2025-07-11T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "57dcdc55-1853-4404-8186-0ddb7ac166c4",
       "title": "Sensory Swim",
       "start": "2025-07-11T18:00:00.000",
@@ -604,15 +613,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-08T14:06:08.580Z",
+  "lastUpdated": "2025-07-08T14:38:45.510Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-07-08T00:00:00.000Z",
       "end": "2025-07-16T00:00:00.000Z"
     },
-    "eventCount": 67,
-    "generatedAt": "2025-07-08T14:06:08.580Z",
+    "eventCount": 68,
+    "generatedAt": "2025-07-08T14:38:45.510Z",
     "generatedBy": "GitHub Actions"
   }
 }
