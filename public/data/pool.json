@@ -434,7 +434,7 @@
     },
     {
       "id": "bd3fcfa7-a147-4994-ae3f-fc19cd540101",
-      "title": "Aqua Dance",
+      "title": "Aqua Dance - Play & Therapy Pools Open",
       "start": "2025-07-14T17:00:00.000",
       "end": "2025-07-14T17:45:00.000",
       "backgroundColor": "#0000FF",
@@ -640,7 +640,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-09T19:34:09.383Z",
+  "lastUpdated": "2025-07-09T20:06:23.301Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -648,7 +648,7 @@
       "end": "2025-07-17T00:00:00.000Z"
     },
     "eventCount": 71,
-    "generatedAt": "2025-07-09T19:34:09.383Z",
+    "generatedAt": "2025-07-09T20:06:23.301Z",
     "generatedBy": "GitHub Actions"
   }
 }
