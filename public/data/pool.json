@@ -1,42 +1,6 @@
 {
   "data": [
     {
-      "id": "ed8a29a9-1fe4-4a54-b830-b22271870675",
-      "title": "Members Swim",
-      "start": "2025-07-12T10:00:00.000",
-      "end": "2025-07-12T11:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9b87e548-8609-4cbe-b1a3-8e5fa6cf513a",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-07-12T11:00:00.000",
-      "end": "2025-07-12T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "cc38bc5a-cbf1-42ce-861c-c6e6ffe24f1d",
-      "title": "Public Swim - No Lanes",
-      "start": "2025-07-12T13:00:00.000",
-      "end": "2025-07-12T15:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4f384a85-d810-4304-bc89-b7e40b68c5a8",
-      "title": "Private Pool Party Rental",
-      "start": "2025-07-12T16:00:00.000",
-      "end": "2025-07-12T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "5db92fb6-dae9-4fec-9a31-f62c6857e321",
       "title": "Member Swim",
       "start": "2025-07-13T10:00:00.000",
@@ -566,17 +530,53 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "3dc9440a-af0e-4fae-b0e5-d8ad93230313",
+      "title": "Members Swim",
+      "start": "2025-07-20T10:00:00.000",
+      "end": "2025-07-20T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "13c93f0a-d718-45b4-acb3-dc46f7abb484",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-07-20T11:00:00.000",
+      "end": "2025-07-20T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2df3a7f6-97b2-4713-b7b7-dc793a67e666",
+      "title": "Public Swim - No Lanes",
+      "start": "2025-07-20T13:00:00.000",
+      "end": "2025-07-20T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a3163176-d00a-41d4-ae35-5699238513fe",
+      "title": "Private Pool Party Rental",
+      "start": "2025-07-20T16:00:00.000",
+      "end": "2025-07-20T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-12T23:36:30.125Z",
+  "lastUpdated": "2025-07-13T00:41:02.432Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-07-12T00:00:00.000Z",
-      "end": "2025-07-20T00:00:00.000Z"
+      "start": "2025-07-13T00:00:00.000Z",
+      "end": "2025-07-21T00:00:00.000Z"
     },
     "eventCount": 63,
-    "generatedAt": "2025-07-12T23:36:30.125Z",
+    "generatedAt": "2025-07-13T00:41:02.432Z",
     "generatedBy": "GitHub Actions"
   }
 }
