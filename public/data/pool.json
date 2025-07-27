@@ -1,42 +1,6 @@
 {
   "data": [
     {
-      "id": "c926e138-a39d-4c71-9df3-b5055de96ba6",
-      "title": "Members Swim",
-      "start": "2025-07-26T10:00:00.000",
-      "end": "2025-07-26T11:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "8b7e6f8d-33cf-4ed2-8855-7eba36224ccd",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-07-26T11:00:00.000",
-      "end": "2025-07-26T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "52fb5b26-14a7-4bd4-8a05-05a622bb586e",
-      "title": "Public Swim - No Lanes",
-      "start": "2025-07-26T13:00:00.000",
-      "end": "2025-07-26T15:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a3163176-d00a-41d4-ae35-5699238513fe",
-      "title": "Private Pool Party Rental",
-      "start": "2025-07-26T16:00:00.000",
-      "end": "2025-07-26T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "31be3e5b-62d5-4033-a624-efeee1d18789",
       "title": "Members Swim",
       "start": "2025-07-27T10:00:00.000",
@@ -566,17 +530,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "a3163176-d00a-41d4-ae35-5699238513fe",
+      "title": "Private Pool Party Rental",
+      "start": "2025-08-03T16:00:00.000",
+      "end": "2025-08-03T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-26T23:36:06.988Z",
+  "lastUpdated": "2025-07-27T00:41:43.367Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-07-26T00:00:00.000Z",
-      "end": "2025-08-03T00:00:00.000Z"
+      "start": "2025-07-27T00:00:00.000Z",
+      "end": "2025-08-04T00:00:00.000Z"
     },
-    "eventCount": 63,
-    "generatedAt": "2025-07-26T23:36:06.988Z",
+    "eventCount": 60,
+    "generatedAt": "2025-07-27T00:41:43.367Z",
     "generatedBy": "GitHub Actions"
   }
 }
