@@ -443,17 +443,8 @@
     },
     {
       "id": "2a94b940-a9e2-4ae4-9ab5-db5785137783",
-      "title": "All Pools Closed to the Public",
-      "start": "2025-08-01T17:00:00.000",
-      "end": "2025-08-01T18:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "819bda10-06b6-490e-8536-e006bd0a98a3",
-      "title": "Sensory Swim",
-      "start": "2025-08-01T18:00:00.000",
+      "title": "Recreational Swim",
+      "start": "2025-08-01T17:30:00.000",
       "end": "2025-08-01T19:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -505,15 +496,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-28T13:18:31.653Z",
+  "lastUpdated": "2025-07-28T13:46:04.612Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-07-28T00:00:00.000Z",
       "end": "2025-08-05T00:00:00.000Z"
     },
-    "eventCount": 56,
-    "generatedAt": "2025-07-28T13:18:31.653Z",
+    "eventCount": 55,
+    "generatedAt": "2025-07-28T13:46:04.612Z",
     "generatedBy": "GitHub Actions"
   }
 }
