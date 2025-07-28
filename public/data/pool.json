@@ -83,7 +83,7 @@
     },
     {
       "id": "5f4de4fe-26db-4f70-92ab-06e9fb180353",
-      "title": "Special Olympics - 2 Lanes, Play & Therapy Pools Open",
+      "title": "Sensory Swim",
       "start": "2025-07-28T18:00:00.000",
       "end": "2025-07-28T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -505,7 +505,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-28T12:11:04.360Z",
+  "lastUpdated": "2025-07-28T12:47:16.658Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -513,7 +513,7 @@
       "end": "2025-08-05T00:00:00.000Z"
     },
     "eventCount": 56,
-    "generatedAt": "2025-07-28T12:11:04.360Z",
+    "generatedAt": "2025-07-28T12:47:16.658Z",
     "generatedBy": "GitHub Actions"
   }
 }
