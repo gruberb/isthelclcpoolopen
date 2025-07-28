@@ -539,17 +539,71 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "516acc5b-5a3f-4871-8a12-9b755a1a814c",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-08-04T12:00:00.000",
+      "end": "2025-08-04T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "049c93e4-83b7-4189-b940-0530f78794ce",
+      "title": "Public Swim - No Lanes",
+      "start": "2025-08-04T13:00:00.000",
+      "end": "2025-08-04T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b360fa7c-0808-4c5f-9682-076f1d2b4847",
+      "title": "Senior Swim - 60+",
+      "start": "2025-08-04T15:30:00.000",
+      "end": "2025-08-04T16:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6eb63eee-b2e4-4a7b-8f92-3d894d7c4cec",
+      "title": "Aqua Dance using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-08-04T17:00:00.000",
+      "end": "2025-08-04T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "15a48442-1e41-4e6c-b052-a5414baad84a",
+      "title": "Sensory Swim ",
+      "start": "2025-08-04T18:00:00.000",
+      "end": "2025-08-04T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e3403e4e-c4ae-4029-ace5-8b9eddb99eed",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-08-04T19:00:00.000",
+      "end": "2025-08-04T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-28T16:42:34.407Z",
+  "lastUpdated": "2025-07-28T17:08:20.369Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-07-28T00:00:00.000Z",
       "end": "2025-08-05T00:00:00.000Z"
     },
-    "eventCount": 60,
-    "generatedAt": "2025-07-28T16:42:34.407Z",
+    "eventCount": 66,
+    "generatedAt": "2025-07-28T17:08:20.369Z",
     "generatedBy": "GitHub Actions"
   }
 }
