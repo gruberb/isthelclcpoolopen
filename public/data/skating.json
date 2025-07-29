@@ -10,7 +10,7 @@
       "allDay": false
     },
     {
-      "id": "e88cfa45-d896-4646-9e45-ec3c7a756a84",
+      "id": "4841ed1b-cf4d-4fe8-8b4d-ec75b36a0f06",
       "title": "Adult Skating",
       "start": "2025-07-29T12:00:00.000",
       "end": "2025-07-29T13:00:00.000",
@@ -64,13 +64,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-07-28T05:09:25.680Z",
+  "lastUpdated": "2025-07-29T05:10:00.874Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 42,
     "publicEvents": 7,
-    "generatedAt": "2025-07-28T05:09:25.680Z",
+    "generatedAt": "2025-07-29T05:10:00.874Z",
     "generatedBy": "GitHub Actions"
   }
 }
