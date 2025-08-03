@@ -1,33 +1,6 @@
 {
   "data": [
     {
-      "id": "ef4d519b-549c-4db2-b69c-0a17a343a36a",
-      "title": "Members Swim",
-      "start": "2025-08-02T10:00:00.000",
-      "end": "2025-08-02T11:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "49787654-164a-4c12-91c8-6c4860298da8",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-02T11:00:00.000",
-      "end": "2025-08-02T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "5bc93a72-a6cd-4de8-9c94-96502bdc9a0e",
-      "title": "Public Swim - No Lanes",
-      "start": "2025-08-02T14:00:00.000",
-      "end": "2025-08-02T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "0b535fb2-0cd7-4daa-bdb8-4ddfe01177b9",
       "title": "Members Swim",
       "start": "2025-08-03T10:00:00.000",
@@ -494,17 +467,44 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "2132f188-3951-43f3-960c-7d262a9dc2bb",
+      "title": "Members Swim",
+      "start": "2025-08-10T10:00:00.000",
+      "end": "2025-08-10T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "671ee152-d99b-41cf-b0e4-fb45233d302b",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-08-10T11:00:00.000",
+      "end": "2025-08-10T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "db42d01f-0e03-4183-80b1-fb88fb684046",
+      "title": "Public Swim - No Lanes",
+      "start": "2025-08-10T14:00:00.000",
+      "end": "2025-08-10T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-02T23:37:19.220Z",
+  "lastUpdated": "2025-08-03T00:42:31.783Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-08-02T00:00:00.000Z",
-      "end": "2025-08-10T00:00:00.000Z"
+      "start": "2025-08-03T00:00:00.000Z",
+      "end": "2025-08-11T00:00:00.000Z"
     },
     "eventCount": 55,
-    "generatedAt": "2025-08-02T23:37:19.220Z",
+    "generatedAt": "2025-08-03T00:42:31.783Z",
     "generatedBy": "GitHub Actions"
   }
 }
