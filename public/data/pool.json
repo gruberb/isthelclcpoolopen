@@ -1,96 +1,6 @@
 {
   "data": [
     {
-      "id": "8e7971c6-0503-4e6e-9805-8fdb37799d3b",
-      "title": "Members Swim",
-      "start": "2025-08-04T06:30:00.000",
-      "end": "2025-08-04T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0457e1c3-ec8a-47af-9e14-d1d8f2c916cb",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-04T07:30:00.000",
-      "end": "2025-08-04T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ee36d741-441d-4952-bb5a-c919d6a51734",
-      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-08-04T10:00:00.000",
-      "end": "2025-08-04T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "45c9ce12-bc83-48de-a27f-f1716670de31",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-04T11:00:00.000",
-      "end": "2025-08-04T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "516acc5b-5a3f-4871-8a12-9b755a1a814c",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-04T12:00:00.000",
-      "end": "2025-08-04T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "049c93e4-83b7-4189-b940-0530f78794ce",
-      "title": "Public Swim - No Lanes",
-      "start": "2025-08-04T13:00:00.000",
-      "end": "2025-08-04T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b360fa7c-0808-4c5f-9682-076f1d2b4847",
-      "title": "Senior Swim - 60+",
-      "start": "2025-08-04T15:30:00.000",
-      "end": "2025-08-04T16:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "6eb63eee-b2e4-4a7b-8f92-3d894d7c4cec",
-      "title": "Aqua Dance using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-08-04T17:00:00.000",
-      "end": "2025-08-04T17:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "15a48442-1e41-4e6c-b052-a5414baad84a",
-      "title": "Sensory Swim ",
-      "start": "2025-08-04T18:00:00.000",
-      "end": "2025-08-04T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e3403e4e-c4ae-4029-ace5-8b9eddb99eed",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-04T19:00:00.000",
-      "end": "2025-08-04T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "5317f490-c8f7-4838-905d-d25c85cf8f5e",
       "title": "Members Swim",
       "start": "2025-08-05T06:30:00.000",
@@ -566,17 +476,107 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "0a0e78b9-6ab4-44e9-a626-724a5450b032",
+      "title": "Members Swim",
+      "start": "2025-08-12T06:30:00.000",
+      "end": "2025-08-12T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8a8371d5-e8e5-4eb3-9846-5a73a70193f5",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-08-12T07:30:00.000",
+      "end": "2025-08-12T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4b97b067-ef95-4c75-aa1a-bf9abf42d6c6",
+      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-08-12T10:00:00.000",
+      "end": "2025-08-12T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "12909bb9-c1d4-42a6-ad6f-c0637f150ab2",
+      "title": "Day Camp Swim - All Pools Closed to Public",
+      "start": "2025-08-12T11:00:00.000",
+      "end": "2025-08-12T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e581d91f-d781-4306-8879-efc62b6f5480",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-08-12T12:15:00.000",
+      "end": "2025-08-12T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8133bed7-0344-41eb-ae54-53d23c6977e1",
+      "title": "Public Swim - No Lanes",
+      "start": "2025-08-12T13:00:00.000",
+      "end": "2025-08-12T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0da09fd9-10d0-4bb3-b3cf-aaf7ecfb9b2b",
+      "title": "Private Booking - Muggy's Hockey Camp - All Pools Closed to Public",
+      "start": "2025-08-12T14:00:00.000",
+      "end": "2025-08-12T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "726ae41e-0df4-40a2-8c94-e1f0796a7ee4",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2025-08-12T15:00:00.000",
+      "end": "2025-08-12T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e4bf4a4e-81a6-4313-8dc9-72e852bc290d",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-08-12T17:00:00.000",
+      "end": "2025-08-12T19:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6d0cf421-11fc-4f92-a44a-951f3ad1219b",
+      "title": "Private Booking - Muggy's Hockey Camp - All Pools Closed to Public",
+      "start": "2025-08-12T19:30:00.000",
+      "end": "2025-08-12T20:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-04T23:37:06.340Z",
+  "lastUpdated": "2025-08-05T00:39:09.194Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-08-04T00:00:00.000Z",
-      "end": "2025-08-12T00:00:00.000Z"
+      "start": "2025-08-05T00:00:00.000Z",
+      "end": "2025-08-13T00:00:00.000Z"
     },
     "eventCount": 63,
-    "generatedAt": "2025-08-04T23:37:06.340Z",
+    "generatedAt": "2025-08-05T00:39:09.194Z",
     "generatedBy": "GitHub Actions"
   }
 }
