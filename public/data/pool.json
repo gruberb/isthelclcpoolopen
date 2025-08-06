@@ -254,7 +254,7 @@
     },
     {
       "id": "d9e25c3d-9119-4957-8d66-2b1a9c233cd7",
-      "title": "Members Swim",
+      "title": "Members Swim (THERAPY POOL CLOSED)",
       "start": "2025-08-09T10:00:00.000",
       "end": "2025-08-09T11:00:00.000",
       "backgroundColor": "#0000FF",
@@ -263,7 +263,7 @@
     },
     {
       "id": "51b9b08d-8dde-4efa-b77f-9ed1e2d2e744",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "title": "Recreational Swim - 4 Lanes & Play Pool Open (THERAPY POOL CLOSED)",
       "start": "2025-08-09T11:00:00.000",
       "end": "2025-08-09T14:00:00.000",
       "backgroundColor": "#0000FF",
@@ -272,7 +272,7 @@
     },
     {
       "id": "ef62cfec-db64-4c1e-8fa0-58641afd0235",
-      "title": "Public Swim - No Lanes",
+      "title": "Public Swim - No Lanes (THERAPY POOL CLOSED)",
       "start": "2025-08-09T14:00:00.000",
       "end": "2025-08-09T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -613,7 +613,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-06T10:41:31.343Z",
+  "lastUpdated": "2025-08-06T11:06:07.809Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -621,7 +621,7 @@
       "end": "2025-08-14T00:00:00.000Z"
     },
     "eventCount": 68,
-    "generatedAt": "2025-08-06T10:41:31.343Z",
+    "generatedAt": "2025-08-06T11:06:07.809Z",
     "generatedBy": "GitHub Actions"
   }
 }
