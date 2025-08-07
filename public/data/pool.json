@@ -172,6 +172,24 @@
       "allDay": false
     },
     {
+      "id": "453515e6-027f-4fa3-a502-e4fbeddfa6c2",
+      "title": "Aquafit using Lap Pool - Play Pool Open (THERAPY POOL CLOSED)",
+      "start": "2025-08-09T12:00:00.000",
+      "end": "2025-08-09T12:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b96770b4-9ba9-480c-83fd-f69ebc7777a4",
+      "title": "Recreational Swim - 4 Lanes and Play Pool Open (THERAPY POOL CLOSED)",
+      "start": "2025-08-09T13:00:00.000",
+      "end": "2025-08-09T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "ef62cfec-db64-4c1e-8fa0-58641afd0235",
       "title": "Public Swim - No Lanes (THERAPY POOL CLOSED)",
       "start": "2025-08-09T14:00:00.000",
@@ -604,15 +622,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-07T14:08:41.798Z",
+  "lastUpdated": "2025-08-07T14:41:00.185Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-08-07T00:00:00.000Z",
       "end": "2025-08-15T00:00:00.000Z"
     },
-    "eventCount": 67,
-    "generatedAt": "2025-08-07T14:08:41.798Z",
+    "eventCount": 69,
+    "generatedAt": "2025-08-07T14:41:00.185Z",
     "generatedBy": "GitHub Actions"
   }
 }
