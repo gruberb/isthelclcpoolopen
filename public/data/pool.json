@@ -1,87 +1,6 @@
 {
   "data": [
     {
-      "id": "40b80fff-1a6b-40f7-aca9-45bd8e86220e",
-      "title": "Members Swim",
-      "start": "2025-08-08T06:30:00.000",
-      "end": "2025-08-08T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ca2f815e-c4c2-40ff-aa0e-1a192143eff3",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-08T07:30:00.000",
-      "end": "2025-08-08T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b8d333ab-a36c-49e1-af3c-dfe7154bd0a7",
-      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-08-08T10:00:00.000",
-      "end": "2025-08-08T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a1bea018-3389-4663-94e1-b12a62f53733",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-08T11:00:00.000",
-      "end": "2025-08-08T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "dbaa51c7-14c7-4930-8f5e-e4a8a62d19ef",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-08T12:00:00.000",
-      "end": "2025-08-08T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d5c6db34-f978-41ab-a427-979f5430f271",
-      "title": "Adult Lessons - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-08T13:00:00.000",
-      "end": "2025-08-08T13:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a7356346-7824-47ac-9f18-05bdc0a1d68d",
-      "title": "Public Swim - No Lanes",
-      "start": "2025-08-08T14:00:00.000",
-      "end": "2025-08-08T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d31984e9-7ade-4c54-a6fb-1ba5f5e32fcd",
-      "title": "Staff Inservice - All Pools Closed to Public",
-      "start": "2025-08-08T16:00:00.000",
-      "end": "2025-08-08T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0b9fed75-a704-4a6e-805d-e78a6e5acf29",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-08T17:30:00.000",
-      "end": "2025-08-08T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "d9e25c3d-9119-4957-8d66-2b1a9c233cd7",
       "title": "Members Swim (THERAPY POOL CLOSED)",
       "start": "2025-08-09T10:00:00.000",
@@ -629,17 +548,44 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "331b8002-0731-4744-83f1-1c845eaa4490",
+      "title": "Members Swim",
+      "start": "2025-08-16T10:00:00.000",
+      "end": "2025-08-16T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b860e49b-775f-4f44-8a1e-fdeb1c77d85f",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-08-16T11:00:00.000",
+      "end": "2025-08-16T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "053958ef-e103-41db-8c62-3d407547d316",
+      "title": "Public Swim - No Lanes",
+      "start": "2025-08-16T14:00:00.000",
+      "end": "2025-08-16T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-08T23:35:49.635Z",
+  "lastUpdated": "2025-08-09T00:35:03.397Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-08-08T00:00:00.000Z",
-      "end": "2025-08-16T00:00:00.000Z"
+      "start": "2025-08-09T00:00:00.000Z",
+      "end": "2025-08-17T00:00:00.000Z"
     },
-    "eventCount": 70,
-    "generatedAt": "2025-08-08T23:35:49.635Z",
+    "eventCount": 64,
+    "generatedAt": "2025-08-09T00:35:03.397Z",
     "generatedBy": "GitHub Actions"
   }
 }
