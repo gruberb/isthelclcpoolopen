@@ -65,7 +65,7 @@
     },
     {
       "id": "9f7bbbe7-76f7-4292-bafb-a64b9c775286",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "title": "Lessons & Lanes - 2 Lanes, Play & Therapys Pool Open",
       "start": "2025-08-14T15:00:00.000",
       "end": "2025-08-14T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -389,7 +389,7 @@
     },
     {
       "id": "1391eb91-e61e-4046-92ca-9b169ec13550",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "title": "Lessons & Lanes - 2 Lanes, Play & Therapy Pools Open",
       "start": "2025-08-19T15:00:00.000",
       "end": "2025-08-19T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -560,7 +560,7 @@
     },
     {
       "id": "1911680f-e6f0-4de7-a165-0f50663e7986",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "title": "Lessons & Lanes - 2 Lanes, Play & Therapy Pools Open",
       "start": "2025-08-21T15:00:00.000",
       "end": "2025-08-21T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -577,7 +577,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-14T03:32:42.898Z",
+  "lastUpdated": "2025-08-14T10:06:33.878Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -585,7 +585,7 @@
       "end": "2025-08-22T00:00:00.000Z"
     },
     "eventCount": 64,
-    "generatedAt": "2025-08-14T03:32:42.898Z",
+    "generatedAt": "2025-08-14T10:06:33.878Z",
     "generatedBy": "GitHub Actions"
   }
 }
