@@ -101,9 +101,9 @@
     },
     {
       "id": "b1f86e3a-2bc8-4ae8-80d3-3bff79c2bba0",
-      "title": "Aquafit",
+      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
       "start": "2025-08-16T12:00:00.000",
-      "end": "2025-08-16T13:00:00.000",
+      "end": "2025-08-16T12:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -568,7 +568,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-15T13:41:18.719Z",
+  "lastUpdated": "2025-08-15T14:06:06.819Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -576,7 +576,7 @@
       "end": "2025-08-23T00:00:00.000Z"
     },
     "eventCount": 63,
-    "generatedAt": "2025-08-15T13:41:18.719Z",
+    "generatedAt": "2025-08-15T14:06:06.819Z",
     "generatedBy": "GitHub Actions"
   }
 }
