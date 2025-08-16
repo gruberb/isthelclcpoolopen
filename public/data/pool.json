@@ -1,87 +1,6 @@
 {
   "data": [
     {
-      "id": "d87a5fca-d8da-433d-945b-aa057b6a00b4",
-      "title": "Members Swim",
-      "start": "2025-08-15T06:30:00.000",
-      "end": "2025-08-15T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a32107ad-cea8-4f79-86e2-a08e4505a31c",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-15T07:30:00.000",
-      "end": "2025-08-15T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "de3d620f-55b1-495e-a2c9-70535ef77097",
-      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-08-15T10:00:00.000",
-      "end": "2025-08-15T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "074689eb-896d-4076-974c-f18e6176e4e5",
-      "title": "Day Camp Swim - All Pools Closed to Public",
-      "start": "2025-08-15T11:00:00.000",
-      "end": "2025-08-15T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b3c3a56f-c80f-4188-8e89-74b609eb1f69",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-15T12:15:00.000",
-      "end": "2025-08-15T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1d578ad4-3a14-4e36-93e1-44b6c507b20b",
-      "title": "Adult Lessons - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-15T13:00:00.000",
-      "end": "2025-08-15T13:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "afbe90dd-e83f-4362-b4c7-089bf683ffda",
-      "title": "Public Swim - No Lanes",
-      "start": "2025-08-15T14:00:00.000",
-      "end": "2025-08-15T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4b907114-fefc-4bb5-a0b3-a66edf52461d",
-      "title": "Staff Inservice - All Pools Closed to Public",
-      "start": "2025-08-15T16:00:00.000",
-      "end": "2025-08-15T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ce2a020c-5d0b-4479-9fdd-0235f577c513",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-15T17:30:00.000",
-      "end": "2025-08-15T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "331b8002-0731-4744-83f1-1c845eaa4490",
       "title": "Members Swim",
       "start": "2025-08-16T10:00:00.000",
@@ -566,17 +485,62 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "e210a580-818c-4a7f-a6e0-fcbdd5d60153",
+      "title": "Members Swim",
+      "start": "2025-08-23T10:00:00.000",
+      "end": "2025-08-23T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "aee54969-d02f-46ed-aae0-4d94af79a3bb",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-08-23T11:00:00.000",
+      "end": "2025-08-23T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7cc7663d-966c-4f48-8bc6-160fc0c43f14",
+      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-08-23T12:00:00.000",
+      "end": "2025-08-23T12:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9704a887-f9f3-47ae-bd07-dd16d789cdc5",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-08-23T13:00:00.000",
+      "end": "2025-08-23T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "693f0ec2-be4f-45c5-81a2-bf63900999d3",
+      "title": "Public Swim - No Lanes",
+      "start": "2025-08-23T14:00:00.000",
+      "end": "2025-08-23T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-15T23:35:09.369Z",
+  "lastUpdated": "2025-08-16T00:34:12.408Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-08-15T00:00:00.000Z",
-      "end": "2025-08-23T00:00:00.000Z"
+      "start": "2025-08-16T00:00:00.000Z",
+      "end": "2025-08-24T00:00:00.000Z"
     },
-    "eventCount": 63,
-    "generatedAt": "2025-08-15T23:35:09.369Z",
+    "eventCount": 59,
+    "generatedAt": "2025-08-16T00:34:12.408Z",
     "generatedBy": "GitHub Actions"
   }
 }
