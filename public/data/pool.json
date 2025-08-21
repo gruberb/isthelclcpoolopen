@@ -49,6 +49,15 @@
       "id": "37e99f12-8727-4678-bdad-82e139c7b0eb",
       "title": "Public Swim - No Lanes",
       "start": "2025-08-21T13:00:00.000",
+      "end": "2025-08-21T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6235ca94-7ed4-4f5c-b44e-27ff34c9f651",
+      "title": "Private Booking",
+      "start": "2025-08-21T14:00:00.000",
       "end": "2025-08-21T15:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -577,15 +586,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-21T13:40:57.907Z",
+  "lastUpdated": "2025-08-21T14:06:18.548Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-08-21T00:00:00.000Z",
       "end": "2025-08-29T00:00:00.000Z"
     },
-    "eventCount": 64,
-    "generatedAt": "2025-08-21T13:40:57.907Z",
+    "eventCount": 65,
+    "generatedAt": "2025-08-21T14:06:18.548Z",
     "generatedBy": "GitHub Actions"
   }
 }
