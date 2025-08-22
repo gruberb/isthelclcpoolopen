@@ -235,9 +235,9 @@
       "allDay": false
     },
     {
-      "id": "d228cc6c-79d5-488b-aad7-6ccf6638ef7a",
-      "title": "Aqua Dance using Lap Pool - Play & Therapy Pools Open",
-      "start": "2025-08-25T17:00:00.000",
+      "id": "60ac702a-0e88-4f3d-8f2e-8c5c9dc83678",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-08-25T16:30:00.000",
       "end": "2025-08-25T17:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -586,7 +586,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-22T14:37:13.718Z",
+  "lastUpdated": "2025-08-22T15:06:06.333Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -594,7 +594,7 @@
       "end": "2025-08-30T00:00:00.000Z"
     },
     "eventCount": 65,
-    "generatedAt": "2025-08-22T14:37:13.718Z",
+    "generatedAt": "2025-08-22T15:06:06.333Z",
     "generatedBy": "GitHub Actions"
   }
 }
