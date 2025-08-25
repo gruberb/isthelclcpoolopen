@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "657515aa-3172-4934-a32a-f3bc83faf659",
-      "title": "Members Swim",
-      "start": "2025-08-24T10:00:00.000",
-      "end": "2025-08-24T11:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "03d1087b-abcb-48e8-857d-3a0897f92a9f",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-24T11:00:00.000",
-      "end": "2025-08-24T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c31fa53d-131f-4dc1-a65f-8d00b28e0e1b",
-      "title": "Public Swim - No Lanes",
-      "start": "2025-08-24T14:00:00.000",
-      "end": "2025-08-24T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c9a08360-3278-4c5a-9ca6-0fa5bb42d385",
-      "title": "Private Pool Party Rental - All Pools Closed to Public",
-      "start": "2025-08-24T16:00:00.000",
-      "end": "2025-08-24T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4986e5a3-510a-4251-b705-6078f222976c",
-      "title": "Leia Johnston Birthday - Pool Party",
-      "start": "2025-08-24T16:00:00.000",
-      "end": "2025-08-24T17:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
       "id": "182128ce-ad8d-4c7b-83fa-94211c126609",
       "title": "Members Swim",
       "start": "2025-08-25T06:30:00.000",
@@ -530,17 +485,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "2334e0fa-2577-42d2-b1fc-12f29c2bbfcc",
+      "title": "Labour Day - Facility Closed",
+      "start": "2025-09-01T00:00:00.000",
+      "end": "2025-09-01T23:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-24T23:34:47.553Z",
+  "lastUpdated": "2025-08-25T00:35:45.429Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-08-24T00:00:00.000Z",
-      "end": "2025-09-01T00:00:00.000Z"
+      "start": "2025-08-25T00:00:00.000Z",
+      "end": "2025-09-02T00:00:00.000Z"
     },
-    "eventCount": 59,
-    "generatedAt": "2025-08-24T23:34:47.553Z",
+    "eventCount": 55,
+    "generatedAt": "2025-08-25T00:35:45.429Z",
     "generatedBy": "GitHub Actions"
   }
 }
