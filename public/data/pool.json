@@ -82,18 +82,9 @@
       "allDay": false
     },
     {
-      "id": "bc7ae7ac-7368-4054-8c7b-5750a61de607",
-      "title": "Barracudas & Lanes - 3 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-27T07:30:00.000",
-      "end": "2025-08-27T08:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "dd5f629f-4af2-4b4b-bcd6-3180922331c5",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-08-27T08:30:00.000",
+      "start": "2025-08-27T07:30:00.000",
       "end": "2025-08-27T09:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -406,15 +397,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-26T16:06:52.351Z",
+  "lastUpdated": "2025-08-26T16:39:23.854Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-08-26T00:00:00.000Z",
       "end": "2025-09-03T00:00:00.000Z"
     },
-    "eventCount": 45,
-    "generatedAt": "2025-08-26T16:06:52.351Z",
+    "eventCount": 44,
+    "generatedAt": "2025-08-26T16:39:23.854Z",
     "generatedBy": "GitHub Actions"
   }
 }
