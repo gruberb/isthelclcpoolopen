@@ -1,8 +1,8 @@
 {
   "data": [
     {
-      "id": "1d91ac85-a7fb-4152-8bbd-292c0f7e0676",
-      "title": "Adult Skating",
+      "id": "29768ce3-597f-4fe8-b411-ae5bc820b3bf",
+      "title": "Adult Skating (ROOM # 3)",
       "start": "2025-09-02T12:00:00.000",
       "end": "2025-09-02T13:00:00.000",
       "backgroundColor": "#0000FF",
@@ -37,13 +37,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-08-25T05:03:40.535Z",
+  "lastUpdated": "2025-08-26T05:03:41.438Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 73,
+    "totalEvents": 74,
     "publicEvents": 4,
-    "generatedAt": "2025-08-25T05:03:40.535Z",
+    "generatedAt": "2025-08-26T05:03:41.438Z",
     "generatedBy": "GitHub Actions"
   }
 }
