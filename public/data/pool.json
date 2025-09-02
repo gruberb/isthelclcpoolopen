@@ -1,15 +1,6 @@
 {
   "data": [
     {
-      "id": "2334e0fa-2577-42d2-b1fc-12f29c2bbfcc",
-      "title": "Labour Day - Facility Closed",
-      "start": "2025-09-01T00:00:00.000",
-      "end": "2025-09-01T23:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "6555b6aa-785d-46e0-b9b6-8dad79550e3d",
       "title": "Aquatic Centre Closed for Maintenance",
       "start": "2025-09-02T00:00:00.000",
@@ -73,15 +64,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-01T23:34:16.986Z",
+  "lastUpdated": "2025-09-02T00:33:49.411Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-09-01T00:00:00.000Z",
-      "end": "2025-09-09T00:00:00.000Z"
+      "start": "2025-09-02T00:00:00.000Z",
+      "end": "2025-09-10T00:00:00.000Z"
     },
-    "eventCount": 8,
-    "generatedAt": "2025-09-01T23:34:16.986Z",
+    "eventCount": 7,
+    "generatedAt": "2025-09-02T00:33:49.411Z",
     "generatedBy": "GitHub Actions"
   }
 }
