@@ -10,15 +10,6 @@
       "allDay": false
     },
     {
-      "id": "1cb2a6a6-df98-4d4c-aa6f-d6205ec4adf0",
-      "title": "Public Skate",
-      "start": "2025-09-02T15:00:00.000",
-      "end": "2025-09-02T16:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "a9a2306c-b533-4b22-9f9e-0bfa07975977",
       "title": "Adult Skating (ROOM # 3)",
       "start": "2025-09-03T12:00:00.000",
@@ -91,13 +82,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-01T05:03:27.265Z",
+  "lastUpdated": "2025-09-02T05:03:15.181Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 76,
-    "publicEvents": 10,
-    "generatedAt": "2025-09-01T05:03:27.265Z",
+    "totalEvents": 78,
+    "publicEvents": 9,
+    "generatedAt": "2025-09-02T05:03:15.181Z",
     "generatedBy": "GitHub Actions"
   }
 }
