@@ -10,15 +10,6 @@
       "allDay": false
     },
     {
-      "id": "00643fd1-7028-49a2-9404-c43d1b6cc08f",
-      "title": "Busy",
-      "start": "2025-09-04T05:30:00.000",
-      "end": "2025-09-04T07:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
       "id": "18826c23-3f81-43a3-b695-9f41e9cf4ec9",
       "title": "Aquatic Centre Closed for Maintenance",
       "start": "2025-09-05T00:00:00.000",
@@ -64,15 +55,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-04T22:35:07.724Z",
+  "lastUpdated": "2025-09-04T23:05:51.923Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-09-04T00:00:00.000Z",
       "end": "2025-09-12T00:00:00.000Z"
     },
-    "eventCount": 7,
-    "generatedAt": "2025-09-04T22:35:07.724Z",
+    "eventCount": 6,
+    "generatedAt": "2025-09-04T23:05:51.923Z",
     "generatedBy": "GitHub Actions"
   }
 }
