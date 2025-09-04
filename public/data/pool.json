@@ -1,15 +1,6 @@
 {
   "data": [
     {
-      "id": "35046e4e-5178-4d3c-8c8d-524d20361b08",
-      "title": "Aquatic Centre Closed for Maintenance",
-      "start": "2025-09-03T00:00:00.000",
-      "end": "2025-09-03T23:00:01.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "34a8b2db-6241-4ee1-8bb5-1ce6a38cc4f2",
       "title": "Aquatic Centre Closed for Maintenance",
       "start": "2025-09-04T00:00:00.000",
@@ -53,17 +44,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "3888d6fe-e8b2-4cc8-89ae-09b049b7ad42",
+      "title": "Bridgewater Barracudas - 3 Lanes",
+      "start": "2025-09-11T19:00:00.000",
+      "end": "2025-09-11T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-03T23:33:58.660Z",
+  "lastUpdated": "2025-09-04T00:31:59.681Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-09-03T00:00:00.000Z",
-      "end": "2025-09-11T00:00:00.000Z"
+      "start": "2025-09-04T00:00:00.000Z",
+      "end": "2025-09-12T00:00:00.000Z"
     },
     "eventCount": 6,
-    "generatedAt": "2025-09-03T23:33:58.660Z",
+    "generatedAt": "2025-09-04T00:31:59.681Z",
     "generatedBy": "GitHub Actions"
   }
 }
