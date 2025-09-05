@@ -110,9 +110,108 @@
     },
     {
       "id": "f0872578-79ad-4951-a72a-21eca0e75786",
-      "title": "Bridgewater Barracudas - 3 Lanes, Play & Therapy Pools Open",
+      "title": "Barracudas & Lanes - 3 Lanes, Play & Therapy Pools Open",
       "start": "2025-09-08T19:00:00.000",
       "end": "2025-09-08T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "392a4ab7-d55b-40da-9bbc-c67ba671d8d9",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-08T20:00:00.000",
+      "end": "2025-09-08T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "679976c8-4fa1-4f71-979d-3924088beea7",
+      "title": "Members Swim",
+      "start": "2025-09-09T06:30:00.000",
+      "end": "2025-09-09T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "bf51dfaa-ceaa-46fd-b4f3-773853752e23",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-09T07:30:00.000",
+      "end": "2025-09-09T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3b31dcbf-6ecc-4526-8adf-552c9e62d1c0",
+      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-09-09T10:00:00.000",
+      "end": "2025-09-09T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "93a07549-1b46-4770-8440-ab9b0cdb8a23",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-09T11:00:00.000",
+      "end": "2025-09-09T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "aa50aa06-352c-481d-ace7-41c3ccd83c73",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-09T12:00:00.000",
+      "end": "2025-09-09T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "eaf3fef8-8074-4a90-a7ef-16c722aec0a9",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-09T13:00:00.000",
+      "end": "2025-09-09T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8332b943-3d30-4345-b724-ff0526906645",
+      "title": "Members Swim",
+      "start": "2025-09-10T06:30:00.000",
+      "end": "2025-09-10T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "209eb032-773a-4d3d-881e-aa6adec649ae",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-10T07:30:00.000",
+      "end": "2025-09-10T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3eb39bf6-c6ca-40a7-9bb3-459c631cef24",
+      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-09-10T10:00:00.000",
+      "end": "2025-09-10T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d84d48f0-5cdf-423f-a565-93d0234a6511",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-10T11:00:00.000",
+      "end": "2025-09-10T12:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -136,15 +235,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-05T12:09:55.334Z",
+  "lastUpdated": "2025-09-05T12:46:46.199Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-09-05T00:00:00.000Z",
       "end": "2025-09-13T00:00:00.000Z"
     },
-    "eventCount": 15,
-    "generatedAt": "2025-09-05T12:09:55.334Z",
+    "eventCount": 26,
+    "generatedAt": "2025-09-05T12:46:46.199Z",
     "generatedBy": "GitHub Actions"
   }
 }
