@@ -1,15 +1,6 @@
 {
   "data": [
     {
-      "id": "34a8b2db-6241-4ee1-8bb5-1ce6a38cc4f2",
-      "title": "Aquatic Centre Closed for Maintenance",
-      "start": "2025-09-04T00:00:00.000",
-      "end": "2025-09-04T23:00:01.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "18826c23-3f81-43a3-b695-9f41e9cf4ec9",
       "title": "Aquatic Centre Closed for Maintenance",
       "start": "2025-09-05T00:00:00.000",
@@ -53,17 +44,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "0acf6442-618f-4d0b-98d3-5f4b831371c3",
+      "title": "Private Rental - SSRCE / Pools Closed to the Public",
+      "start": "2025-09-12T12:00:00.000",
+      "end": "2025-09-12T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-04T23:34:05.624Z",
+  "lastUpdated": "2025-09-05T00:32:44.972Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-09-04T00:00:00.000Z",
-      "end": "2025-09-12T00:00:00.000Z"
+      "start": "2025-09-05T00:00:00.000Z",
+      "end": "2025-09-13T00:00:00.000Z"
     },
     "eventCount": 6,
-    "generatedAt": "2025-09-04T23:34:05.624Z",
+    "generatedAt": "2025-09-05T00:32:44.972Z",
     "generatedBy": "GitHub Actions"
   }
 }
