@@ -64,8 +64,53 @@
       "allDay": false
     },
     {
-      "id": "21ddfc13-dfa6-4918-b577-6ef160707b1d",
-      "title": "Bridgewater Barracudas - 3 Lanes",
+      "id": "9f0e91e9-919e-49ea-af24-88d31efbc08a",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-08T12:00:00.000",
+      "end": "2025-09-08T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c15016b1-87d0-4575-909c-167532ac67d0",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-08T13:00:00.000",
+      "end": "2025-09-08T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d8ee86c7-04cd-4eb2-bc9a-19524169dadf",
+      "title": "Senior Swim 60+",
+      "start": "2025-09-08T15:30:00.000",
+      "end": "2025-09-08T16:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ba16de75-fc7f-4aa0-9049-fd0a635ce22d",
+      "title": "Aqua Dance using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-09-08T17:00:00.000",
+      "end": "2025-09-08T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "fed9ea9e-729d-4223-8a10-b2a17a95ca6d",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-08T18:00:00.000",
+      "end": "2025-09-08T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f0872578-79ad-4951-a72a-21eca0e75786",
+      "title": "Bridgewater Barracudas - 3 Lanes, Play & Therapy Pools Open",
       "start": "2025-09-08T19:00:00.000",
       "end": "2025-09-08T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -91,15 +136,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-05T11:34:05.622Z",
+  "lastUpdated": "2025-09-05T12:09:55.334Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-09-05T00:00:00.000Z",
       "end": "2025-09-13T00:00:00.000Z"
     },
-    "eventCount": 10,
-    "generatedAt": "2025-09-05T11:34:05.622Z",
+    "eventCount": 15,
+    "generatedAt": "2025-09-05T12:09:55.334Z",
     "generatedBy": "GitHub Actions"
   }
 }
