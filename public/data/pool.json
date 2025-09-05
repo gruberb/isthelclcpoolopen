@@ -28,6 +28,42 @@
       "allDay": false
     },
     {
+      "id": "5658a745-b4db-4e6a-b6eb-69f9eff89980",
+      "title": "Members Swim",
+      "start": "2025-09-08T06:30:00.000",
+      "end": "2025-09-08T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b48eb423-abac-4f88-bb34-80134b0980ee",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-08T07:30:00.000",
+      "end": "2025-09-08T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ba83aa6b-361e-4e7e-91c4-4fd1f6bf7cdb",
+      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-09-08T10:00:00.000",
+      "end": "2025-09-08T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "edce7d5a-0018-40c3-9e20-da92b67b7608",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-08T11:00:00.000",
+      "end": "2025-09-08T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "21ddfc13-dfa6-4918-b577-6ef160707b1d",
       "title": "Bridgewater Barracudas - 3 Lanes",
       "start": "2025-09-08T19:00:00.000",
@@ -55,15 +91,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-05T11:05:34.448Z",
+  "lastUpdated": "2025-09-05T11:34:05.622Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-09-05T00:00:00.000Z",
       "end": "2025-09-13T00:00:00.000Z"
     },
-    "eventCount": 6,
-    "generatedAt": "2025-09-05T11:05:34.448Z",
+    "eventCount": 10,
+    "generatedAt": "2025-09-05T11:34:05.622Z",
     "generatedBy": "GitHub Actions"
   }
 }
