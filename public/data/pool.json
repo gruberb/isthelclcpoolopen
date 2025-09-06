@@ -1,15 +1,6 @@
 {
   "data": [
     {
-      "id": "18826c23-3f81-43a3-b695-9f41e9cf4ec9",
-      "title": "Aquatic Centre Closed for Maintenance",
-      "start": "2025-09-05T00:00:00.000",
-      "end": "2025-09-05T23:00:01.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "aa44f905-27cf-44f6-9187-536c34702105",
       "title": "Aquatic Centre Closed for Maintenance",
       "start": "2025-09-06T00:00:00.000",
@@ -395,17 +386,89 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "c1270088-9a2f-4bee-900e-87e06b0346ad",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-13T07:30:00.000",
+      "end": "2025-09-13T08:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8ff308bb-efd6-4ac9-b12d-fbc197e8f4b7",
+      "title": "Private Rental using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-09-13T08:00:00.000",
+      "end": "2025-09-13T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3b06336f-0b22-48e0-a16e-d11139404ea6",
+      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-09-13T12:00:00.000",
+      "end": "2025-09-13T12:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9a9ea83c-0c2b-44c6-8543-525edc98d9fd",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-13T13:00:00.000",
+      "end": "2025-09-13T14:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b6bfdff5-3b2b-435e-ad53-9537d8857b89",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2025-09-13T14:30:00.000",
+      "end": "2025-09-13T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a3163176-d00a-41d4-ae35-5699238513fe",
+      "title": "Private Pool Party Rental",
+      "start": "2025-09-13T16:00:00.000",
+      "end": "2025-09-13T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4da5e611-d9ea-459b-bab9-f49b4f24a927",
+      "title": "MODL Women's Only Swim",
+      "start": "2025-09-13T17:00:00.000",
+      "end": "2025-09-13T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5287179e-01eb-4211-96d3-45167885163a",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-09-13T18:00:00.000",
+      "end": "2025-09-13T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-05T23:34:03.313Z",
+  "lastUpdated": "2025-09-06T00:31:26.826Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-09-05T00:00:00.000Z",
-      "end": "2025-09-13T00:00:00.000Z"
+      "start": "2025-09-06T00:00:00.000Z",
+      "end": "2025-09-14T00:00:00.000Z"
     },
-    "eventCount": 44,
-    "generatedAt": "2025-09-05T23:34:03.313Z",
+    "eventCount": 51,
+    "generatedAt": "2025-09-06T00:31:26.826Z",
     "generatedBy": "GitHub Actions"
   }
 }
