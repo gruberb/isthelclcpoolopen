@@ -505,7 +505,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-07T23:05:33.943Z",
+  "lastUpdated": "2025-09-07T23:34:04.625Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -513,7 +513,7 @@
       "end": "2025-09-15T00:00:00.000Z"
     },
     "eventCount": 56,
-    "generatedAt": "2025-09-07T23:05:33.943Z",
+    "generatedAt": "2025-09-07T23:34:04.625Z",
     "generatedBy": "GitHub Actions"
   }
 }
