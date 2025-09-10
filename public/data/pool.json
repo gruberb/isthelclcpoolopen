@@ -128,7 +128,7 @@
     },
     {
       "id": "050492e8-0b86-47a7-8045-7bd0859332a9",
-      "title": "Barracudas - 3 Lanes, Play & Therapy Pools Open",
+      "title": "Bridgewater Barracudas - 3 Lanes, Play & Therapy Pools Open",
       "start": "2025-09-11T19:00:00.000",
       "end": "2025-09-11T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -326,7 +326,7 @@
     },
     {
       "id": "ef53f97d-c19e-43c5-befb-6fbcd5f61d30",
-      "title": "Barracudas & Lanes - 3 Lanes, Play & Therapy Pools Open",
+      "title": "Bridgewater Barracudas - 3 Lanes, Play & Therapy Pools Open",
       "start": "2025-09-14T18:00:00.000",
       "end": "2025-09-14T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -578,17 +578,8 @@
     },
     {
       "id": "85384db6-8eef-4104-9e74-c129e3546fb1",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open - Bronze Cross using 2 lanes from 5:30 pm - 7:00 pm",
       "start": "2025-09-17T16:15:00.000",
-      "end": "2025-09-17T17:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "88e8ade3-6898-4df8-aaf7-172ce7a5665f",
-      "title": "Bronze Cross - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2025-09-17T17:30:00.000",
       "end": "2025-09-17T19:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -613,15 +604,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-10T10:06:20.042Z",
+  "lastUpdated": "2025-09-10T10:36:48.766Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-09-10T00:00:00.000Z",
       "end": "2025-09-18T00:00:00.000Z"
     },
-    "eventCount": 68,
-    "generatedAt": "2025-09-10T10:06:20.042Z",
+    "eventCount": 67,
+    "generatedAt": "2025-09-10T10:36:48.766Z",
     "generatedBy": "GitHub Actions"
   }
 }
