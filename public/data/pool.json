@@ -137,7 +137,7 @@
     },
     {
       "id": "64d3dcc7-063a-45d0-86bb-f84ca0c37482",
-      "title": "Public Swim - No Lanes, All Pools Open",
+      "title": "Public Swim - All Pools Open - 2 Lanes Being used by CALA 6:30 to 8pm",
       "start": "2025-09-12T17:00:00.000",
       "end": "2025-09-12T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -173,7 +173,7 @@
     },
     {
       "id": "9a9ea83c-0c2b-44c6-8543-525edc98d9fd",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "title": "Recreational Swim - 2 Lanes, Play & Therapy Pools Open - CALA using 2 lanes",
       "start": "2025-09-13T13:00:00.000",
       "end": "2025-09-13T14:30:00.000",
       "backgroundColor": "#0000FF",
@@ -199,27 +199,9 @@
       "allDay": false
     },
     {
-      "id": "4da5e611-d9ea-459b-bab9-f49b4f24a927",
-      "title": "MODL Women's Only Swim",
-      "start": "2025-09-13T17:00:00.000",
-      "end": "2025-09-13T18:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "5287179e-01eb-4211-96d3-45167885163a",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-09-13T18:00:00.000",
-      "end": "2025-09-13T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "f802419d-7b03-4665-93d6-b4b3c9153ad2",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-09-14T07:30:00.000",
+      "start": "2025-09-14T09:00:00.000",
       "end": "2025-09-14T12:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -235,7 +217,7 @@
       "allDay": false
     },
     {
-      "id": "a3163176-d00a-41d4-ae35-5699238513fe",
+      "id": "4aedf82b-a2be-4622-804f-4f2632f52de7",
       "title": "Private Pool Party Rental",
       "start": "2025-09-14T16:00:00.000",
       "end": "2025-09-14T17:00:00.000",
@@ -613,15 +595,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-11T17:33:59.101Z",
+  "lastUpdated": "2025-09-11T18:07:00.965Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-09-11T00:00:00.000Z",
       "end": "2025-09-19T00:00:00.000Z"
     },
-    "eventCount": 68,
-    "generatedAt": "2025-09-11T17:33:59.101Z",
+    "eventCount": 66,
+    "generatedAt": "2025-09-11T18:07:00.965Z",
     "generatedBy": "GitHub Actions"
   }
 }
