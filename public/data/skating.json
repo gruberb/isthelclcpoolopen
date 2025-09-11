@@ -28,7 +28,7 @@
       "allDay": false
     },
     {
-      "id": "1d91ac85-a7fb-4152-8bbd-292c0f7e0676",
+      "id": "cfcac418-f966-450c-9e84-2c78e773d476",
       "title": "Adult Skating",
       "start": "2025-09-11T12:00:00.000",
       "end": "2025-09-11T13:00:00.000",
@@ -37,7 +37,7 @@
       "allDay": false
     },
     {
-      "id": "1d91ac85-a7fb-4152-8bbd-292c0f7e0676",
+      "id": "10f7ddb8-622a-4dad-ad12-dedf03ae5c45",
       "title": "Adult Skating",
       "start": "2025-09-12T12:00:00.000",
       "end": "2025-09-12T13:00:00.000",
@@ -46,7 +46,16 @@
       "allDay": false
     },
     {
-      "id": "1d91ac85-a7fb-4152-8bbd-292c0f7e0676",
+      "id": "cd85395b-b898-4031-ab9a-24fe4ab08084",
+      "title": "Public Skate",
+      "start": "2025-09-14T12:15:00.000",
+      "end": "2025-09-14T13:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "939be75a-957a-4f5a-a1b0-82a719b2440e",
       "title": "Adult Skating",
       "start": "2025-09-15T12:00:00.000",
       "end": "2025-09-15T13:00:00.000",
@@ -100,13 +109,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-10T05:03:30.366Z",
+  "lastUpdated": "2025-09-11T05:03:51.409Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 77,
-    "publicEvents": 11,
-    "generatedAt": "2025-09-10T05:03:30.366Z",
+    "publicEvents": 12,
+    "generatedAt": "2025-09-11T05:03:51.409Z",
     "generatedBy": "GitHub Actions"
   }
 }
