@@ -163,13 +163,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-12T05:03:36.514Z",
+  "lastUpdated": "2025-09-13T05:03:27.965Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 85,
+    "totalEvents": 86,
     "publicEvents": 18,
-    "generatedAt": "2025-09-12T05:03:36.514Z",
+    "generatedAt": "2025-09-13T05:03:27.965Z",
     "generatedBy": "GitHub Actions"
   }
 }
