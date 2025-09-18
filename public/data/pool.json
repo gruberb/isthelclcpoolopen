@@ -138,7 +138,34 @@
     {
       "id": "1a775d2c-1b0f-4f5a-a38b-b793dedb1ef9",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open - Bronze Cross using 2 Lanes from 5:30 pm - 8:00 pm",
-      "start": "2025-09-19T14:15:00.000",
+      "start": "2025-09-19T14:00:00.000",
+      "end": "2025-09-19T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "690e6e8a-0db5-486e-b64e-b2bac7e41d0e",
+      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
+      "start": "2025-09-19T15:30:00.000",
+      "end": "2025-09-19T16:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "cc8a44ee-3031-43a3-900a-be41f58be5ba",
+      "title": "Public Swim (No Lanes) - All Pools Open",
+      "start": "2025-09-19T16:15:00.000",
+      "end": "2025-09-19T18:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "22e8fc02-c022-4923-bec8-7770bfef12a0",
+      "title": "Lesson & Lanes  - 2 Lanes, Play and Therapy Pool open",
+      "start": "2025-09-19T18:30:00.000",
       "end": "2025-09-19T20:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -613,15 +640,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-18T15:35:52.527Z",
+  "lastUpdated": "2025-09-18T16:06:58.173Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-09-18T00:00:00.000Z",
       "end": "2025-09-26T00:00:00.000Z"
     },
-    "eventCount": 68,
-    "generatedAt": "2025-09-18T15:35:52.527Z",
+    "eventCount": 71,
+    "generatedAt": "2025-09-18T16:06:58.173Z",
     "generatedBy": "GitHub Actions"
   }
 }
