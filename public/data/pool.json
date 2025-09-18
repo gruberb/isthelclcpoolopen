@@ -524,7 +524,7 @@
     },
     {
       "id": "e497b61e-f0fc-4383-9b58-76b7b0ad98cc",
-      "title": "Adult Lessons - 2 Lanes, Play & Therapy Pools Open",
+      "title": "Lesson and Lanes - 2 Lanes, Play & Therapy Pools Open",
       "start": "2025-09-24T15:30:00.000",
       "end": "2025-09-24T16:15:00.000",
       "backgroundColor": "#0000FF",
@@ -533,8 +533,17 @@
     },
     {
       "id": "4cc68c69-91a3-4296-96a5-1599c65c1ef2",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open - Bronze Cross using 2 Lanes from 5:30 pm - 7:00 pm",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open ",
       "start": "2025-09-24T16:15:00.000",
+      "end": "2025-09-24T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "cf7c38fe-b1c3-4eee-ae25-6a7ff6355d81",
+      "title": "Lesson and Lanes (Bronze Cross using 2 lanes) 2 lanes, Play & Therapy Pools Open",
+      "start": "2025-09-24T17:00:00.000",
       "end": "2025-09-24T19:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -614,7 +623,7 @@
     },
     {
       "id": "92b85876-7096-4219-9a9b-60170b808968",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pools Open",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
       "start": "2025-09-25T16:00:00.000",
       "end": "2025-09-25T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -640,15 +649,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-18T16:06:58.173Z",
+  "lastUpdated": "2025-09-18T16:38:33.447Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-09-18T00:00:00.000Z",
       "end": "2025-09-26T00:00:00.000Z"
     },
-    "eventCount": 71,
-    "generatedAt": "2025-09-18T16:06:58.173Z",
+    "eventCount": 72,
+    "generatedAt": "2025-09-18T16:38:33.447Z",
     "generatedBy": "GitHub Actions"
   }
 }
