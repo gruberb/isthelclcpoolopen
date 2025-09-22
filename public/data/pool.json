@@ -506,7 +506,7 @@
     },
     {
       "id": "dc2adaec-cfc6-475a-95dc-82977f188f26",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pools Open",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
       "start": "2025-09-28T09:00:00.000",
       "end": "2025-09-28T11:30:00.000",
       "backgroundColor": "#0000FF",
@@ -587,7 +587,7 @@
     },
     {
       "id": "c389a10b-b66e-4423-9607-a16dc3db98c4",
-      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
+      "title": "Elderfit using Lap Pool - Other Pools Not Available",
       "start": "2025-09-29T10:00:00.000",
       "end": "2025-09-29T10:45:00.000",
       "backgroundColor": "#0000FF",
@@ -658,7 +658,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-22T15:36:34.961Z",
+  "lastUpdated": "2025-09-22T16:07:11.307Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -666,7 +666,7 @@
       "end": "2025-09-30T00:00:00.000Z"
     },
     "eventCount": 73,
-    "generatedAt": "2025-09-22T15:36:34.961Z",
+    "generatedAt": "2025-09-22T16:07:11.307Z",
     "generatedBy": "GitHub Actions"
   }
 }
