@@ -128,7 +128,7 @@
     },
     {
       "id": "799b4c3b-2a1f-444f-8a02-f542442113c4",
-      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
+      "title": "Elderfit using Lap Pool - Pools not available",
       "start": "2025-09-23T10:00:00.000",
       "end": "2025-09-23T10:45:00.000",
       "backgroundColor": "#0000FF",
@@ -245,7 +245,7 @@
     },
     {
       "id": "643452ea-27a7-48a0-955c-7feb785f86f5",
-      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
+      "title": "Aquafit using Lap Pool - pools not available",
       "start": "2025-09-24T19:00:00.000",
       "end": "2025-09-24T19:45:00.000",
       "backgroundColor": "#0000FF",
@@ -281,7 +281,7 @@
     },
     {
       "id": "ab5af28e-bb62-465c-829b-4f95720605b7",
-      "title": "Elderfit using Lap Pool - Play & Therapy Pools Open",
+      "title": "Elderfit using Lap Pool - Pools not Available",
       "start": "2025-09-25T10:00:00.000",
       "end": "2025-09-25T10:45:00.000",
       "backgroundColor": "#0000FF",
@@ -362,7 +362,7 @@
     },
     {
       "id": "ea50d337-30bd-4ea3-81ac-ed1bcd54f51b",
-      "title": "Elderfit using Lap Pool - Play & Therapy Pool Only",
+      "title": "Elderfit using Lap Pool - Pools not available",
       "start": "2025-09-26T10:00:00.000",
       "end": "2025-09-26T10:45:00.000",
       "backgroundColor": "#0000FF",
@@ -407,7 +407,7 @@
     },
     {
       "id": "6017aa3b-6585-4588-8bdd-4ff747bddfdb",
-      "title": "Aquafit using Lap Pool - Play and Therapy Pools Open",
+      "title": "Aquafit using Lap Pool - Other Pools Not Available",
       "start": "2025-09-26T15:30:00.000",
       "end": "2025-09-26T16:15:00.000",
       "backgroundColor": "#0000FF",
@@ -452,7 +452,7 @@
     },
     {
       "id": "2a39861d-b84b-42f5-b4c0-096cc8bd1619",
-      "title": "Aquafit using Lap Pool - Play & Therapy Pools Open",
+      "title": "Aquafit using Lap Pool - Pools Not Available",
       "start": "2025-09-27T12:00:00.000",
       "end": "2025-09-27T12:45:00.000",
       "backgroundColor": "#0000FF",
@@ -496,24 +496,6 @@
       "allDay": false
     },
     {
-      "id": "7bc348ab-709c-4967-b414-32c03b50b2b7",
-      "title": "MODL Women's Only Swim ",
-      "start": "2025-09-27T17:00:00.000",
-      "end": "2025-09-27T18:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "213fe513-1532-44aa-a047-5cbbebee22a2",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-09-27T18:00:00.000",
-      "end": "2025-09-27T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "dc70be35-74d4-4efa-b8e9-b0ed5ea86ef6",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2025-09-28T07:30:00.000",
@@ -526,6 +508,15 @@
       "id": "dc2adaec-cfc6-475a-95dc-82977f188f26",
       "title": "Lessons & Lanes - 2 Lanes & Therapy Pools Open",
       "start": "2025-09-28T09:00:00.000",
+      "end": "2025-09-28T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e01fdbe8-7d43-4be9-ade1-7c153ea6a76b",
+      "title": "Lifesaving Sport - Only Therapy Pool Available",
+      "start": "2025-09-28T11:30:00.000",
       "end": "2025-09-28T12:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -667,15 +658,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-22T15:06:52.183Z",
+  "lastUpdated": "2025-09-22T15:36:34.961Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-09-22T00:00:00.000Z",
       "end": "2025-09-30T00:00:00.000Z"
     },
-    "eventCount": 74,
-    "generatedAt": "2025-09-22T15:06:52.183Z",
+    "eventCount": 73,
+    "generatedAt": "2025-09-22T15:36:34.961Z",
     "generatedBy": "GitHub Actions"
   }
 }
