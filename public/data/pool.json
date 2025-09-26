@@ -541,8 +541,8 @@
       "allDay": false
     },
     {
-      "id": "45da8582-825b-45cd-b47d-fb3b4da3e904",
-      "title": "Private Rental - SSRCE / Pools Closed to the Public",
+      "id": "a2a42ccc-347e-4082-975b-ae139a2ece6d",
+      "title": "Private Rental - SSRCE - All Pools Closed to the Public",
       "start": "2025-10-03T11:30:00.000",
       "end": "2025-10-03T12:30:00.000",
       "backgroundColor": "#0000FF",
@@ -550,8 +550,8 @@
       "allDay": false
     },
     {
-      "id": "a2a42ccc-347e-4082-975b-ae139a2ece6d",
-      "title": "Private Rental - SSRCE - All Pools Closed to the Public",
+      "id": "45da8582-825b-45cd-b47d-fb3b4da3e904",
+      "title": "Private Rental - SSRCE / Pools Closed to the Public",
       "start": "2025-10-03T11:30:00.000",
       "end": "2025-10-03T12:30:00.000",
       "backgroundColor": "#0000FF",
@@ -604,7 +604,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-09-26T15:35:26.290Z",
+  "lastUpdated": "2025-09-26T16:07:06.098Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -612,7 +612,7 @@
       "end": "2025-10-04T00:00:00.000Z"
     },
     "eventCount": 67,
-    "generatedAt": "2025-09-26T15:35:26.290Z",
+    "generatedAt": "2025-09-26T16:07:06.098Z",
     "generatedBy": "GitHub Actions"
   }
 }
