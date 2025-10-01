@@ -400,7 +400,7 @@
       "id": "ca1d98d6-98ad-45e3-96b2-c6f0efc9d116",
       "title": "Members Swim",
       "start": "2025-10-06T06:30:00.000",
-      "end": "2025-10-06T07:03:00.000",
+      "end": "2025-10-06T07:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -676,7 +676,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-10-01T15:35:40.734Z",
+  "lastUpdated": "2025-10-01T16:07:34.107Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -684,7 +684,7 @@
       "end": "2025-10-09T00:00:00.000Z"
     },
     "eventCount": 75,
-    "generatedAt": "2025-10-01T15:35:40.734Z",
+    "generatedAt": "2025-10-01T16:07:34.107Z",
     "generatedBy": "GitHub Actions"
   }
 }
