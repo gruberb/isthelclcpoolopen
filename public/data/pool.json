@@ -148,16 +148,7 @@
       "id": "0bba9608-604b-441c-b9c5-1b7a07f3fb92",
       "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
       "start": "2025-10-05T09:00:00.000",
-      "end": "2025-10-05T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d1e42300-4122-408c-b1e7-16cd976a1604",
-      "title": "Lifesaving Sport - Only Therapy Pool Available",
-      "start": "2025-10-05T11:30:00.000",
-      "end": "2025-10-05T12:30:00.000",
+      "end": "2025-10-05T12:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -165,7 +156,7 @@
     {
       "id": "a28db2f6-2d8b-491d-8929-6797c0a7d764",
       "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2025-10-05T13:00:00.000",
+      "start": "2025-10-05T12:00:00.000",
       "end": "2025-10-05T16:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -640,15 +631,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-10-03T15:34:52.567Z",
+  "lastUpdated": "2025-10-03T16:06:38.109Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-10-03T00:00:00.000Z",
       "end": "2025-10-11T00:00:00.000Z"
     },
-    "eventCount": 71,
-    "generatedAt": "2025-10-03T15:34:52.567Z",
+    "eventCount": 70,
+    "generatedAt": "2025-10-03T16:06:38.109Z",
     "generatedBy": "GitHub Actions"
   }
 }
