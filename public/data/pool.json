@@ -181,15 +181,6 @@
       "allDay": false
     },
     {
-      "id": "e4c42a67-5962-4b5d-a4ca-83c115dc0cf0",
-      "title": "Private Pool Party Rental",
-      "start": "2025-10-05T16:00:00.000",
-      "end": "2025-10-05T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "4cf62f02-b24d-4f51-80ee-bef38794621a",
       "title": "Sensory Swim",
       "start": "2025-10-05T17:00:00.000",
@@ -649,15 +640,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-10-03T12:09:48.421Z",
+  "lastUpdated": "2025-10-03T12:46:51.680Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-10-03T00:00:00.000Z",
       "end": "2025-10-11T00:00:00.000Z"
     },
-    "eventCount": 72,
-    "generatedAt": "2025-10-03T12:09:48.421Z",
+    "eventCount": 71,
+    "generatedAt": "2025-10-03T12:46:51.680Z",
     "generatedBy": "GitHub Actions"
   }
 }
