@@ -55,15 +55,6 @@
       "allDay": false
     },
     {
-      "id": "fcfc60e8-1d78-4cee-8e43-35c16decbe30",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-05T19:00:00.000",
-      "end": "2025-10-05T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "ca1d98d6-98ad-45e3-96b2-c6f0efc9d116",
       "title": "Members Swim",
       "start": "2025-10-06T06:30:00.000",
@@ -577,15 +568,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-10-05T21:34:03.763Z",
+  "lastUpdated": "2025-10-05T22:05:22.894Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2025-10-05T00:00:00.000Z",
       "end": "2025-10-13T00:00:00.000Z"
     },
-    "eventCount": 64,
-    "generatedAt": "2025-10-05T21:34:03.763Z",
+    "eventCount": 63,
+    "generatedAt": "2025-10-05T22:05:22.894Z",
     "generatedBy": "GitHub Actions"
   }
 }
