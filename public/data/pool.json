@@ -1,60 +1,6 @@
 {
   "data": [
     {
-      "id": "45e33a9f-8708-452b-9683-9df1a3a4d2f3",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-05T07:30:00.000",
-      "end": "2025-10-05T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0bba9608-604b-441c-b9c5-1b7a07f3fb92",
-      "title": "Lessons Only",
-      "start": "2025-10-05T09:00:00.000",
-      "end": "2025-10-05T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a28db2f6-2d8b-491d-8929-6797c0a7d764",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2025-10-05T12:00:00.000",
-      "end": "2025-10-05T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "52716adb-39a9-4701-b2fa-2664f4ee0a5e",
-      "title": "Jessica Alsop",
-      "start": "2025-10-05T16:00:00.000",
-      "end": "2025-10-05T17:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
-      "id": "4cf62f02-b24d-4f51-80ee-bef38794621a",
-      "title": "Sensory Swim",
-      "start": "2025-10-05T17:00:00.000",
-      "end": "2025-10-05T17:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "17fae80e-9f94-4fd9-86ec-53afd3b13d3b",
-      "title": "Bridgewater Barracudas",
-      "start": "2025-10-05T18:00:00.000",
-      "end": "2025-10-05T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "ca1d98d6-98ad-45e3-96b2-c6f0efc9d116",
       "title": "Members Swim",
       "start": "2025-10-06T06:30:00.000",
@@ -566,17 +512,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "66e1417a-f28c-4b62-9229-c44ee9e30242",
+      "title": "Thanksgiving - Facility Closed",
+      "start": "2025-10-13T00:00:00.000",
+      "end": "2025-10-13T23:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-10-05T23:34:09.019Z",
+  "lastUpdated": "2025-10-06T00:33:58.109Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-10-05T00:00:00.000Z",
-      "end": "2025-10-13T00:00:00.000Z"
+      "start": "2025-10-06T00:00:00.000Z",
+      "end": "2025-10-14T00:00:00.000Z"
     },
-    "eventCount": 63,
-    "generatedAt": "2025-10-05T23:34:09.019Z",
+    "eventCount": 58,
+    "generatedAt": "2025-10-06T00:33:58.109Z",
     "generatedBy": "GitHub Actions"
   }
 }
