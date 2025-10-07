@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { isSwimmingEvent } from "../utils/eventParser";
-import { convertToLocalTime } from "../utils/dateUtils";
 
 export function useSwimmingData() {
   const [data, setData] = useState([]);
@@ -68,19 +67,17 @@ function processData(rawData) {
   return rawData
     .filter(isSwimmingEvent)
     .map((event) => {
-      const start = convertToLocalTime(event.start);
-      const end = convertToLocalTime(event.end);
 
       // Skip events with invalid dates
-      if (!start || !end) {
+      if (!event.start || !event.end) {
         return null;
       }
 
       return {
         id: event.id,
         title: event.title,
-        start,
-        end,
+        start: event.start,
+        end: event.end,
         backgroundColor: event.backgroundColor,
         textColor: event.textColor,
         allDay: event.allDay,

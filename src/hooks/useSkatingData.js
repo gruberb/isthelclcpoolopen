@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from "react";
-import { convertToLocalTime } from "../utils/dateUtils";
 
 export function useSkatingData() {
   const [data, setData] = useState([]);
@@ -80,21 +79,19 @@ function processData(rawData) {
 
   return rawData
     .map((event) => {
-      const start = convertToLocalTime(event.start);
-      const end = convertToLocalTime(event.end);
       if (
-        !(start instanceof Date) ||
-        isNaN(start) ||
-        !(end instanceof Date) ||
-        isNaN(end)
+        !(event.start instanceof Date) ||
+        isNaN(event.start) ||
+        !(event.end instanceof Date) ||
+        isNaN(event.end)
       ) {
         return null;
       }
       return {
         id: event.id,
         title: event.title,
-        start,
-        end,
+        start: event.start,
+        end: event.end,
         backgroundColor: event.backgroundColor,
         textColor: event.textColor,
         allDay: event.allDay,

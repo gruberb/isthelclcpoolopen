@@ -2,8 +2,8 @@ name: Deploy Site to GitHub Pages
 
 on:
   schedule:
-    # Daily at 6 AM Atlantic Time (11 AM UTC)
-    - cron: "0 11 * * *"
+    # Daily at 7:30 AM Atlantic Time (11:30 AM UTC) - after all scrapers complete
+    - cron: "30 11 * * *"
   push:
     branches: [main]
     paths:

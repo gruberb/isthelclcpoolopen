@@ -1,38 +1,4 @@
-/**
- * Convert a date string from API format to user's local timezone
- * @param {string} dateString - Date string to convert
- * @returns {Date|null} - Converted date or null if invalid
- */
-export function convertToLocalTime(dateString) {
-  // Parse the input date string
-  const inputDate = new Date(dateString);
-
-  // If the date is invalid, return null
-  if (isNaN(inputDate.getTime())) {
-    console.error("Invalid date:", dateString);
-    return null;
-  }
-
-  // The API returns times without timezone information,
-  // but we know they're in Atlantic Time (UTC-4 or UTC-3)
-  // We need to convert to the user's local timezone
-
-  // Get the user's current timezone offset
-  const userOffset = new Date().getTimezoneOffset();
-
-  // Atlantic Time is UTC-4 during standard time, UTC-3 during daylight savings
-  // We'll use a simple check for daylight savings based on the date
-  const isSummer = inputDate.getMonth() >= 3 && inputDate.getMonth() <= 10;
-  const atlanticOffset = isSummer ? -3 * 60 : -4 * 60; // Convert hours to minutes
-
-  // Calculate the difference in minutes
-  const offsetDiff = userOffset + atlanticOffset;
-
-  // Apply the offset
-  return new Date(inputDate.getTime() + offsetDiff * 60 * 1000);
-}
-
-/**
+ /**
  * Format a time (e.g., "7:30 PM")
  * @param {Date} date - Date to format
  * @returns {string} - Formatted time string
