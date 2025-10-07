@@ -79,19 +79,21 @@ function processData(rawData) {
 
   return rawData
     .map((event) => {
-      if (
-        !(event.start instanceof Date) ||
-        isNaN(event.start) ||
-        !(event.end instanceof Date) ||
-        isNaN(event.end)
-      ) {
+      // Convert string dates to Date objects
+      const start = new Date(event.start);
+      const end = new Date(event.end);
+
+      // Check if the dates are valid
+      if (isNaN(start) || isNaN(end)) {
+        console.warn('Invalid date found in event:', event);
         return null;
       }
+
       return {
         id: event.id,
         title: event.title,
-        start: event.start,
-        end: event.end,
+        start: start,
+        end: end,
         backgroundColor: event.backgroundColor,
         textColor: event.textColor,
         allDay: event.allDay,
