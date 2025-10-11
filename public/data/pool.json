@@ -1,78 +1,6 @@
 {
   "data": [
     {
-      "id": "82b8c701-61dd-4520-bcd7-338fe2dc496b",
-      "title": "Members Swim",
-      "start": "2025-10-10T06:30:00.000",
-      "end": "2025-10-10T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f9a8879b-9558-4757-89af-0a0125e834ce",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-10T07:30:00.000",
-      "end": "2025-10-10T10:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "15d28303-631f-4957-a006-be9d813e2ad4",
-      "title": "Elderfit using Lap Pool - Other Pools Not Available",
-      "start": "2025-10-10T10:00:00.000",
-      "end": "2025-10-10T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c8492827-35f4-4507-aaa9-ebaa5dfd0ca8",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-10T11:00:00.000",
-      "end": "2025-10-10T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ae9a57f8-7408-4c65-b5bd-26ee94e54732",
-      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-10T13:00:00.000",
-      "end": "2025-10-10T13:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "03b9491c-e271-4fd1-aaf0-52bca2deabd1",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-10T14:00:00.000",
-      "end": "2025-10-10T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "eaf758ea-6bd7-4935-9d98-abc8d87445ab",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2025-10-10T16:00:00.000",
-      "end": "2025-10-10T18:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "84b9b7f1-3401-43ef-83a9-868fe8a2a4f9",
-      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pool Open",
-      "start": "2025-10-10T18:30:00.000",
-      "end": "2025-10-10T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "8d1c23b8-b82a-46c1-9dff-9d37e7ec87af",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools OPen",
       "start": "2025-10-11T07:30:00.000",
@@ -85,7 +13,7 @@
       "id": "e1690945-d5d3-4f53-8fe5-4bbeaa44a94a",
       "title": "Aqua Dance using the Lap Pool - Other Pools not available",
       "start": "2025-10-11T11:00:00.000",
-      "end": "2025-10-11T12:00:00.000",
+      "end": "2025-10-11T11:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -184,7 +112,7 @@
       "id": "0925518a-e2e5-44c0-b0df-94804accb8b4",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2025-10-14T07:30:00.000",
-      "end": "2025-10-14T10:00:00.000",
+      "end": "2025-10-14T09:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -503,17 +431,71 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "2aafbc14-d6d0-4e03-a327-b62a70a91be4",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-10-18T07:30:00.000",
+      "end": "2025-10-18T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7e4699ab-4df9-409d-8585-75fc73c30287",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2025-10-18T09:00:00.000",
+      "end": "2025-10-18T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d3e9625e-7664-4dd0-9ece-56decb7d81d0",
+      "title": "Aqua Dance",
+      "start": "2025-10-18T12:00:00.000",
+      "end": "2025-10-18T12:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "60206433-8b4e-432d-9c05-df8f7e373b34",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-10-18T12:45:00.000",
+      "end": "2025-10-18T13:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2e4e7561-98d6-4ad7-8cbf-9e96c1b48a15",
+      "title": "Public Swim (No Lanes) - All Pools Open",
+      "start": "2025-10-18T13:30:00.000",
+      "end": "2025-10-18T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "210eb3ea-1a03-49c2-aa7b-0e96d62cfe0b",
+      "title": "MODL Women's Only Swim",
+      "start": "2025-10-18T16:00:00.000",
+      "end": "2025-10-18T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-10-10T10:02:39.933Z",
+  "lastUpdated": "2025-10-11T10:02:24.105Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-10-10T00:00:00.000Z",
-      "end": "2025-10-18T00:00:00.000Z"
+      "start": "2025-10-11T00:00:00.000Z",
+      "end": "2025-10-19T00:00:00.000Z"
     },
-    "eventCount": 56,
-    "generatedAt": "2025-10-10T10:02:39.933Z",
+    "eventCount": 54,
+    "generatedAt": "2025-10-11T10:02:24.105Z",
     "generatedBy": "GitHub Actions"
   }
 }
