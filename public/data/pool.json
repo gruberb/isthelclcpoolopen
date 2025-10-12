@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "8d1c23b8-b82a-46c1-9dff-9d37e7ec87af",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools OPen",
-      "start": "2025-10-11T07:30:00.000",
-      "end": "2025-10-11T11:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e1690945-d5d3-4f53-8fe5-4bbeaa44a94a",
-      "title": "Aqua Dance using the Lap Pool - Other Pools not available",
-      "start": "2025-10-11T11:00:00.000",
-      "end": "2025-10-11T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "346fb920-418c-4ea5-83b4-046041b79cde",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-11T12:00:00.000",
-      "end": "2025-10-11T13:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4243dcd7-04c5-4767-a6c5-fc5ad5337241",
-      "title": "Public Swim (No Lanes) - All Pools Open",
-      "start": "2025-10-11T13:30:00.000",
-      "end": "2025-10-11T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "39817982-e25f-45cc-9cf3-df65adb325fa",
-      "title": "MODL Women's Only Swim",
-      "start": "2025-10-11T16:00:00.000",
-      "end": "2025-10-11T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "123a6736-c3fe-4f6a-a3a9-7523118862e1",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2025-10-12T07:30:00.000",
@@ -485,17 +440,89 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "6c22a9cd-ce59-44b5-86d2-262d77964275",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-10-19T07:30:00.000",
+      "end": "2025-10-19T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c6820fa6-17e1-4e68-a166-cc78c3caa416",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2025-10-19T09:00:00.000",
+      "end": "2025-10-19T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "27be4d12-f73b-43fd-8f1b-3c96515f1cd9",
+      "title": "Lifesaving Sport - Only Therapy Pool Available",
+      "start": "2025-10-19T11:30:00.000",
+      "end": "2025-10-19T12:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3ff2a461-135d-434e-9bb1-33d8e2c55fa4",
+      "title": "Public Swim (No Lanes) - All Pools Open",
+      "start": "2025-10-19T13:00:00.000",
+      "end": "2025-10-19T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a3163176-d00a-41d4-ae35-5699238513fe",
+      "title": "Private Pool Party Rental",
+      "start": "2025-10-19T16:00:00.000",
+      "end": "2025-10-19T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "da9808bb-9886-4e65-a270-0bbfb4463ef9",
+      "title": "MODL Sensory Swim",
+      "start": "2025-10-19T17:00:00.000",
+      "end": "2025-10-19T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "17fae80e-9f94-4fd9-86ec-53afd3b13d3b",
+      "title": "Bridgewater Barracudas",
+      "start": "2025-10-19T18:00:00.000",
+      "end": "2025-10-19T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4c45b057-9d07-45d7-8157-3ab5e439f948",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-10-19T19:00:00.000",
+      "end": "2025-10-19T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-10-11T10:02:24.105Z",
+  "lastUpdated": "2025-10-12T10:02:31.799Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-10-11T00:00:00.000Z",
-      "end": "2025-10-19T00:00:00.000Z"
+      "start": "2025-10-12T00:00:00.000Z",
+      "end": "2025-10-20T00:00:00.000Z"
     },
-    "eventCount": 54,
-    "generatedAt": "2025-10-11T10:02:24.105Z",
+    "eventCount": 57,
+    "generatedAt": "2025-10-12T10:02:31.799Z",
     "generatedBy": "GitHub Actions"
   }
 }
