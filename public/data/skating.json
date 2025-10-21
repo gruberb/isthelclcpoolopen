@@ -10,7 +10,7 @@
       "allDay": false
     },
     {
-      "id": "a8f72bcf-c45b-48d3-8cfd-e5b9d6faf233",
+      "id": "f2b45937-d127-4c44-9466-8ce7bf99e3fd",
       "title": "Public Skating",
       "start": "2025-10-21T10:00:00.000",
       "end": "2025-10-21T11:30:00.000",
@@ -19,7 +19,7 @@
       "allDay": false
     },
     {
-      "id": "a8f72bcf-c45b-48d3-8cfd-e5b9d6faf233",
+      "id": "716220ce-a573-4cb9-8245-42decfc795ae",
       "title": "Public Skating",
       "start": "2025-10-22T10:00:00.000",
       "end": "2025-10-22T11:30:00.000",
@@ -28,7 +28,7 @@
       "allDay": false
     },
     {
-      "id": "a8f72bcf-c45b-48d3-8cfd-e5b9d6faf233",
+      "id": "e2f018d9-d5a9-4ab7-8f7b-39897e07a457",
       "title": "Public Skating",
       "start": "2025-10-23T10:00:00.000",
       "end": "2025-10-23T11:30:00.000",
@@ -82,13 +82,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-10-20T05:03:34.947Z",
+  "lastUpdated": "2025-10-21T05:03:46.787Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 88,
+    "totalEvents": 89,
     "publicEvents": 9,
-    "generatedAt": "2025-10-20T05:03:34.947Z",
+    "generatedAt": "2025-10-21T05:03:46.787Z",
     "generatedBy": "GitHub Actions"
   }
 }
