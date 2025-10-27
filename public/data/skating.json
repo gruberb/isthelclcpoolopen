@@ -1,61 +1,7 @@
 {
   "data": [
     {
-      "id": "b10e3d01-6459-4cee-8daf-a644edcc369b",
-      "title": "Public Skating",
-      "start": "2025-10-20T10:00:00.000",
-      "end": "2025-10-20T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f2b45937-d127-4c44-9466-8ce7bf99e3fd",
-      "title": "Public Skating",
-      "start": "2025-10-21T10:00:00.000",
-      "end": "2025-10-21T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "716220ce-a573-4cb9-8245-42decfc795ae",
-      "title": "Public Skating",
-      "start": "2025-10-22T10:00:00.000",
-      "end": "2025-10-22T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e2f018d9-d5a9-4ab7-8f7b-39897e07a457",
-      "title": "Public Skating",
-      "start": "2025-10-23T10:00:00.000",
-      "end": "2025-10-23T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f6433c97-c3ce-4883-a436-f3b2f34ca591",
-      "title": "Public Skate",
-      "start": "2025-10-24T09:30:00.000",
-      "end": "2025-10-24T11:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7cde086c-bd61-4b23-b647-e738aaf90080",
-      "title": "Public Skate",
-      "start": "2025-10-25T16:45:00.000",
-      "end": "2025-10-25T18:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a8f72bcf-c45b-48d3-8cfd-e5b9d6faf233",
+      "id": "45d01919-67b0-4cb8-b334-511a285ad728",
       "title": "Public Skating",
       "start": "2025-10-27T10:00:00.000",
       "end": "2025-10-27T11:30:00.000",
@@ -64,7 +10,7 @@
       "allDay": false
     },
     {
-      "id": "a8f72bcf-c45b-48d3-8cfd-e5b9d6faf233",
+      "id": "1d8a6272-7ad1-488c-9c54-aa8fb58ef99a",
       "title": "Public Skating",
       "start": "2025-10-28T10:00:00.000",
       "end": "2025-10-28T11:30:00.000",
@@ -73,7 +19,7 @@
       "allDay": false
     },
     {
-      "id": "a8f72bcf-c45b-48d3-8cfd-e5b9d6faf233",
+      "id": "4aee8419-33ac-4d37-bc58-78e221da3cef",
       "title": "Public Skating",
       "start": "2025-10-29T10:00:00.000",
       "end": "2025-10-29T11:30:00.000",
@@ -100,13 +46,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-10-26T05:03:25.239Z",
+  "lastUpdated": "2025-10-27T05:04:06.805Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 87,
-    "publicEvents": 11,
-    "generatedAt": "2025-10-26T05:03:25.239Z",
+    "totalEvents": 76,
+    "publicEvents": 5,
+    "generatedAt": "2025-10-27T05:04:06.805Z",
     "generatedBy": "GitHub Actions"
   }
 }
