@@ -1,60 +1,6 @@
 {
   "data": [
     {
-      "id": "328e67f2-50a0-4087-b9ad-9fb490541300",
-      "title": "Members Swim",
-      "start": "2025-10-28T06:30:00.000",
-      "end": "2025-10-28T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "78339a17-7f66-4bc4-b612-f1afec630149",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-28T07:30:00.000",
-      "end": "2025-10-28T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "5f9fa64e-173e-4d24-8bfe-b3d9d595961f",
-      "title": "Elderfit using Lap Pool - Other Pools Not Available",
-      "start": "2025-10-28T10:00:00.000",
-      "end": "2025-10-28T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1a82a39c-8aed-4b01-a014-cb4dc5a23225",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-28T11:00:00.000",
-      "end": "2025-10-28T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "8dea9816-7ac7-45b0-97f1-2799651118dd",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-28T12:00:00.000",
-      "end": "2025-10-28T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e84b9e25-f678-41cd-8119-e5bb7aca90e5",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-10-28T13:00:00.000",
-      "end": "2025-10-28T21:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "427cb548-f7eb-4760-9dae-6b96de62b562",
       "title": "Members Swim",
       "start": "2025-10-29T06:30:00.000",
@@ -262,7 +208,7 @@
       "allDay": false
     },
     {
-      "id": "d6f1b6fb-d0d7-4e66-bc6a-6a811c13c7b4",
+      "id": "400e80d1-8fd4-40e7-971f-684d215e1d94",
       "title": "Private Rental - SSRCE / Pools Closed to the Public",
       "start": "2025-10-31T11:30:00.000",
       "end": "2025-10-31T12:30:00.000",
@@ -271,7 +217,7 @@
       "allDay": false
     },
     {
-      "id": "400e80d1-8fd4-40e7-971f-684d215e1d94",
+      "id": "d6f1b6fb-d0d7-4e66-bc6a-6a811c13c7b4",
       "title": "Private Rental - SSRCE / Pools Closed to the Public",
       "start": "2025-10-31T11:30:00.000",
       "end": "2025-10-31T12:30:00.000",
@@ -593,17 +539,116 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "ffe29f82-94b5-40ab-bbbc-b71b4a6006dd",
+      "title": "Members Swim",
+      "start": "2025-11-05T06:30:00.000",
+      "end": "2025-11-05T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "80daee37-6a6b-42da-ba8c-20fed9573659",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-11-05T07:30:00.000",
+      "end": "2025-11-05T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a3c739c7-9e7c-4f9b-bab0-5f9a63aadb63",
+      "title": "Elderfit using Lap Pool - Other Pools Not Available",
+      "start": "2025-11-05T10:00:00.000",
+      "end": "2025-11-05T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a90a2df9-1053-42f8-a135-e036ae91d560",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-11-05T11:00:00.000",
+      "end": "2025-11-05T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "29726afe-6f02-4941-b421-c4cc6312bc3c",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-11-05T12:00:00.000",
+      "end": "2025-11-05T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "cda6f621-618d-4c60-8500-5d6096b6604f",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-11-05T13:00:00.000",
+      "end": "2025-11-05T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a987714b-70ab-4e71-b6e2-65b05e1a784f",
+      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
+      "start": "2025-11-05T15:30:00.000",
+      "end": "2025-11-05T16:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b5363102-776d-43fc-88cd-19b98a9e1aac",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-11-05T16:15:00.000",
+      "end": "2025-11-05T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7219e7be-307a-4066-b4b3-25404a9a76ce",
+      "title": "Lesson and Lanes - 2 Lanes, Play & Therapy Pools Open ",
+      "start": "2025-11-05T17:00:00.000",
+      "end": "2025-11-05T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "eaad070e-323a-4994-a164-6bfe65464ed4",
+      "title": "Aquafit using Lap Pool - Other Pools Not Available",
+      "start": "2025-11-05T19:00:00.000",
+      "end": "2025-11-05T19:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1c735f68-351e-4746-9a81-e8b39f7ea30d",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-11-05T20:00:00.000",
+      "end": "2025-11-05T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-10-28T10:02:41.391Z",
+  "lastUpdated": "2025-10-29T10:02:42.554Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-10-28T00:00:00.000Z",
-      "end": "2025-11-05T00:00:00.000Z"
+      "start": "2025-10-29T00:00:00.000Z",
+      "end": "2025-11-06T00:00:00.000Z"
     },
-    "eventCount": 66,
-    "generatedAt": "2025-10-28T10:02:41.391Z",
+    "eventCount": 71,
+    "generatedAt": "2025-10-29T10:02:42.554Z",
     "generatedBy": "GitHub Actions"
   }
 }
