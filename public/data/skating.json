@@ -48,20 +48,20 @@
     {
       "id": "18db34c1-8e45-4c8d-9872-803c8f165186",
       "title": "Public Skate",
-      "start": "2025-11-01T16:45:00.000",
+      "start": "2025-11-01T17:15:00.000",
       "end": "2025-11-01T18:15:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-11-01T05:03:23.974Z",
+  "lastUpdated": "2025-11-02T05:03:29.704Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 96,
     "publicEvents": 6,
-    "generatedAt": "2025-11-01T05:03:23.974Z",
+    "generatedAt": "2025-11-02T05:03:29.704Z",
     "generatedBy": "GitHub Actions"
   }
 }
