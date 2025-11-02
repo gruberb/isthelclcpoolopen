@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "514300ce-69ab-494b-8938-af3891935126",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-11-01T07:30:00.000",
-      "end": "2025-11-01T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "be557317-0f62-479e-95cd-047bc2b6ba91",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
-      "start": "2025-11-01T09:00:00.000",
-      "end": "2025-11-01T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "232a2177-d399-4f32-b0bf-c9c28497a9e7",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-11-01T12:00:00.000",
-      "end": "2025-11-01T13:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "bc0778b8-340c-4244-9c94-c8bc6330c158",
-      "title": "Public Swim - No Lanes, All Pools Available",
-      "start": "2025-11-01T13:30:00.000",
-      "end": "2025-11-01T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f86af6a9-7a49-41d1-8fe0-59b9b3d2858b",
-      "title": "MODL Women's Only Swim",
-      "start": "2025-11-01T16:00:00.000",
-      "end": "2025-11-01T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "da8ce329-f4a4-4c96-b234-207b78ad3acd",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2025-11-02T07:30:00.000",
@@ -611,17 +566,89 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "a2b0ba67-8cee-4422-9d42-05292f4078eb",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-11-09T07:30:00.000",
+      "end": "2025-11-09T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3e28953f-edf8-4049-8b1f-71af25f801db",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2025-11-09T09:00:00.000",
+      "end": "2025-11-09T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4e23e3da-d360-4334-8c51-459f83deef59",
+      "title": "Lifesaving Sport - Only Therapy Pool Available",
+      "start": "2025-11-09T11:30:00.000",
+      "end": "2025-11-09T12:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1fd3cf23-008f-4abf-99c2-bb57e1b681fd",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2025-11-09T13:00:00.000",
+      "end": "2025-11-09T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a652b4b4-7c36-46df-8476-a1fdc5c0ff14",
+      "title": "Busy",
+      "start": "2025-11-09T16:00:00.000",
+      "end": "2025-11-09T17:00:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
+      "id": "67d06f2f-262b-4bc0-b872-9983bec54191",
+      "title": "Sensory Swim",
+      "start": "2025-11-09T17:00:00.000",
+      "end": "2025-11-09T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6667bae3-ac60-44bc-a9a4-a1ae77c1a7fb",
+      "title": "Bridgewater Barracudas using 3 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "start": "2025-11-09T18:00:00.000",
+      "end": "2025-11-09T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9296edf5-d088-48ba-bfd1-8bd8d57857c1",
+      "title": "Recreational Swimming - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-11-09T19:00:00.000",
+      "end": "2025-11-09T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-11-01T10:02:35.176Z",
+  "lastUpdated": "2025-11-02T10:02:25.509Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-11-01T00:00:00.000Z",
-      "end": "2025-11-09T00:00:00.000Z"
+      "start": "2025-11-02T00:00:00.000Z",
+      "end": "2025-11-10T00:00:00.000Z"
     },
-    "eventCount": 68,
-    "generatedAt": "2025-11-01T10:02:35.176Z",
+    "eventCount": 71,
+    "generatedAt": "2025-11-02T10:02:25.509Z",
     "generatedBy": "GitHub Actions"
   }
 }
