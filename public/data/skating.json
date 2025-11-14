@@ -26,15 +26,60 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "133d1c04-d04b-4529-ad69-a1409e9ebeaf",
+      "title": "Public Skate",
+      "start": "2025-11-17T10:00:00.000",
+      "end": "2025-11-17T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f12d6b28-aee9-48cc-a53f-94307edea174",
+      "title": "Public Skating",
+      "start": "2025-11-18T10:00:00.000",
+      "end": "2025-11-18T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f12d6b28-aee9-48cc-a53f-94307edea174",
+      "title": "Public Skating",
+      "start": "2025-11-19T10:00:00.000",
+      "end": "2025-11-19T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f12d6b28-aee9-48cc-a53f-94307edea174",
+      "title": "Public Skating",
+      "start": "2025-11-20T10:00:00.000",
+      "end": "2025-11-20T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "39d97ee8-3375-4df6-af3c-f9feb01ffdc9",
+      "title": "Public Skate",
+      "start": "2025-11-21T10:00:00.000",
+      "end": "2025-11-21T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-11-05T05:03:34.989Z",
+  "lastUpdated": "2025-11-14T05:03:37.002Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 74,
-    "publicEvents": 3,
-    "generatedAt": "2025-11-05T05:03:34.989Z",
+    "totalEvents": 87,
+    "publicEvents": 8,
+    "generatedAt": "2025-11-14T05:03:37.002Z",
     "generatedBy": "GitHub Actions"
   }
 }
