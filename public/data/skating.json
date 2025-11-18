@@ -28,7 +28,7 @@
       "allDay": false
     },
     {
-      "id": "f12d6b28-aee9-48cc-a53f-94307edea174",
+      "id": "91feecab-5281-4a5d-b03a-c3ce3f400756",
       "title": "Public Skating",
       "start": "2025-11-20T10:00:00.000",
       "end": "2025-11-20T11:30:00.000",
@@ -100,13 +100,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-11-17T05:03:38.111Z",
+  "lastUpdated": "2025-11-18T05:03:34.067Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 90,
+    "totalEvents": 92,
     "publicEvents": 11,
-    "generatedAt": "2025-11-17T05:03:38.111Z",
+    "generatedAt": "2025-11-18T05:03:34.067Z",
     "generatedBy": "GitHub Actions"
   }
 }
