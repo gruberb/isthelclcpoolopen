@@ -28,15 +28,6 @@
       "allDay": false
     },
     {
-      "id": "4d8718d1-a7d3-4f57-befe-12d23dfc078d",
-      "title": "Public Skate",
-      "start": "2025-11-26T14:00:00.000",
-      "end": "2025-11-26T15:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "71d29433-90c8-4018-a02b-ffcf2423b063",
       "title": "Public Skating",
       "start": "2025-11-27T10:00:00.000",
@@ -82,13 +73,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-11-26T05:03:35.918Z",
+  "lastUpdated": "2025-11-27T05:03:38.077Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 112,
-    "publicEvents": 9,
-    "generatedAt": "2025-11-26T05:03:35.918Z",
+    "totalEvents": 119,
+    "publicEvents": 8,
+    "generatedAt": "2025-11-27T05:03:38.077Z",
     "generatedBy": "GitHub Actions"
   }
 }
