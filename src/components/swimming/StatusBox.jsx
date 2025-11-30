@@ -1,9 +1,17 @@
 import React from "react";
 
-function StatusBox({ title, isOpen, statusText, restriction, membersOnly }) {
+function StatusBox({
+  title,
+  isOpen,
+  statusText,
+  restriction,
+  membersOnly,
+  sensory,
+}) {
   // Determine the appropriate CSS class based on the status
   const getStatusClass = () => {
     if (!isOpen) return "text-red-600";
+    if (sensory) return "text-teal-600";
     if (restriction) return "text-purple-700";
     if (membersOnly) return "text-blue-700";
     return "text-green-600";

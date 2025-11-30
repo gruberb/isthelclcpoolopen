@@ -24,6 +24,8 @@ function StatusDisplay({ data }) {
             openText += " (Women Only)";
           } else if (status.restrictionType === "Seniors 60+ Only") {
             openText += " (Seniors 60+)";
+          } else if (status.restrictionType === "Sensory Swim") {
+            openText += " (Sensory)";
           } else {
             openText += " (Restricted)";
           }
@@ -38,12 +40,16 @@ function StatusDisplay({ data }) {
     let timeRemaining = formatTimeRemaining(status.endTime);
 
     if (status.restrictedAccess) {
-      const restrictionType =
-        status.restrictionType === "Women's Only (All Pools)"
-          ? "Women only"
-          : status.restrictionType === "Seniors 60+ Only"
-            ? "Seniors 60+"
-            : "Restricted access";
+      let restrictionType;
+      if (status.restrictionType === "Women's Only (All Pools)") {
+        restrictionType = "Women only";
+      } else if (status.restrictionType === "Seniors 60+ Only") {
+        restrictionType = "Seniors 60+";
+      } else if (status.restrictionType === "Sensory Swim") {
+        restrictionType = "Sensory swim";
+      } else {
+        restrictionType = "Restricted access";
+      }
       return `${restrictionType} - ${timeRemaining}`;
     } else if (status.membersOnly) {
       return `Members only - ${timeRemaining}`;
@@ -60,6 +66,7 @@ function StatusDisplay({ data }) {
         statusText={formatStatusText(statuses.lanesStatus)}
         restriction={statuses.lanesStatus.restrictedAccess}
         membersOnly={statuses.lanesStatus.membersOnly}
+        sensory={statuses.lanesStatus.restrictionType === "Sensory Swim"}
       />
 
       <StatusBox
@@ -68,6 +75,7 @@ function StatusDisplay({ data }) {
         statusText={formatStatusText(statuses.kidsStatus)}
         restriction={statuses.kidsStatus.restrictedAccess}
         membersOnly={statuses.kidsStatus.membersOnly}
+        sensory={statuses.kidsStatus.restrictionType === "Sensory Swim"}
       />
     </div>
   );

@@ -148,9 +148,11 @@ export function analyzeEvent(event) {
 
   // Access restrictions
   const membersOnly = matchesAny(title, CONSTANTS.ACCESS_MEMBERS);
+  const isSensory = matchesAny(title, CONSTANTS.ACCESS_SENSORY);
   const restrictedAccess = matchesAny(title, [
     ...CONSTANTS.ACCESS_WOMENS,
     ...CONSTANTS.ACCESS_SENIORS,
+    ...CONSTANTS.ACCESS_SENSORY,
   ]);
 
   // Determine restriction type
@@ -159,7 +161,7 @@ export function analyzeEvent(event) {
     restrictionType = CONSTANTS.EVENT_TYPES.WOMENS_ONLY_FULL;
   } else if (matchesAny(title, CONSTANTS.ACCESS_SENIORS)) {
     restrictionType = CONSTANTS.EVENT_TYPES.SENIOR_ONLY_60;
-  } else if (matchesAny(title, CONSTANTS.KEYWORDS.SENSORY)) {
+  } else if (isSensory) {
     restrictionType = CONSTANTS.EVENT_TYPES.SENSORY_SWIM;
   } else if (membersOnly) {
     restrictionType = CONSTANTS.EVENT_TYPES.MEMBERS_ONLY;
@@ -173,6 +175,7 @@ export function analyzeEvent(event) {
     kids,
     membersOnly,
     restrictedAccess,
+    isSensory,
     type: restrictionType,
     details: {
       lanes: laneInfo.count,

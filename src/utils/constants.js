@@ -80,6 +80,7 @@ export const CONSTANTS = {
     "modl women's only swim",
     "lane swim",
     "recreational swim",
+    "sensory swim",
   ],
 
   // Events where lanes are ALWAYS closed
@@ -104,6 +105,7 @@ export const CONSTANTS = {
     "public swimming",
     "recreational swim",
     "family swim",
+    "sensory swim",
   ],
 
   // Events where kids pool is ALWAYS closed
@@ -112,13 +114,14 @@ export const CONSTANTS = {
     "lane swim only",
     "busy",
     "parent & tot swim",
-    "play pool is closed"
+    "play pool is closed",
   ],
 
   // Access type indicators
   ACCESS_MEMBERS: ["members swim", "member swim", "member only"],
   ACCESS_WOMENS: ["women's only swim", "modl women's only swim", "women only"],
   ACCESS_SENIORS: ["senior swim", "seniors 60+"],
+  ACCESS_SENSORY: ["sensory swim", "sensory"],
 
   // Library display names (shorter)
   LIBRARY_DISPLAY_NAMES: {

@@ -33,6 +33,8 @@ function ScheduleDisplay({ data }) {
     if (isCurrent) {
       if (analysis.type === "Busy/Maintenance") {
         return "border-l-4 border-orange-500 bg-orange-100";
+      } else if (analysis.isSensory) {
+        return "border-l-4 border-teal-500 bg-teal-100";
       } else if (analysis.restrictedAccess) {
         return "border-l-4 border-purple-500 bg-purple-100";
       } else {
@@ -44,6 +46,8 @@ function ScheduleDisplay({ data }) {
       return "opacity-35 bg-gray-50";
     } else if (analysis.membersOnly) {
       return "border-l-4 border-blue-700 bg-blue-100";
+    } else if (analysis.isSensory) {
+      return "border-l-4 border-teal-500 bg-teal-100";
     } else if (analysis.restrictedAccess) {
       return "border-l-4 border-purple-500 bg-purple-100";
     } else if (analysis.type === "Busy/Maintenance") {
@@ -54,7 +58,9 @@ function ScheduleDisplay({ data }) {
 
   // Get checkmark/x styles
   const getAvailabilityClass = (isAvailable, analysis) => {
-    if (analysis.restrictedAccess) {
+    if (analysis.isSensory) {
+      return "text-teal-600 font-bold";
+    } else if (analysis.restrictedAccess) {
       return "text-purple-700 font-bold";
     } else if (analysis.membersOnly) {
       return "text-blue-700 font-bold";
@@ -80,16 +86,16 @@ function ScheduleDisplay({ data }) {
           {selectedDate.toDateString() === new Date().toDateString()
             ? "Today's Swimming Schedule"
             : selectedDate.toDateString() ===
-              new Date(Date.now() + 86400000).toDateString()
+                new Date(Date.now() + 86400000).toDateString()
               ? "Tomorrow's Swimming Schedule"
               : `Swimming Schedule for ${selectedDate.toLocaleDateString(
-                "en-US",
-                {
-                  weekday: "long",
-                  month: "long",
-                  day: "numeric",
-                },
-              )}`}
+                  "en-US",
+                  {
+                    weekday: "long",
+                    month: "long",
+                    day: "numeric",
+                  },
+                )}`}
         </h3>
 
         {eventsForDate.length === 0 ? (
@@ -120,6 +126,8 @@ function ScheduleDisplay({ data }) {
               let restrictionLabel = "";
               if (analysis.membersOnly) {
                 restrictionLabel = "(Members Only)";
+              } else if (analysis.isSensory) {
+                restrictionLabel = "(Sensory - Quiet)";
               } else if (analysis.restrictedAccess) {
                 restrictionLabel =
                   analysis.type === "Women's Only (All Pools)"
@@ -178,10 +186,13 @@ function ScheduleDisplay({ data }) {
                   </div>
                   {restrictionLabel && (
                     <span
-                      className={`mt-1 ml-4 font-medium ${analysis.restrictedAccess
-                        ? "text-purple-700"
-                        : "text-blue-700"
-                        }`}
+                      className={`mt-1 ml-4 font-medium ${
+                        analysis.isSensory
+                          ? "text-teal-600"
+                          : analysis.restrictedAccess
+                            ? "text-purple-700"
+                            : "text-blue-700"
+                      }`}
                     >
                       {restrictionLabel}
                     </span>
