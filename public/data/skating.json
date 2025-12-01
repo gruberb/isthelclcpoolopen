@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "70badaa4-2019-43bd-a4ed-94f4c426d784",
-      "title": "Public Skating",
-      "start": "2025-11-24T10:00:00.000",
-      "end": "2025-11-24T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b546d19e-2e3a-4775-a694-86b2c2787c78",
-      "title": "Public Skating",
-      "start": "2025-11-25T10:00:00.000",
-      "end": "2025-11-25T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "244a01ef-eaa6-4621-b5af-eb5f375dbfe6",
-      "title": "Public Skating",
-      "start": "2025-11-26T10:00:00.000",
-      "end": "2025-11-26T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "71d29433-90c8-4018-a02b-ffcf2423b063",
-      "title": "Public Skating",
-      "start": "2025-11-27T10:00:00.000",
-      "end": "2025-11-27T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1a90417a-f9c1-46c8-a70a-e315f3a0818d",
-      "title": "Public Skating",
-      "start": "2025-11-28T10:00:00.000",
-      "end": "2025-11-28T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "0a832083-0278-48bc-b47a-77fc6827491c",
       "title": "Public Skating",
       "start": "2025-12-01T10:00:00.000",
@@ -71,15 +26,24 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "f038c791-57f4-4c7d-a486-b63ec9b692aa",
+      "title": "Public Skating",
+      "start": "2025-12-08T10:00:00.000",
+      "end": "2025-12-08T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-11-30T21:42:56.307Z",
+  "lastUpdated": "2025-12-01T05:09:38.887Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 125,
-    "publicEvents": 8,
-    "generatedAt": "2025-11-30T21:42:56.307Z",
-    "generatedBy": "Local Development"
+    "totalEvents": 96,
+    "publicEvents": 4,
+    "generatedAt": "2025-12-01T05:09:38.887Z",
+    "generatedBy": "GitHub Actions"
   }
 }
