@@ -81,6 +81,7 @@ export const CONSTANTS = {
     "lane swim",
     "recreational swim",
     "sensory swim",
+    "hello holidays free swim",
   ],
 
   // Events where lanes are ALWAYS closed
@@ -106,6 +107,7 @@ export const CONSTANTS = {
     "recreational swim",
     "family swim",
     "sensory swim",
+    "hello holidays free swim",
   ],
 
   // Events where kids pool is ALWAYS closed
