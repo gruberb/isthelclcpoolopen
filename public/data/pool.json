@@ -1,42 +1,6 @@
 {
   "data": [
     {
-      "id": "76a71728-e64f-4908-bdcb-c1ac548dd449",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-06T07:30:00.000",
-      "end": "2025-12-06T12:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b04cadbc-cbc5-46ed-9cec-6d5ca4c97cb3",
-      "title": "Public Swim - No Lanes, All Pools Available",
-      "start": "2025-12-06T13:00:00.000",
-      "end": "2025-12-06T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b652e812-cd4c-4809-a0e9-ce3c6ff810b0",
-      "title": "MODL Women's Only Swim",
-      "start": "2025-12-06T16:00:00.000",
-      "end": "2025-12-06T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "87ceee95-f9d4-43c1-9927-8fdaec8dee1e",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-06T17:00:00.000",
-      "end": "2025-12-06T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "afb439df-50a8-4e6e-ae8b-497906d3ed08",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2025-12-07T07:30:00.000",
@@ -521,17 +485,80 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "226de8e0-a456-4ccf-8743-287a7456719a",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-14T07:30:00.000",
+      "end": "2025-12-14T12:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8984a525-2456-48f0-bec1-ffb5a2e31e99",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2025-12-14T13:00:00.000",
+      "end": "2025-12-14T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5766f9a1-0691-49fa-b7a6-f8f8864e33ce",
+      "title": "Private Pool Party Rental",
+      "start": "2025-12-14T16:00:00.000",
+      "end": "2025-12-14T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "04d56aed-4b2a-4173-9f87-768f09a4d129",
+      "title": "Pool Party",
+      "start": "2025-12-14T16:00:00.000",
+      "end": "2025-12-14T17:00:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
+      "id": "8b60d47d-ad3a-456d-a659-8c7abf6c01cc",
+      "title": "Sensory Swim",
+      "start": "2025-12-14T17:00:00.000",
+      "end": "2025-12-14T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "fba7a48d-28ec-47a8-9ee2-b90255dd7cd0",
+      "title": "Bridgewater Barracudas Using 3 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "start": "2025-12-14T18:00:00.000",
+      "end": "2025-12-14T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3a392c96-281a-4dd5-807d-cce292213681",
+      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
+      "start": "2025-12-14T19:00:00.000",
+      "end": "2025-12-14T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-12-06T10:02:30.369Z",
+  "lastUpdated": "2025-12-07T10:02:16.511Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-12-06T00:00:00.000Z",
-      "end": "2025-12-14T00:00:00.000Z"
+      "start": "2025-12-07T00:00:00.000Z",
+      "end": "2025-12-15T00:00:00.000Z"
     },
-    "eventCount": 58,
-    "generatedAt": "2025-12-06T10:02:30.369Z",
+    "eventCount": 61,
+    "generatedAt": "2025-12-07T10:02:16.511Z",
     "generatedBy": "GitHub Actions"
   }
 }
