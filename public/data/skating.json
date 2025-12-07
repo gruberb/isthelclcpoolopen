@@ -10,10 +10,28 @@
       "allDay": false
     },
     {
+      "id": "bd9c48bf-9f16-4165-a7b7-d77d4e5c7bd9",
+      "title": "Adult Skate",
+      "start": "2025-12-01T12:00:00.000",
+      "end": "2025-12-01T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "fdfd4149-1973-46f7-a10a-00949a9469d1",
       "title": "Public Skating",
       "start": "2025-12-03T10:00:00.000",
       "end": "2025-12-03T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "15ab6f40-38a7-4f4b-9af7-97d4cf6a8213",
+      "title": "Adult Skate",
+      "start": "2025-12-03T12:00:00.000",
+      "end": "2025-12-03T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -37,6 +55,15 @@
       "allDay": false
     },
     {
+      "id": "34bb134f-20ac-47e5-a9f1-9ebd19ebb837",
+      "title": "Adult Skate",
+      "start": "2025-12-05T12:00:00.000",
+      "end": "2025-12-05T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "a45cf09a-9969-49d2-8e43-869c5a37aaa5",
       "title": "Hello Holidays Free Public Skate",
       "start": "2025-12-05T18:00:00.000",
@@ -53,15 +80,51 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "5df86051-3c95-4545-a289-3f2c95987dd5",
+      "title": "Adult Skate",
+      "start": "2025-12-08T12:00:00.000",
+      "end": "2025-12-08T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1df502ac-9505-4800-9a43-ab1a9b96497a",
+      "title": "Adult Skate",
+      "start": "2025-12-10T12:00:00.000",
+      "end": "2025-12-10T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1df502ac-9505-4800-9a43-ab1a9b96497a",
+      "title": "Adult Skate",
+      "start": "2025-12-11T12:00:00.000",
+      "end": "2025-12-11T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1df502ac-9505-4800-9a43-ab1a9b96497a",
+      "title": "Adult Skate",
+      "start": "2025-12-12T12:00:00.000",
+      "end": "2025-12-12T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-12-07T18:11:09.182Z",
+  "lastUpdated": "2025-12-07T18:23:58.588Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 94,
-    "publicEvents": 6,
-    "generatedAt": "2025-12-07T18:11:09.182Z",
+    "publicEvents": 13,
+    "generatedAt": "2025-12-07T18:23:58.588Z",
     "generatedBy": "Local Development"
   }
 }

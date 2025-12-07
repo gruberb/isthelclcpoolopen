@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Layout from "../components/common/Layout";
 import WeekSelector from "../components/skating/WeekSelector";
 import SkatingCard from "../components/skating/SkatingCard";
-import SkatingEmptyState from "../components/skating/SkatingEmptyState"; // NEW: Add this import
+import SkatingEmptyState from "../components/skating/SkatingEmptyState"; 
 import Loading from "../components/common/Loading";
 import { useSkatingData } from "../hooks/useSkatingData";
 
@@ -114,13 +114,11 @@ function Skating() {
         />
       </div>
 
-      {/* CHANGED: Replace the old empty state with the new component */}
       {events.length === 0 ? (
         <SkatingEmptyState selectedWeek={selectedWeek} />
       ) : (
         <div className="space-y-6 mt-6 mb-28">
           {events.map((event, index) => {
-            // Now safe to call getTime(), toDateString(), etc.
             const key = `${event.id}-${event.start.getTime()}`;
             const isCurrent =
               event.start <= now &&

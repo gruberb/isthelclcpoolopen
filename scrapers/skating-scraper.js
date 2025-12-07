@@ -5,7 +5,8 @@ const path = require("path");
 
 // Constants
 const FACILITY_ID = "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee";
-const API_BASE_URL = "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments";
+const API_BASE_URL =
+  "https://www.connect2rec.com/Facility/GetScheduleCustomAppointments";
 const WEEKS_TO_FETCH = 2;
 
 // Environment-aware path configuration
@@ -57,19 +58,23 @@ async function fetchSkatingData() {
 
       const response = await fetch(apiUrl, {
         headers: {
-          'User-Agent': 'LCLC-Skating-Dashboard/1.0'
+          "User-Agent": "LCLC-Skating-Dashboard/1.0",
         },
-        timeout: 30000
+        timeout: 30000,
       });
 
       if (!response.ok) {
-        throw new Error(`API request failed for week ${i + 1}: ${response.status} ${response.statusText}`);
+        throw new Error(
+          `API request failed for week ${i + 1}: ${response.status} ${response.statusText}`,
+        );
       }
 
       const weekData = await response.json();
-      
+
       if (!Array.isArray(weekData)) {
-        throw new Error(`Invalid API response for week ${i + 1}: expected array, got ${typeof weekData}`);
+        throw new Error(
+          `Invalid API response for week ${i + 1}: expected array, got ${typeof weekData}`,
+        );
       }
 
       allData = [...allData, ...weekData];
@@ -81,11 +86,14 @@ async function fetchSkatingData() {
       return (
         t.includes("public skate") ||
         t.includes("public skating") ||
-        t.includes("adult skating")
+        t.includes("adult skating") ||
+        t.includes("adult skate")
       );
     });
 
-    console.log(`✅ Successfully fetched ${allData.length} total events, ${publicSkatingEvents.length} public skating events`);
+    console.log(
+      `✅ Successfully fetched ${allData.length} total events, ${publicSkatingEvents.length} public skating events`,
+    );
 
     // Ensure output directory exists
     if (!fs.existsSync(OUTPUT_DIR)) {
@@ -104,8 +112,10 @@ async function fetchSkatingData() {
         totalEvents: allData.length,
         publicEvents: publicSkatingEvents.length,
         generatedAt: timestamp.toISOString(),
-        generatedBy: process.env.GITHUB_ACTIONS ? 'GitHub Actions' : 'Local Development'
-      }
+        generatedBy: process.env.GITHUB_ACTIONS
+          ? "GitHub Actions"
+          : "Local Development",
+      },
     };
 
     const outputPath = path.join(OUTPUT_DIR, "skating.json");
@@ -116,16 +126,17 @@ async function fetchSkatingData() {
     console.log(`🎉 Skating scraper completed successfully!`);
 
     if (process.env.GITHUB_ACTIONS) {
-      console.log(`::notice title=Skating Data Updated::Successfully scraped ${publicSkatingEvents.length} skating events`);
+      console.log(
+        `::notice title=Skating Data Updated::Successfully scraped ${publicSkatingEvents.length} skating events`,
+      );
     }
-
   } catch (error) {
     console.error(`❌ Error in skating scraper:`, error);
-    
+
     if (process.env.GITHUB_ACTIONS) {
       console.log(`::error title=Skating Scraper Failed::${error.message}`);
     }
-    
+
     process.exit(1);
   }
 }
