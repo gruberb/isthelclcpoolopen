@@ -23,14 +23,6 @@ export function isSwimmingEvent(event) {
       return false;
     }
 
-    // Filter out specific events
-    if (
-      title === CONSTANTS.SPECIAL_EVENTS.POOL_PARTY ||
-      title === CONSTANTS.SPECIAL_EVENTS.PRIVATE_POOL_PARTY
-    ) {
-      return false;
-    }
-
     return true;
   }
 
@@ -99,14 +91,16 @@ export function analyzeEvent(event) {
   const title = event.title;
   const lowerTitle = title.toLowerCase();
 
-  // Check if this is a "Busy" event first
-  if (title === CONSTANTS.SPECIAL_EVENTS.BUSY) {
+  // Check if this is a special event (closed to public)
+  const specialEventValues = Object.values(CONSTANTS.SPECIAL_EVENTS);
+  if (specialEventValues.includes(title)) {
     return {
       lanes: false,
       kids: false,
       membersOnly: false,
       restrictedAccess: false,
-      type: CONSTANTS.EVENT_TYPES.BUSY_MAINTENANCE,
+      closedToPublic: true,
+      type: CONSTANTS.EVENT_TYPES.PRIVATE_CLOSED,
       details: { lanes: 0 },
     };
   }

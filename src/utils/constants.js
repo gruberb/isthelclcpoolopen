@@ -43,7 +43,6 @@ export const CONSTANTS = {
     REGULAR: "Regular",
   },
 
-  // Special events and keywords
   SPECIAL_EVENTS: {
     BUSY: "Busy",
     POOL_PARTY: "Pool Party",

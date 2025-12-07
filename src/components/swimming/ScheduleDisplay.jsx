@@ -31,7 +31,7 @@ function ScheduleDisplay({ data }) {
   // Helper function to get event class
   const getEventClass = (event, analysis, isCurrent, isPast) => {
     if (isCurrent) {
-      if (analysis.type === "Busy/Maintenance") {
+      if (analysis.closedToPublic) {
         return "border-l-4 border-orange-500 bg-orange-100";
       } else if (analysis.isSensory) {
         return "border-l-4 border-teal-500 bg-teal-100";
@@ -44,14 +44,14 @@ function ScheduleDisplay({ data }) {
       }
     } else if (isPast) {
       return "opacity-35 bg-gray-50";
+    } else if (analysis.closedToPublic) {
+      return "border-l-4 border-orange-500 bg-orange-100";
     } else if (analysis.membersOnly) {
       return "border-l-4 border-blue-700 bg-blue-100";
     } else if (analysis.isSensory) {
       return "border-l-4 border-teal-500 bg-teal-100";
     } else if (analysis.restrictedAccess) {
       return "border-l-4 border-purple-500 bg-purple-100";
-    } else if (analysis.type === "Busy/Maintenance") {
-      return "border-l-4 border-orange-500 bg-orange-100";
     }
     return "";
   };
@@ -124,7 +124,9 @@ function ScheduleDisplay({ data }) {
                 analysis.lanes && !event.title.includes("LAP POOL CLOSED");
 
               let restrictionLabel = "";
-              if (analysis.membersOnly) {
+              if (analysis.closedToPublic) {
+                restrictionLabel = "(Closed to Public)";
+              } else if (analysis.membersOnly) {
                 restrictionLabel = "(Members Only)";
               } else if (analysis.isSensory) {
                 restrictionLabel = "(Sensory - Quiet)";
@@ -187,11 +189,13 @@ function ScheduleDisplay({ data }) {
                   {restrictionLabel && (
                     <span
                       className={`mt-1 ml-4 font-medium ${
-                        analysis.isSensory
-                          ? "text-teal-600"
-                          : analysis.restrictedAccess
-                            ? "text-purple-700"
-                            : "text-blue-700"
+                        analysis.closedToPublic
+                          ? "text-orange-600"
+                          : analysis.isSensory
+                            ? "text-teal-600"
+                            : analysis.restrictedAccess
+                              ? "text-purple-700"
+                              : "text-blue-700"
                       }`}
                     >
                       {restrictionLabel}
