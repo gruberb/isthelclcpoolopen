@@ -1,78 +1,6 @@
 {
   "data": [
     {
-      "id": "d03b2699-a129-4104-980d-ad357bd4cd97",
-      "title": "Members Swim",
-      "start": "2025-12-12T06:30:00.000",
-      "end": "2025-12-12T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7d24b0a1-6479-4d7d-b8ed-64c9028d7c5b",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-12T07:30:00.000",
-      "end": "2025-12-12T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4acd900f-138c-4c8b-b12e-02b750a3e6b2",
-      "title": "Elderfit using Lap Pool - Other Pools Not Available",
-      "start": "2025-12-12T10:00:00.000",
-      "end": "2025-12-12T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0d7ac765-bf5a-431c-959d-9c66f0975521",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-12T11:00:00.000",
-      "end": "2025-12-12T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7f86d9f1-f6ba-43e3-b38c-56d486bc98d9",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-12T12:00:00.000",
-      "end": "2025-12-12T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2a73fc33-512a-475c-ab61-21eb6408ac48",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open ",
-      "start": "2025-12-12T13:00:00.000",
-      "end": "2025-12-12T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "611eba97-affd-467e-95a6-b75fac9555b6",
-      "title": "Public Swim - No Lanes, All Pools Available",
-      "start": "2025-12-12T16:00:00.000",
-      "end": "2025-12-12T18:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "afa917e8-fe59-432c-a13c-07a1ea304241",
-      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-12T18:30:00.000",
-      "end": "2025-12-12T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "7b39635f-600e-4fb9-8c15-5b7a778f1f8a",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2025-12-13T07:30:00.000",
@@ -512,17 +440,53 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "e7f56dcd-642f-43da-ae6c-9e528d86fcf6",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-20T07:30:00.000",
+      "end": "2025-12-20T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "fc33beec-7546-492f-b673-92925cd6f164",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2025-12-20T12:00:00.000",
+      "end": "2025-12-20T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "744f7af4-53d0-49ff-8099-ad5ce1e91c60",
+      "title": "MODL Women's Only Swim",
+      "start": "2025-12-20T16:00:00.000",
+      "end": "2025-12-20T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "50895a72-fc84-420e-a110-d3c51d5b3a6c",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-20T17:00:00.000",
+      "end": "2025-12-20T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-12-12T10:02:36.807Z",
+  "lastUpdated": "2025-12-13T10:02:23.622Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-12-12T00:00:00.000Z",
-      "end": "2025-12-20T00:00:00.000Z"
+      "start": "2025-12-13T00:00:00.000Z",
+      "end": "2025-12-21T00:00:00.000Z"
     },
-    "eventCount": 57,
-    "generatedAt": "2025-12-12T10:02:36.807Z",
+    "eventCount": 53,
+    "generatedAt": "2025-12-13T10:02:23.622Z",
     "generatedBy": "GitHub Actions"
   }
 }
