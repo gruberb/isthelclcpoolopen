@@ -64,7 +64,7 @@ export function useSwimmingData() {
 function processData(rawData) {
   if (!rawData || !Array.isArray(rawData)) return [];
 
-  return rawData
+  const processedEvents = rawData
     .filter(isSwimmingEvent)
     .map((event) => {
 
@@ -83,6 +83,18 @@ function processData(rawData) {
         allDay: event.allDay,
       };
     })
-    .filter((event) => event !== null)
-    .sort((a, b) => a.start - b.start);
+    .filter((event) => event !== null);
+
+  // Deduplicate events with identical time slots (API returns duplicates for private events)
+  const seenTimeSlots = new Set();
+  const deduplicated = processedEvents.filter((event) => {
+    const timeSlot = `${event.start}-${event.end}`;
+    if (seenTimeSlots.has(timeSlot)) {
+      return false;
+    }
+    seenTimeSlots.add(timeSlot);
+    return true;
+  });
+
+  return deduplicated.sort((a, b) => a.start - b.start);
 }
