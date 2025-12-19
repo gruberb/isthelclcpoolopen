@@ -1,60 +1,6 @@
 {
   "data": [
     {
-      "id": "773486e4-9cab-47e7-bb62-b63dcd0d433e",
-      "title": "Members Swim",
-      "start": "2025-12-18T06:30:00.000",
-      "end": "2025-12-18T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4ba64c05-2c79-4840-9f69-00847bf6fb73",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-18T07:30:00.000",
-      "end": "2025-12-18T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0e746fd7-f743-4702-a299-b0784f47ac4e",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2025-12-18T10:00:00.000",
-      "end": "2025-12-18T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e06a1a11-10e8-42be-8d86-fc4db46b7ad2",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-18T11:00:00.000",
-      "end": "2025-12-18T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9b653fff-cb49-417a-8f6f-1931395d6246",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-18T12:00:00.000",
-      "end": "2025-12-18T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e6b898f2-e011-4b2c-86ad-e53808f7d3b2",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-18T13:00:00.000",
-      "end": "2025-12-18T21:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "e46a2144-8aab-4b46-925b-3cbe389cf59b",
       "title": "Members Swim",
       "start": "2025-12-19T06:30:00.000",
@@ -395,17 +341,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "99f11985-11c4-4518-9e5f-bf5556316d98",
+      "title": "Facility Closed - Boxing Day",
+      "start": "2025-12-26T00:00:00.000",
+      "end": "2025-12-26T23:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-12-18T10:02:33.252Z",
+  "lastUpdated": "2025-12-19T10:02:34.098Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-12-18T00:00:00.000Z",
-      "end": "2025-12-26T00:00:00.000Z"
+      "start": "2025-12-19T00:00:00.000Z",
+      "end": "2025-12-27T00:00:00.000Z"
     },
-    "eventCount": 44,
-    "generatedAt": "2025-12-18T10:02:33.252Z",
+    "eventCount": 39,
+    "generatedAt": "2025-12-19T10:02:34.098Z",
     "generatedBy": "GitHub Actions"
   }
 }
