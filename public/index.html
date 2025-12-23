@@ -20,11 +20,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        <!-- Analytics (you can keep your existing analytics script) -->
+        <!-- Analytics -->
         <script
             defer
             data-domain="isthelclcpoolopen.ca"
-            src="https://plausible.io/js/script.js"
+            src="https://analytics.novanexus.ca/js/script.js"
         ></script>
 
         <!-- Schema.org structured data -->
@@ -58,16 +58,22 @@
             // When the single page app is loaded further down in this file,
             // the correct url will be waiting in the browser's history for
             // the single page app to route accordingly.
-            (function(l) {
-                if (l.search[1] === '/' ) {
-                    var decoded = l.search.slice(1).split('&').map(function(s) { 
-                        return s.replace(/~and~/g, '&')
-                    }).join('?');
-                    window.history.replaceState(null, null,
-                        l.pathname.slice(0, -1) + decoded + l.hash
+            (function (l) {
+                if (l.search[1] === "/") {
+                    var decoded = l.search
+                        .slice(1)
+                        .split("&")
+                        .map(function (s) {
+                            return s.replace(/~and~/g, "&");
+                        })
+                        .join("?");
+                    window.history.replaceState(
+                        null,
+                        null,
+                        l.pathname.slice(0, -1) + decoded + l.hash,
                     );
                 }
-            }(window.location))
+            })(window.location);
         </script>
         <!-- End Single Page Apps for GitHub Pages -->
     </head>
