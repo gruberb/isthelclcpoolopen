@@ -14,7 +14,10 @@ function Swimming() {
 
   if (loading) {
     return (
-      <Layout title="Is The LCLC Pool Open?">
+      <Layout
+        title="LCLC Pool Dashboard"
+        subtitle="Real-time pool availability and schedule information"
+      >
         <Loading />
       </Layout>
     );
@@ -22,7 +25,10 @@ function Swimming() {
 
   if (error) {
     return (
-      <Layout title="Is The LCLC Pool Open?">
+      <Layout
+        title="LCLC Pool Dashboard"
+        subtitle="Real-time pool availability and schedule information"
+      >
         <div className="bg-red-50 text-red-700 p-4 rounded-md">
           <p>Error: {error}</p>
           <p className="mt-2">Refresh the page to try again.</p>
@@ -32,7 +38,11 @@ function Swimming() {
   }
 
   return (
-    <Layout title="Is The LCLC Pool Open?" lastUpdated={lastUpdated}>
+    <Layout
+      title="LCLC Pool Dashboard"
+      subtitle="Real-time pool availability and schedule information"
+      lastUpdated={lastUpdated}
+    >
       <TabNavigation
         tabs={CONSTANTS.TABS.SWIMMING}
         activeTab={activeTab}

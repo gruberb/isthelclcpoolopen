@@ -2,7 +2,6 @@ import React from "react";
 import { formatTime } from "../../utils/dateUtils";
 
 function SkatingCard({ event, isCurrent, isPast }) {
-  // Detect if this event’s date is today
   const eventDate =
     event.start instanceof Date ? event.start : new Date(event.start);
   const isTodayEvent = eventDate.toDateString() === new Date().toDateString();
@@ -17,26 +16,41 @@ function SkatingCard({ event, isCurrent, isPast }) {
   const getWeekday = (date) =>
     date.toLocaleDateString("en-US", { weekday: "long" });
 
-  // apply a border or fade if past/current/today
-  let cardClass =
-    "rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform hover:-translate-y-1 hover:shadow-lg";
-  if (isPast) cardClass += " opacity-50 grayscale-[60%]";
-  if (isCurrent) cardClass += " border-2 border-green-500";
-  if (isTodayEvent) cardClass += " bg-green-200";
+  const getCardStyles = () => {
+    if (isPast) {
+      return "bg-gray-50 border-l-4 border-gray-200 opacity-50";
+    }
+    if (isCurrent) {
+      return "bg-green-50 border-l-4 border-green-400";
+    }
+    if (isTodayEvent) {
+      return "bg-blue-50 border-l-4 border-blue-400";
+    }
+    return "bg-white border-l-4 border-blue-300";
+  };
 
   return (
-    <div className={`${cardClass}`}>
-      {/* Day, Date */}
-      <div className="text-gray-600 text-sm font-semibold">
-        {getWeekday(event.start)}, {formatDate(event.start)}
-      </div>
+    <div
+      className={`p-6 transition-all hover:bg-gray-50 border-gray-200 shadow-sm ${getCardStyles()}`}
+    >
+      <div className="flex flex-col items-center text-center">
+        <div className="text-sm font-medium text-gray-600 mb-2">
+          {getWeekday(event.start)}, {formatDate(event.start)}
+        </div>
 
-      {/* Title */}
-      <div className="text-gray-800 font-bold text-xl mt-2">{event.title}</div>
+        <div className="text-xl font-semibold text-gray-900 mb-2">
+          {event.title}
+          {isCurrent && (
+            <span className="ml-2 inline-flex items-center text-xs font-semibold text-green-600">
+              <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-1.5 animate-pulse" />
+              NOW
+            </span>
+          )}
+        </div>
 
-      {/* Time */}
-      <div className="text-gray-700 text-lg mt-1 font-">
-        {formatTime(event.start)} – {formatTime(event.end)}
+        <div className="text-base text-gray-700">
+          {formatTime(event.start)} – {formatTime(event.end)}
+        </div>
       </div>
     </div>
   );

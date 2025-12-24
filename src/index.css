@@ -2,19 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    margin: 0;
-    font-family:
-        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 @layer base {
+    body {
+        margin: 0;
+        font-family:
+            -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #ffffff;
+        color: #111827;
+    }
 
-    /* Override WebKit-specific styles for common elements */
+    * {
+        box-sizing: border-box;
+    }
+
     input,
     select,
     textarea,
@@ -26,26 +30,18 @@ body {
         box-shadow: none;
     }
 
-    /* Normalize backgrounds */
     input,
     select,
     textarea {
         background-color: white;
+        font-size: 16px;
     }
 
-    /* Disable browser-specific mobile features */
     select::-ms-expand {
         display: none;
     }
-}
 
-@layer base {
-
-    /* Remove browser-specific styling for select elements */
     select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h8L8 4z'/%3E%3C/svg%3E");
         background-position: right 0.5rem center;
         background-repeat: no-repeat;
@@ -53,24 +49,33 @@ body {
         padding-right: 2rem;
     }
 
-    /* Remove browser-specific focus styles */
     *:focus {
         outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
     }
 
-    /* Disable automatic zooming on inputs in iOS */
-    input,
-    select,
-    textarea {
-        font-size: 16px;
-        /* Prevent zoom on focus in iOS */
+    button:focus {
+        outline: none;
     }
 }
 
-.bastian {
-    cursor: pointer;
+@layer components {
+    .bastian {
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .bastian:hover {
+        transform: translateY(-1px);
+    }
+
+    .footer {
+        box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.05);
+    }
 }
 
-.footer {
-    box-shadow: inset 0 15px 5px -16px #111;
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
 }

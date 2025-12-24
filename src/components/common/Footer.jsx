@@ -2,27 +2,23 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="footer fixed bottom-0 left-0 w-full bg-gray-100 py-4 px-2 shadow-md flex flex-col items-center gap-2 z-10">
-      <div className="flex flex-col items-center gap-3">
-        <FooterLink to="/" emoji="🏊" text="Want to go swimming?" />
-        <FooterLink to="/skating" emoji="⛸️" text="Want to go skating?" />
-        <FooterLink to="/libraries" emoji="📚" text="Want to read books?" />
-        <p className="bastian text-sm">
+    <div className="footer fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 py-4 px-4 z-10">
+      <div className="max-w-7xl mx-auto flex flex-col items-center gap-2">
+        <div className="flex flex-wrap justify-center items-center gap-4 text-sm">
+          <FooterLink to="/" emoji="🏊" text="Swimming" />
+          <span className="text-gray-300">·</span>
+          <FooterLink to="/skating" emoji="⛸️" text="Skating" />
+          <span className="text-gray-300">·</span>
+          <FooterLink to="/libraries" emoji="📚" text="Libraries" />
+        </div>
+        <p className="text-xs text-gray-500">
           <a
             href="https://bastiangruber.ca"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-game-accent hover:text-game-accent-dark transition-colors duration-200
-                       font-medium underline decoration-game-accent/30 hover:decoration-game-accent-dark
-                       hover:drop-shadow-[0_0_8px_rgba(251,191,36,0.3)]"
+            className="text-gray-600 hover:text-blue-600 transition-colors"
           >
-            Made with{' '}
-            <span className="text-red-400 animate-pulse inline-block hover:scale-110 transition-transform duration-200">
-              ❤️
-            </span>{' '}
-            by{' '}
-
-            Bastian
+            Made with ❤️ by Bastian
           </a>
         </p>
       </div>
@@ -31,20 +27,23 @@ function Footer() {
 }
 
 function FooterLink({ to, emoji, text }) {
-  console.log(`Rendering FooterLink to: ${to}, current path: ${window.location.pathname}`);
-  // Don't show link to current page
   const isCurrentPage = window.location.pathname === to;
 
   if (isCurrentPage) {
-    return null;
+    return (
+      <span className="text-blue-600 font-semibold">
+        {emoji} {text}
+      </span>
+    );
   }
 
   return (
-    <div className="text-sm">
-      <Link to={to} className="text-blue-700 hover:underline">
-        {emoji} {text} {emoji}
-      </Link>
-    </div>
+    <Link
+      to={to}
+      className="text-gray-600 hover:text-blue-600 transition-colors font-medium"
+    >
+      {emoji} {text}
+    </Link>
   );
 }
 

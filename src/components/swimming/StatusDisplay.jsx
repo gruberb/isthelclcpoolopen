@@ -1,20 +1,16 @@
 import React, { useMemo } from "react";
-import StatusBox from "./StatusBox";
 import { findFeatureStatus } from "../../utils/eventParser";
 import { formatTime, formatTimeRemaining } from "../../utils/dateUtils";
 
 function StatusDisplay({ data }) {
-  // Use useMemo to avoid recalculating on every render
   const statuses = useMemo(() => {
-    // Create new Date inside the useMemo callback
     const now = new Date();
     const lanesStatus = findFeatureStatus(data, now, "lanes");
     const kidsStatus = findFeatureStatus(data, now, "kids");
 
     return { lanesStatus, kidsStatus, now };
-  }, [data]); // Remove 'now' from dependencies
+  }, [data]);
 
-  // Format the status text for display
   function formatStatusText(status) {
     if (!status.isActive) {
       if (status.inGap) {
@@ -58,25 +54,63 @@ function StatusDisplay({ data }) {
     return timeRemaining;
   }
 
-  return (
-    <div className="flex flex-wrap justify-center gap-6">
-      <StatusBox
-        title="LANE SWIMMING"
-        isOpen={statuses.lanesStatus.isActive}
-        statusText={formatStatusText(statuses.lanesStatus)}
-        restriction={statuses.lanesStatus.restrictedAccess}
-        membersOnly={statuses.lanesStatus.membersOnly}
-        sensory={statuses.lanesStatus.restrictionType === "Sensory Swim"}
-      />
+  const getStatusColor = (status) => {
+    if (!status.isActive) return "text-red-600";
+    if (status.restrictionType === "Sensory Swim") return "text-teal-600";
+    if (status.restrictedAccess) return "text-purple-700";
+    if (status.membersOnly) return "text-blue-700";
+    return "text-green-600";
+  };
 
-      <StatusBox
-        title="KIDS SWIMMING"
-        isOpen={statuses.kidsStatus.isActive}
-        statusText={formatStatusText(statuses.kidsStatus)}
-        restriction={statuses.kidsStatus.restrictedAccess}
-        membersOnly={statuses.kidsStatus.membersOnly}
-        sensory={statuses.kidsStatus.restrictionType === "Sensory Swim"}
-      />
+  const getTileStyles = (status) => {
+    if (!status.isActive) {
+      return "bg-red-50 border-2 border-red-300 hover:border-red-400";
+    }
+    if (status.restrictionType === "Sensory Swim") {
+      return "bg-teal-50 border-2 border-teal-300 hover:border-teal-400";
+    }
+    if (status.restrictedAccess) {
+      return "bg-purple-50 border-2 border-purple-300 hover:border-purple-400";
+    }
+    if (status.membersOnly) {
+      return "bg-blue-50 border-2 border-blue-300 hover:border-blue-400";
+    }
+    return "bg-green-50 border-2 border-green-300 hover:border-green-400";
+  };
+
+  return (
+    <div className="flex flex-wrap justify-center gap-6 mb-8">
+      <div
+        className={`rounded-lg shadow-md p-6 min-w-[250px] flex flex-col items-center transition-all ${getTileStyles(statuses.lanesStatus)}`}
+      >
+        <h2 className="text-xl font-medium text-gray-800 mb-4">
+          LANE SWIMMING
+        </h2>
+        <div
+          className={`text-6xl font-light my-2 h-16 flex items-center justify-center ${getStatusColor(statuses.lanesStatus)}`}
+        >
+          {statuses.lanesStatus.isActive ? "YES" : "NO"}
+        </div>
+        <div className="text-lg text-gray-600 mt-2 text-center">
+          {formatStatusText(statuses.lanesStatus)}
+        </div>
+      </div>
+
+      <div
+        className={`rounded-lg shadow-md p-6 min-w-[250px] flex flex-col items-center transition-all ${getTileStyles(statuses.kidsStatus)}`}
+      >
+        <h2 className="text-xl font-medium text-gray-800 mb-4">
+          KIDS SWIMMING
+        </h2>
+        <div
+          className={`text-6xl font-light my-2 h-16 flex items-center justify-center ${getStatusColor(statuses.kidsStatus)}`}
+        >
+          {statuses.kidsStatus.isActive ? "YES" : "NO"}
+        </div>
+        <div className="text-lg text-gray-600 mt-2 text-center">
+          {formatStatusText(statuses.kidsStatus)}
+        </div>
+      </div>
     </div>
   );
 }

@@ -3,12 +3,10 @@ import React, { useEffect, useState } from "react";
 function DateSelector({ selectedDate, onDateChange }) {
   const [dates, setDates] = useState([]);
 
-  // Generate date options when component mounts
   useEffect(() => {
     const today = new Date();
     const options = [];
 
-    // Generate dates for today and the next week
     for (let i = 0; i < 8; i++) {
       const date = new Date(today);
       date.setDate(today.getDate() + i);
@@ -18,7 +16,6 @@ function DateSelector({ selectedDate, onDateChange }) {
     setDates(options);
   }, []);
 
-  // Format date for display in dropdown
   const formatOptionLabel = (date) => {
     const today = new Date();
     const tomorrow = new Date(today);
@@ -38,24 +35,24 @@ function DateSelector({ selectedDate, onDateChange }) {
   };
 
   return (
-    <div className="text-center mb-6">
-      <div className="flex justify-center mb-4">
+    <div className="mb-6 flex flex-col items-center">
+      <div className="flex items-center gap-2 mb-4">
         <button
           onClick={() => onDateChange(dates[0])}
-          className={`px-4 py-2 rounded-md text-sm font-medium mr-2 ${
+          className={`px-6 py-2 text-sm border transition-colors ${
             selectedDate.toDateString() === dates[0]?.toDateString()
-              ? "bg-blue-700 text-white"
-              : "bg-white text-gray-700 border border-gray-300"
+              ? "bg-blue-600 text-white border-blue-600"
+              : "bg-white text-gray-700 border-gray-300 hover:border-blue-400 hover:text-blue-600"
           }`}
         >
           Today
         </button>
         <button
           onClick={() => onDateChange(dates[1])}
-          className={`px-4 py-2 rounded-md text-sm font-medium ${
+          className={`px-6 py-2 text-sm border transition-colors ${
             selectedDate.toDateString() === dates[1]?.toDateString()
-              ? "bg-blue-700 text-white"
-              : "bg-white text-gray-700 border border-gray-300"
+              ? "bg-blue-600 text-white border-blue-600"
+              : "bg-white text-gray-700 border-gray-300 hover:border-blue-400 hover:text-blue-600"
           }`}
         >
           Tomorrow
@@ -63,7 +60,7 @@ function DateSelector({ selectedDate, onDateChange }) {
       </div>
 
       <select
-        className="px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm text-sm"
+        className="px-4 py-2 text-sm bg-white border border-gray-300 hover:border-blue-400 transition-colors focus:border-blue-500"
         value={selectedDate.toDateString()}
         onChange={(e) => {
           const selected = dates.find(

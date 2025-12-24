@@ -7,15 +7,12 @@ function ScheduleDisplay({ data }) {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const currentEventRef = useRef(null);
 
-  // Filter events for the selected date - with safety check for Date objects
   const eventsForDate = data.filter((event) => {
-    // Ensure event.start is a Date object
     const eventStart =
       event.start instanceof Date ? event.start : new Date(event.start);
     return eventStart.toDateString() === selectedDate.toDateString();
   });
 
-  // Scroll to current event when viewing today's schedule
   useEffect(() => {
     if (
       selectedDate.toDateString() === new Date().toDateString() &&
@@ -28,82 +25,84 @@ function ScheduleDisplay({ data }) {
     }
   }, [selectedDate, eventsForDate]);
 
-  // Helper function to get event class
-  const getEventClass = (event, analysis, isCurrent, isPast) => {
+  const getEventClass = (analysis, isCurrent, isPast) => {
+    if (isPast) {
+      return "bg-gray-50 border-l-4 border-gray-200 opacity-50";
+    }
     if (isCurrent) {
       if (analysis.closedToPublic) {
-        return "border-l-4 border-orange-500 bg-orange-100";
+        return "border-l-4 border-orange-400 bg-orange-50";
       } else if (analysis.isSensory) {
-        return "border-l-4 border-teal-500 bg-teal-100";
+        return "border-l-4 border-teal-400 bg-teal-50";
       } else if (analysis.restrictedAccess) {
-        return "border-l-4 border-purple-500 bg-purple-100";
+        return "border-l-4 border-purple-400 bg-purple-50";
+      } else if (analysis.membersOnly) {
+        return "border-l-4 border-blue-500 bg-blue-50";
       } else {
-        return analysis.membersOnly
-          ? "border-l-4 border-blue-700 bg-blue-100"
-          : "border-l-4 border-green-600 bg-green-100";
+        return "border-l-4 border-green-400 bg-green-50";
       }
-    } else if (isPast) {
-      return "opacity-35 bg-gray-50";
-    } else if (analysis.closedToPublic) {
-      return "border-l-4 border-orange-500 bg-orange-100";
-    } else if (analysis.membersOnly) {
-      return "border-l-4 border-blue-700 bg-blue-100";
-    } else if (analysis.isSensory) {
-      return "border-l-4 border-teal-500 bg-teal-100";
-    } else if (analysis.restrictedAccess) {
-      return "border-l-4 border-purple-500 bg-purple-100";
     }
-    return "";
+    if (analysis.closedToPublic) {
+      return "border-l-4 border-orange-400 bg-white";
+    } else if (analysis.membersOnly) {
+      return "border-l-4 border-blue-500 bg-white";
+    } else if (analysis.isSensory) {
+      return "border-l-4 border-teal-400 bg-white";
+    } else if (analysis.restrictedAccess) {
+      return "border-l-4 border-purple-400 bg-white";
+    }
+    return "bg-white";
   };
 
-  // Get checkmark/x styles
-  const getAvailabilityClass = (isAvailable, analysis) => {
-    if (analysis.isSensory) {
-      return "text-teal-600 font-bold";
-    } else if (analysis.restrictedAccess) {
-      return "text-purple-700 font-bold";
-    } else if (analysis.membersOnly) {
-      return "text-blue-700 font-bold";
+  const getAvailabilityClass = (isAvailable) => {
+    return isAvailable
+      ? "text-green-600 font-semibold"
+      : "text-red-600 font-semibold";
+  };
+
+  const getScheduleTitle = () => {
+    if (selectedDate.toDateString() === new Date().toDateString()) {
+      return "Today";
+    } else if (
+      selectedDate.toDateString() ===
+      new Date(Date.now() + 86400000).toDateString()
+    ) {
+      return "Tomorrow";
     } else {
-      return isAvailable
-        ? "text-green-600 font-bold"
-        : "text-red-600 font-bold";
+      return selectedDate.toLocaleDateString("en-US", {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+      });
     }
   };
 
   return (
     <div className="flex flex-col items-center">
-      {/* Center the date picker */}
-      <div className="w-full max-w-sm">
+      <div className="mb-6 w-full max-w-md">
         <DateSelector
           selectedDate={selectedDate}
           onDateChange={setSelectedDate}
         />
       </div>
 
-      <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-2xl mb-[75px]">
-        <h3 className="text-2xl font-semibold text-center mb-6">
-          {selectedDate.toDateString() === new Date().toDateString()
-            ? "Today's Swimming Schedule"
-            : selectedDate.toDateString() ===
-                new Date(Date.now() + 86400000).toDateString()
-              ? "Tomorrow's Swimming Schedule"
-              : `Swimming Schedule for ${selectedDate.toLocaleDateString(
-                  "en-US",
-                  {
-                    weekday: "long",
-                    month: "long",
-                    day: "numeric",
-                  },
-                )}`}
-        </h3>
+      <div className="bg-white rounded-lg shadow-md mb-24 w-full max-w-2xl">
+        <div className="px-6 py-6 text-center border-b border-gray-200">
+          <h2 className="text-2xl font-light text-gray-900 tracking-wide">
+            {getScheduleTitle() === "Today"
+              ? "Today's Swimming Schedule"
+              : getScheduleTitle() === "Tomorrow"
+                ? "Tomorrow's Swimming Schedule"
+                : `Swimming Schedule for ${getScheduleTitle()}`}
+          </h2>
+        </div>
 
         {eventsForDate.length === 0 ? (
           <div className="p-6 text-center text-gray-600">
             No swimming events scheduled for this day.
           </div>
         ) : (
-          <div className="space-y-4">
+          <div className="space-y-4 p-4">
             {eventsForDate.map((event) => {
               const now = new Date();
               const analysis = analyzeEvent(event);
@@ -124,31 +123,35 @@ function ScheduleDisplay({ data }) {
                 analysis.lanes && !event.title.includes("LAP POOL CLOSED");
 
               let restrictionLabel = "";
+              let restrictionColor = "";
               if (analysis.closedToPublic) {
-                restrictionLabel = "(Closed to Public)";
+                restrictionLabel = "Closed to Public";
+                restrictionColor = "text-orange-600";
               } else if (analysis.membersOnly) {
-                restrictionLabel = "(Members Only)";
+                restrictionLabel = "Members Only";
+                restrictionColor = "text-blue-600";
               } else if (analysis.isSensory) {
-                restrictionLabel = "(Sensory - Quiet)";
+                restrictionLabel = "Sensory - Quiet";
+                restrictionColor = "text-teal-600";
               } else if (analysis.restrictedAccess) {
                 restrictionLabel =
                   analysis.type === "Women's Only (All Pools)"
-                    ? "(Women Only)"
-                    : "(Seniors 60+ Only)";
+                    ? "Women Only"
+                    : "Seniors 60+ Only";
+                restrictionColor = "text-purple-600";
               }
 
               return (
                 <div
                   key={`${event.id}-${eventStart.getTime()}`}
                   ref={isCurrent ? currentEventRef : null}
-                  className={`
-                    w-full flex flex-col items-center text-center
-                    p-4 rounded-md
-                    ${getEventClass(event, analysis, isCurrent, isPast)}
-                  `}
+                  className={`p-4 rounded-md w-full flex flex-col items-center text-center ${getEventClass(
+                    analysis,
+                    isCurrent,
+                    isPast,
+                  )}`}
                 >
-                  {/* Time */}
-                  <div className="text-lg text-gray-700 font-extralight">
+                  <div className="text-lg text-gray-700 font-light">
                     {formatTime(eventStart)} – {formatTime(eventEnd)}{" "}
                     {isCurrent && (
                       <span className="ml-2 inline-flex items-center text-green-600">
@@ -158,47 +161,30 @@ function ScheduleDisplay({ data }) {
                     )}
                   </div>
 
-                  {/* Title */}
-                  <div className="text-xl font-semibold mt-2 text-gray-800">
+                  <div className="text-xl font-medium mt-2 text-gray-800">
                     {event.title}
                   </div>
 
-                  {/* Availability */}
                   <div className="text-sm mt-2 text-gray-600 flex flex-wrap justify-center items-center">
                     <span>
                       Lanes:{" "}
-                      <span
-                        className={getAvailabilityClass(hasLanes, analysis)}
-                      >
+                      <span className={getAvailabilityClass(hasLanes)}>
                         {hasLanes ? "✓" : "✗"}
                       </span>
                     </span>
                     <span className="mx-2 text-gray-400">|</span>
                     <span>
                       Kids:{" "}
-                      <span
-                        className={getAvailabilityClass(
-                          analysis.kids,
-                          analysis,
-                        )}
-                      >
+                      <span className={getAvailabilityClass(analysis.kids)}>
                         {analysis.kids ? "✓" : "✗"}
                       </span>
                     </span>
                   </div>
                   {restrictionLabel && (
                     <span
-                      className={`mt-1 ml-4 font-medium ${
-                        analysis.closedToPublic
-                          ? "text-orange-600"
-                          : analysis.isSensory
-                            ? "text-teal-600"
-                            : analysis.restrictedAccess
-                              ? "text-purple-700"
-                              : "text-blue-700"
-                      }`}
+                      className={`mt-1 ml-4 font-medium ${restrictionColor}`}
                     >
-                      {restrictionLabel}
+                      ({restrictionLabel})
                     </span>
                   )}
                 </div>

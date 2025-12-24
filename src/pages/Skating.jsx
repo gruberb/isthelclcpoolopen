@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Layout from "../components/common/Layout";
 import WeekSelector from "../components/skating/WeekSelector";
 import SkatingCard from "../components/skating/SkatingCard";
-import SkatingEmptyState from "../components/skating/SkatingEmptyState"; 
+import SkatingEmptyState from "../components/skating/SkatingEmptyState";
 import Loading from "../components/common/Loading";
 import { useSkatingData } from "../hooks/useSkatingData";
 
@@ -58,7 +58,10 @@ function Skating() {
 
   if (loading) {
     return (
-      <Layout title="When can I go skating?">
+      <Layout
+        title="LCLC Skating Dashboard"
+        subtitle="Weekly skating schedule and availability"
+      >
         <Loading />
       </Layout>
     );
@@ -66,7 +69,10 @@ function Skating() {
 
   if (error) {
     return (
-      <Layout title="When can I go skating?">
+      <Layout
+        title="LCLC Skating Dashboard"
+        subtitle="Weekly skating schedule and availability"
+      >
         <div className="bg-red-50 text-red-700 p-4 rounded-md">
           <p>Error: {error}</p>
           <p className="mt-2">Refresh the page to try again.</p>
@@ -106,8 +112,12 @@ function Skating() {
   }
 
   return (
-    <Layout title="" lastUpdated={lastUpdated}>
-      <div className="mb-2 text-base">
+    <Layout
+      title="LCLC Skating Dashboard"
+      subtitle="Weekly skating schedule and availability"
+      lastUpdated={lastUpdated}
+    >
+      <div className="mb-6 flex justify-center">
         <WeekSelector
           selectedWeek={selectedWeek}
           onWeekChange={handleWeekChange}
@@ -117,7 +127,7 @@ function Skating() {
       {events.length === 0 ? (
         <SkatingEmptyState selectedWeek={selectedWeek} />
       ) : (
-        <div className="space-y-6 mt-6 mb-28">
+        <div className="space-y-4 mt-6 mb-28 max-w-4xl mx-auto">
           {events.map((event, index) => {
             const key = `${event.id}-${event.start.getTime()}`;
             const isCurrent =
