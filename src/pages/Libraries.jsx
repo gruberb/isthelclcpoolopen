@@ -15,7 +15,10 @@ function Libraries() {
 
   if (loading) {
     return (
-      <Layout title="South Shore Public Libraries">
+      <Layout
+        title="South Shore Libraries Dashboard"
+        subtitle="Library hours and availability information"
+      >
         <Loading />
       </Layout>
     );
@@ -23,7 +26,10 @@ function Libraries() {
 
   if (error) {
     return (
-      <Layout title="South Shore Public Libraries">
+      <Layout
+        title="South Shore Libraries Dashboard"
+        subtitle="Library hours and availability information"
+      >
         <div className="bg-red-50 text-red-700 p-4 rounded-md">
           <p>Error: {error}</p>
           <p className="mt-2">Refresh the page to try again.</p>
@@ -33,7 +39,11 @@ function Libraries() {
   }
 
   return (
-    <Layout title="South Shore Public Libraries" lastUpdated={lastUpdated}>
+    <Layout
+      title="South Shore Libraries Dashboard"
+      subtitle="Library hours and availability information"
+      lastUpdated={lastUpdated}
+    >
       <TabNavigation
         tabs={CONSTANTS.TABS.LIBRARIES}
         activeTab={activeTab}
@@ -41,7 +51,7 @@ function Libraries() {
       />
 
       {activeTab === "status" ? (
-        <div className="flex flex-wrap justify-center gap-6 mb-28">
+        <div className="flex flex-wrap justify-center gap-6 mb-8">
           {libraries &&
             Object.entries(libraries).map(([key, library]) => (
               <LibraryStatusBox

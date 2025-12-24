@@ -6,7 +6,6 @@ function LibraryStatusBox({ library, status }) {
   const displayName =
     CONSTANTS.LIBRARY_DISPLAY_NAMES[library.name] || library.name;
 
-  // Status text
   const getStatusText = () => {
     if (status.isOpen) {
       return `${formatMinutes(status.timeRemaining)} remaining`;
@@ -17,21 +16,31 @@ function LibraryStatusBox({ library, status }) {
     }
   };
 
+  const getTileStyles = () => {
+    if (status.isOpen) {
+      return "bg-green-50 border-2 border-green-300 hover:border-green-400";
+    } else {
+      return "bg-red-50 border-2 border-red-300 hover:border-red-400";
+    }
+  };
+
+  const getStatusColor = () => {
+    return status.isOpen ? "text-green-600" : "text-red-600";
+  };
+
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 min-w-[250px] h-[200px] flex flex-col items-center justify-between">
-      <h2 className="text-xl font-medium text-gray-800 h-10 flex items-center">
-        {displayName}
-      </h2>
+    <div
+      className={`rounded-lg shadow-md p-6 min-w-[250px] flex flex-col items-center transition-all ${getTileStyles()}`}
+    >
+      <h2 className="text-xl font-medium text-gray-800 mb-4">{displayName}</h2>
 
       <div
-        className={`text-6xl font-bold h-20 flex items-center justify-center ${
-          status.isOpen ? "text-green-600" : "text-red-600"
-        }`}
+        className={`text-6xl font-light my-2 h-16 flex items-center justify-center ${getStatusColor()}`}
       >
         {status.isOpen ? "YES" : "NO"}
       </div>
 
-      <div className="text-lg text-gray-600 h-10 flex items-center">
+      <div className="text-lg text-gray-600 mt-2 text-center">
         {getStatusText()}
       </div>
     </div>
