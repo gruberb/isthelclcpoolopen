@@ -494,3 +494,81 @@ export function findLongestSlots(events, now, type, count = 3) {
 
   return validSlots.slice(0, count);
 }
+
+/**
+ * Find next N members-only morning slots
+ */
+export function findMembersMorningSlots(events, now, type, count = 3) {
+  const upcomingEvents = events.filter((event) => {
+    const eventStart = new Date(event.start);
+    return eventStart > now && eventStart.getHours() < 12;
+  });
+
+  upcomingEvents.sort((a, b) => new Date(a.start) - new Date(b.start));
+
+  const slots = [];
+  for (const event of upcomingEvents) {
+    if (slots.length >= count) break;
+
+    const analysis = analyzeEvent(event);
+    const hasFeature =
+      (type === "lanes" && analysis.lanes) ||
+      (type === "kids" && analysis.kids);
+
+    if (hasFeature && !analysis.closedToPublic && analysis.membersOnly) {
+      slots.push({
+        event,
+        analysis,
+        start: new Date(event.start),
+        end: new Date(event.end),
+        duration: (new Date(event.end) - new Date(event.start)) / (1000 * 60),
+      });
+    }
+  }
+
+  return slots;
+}
+
+/**
+ * Find next N non-members morning slots after 8am
+ */
+export function findNonMembersMorningSlots(events, now, type, count = 3) {
+  const upcomingEvents = events.filter((event) => {
+    const eventStart = new Date(event.start);
+    const eventEnd = new Date(event.end);
+
+    if (eventStart <= now) return false;
+
+    const eightAM = new Date(eventStart);
+    eightAM.setHours(8, 0, 0, 0);
+
+    const noon = new Date(eventStart);
+    noon.setHours(12, 0, 0, 0);
+
+    return eventStart < noon && eventEnd > eightAM;
+  });
+
+  upcomingEvents.sort((a, b) => new Date(a.start) - new Date(b.start));
+
+  const slots = [];
+  for (const event of upcomingEvents) {
+    if (slots.length >= count) break;
+
+    const analysis = analyzeEvent(event);
+    const hasFeature =
+      (type === "lanes" && analysis.lanes) ||
+      (type === "kids" && analysis.kids);
+
+    if (hasFeature && !analysis.closedToPublic && !analysis.membersOnly) {
+      slots.push({
+        event,
+        analysis,
+        start: new Date(event.start),
+        end: new Date(event.end),
+        duration: (new Date(event.end) - new Date(event.start)) / (1000 * 60),
+      });
+    }
+  }
+
+  return slots;
+}
