@@ -351,3 +351,146 @@ export function findFeatureStatus(events, now, type) {
     inGap: false,
   };
 }
+
+/**
+ * Find next N slots when a feature is available
+ * @param {Array} events - All events
+ * @param {Date} now - Current time
+ * @param {string} type - 'lanes' or 'kids'
+ * @param {number} count - Number of slots to return
+ * @returns {Array} - Array of event slots
+ */
+export function findNextSlots(events, now, type, count = 3) {
+  const upcomingEvents = events.filter((event) => {
+    const eventStart = new Date(event.start);
+    return eventStart > now;
+  });
+
+  upcomingEvents.sort((a, b) => new Date(a.start) - new Date(b.start));
+
+  const slots = [];
+  for (const event of upcomingEvents) {
+    if (slots.length >= count) break;
+
+    const analysis = analyzeEvent(event);
+    const hasFeature =
+      (type === "lanes" && analysis.lanes) ||
+      (type === "kids" && analysis.kids);
+
+    if (hasFeature && !analysis.closedToPublic) {
+      slots.push({
+        event,
+        analysis,
+        start: new Date(event.start),
+        end: new Date(event.end),
+        duration: (new Date(event.end) - new Date(event.start)) / (1000 * 60),
+      });
+    }
+  }
+
+  return slots;
+}
+
+/**
+ * Find next N morning slots (before 12pm)
+ */
+export function findNextMorningSlots(events, now, type, count = 3) {
+  const upcomingEvents = events.filter((event) => {
+    const eventStart = new Date(event.start);
+    return eventStart > now && eventStart.getHours() < 12;
+  });
+
+  upcomingEvents.sort((a, b) => new Date(a.start) - new Date(b.start));
+
+  const slots = [];
+  for (const event of upcomingEvents) {
+    if (slots.length >= count) break;
+
+    const analysis = analyzeEvent(event);
+    const hasFeature =
+      (type === "lanes" && analysis.lanes) ||
+      (type === "kids" && analysis.kids);
+
+    if (hasFeature && !analysis.closedToPublic) {
+      slots.push({
+        event,
+        analysis,
+        start: new Date(event.start),
+        end: new Date(event.end),
+        duration: (new Date(event.end) - new Date(event.start)) / (1000 * 60),
+      });
+    }
+  }
+
+  return slots;
+}
+
+/**
+ * Find next N afternoon slots (12pm or later)
+ */
+export function findNextAfternoonSlots(events, now, type, count = 3) {
+  const upcomingEvents = events.filter((event) => {
+    const eventStart = new Date(event.start);
+    return eventStart > now && eventStart.getHours() >= 12;
+  });
+
+  upcomingEvents.sort((a, b) => new Date(a.start) - new Date(b.start));
+
+  const slots = [];
+  for (const event of upcomingEvents) {
+    if (slots.length >= count) break;
+
+    const analysis = analyzeEvent(event);
+    const hasFeature =
+      (type === "lanes" && analysis.lanes) ||
+      (type === "kids" && analysis.kids);
+
+    if (hasFeature && !analysis.closedToPublic) {
+      slots.push({
+        event,
+        analysis,
+        start: new Date(event.start),
+        end: new Date(event.end),
+        duration: (new Date(event.end) - new Date(event.start)) / (1000 * 60),
+      });
+    }
+  }
+
+  return slots;
+}
+
+/**
+ * Find next N slots with longest duration
+ */
+export function findLongestSlots(events, now, type, count = 3) {
+  const upcomingEvents = events.filter((event) => {
+    const eventStart = new Date(event.start);
+    return eventStart > now;
+  });
+
+  const validSlots = [];
+  for (const event of upcomingEvents) {
+    const analysis = analyzeEvent(event);
+    const hasFeature =
+      (type === "lanes" && analysis.lanes) ||
+      (type === "kids" && analysis.kids);
+
+    if (hasFeature && !analysis.closedToPublic) {
+      const start = new Date(event.start);
+      const end = new Date(event.end);
+      const duration = (end - start) / (1000 * 60);
+
+      validSlots.push({
+        event,
+        analysis,
+        start,
+        end,
+        duration,
+      });
+    }
+  }
+
+  validSlots.sort((a, b) => b.duration - a.duration);
+
+  return validSlots.slice(0, count);
+}

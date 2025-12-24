@@ -3,6 +3,8 @@ import Layout from "../components/common/Layout";
 import TabNavigation from "../components/common/TabNavigation";
 import StatusDisplay from "../components/swimming/StatusDisplay";
 import ScheduleDisplay from "../components/swimming/ScheduleDisplay";
+import FamilyPlanningDisplay from "../components/swimming/FamilyPlanningDisplay";
+import SwimmersDisplay from "../components/swimming/SwimmersDisplay";
 import Loading from "../components/common/Loading";
 import { useSwimmingData } from "../hooks/useSwimmingData";
 import { useTabState } from "../hooks/useTabState";
@@ -51,9 +53,13 @@ function Swimming() {
 
       {activeTab === "status" ? (
         <StatusDisplay data={data} />
-      ) : (
+      ) : activeTab === "schedule" ? (
         <ScheduleDisplay data={data} />
-      )}
+      ) : activeTab === "family" ? (
+        <FamilyPlanningDisplay data={data} />
+      ) : activeTab === "swimmers" ? (
+        <SwimmersDisplay data={data} />
+      ) : null}
     </Layout>
   );
 }

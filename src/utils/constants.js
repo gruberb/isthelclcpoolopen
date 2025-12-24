@@ -137,6 +137,8 @@ export const CONSTANTS = {
     SWIMMING: [
       { id: "status", label: "Current Status" },
       { id: "schedule", label: "Full Schedule" },
+      { id: "family", label: "Family Planning" },
+      { id: "swimmers", label: "Swimmers" },
     ],
     LIBRARIES: [
       { id: "status", label: "Current Status" },
