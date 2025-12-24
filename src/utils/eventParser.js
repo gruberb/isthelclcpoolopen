@@ -392,7 +392,7 @@ export function findNextSlots(events, now, type, count = 3) {
 }
 
 /**
- * Find next N morning slots (before 12pm)
+ * Find next N morning slots (before 12pm) - excludes members-only
  */
 export function findNextMorningSlots(events, now, type, count = 3) {
   const upcomingEvents = events.filter((event) => {
@@ -411,7 +411,7 @@ export function findNextMorningSlots(events, now, type, count = 3) {
       (type === "lanes" && analysis.lanes) ||
       (type === "kids" && analysis.kids);
 
-    if (hasFeature && !analysis.closedToPublic) {
+    if (hasFeature && !analysis.closedToPublic && !analysis.membersOnly) {
       slots.push({
         event,
         analysis,
@@ -571,4 +571,39 @@ export function findNonMembersMorningSlots(events, now, type, count = 3) {
   }
 
   return slots;
+}
+
+/**
+ * Find upcoming special events (sensory, women only, members only, seniors)
+ * Excludes private/closed events
+ */
+export function findSpecialEvents(events, now, count = 10) {
+  const upcomingEvents = events.filter((event) => {
+    const eventStart = new Date(event.start);
+    return eventStart > now;
+  });
+
+  upcomingEvents.sort((a, b) => new Date(a.start) - new Date(b.start));
+
+  const specialSlots = [];
+  for (const event of upcomingEvents) {
+    if (specialSlots.length >= count) break;
+
+    const analysis = analyzeEvent(event);
+
+    const isSpecial =
+      analysis.isSensory || analysis.membersOnly || analysis.restrictedAccess;
+
+    if (isSpecial && !analysis.closedToPublic) {
+      specialSlots.push({
+        event,
+        analysis,
+        start: new Date(event.start),
+        end: new Date(event.end),
+        duration: (new Date(event.end) - new Date(event.start)) / (1000 * 60),
+      });
+    }
+  }
+
+  return specialSlots;
 }

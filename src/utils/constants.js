@@ -135,13 +135,14 @@ export const CONSTANTS = {
   // Common tab definitions
   TABS: {
     SWIMMING: [
-      { id: "status", label: "Current Status" },
+      { id: "status", label: "Status" },
       { id: "schedule", label: "Full Schedule" },
-      { id: "family", label: "Family Planning" },
+      { id: "family", label: "Family" },
       { id: "swimmers", label: "Swimmers" },
+      { id: "special", label: "Special Events" },
     ],
     LIBRARIES: [
-      { id: "status", label: "Current Status" },
+      { id: "status", label: "Status" },
       { id: "schedule", label: "Full Schedule" },
     ],
   },

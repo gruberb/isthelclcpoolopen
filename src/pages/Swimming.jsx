@@ -5,6 +5,7 @@ import StatusDisplay from "../components/swimming/StatusDisplay";
 import ScheduleDisplay from "../components/swimming/ScheduleDisplay";
 import FamilyPlanningDisplay from "../components/swimming/FamilyPlanningDisplay";
 import SwimmersDisplay from "../components/swimming/SwimmersDisplay";
+import SpecialEventsDisplay from "../components/swimming/SpecialEventsDisplay";
 import Loading from "../components/common/Loading";
 import { useSwimmingData } from "../hooks/useSwimmingData";
 import { useTabState } from "../hooks/useTabState";
@@ -59,6 +60,8 @@ function Swimming() {
         <FamilyPlanningDisplay data={data} />
       ) : activeTab === "swimmers" ? (
         <SwimmersDisplay data={data} />
+      ) : activeTab === "special" ? (
+        <SpecialEventsDisplay data={data} />
       ) : null}
     </Layout>
   );
