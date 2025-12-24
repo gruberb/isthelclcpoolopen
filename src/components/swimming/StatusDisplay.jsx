@@ -79,35 +79,35 @@ function StatusDisplay({ data }) {
   };
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 mb-8">
+    <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-4 md:mb-6">
       <div
-        className={`rounded-lg shadow-md p-6 min-w-[250px] flex flex-col items-center transition-all ${getTileStyles(statuses.lanesStatus)}`}
+        className={`rounded-lg shadow-md p-4 md:p-6 min-w-[250px] flex flex-col items-center transition-all ${getTileStyles(statuses.lanesStatus)}`}
       >
-        <h2 className="text-xl font-medium text-gray-800 mb-4">
+        <h2 className="text-xl font-medium text-gray-800 mb-2 md:mb-3">
           LANE SWIMMING
         </h2>
         <div
-          className={`text-6xl font-light my-2 h-16 flex items-center justify-center ${getStatusColor(statuses.lanesStatus)}`}
+          className={`text-6xl font-light my-1 md:my-2 h-16 flex items-center justify-center ${getStatusColor(statuses.lanesStatus)}`}
         >
           {statuses.lanesStatus.isActive ? "YES" : "NO"}
         </div>
-        <div className="text-lg text-gray-600 mt-2 text-center">
+        <div className="text-lg text-gray-600 mt-1 md:mt-2 text-center">
           {formatStatusText(statuses.lanesStatus)}
         </div>
       </div>
 
       <div
-        className={`rounded-lg shadow-md p-6 min-w-[250px] flex flex-col items-center transition-all ${getTileStyles(statuses.kidsStatus)}`}
+        className={`rounded-lg shadow-md p-4 md:p-6 min-w-[250px] flex flex-col items-center transition-all ${getTileStyles(statuses.kidsStatus)}`}
       >
-        <h2 className="text-xl font-medium text-gray-800 mb-4">
+        <h2 className="text-xl font-medium text-gray-800 mb-2 md:mb-3">
           KIDS SWIMMING
         </h2>
         <div
-          className={`text-6xl font-light my-2 h-16 flex items-center justify-center ${getStatusColor(statuses.kidsStatus)}`}
+          className={`text-6xl font-light my-1 md:my-2 h-16 flex items-center justify-center ${getStatusColor(statuses.kidsStatus)}`}
         >
           {statuses.kidsStatus.isActive ? "YES" : "NO"}
         </div>
-        <div className="text-lg text-gray-600 mt-2 text-center">
+        <div className="text-lg text-gray-600 mt-1 md:mt-2 text-center">
           {formatStatusText(statuses.kidsStatus)}
         </div>
       </div>
