@@ -1,0 +1,330 @@
+{
+  "data": [
+    {
+      "id": "9f32b42d-c5be-4bd1-ad08-3b68474e0bad",
+      "title": "Busy",
+      "start": "2025-12-22T00:00:00.000",
+      "end": "2025-12-25T00:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7c98485e-fa39-463a-bf67-74efce3fe41b",
+      "title": "Facility Closed - Christmas Eve",
+      "start": "2025-12-24T00:00:00.000",
+      "end": "2025-12-24T23:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f1275cb1-0c35-4ada-a88b-628cc9bef3da",
+      "title": "CLOSED - Christmas Day",
+      "start": "2025-12-25T00:00:00.000",
+      "end": "2025-12-25T23:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "99f11985-11c4-4518-9e5f-bf5556316d98",
+      "title": "Facility Closed - Boxing Day",
+      "start": "2025-12-26T00:00:00.000",
+      "end": "2025-12-26T23:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "734c4ffd-1d8e-408a-8ca5-b4e0af5bfc3a",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-27T07:30:00.000",
+      "end": "2025-12-27T12:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e9e4c0c5-8fdb-4c5b-81e3-462be3679d64",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2025-12-27T13:00:00.000",
+      "end": "2025-12-27T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "338aa9a4-e8e1-46cc-ab68-4bc7b9f2461d",
+      "title": "MODL Women's Only Swim",
+      "start": "2025-12-27T16:00:00.000",
+      "end": "2025-12-27T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c72acb5d-fb16-49a1-85ec-aa587bdd9405",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-27T17:00:00.000",
+      "end": "2025-12-27T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "492e9d9a-8711-47f0-8da6-29dc55652ed2",
+      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
+      "start": "2025-12-28T07:30:00.000",
+      "end": "2025-12-28T13:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "172369db-0989-4058-8e33-f95f61931689",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2025-12-28T14:00:00.000",
+      "end": "2025-12-28T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a3163176-d00a-41d4-ae35-5699238513fe",
+      "title": "Private Pool Party Rental",
+      "start": "2025-12-28T16:00:00.000",
+      "end": "2025-12-28T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "206c0bab-a34b-4b1d-9116-eaf2d1ee60f6",
+      "title": "Sensory Swim",
+      "start": "2025-12-28T17:00:00.000",
+      "end": "2025-12-28T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9cf94ea8-b464-4c67-949d-7554f3f611c9",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-28T18:00:00.000",
+      "end": "2025-12-28T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "502537d7-5969-4a6b-bd3f-29fe37fddd76",
+      "title": "Members Swim",
+      "start": "2025-12-29T06:30:00.000",
+      "end": "2025-12-29T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3d090fd3-20ae-47d8-a60e-396306c16e02",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-29T07:30:00.000",
+      "end": "2025-12-29T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c8dd2e41-8b17-4cf4-bc43-b1ac40578ad2",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2025-12-29T10:00:00.000",
+      "end": "2025-12-29T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7f35cb98-2152-4f81-9d89-08beb323bccf",
+      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools OPen",
+      "start": "2025-12-29T11:00:00.000",
+      "end": "2025-12-29T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4bbff59b-bfce-4012-8a42-9414c115aa70",
+      "title": "Lane Swim - 4 Lanes, PLay & Therapy Pools Open",
+      "start": "2025-12-29T12:00:00.000",
+      "end": "2025-12-29T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2c5d377b-0a08-4e2b-9357-2870a235acb0",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2025-12-29T13:15:00.000",
+      "end": "2025-12-29T14:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0167b17d-87d9-4a29-a354-d2b47b3a89f1",
+      "title": "Senior Swim",
+      "start": "2025-12-29T15:00:00.000",
+      "end": "2025-12-29T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e751a5fc-c422-4e0a-9121-42cdb1c9552d",
+      "title": "Busy",
+      "start": "2025-12-29T16:00:00.000",
+      "end": "2025-12-30T00:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "973c9dc1-f0ac-4310-91dd-92ce1aab3346",
+      "title": "Members Swim",
+      "start": "2025-12-30T06:30:00.000",
+      "end": "2025-12-30T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0afd063f-245d-4689-8f39-2dc5fc3bca4b",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-30T07:30:00.000",
+      "end": "2025-12-30T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0187bf4b-e91e-4909-82a5-f7ccb724b896",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2025-12-30T10:00:00.000",
+      "end": "2025-12-30T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1e07b277-0c08-46b3-950e-8deea5877fe5",
+      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
+      "start": "2025-12-30T11:00:00.000",
+      "end": "2025-12-30T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ba15efca-7797-4687-960a-5255257ca8ef",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-30T12:00:00.000",
+      "end": "2025-12-30T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "05231038-eb26-4c49-987c-111694d6b092",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2025-12-30T13:15:00.000",
+      "end": "2025-12-30T15:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "522ab7b7-dcf0-445f-bc0b-b4624962f659",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-30T16:00:00.000",
+      "end": "2025-12-30T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6d880656-f311-4f32-8aff-a76a2017cbba",
+      "title": "Members Swim",
+      "start": "2025-12-31T06:30:00.000",
+      "end": "2025-12-31T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2dd605be-c574-4db4-8153-e8926293d342",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-31T07:30:00.000",
+      "end": "2025-12-31T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3b3d0df4-fbb8-4e0e-b8b4-67b357048135",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2025-12-31T10:00:00.000",
+      "end": "2025-12-31T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "aa83d013-e040-4cbe-83ac-6ff433845202",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-31T11:00:00.000",
+      "end": "2025-12-31T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e281697f-797c-48d2-89f5-28095493ce64",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2025-12-31T12:00:00.000",
+      "end": "2025-12-31T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "58a79109-b41f-4b99-8e40-1d51d8e74823",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2025-12-31T13:15:00.000",
+      "end": "2025-12-31T15:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8b664e30-bc73-4183-bb61-96262362344b",
+      "title": "Pool Closing at 4:00 pm (LCLC at 5:00pm) - New Years Eve",
+      "start": "2025-12-31T16:00:00.000",
+      "end": "2025-12-31T22:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    }
+  ],
+  "lastUpdated": "2025-12-24T20:34:07.426Z",
+  "metadata": {
+    "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
+    "dateRange": {
+      "start": "2025-12-24T04:00:00.000Z",
+      "end": "2026-01-01T04:00:00.000Z"
+    },
+    "eventCount": 35,
+    "generatedAt": "2025-12-24T20:34:07.426Z",
+    "generatedBy": "GitHub Actions"
+  }
+}
