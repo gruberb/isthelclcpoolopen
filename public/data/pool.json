@@ -314,17 +314,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "5c1a0b22-c5d4-4439-ae12-4e5a3cc201c0",
+      "title": "Facility Closed - New Years Day",
+      "start": "2026-01-01T00:00:00.000",
+      "end": "2026-01-01T23:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-12-24T20:34:07.426Z",
+  "lastUpdated": "2025-12-25T10:02:29.682Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-12-24T04:00:00.000Z",
-      "end": "2026-01-01T04:00:00.000Z"
+      "start": "2025-12-25T00:00:00.000Z",
+      "end": "2026-01-02T00:00:00.000Z"
     },
-    "eventCount": 35,
-    "generatedAt": "2025-12-24T20:34:07.426Z",
+    "eventCount": 36,
+    "generatedAt": "2025-12-25T10:02:29.682Z",
     "generatedBy": "GitHub Actions"
   }
 }
