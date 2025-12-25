@@ -138,7 +138,7 @@ export const CONSTANTS = {
       { id: "status", label: "Status" },
       { id: "schedule", label: "Full Schedule" },
       { id: "family", label: "Family" },
-      { id: "swimmers", label: "Swimmers" },
+      { id: "swimmers", label: "Lane Swimmers" },
       { id: "special", label: "Special Events" },
     ],
     LIBRARIES: [
