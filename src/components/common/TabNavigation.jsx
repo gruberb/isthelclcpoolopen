@@ -3,7 +3,20 @@ import React from "react";
 function TabNavigation({ tabs, activeTab, setActiveTab }) {
   const handleTabClick = (tabId) => {
     if (window.plausible) {
-      window.plausible("Tab Click", { props: { tab: tabId } });
+      window.plausible("Tab Click", {
+        props: { tab: tabId },
+        callback: (result) => {
+          if (result && result.status) {
+            console.debug("Plausible event sent. Status:", result.status);
+          } else if (result && result.error) {
+            console.error("Plausible error:", result.error);
+          } else {
+            console.warn("Plausible request was ignored");
+          }
+        },
+      });
+    } else {
+      console.warn("window.plausible is not defined");
     }
     setActiveTab(tabId);
   };
