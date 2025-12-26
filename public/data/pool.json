@@ -1,24 +1,6 @@
 {
   "data": [
     {
-      "id": "9f32b42d-c5be-4bd1-ad08-3b68474e0bad",
-      "title": "Busy",
-      "start": "2025-12-22T00:00:00.000",
-      "end": "2025-12-25T00:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7c98485e-fa39-463a-bf67-74efce3fe41b",
-      "title": "Facility Closed - Christmas Eve",
-      "start": "2025-12-24T00:00:00.000",
-      "end": "2025-12-24T23:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "f1275cb1-0c35-4ada-a88b-628cc9bef3da",
       "title": "CLOSED - Christmas Day",
       "start": "2025-12-25T00:00:00.000",
@@ -323,17 +305,98 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "e5ff3498-8143-4725-9c82-ac739cb441e6",
+      "title": "Members Swim",
+      "start": "2026-01-02T06:30:00.000",
+      "end": "2026-01-02T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "82ca5099-0480-4f99-96c7-4bb1a00bf2c2",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-02T07:30:00.000",
+      "end": "2026-01-02T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4a21312a-48de-47eb-9680-fc25fa594a42",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2026-01-02T10:00:00.000",
+      "end": "2026-01-02T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7eb550a3-48ed-4d03-84c5-609e9a7b20c8",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-02T11:00:00.000",
+      "end": "2026-01-02T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d5fe4646-951b-494f-828d-946cf280174e",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-02T12:00:00.000",
+      "end": "2026-01-02T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7aedb2c3-d1d0-4ebc-aea9-ab7a424a5d7a",
+      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-02T13:00:00.000",
+      "end": "2026-01-02T13:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "44721727-9e84-4565-ad27-3bfae76dac71",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-02T13:45:00.000",
+      "end": "2026-01-02T14:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e2ef80ea-ec88-4e80-8e19-078482544586",
+      "title": "Aqua Dance using Lap Pool - All Other Pools Closed",
+      "start": "2026-01-02T15:00:00.000",
+      "end": "2026-01-02T15:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "239ff332-0d06-4d03-8d30-56d2df03e6c2",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-01-02T16:00:00.000",
+      "end": "2026-01-02T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-12-25T10:02:29.682Z",
+  "lastUpdated": "2025-12-26T10:02:23.956Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-12-25T00:00:00.000Z",
-      "end": "2026-01-02T00:00:00.000Z"
+      "start": "2025-12-26T00:00:00.000Z",
+      "end": "2026-01-03T00:00:00.000Z"
     },
-    "eventCount": 36,
-    "generatedAt": "2025-12-25T10:02:29.682Z",
+    "eventCount": 43,
+    "generatedAt": "2025-12-26T10:02:23.956Z",
     "generatedBy": "GitHub Actions"
   }
 }
