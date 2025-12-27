@@ -1,15 +1,6 @@
 {
   "data": [
     {
-      "id": "f1275cb1-0c35-4ada-a88b-628cc9bef3da",
-      "title": "CLOSED - Christmas Day",
-      "start": "2025-12-25T00:00:00.000",
-      "end": "2025-12-25T23:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "99f11985-11c4-4518-9e5f-bf5556316d98",
       "title": "Facility Closed - Boxing Day",
       "start": "2025-12-26T00:00:00.000",
@@ -386,17 +377,71 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "1be22982-eeaa-4773-af77-f8944bc6e658",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-03T07:30:00.000",
+      "end": "2026-01-03T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a266bfed-f3cf-4315-83bb-dea3f4e32f16",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2026-01-03T09:00:00.000",
+      "end": "2026-01-03T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6acb2437-62b1-4169-97fc-6d8636ad31be",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-03T12:00:00.000",
+      "end": "2026-01-03T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8401764d-44be-4399-8c59-fa790bcb155e",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-01-03T13:00:00.000",
+      "end": "2026-01-03T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ee409427-944e-486c-a8cd-fc2479596f7c",
+      "title": "MODL - Women's Only Swim",
+      "start": "2026-01-03T16:00:00.000",
+      "end": "2026-01-03T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "cc857b73-ff4f-4032-bf6a-c4fba397eb19",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-03T17:00:00.000",
+      "end": "2026-01-03T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-12-26T10:02:23.956Z",
+  "lastUpdated": "2025-12-27T10:02:21.401Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-12-26T00:00:00.000Z",
-      "end": "2026-01-03T00:00:00.000Z"
+      "start": "2025-12-27T00:00:00.000Z",
+      "end": "2026-01-04T00:00:00.000Z"
     },
-    "eventCount": 43,
-    "generatedAt": "2025-12-26T10:02:23.956Z",
+    "eventCount": 48,
+    "generatedAt": "2025-12-27T10:02:21.401Z",
     "generatedBy": "GitHub Actions"
   }
 }
