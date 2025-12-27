@@ -1,5 +1,7 @@
 import { CONSTANTS } from "./constants";
 
+const MAX_GAP_MINUTES = 15;
+
 /**
  * Check if an event is a swimming event based on title, color, etc.
  * @param {Object} event - Event object from API
@@ -276,10 +278,9 @@ export function findFeatureStatus(events, now, type) {
         (type === "kids" && analysis.kids);
 
       // IMPROVED GAP HANDLING: Bridge reasonable gaps between events with the same feature
-      const gapDuration = eventStart - currentEndTime;
-      const maxGapDuration = 30 * 60 * 1000; // 45 minutes in milliseconds
+      const gapMinutes = (eventStart - currentEndTime) / (1000 * 60);
 
-      if (gapDuration >= 0 && gapDuration <= maxGapDuration && hasFeature) {
+      if (gapMinutes >= 0 && gapMinutes <= MAX_GAP_MINUTES && hasFeature) {
         // Stop extending if we encounter a special event (members only, restricted access)
         if (analysis.restrictedAccess || analysis.membersOnly) {
           break;
@@ -291,7 +292,7 @@ export function findFeatureStatus(events, now, type) {
       } else if (eventStart > currentEndTime && !hasFeature) {
         // We've found an event without the feature - this is the end of continuous availability
         break;
-      } else if (gapDuration > maxGapDuration) {
+      } else if (gapMinutes > MAX_GAP_MINUTES) {
         // Gap is too large to bridge
         break;
       }
@@ -514,43 +515,80 @@ export function findNextAfternoonSlots(events, now, type, count = 3) {
   return slots;
 }
 
+function mergeConsecutiveSlots(events, type) {
+  const validEvents = events
+    .map((event) => {
+      const analysis = analyzeEvent(event);
+      const hasFeature =
+        (type === "lanes" && analysis.lanes) ||
+        (type === "kids" && analysis.kids);
+      if (
+        hasFeature &&
+        !analysis.closedToPublic &&
+        !analysis.restrictedAccess &&
+        !analysis.membersOnly
+      ) {
+        return {
+          event,
+          analysis,
+          start: new Date(event.start),
+          end: new Date(event.end),
+        };
+      }
+      return null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.start - b.start);
+
+  if (validEvents.length === 0) return [];
+
+  const merged = [];
+  let current = { ...validEvents[0] };
+
+  for (let i = 1; i < validEvents.length; i++) {
+    const next = validEvents[i];
+    const gapMinutes = (next.start - current.end) / (1000 * 60);
+
+    if (gapMinutes >= 0 && gapMinutes <= MAX_GAP_MINUTES) {
+      current.end = next.end;
+    } else {
+      current.duration = (current.end - current.start) / (1000 * 60);
+      merged.push(current);
+      current = { ...next };
+    }
+  }
+  current.duration = (current.end - current.start) / (1000 * 60);
+  merged.push(current);
+
+  return merged;
+}
+
 /**
  * Find next N slots with longest duration
  */
 export function findLongestSlots(events, now, type, count = 3) {
-  const validSlots = [];
-
-  const currentSlot = findCurrentSlot(events, now, type);
-  if (currentSlot) {
-    validSlots.push(currentSlot);
-  }
-
-  const upcomingEvents = events.filter((event) => {
-    const eventStart = new Date(event.start);
-    return eventStart > now;
+  const allEvents = events.filter((event) => {
+    const eventEnd = new Date(event.end);
+    return eventEnd > now;
   });
 
-  for (const event of upcomingEvents) {
-    const analysis = analyzeEvent(event);
-    const hasFeature =
-      (type === "lanes" && analysis.lanes) ||
-      (type === "kids" && analysis.kids);
+  const mergedSlots = mergeConsecutiveSlots(allEvents, type);
 
-    if (hasFeature && !analysis.closedToPublic) {
-      const start = new Date(event.start);
-      const end = new Date(event.end);
-      const duration = (end - start) / (1000 * 60);
-
-      validSlots.push({
-        event,
-        analysis,
-        start,
-        end,
-        duration,
-        isNow: false,
-      });
-    }
-  }
+  const validSlots = mergedSlots.map((slot) => {
+    const isNow = slot.start <= now && slot.end > now;
+    const remainingMinutes = isNow
+      ? Math.floor((slot.end - now) / (1000 * 60))
+      : null;
+    return {
+      event: slot.event,
+      analysis: slot.analysis,
+      start: slot.start,
+      end: slot.end,
+      duration: slot.duration,
+      remainingMinutes,
+      isNow,
+    };
+  });
 
   validSlots.sort((a, b) => b.duration - a.duration);
 
