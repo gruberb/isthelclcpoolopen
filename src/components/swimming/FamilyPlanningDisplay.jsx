@@ -92,12 +92,17 @@ function FamilyPlanningDisplay({ data }) {
   const renderSlotCard = (slot, index) => (
     <div
       key={index}
-      className="border-l-4 border-blue-300 bg-white p-4 hover:bg-gray-50 transition-colors"
+      className={`border-l-4 ${slot.isNow ? "border-green-500 bg-green-50" : "border-blue-300 bg-white"} p-4 hover:bg-gray-50 transition-colors`}
     >
       <div className="flex items-start justify-between">
         <div className="flex-1">
-          <div className="text-sm font-medium text-blue-600 mb-1">
+          <div className="text-sm font-medium text-blue-600 mb-1 flex items-center gap-2">
             {formatDate(slot.start)}
+            {slot.isNow && (
+              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-green-500 text-white">
+                NOW
+              </span>
+            )}
           </div>
           <div className="text-base font-medium text-gray-900 mb-1">
             {slot.event.title}
@@ -107,7 +112,9 @@ function FamilyPlanningDisplay({ data }) {
             {formatTime(slot.start)} – {formatTime(slot.end)}
             <span className="mx-2 text-gray-400">•</span>
             <span className="font-medium text-gray-700">
-              {formatDuration(slot.duration)}
+              {slot.isNow
+                ? `${formatDuration(slot.remainingMinutes)} remaining`
+                : formatDuration(slot.duration)}
             </span>
           </div>
         </div>

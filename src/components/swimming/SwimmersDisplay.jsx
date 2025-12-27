@@ -3,6 +3,7 @@ import { formatTime } from "../../utils/dateUtils";
 import {
   findNextSlots,
   findNextMorningSlots,
+  findMembersMorningSlots,
   findNextAfternoonSlots,
   findLongestSlots,
 } from "../../utils/eventParser";
@@ -10,26 +11,26 @@ import {
 function SwimmersDisplay({ data }) {
   const now = useMemo(() => new Date(), []);
 
-  const sections = useMemo(() => {
-    return [
-      {
-        title: "When can I go lane swimming next?",
-        slots: findNextSlots(data, now, "lanes", 3),
-      },
-      {
-        title: "When is the next morning lane swim?",
-        slots: findNextMorningSlots(data, now, "lanes", 3),
-      },
-      {
-        title: "When is the next afternoon lane swim?",
-        slots: findNextAfternoonSlots(data, now, "lanes", 3),
-      },
-      {
-        title: "When is the most time I can spend in the lanes?",
-        slots: findLongestSlots(data, now, "lanes", 3),
-      },
-    ];
-  }, [data, now]);
+  const nextSlots = useMemo(
+    () => findNextSlots(data, now, "lanes", 3),
+    [data, now],
+  );
+  const morningSlots = useMemo(
+    () => findNextMorningSlots(data, now, "lanes", 3),
+    [data, now],
+  );
+  const membersMorningSlots = useMemo(
+    () => findMembersMorningSlots(data, now, "lanes", 1),
+    [data, now],
+  );
+  const afternoonSlots = useMemo(
+    () => findNextAfternoonSlots(data, now, "lanes", 3),
+    [data, now],
+  );
+  const longestSlots = useMemo(
+    () => findLongestSlots(data, now, "lanes", 3),
+    [data, now],
+  );
 
   const formatDuration = (minutes) => {
     const hours = Math.floor(minutes / 60);
@@ -79,57 +80,138 @@ function SwimmersDisplay({ data }) {
     if (analysis.restrictedAccess) {
       return (
         <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">
-          {analysis.type === "Women's Only (All Pools)" ? "Women Only" : "Seniors 60+"}
+          {analysis.type === "Women's Only (All Pools)"
+            ? "Women Only"
+            : "Seniors 60+"}
         </span>
       );
     }
     return null;
   };
 
-  return (
-    <div className="max-w-4xl mx-auto mb-24 space-y-8">
-      {sections.map((section, sectionIndex) => (
-        <div key={sectionIndex} className="bg-white rounded-lg shadow-md overflow-hidden">
-          <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
-            <h3 className="text-lg font-medium text-gray-900">{section.title}</h3>
-          </div>
-          <div className="p-4">
-            {section.slots.length === 0 ? (
-              <div className="text-center py-8 text-gray-500">
-                No upcoming slots found
-              </div>
-            ) : (
-              <div className="space-y-3">
-                {section.slots.map((slot, index) => (
-                  <div
-                    key={index}
-                    className="border-l-4 border-green-300 bg-white p-4 hover:bg-gray-50 transition-colors"
-                  >
-                    <div className="flex items-start justify-between">
-                      <div className="flex-1">
-                        <div className="text-sm font-medium text-green-600 mb-1">
-                          {formatDate(slot.start)}
-                        </div>
-                        <div className="text-base font-medium text-gray-900 mb-1">
-                          {slot.event.title}
-                          {getRestrictionBadge(slot.analysis)}
-                        </div>
-                        <div className="text-sm text-gray-600">
-                          {formatTime(slot.start)} – {formatTime(slot.end)}
-                          <span className="mx-2 text-gray-400">•</span>
-                          <span className="font-medium text-gray-700">
-                            {formatDuration(slot.duration)}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+  const renderSlotCard = (slot, index) => (
+    <div
+      key={index}
+      className={`border-l-4 ${slot.isNow ? "border-green-500 bg-green-50" : "border-green-300 bg-white"} p-4 hover:bg-gray-50 transition-colors`}
+    >
+      <div className="flex items-start justify-between">
+        <div className="flex-1">
+          <div className="text-sm font-medium text-green-600 mb-1 flex items-center gap-2">
+            {formatDate(slot.start)}
+            {slot.isNow && (
+              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-green-500 text-white">
+                NOW
+              </span>
             )}
           </div>
+          <div className="text-base font-medium text-gray-900 mb-1">
+            {slot.event.title}
+            {getRestrictionBadge(slot.analysis)}
+          </div>
+          <div className="text-sm text-gray-600">
+            {formatTime(slot.start)} – {formatTime(slot.end)}
+            <span className="mx-2 text-gray-400">•</span>
+            <span className="font-medium text-gray-700">
+              {slot.isNow
+                ? `${formatDuration(slot.remainingMinutes)} remaining`
+                : formatDuration(slot.duration)}
+            </span>
+          </div>
         </div>
-      ))}
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="max-w-4xl mx-auto mb-24 space-y-8">
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
+          <h3 className="text-lg font-medium text-gray-900">
+            When can I go lane swimming next?
+          </h3>
+        </div>
+        <div className="p-4">
+          {nextSlots.length === 0 ? (
+            <div className="text-center py-8 text-gray-500">
+              No upcoming slots found
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {nextSlots.map((slot, index) => renderSlotCard(slot, index))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
+          <h3 className="text-lg font-medium text-gray-900">
+            When is the next morning lane swim?
+          </h3>
+        </div>
+        <div className="p-4">
+          {membersMorningSlots.length > 0 && (
+            <div className="mb-6">
+              <h4 className="text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wide">
+                Members Only
+              </h4>
+              <div className="space-y-3">
+                {membersMorningSlots.map((slot, index) =>
+                  renderSlotCard(slot, index),
+                )}
+              </div>
+              <div className="mt-4 mb-4 border-t border-gray-200"></div>
+            </div>
+          )}
+          {morningSlots.length === 0 ? (
+            <div className="text-center py-8 text-gray-500">
+              No upcoming slots found
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {morningSlots.map((slot, index) => renderSlotCard(slot, index))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
+          <h3 className="text-lg font-medium text-gray-900">
+            When is the next afternoon lane swim?
+          </h3>
+        </div>
+        <div className="p-4">
+          {afternoonSlots.length === 0 ? (
+            <div className="text-center py-8 text-gray-500">
+              No upcoming slots found
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {afternoonSlots.map((slot, index) => renderSlotCard(slot, index))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
+          <h3 className="text-lg font-medium text-gray-900">
+            When is the most time I can spend in the lanes?
+          </h3>
+        </div>
+        <div className="p-4">
+          {longestSlots.length === 0 ? (
+            <div className="text-center py-8 text-gray-500">
+              No upcoming slots found
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {longestSlots.map((slot, index) => renderSlotCard(slot, index))}
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
