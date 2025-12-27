@@ -590,7 +590,14 @@ export function findLongestSlots(events, now, type, count = 3) {
     };
   });
 
-  validSlots.sort((a, b) => b.duration - a.duration);
+  validSlots.sort((a, b) => {
+    const aTime = a.isNow ? a.remainingMinutes : a.duration;
+    const bTime = b.isNow ? b.remainingMinutes : b.duration;
+    if (bTime !== aTime) {
+      return bTime - aTime;
+    }
+    return a.start - b.start;
+  });
 
   return validSlots.slice(0, count);
 }
