@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "id": "6a727784-5dbb-4069-8607-f64a31f4cb1c",
+      "title": "Adult Skate",
+      "start": "2025-12-22T12:00:00.000",
+      "end": "2025-12-22T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "86ef2820-481f-4cdf-91be-5a6f8eb5d981",
+      "title": "Holiday Public Skate",
+      "start": "2025-12-22T13:30:00.000",
+      "end": "2025-12-22T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "38a47a85-2287-47ef-9d77-ea1263e8186a",
+      "title": "Public Skating",
+      "start": "2025-12-23T13:30:00.000",
+      "end": "2025-12-23T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "315397ab-92b3-4ebe-8d38-2a1c746215fb",
+      "title": "NSTU Public Skate",
+      "start": "2025-12-29T10:45:00.000",
+      "end": "2025-12-29T11:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    }
+  ],
+  "lastUpdated": "2025-12-27T12:44:55.041Z",
+  "metadata": {
+    "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
+    "weeksToFetch": 2,
+    "totalEvents": 69,
+    "publicEvents": 4,
+    "generatedAt": "2025-12-27T12:44:55.041Z",
+    "generatedBy": "Local Development"
+  }
+}
