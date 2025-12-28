@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "99f11985-11c4-4518-9e5f-bf5556316d98",
-      "title": "Facility Closed - Boxing Day",
-      "start": "2025-12-26T00:00:00.000",
-      "end": "2025-12-26T23:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "734c4ffd-1d8e-408a-8ca5-b4e0af5bfc3a",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-27T07:30:00.000",
-      "end": "2025-12-27T12:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e9e4c0c5-8fdb-4c5b-81e3-462be3679d64",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2025-12-27T13:00:00.000",
-      "end": "2025-12-27T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "338aa9a4-e8e1-46cc-ab68-4bc7b9f2461d",
-      "title": "MODL Women's Only Swim",
-      "start": "2025-12-27T16:00:00.000",
-      "end": "2025-12-27T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c72acb5d-fb16-49a1-85ec-aa587bdd9405",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-27T17:00:00.000",
-      "end": "2025-12-27T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "492e9d9a-8711-47f0-8da6-29dc55652ed2",
       "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
       "start": "2025-12-28T07:30:00.000",
@@ -431,17 +386,89 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "39643dbf-2c46-44ed-b9c8-ee30ef1ea3ce",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-04T07:30:00.000",
+      "end": "2026-01-04T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "52d3125b-a88a-44f9-bad2-464958c6dd84",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2026-01-04T09:00:00.000",
+      "end": "2026-01-04T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "bbbcae1b-fd3a-4dba-a172-5031a8fa2648",
+      "title": "Lifesaving Sport - Only Therapy Pool Available",
+      "start": "2026-01-04T11:30:00.000",
+      "end": "2026-01-04T12:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "81be8330-aa8b-430b-8817-81f4b36cf1d5",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-01-04T13:00:00.000",
+      "end": "2026-01-04T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a3163176-d00a-41d4-ae35-5699238513fe",
+      "title": "Private Pool Party Rental",
+      "start": "2026-01-04T16:00:00.000",
+      "end": "2026-01-04T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5294af71-3872-4d7e-9ebd-0294ec45e74d",
+      "title": "Sensory Swim",
+      "start": "2026-01-04T17:00:00.000",
+      "end": "2026-01-04T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "aca9b27b-6ef6-41bf-ab34-951a211efa59",
+      "title": "Cudas using 3 Lanes in Lap Pool - 1 Lane, Play & Therapy Pools Open",
+      "start": "2026-01-04T18:00:00.000",
+      "end": "2026-01-04T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5a0a5688-0cb1-42d6-a78d-82ec197cd1d0",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-04T19:00:00.000",
+      "end": "2026-01-04T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-12-27T12:44:54.213Z",
+  "lastUpdated": "2025-12-28T10:02:25.846Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-12-27T04:00:00.000Z",
-      "end": "2026-01-04T04:00:00.000Z"
+      "start": "2025-12-28T00:00:00.000Z",
+      "end": "2026-01-05T00:00:00.000Z"
     },
-    "eventCount": 48,
-    "generatedAt": "2025-12-27T12:44:54.213Z",
+    "eventCount": 51,
+    "generatedAt": "2025-12-28T10:02:25.846Z",
     "generatedBy": "GitHub Actions"
   }
 }
