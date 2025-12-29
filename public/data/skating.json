@@ -1,33 +1,6 @@
 {
   "data": [
     {
-      "id": "6a727784-5dbb-4069-8607-f64a31f4cb1c",
-      "title": "Adult Skate",
-      "start": "2025-12-22T12:00:00.000",
-      "end": "2025-12-22T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "86ef2820-481f-4cdf-91be-5a6f8eb5d981",
-      "title": "Holiday Public Skate",
-      "start": "2025-12-22T13:30:00.000",
-      "end": "2025-12-22T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "38a47a85-2287-47ef-9d77-ea1263e8186a",
-      "title": "Public Skating",
-      "start": "2025-12-23T13:30:00.000",
-      "end": "2025-12-23T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "315397ab-92b3-4ebe-8d38-2a1c746215fb",
       "title": "NSTU Public Skate",
       "start": "2025-12-29T10:45:00.000",
@@ -35,15 +8,78 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "4f8a5ee0-c2a4-4ead-bfff-c5b0c872a3a3",
+      "title": "Public Skating",
+      "start": "2026-01-02T09:00:00.000",
+      "end": "2026-01-02T10:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "title": "Adult Skate",
+      "start": "2026-01-05T12:00:00.000",
+      "end": "2026-01-05T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "title": "Adult Skate",
+      "start": "2026-01-06T12:00:00.000",
+      "end": "2026-01-06T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "title": "Adult Skate",
+      "start": "2026-01-07T12:00:00.000",
+      "end": "2026-01-07T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "title": "Adult Skate",
+      "start": "2026-01-08T12:00:00.000",
+      "end": "2026-01-08T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "title": "Adult Skate",
+      "start": "2026-01-09T12:00:00.000",
+      "end": "2026-01-09T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "17bf9d13-b7c7-4d9c-90a4-9772b16d4ce6",
+      "title": "TOB Free Public Skate",
+      "start": "2026-01-10T16:30:00.000",
+      "end": "2026-01-10T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2025-12-28T05:06:36.310Z",
+  "lastUpdated": "2025-12-29T05:09:38.393Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 69,
-    "publicEvents": 4,
-    "generatedAt": "2025-12-28T05:06:36.310Z",
+    "totalEvents": 90,
+    "publicEvents": 8,
+    "generatedAt": "2025-12-29T05:09:38.393Z",
     "generatedBy": "GitHub Actions"
   }
 }
