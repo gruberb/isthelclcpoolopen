@@ -1,69 +1,6 @@
 {
   "data": [
     {
-      "id": "502537d7-5969-4a6b-bd3f-29fe37fddd76",
-      "title": "Members Swim",
-      "start": "2025-12-29T06:30:00.000",
-      "end": "2025-12-29T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "3d090fd3-20ae-47d8-a60e-396306c16e02",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2025-12-29T07:30:00.000",
-      "end": "2025-12-29T10:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c8dd2e41-8b17-4cf4-bc43-b1ac40578ad2",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2025-12-29T10:00:00.000",
-      "end": "2025-12-29T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7f35cb98-2152-4f81-9d89-08beb323bccf",
-      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools OPen",
-      "start": "2025-12-29T11:00:00.000",
-      "end": "2025-12-29T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4bbff59b-bfce-4012-8a42-9414c115aa70",
-      "title": "Lane Swim - 4 Lanes, PLay & Therapy Pools Open",
-      "start": "2025-12-29T12:00:00.000",
-      "end": "2025-12-29T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2c5d377b-0a08-4e2b-9357-2870a235acb0",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2025-12-29T13:15:00.000",
-      "end": "2025-12-29T14:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0167b17d-87d9-4a29-a354-d2b47b3a89f1",
-      "title": "Senior Swim",
-      "start": "2025-12-29T15:00:00.000",
-      "end": "2025-12-29T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "e751a5fc-c422-4e0a-9121-42cdb1c9552d",
       "title": "Busy",
       "start": "2025-12-29T16:00:00.000",
@@ -415,15 +352,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2025-12-29T10:02:44.320Z",
+  "lastUpdated": "2025-12-30T10:02:28.023Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2025-12-29T00:00:00.000Z",
-      "end": "2026-01-06T00:00:00.000Z"
+      "start": "2025-12-30T00:00:00.000Z",
+      "end": "2026-01-07T00:00:00.000Z"
     },
-    "eventCount": 46,
-    "generatedAt": "2025-12-29T10:02:44.320Z",
+    "eventCount": 39,
+    "generatedAt": "2025-12-30T10:02:28.023Z",
     "generatedBy": "GitHub Actions"
   }
 }
