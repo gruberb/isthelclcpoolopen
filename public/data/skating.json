@@ -1,24 +1,6 @@
 {
   "data": [
     {
-      "id": "315397ab-92b3-4ebe-8d38-2a1c746215fb",
-      "title": "NSTU Public Skate",
-      "start": "2025-12-29T10:45:00.000",
-      "end": "2025-12-29T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4f8a5ee0-c2a4-4ead-bfff-c5b0c872a3a3",
-      "title": "Public Skating",
-      "start": "2026-01-02T09:00:00.000",
-      "end": "2026-01-02T10:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
       "title": "Adult Skate",
       "start": "2026-01-05T12:00:00.000",
@@ -71,15 +53,69 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "title": "Adult Skate",
+      "start": "2026-01-12T12:00:00.000",
+      "end": "2026-01-12T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "title": "Adult Skate",
+      "start": "2026-01-13T12:00:00.000",
+      "end": "2026-01-13T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "title": "Adult Skate",
+      "start": "2026-01-14T12:00:00.000",
+      "end": "2026-01-14T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "title": "Adult Skate",
+      "start": "2026-01-15T12:00:00.000",
+      "end": "2026-01-15T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "title": "Adult Skate",
+      "start": "2026-01-16T12:00:00.000",
+      "end": "2026-01-16T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "103ecb1a-15b2-4a74-a0a4-ba3175179a9d",
+      "title": "TOB Free Public Skate",
+      "start": "2026-01-17T16:30:00.000",
+      "end": "2026-01-17T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-01-04T05:08:44.277Z",
+  "lastUpdated": "2026-01-05T05:13:43.620Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 95,
-    "publicEvents": 8,
-    "generatedAt": "2026-01-04T05:08:44.277Z",
+    "totalEvents": 93,
+    "publicEvents": 12,
+    "generatedAt": "2026-01-05T05:13:43.620Z",
     "generatedBy": "GitHub Actions"
   }
 }
