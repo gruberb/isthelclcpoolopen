@@ -1,114 +1,6 @@
 {
   "data": [
     {
-      "id": "c8766ff3-d6f8-404c-bc39-656d4f1402f4",
-      "title": "Members Swim",
-      "start": "2026-01-16T06:30:00.000",
-      "end": "2026-01-16T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "fd33299b-80cc-448f-b13e-7b13097365ae",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-01-16T07:30:00.000",
-      "end": "2026-01-16T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "54c303be-15d2-490e-a4ed-a9d886c643a6",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-01-16T10:00:00.000",
-      "end": "2026-01-16T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "cac91e68-f0e2-4663-ab76-b6fb17b389fd",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-01-16T11:00:00.000",
-      "end": "2026-01-16T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "6c20927f-422a-43a3-afb3-83fdeaac3029",
-      "title": "Private Rental - SSRCE / Pools Closed to the Public",
-      "start": "2026-01-16T11:30:00.000",
-      "end": "2026-01-16T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2fb286d7-2b7a-489c-84dc-4e886c98cbd9",
-      "title": "Private Rental - SSRCE / Pools Closed to the Public",
-      "start": "2026-01-16T11:30:00.000",
-      "end": "2026-01-16T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ed604c9c-f35a-42f6-a661-9aa4b8b7b5e2",
-      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2026-01-16T13:00:00.000",
-      "end": "2026-01-16T13:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b8e4b323-2666-4089-a1be-8745e15f30d7",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-01-16T13:45:00.000",
-      "end": "2026-01-16T14:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "df5268ea-a39c-48f7-8299-48f34287a6c9",
-      "title": "Aqua Dance Using Lap Pool - Other Pools Not Available",
-      "start": "2026-01-16T15:00:00.000",
-      "end": "2026-01-16T15:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a8a9c400-1b29-41c9-b7bf-af6ad581a579",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-01-16T15:45:00.000",
-      "end": "2026-01-16T16:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e9496070-e24c-4354-afc4-bb076ea4ad7c",
-      "title": "TOB Free Swim",
-      "start": "2026-01-16T16:30:00.000",
-      "end": "2026-01-16T18:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "68850231-7e9f-433d-ad7b-d6627771c3f5",
-      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2026-01-16T18:30:00.000",
-      "end": "2026-01-16T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "1baa3e97-e81e-481a-b119-3679c63701b7",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-01-17T07:30:00.000",
@@ -701,17 +593,71 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "32355b74-e427-41ca-9233-31cde7f61816",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-24T07:30:00.000",
+      "end": "2026-01-24T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "bc69411e-a67d-40ff-90b1-0f1a92697e47",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2026-01-24T09:00:00.000",
+      "end": "2026-01-24T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c73ada2f-6f30-414b-a963-e7bb2380a500",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-24T12:00:00.000",
+      "end": "2026-01-24T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "87022689-6165-4a51-a345-6932b827d5d2",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-01-24T13:15:00.000",
+      "end": "2026-01-24T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d",
+      "title": "MODL / LCLC Women's Only Swim",
+      "start": "2026-01-24T16:00:00.000",
+      "end": "2026-01-24T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3e78ae67-3889-4bc5-9e6d-0f38d1eb486f",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-01-24T17:00:00.000",
+      "end": "2026-01-24T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-01-16T10:02:21.494Z",
+  "lastUpdated": "2026-01-17T10:02:16.109Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-01-16T00:00:00.000Z",
-      "end": "2026-01-24T00:00:00.000Z"
+      "start": "2026-01-17T00:00:00.000Z",
+      "end": "2026-01-25T00:00:00.000Z"
     },
-    "eventCount": 78,
-    "generatedAt": "2026-01-16T10:02:21.494Z",
+    "eventCount": 72,
+    "generatedAt": "2026-01-17T10:02:16.109Z",
     "generatedBy": "GitHub Actions"
   }
 }
