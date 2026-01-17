@@ -137,7 +137,7 @@
     },
     {
       "id": "103ecb1a-15b2-4a74-a0a4-ba3175179a9d",
-      "title": "TOB Free Public Skate",
+      "title": "TOB Free Public Skate ",
       "start": "2026-01-17T16:30:00.000",
       "end": "2026-01-17T18:00:00.000",
       "backgroundColor": "#0000FF",
@@ -217,13 +217,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-01-16T05:06:08.208Z",
+  "lastUpdated": "2026-01-17T05:04:19.156Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 104,
+    "totalEvents": 102,
     "publicEvents": 24,
-    "generatedAt": "2026-01-16T05:06:08.208Z",
+    "generatedAt": "2026-01-17T05:04:19.156Z",
     "generatedBy": "GitHub Actions"
   }
 }
