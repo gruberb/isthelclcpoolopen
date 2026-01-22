@@ -46,7 +46,7 @@
       "allDay": false
     },
     {
-      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "id": "d4ff8067-29b2-4156-940b-8cd7d76a5d7c",
       "title": "Adult Skate",
       "start": "2026-01-22T12:00:00.000",
       "end": "2026-01-22T13:00:00.000",
@@ -172,13 +172,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-01-21T05:08:56.217Z",
+  "lastUpdated": "2026-01-22T05:09:29.606Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 95,
     "publicEvents": 19,
-    "generatedAt": "2026-01-21T05:08:56.217Z",
+    "generatedAt": "2026-01-22T05:09:29.606Z",
     "generatedBy": "GitHub Actions"
   }
 }
