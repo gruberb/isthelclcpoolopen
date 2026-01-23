@@ -1,4 +1,4 @@
-import { CONSTANTS } from "./constants";
+import { CONSTANTS, ACCESS_TYPES, ACCESS_TYPE_LABELS } from "./constants";
 
 const MAX_GAP_MINUTES = 15;
 
@@ -11,8 +11,8 @@ export function isSwimmingEvent(event) {
   const title = event.title || "";
   const lower = title.toLowerCase();
 
-  // Always include "Busy" events
-  if (title === CONSTANTS.SPECIAL_EVENTS.BUSY) {
+  // Always include closed events (Busy, Pool Party, etc.)
+  if (matchesAny(title, CONSTANTS.ACCESS_CLOSED)) {
     return true;
   }
 
@@ -28,12 +28,8 @@ export function isSwimmingEvent(event) {
     return true;
   }
 
-  // For events without blue background, check keywords
-  const hasSwimKeyword = CONSTANTS.SWIM_KEYWORDS.some((keyword) =>
-    lower.includes(keyword),
-  );
-
-  return hasSwimKeyword;
+  // For events without blue background, check for "swim" keyword
+  return lower.includes(CONSTANTS.FALLBACK_KEYWORDS.SWIM);
 }
 
 /**
@@ -52,20 +48,10 @@ function matchesAny(title, keywords) {
   return lowerTitle.includes(keywords);
 }
 
-/**
- * Check if the title mentions Play Pool being open
- * @param {string} title - Event title
- * @returns {boolean} - Whether play pool is open
- */
 function isPlayPoolOpen(title) {
   const lowerTitle = title.toLowerCase();
-
-  // Check for various ways of mentioning play pool is open
   return (
-    matchesAny(title, CONSTANTS.KEYWORDS.PLAY_OPEN) ||
-    matchesAny(title, CONSTANTS.KEYWORDS.PLAY_POOL) ||
-    matchesAny(title, CONSTANTS.KEYWORDS.PLAY_POOLS) ||
-    matchesAny(title, CONSTANTS.KEYWORDS.PLAY_THERAPY) ||
+    matchesAny(title, CONSTANTS.FALLBACK_KEYWORDS.PLAY_THERAPY) ||
     (lowerTitle.includes("play") && lowerTitle.includes("open"))
   );
 }
@@ -93,33 +79,30 @@ export function analyzeEvent(event) {
   const title = event.title;
   const lowerTitle = title.toLowerCase();
 
-  // Check if this is a special event (closed to public)
-  const specialEventValues = Object.values(CONSTANTS.SPECIAL_EVENTS);
-  if (specialEventValues.includes(title)) {
+  // Check if this is a closed event
+  if (matchesAny(title, CONSTANTS.ACCESS_CLOSED)) {
     return {
       lanes: false,
       kids: false,
       membersOnly: false,
       restrictedAccess: false,
       closedToPublic: true,
-      type: CONSTANTS.EVENT_TYPES.PRIVATE_CLOSED,
+      type: ACCESS_TYPE_LABELS[ACCESS_TYPES.CLOSED],
       details: { lanes: 0 },
     };
   }
 
   // Check for lane availability - priority order matters
   let lanes = false;
-  if (
-    matchesAny(title, CONSTANTS.LANES_ALWAYS_CLOSED) ||
-    matchesAny(title, CONSTANTS.KEYWORDS.LAP_POOL_ACTIVITIES)
-  ) {
+  if (matchesAny(title, CONSTANTS.LANES_ALWAYS_CLOSED)) {
     lanes = false;
   } else if (matchesAny(title, CONSTANTS.LANES_ALWAYS_OPEN)) {
     lanes = true;
   } else {
     // If not in either list, check for lane mentions
     const laneInfo = getLaneCount(title);
-    lanes = laneInfo.hasLanes || matchesAny(title, CONSTANTS.KEYWORDS.LANE);
+    lanes =
+      laneInfo.hasLanes || matchesAny(title, CONSTANTS.FALLBACK_KEYWORDS.LANE);
   }
 
   // Check for kids pool availability - priority order matters
@@ -132,14 +115,12 @@ export function analyzeEvent(event) {
     // Special handling for when play pool is explicitly mentioned as open
     kids = true;
   } else if (
-    matchesAny(title, CONSTANTS.KEYWORDS.RECREATIONAL) &&
+    matchesAny(title, CONSTANTS.FALLBACK_KEYWORDS.RECREATIONAL) &&
     !lowerTitle.includes("no play")
   ) {
-    // Recreational swim typically includes play pool unless specified otherwise
     kids = true;
   } else {
-    // For events not in either list, check for keywords
-    kids = matchesAny(title, CONSTANTS.KEYWORDS.FAMILY);
+    kids = matchesAny(title, CONSTANTS.FALLBACK_KEYWORDS.FAMILY);
   }
 
   // Access restrictions
@@ -152,15 +133,15 @@ export function analyzeEvent(event) {
   ]);
 
   // Determine restriction type
-  let restrictionType = CONSTANTS.EVENT_TYPES.REGULAR;
+  let restrictionType = ACCESS_TYPE_LABELS[ACCESS_TYPES.PUBLIC];
   if (matchesAny(title, CONSTANTS.ACCESS_WOMENS)) {
-    restrictionType = CONSTANTS.EVENT_TYPES.WOMENS_ONLY_FULL;
+    restrictionType = ACCESS_TYPE_LABELS[ACCESS_TYPES.WOMENS];
   } else if (matchesAny(title, CONSTANTS.ACCESS_SENIORS)) {
-    restrictionType = CONSTANTS.EVENT_TYPES.SENIOR_ONLY_60;
+    restrictionType = ACCESS_TYPE_LABELS[ACCESS_TYPES.SENIORS];
   } else if (isSensory) {
-    restrictionType = CONSTANTS.EVENT_TYPES.SENSORY_SWIM;
+    restrictionType = ACCESS_TYPE_LABELS[ACCESS_TYPES.SENSORY];
   } else if (membersOnly) {
-    restrictionType = CONSTANTS.EVENT_TYPES.MEMBERS_ONLY;
+    restrictionType = ACCESS_TYPE_LABELS[ACCESS_TYPES.MEMBERS];
   }
 
   // Get lane count
