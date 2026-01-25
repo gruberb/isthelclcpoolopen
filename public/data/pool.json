@@ -1,60 +1,6 @@
 {
   "data": [
     {
-      "id": "32355b74-e427-41ca-9233-31cde7f61816",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-01-24T07:30:00.000",
-      "end": "2026-01-24T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "bc69411e-a67d-40ff-90b1-0f1a92697e47",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
-      "start": "2026-01-24T09:00:00.000",
-      "end": "2026-01-24T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c73ada2f-6f30-414b-a963-e7bb2380a500",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-01-24T12:00:00.000",
-      "end": "2026-01-24T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "87022689-6165-4a51-a345-6932b827d5d2",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-01-24T13:15:00.000",
-      "end": "2026-01-24T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d",
-      "title": "MODL / LCLC Women's Only Swim",
-      "start": "2026-01-24T16:00:00.000",
-      "end": "2026-01-24T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "3e78ae67-3889-4bc5-9e6d-0f38d1eb486f",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-01-24T17:00:00.000",
-      "end": "2026-01-24T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "f9e143a1-bd49-4aeb-8cf6-9a903e42789c",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-01-25T07:30:00.000",
@@ -656,17 +602,98 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "8ebc358c-ac74-42b8-be84-254371c13d8f",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-02-01T07:30:00.000",
+      "end": "2026-02-01T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "69ace504-8b0f-4b0e-9c83-b9a62d0530de",
+      "title": "Lesson & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2026-02-01T09:00:00.000",
+      "end": "2026-02-01T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9ce90226-e0c0-4054-b0fe-3cd7907913ce",
+      "title": "Lifesaving Sport - Only Therapy Pool Available",
+      "start": "2026-02-01T11:30:00.000",
+      "end": "2026-02-01T12:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2f6fdbe7-7f87-4341-9148-2654263f3912",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-02-01T12:45:00.000",
+      "end": "2026-02-01T15:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e3858071-5f58-4ed1-a189-4590b31c04f9",
+      "title": "Sea Cadets Pool Rental",
+      "start": "2026-02-01T15:30:00.000",
+      "end": "2026-02-01T16:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "27798bc7-4a11-4e0b-b011-be2e2f87dbe1",
+      "title": "Royal Canadian Sea Cadet Corp 62 ",
+      "start": "2026-02-01T15:30:00.000",
+      "end": "2026-02-01T16:30:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
+      "id": "656e23d2-a0dd-40ce-a4ee-1317e52787ab",
+      "title": "Sensory Swim",
+      "start": "2026-02-01T17:00:00.000",
+      "end": "2026-02-01T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5956c765-4c7f-42f6-b1c1-e95d702f8fcd",
+      "title": "Cudas Using 3 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "start": "2026-02-01T18:00:00.000",
+      "end": "2026-02-01T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e96318d9-99da-4d75-9bfb-4494ca185434",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-02-01T19:00:00.000",
+      "end": "2026-02-01T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-01-24T10:02:12.273Z",
+  "lastUpdated": "2026-01-25T10:02:15.885Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-01-24T00:00:00.000Z",
-      "end": "2026-02-01T00:00:00.000Z"
+      "start": "2026-01-25T00:00:00.000Z",
+      "end": "2026-02-02T00:00:00.000Z"
     },
-    "eventCount": 73,
-    "generatedAt": "2026-01-24T10:02:12.273Z",
+    "eventCount": 76,
+    "generatedAt": "2026-01-25T10:02:15.885Z",
     "generatedBy": "GitHub Actions"
   }
 }
