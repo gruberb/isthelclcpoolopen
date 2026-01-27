@@ -10,16 +10,16 @@
       "allDay": false
     },
     {
-      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "id": "39b15138-8e77-4635-aa87-8fdd37a92b46",
       "title": "Adult Skate",
       "start": "2026-01-26T12:00:00.000",
-      "end": "2026-01-26T13:00:00.000",
+      "end": "2026-01-26T13:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     },
     {
-      "id": "567bc447-5066-46a0-b754-f33f6cd224c9",
+      "id": "f222431f-fe22-4646-8b62-bfb465835c84",
       "title": "Public Skate",
       "start": "2026-01-27T10:30:00.000",
       "end": "2026-01-27T11:45:00.000",
@@ -28,7 +28,7 @@
       "allDay": false
     },
     {
-      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "id": "d96d29d3-15cf-4ba7-9d11-c9dc4f4acfdd",
       "title": "Adult Skate",
       "start": "2026-01-27T12:00:00.000",
       "end": "2026-01-27T13:00:00.000",
@@ -37,7 +37,7 @@
       "allDay": false
     },
     {
-      "id": "567bc447-5066-46a0-b754-f33f6cd224c9",
+      "id": "bc5fba6b-4976-402f-9c7b-f0b5874caed2",
       "title": "Public Skate",
       "start": "2026-01-28T10:30:00.000",
       "end": "2026-01-28T11:45:00.000",
@@ -46,7 +46,7 @@
       "allDay": false
     },
     {
-      "id": "a27010f8-4f14-4738-8a78-c1a6cd2fb539",
+      "id": "c8ade65b-e3bb-49f1-98a3-afa26d3a9079",
       "title": "Adult Skate",
       "start": "2026-01-28T12:00:00.000",
       "end": "2026-01-28T13:00:00.000",
@@ -199,13 +199,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-01-26T05:12:19.711Z",
+  "lastUpdated": "2026-01-27T05:08:45.969Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 99,
+    "totalEvents": 98,
     "publicEvents": 22,
-    "generatedAt": "2026-01-26T05:12:19.711Z",
+    "generatedAt": "2026-01-27T05:08:45.969Z",
     "generatedBy": "GitHub Actions"
   }
 }
