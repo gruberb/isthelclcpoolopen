@@ -1,87 +1,6 @@
 {
   "data": [
     {
-      "id": "0068d536-302b-4c01-be8a-150db48020bb",
-      "title": "Members Swim",
-      "start": "2026-02-03T06:30:00.000",
-      "end": "2026-02-03T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "05a2e3fe-6080-4234-a099-929177938aee",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy ",
-      "start": "2026-02-03T07:30:00.000",
-      "end": "2026-02-03T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "35560de7-70da-4e3e-bcbe-4d5e5b06da20",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-02-03T10:00:00.000",
-      "end": "2026-02-03T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f9a28ba2-0e8e-4a89-aa76-8fad7ef7ecb4",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-02-03T11:00:00.000",
-      "end": "2026-02-03T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ade34642-5bf2-4aeb-8166-1515f5fdccfe",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-02-03T12:00:00.000",
-      "end": "2026-02-03T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e8cf1bf3-a61d-4ed2-9760-fc03b6bb8f2f",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-02-03T13:00:00.000",
-      "end": "2026-02-03T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7cc32102-1d8a-4878-bca0-16ebea192159",
-      "title": "Lessons and Lanes - 2 Lanes & Therapy Pool Open",
-      "start": "2026-02-03T16:00:00.000",
-      "end": "2026-02-03T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "50e21f4c-3ce2-4adc-b1f1-6feec272e8ec",
-      "title": "Bronze Medallion & Tri Club using Lap Pool - Play & Therapy Pools Open",
-      "start": "2026-02-03T19:00:00.000",
-      "end": "2026-02-03T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "63e029be-2f87-4b83-a26f-3f41b1796514",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-02-03T20:00:00.000",
-      "end": "2026-02-03T21:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "17c4e308-3dbc-4cd9-ab37-f224bc0d2738",
       "title": "Members Swim",
       "start": "2026-02-04T06:30:00.000",
@@ -391,7 +310,7 @@
       "id": "bf33ab2b-fd9e-4b66-bb21-c2943785bb1c",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-02-07T12:00:00.000",
-      "end": "2026-02-07T13:00:00.000",
+      "end": "2026-02-07T13:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -399,7 +318,7 @@
     {
       "id": "77ec4286-d45e-45c1-9ef6-c8ceb3c7564f",
       "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-02-07T13:00:00.000",
+      "start": "2026-02-07T14:00:00.000",
       "end": "2026-02-07T16:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -683,17 +602,116 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "3426242c-1f7a-4525-aa56-1eecdc3fa9f8",
+      "title": "Members Swim",
+      "start": "2026-02-11T06:30:00.000",
+      "end": "2026-02-11T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8902ed82-04c9-43ab-b1b8-a48a61796473",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-02-11T07:30:00.000",
+      "end": "2026-02-11T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9daaa144-20ad-4014-9636-5e4f6dee3b21",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2026-02-11T10:00:00.000",
+      "end": "2026-02-11T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2852d92a-98b9-4b29-ba6d-71767a6ce7c4",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-02-11T11:00:00.000",
+      "end": "2026-02-11T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "40df74d5-ec62-459d-80a9-114c0ea59ed2",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-02-11T12:00:00.000",
+      "end": "2026-02-11T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1ab58362-9f62-433a-892c-344fc7f735bb",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-02-11T13:00:00.000",
+      "end": "2026-02-11T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7caab449-8161-4f00-ba3a-cf51bf496c7f",
+      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
+      "start": "2026-02-11T15:30:00.000",
+      "end": "2026-02-11T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0861b750-dc78-46d0-b540-a8c94dfc4ae9",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pools Open",
+      "start": "2026-02-11T16:00:00.000",
+      "end": "2026-02-11T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3b0a59d0-3818-4df1-9442-05fdbf1ec2f2",
+      "title": "Bronze Cross & Lessons Using Lap & Play Pools - Therapy Pools Open",
+      "start": "2026-02-11T17:00:00.000",
+      "end": "2026-02-11T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2f42abd4-3dde-4f30-915b-4f6cc9597a6e",
+      "title": "Aquafit Using Lap Pool - Play & Therapy Pools Open",
+      "start": "2026-02-11T19:00:00.000",
+      "end": "2026-02-11T19:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "223421e3-df51-4485-b07c-22cf9db40880",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-02-11T20:00:00.000",
+      "end": "2026-02-11T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-02-03T10:10:46.335Z",
+  "lastUpdated": "2026-02-04T10:12:41.374Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-02-03T00:00:00.000Z",
-      "end": "2026-02-11T00:00:00.000Z"
+      "start": "2026-02-04T00:00:00.000Z",
+      "end": "2026-02-12T00:00:00.000Z"
     },
-    "eventCount": 76,
-    "generatedAt": "2026-02-03T10:10:46.335Z",
+    "eventCount": 78,
+    "generatedAt": "2026-02-04T10:12:41.374Z",
     "generatedBy": "GitHub Actions"
   }
 }
