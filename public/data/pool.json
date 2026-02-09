@@ -1,78 +1,6 @@
 {
   "data": [
     {
-      "id": "5a44788b-3516-437b-a195-e5a62a991c48",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-02-08T07:30:00.000",
-      "end": "2026-02-08T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "74ab0d81-a3e6-4e41-92d0-acd1fb20f4e5",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
-      "start": "2026-02-08T09:00:00.000",
-      "end": "2026-02-08T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ad5f6acf-7562-4e76-9472-f0bcb3d9072c",
-      "title": "Lifesaving Sport - Only Therapy Pool Available",
-      "start": "2026-02-08T11:30:00.000",
-      "end": "2026-02-08T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9b8dff95-e3e5-4ff6-b238-ca6589e8cfe7",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-02-08T12:45:00.000",
-      "end": "2026-02-08T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "5f3e32f7-e639-46b8-afaf-b56bbf02e182",
-      "title": "Paul Cogan",
-      "start": "2026-02-08T16:00:00.000",
-      "end": "2026-02-08T17:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
-      "id": "c5e47f2c-50c9-45f2-999a-db71ddcc0f08",
-      "title": "Sensory Swim",
-      "start": "2026-02-08T17:00:00.000",
-      "end": "2026-02-08T17:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "081f20d5-7518-47e5-9bd9-eb06d2ae7eb2",
-      "title": "Cudas Using 3 Lanes - 1 Lane, Plat & Therapy Pools Open",
-      "start": "2026-02-08T18:00:00.000",
-      "end": "2026-02-08T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c7136d8e-5983-4bdd-8166-f1aad167f085",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-02-08T19:00:00.000",
-      "end": "2026-02-08T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "3426242c-1f7a-4525-aa56-1eecdc3fa9f8",
       "title": "Members Swim",
       "start": "2026-02-09T06:30:00.000",
@@ -478,7 +406,7 @@
       "allDay": false
     },
     {
-      "id": "318ebe87-8c02-4f0c-9f94-5e456e0f7ea4",
+      "id": "efaefa0c-6328-46c1-89cc-1bb7be0c3579",
       "title": "Private Rental - SSRCE / Pools Closed to the Public",
       "start": "2026-02-13T11:30:00.000",
       "end": "2026-02-13T12:30:00.000",
@@ -487,7 +415,7 @@
       "allDay": false
     },
     {
-      "id": "efaefa0c-6328-46c1-89cc-1bb7be0c3579",
+      "id": "318ebe87-8c02-4f0c-9f94-5e456e0f7ea4",
       "title": "Private Rental - SSRCE / Pools Closed to the Public",
       "start": "2026-02-13T11:30:00.000",
       "end": "2026-02-13T12:30:00.000",
@@ -656,17 +584,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "f0e74499-630d-48c2-bbc6-d5fa6a6e9a03",
+      "title": "Facility Closed - Heritage Day",
+      "start": "2026-02-16T08:00:00.000",
+      "end": "2026-02-16T18:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-02-08T10:03:15.923Z",
+  "lastUpdated": "2026-02-09T10:21:09.628Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-02-08T00:00:00.000Z",
-      "end": "2026-02-16T00:00:00.000Z"
+      "start": "2026-02-09T00:00:00.000Z",
+      "end": "2026-02-17T00:00:00.000Z"
     },
-    "eventCount": 73,
-    "generatedAt": "2026-02-08T10:03:15.923Z",
+    "eventCount": 66,
+    "generatedAt": "2026-02-09T10:21:09.628Z",
     "generatedBy": "GitHub Actions"
   }
 }
