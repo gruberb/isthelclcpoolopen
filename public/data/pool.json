@@ -1,60 +1,6 @@
 {
   "data": [
     {
-      "id": "553633f7-0e4a-4fd9-9100-d6e18026969f",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-03-07T07:30:00.000",
-      "end": "2026-03-07T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "15c5260a-a3ae-4795-ba30-745a926ca2b5",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
-      "start": "2026-03-07T09:00:00.000",
-      "end": "2026-03-07T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "73d77c41-5a68-4bac-8600-5c4ca0f068fc",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-03-07T12:00:00.000",
-      "end": "2026-03-07T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b8409701-7a6d-4ae5-aa3e-a7eab5e474e7",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-03-07T13:00:00.000",
-      "end": "2026-03-07T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d",
-      "title": "MODL / LCLC Women's Only Swim",
-      "start": "2026-03-07T16:00:00.000",
-      "end": "2026-03-07T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "cf2f6c4d-4230-4e12-ab30-da015e272dd5",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-03-07T17:00:00.000",
-      "end": "2026-03-07T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "391be3e6-7db3-4c60-bd05-dcb951fdd265",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-03-08T07:30:00.000",
@@ -620,17 +566,62 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "0823517d-0544-42b1-ae17-ef0f28c92f8f",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-03-15T07:30:00.000",
+      "end": "2026-03-15T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1dd18264-f56f-4ce7-a363-877ca3a5ee4d",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-03-15T12:00:00.000",
+      "end": "2026-03-15T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "bdff9346-69fb-402f-85a1-f3e46108b5b3",
+      "title": "Native Council",
+      "start": "2026-03-15T16:00:00.000",
+      "end": "2026-03-15T17:00:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
+      "id": "d8d049bc-05bd-42f6-b201-6743673061dc",
+      "title": "Sensory Swim",
+      "start": "2026-03-15T17:00:00.000",
+      "end": "2026-03-15T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "29f1c24d-3573-444b-86ba-b2003ad8c01a",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-03-15T18:00:00.000",
+      "end": "2026-03-15T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-03-07T10:02:33.469Z",
+  "lastUpdated": "2026-03-08T10:02:52.676Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-03-07T00:00:00.000Z",
-      "end": "2026-03-15T00:00:00.000Z"
+      "start": "2026-03-08T00:00:00.000Z",
+      "end": "2026-03-16T00:00:00.000Z"
     },
-    "eventCount": 69,
-    "generatedAt": "2026-03-07T10:02:33.469Z",
+    "eventCount": 68,
+    "generatedAt": "2026-03-08T10:02:52.676Z",
     "generatedBy": "GitHub Actions"
   }
 }
