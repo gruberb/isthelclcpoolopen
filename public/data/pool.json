@@ -1,78 +1,6 @@
 {
   "data": [
     {
-      "id": "6b37dd53-e118-4082-9754-996555d4b1b8",
-      "title": "Recreational Swim - 4 Lanes & Play Pool Open - Therapy Pool Closed",
-      "start": "2026-03-28T07:30:00.000",
-      "end": "2026-03-28T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "bac93906-c532-420a-8430-6bd6c40638f7",
-      "title": "Lessons & Lanes - 2 Lanes Open - Play & Therapy Pools Closed",
-      "start": "2026-03-28T09:00:00.000",
-      "end": "2026-03-28T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "66ba79b8-73e5-4eb1-bbe5-69352bd00c7f",
-      "title": "Recreational Swim - 4 Lanes & Play Pool Open - Therapy Pool Closed",
-      "start": "2026-03-28T12:00:00.000",
-      "end": "2026-03-28T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "3b285911-f289-484f-a2b2-be37c3aaf5ea",
-      "title": "Public Swim - No Lanes, Lap & Play Pools Open - Therapy Pool Closed",
-      "start": "2026-03-28T13:00:00.000",
-      "end": "2026-03-28T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "052a65ae-933e-4701-9d76-ea68cafeee29",
-      "title": "MODL / LCLC Women's Only Swim - Therapy Pool Closed",
-      "start": "2026-03-28T16:00:00.000",
-      "end": "2026-03-28T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "43adcc79-7aab-4760-a521-80b3547ebc5c",
-      "title": "Matt DeLong - Candle Box Kayaking",
-      "start": "2026-03-28T17:30:00.000",
-      "end": "2026-03-28T19:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b0aa630c-415e-49cf-b7e2-eb048f309e5b",
-      "title": "Private Rental In Lap Pool - Play Pool Open - Therapy Pool Closed",
-      "start": "2026-03-28T17:30:00.000",
-      "end": "2026-03-28T19:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "89e5aebe-1151-47be-99e5-42078b5e5925",
-      "title": "Public Swim - No Lanes, Lap & Play Pools Open - Therapy Pool Closed",
-      "start": "2026-03-28T19:30:00.000",
-      "end": "2026-03-28T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "f0118373-8c4b-4781-a48e-2001d2003569",
       "title": "Recreational Swim - 4 Lanes & Play Pool Open - Therapy Pool Closed",
       "start": "2026-03-29T07:30:00.000",
@@ -521,17 +449,53 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "488de607-4dce-441d-aa0a-43264c02a8d7",
+      "title": "Easter Sunday - Facility Open 12 pm - 5 pm",
+      "start": "2026-04-05T06:00:00.000",
+      "end": "2026-04-05T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8bd97ac8-3630-4d65-9027-492f700a6d06",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-04-05T12:00:00.000",
+      "end": "2026-04-05T14:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "535cc6a3-e092-4996-9163-e89ca3b9d761",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-04-05T14:30:00.000",
+      "end": "2026-04-05T16:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ade8f961-96a6-4a46-869c-593afa92acc6",
+      "title": "Easter Sunday - Facility Open 12 pm - 5 pm",
+      "start": "2026-04-05T17:00:00.000",
+      "end": "2026-04-05T23:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-03-28T10:06:30.259Z",
+  "lastUpdated": "2026-03-29T10:07:01.344Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-03-28T00:00:00.000Z",
-      "end": "2026-04-05T00:00:00.000Z"
+      "start": "2026-03-29T00:00:00.000Z",
+      "end": "2026-04-06T00:00:00.000Z"
     },
-    "eventCount": 58,
-    "generatedAt": "2026-03-28T10:06:30.259Z",
+    "eventCount": 54,
+    "generatedAt": "2026-03-29T10:07:01.344Z",
     "generatedBy": "GitHub Actions"
   }
 }
