@@ -1,78 +1,6 @@
 {
   "data": [
     {
-      "id": "f0118373-8c4b-4781-a48e-2001d2003569",
-      "title": "Recreational Swim - 4 Lanes & Play Pool Open - Therapy Pool Closed",
-      "start": "2026-03-29T07:30:00.000",
-      "end": "2026-03-29T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "206c20fa-6e88-4c69-b834-eba5dd159b20",
-      "title": "Lesson and Lanes - 2 Lanes Open - Play & Therapy Pools Closed",
-      "start": "2026-03-29T09:00:00.000",
-      "end": "2026-03-29T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "04fd835b-3542-40e3-a1b2-32724e4a0663",
-      "title": "Lifesaving Sport - No Pools Available ",
-      "start": "2026-03-29T11:30:00.000",
-      "end": "2026-03-29T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "73652be8-0349-4474-bcc2-8ba0edc715d0",
-      "title": "Public Swim - No Lanes, Lap & Play Pools Open - Therapy Pools Closed",
-      "start": "2026-03-29T12:45:00.000",
-      "end": "2026-03-29T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2bf8e49b-1325-4f84-96d0-b9ec9a76e39e",
-      "title": "Pool Rental Time",
-      "start": "2026-03-29T16:00:00.000",
-      "end": "2026-03-29T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "77bfc9e3-615e-4a3c-b7c3-e2ed57af867b",
-      "title": "Sensory Swim - Therapy Pool Closed",
-      "start": "2026-03-29T17:00:00.000",
-      "end": "2026-03-29T17:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9d3881cc-2921-4e3d-96e1-2483bc79eb2f",
-      "title": "Pools Closed to the Public for MoDL Multisport -  Cudas Using 3 Lanes",
-      "start": "2026-03-29T18:00:00.000",
-      "end": "2026-03-29T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a095882a-8d95-4fdc-8275-4f288f0c8243",
-      "title": "Recreational Swim - 4 Lanes & Play Pool Open - Therapy Pool Closed",
-      "start": "2026-03-29T19:00:00.000",
-      "end": "2026-03-29T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "8dee6991-290d-4732-b95b-718faa964bf0",
       "title": "Members Swim - Therapy Pool Closed",
       "start": "2026-03-30T06:30:00.000",
@@ -485,17 +413,71 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "1d523b8c-2417-4416-be88-40c8eda256f1",
+      "title": "Easter Monday - Facility open 12 pm - 5 pm",
+      "start": "2026-04-06T06:00:00.000",
+      "end": "2026-04-06T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3e8896be-a81f-4cbe-a106-d9c2831f1c66",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-04-06T12:00:00.000",
+      "end": "2026-04-06T14:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "46eccbc5-e110-4306-be03-3f11b9e11a4b",
+      "title": "Public Swim",
+      "start": "2026-04-06T14:30:00.000",
+      "end": "2026-04-06T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "10b6b2b8-5824-4e8a-9196-68d3c63a6f8b",
+      "title": "Aqua Dance in Lap Pool - Other Pools Not Available",
+      "start": "2026-04-06T15:30:00.000",
+      "end": "2026-04-06T16:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3528ceac-0e86-4426-b02b-95b0961b9574",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-04-06T16:15:00.000",
+      "end": "2026-04-06T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "fd236f27-a792-4b34-b352-92f0eb38b9b1",
+      "title": "Easter Monday - Facility Open 12 pm - 5 pm",
+      "start": "2026-04-06T17:00:00.000",
+      "end": "2026-04-06T22:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-03-29T10:07:01.344Z",
+  "lastUpdated": "2026-03-30T10:26:53.099Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-03-29T00:00:00.000Z",
-      "end": "2026-04-06T00:00:00.000Z"
+      "start": "2026-03-30T00:00:00.000Z",
+      "end": "2026-04-07T00:00:00.000Z"
     },
-    "eventCount": 54,
-    "generatedAt": "2026-03-29T10:07:01.344Z",
+    "eventCount": 52,
+    "generatedAt": "2026-03-30T10:26:53.099Z",
     "generatedBy": "GitHub Actions"
   }
 }
