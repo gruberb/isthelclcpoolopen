@@ -74,9 +74,18 @@
     },
     {
       "id": "a43b7571-a954-46c7-b00e-fc23d1f8223d",
-      "title": "Toonie Public Skate - Easter Theme",
+      "title": " Public Skate - Easter Theme",
       "start": "2026-04-04T14:00:00.000",
       "end": "2026-04-04T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d71f9205-69b4-4e9b-85d2-23f8cc98ad92",
+      "title": "Public Skate",
+      "start": "2026-04-05T12:00:00.000",
+      "end": "2026-04-05T13:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -109,13 +118,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-03-31T05:33:12.831Z",
+  "lastUpdated": "2026-04-01T05:40:05.429Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 49,
-    "publicEvents": 12,
-    "generatedAt": "2026-03-31T05:33:12.831Z",
+    "publicEvents": 13,
+    "generatedAt": "2026-04-01T05:40:05.429Z",
     "generatedBy": "GitHub Actions"
   }
 }
