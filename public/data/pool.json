@@ -1,42 +1,6 @@
 {
   "data": [
     {
-      "id": "488de607-4dce-441d-aa0a-43264c02a8d7",
-      "title": "Easter Sunday - Facility Open 12 pm - 5 pm",
-      "start": "2026-04-05T06:00:00.000",
-      "end": "2026-04-05T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "8bd97ac8-3630-4d65-9027-492f700a6d06",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-05T12:00:00.000",
-      "end": "2026-04-05T14:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "535cc6a3-e092-4996-9163-e89ca3b9d761",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-04-05T14:30:00.000",
-      "end": "2026-04-05T16:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ade8f961-96a6-4a46-869c-593afa92acc6",
-      "title": "Easter Sunday - Facility Open 12 pm - 5 pm",
-      "start": "2026-04-05T17:00:00.000",
-      "end": "2026-04-05T23:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "1d523b8c-2417-4416-be88-40c8eda256f1",
       "title": "Easter Monday - Facility open 12 pm - 5 pm",
       "start": "2026-04-06T06:00:00.000",
@@ -557,17 +521,80 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "033acb05-06c2-4db5-9357-1bc365f9b494",
+      "title": "Members Swim",
+      "start": "2026-04-13T06:30:00.000",
+      "end": "2026-04-13T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "159b8a34-b81d-45a5-bd93-90bf16972a87",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-04-13T07:30:00.000",
+      "end": "2026-04-13T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0d1e27f6-bfe7-4ad2-a8b3-13b3bad2225b",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2026-04-13T10:00:00.000",
+      "end": "2026-04-13T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a2e0922c-7e66-4cb7-9313-22abc6f4a75f",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-04-13T11:00:00.000",
+      "end": "2026-04-13T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3fa80487-d8a1-4ab2-840d-c838d45b9568",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-04-13T12:00:00.000",
+      "end": "2026-04-13T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a4bc578c-3f0c-42d8-affa-942450f15920",
+      "title": "Aqua Dance in Lap Pool - Other Pools Not Available",
+      "start": "2026-04-13T17:00:00.000",
+      "end": "2026-04-13T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1fec28cd-ac00-4264-9a8e-a9a707f9b88e",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-04-13T20:00:00.000",
+      "end": "2026-04-13T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-04-05T10:07:45.380Z",
+  "lastUpdated": "2026-04-06T10:22:12.033Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-04-05T00:00:00.000Z",
-      "end": "2026-04-13T00:00:00.000Z"
+      "start": "2026-04-06T00:00:00.000Z",
+      "end": "2026-04-14T00:00:00.000Z"
     },
-    "eventCount": 62,
-    "generatedAt": "2026-04-05T10:07:45.380Z",
+    "eventCount": 65,
+    "generatedAt": "2026-04-06T10:22:12.033Z",
     "generatedBy": "GitHub Actions"
   }
 }
