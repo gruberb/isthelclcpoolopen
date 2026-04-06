@@ -9,16 +9,16 @@ function TabNavigation({ tabs, activeTab, setActiveTab }) {
   };
 
   return (
-    <div className="border-b border-gray-200 mb-4 md:mb-6">
-      <div className="flex gap-4 md:gap-8 justify-center">
+    <div className="mb-4 md:mb-6">
+      <div className="flex gap-2 md:gap-3 justify-center flex-wrap">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => handleTabClick(tab.id)}
-            className={`pb-2 md:pb-3 px-1 border-b-2 transition-colors text-sm font-medium ${
+            className={`px-3 py-1.5 font-display font-bold text-sm uppercase tracking-wider transition-all ${
               activeTab === tab.id
-                ? "border-blue-600 text-blue-600"
-                : "border-transparent text-gray-500 hover:text-blue-500 hover:border-blue-300"
+                ? "bg-brutal-blue text-white border-2 border-brutal-black shadow-brutal-sm"
+                : "border-2 border-transparent text-brutal-black/70 hover:border-brutal-black"
             }`}
           >
             {tab.label}

@@ -7,17 +7,19 @@ function WeekSelector({ selectedWeek, onWeekChange }) {
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <p className="text-lg text-gray-700">When can I go skating</p>
+      <p className="font-display text-base font-bold text-brutal-black uppercase tracking-wider">
+        When can I go skating
+      </p>
       <div className="flex gap-2">
         <button
           onClick={() => {
             onWeekChange(0);
             window.scrollTo(0, 0);
           }}
-          className={`px-6 py-2 text-sm border transition-colors ${
+          className={`brutal-btn px-6 py-2 text-sm ${
             selectedWeek === 0
-              ? "bg-blue-600 text-white border-blue-600"
-              : "bg-white text-gray-700 border-gray-300 hover:border-blue-400 hover:text-blue-600"
+              ? "bg-brutal-blue text-white"
+              : "bg-white text-brutal-black hover:bg-brutal-cream"
           }`}
         >
           This Week
@@ -27,10 +29,10 @@ function WeekSelector({ selectedWeek, onWeekChange }) {
             onWeekChange(1);
             window.scrollTo(0, 0);
           }}
-          className={`px-6 py-2 text-sm border transition-colors ${
+          className={`brutal-btn px-6 py-2 text-sm ${
             selectedWeek === 1
-              ? "bg-blue-600 text-white border-blue-600"
-              : "bg-white text-gray-700 border-gray-300 hover:border-blue-400 hover:text-blue-600"
+              ? "bg-brutal-blue text-white"
+              : "bg-white text-brutal-black hover:bg-brutal-cream"
           }`}
         >
           Next Week

@@ -8,24 +8,35 @@ function StatusBox({
   membersOnly,
   sensory,
 }) {
-  // Determine the appropriate CSS class based on the status
   const getStatusClass = () => {
-    if (!isOpen) return "text-red-600";
-    if (sensory) return "text-teal-600";
-    if (restriction) return "text-purple-700";
-    if (membersOnly) return "text-blue-700";
-    return "text-green-600";
+    if (!isOpen) return "text-brutal-red";
+    if (sensory) return "text-brutal-teal";
+    if (restriction) return "text-brutal-purple";
+    if (membersOnly) return "text-brutal-blue";
+    return "text-brutal-green";
+  };
+
+  const getLeftBorder = () => {
+    if (!isOpen) return "border-l-4 border-l-brutal-red";
+    if (sensory) return "border-l-4 border-l-brutal-teal";
+    if (restriction) return "border-l-4 border-l-brutal-purple";
+    if (membersOnly) return "border-l-4 border-l-brutal-blue";
+    return "border-l-4 border-l-brutal-green";
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 min-w-[250px] flex flex-col items-center">
-      <h2 className="text-xl font-medium text-gray-800 mb-4">{title}</h2>
+    <div className={`brutal-card p-6 min-w-[250px] flex flex-col items-center ${getLeftBorder()}`}>
+      <h2 className="font-display text-lg font-bold text-brutal-black uppercase tracking-wider mb-4">
+        {title}
+      </h2>
       <div
-        className={`text-6xl font-bold my-2 h-16 flex items-center justify-center ${getStatusClass()}`}
+        className={`font-display text-6xl font-bold my-2 h-16 flex items-center justify-center ${getStatusClass()}`}
       >
         {isOpen ? "YES" : "NO"}
       </div>
-      <div className="text-lg text-gray-600 mt-2 h-10">{statusText}</div>
+      <div className="text-sm text-brutal-black/60 mt-2 h-10 font-display uppercase tracking-wide">
+        {statusText}
+      </div>
     </div>
   );
 }

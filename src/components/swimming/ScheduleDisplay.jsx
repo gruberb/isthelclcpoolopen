@@ -27,37 +27,37 @@ function ScheduleDisplay({ data }) {
 
   const getEventClass = (analysis, isCurrent, isPast) => {
     if (isPast) {
-      return "bg-gray-50 border-l-4 border-gray-200 opacity-50";
+      return "border-l-4 border-l-brutal-black/20 opacity-50";
     }
     if (isCurrent) {
       if (analysis.closedToPublic) {
-        return "border-l-4 border-orange-400 bg-orange-50";
+        return "border-l-4 border-l-brutal-orange bg-brutal-yellow/10";
       } else if (analysis.isSensory) {
-        return "border-l-4 border-teal-400 bg-teal-50";
+        return "border-l-4 border-l-brutal-teal bg-brutal-yellow/10";
       } else if (analysis.restrictedAccess) {
-        return "border-l-4 border-purple-400 bg-purple-50";
+        return "border-l-4 border-l-brutal-purple bg-brutal-yellow/10";
       } else if (analysis.membersOnly) {
-        return "border-l-4 border-blue-500 bg-blue-50";
+        return "border-l-4 border-l-brutal-blue bg-brutal-yellow/10";
       } else {
-        return "border-l-4 border-green-400 bg-green-50";
+        return "border-l-4 border-l-brutal-green bg-brutal-yellow/10";
       }
     }
     if (analysis.closedToPublic) {
-      return "border-l-4 border-orange-400 bg-white";
+      return "border-l-4 border-l-brutal-orange";
     } else if (analysis.membersOnly) {
-      return "border-l-4 border-blue-500 bg-white";
+      return "border-l-4 border-l-brutal-blue";
     } else if (analysis.isSensory) {
-      return "border-l-4 border-teal-400 bg-white";
+      return "border-l-4 border-l-brutal-teal";
     } else if (analysis.restrictedAccess) {
-      return "border-l-4 border-purple-400 bg-white";
+      return "border-l-4 border-l-brutal-purple";
     }
-    return "bg-white";
+    return "border-l-4 border-l-transparent";
   };
 
   const getAvailabilityClass = (isAvailable) => {
     return isAvailable
-      ? "text-green-600 font-semibold"
-      : "text-red-600 font-semibold";
+      ? "text-brutal-green font-bold"
+      : "text-brutal-red font-bold";
   };
 
   const getScheduleTitle = () => {
@@ -86,9 +86,9 @@ function ScheduleDisplay({ data }) {
         />
       </div>
 
-      <div className="bg-white rounded-lg shadow-md mb-24 w-full max-w-2xl">
-        <div className="px-6 py-6 text-center border-b border-gray-200">
-          <h2 className="text-2xl font-light text-gray-900 tracking-wide">
+      <div className="border-2 border-brutal-black shadow-brutal mb-24 w-full max-w-2xl">
+        <div className="px-6 py-6 text-center border-b-2 border-brutal-black bg-brutal-cream">
+          <h2 className="font-display text-xl font-bold text-brutal-black uppercase tracking-wider">
             {getScheduleTitle() === "Today"
               ? "Today's Swimming Schedule"
               : getScheduleTitle() === "Tomorrow"
@@ -98,11 +98,11 @@ function ScheduleDisplay({ data }) {
         </div>
 
         {eventsForDate.length === 0 ? (
-          <div className="p-6 text-center text-gray-600">
+          <div className="p-6 text-center text-brutal-black/50 font-display uppercase tracking-wide">
             No swimming events scheduled for this day.
           </div>
         ) : (
-          <div className="space-y-4 p-4">
+          <div className="divide-y divide-brutal-black/10">
             {eventsForDate.map((event) => {
               const now = new Date();
               const analysis = analyzeEvent(event);
@@ -126,65 +126,64 @@ function ScheduleDisplay({ data }) {
               let restrictionColor = "";
               if (analysis.closedToPublic) {
                 restrictionLabel = "Closed to Public";
-                restrictionColor = "text-orange-600";
+                restrictionColor = "bg-brutal-orange text-white";
               } else if (analysis.membersOnly) {
                 restrictionLabel = "Members Only";
-                restrictionColor = "text-blue-600";
+                restrictionColor = "bg-brutal-blue text-white";
               } else if (analysis.isSensory) {
                 restrictionLabel = "Sensory - Quiet";
-                restrictionColor = "text-teal-600";
+                restrictionColor = "bg-brutal-teal text-white";
               } else if (analysis.restrictedAccess) {
                 restrictionLabel =
                   analysis.type === "Women's Only (All Pools)"
                     ? "Women Only"
                     : "Seniors 60+ Only";
-                restrictionColor = "text-purple-600";
+                restrictionColor = "bg-brutal-purple text-white";
               }
 
               return (
                 <div
                   key={`${event.id}-${eventStart.getTime()}`}
                   ref={isCurrent ? currentEventRef : null}
-                  className={`p-4 rounded-md w-full flex flex-col items-center text-center ${getEventClass(
+                  className={`p-4 w-full flex flex-col items-center text-center ${getEventClass(
                     analysis,
                     isCurrent,
                     isPast,
                   )}`}
                 >
-                  <div className="text-lg text-gray-700 font-light">
-                    {formatTime(eventStart)} – {formatTime(eventEnd)}{" "}
+                  <div className="text-sm text-brutal-black/60 font-display tracking-wide">
+                    {formatTime(eventStart)} - {formatTime(eventEnd)}{" "}
                     {isCurrent && (
-                      <span className="ml-2 inline-flex items-center text-green-600">
-                        <span className="w-2 h-2 bg-green-600 rounded-full mr-1" />
+                      <span className="ml-2 brutal-badge bg-brutal-yellow text-brutal-black">
                         NOW
                       </span>
                     )}
                   </div>
 
-                  <div className="text-xl font-medium mt-2 text-gray-800">
+                  <div className="font-display text-base font-bold mt-2 text-brutal-black uppercase tracking-wide">
                     {event.title}
                   </div>
 
-                  <div className="text-sm mt-2 text-gray-600 flex flex-wrap justify-center items-center">
+                  <div className="text-sm mt-2 text-brutal-black/60 flex flex-wrap justify-center items-center font-display uppercase tracking-wider">
                     <span>
                       Lanes:{" "}
                       <span className={getAvailabilityClass(hasLanes)}>
-                        {hasLanes ? "✓" : "✗"}
+                        {hasLanes ? "Y" : "N"}
                       </span>
                     </span>
-                    <span className="mx-2 text-gray-400">|</span>
+                    <span className="mx-2 text-brutal-black/20 font-bold">|</span>
                     <span>
                       Kids:{" "}
                       <span className={getAvailabilityClass(analysis.kids)}>
-                        {analysis.kids ? "✓" : "✗"}
+                        {analysis.kids ? "Y" : "N"}
                       </span>
                     </span>
                   </div>
                   {restrictionLabel && (
                     <span
-                      className={`mt-1 ml-4 font-medium ${restrictionColor}`}
+                      className={`mt-2 brutal-badge ${restrictionColor}`}
                     >
-                      ({restrictionLabel})
+                      {restrictionLabel}
                     </span>
                   )}
                 </div>

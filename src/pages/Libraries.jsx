@@ -30,9 +30,9 @@ function Libraries() {
         title="South Shore Libraries Dashboard"
         subtitle="Library hours and availability information"
       >
-        <div className="bg-red-50 text-red-700 p-4 rounded-md">
+        <div className="border-2 border-brutal-red p-4 text-brutal-red font-display uppercase tracking-wide">
           <p>Error: {error}</p>
-          <p className="mt-2">Refresh the page to try again.</p>
+          <p className="mt-2 text-sm">Refresh the page to try again.</p>
         </div>
       </Layout>
     );

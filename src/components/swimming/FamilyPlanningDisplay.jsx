@@ -65,21 +65,21 @@ function FamilyPlanningDisplay({ data }) {
   const getRestrictionBadge = (analysis) => {
     if (analysis.membersOnly) {
       return (
-        <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-700">
+        <span className="ml-2 brutal-badge bg-brutal-blue text-white">
           Members Only
         </span>
       );
     }
     if (analysis.isSensory) {
       return (
-        <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-teal-100 text-teal-700">
+        <span className="ml-2 brutal-badge bg-brutal-teal text-white">
           Sensory
         </span>
       );
     }
     if (analysis.restrictedAccess) {
       return (
-        <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">
+        <span className="ml-2 brutal-badge bg-brutal-purple text-white">
           {analysis.type === "Women's Only (All Pools)"
             ? "Women Only"
             : "Seniors 60+"}
@@ -92,26 +92,26 @@ function FamilyPlanningDisplay({ data }) {
   const renderSlotCard = (slot, index) => (
     <div
       key={index}
-      className={`border-l-4 ${slot.isNow ? "border-green-500 bg-green-50" : "border-blue-300 bg-white"} p-4 hover:bg-gray-50 transition-colors`}
+      className={`border-l-4 ${slot.isNow ? "border-l-brutal-green bg-brutal-yellow/10" : "border-l-brutal-blue"} p-4 hover:bg-brutal-cream/50 transition-colors`}
     >
       <div className="flex items-start justify-between">
         <div className="flex-1">
-          <div className="text-sm font-medium text-blue-600 mb-1 flex items-center gap-2">
+          <div className="text-sm font-display font-bold text-brutal-blue uppercase tracking-wider mb-1 flex items-center gap-2">
             {formatDate(slot.start)}
             {slot.isNow && (
-              <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-green-500 text-white">
+              <span className="brutal-badge bg-brutal-yellow text-brutal-black">
                 NOW
               </span>
             )}
           </div>
-          <div className="text-base font-medium text-gray-900 mb-1">
+          <div className="text-base font-display font-bold text-brutal-black uppercase tracking-wide mb-1">
             {slot.event.title}
             {getRestrictionBadge(slot.analysis)}
           </div>
-          <div className="text-sm text-gray-600">
-            {formatTime(slot.start)} – {formatTime(slot.end)}
-            <span className="mx-2 text-gray-400">•</span>
-            <span className="font-medium text-gray-700">
+          <div className="text-sm text-brutal-black/60 font-display tracking-wide">
+            {formatTime(slot.start)} - {formatTime(slot.end)}
+            <span className="mx-2 text-brutal-black/20 font-bold">|</span>
+            <span className="font-bold text-brutal-black/80">
               {slot.isNow
                 ? `${formatDuration(slot.remainingMinutes)} remaining`
                 : formatDuration(slot.duration)}
@@ -124,91 +124,83 @@ function FamilyPlanningDisplay({ data }) {
 
   return (
     <div className="max-w-4xl mx-auto mb-24 space-y-8">
-      <div className="bg-white rounded-lg shadow-md overflow-hidden">
-        <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
-          <h3 className="text-lg font-medium text-gray-900">
+      <div className="border-2 border-brutal-black shadow-brutal overflow-hidden">
+        <div className="px-6 py-4 border-b-2 border-brutal-black bg-brutal-cream">
+          <h3 className="font-display text-base font-bold text-brutal-black uppercase tracking-wider">
             When can I go swimming with my kids next?
           </h3>
         </div>
-        <div className="p-4">
+        <div className="divide-y divide-brutal-black/10">
           {nextSlots.length === 0 ? (
-            <div className="text-center py-8 text-gray-500">
+            <div className="text-center py-8 text-brutal-black/50 font-display uppercase tracking-wide">
               No upcoming slots found
             </div>
           ) : (
-            <div className="space-y-3">
-              {nextSlots.map((slot, index) => renderSlotCard(slot, index))}
-            </div>
+            nextSlots.map((slot, index) => renderSlotCard(slot, index))
           )}
         </div>
       </div>
 
-      <div className="bg-white rounded-lg shadow-md overflow-hidden">
-        <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
-          <h3 className="text-lg font-medium text-gray-900">
+      <div className="border-2 border-brutal-black shadow-brutal overflow-hidden">
+        <div className="px-6 py-4 border-b-2 border-brutal-black bg-brutal-cream">
+          <h3 className="font-display text-base font-bold text-brutal-black uppercase tracking-wider">
             When is the next morning swim with the kids?
           </h3>
         </div>
-        <div className="p-4">
+        <div className="divide-y divide-brutal-black/10">
           {membersMorningSlot.length > 0 && (
-            <div className="mb-6">
-              <h4 className="text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wide">
+            <div className="p-4">
+              <h4 className="font-display text-xs font-bold text-brutal-black/70 mb-3 uppercase tracking-widest">
                 Members Only
               </h4>
-              <div className="space-y-3">
+              <div className="divide-y divide-brutal-black/10">
                 {membersMorningSlot.map((slot, index) =>
                   renderSlotCard(slot, index),
                 )}
               </div>
-              <div className="mt-4 mb-4 border-t border-gray-200"></div>
+              <div className="mt-4 border-t-2 border-brutal-black/10"></div>
             </div>
           )}
           {morningSlots.length === 0 ? (
-            <div className="text-center py-8 text-gray-500">
+            <div className="text-center py-8 text-brutal-black/50 font-display uppercase tracking-wide">
               No upcoming slots found
             </div>
           ) : (
-            <div className="space-y-3">
-              {morningSlots.map((slot, index) => renderSlotCard(slot, index))}
-            </div>
+            morningSlots.map((slot, index) => renderSlotCard(slot, index))
           )}
         </div>
       </div>
 
-      <div className="bg-white rounded-lg shadow-md overflow-hidden">
-        <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
-          <h3 className="text-lg font-medium text-gray-900">
+      <div className="border-2 border-brutal-black shadow-brutal overflow-hidden">
+        <div className="px-6 py-4 border-b-2 border-brutal-black bg-brutal-cream">
+          <h3 className="font-display text-base font-bold text-brutal-black uppercase tracking-wider">
             When is the next afternoon swim with the kids?
           </h3>
         </div>
-        <div className="p-4">
+        <div className="divide-y divide-brutal-black/10">
           {afternoonSlots.length === 0 ? (
-            <div className="text-center py-8 text-gray-500">
+            <div className="text-center py-8 text-brutal-black/50 font-display uppercase tracking-wide">
               No upcoming slots found
             </div>
           ) : (
-            <div className="space-y-3">
-              {afternoonSlots.map((slot, index) => renderSlotCard(slot, index))}
-            </div>
+            afternoonSlots.map((slot, index) => renderSlotCard(slot, index))
           )}
         </div>
       </div>
 
-      <div className="bg-white rounded-lg shadow-md overflow-hidden">
-        <div className="px-6 py-4 border-b border-gray-200 bg-gray-50">
-          <h3 className="text-lg font-medium text-gray-900">
+      <div className="border-2 border-brutal-black shadow-brutal overflow-hidden">
+        <div className="px-6 py-4 border-b-2 border-brutal-black bg-brutal-cream">
+          <h3 className="font-display text-base font-bold text-brutal-black uppercase tracking-wider">
             When is the most time I can spend with the kids in the pool?
           </h3>
         </div>
-        <div className="p-4">
+        <div className="divide-y divide-brutal-black/10">
           {longestSlots.length === 0 ? (
-            <div className="text-center py-8 text-gray-500">
+            <div className="text-center py-8 text-brutal-black/50 font-display uppercase tracking-wide">
               No upcoming slots found
             </div>
           ) : (
-            <div className="space-y-3">
-              {longestSlots.map((slot, index) => renderSlotCard(slot, index))}
-            </div>
+            longestSlots.map((slot, index) => renderSlotCard(slot, index))
           )}
         </div>
       </div>

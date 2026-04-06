@@ -29,7 +29,7 @@ function LibrarySchedule({ libraries }) {
     <div className="flex flex-col items-center max-w-4xl mx-auto mb-24">
       <div className="mb-6 w-full max-w-md">
         <select
-          className="w-full px-4 py-2 text-sm bg-white border border-gray-300 hover:border-blue-400 transition-colors focus:border-blue-500"
+          className="w-full px-4 py-2 text-sm bg-white border-2 border-brutal-black font-display font-bold uppercase tracking-wider hover:bg-brutal-cream transition-colors"
           value={selectedLibrary}
           onChange={(e) => setSelectedLibrary(e.target.value)}
         >
@@ -41,65 +41,62 @@ function LibrarySchedule({ libraries }) {
         </select>
       </div>
 
-      <div className="bg-white rounded-lg shadow-md w-full">
-        <div className="px-6 py-6 text-center border-b border-gray-200">
-          <h2 className="text-2xl font-light text-gray-900 tracking-wide mb-3">
+      <div className="border-2 border-brutal-black shadow-brutal w-full">
+        <div className="px-6 py-6 text-center border-b-2 border-brutal-black bg-brutal-cream">
+          <h2 className="font-display text-xl font-bold text-brutal-black uppercase tracking-wider mb-3">
             {library.name}
           </h2>
-          <div className="text-sm text-gray-600 space-y-1">
+          <div className="text-xs text-brutal-black/50 font-display uppercase tracking-wider space-y-1">
             <p>{library.location}</p>
             <p>{library.phone}</p>
           </div>
         </div>
 
-        <div className="p-4">
-          <div className="space-y-3">
-            {days.map((day) => {
-              const isToday = day === today;
-              const hours = library.hours[day];
-              const isClosed = !hours?.open || !hours?.close;
+        <div className="divide-y divide-brutal-black/10">
+          {days.map((day) => {
+            const isToday = day === today;
+            const hours = library.hours[day];
+            const isClosed = !hours?.open || !hours?.close;
 
-              return (
-                <div
-                  key={day}
-                  className={`p-4 rounded-md border-l-4 transition-colors ${
-                    isToday
-                      ? "border-blue-400 bg-blue-50"
-                      : "border-transparent bg-white hover:bg-gray-50"
-                  }`}
-                >
-                  <div className="flex items-center justify-between">
-                    <div className="flex-1">
-                      <div
-                        className={`text-base font-medium capitalize ${
-                          isToday ? "text-blue-600" : "text-gray-900"
-                        }`}
-                      >
-                        {day}
-                        {isToday && (
-                          <span className="ml-2 inline-flex items-center text-xs font-semibold text-blue-600">
-                            <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-1.5" />
-                            TODAY
-                          </span>
-                        )}
-                      </div>
-                    </div>
+            return (
+              <div
+                key={day}
+                className={`p-4 border-l-4 transition-colors ${
+                  isToday
+                    ? "border-l-brutal-blue bg-brutal-yellow/10"
+                    : "border-l-transparent hover:bg-brutal-cream/50"
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex-1">
                     <div
-                      className={`text-sm ${
-                        isClosed
-                          ? "text-red-600 font-semibold"
-                          : "text-gray-700"
+                      className={`font-display text-sm font-bold uppercase tracking-wider ${
+                        isToday ? "text-brutal-blue" : "text-brutal-black"
                       }`}
                     >
-                      {isClosed
-                        ? "Closed"
-                        : `${hours.open.replace(":00", "")} – ${hours.close.replace(":00", "")}`}
+                      {day}
+                      {isToday && (
+                        <span className="ml-2 brutal-badge bg-brutal-blue text-white text-xs">
+                          Today
+                        </span>
+                      )}
                     </div>
                   </div>
+                  <div
+                    className={`text-sm font-display font-bold uppercase tracking-wider ${
+                      isClosed
+                        ? "text-brutal-red"
+                        : "text-brutal-black/70"
+                    }`}
+                  >
+                    {isClosed
+                      ? "Closed"
+                      : `${hours.open.replace(":00", "")} - ${hours.close.replace(":00", "")}`}
+                  </div>
                 </div>
-              );
-            })}
-          </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

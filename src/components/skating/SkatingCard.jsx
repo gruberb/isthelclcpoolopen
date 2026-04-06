@@ -18,38 +18,37 @@ function SkatingCard({ event, isCurrent, isPast }) {
 
   const getCardStyles = () => {
     if (isPast) {
-      return "bg-gray-50 border-l-4 border-gray-200 opacity-50";
+      return "border-l-4 border-l-brutal-black/20 opacity-50";
     }
     if (isCurrent) {
-      return "bg-green-50 border-l-4 border-green-400";
+      return "border-l-4 border-l-brutal-green bg-brutal-yellow/10";
     }
     if (isTodayEvent) {
-      return "bg-blue-50 border-l-4 border-blue-400";
+      return "border-l-4 border-l-brutal-blue";
     }
-    return "bg-white border-l-4 border-blue-300";
+    return "border-l-4 border-l-brutal-blue/40";
   };
 
   return (
     <div
-      className={`p-6 transition-all hover:bg-gray-50 border-gray-200 shadow-sm ${getCardStyles()}`}
+      className={`border-2 border-brutal-black shadow-brutal-sm p-6 transition-all hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none ${getCardStyles()}`}
     >
       <div className="flex flex-col items-center text-center">
-        <div className="text-sm font-medium text-gray-600 mb-2">
+        <div className="text-xs font-display font-bold text-brutal-black/60 mb-2 uppercase tracking-widest">
           {getWeekday(event.start)}, {formatDate(event.start)}
         </div>
 
-        <div className="text-xl font-semibold text-gray-900 mb-2">
+        <div className="font-display text-lg font-bold text-brutal-black uppercase tracking-wide mb-2">
           {event.title}
           {isCurrent && (
-            <span className="ml-2 inline-flex items-center text-xs font-semibold text-green-600">
-              <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-1.5 animate-pulse" />
+            <span className="ml-2 brutal-badge bg-brutal-yellow text-brutal-black text-xs">
               NOW
             </span>
           )}
         </div>
 
-        <div className="text-base text-gray-700">
-          {formatTime(event.start)} – {formatTime(event.end)}
+        <div className="text-sm text-brutal-black/60 font-display tracking-wide">
+          {formatTime(event.start)} - {formatTime(event.end)}
         </div>
       </div>
     </div>

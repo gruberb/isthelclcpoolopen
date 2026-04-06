@@ -55,59 +55,51 @@ function StatusDisplay({ data }) {
   }
 
   const getStatusColor = (status) => {
-    if (!status.isActive) return "text-red-600";
-    if (status.restrictionType === "Sensory Swim") return "text-teal-600";
-    if (status.restrictedAccess) return "text-purple-700";
-    if (status.membersOnly) return "text-blue-700";
-    return "text-green-600";
+    if (!status.isActive) return "text-brutal-red";
+    if (status.restrictionType === "Sensory Swim") return "text-brutal-teal";
+    if (status.restrictedAccess) return "text-brutal-purple";
+    if (status.membersOnly) return "text-brutal-blue";
+    return "text-brutal-green";
   };
 
-  const getTileStyles = (status) => {
-    if (!status.isActive) {
-      return "bg-red-50 border-2 border-red-300 hover:border-red-400";
-    }
-    if (status.restrictionType === "Sensory Swim") {
-      return "bg-teal-50 border-2 border-teal-300 hover:border-teal-400";
-    }
-    if (status.restrictedAccess) {
-      return "bg-purple-50 border-2 border-purple-300 hover:border-purple-400";
-    }
-    if (status.membersOnly) {
-      return "bg-blue-50 border-2 border-blue-300 hover:border-blue-400";
-    }
-    return "bg-green-50 border-2 border-green-300 hover:border-green-400";
+  const getLeftBorder = (status) => {
+    if (!status.isActive) return "border-l-4 border-l-brutal-red";
+    if (status.restrictionType === "Sensory Swim") return "border-l-4 border-l-brutal-teal";
+    if (status.restrictedAccess) return "border-l-4 border-l-brutal-purple";
+    if (status.membersOnly) return "border-l-4 border-l-brutal-blue";
+    return "border-l-4 border-l-brutal-green";
   };
 
   return (
     <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-4 md:mb-6">
       <div
-        className={`rounded-lg shadow-md p-4 md:p-6 min-w-[250px] flex flex-col items-center transition-all ${getTileStyles(statuses.lanesStatus)}`}
+        className={`brutal-card p-4 md:p-6 min-w-[250px] flex flex-col items-center ${getLeftBorder(statuses.lanesStatus)}`}
       >
-        <h2 className="text-xl font-medium text-gray-800 mb-2 md:mb-3">
-          LANE SWIMMING
+        <h2 className="font-display text-lg font-bold text-brutal-black uppercase tracking-wider mb-2 md:mb-3">
+          Lane Swimming
         </h2>
         <div
-          className={`text-6xl font-light my-1 md:my-2 h-16 flex items-center justify-center ${getStatusColor(statuses.lanesStatus)}`}
+          className={`font-display text-6xl font-bold my-1 md:my-2 h-16 flex items-center justify-center ${getStatusColor(statuses.lanesStatus)}`}
         >
           {statuses.lanesStatus.isActive ? "YES" : "NO"}
         </div>
-        <div className="text-lg text-gray-600 mt-1 md:mt-2 text-center">
+        <div className="text-sm text-brutal-black/60 mt-1 md:mt-2 text-center font-display uppercase tracking-wide">
           {formatStatusText(statuses.lanesStatus)}
         </div>
       </div>
 
       <div
-        className={`rounded-lg shadow-md p-4 md:p-6 min-w-[250px] flex flex-col items-center transition-all ${getTileStyles(statuses.kidsStatus)}`}
+        className={`brutal-card p-4 md:p-6 min-w-[250px] flex flex-col items-center ${getLeftBorder(statuses.kidsStatus)}`}
       >
-        <h2 className="text-xl font-medium text-gray-800 mb-2 md:mb-3">
-          KIDS SWIMMING
+        <h2 className="font-display text-lg font-bold text-brutal-black uppercase tracking-wider mb-2 md:mb-3">
+          Kids Swimming
         </h2>
         <div
-          className={`text-6xl font-light my-1 md:my-2 h-16 flex items-center justify-center ${getStatusColor(statuses.kidsStatus)}`}
+          className={`font-display text-6xl font-bold my-1 md:my-2 h-16 flex items-center justify-center ${getStatusColor(statuses.kidsStatus)}`}
         >
           {statuses.kidsStatus.isActive ? "YES" : "NO"}
         </div>
-        <div className="text-lg text-gray-600 mt-1 md:mt-2 text-center">
+        <div className="text-sm text-brutal-black/60 mt-1 md:mt-2 text-center font-display uppercase tracking-wide">
           {formatStatusText(statuses.kidsStatus)}
         </div>
       </div>

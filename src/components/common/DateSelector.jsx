@@ -39,20 +39,20 @@ function DateSelector({ selectedDate, onDateChange }) {
       <div className="flex items-center gap-2 mb-4">
         <button
           onClick={() => onDateChange(dates[0])}
-          className={`px-6 py-2 text-sm border transition-colors ${
+          className={`brutal-btn px-6 py-2 text-sm ${
             selectedDate.toDateString() === dates[0]?.toDateString()
-              ? "bg-blue-600 text-white border-blue-600"
-              : "bg-white text-gray-700 border-gray-300 hover:border-blue-400 hover:text-blue-600"
+              ? "bg-brutal-blue text-white"
+              : "bg-white text-brutal-black hover:bg-brutal-cream"
           }`}
         >
           Today
         </button>
         <button
           onClick={() => onDateChange(dates[1])}
-          className={`px-6 py-2 text-sm border transition-colors ${
+          className={`brutal-btn px-6 py-2 text-sm ${
             selectedDate.toDateString() === dates[1]?.toDateString()
-              ? "bg-blue-600 text-white border-blue-600"
-              : "bg-white text-gray-700 border-gray-300 hover:border-blue-400 hover:text-blue-600"
+              ? "bg-brutal-blue text-white"
+              : "bg-white text-brutal-black hover:bg-brutal-cream"
           }`}
         >
           Tomorrow
@@ -60,7 +60,7 @@ function DateSelector({ selectedDate, onDateChange }) {
       </div>
 
       <select
-        className="px-4 py-2 text-sm bg-white border border-gray-300 hover:border-blue-400 transition-colors focus:border-blue-500"
+        className="px-4 py-2 text-sm bg-white border-2 border-brutal-black font-display font-bold uppercase tracking-wider hover:bg-brutal-cream transition-colors"
         value={selectedDate.toDateString()}
         onChange={(e) => {
           const selected = dates.find(

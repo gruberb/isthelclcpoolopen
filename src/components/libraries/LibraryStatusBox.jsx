@@ -16,31 +16,31 @@ function LibraryStatusBox({ library, status }) {
     }
   };
 
-  const getTileStyles = () => {
-    if (status.isOpen) {
-      return "bg-green-50 border-2 border-green-300 hover:border-green-400";
-    } else {
-      return "bg-red-50 border-2 border-red-300 hover:border-red-400";
-    }
+  const getLeftBorder = () => {
+    return status.isOpen
+      ? "border-l-4 border-l-brutal-green"
+      : "border-l-4 border-l-brutal-red";
   };
 
   const getStatusColor = () => {
-    return status.isOpen ? "text-green-600" : "text-red-600";
+    return status.isOpen ? "text-brutal-green" : "text-brutal-red";
   };
 
   return (
     <div
-      className={`rounded-lg shadow-md p-6 min-w-[250px] flex flex-col items-center transition-all ${getTileStyles()}`}
+      className={`brutal-card p-6 min-w-[250px] flex flex-col items-center ${getLeftBorder()}`}
     >
-      <h2 className="text-xl font-medium text-gray-800 mb-4">{displayName}</h2>
+      <h2 className="font-display text-lg font-bold text-brutal-black uppercase tracking-wider mb-4">
+        {displayName}
+      </h2>
 
       <div
-        className={`text-6xl font-light my-2 h-16 flex items-center justify-center ${getStatusColor()}`}
+        className={`font-display text-6xl font-bold my-2 h-16 flex items-center justify-center ${getStatusColor()}`}
       >
         {status.isOpen ? "YES" : "NO"}
       </div>
 
-      <div className="text-lg text-gray-600 mt-2 text-center">
+      <div className="text-sm text-brutal-black/60 mt-2 text-center font-display uppercase tracking-wide">
         {getStatusText()}
       </div>
     </div>

@@ -41,42 +41,30 @@ function SpecialEventsDisplay({ data }) {
   };
 
   const getBorderColor = (analysis) => {
-    if (analysis.isSensory) {
-      return "border-teal-400";
-    }
-    if (analysis.membersOnly) {
-      return "border-blue-500";
-    }
-    if (analysis.restrictedAccess) {
-      return "border-purple-400";
-    }
-    return "border-gray-300";
+    if (analysis.isSensory) return "border-l-brutal-teal";
+    if (analysis.membersOnly) return "border-l-brutal-blue";
+    if (analysis.restrictedAccess) return "border-l-brutal-purple";
+    return "border-l-brutal-black/30";
   };
 
   const getDateColor = (analysis) => {
-    if (analysis.isSensory) {
-      return "text-teal-600";
-    }
-    if (analysis.membersOnly) {
-      return "text-blue-600";
-    }
-    if (analysis.restrictedAccess) {
-      return "text-purple-600";
-    }
-    return "text-gray-600";
+    if (analysis.isSensory) return "text-brutal-teal";
+    if (analysis.membersOnly) return "text-brutal-blue";
+    if (analysis.restrictedAccess) return "text-brutal-purple";
+    return "text-brutal-black/60";
   };
 
   const getEventTypeBadge = (analysis) => {
     if (analysis.isSensory) {
       return (
-        <span className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-teal-100 text-teal-700">
+        <span className="brutal-badge bg-brutal-teal text-white">
           Sensory - Quiet
         </span>
       );
     }
     if (analysis.membersOnly) {
       return (
-        <span className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-700">
+        <span className="brutal-badge bg-brutal-blue text-white">
           Members Only
         </span>
       );
@@ -84,13 +72,13 @@ function SpecialEventsDisplay({ data }) {
     if (analysis.restrictedAccess) {
       if (analysis.type === "Women's Only (All Pools)") {
         return (
-          <span className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">
+          <span className="brutal-badge bg-brutal-purple text-white">
             Women Only
           </span>
         );
       } else if (analysis.type === "Seniors 60+ Only") {
         return (
-          <span className="inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">
+          <span className="brutal-badge bg-brutal-purple text-white">
             Seniors 60+ Only
           </span>
         );
@@ -102,96 +90,78 @@ function SpecialEventsDisplay({ data }) {
   const getAvailabilityInfo = (analysis) => {
     const items = [];
 
-    if (analysis.lanes) {
-      items.push(
-        <span key="lanes" className="text-green-600 font-semibold">
-          Lanes: ✓
-        </span>
-      );
-    } else {
-      items.push(
-        <span key="lanes" className="text-red-600 font-semibold">
-          Lanes: ✗
-        </span>
-      );
-    }
+    items.push(
+      <span key="lanes" className={`font-bold ${analysis.lanes ? "text-brutal-green" : "text-brutal-red"}`}>
+        Lanes: {analysis.lanes ? "Y" : "N"}
+      </span>
+    );
 
-    if (analysis.kids) {
-      items.push(
-        <span key="kids" className="text-green-600 font-semibold">
-          Kids: ✓
-        </span>
-      );
-    } else {
-      items.push(
-        <span key="kids" className="text-red-600 font-semibold">
-          Kids: ✗
-        </span>
-      );
-    }
+    items.push(
+      <span key="kids" className={`font-bold ${analysis.kids ? "text-brutal-green" : "text-brutal-red"}`}>
+        Kids: {analysis.kids ? "Y" : "N"}
+      </span>
+    );
 
     return items;
   };
 
   return (
     <div className="max-w-4xl mx-auto mb-24">
-      <div className="bg-white rounded-lg shadow-md overflow-hidden">
-        <div className="px-6 py-6 text-center border-b border-gray-200">
-          <h2 className="text-2xl font-light text-gray-900 tracking-wide">
+      <div className="border-2 border-brutal-black shadow-brutal overflow-hidden">
+        <div className="px-6 py-6 text-center border-b-2 border-brutal-black bg-brutal-cream">
+          <h2 className="font-display text-xl font-bold text-brutal-black uppercase tracking-wider">
             Upcoming Special Events
           </h2>
-          <p className="text-sm text-gray-600 mt-1">
+          <p className="text-xs text-brutal-black/50 mt-1 font-display uppercase tracking-wider">
             Sensory, Members Only, Women Only & Seniors 60+
           </p>
         </div>
 
-        <div className="p-4">
+        <div className="divide-y divide-brutal-black/10">
           {specialEvents.length === 0 ? (
-            <div className="text-center py-12 text-gray-500">
+            <div className="text-center py-12 text-brutal-black/50 font-display uppercase tracking-wide">
               No upcoming special events found
             </div>
           ) : (
-            <div className="space-y-3">
-              {specialEvents.map((slot, index) => (
-                <div
-                  key={index}
-                  className={`border-l-4 ${getBorderColor(slot.analysis)} bg-white p-4 hover:bg-gray-50 transition-colors`}
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="flex-1">
-                      <div
-                        className={`text-sm font-medium mb-2 ${getDateColor(slot.analysis)}`}
-                      >
-                        {formatDate(slot.start)}
-                      </div>
-                      <div className="text-base font-medium text-gray-900 mb-2">
-                        {slot.event.title}
-                      </div>
-                      <div className="mb-2">{getEventTypeBadge(slot.analysis)}</div>
-                      <div className="text-sm text-gray-600 mb-2">
-                        {formatTime(slot.start)} – {formatTime(slot.end)}
-                        <span className="mx-2 text-gray-400">•</span>
-                        <span className="font-medium text-gray-700">
-                          {formatDuration(slot.duration)}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-4 text-sm">
-                        {getAvailabilityInfo(slot.analysis).map(
-                          (item, i, arr) => (
-                            <React.Fragment key={i}>
-                              {item}
-                              {i < arr.length - 1 && (
-                                <span className="text-gray-400">|</span>
-                              )}
-                            </React.Fragment>
-                          ),
-                        )}
-                      </div>
+            specialEvents.map((slot, index) => (
+              <div
+                key={index}
+                className={`border-l-4 ${getBorderColor(slot.analysis)} p-4 hover:bg-brutal-cream/50 transition-colors`}
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex-1">
+                    <div
+                      className={`text-sm font-display font-bold mb-2 uppercase tracking-wider ${getDateColor(slot.analysis)}`}
+                    >
+                      {formatDate(slot.start)}
+                    </div>
+                    <div className="font-display text-base font-bold text-brutal-black uppercase tracking-wide mb-2">
+                      {slot.event.title}
+                    </div>
+                    <div className="mb-2">{getEventTypeBadge(slot.analysis)}</div>
+                    <div className="text-sm text-brutal-black/60 mb-2 font-display tracking-wide">
+                      {formatTime(slot.start)} - {formatTime(slot.end)}
+                      <span className="mx-2 text-brutal-black/20 font-bold">|</span>
+                      <span className="font-bold text-brutal-black/80">
+                        {formatDuration(slot.duration)}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-4 text-sm font-display uppercase tracking-wider">
+                      {getAvailabilityInfo(slot.analysis).map(
+                        (item, i, arr) => (
+                          <React.Fragment key={i}>
+                            {item}
+                            {i < arr.length - 1 && (
+                              <span className="text-brutal-black/20 font-bold">|</span>
+                            )}
+                          </React.Fragment>
+                        ),
+                      )}
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))
           )}
         </div>
       </div>
