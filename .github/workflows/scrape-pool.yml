@@ -35,7 +35,7 @@ jobs:
           cd scrapers
           # Set environment for GitHub Pages (data goes to public/data)
           export DATA_PATH="../public/data"
-          node pool-scraper.js
+          node pool-scraper-v2.js
 
       - name: Commit updated data
         run: |

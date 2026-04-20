@@ -4,14 +4,17 @@
   "description": "Data scrapers for LCLC facilities",
   "main": "index.js",
   "scripts": {
-    "scrape-pool": "node pool-scraper.js",
-    "scrape-skating": "node skating-scraper.js",
+    "scrape-pool": "node pool-scraper-v2.js",
+    "scrape-pool-v1": "node pool-scraper.js",
+    "scrape-skating": "node skating-scraper-v2.js",
+    "scrape-skating-v1": "node skating-scraper.js",
     "scrape-libraries": "node libraries-scraper.js",
-    "scrape-all": "node pool-scraper.js && node skating-scraper.js && node libraries-scraper.js"
+    "scrape-all": "node pool-scraper-v2.js && node skating-scraper-v2.js && node libraries-scraper.js"
   },
   "dependencies": {
     "dotenv": "^16.5.0",
     "jsdom": "^22.1.0",
-    "node-fetch": "^2.6.9"
+    "node-fetch": "^2.6.9",
+    "rrule": "^2.8.1"
   }
 }

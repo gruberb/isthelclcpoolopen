@@ -34,7 +34,7 @@ jobs:
         run: |
           cd scrapers
           export DATA_PATH="../public/data"
-          node skating-scraper.js
+          node skating-scraper-v2.js
 
       - name: Commit updated data
         run: |
