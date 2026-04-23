@@ -1,105 +1,6 @@
 {
   "data": [
     {
-      "id": "033acb05-06c2-4db5-9357-1bc365f9b494__20260422T063000Z",
-      "title": "Members Swim",
-      "start": "2026-04-22T06:30:00.000",
-      "end": "2026-04-22T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "159b8a34-b81d-45a5-bd93-90bf16972a87__20260422T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-22T07:30:00.000",
-      "end": "2026-04-22T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0d1e27f6-bfe7-4ad2-a8b3-13b3bad2225b__20260422T100000Z",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-04-22T10:00:00.000",
-      "end": "2026-04-22T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a2e0922c-7e66-4cb7-9313-22abc6f4a75f__20260422T110000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-22T11:00:00.000",
-      "end": "2026-04-22T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "3fa80487-d8a1-4ab2-840d-c838d45b9568__20260422T120000Z",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-22T12:00:00.000",
-      "end": "2026-04-22T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "debfb3b7-5744-46b5-8ac6-ced186bf4522",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-22T13:00:00.000",
-      "end": "2026-04-22T15:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d492336b-2177-4d86-af7b-7fe0652745b0",
-      "title": "Adult Lessons in 2 Lanes - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-22T15:15:00.000",
-      "end": "2026-04-22T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "241fa7de-89df-4a96-ba4c-3c105ce0665e",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pools Open",
-      "start": "2026-04-22T16:00:00.000",
-      "end": "2026-04-22T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9a861700-aac9-4e8d-86c1-224fca311312",
-      "title": "Lifeguard Course & Lessons in Lap & Play Pools - Therapy Pools Open",
-      "start": "2026-04-22T17:00:00.000",
-      "end": "2026-04-22T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "fbf622b8-f374-4529-a22a-0934da6e122e",
-      "title": "Aquafit Using Lap Pool - Play & Therapy Pools Open",
-      "start": "2026-04-22T19:00:00.000",
-      "end": "2026-04-22T19:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1fec28cd-ac00-4264-9a8e-a9a707f9b88e__20260422T200000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-22T20:00:00.000",
-      "end": "2026-04-22T21:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "033acb05-06c2-4db5-9357-1bc365f9b494__20260423T063000Z",
       "title": "Members Swim",
       "start": "2026-04-23T06:30:00.000",
@@ -208,8 +109,8 @@
       "allDay": false
     },
     {
-      "id": "d919f07f-5882-45a3-a2de-0eae9a435948",
-      "title": "SSRCE Pool Rental",
+      "id": "3db94cd1-9366-4f42-8097-066336d94e58",
+      "title": "Private Rental - SSRCE / Pools Closed to the Public",
       "start": "2026-04-24T11:30:00.000",
       "end": "2026-04-24T12:30:00.000",
       "backgroundColor": "#0000FF",
@@ -217,8 +118,8 @@
       "allDay": false
     },
     {
-      "id": "3db94cd1-9366-4f42-8097-066336d94e58",
-      "title": "Private Rental - SSRCE / Pools Closed to the Public",
+      "id": "d919f07f-5882-45a3-a2de-0eae9a435948",
+      "title": "SSRCE Pool Rental",
       "start": "2026-04-24T11:30:00.000",
       "end": "2026-04-24T12:30:00.000",
       "backgroundColor": "#0000FF",
@@ -728,17 +629,98 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "1f66b7b4-d9c1-4a8a-a3ef-96d2a9318752__20260501T063000Z",
+      "title": "Members Swim",
+      "start": "2026-05-01T06:30:00.000",
+      "end": "2026-05-01T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2abafce8-58ba-45e9-b3e6-165428e8f089__20260501T073000Z",
+      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
+      "start": "2026-05-01T07:30:00.000",
+      "end": "2026-05-01T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7a701d7c-c20e-4c67-b77c-bfe8cb7247bb__20260501T100000Z",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2026-05-01T10:00:00.000",
+      "end": "2026-05-01T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a51c3a1c-4274-41eb-a889-3bb90e7f4b4a__20260501T110000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-01T11:00:00.000",
+      "end": "2026-05-01T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2c1981f2-d6a0-4898-a81e-3ade6a865bf8__20260501T120000Z",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-01T12:00:00.000",
+      "end": "2026-05-01T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f8c4cbdc-5626-49f9-b21d-1e75a1a4ca06",
+      "title": "Adult Lessons Using 2 Lanes - 2 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-01T13:00:00.000",
+      "end": "2026-05-01T13:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ce079622-6f54-45d8-8967-a755b6a5c7a8",
+      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
+      "start": "2026-05-01T13:45:00.000",
+      "end": "2026-05-01T15:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7eb70f5a-1bff-4abe-b1a7-128d41736324",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-05-01T16:00:00.000",
+      "end": "2026-05-01T18:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4cea4dfe-54a7-44f4-87a2-43ec62ece56e",
+      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-01T18:30:00.000",
+      "end": "2026-05-01T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-04-22T10:27:27.749Z",
+  "lastUpdated": "2026-04-23T10:28:21.673Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-04-22T00:00:00.000Z",
-      "end": "2026-04-30T23:59:00.000Z"
+      "start": "2026-04-23T00:00:00.000Z",
+      "end": "2026-05-01T23:59:00.000Z"
     },
-    "eventCount": 81,
-    "generatedAt": "2026-04-22T10:27:27.749Z",
+    "eventCount": 79,
+    "generatedAt": "2026-04-23T10:28:21.673Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
