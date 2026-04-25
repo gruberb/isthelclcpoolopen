@@ -1,96 +1,6 @@
 {
   "data": [
     {
-      "id": "033acb05-06c2-4db5-9357-1bc365f9b494__20260424T063000Z",
-      "title": "Members Swim",
-      "start": "2026-04-24T06:30:00.000",
-      "end": "2026-04-24T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "159b8a34-b81d-45a5-bd93-90bf16972a87__20260424T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-24T07:30:00.000",
-      "end": "2026-04-24T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0d1e27f6-bfe7-4ad2-a8b3-13b3bad2225b__20260424T100000Z",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-04-24T10:00:00.000",
-      "end": "2026-04-24T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ccf76587-8fea-4cc8-9161-37fcc90de111",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-24T11:00:00.000",
-      "end": "2026-04-24T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d919f07f-5882-45a3-a2de-0eae9a435948",
-      "title": "SSRCE Pool Rental",
-      "start": "2026-04-24T11:30:00.000",
-      "end": "2026-04-24T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "3db94cd1-9366-4f42-8097-066336d94e58",
-      "title": "Private Rental - SSRCE / Pools Closed to the Public",
-      "start": "2026-04-24T11:30:00.000",
-      "end": "2026-04-24T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "90a5e957-b0cd-4a54-ba1a-f6696e1ffdd0",
-      "title": "Adult Lessons Using 2 Lanes - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-24T13:00:00.000",
-      "end": "2026-04-24T13:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a1999b90-3f58-4de9-ac5f-9affcc5294d5",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-24T13:45:00.000",
-      "end": "2026-04-24T15:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b88f7579-71ab-44da-aef3-39216c91c688",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-04-24T16:00:00.000",
-      "end": "2026-04-24T18:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "78dba93b-dbb4-4e3f-b058-b1655e000d81",
-      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2026-04-24T18:30:00.000",
-      "end": "2026-04-24T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "50b495ea-30c7-49bf-95f1-85370c69b6f8",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-04-25T07:30:00.000",
@@ -571,7 +481,7 @@
       "id": "2abafce8-58ba-45e9-b3e6-165428e8f089__20260501T073000Z",
       "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
       "start": "2026-05-01T07:30:00.000",
-      "end": "2026-05-01T10:00:00.000",
+      "end": "2026-05-01T09:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -692,17 +602,89 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "7afec386-2af7-4039-9d16-11ded6e0db80",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-03T07:30:00.000",
+      "end": "2026-05-03T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8354cc33-a064-43e4-9914-d4fcb553d09c",
+      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-03T09:00:00.000",
+      "end": "2026-05-03T11:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b969166b-fd5e-49c4-8b0e-38caec10d799",
+      "title": "Lifesaving Sport & Lessons in Lap & Play Pools - Therapy Pool Open ",
+      "start": "2026-05-03T11:30:00.000",
+      "end": "2026-05-03T12:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "bbce6a99-0a66-4acd-9a06-c0218e895970",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-05-03T12:45:00.000",
+      "end": "2026-05-03T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8b11e8e2-8a7c-4af4-a5e9-75dbf266e973__20260503T160000Z",
+      "title": "Private Rental",
+      "start": "2026-05-03T16:00:00.000",
+      "end": "2026-05-03T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c0b577eb-7e5d-4e32-9407-9a7f50098d36",
+      "title": "Sensory Swim",
+      "start": "2026-05-03T17:00:00.000",
+      "end": "2026-05-03T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "98abc165-7d08-4e90-983b-3c9ae68292d4",
+      "title": "Cudas Using 3 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "start": "2026-05-03T18:00:00.000",
+      "end": "2026-05-03T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "054dd6ad-1cf8-4000-a79a-a85d21528b60",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-03T19:00:00.000",
+      "end": "2026-05-03T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-04-24T10:28:43.947Z",
+  "lastUpdated": "2026-04-25T10:13:53.049Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-04-24T00:00:00.000Z",
-      "end": "2026-05-02T23:59:00.000Z"
+      "start": "2026-04-25T00:00:00.000Z",
+      "end": "2026-05-03T23:59:00.000Z"
     },
-    "eventCount": 77,
-    "generatedAt": "2026-04-24T10:28:43.947Z",
+    "eventCount": 75,
+    "generatedAt": "2026-04-25T10:13:53.049Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
