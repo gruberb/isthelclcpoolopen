@@ -92,7 +92,7 @@
     },
     {
       "id": "196e1e7e-dda0-4c1b-bd18-b2b2bfba7dd0",
-      "title": "Cudas Using 3 Lanes - 1 Lane & Therapy Pool Open, PLAY POOL CLOSED",
+      "title": "Cudas Using 3 Lanes - 1 Lane. THERAPY AND  PLAY POOL CLOSED",
       "start": "2026-04-27T19:00:00.000",
       "end": "2026-04-27T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -101,7 +101,7 @@
     },
     {
       "id": "d8d445dd-ebb1-4080-93e0-9cd6096095d1",
-      "title": "Recreational Swim - 4 Lanes & Therapy Pool Open, PLAY POOL CLOSED",
+      "title": "Recreational Swim - 4 Lanes & THERAPY &  PLAY POOL CLOSED",
       "start": "2026-04-27T20:00:00.000",
       "end": "2026-04-27T21:00:00.000",
       "backgroundColor": "#0000FF",
@@ -757,7 +757,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-04-27T14:15:43.391Z",
+  "lastUpdated": "2026-04-27T22:47:18.007Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -765,7 +765,7 @@
       "end": "2026-05-05T23:59:00.000Z"
     },
     "eventCount": 84,
-    "generatedAt": "2026-04-27T14:15:43.391Z",
+    "generatedAt": "2026-04-27T22:47:18.007Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
