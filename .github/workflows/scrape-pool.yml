@@ -2,8 +2,7 @@ name: Update Pool Data
 
 on:
   schedule:
-    # Daily at 6 AM Atlantic Time (10 AM UTC)
-    - cron: '0 10 * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch: # Allow manual trigger
 
 permissions:

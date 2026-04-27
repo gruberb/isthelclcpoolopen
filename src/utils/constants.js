@@ -65,7 +65,7 @@ export const EVENT_DEFINITIONS = {
     access: ACCESS_TYPES.PUBLIC,
   },
   "lap pool closed": { lanes: false, kids: null, access: ACCESS_TYPES.PUBLIC },
-  "play pool is closed": {
+  "play pool closed": {
     lanes: null,
     kids: false,
     access: ACCESS_TYPES.PUBLIC,

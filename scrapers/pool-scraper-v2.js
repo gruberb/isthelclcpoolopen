@@ -79,10 +79,27 @@ async function fetchPoolData() {
     };
 
     const outputPath = path.join(OUTPUT_DIR, "pool.json");
-    fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
 
-    console.log(`💾 Pool data saved to: ${outputPath}`);
-    console.log(`🎉 Pool scraper v2 completed successfully!`);
+    // Skip the write when the events haven't changed, so the high-frequency
+    // cron doesn't churn commits with timestamp-only diffs.
+    let unchanged = false;
+    if (fs.existsSync(outputPath)) {
+      try {
+        const existing = JSON.parse(fs.readFileSync(outputPath, "utf8"));
+        unchanged = JSON.stringify(existing.data) === JSON.stringify(data);
+      } catch (e) {
+        unchanged = false;
+      }
+    }
+
+    if (unchanged) {
+      console.log(`⏭️  Events unchanged; leaving ${outputPath} untouched.`);
+      console.log(`🎉 Pool scraper v2 completed successfully!`);
+    } else {
+      fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
+      console.log(`💾 Pool data saved to: ${outputPath}`);
+      console.log(`🎉 Pool scraper v2 completed successfully!`);
+    }
 
     if (process.env.GITHUB_ACTIONS) {
       console.log(`::notice title=Pool Data Updated::v2 scraped ${data.length} events (${occurrenceCount} from recurrence expansion)`);

@@ -56,6 +56,19 @@ function isPlayPoolOpen(title) {
   );
 }
 
+// Titles often enumerate which pools are open, e.g.
+//   "Recreational Swim - 4 Lanes & Therapy Pool Open"
+//   "Recreational Swim - 4 Lanes, Play & Therapy Pools Open"
+//   "Public Swim - No Lanes, All Pools Available"
+// Returns the enumerated list (lowercase) or null when no enumeration exists.
+function getOpenPoolsEnumeration(title) {
+  const matches = [
+    ...title.toLowerCase().matchAll(/([^-,]+?)\s+pools?\s+(open|available)/g),
+  ];
+  if (matches.length === 0) return null;
+  return matches[matches.length - 1][1].trim();
+}
+
 /**
  * Check if the title has a numeric lane count
  * @param {string} title - Event title
@@ -109,18 +122,24 @@ export function analyzeEvent(event) {
   let kids = false;
   if (matchesAny(title, CONSTANTS.KIDS_ALWAYS_CLOSED)) {
     kids = false;
-  } else if (matchesAny(title, CONSTANTS.KIDS_ALWAYS_OPEN)) {
-    kids = true;
-  } else if (isPlayPoolOpen(title)) {
-    // Special handling for when play pool is explicitly mentioned as open
-    kids = true;
-  } else if (
-    matchesAny(title, CONSTANTS.FALLBACK_KEYWORDS.RECREATIONAL) &&
-    !lowerTitle.includes("no play")
-  ) {
-    kids = true;
   } else {
-    kids = matchesAny(title, CONSTANTS.FALLBACK_KEYWORDS.FAMILY);
+    // An explicit enumeration of open pools in the title is the strongest signal:
+    // trust it over keyword fallbacks like "Recreational Swim" being in KIDS_ALWAYS_OPEN.
+    const enumeration = getOpenPoolsEnumeration(title);
+    if (enumeration !== null) {
+      kids = /\bplay\b/.test(enumeration) || /\ball\b/.test(enumeration);
+    } else if (matchesAny(title, CONSTANTS.KIDS_ALWAYS_OPEN)) {
+      kids = true;
+    } else if (isPlayPoolOpen(title)) {
+      kids = true;
+    } else if (
+      matchesAny(title, CONSTANTS.FALLBACK_KEYWORDS.RECREATIONAL) &&
+      !lowerTitle.includes("no play")
+    ) {
+      kids = true;
+    } else {
+      kids = matchesAny(title, CONSTANTS.FALLBACK_KEYWORDS.FAMILY);
+    }
   }
 
   // Access restrictions
