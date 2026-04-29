@@ -37,8 +37,8 @@
       "allDay": false
     },
     {
-      "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260429T103000Z",
-      "title": "Public Skating",
+      "id": "a44ffa6b-c4c4-43d3-8fb6-b14f0c9c6fcc",
+      "title": "Public Skating -  Room 5",
       "start": "2026-04-29T10:30:00.000",
       "end": "2026-04-29T11:45:00.000",
       "backgroundColor": "#0000FF",
@@ -46,8 +46,8 @@
       "allDay": false
     },
     {
-      "id": "e025e380-5fd6-4431-80b7-097b45688418__20260429T120000Z",
-      "title": "Adult Skate",
+      "id": "958756b6-6e7f-4edd-b5cf-c46e03c871b6",
+      "title": "Adult Skate -  Room 3",
       "start": "2026-04-29T12:00:00.000",
       "end": "2026-04-29T13:00:00.000",
       "backgroundColor": "#0000FF",
@@ -181,13 +181,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-04-28T06:01:15.144Z",
+  "lastUpdated": "2026-04-29T05:59:42.732Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 62,
+    "totalEvents": 63,
     "publicEvents": 20,
-    "generatedAt": "2026-04-28T06:01:15.144Z",
+    "generatedAt": "2026-04-29T05:59:42.732Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
