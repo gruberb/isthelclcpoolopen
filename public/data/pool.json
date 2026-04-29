@@ -28,8 +28,8 @@
       "allDay": false
     },
     {
-      "id": "a2e0922c-7e66-4cb7-9313-22abc6f4a75f__20260429T110000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "id": "77959218-2840-4a5d-a733-1639691f6ffb",
+      "title": "Recreational Swim - 4 Lanes & Therapy Pool Open",
       "start": "2026-04-29T11:00:00.000",
       "end": "2026-04-29T12:00:00.000",
       "backgroundColor": "#0000FF",
@@ -37,8 +37,8 @@
       "allDay": false
     },
     {
-      "id": "3fa80487-d8a1-4ab2-840d-c838d45b9568__20260429T120000Z",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "id": "4c7aa76b-d658-4909-9298-bb391002df5c",
+      "title": "Lane Swim - 4 Lanes & Therapy Pool Open",
       "start": "2026-04-29T12:00:00.000",
       "end": "2026-04-29T13:00:00.000",
       "backgroundColor": "#0000FF",
@@ -47,7 +47,7 @@
     },
     {
       "id": "132cc5a9-0220-49a5-945a-9c5099c07897",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "title": "Recreational Swim - 4 Lanes & Therapy Pool Open",
       "start": "2026-04-29T13:00:00.000",
       "end": "2026-04-29T15:15:00.000",
       "backgroundColor": "#0000FF",
@@ -56,7 +56,7 @@
     },
     {
       "id": "d569fee0-d9fc-4d9f-acee-aaf3b4696fb7",
-      "title": "Adult Lessons Using 2 Lanes - 2 Lanes, Play & Therapy Pools Open",
+      "title": "Adult Lessons Using 2 Lanes - 2 Lanes & Therapy Pool Open",
       "start": "2026-04-29T15:15:00.000",
       "end": "2026-04-29T16:00:00.000",
       "backgroundColor": "#0000FF",
@@ -83,7 +83,7 @@
     },
     {
       "id": "c630bdb6-83cd-47c8-b3ee-2faefe4c4143",
-      "title": "Aquafit Using Lap Pool - Play & Therapy Pools Open",
+      "title": "Aquafit Using Lap Pool - Therapy Pool Open",
       "start": "2026-04-29T19:00:00.000",
       "end": "2026-04-29T19:45:00.000",
       "backgroundColor": "#0000FF",
@@ -91,8 +91,8 @@
       "allDay": false
     },
     {
-      "id": "1fec28cd-ac00-4264-9a8e-a9a707f9b88e__20260429T200000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "id": "e4c863ea-434a-4d61-8804-1a9907e056e4",
+      "title": "Recreational Swim - 4 Lanes & Therapy Pool Open",
       "start": "2026-04-29T20:00:00.000",
       "end": "2026-04-29T21:00:00.000",
       "backgroundColor": "#0000FF",
@@ -676,7 +676,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-04-29T17:01:46.846Z",
+  "lastUpdated": "2026-04-29T19:33:21.324Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -684,7 +684,7 @@
       "end": "2026-05-07T23:59:00.000Z"
     },
     "eventCount": 75,
-    "generatedAt": "2026-04-29T17:01:46.846Z",
+    "generatedAt": "2026-04-29T19:33:21.324Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
