@@ -38,7 +38,7 @@
     },
     {
       "id": "a44ffa6b-c4c4-43d3-8fb6-b14f0c9c6fcc",
-      "title": "Public Skating -  Room 5",
+      "title": "Public Skating",
       "start": "2026-04-29T10:30:00.000",
       "end": "2026-04-29T11:45:00.000",
       "backgroundColor": "#0000FF",
@@ -47,7 +47,7 @@
     },
     {
       "id": "958756b6-6e7f-4edd-b5cf-c46e03c871b6",
-      "title": "Adult Skate -  Room 3",
+      "title": "Adult Skate",
       "start": "2026-04-29T12:00:00.000",
       "end": "2026-04-29T13:00:00.000",
       "backgroundColor": "#0000FF",
@@ -56,7 +56,7 @@
     },
     {
       "id": "d5a9e87f-fb70-4a84-afcf-cf1c4b1d0fe0",
-      "title": "Public Skate   Room 5",
+      "title": "Public Skating",
       "start": "2026-04-30T10:30:00.000",
       "end": "2026-04-30T11:45:00.000",
       "backgroundColor": "#0000FF",
@@ -65,9 +65,27 @@
     },
     {
       "id": "14d4cb5e-9b44-4973-9edc-853b311bc335",
-      "title": "Adult Skate    Room 3",
+      "title": "Adult Skate",
       "start": "2026-04-30T12:00:00.000",
       "end": "2026-04-30T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "17be4642-2389-4cb2-8edc-036e6d9d49f1",
+      "title": "Public Skating",
+      "start": "2026-05-01T10:30:00.000",
+      "end": "2026-05-01T11:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2f7f0dab-acdd-4513-8859-d9dbc4e6e6a2",
+      "title": "Adult Skate",
+      "start": "2026-05-01T12:00:00.000",
+      "end": "2026-05-01T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -181,13 +199,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-04-30T06:00:52.783Z",
+  "lastUpdated": "2026-05-01T06:02:07.455Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 70,
-    "publicEvents": 20,
-    "generatedAt": "2026-04-30T06:00:52.783Z",
+    "totalEvents": 72,
+    "publicEvents": 22,
+    "generatedAt": "2026-05-01T06:02:07.455Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
