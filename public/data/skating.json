@@ -55,8 +55,8 @@
       "allDay": false
     },
     {
-      "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260507T103000Z",
-      "title": "Public Skating",
+      "id": "54f1b760-6550-4ac6-b7af-17cc71a45d91",
+      "title": "Public Skating ",
       "start": "2026-05-07T10:30:00.000",
       "end": "2026-05-07T11:45:00.000",
       "backgroundColor": "#0000FF",
@@ -64,7 +64,7 @@
       "allDay": false
     },
     {
-      "id": "e025e380-5fd6-4431-80b7-097b45688418__20260507T120000Z",
+      "id": "1c5f38dc-fffa-445a-be93-db2748bef9b7",
       "title": "Adult Skate",
       "start": "2026-05-07T12:00:00.000",
       "end": "2026-05-07T13:00:00.000",
@@ -73,7 +73,7 @@
       "allDay": false
     },
     {
-      "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260508T103000Z",
+      "id": "808a0b70-e311-412c-b6b8-f6c196a03611",
       "title": "Public Skating",
       "start": "2026-05-08T10:30:00.000",
       "end": "2026-05-08T11:45:00.000",
@@ -82,7 +82,7 @@
       "allDay": false
     },
     {
-      "id": "e025e380-5fd6-4431-80b7-097b45688418__20260508T120000Z",
+      "id": "21131f56-5451-4027-95c2-93429fdc4d27",
       "title": "Adult Skate",
       "start": "2026-05-08T12:00:00.000",
       "end": "2026-05-08T13:00:00.000",
@@ -199,13 +199,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-06T06:00:19.070Z",
+  "lastUpdated": "2026-05-07T06:01:40.957Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 86,
+    "totalEvents": 87,
     "publicEvents": 22,
-    "generatedAt": "2026-05-06T06:00:19.070Z",
+    "generatedAt": "2026-05-07T06:01:40.957Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
