@@ -262,6 +262,15 @@
       "allDay": false
     },
     {
+      "id": "8770cb15-a150-4705-a949-7e857373f556",
+      "title": "Paytons Birthday",
+      "start": "2026-05-10T16:00:00.000",
+      "end": "2026-05-10T17:00:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
       "id": "2f356963-54fc-4686-b7af-2168dadce2c7",
       "title": "Sensory Swim",
       "start": "2026-05-10T17:00:00.000",
@@ -748,15 +757,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-07T11:15:05.037Z",
+  "lastUpdated": "2026-05-07T12:09:01.789Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-05-07T00:00:00.000Z",
       "end": "2026-05-15T23:59:00.000Z"
     },
-    "eventCount": 83,
-    "generatedAt": "2026-05-07T11:15:05.037Z",
+    "eventCount": 84,
+    "generatedAt": "2026-05-07T12:09:01.789Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
