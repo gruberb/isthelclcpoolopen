@@ -262,15 +262,6 @@
       "allDay": false
     },
     {
-      "id": "3ded0793-6c9e-42bf-85b0-3069558aee53",
-      "title": "Birthday Party For Peyton (8th)",
-      "start": "2026-05-10T16:00:00.000",
-      "end": "2026-05-10T17:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
       "id": "2f356963-54fc-4686-b7af-2168dadce2c7",
       "title": "Sensory Swim",
       "start": "2026-05-10T17:00:00.000",
@@ -757,15 +748,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-07T00:36:18.445Z",
+  "lastUpdated": "2026-05-07T11:15:05.037Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-05-07T00:00:00.000Z",
       "end": "2026-05-15T23:59:00.000Z"
     },
-    "eventCount": 84,
-    "generatedAt": "2026-05-07T00:36:18.445Z",
+    "eventCount": 83,
+    "generatedAt": "2026-05-07T11:15:05.037Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
