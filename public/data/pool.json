@@ -1,60 +1,6 @@
 {
   "data": [
     {
-      "id": "ea7045d5-55f9-44a1-a11b-cf838d9fa44d",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-05-09T07:30:00.000",
-      "end": "2026-05-09T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c27fb616-b1cf-4430-a8cd-26947e987efe",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
-      "start": "2026-05-09T09:00:00.000",
-      "end": "2026-05-09T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d51e1d94-f1c1-439b-8836-e8febe8ee0b2",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-05-09T12:00:00.000",
-      "end": "2026-05-09T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9439ba0c-1bf9-485c-8c55-5ea77332387f",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-05-09T13:00:00.000",
-      "end": "2026-05-09T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20260509T160000Z",
-      "title": "MODL / LCLC Women's Only Swim",
-      "start": "2026-05-09T16:00:00.000",
-      "end": "2026-05-09T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "db8fecbc-7c66-4e50-911d-3f6785c6d578",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-05-09T17:00:00.000",
-      "end": "2026-05-09T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "da01504b-bd19-4628-84ac-3909cbba950a",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-05-10T07:30:00.000",
@@ -683,17 +629,80 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "53e6933d-b589-40e4-8f77-f6d71b95bc92",
+      "title": "Victoria Day - Facility open 12 pm - 8 pm",
+      "start": "2026-05-18T06:00:00.000",
+      "end": "2026-05-18T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "fcb564bb-40f7-43b2-b38d-4aafe31d758d",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-05-18T12:00:00.000",
+      "end": "2026-05-18T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7c72e4fe-6dbc-46be-8eb5-b2c8d84610ff",
+      "title": "Senior Swim ",
+      "start": "2026-05-18T15:00:00.000",
+      "end": "2026-05-18T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8a3820ce-2ddd-4e40-98a9-3975af86ba3b",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-18T16:00:00.000",
+      "end": "2026-05-18T16:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "dd52f4df-38c9-4a23-92fe-49c21e58eeee__20260518T170000Z",
+      "title": "Aqua Dance in Lap Pool - All Other Pools Not Available",
+      "start": "2026-05-18T17:00:00.000",
+      "end": "2026-05-18T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "50d04986-b015-4723-b178-f054edfc211a__20260518T180000Z",
+      "title": "Special Olympics Using Lap Pool - Play & Therapy Pools Open",
+      "start": "2026-05-18T18:00:00.000",
+      "end": "2026-05-18T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8619de93-870e-4690-ae80-07afe4b74d37",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-18T19:00:00.000",
+      "end": "2026-05-18T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-09T00:37:33.585Z",
+  "lastUpdated": "2026-05-10T00:38:19.349Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-05-09T00:00:00.000Z",
-      "end": "2026-05-17T23:59:00.000Z"
+      "start": "2026-05-10T00:00:00.000Z",
+      "end": "2026-05-18T23:59:00.000Z"
     },
-    "eventCount": 76,
-    "generatedAt": "2026-05-09T00:37:33.585Z",
+    "eventCount": 77,
+    "generatedAt": "2026-05-10T00:38:19.349Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
