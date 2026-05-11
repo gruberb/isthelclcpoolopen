@@ -190,18 +190,18 @@
       "allDay": false
     },
     {
-      "id": "1f66b7b4-d9c1-4a8a-a3ef-96d2a9318752__20260513T063000Z",
-      "title": "Members Swim",
+      "id": "d4f47407-c61b-48da-bef1-49a063760b58",
+      "title": "Planned Power Outage – Delayed Aquatic Centre Opening",
       "start": "2026-05-13T06:30:00.000",
-      "end": "2026-05-13T07:30:00.000",
+      "end": "2026-05-13T09:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     },
     {
-      "id": "2abafce8-58ba-45e9-b3e6-165428e8f089__20260513T073000Z",
+      "id": "4cb0f615-f988-494f-97db-981fd7661c8d",
       "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
-      "start": "2026-05-13T07:30:00.000",
+      "start": "2026-05-13T09:00:00.000",
       "end": "2026-05-13T09:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -694,7 +694,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-11T00:38:43.232Z",
+  "lastUpdated": "2026-05-11T16:54:56.885Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -702,7 +702,7 @@
       "end": "2026-05-19T23:59:00.000Z"
     },
     "eventCount": 77,
-    "generatedAt": "2026-05-11T00:38:43.232Z",
+    "generatedAt": "2026-05-11T16:54:56.885Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
