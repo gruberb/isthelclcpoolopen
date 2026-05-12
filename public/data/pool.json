@@ -37,6 +37,15 @@
       "allDay": false
     },
     {
+      "id": "c6bb89fe-dc78-4d38-806f-20ad4e36fcf4__20260512T120000Z",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-12T12:00:00.000",
+      "end": "2026-05-12T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "af195589-d22b-44a1-9136-399c1d01b606",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-05-12T13:00:00.000",
@@ -104,6 +113,15 @@
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-05-13T11:00:00.000",
       "end": "2026-05-13T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c6bb89fe-dc78-4d38-806f-20ad4e36fcf4__20260513T120000Z",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-13T12:00:00.000",
+      "end": "2026-05-13T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -523,6 +541,15 @@
       "allDay": false
     },
     {
+      "id": "c6bb89fe-dc78-4d38-806f-20ad4e36fcf4__20260519T120000Z",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-19T12:00:00.000",
+      "end": "2026-05-19T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "1134909c-b54d-4d94-8b62-8dac59e33c65",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-05-19T13:00:00.000",
@@ -595,6 +622,15 @@
       "allDay": false
     },
     {
+      "id": "c6bb89fe-dc78-4d38-806f-20ad4e36fcf4__20260520T120000Z",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-05-20T12:00:00.000",
+      "end": "2026-05-20T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "278557f2-730d-42c4-8502-fc260318b679",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-05-20T13:00:00.000",
@@ -649,15 +685,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-12T14:17:29.812Z",
+  "lastUpdated": "2026-05-12T17:16:18.359Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-05-12T00:00:00.000Z",
       "end": "2026-05-20T23:59:00.000Z"
     },
-    "eventCount": 72,
-    "generatedAt": "2026-05-12T14:17:29.812Z",
+    "eventCount": 76,
+    "generatedAt": "2026-05-12T17:16:18.359Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
