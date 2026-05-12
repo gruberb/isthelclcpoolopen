@@ -199,10 +199,10 @@
       "allDay": false
     },
     {
-      "id": "e4bd62c9-3548-49e1-9b93-e12e0d3cf3d6__20260514T120000Z",
+      "id": "fc78fc76-e383-47a8-8e31-c0192b6f938f",
       "title": "Aqua Fit Tabata",
-      "start": "2026-05-14T12:00:00.000",
-      "end": "2026-05-14T12:45:00.000",
+      "start": "2026-05-14T12:15:00.000",
+      "end": "2026-05-14T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -649,7 +649,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-12T00:36:20.545Z",
+  "lastUpdated": "2026-05-12T14:17:29.812Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -657,7 +657,7 @@
       "end": "2026-05-20T23:59:00.000Z"
     },
     "eventCount": 72,
-    "generatedAt": "2026-05-12T00:36:20.545Z",
+    "generatedAt": "2026-05-12T14:17:29.812Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
