@@ -83,7 +83,7 @@
     },
     {
       "id": "52fea8a9-d7fc-4faa-a2cb-fed7b635ad97",
-      "title": "Aquafit Using Lap Pool - Play & Therapy Open",
+      "title": "Aquafit Cancelled. Lap, Play & Therapy Pools Open",
       "start": "2026-05-20T19:00:00.000",
       "end": "2026-05-20T19:45:00.000",
       "backgroundColor": "#0000FF",
@@ -784,7 +784,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-20T00:44:25.156Z",
+  "lastUpdated": "2026-05-20T13:11:39.784Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -792,7 +792,7 @@
       "end": "2026-05-28T23:59:00.000Z"
     },
     "eventCount": 87,
-    "generatedAt": "2026-05-20T00:44:25.156Z",
+    "generatedAt": "2026-05-20T13:11:39.784Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
