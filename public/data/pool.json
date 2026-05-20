@@ -127,8 +127,8 @@
       "allDay": false
     },
     {
-      "id": "a51c3a1c-4274-41eb-a889-3bb90e7f4b4a__20260521T110000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "id": "eb74d13b-bf19-434b-9230-c7088f50089b",
+      "title": "Recreational Swim - 4 Lanes & Therapy Pool Open",
       "start": "2026-05-21T11:00:00.000",
       "end": "2026-05-21T12:00:00.000",
       "backgroundColor": "#0000FF",
@@ -146,7 +146,7 @@
     },
     {
       "id": "5a442f49-e2a5-4bda-8d46-dfad62f106ec",
-      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
+      "title": "Recreational Swim - 4 Lanes &  Therapy Pool Open",
       "start": "2026-05-21T13:00:00.000",
       "end": "2026-05-21T16:00:00.000",
       "backgroundColor": "#0000FF",
@@ -164,7 +164,7 @@
     },
     {
       "id": "6913d2f7-417e-4db7-8ca0-33d07bc35b02",
-      "title": "Cudas Using 3 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "title": "Cudas Using 3 Lanes - 1 Lane & Therapy Pool Open",
       "start": "2026-05-21T19:00:00.000",
       "end": "2026-05-21T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -172,8 +172,8 @@
       "allDay": false
     },
     {
-      "id": "c36cea50-d584-4349-908a-79c40ba600fa__20260521T200000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "id": "a540df22-df3a-4f38-ace6-1ce99eead2f2",
+      "title": "Recreational Swim - 4 Lanes   & Therapy Pool Open",
       "start": "2026-05-21T20:00:00.000",
       "end": "2026-05-21T21:00:00.000",
       "backgroundColor": "#0000FF",
@@ -784,7 +784,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-20T22:56:53.287Z",
+  "lastUpdated": "2026-05-20T23:33:18.414Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -792,7 +792,7 @@
       "end": "2026-05-28T23:59:00.000Z"
     },
     "eventCount": 87,
-    "generatedAt": "2026-05-20T22:56:53.287Z",
+    "generatedAt": "2026-05-20T23:33:18.414Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
