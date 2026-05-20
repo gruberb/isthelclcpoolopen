@@ -83,7 +83,7 @@
     },
     {
       "id": "52fea8a9-d7fc-4faa-a2cb-fed7b635ad97",
-      "title": "Aquafit Cancelled. Lap, Play & Therapy Pools Open",
+      "title": "Aquafit Cancelled. Lap & Therapy Pools Open",
       "start": "2026-05-20T19:00:00.000",
       "end": "2026-05-20T19:45:00.000",
       "backgroundColor": "#0000FF",
@@ -91,8 +91,8 @@
       "allDay": false
     },
     {
-      "id": "c36cea50-d584-4349-908a-79c40ba600fa__20260520T200000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "id": "c9a70860-dcda-4e37-85a0-e4c4025b4c25",
+      "title": "Recreational Swim - 4 Lanes, & Therapy Pools Open",
       "start": "2026-05-20T20:00:00.000",
       "end": "2026-05-20T21:00:00.000",
       "backgroundColor": "#0000FF",
@@ -784,7 +784,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-20T13:11:39.784Z",
+  "lastUpdated": "2026-05-20T22:56:53.287Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -792,7 +792,7 @@
       "end": "2026-05-28T23:59:00.000Z"
     },
     "eventCount": 87,
-    "generatedAt": "2026-05-20T13:11:39.784Z",
+    "generatedAt": "2026-05-20T22:56:53.287Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
