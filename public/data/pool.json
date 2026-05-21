@@ -56,7 +56,7 @@
     },
     {
       "id": "5019dc28-b798-4854-afb0-8ad451e90da4",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open ",
+      "title": "Swimming Lessons using Lap Pool - Therapy Pool Open ",
       "start": "2026-05-21T16:00:00.000",
       "end": "2026-05-21T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -757,7 +757,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-21T00:43:50.656Z",
+  "lastUpdated": "2026-05-21T17:23:34.304Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -765,7 +765,7 @@
       "end": "2026-05-29T23:59:00.000Z"
     },
     "eventCount": 84,
-    "generatedAt": "2026-05-21T00:43:50.656Z",
+    "generatedAt": "2026-05-21T17:23:34.304Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
