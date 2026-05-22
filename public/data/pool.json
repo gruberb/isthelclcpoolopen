@@ -74,7 +74,7 @@
     },
     {
       "id": "103da2f4-ccae-46c8-a0f6-824f67990752",
-      "title": "Public Swim - No Lanes, All Pools Open",
+      "title": "Lifeguard Recert - 2 Lanes, Play and Therapy Pool Open",
       "start": "2026-05-22T16:00:00.000",
       "end": "2026-05-22T18:30:00.000",
       "backgroundColor": "#0000FF",
@@ -730,7 +730,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-22T00:41:52.724Z",
+  "lastUpdated": "2026-05-22T20:09:37.745Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -738,7 +738,7 @@
       "end": "2026-05-30T23:59:00.000Z"
     },
     "eventCount": 81,
-    "generatedAt": "2026-05-22T00:41:52.724Z",
+    "generatedAt": "2026-05-22T20:09:37.745Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
