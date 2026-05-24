@@ -46,15 +46,6 @@
       "allDay": false
     },
     {
-      "id": "7a388d3d-25e7-4338-b0f5-c0123f7586a5",
-      "title": "Superheros United Special Needs Group",
-      "start": "2026-05-24T16:00:00.000",
-      "end": "2026-05-24T17:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
       "id": "e9d6f15f-fb1f-4b33-a515-522e1754c4db",
       "title": "Sensory Swim",
       "start": "2026-05-24T17:00:00.000",
@@ -766,15 +757,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-24T00:41:46.172Z",
+  "lastUpdated": "2026-05-24T16:48:41.446Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-05-24T00:00:00.000Z",
       "end": "2026-06-01T23:59:00.000Z"
     },
-    "eventCount": 85,
-    "generatedAt": "2026-05-24T00:41:46.172Z",
+    "eventCount": 84,
+    "generatedAt": "2026-05-24T16:48:41.446Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
