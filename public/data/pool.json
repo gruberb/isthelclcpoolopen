@@ -73,8 +73,8 @@
       "allDay": false
     },
     {
-      "id": "dd52f4df-38c9-4a23-92fe-49c21e58eeee__20260525T170000Z",
-      "title": "Aqua Dance in Lap Pool - All Other Pools Not Available",
+      "id": "a6815fc3-acd0-4c17-a704-ca61be51ae8c",
+      "title": "Aqua Dance in Lap Pool - Therapy and Play Pools Not Available",
       "start": "2026-05-25T17:00:00.000",
       "end": "2026-05-25T17:45:00.000",
       "backgroundColor": "#0000FF",
@@ -721,9 +721,9 @@
       "allDay": false
     },
     {
-      "id": "11f34cec-5726-41a6-b616-a764e6a14959__20260602T120000Z",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-02T12:00:00.000",
+      "id": "479cd652-b38d-48b7-8099-5fa712a05e74",
+      "title": "Aqua Tabata using Lap Pool - All Other Pools Not Available",
+      "start": "2026-06-02T12:15:00.000",
       "end": "2026-06-02T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -766,7 +766,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-25T13:41:02.691Z",
+  "lastUpdated": "2026-05-25T15:03:51.026Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -774,7 +774,7 @@
       "end": "2026-06-02T23:59:00.000Z"
     },
     "eventCount": 85,
-    "generatedAt": "2026-05-25T13:41:02.691Z",
+    "generatedAt": "2026-05-25T15:03:51.026Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
