@@ -1,87 +1,6 @@
 {
   "data": [
     {
-      "id": "3a663712-2313-48af-9e82-555b85dd7d74",
-      "title": "Public Skating",
-      "start": "2026-05-19T10:30:00.000",
-      "end": "2026-05-19T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "caf25747-e398-4d1d-8cfb-246b64935141",
-      "title": "Adult Skate",
-      "start": "2026-05-19T12:00:00.000",
-      "end": "2026-05-19T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e7178663-74e5-462d-a330-91fa7101a7ce",
-      "title": "Public Skating",
-      "start": "2026-05-20T10:30:00.000",
-      "end": "2026-05-20T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "29fc0fe0-dd7a-43ca-aff6-b20ff3b56b10",
-      "title": "Adult Skate",
-      "start": "2026-05-20T12:00:00.000",
-      "end": "2026-05-20T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260521T103000Z",
-      "title": "Public Skating",
-      "start": "2026-05-21T10:30:00.000",
-      "end": "2026-05-21T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e025e380-5fd6-4431-80b7-097b45688418__20260521T120000Z",
-      "title": "Adult Skate",
-      "start": "2026-05-21T12:00:00.000",
-      "end": "2026-05-21T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "cf9031e8-c0df-49db-abc6-5c985c57654f",
-      "title": "Public Skating",
-      "start": "2026-05-22T10:30:00.000",
-      "end": "2026-05-22T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "37003784-3010-4a7c-99d0-f8900cdcc93a",
-      "title": "Adult Skate",
-      "start": "2026-05-22T12:00:00.000",
-      "end": "2026-05-22T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "69c19c6c-5253-4928-9727-e78d3f79e277",
-      "title": "Public Skate",
-      "start": "2026-05-23T16:00:00.000",
-      "end": "2026-05-23T17:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "fe243db0-d104-4aa1-a670-290cbae244ff",
       "title": "Public Skating",
       "start": "2026-05-25T10:30:00.000",
@@ -100,7 +19,7 @@
       "allDay": false
     },
     {
-      "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260526T103000Z",
+      "id": "031ceb7a-6c08-4777-bd3b-20d7f1d8f90f",
       "title": "Public Skating",
       "start": "2026-05-26T10:30:00.000",
       "end": "2026-05-26T11:45:00.000",
@@ -109,7 +28,7 @@
       "allDay": false
     },
     {
-      "id": "e025e380-5fd6-4431-80b7-097b45688418__20260526T120000Z",
+      "id": "5a7f5e9b-4eb8-40df-b008-0a40b84c25d8",
       "title": "Adult Skate",
       "start": "2026-05-26T12:00:00.000",
       "end": "2026-05-26T13:00:00.000",
@@ -170,15 +89,87 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260601T103000Z",
+      "title": "Public Skating",
+      "start": "2026-06-01T10:30:00.000",
+      "end": "2026-06-01T11:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e025e380-5fd6-4431-80b7-097b45688418__20260601T120000Z",
+      "title": "Adult Skate",
+      "start": "2026-06-01T12:00:00.000",
+      "end": "2026-06-01T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260602T103000Z",
+      "title": "Public Skating",
+      "start": "2026-06-02T10:30:00.000",
+      "end": "2026-06-02T11:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e025e380-5fd6-4431-80b7-097b45688418__20260602T120000Z",
+      "title": "Adult Skate",
+      "start": "2026-06-02T12:00:00.000",
+      "end": "2026-06-02T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260603T103000Z",
+      "title": "Public Skating",
+      "start": "2026-06-03T10:30:00.000",
+      "end": "2026-06-03T11:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e025e380-5fd6-4431-80b7-097b45688418__20260603T120000Z",
+      "title": "Adult Skate",
+      "start": "2026-06-03T12:00:00.000",
+      "end": "2026-06-03T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260604T103000Z",
+      "title": "Public Skating",
+      "start": "2026-06-04T10:30:00.000",
+      "end": "2026-06-04T11:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e025e380-5fd6-4431-80b7-097b45688418__20260604T120000Z",
+      "title": "Adult Skate",
+      "start": "2026-06-04T12:00:00.000",
+      "end": "2026-06-04T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-24T06:16:16.316Z",
+  "lastUpdated": "2026-05-25T06:30:37.933Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 73,
-    "publicEvents": 19,
-    "generatedAt": "2026-05-24T06:16:16.316Z",
+    "totalEvents": 55,
+    "publicEvents": 18,
+    "generatedAt": "2026-05-25T06:30:37.933Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
