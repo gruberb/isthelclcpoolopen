@@ -211,7 +211,7 @@
       "id": "b80a3325-d1ea-482b-bea7-6069b06f17ee__20260601T073000Z",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-01T07:30:00.000",
-      "end": "2026-06-01T10:00:00.000",
+      "end": "2026-06-01T09:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -319,7 +319,7 @@
       "id": "b80a3325-d1ea-482b-bea7-6069b06f17ee__20260602T073000Z",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-02T07:30:00.000",
-      "end": "2026-06-02T10:00:00.000",
+      "end": "2026-06-02T09:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -400,7 +400,7 @@
       "id": "b80a3325-d1ea-482b-bea7-6069b06f17ee__20260603T073000Z",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-03T07:30:00.000",
-      "end": "2026-06-03T10:00:00.000",
+      "end": "2026-06-03T09:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -490,7 +490,7 @@
       "id": "b80a3325-d1ea-482b-bea7-6069b06f17ee__20260604T073000Z",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-04T07:30:00.000",
-      "end": "2026-06-04T10:00:00.000",
+      "end": "2026-06-04T09:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -571,7 +571,7 @@
       "id": "b80a3325-d1ea-482b-bea7-6069b06f17ee__20260605T073000Z",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-05T07:30:00.000",
-      "end": "2026-06-05T10:00:00.000",
+      "end": "2026-06-05T09:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -605,7 +605,7 @@
     },
     {
       "id": "41a561b1-09cc-4e5b-a30a-f5d63ec7f1c7",
-      "title": "Adult Lessons - All Pools Closed to Public",
+      "title": "Adult Lessons - 2 Lanes, Play & Therapy Pool Open",
       "start": "2026-06-05T13:00:00.000",
       "end": "2026-06-05T13:45:00.000",
       "backgroundColor": "#0000FF",
@@ -615,7 +615,7 @@
     {
       "id": "c55af073-40ca-41d8-aa0c-6510a59a8bc2",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-05T14:00:00.000",
+      "start": "2026-06-05T15:00:00.000",
       "end": "2026-06-05T15:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -685,7 +685,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-29T00:45:42.057Z",
+  "lastUpdated": "2026-05-29T15:46:07.449Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -693,7 +693,7 @@
       "end": "2026-06-06T23:59:00.000Z"
     },
     "eventCount": 76,
-    "generatedAt": "2026-05-29T00:45:42.057Z",
+    "generatedAt": "2026-05-29T15:46:07.449Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
