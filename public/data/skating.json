@@ -91,6 +91,15 @@
       "allDay": false
     },
     {
+      "id": "633a4dbd-bd91-4f39-a5a5-e1bf3b7f8390",
+      "title": "Public Skate",
+      "start": "2026-05-30T14:30:00.000",
+      "end": "2026-05-30T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260601T103000Z",
       "title": "Public Skating",
       "start": "2026-06-01T10:30:00.000",
@@ -163,13 +172,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-05-29T06:25:36.482Z",
+  "lastUpdated": "2026-05-30T06:06:13.621Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 74,
-    "publicEvents": 18,
-    "generatedAt": "2026-05-29T06:25:36.482Z",
+    "totalEvents": 81,
+    "publicEvents": 19,
+    "generatedAt": "2026-05-30T06:06:13.621Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
