@@ -37,7 +37,7 @@
       "allDay": false
     },
     {
-      "id": "6a08fb0a-c8b7-4462-90b9-9f89010463ee__20260603T103000Z",
+      "id": "790f05a3-f1c3-4b2e-b0ea-0f257fbafdc3",
       "title": "Public Skating",
       "start": "2026-06-03T10:30:00.000",
       "end": "2026-06-03T11:45:00.000",
@@ -46,7 +46,7 @@
       "allDay": false
     },
     {
-      "id": "e025e380-5fd6-4431-80b7-097b45688418__20260603T120000Z",
+      "id": "6b75be3a-818a-400b-a138-8a4e01891e2a",
       "title": "Adult Skate",
       "start": "2026-06-03T12:00:00.000",
       "end": "2026-06-03T13:00:00.000",
@@ -73,13 +73,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-01T06:36:04.296Z",
+  "lastUpdated": "2026-06-02T06:31:52.083Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 40,
+    "totalEvents": 41,
     "publicEvents": 8,
-    "generatedAt": "2026-06-01T06:36:04.296Z",
+    "generatedAt": "2026-06-02T06:31:52.083Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
