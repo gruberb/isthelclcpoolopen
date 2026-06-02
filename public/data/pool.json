@@ -154,18 +154,27 @@
       "allDay": false
     },
     {
-      "id": "d971b64a-30d1-4816-84bc-807f5b45fb3f",
-      "title": "Aquafit Using Lap Pool - Play & Therapy Pool Open",
+      "id": "47598ad3-be25-47c1-9c13-d320513180fa",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-03T19:00:00.000",
-      "end": "2026-06-03T19:45:00.000",
+      "end": "2026-06-03T19:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     },
     {
-      "id": "5e9fe021-6114-455a-8fc0-7eda30738609__20260603T200000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-03T20:00:00.000",
+      "id": "d971b64a-30d1-4816-84bc-807f5b45fb3f",
+      "title": "Aquafit Using Lap Pool - Play & Therapy Pool Open",
+      "start": "2026-06-03T19:45:00.000",
+      "end": "2026-06-03T20:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b117334b-4779-4d70-8063-e64bd61fefe2",
+      "title": "Public Swim - No Lanes",
+      "start": "2026-06-03T20:30:00.000",
       "end": "2026-06-03T21:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -631,15 +640,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-02T00:48:11.646Z",
+  "lastUpdated": "2026-06-02T20:03:07.977Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-02T00:00:00.000Z",
       "end": "2026-06-10T23:59:00.000Z"
     },
-    "eventCount": 70,
-    "generatedAt": "2026-06-02T00:48:11.646Z",
+    "eventCount": 71,
+    "generatedAt": "2026-06-02T20:03:07.977Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
