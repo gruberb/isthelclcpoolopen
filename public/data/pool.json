@@ -336,7 +336,7 @@
     {
       "id": "699f26e1-76c2-4f81-8580-2aeee3ccb3fc",
       "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-06-07T12:45:00.000",
+      "start": "2026-06-07T13:30:00.000",
       "end": "2026-06-07T16:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -424,6 +424,15 @@
       "allDay": false
     },
     {
+      "id": "38df09ce-3deb-4eea-8059-d7664fa98b37",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-06-08T14:00:00.000",
+      "end": "2026-06-08T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "3c0bb6d7-251b-4c6b-9a2b-ab23263dc2d9__20260608T150000Z",
       "title": "Senior Swim",
       "start": "2026-06-08T15:00:00.000",
@@ -433,10 +442,37 @@
       "allDay": false
     },
     {
+      "id": "6a796846-0d7a-463b-b8b5-b5a866bba9d2",
+      "title": "Inservice Training",
+      "start": "2026-06-08T16:00:00.000",
+      "end": "2026-06-08T16:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "4ab75d5d-5da1-4bf0-b827-f14300c452ae",
       "title": "Aqua Dance using Lap Pool - All Other Pools not Available",
       "start": "2026-06-08T17:00:00.000",
       "end": "2026-06-08T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "53535a77-e012-4e93-8a55-c1a5096160e8",
+      "title": "Special Olympics Using Lap Pool - Play & Therapy Pools Open",
+      "start": "2026-06-08T18:00:00.000",
+      "end": "2026-06-08T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7e8c8034-65a4-43a3-9f84-f42558d5da98",
+      "title": "Cudas Using 3 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "start": "2026-06-08T19:00:00.000",
+      "end": "2026-06-08T20:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -496,6 +532,24 @@
       "allDay": false
     },
     {
+      "id": "419d8285-5f14-4b68-b043-16d8d03a0f2f",
+      "title": "Recreational Swimming - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-06-09T14:00:00.000",
+      "end": "2026-06-09T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "193d2f82-e894-4e1a-b0af-32fedf0747d2",
+      "title": "Bronze Cross Using 2 Lanes - 2 Lanes, Play & Therapy Pools Open",
+      "start": "2026-06-09T19:00:00.000",
+      "end": "2026-06-09T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "5e9fe021-6114-455a-8fc0-7eda30738609__20260609T200000Z",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-09T20:00:00.000",
@@ -545,6 +599,42 @@
       "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-10T12:00:00.000",
       "end": "2026-06-10T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c2e0700e-1db8-4a46-810e-dd1ea1ca9bde",
+      "title": "Recreational Swimming - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-06-10T14:00:00.000",
+      "end": "2026-06-10T15:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "05e444de-735b-4f9e-b501-50afbe547c95",
+      "title": "Lesson & Lanes - 2 Lanes, Play & Therapy Pools Open",
+      "start": "2026-06-10T15:15:00.000",
+      "end": "2026-06-10T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0507e1fa-d521-4d04-9d12-f2d879c29f01",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2026-06-10T16:00:00.000",
+      "end": "2026-06-10T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c091212a-c3c3-4a26-9824-6a1ac2fbf731",
+      "title": "Aquafit Using Lap Pool - Play & Therapy Pools Open",
+      "start": "2026-06-10T19:00:00.000",
+      "end": "2026-06-10T19:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -604,6 +694,33 @@
       "allDay": false
     },
     {
+      "id": "3b3203c9-8b20-4369-afd7-a32b611ef899",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-06-11T14:00:00.000",
+      "end": "2026-06-11T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "971a7774-fdea-4211-918f-ebf4e5066a45",
+      "title": "Multi-Sport Using 2 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "start": "2026-06-11T18:00:00.000",
+      "end": "2026-06-11T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "924b9b39-2841-4347-96df-1a2a65ad39f7",
+      "title": "Cudas Using 3 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "start": "2026-06-11T19:00:00.000",
+      "end": "2026-06-11T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "5e9fe021-6114-455a-8fc0-7eda30738609__20260611T200000Z",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-11T20:00:00.000",
@@ -613,15 +730,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-03T00:53:36.397Z",
+  "lastUpdated": "2026-06-03T16:34:18.971Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-03T00:00:00.000Z",
       "end": "2026-06-11T23:59:00.000Z"
     },
-    "eventCount": 68,
-    "generatedAt": "2026-06-03T00:53:36.397Z",
+    "eventCount": 81,
+    "generatedAt": "2026-06-03T16:34:18.971Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
