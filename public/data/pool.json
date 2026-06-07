@@ -56,7 +56,7 @@
     },
     {
       "id": "be110fa1-7d69-4c9c-840f-ec6642d27e27",
-      "title": "Cudas Using 3 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "title": "Cudas Using 3 Lanes - 1 Lane for Multisport  Only Play & Therapy Pools Open",
       "start": "2026-06-07T18:00:00.000",
       "end": "2026-06-07T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -721,7 +721,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-07T16:31:38.096Z",
+  "lastUpdated": "2026-06-07T20:55:00.509Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -729,7 +729,7 @@
       "end": "2026-06-15T23:59:00.000Z"
     },
     "eventCount": 80,
-    "generatedAt": "2026-06-07T16:31:38.096Z",
+    "generatedAt": "2026-06-07T20:55:00.509Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
