@@ -30,7 +30,7 @@
     {
       "id": "699f26e1-76c2-4f81-8580-2aeee3ccb3fc",
       "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-06-07T13:30:00.000",
+      "start": "2026-06-07T12:45:00.000",
       "end": "2026-06-07T16:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -721,7 +721,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-07T00:46:35.836Z",
+  "lastUpdated": "2026-06-07T16:31:38.096Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -729,7 +729,7 @@
       "end": "2026-06-15T23:59:00.000Z"
     },
     "eventCount": 80,
-    "generatedAt": "2026-06-07T00:46:35.836Z",
+    "generatedAt": "2026-06-07T16:31:38.096Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
