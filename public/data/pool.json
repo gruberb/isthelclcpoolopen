@@ -334,6 +334,15 @@
       "allDay": false
     },
     {
+      "id": "acccf94e-b602-4c63-9a28-a9fd2ef0e62c",
+      "title": "Closed for Maintenance",
+      "start": "2026-06-12T13:45:00.000",
+      "end": "2026-06-12T14:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "aa3b1ada-54d8-4ef6-b12c-23a103975b6c",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-12T14:45:00.000",
@@ -365,6 +374,15 @@
       "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
       "start": "2026-06-13T09:00:00.000",
       "end": "2026-06-13T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9f3a4c9a-8667-4961-81e9-5774199fbaad",
+      "title": "Closed for Maintenance",
+      "start": "2026-06-13T12:00:00.000",
+      "end": "2026-06-13T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -419,6 +437,15 @@
       "title": "Lifesaving Sport & Swim Lessons Using Lap & Play Pool - Therapy Pool Open",
       "start": "2026-06-14T11:30:00.000",
       "end": "2026-06-14T12:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ef1f7375-e471-473d-98a7-a04a82f401b7",
+      "title": "Closed for Maintenance",
+      "start": "2026-06-14T12:30:00.000",
+      "end": "2026-06-14T13:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -721,15 +748,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-09T10:40:15.784Z",
+  "lastUpdated": "2026-06-09T12:01:35.890Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-09T00:00:00.000Z",
       "end": "2026-06-17T23:59:00.000Z"
     },
-    "eventCount": 80,
-    "generatedAt": "2026-06-09T10:40:15.784Z",
+    "eventCount": 83,
+    "generatedAt": "2026-06-09T12:01:35.890Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
