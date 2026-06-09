@@ -39,8 +39,8 @@
     {
       "id": "25aaaebf-13da-4672-a6d8-297706e5d51c",
       "title": "Aqua Tabata using Lap Pool - All Other Pools Not Available",
-      "start": "2026-06-09T12:15:00.000",
-      "end": "2026-06-09T13:00:00.000",
+      "start": "2026-06-09T12:05:00.000",
+      "end": "2026-06-09T12:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -219,8 +219,8 @@
     {
       "id": "86fa6595-635e-46b1-b274-c6887ada4a31",
       "title": "Aqua Fit Tabata using Lap Pool - All Other Pools not Available",
-      "start": "2026-06-11T12:15:00.000",
-      "end": "2026-06-11T13:00:00.000",
+      "start": "2026-06-11T12:05:00.000",
+      "end": "2026-06-11T12:50:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -631,7 +631,7 @@
       "allDay": false
     },
     {
-      "id": "350b8d0c-593b-4d9a-a4dc-c95c8f5945e0__20260616T110000Z",
+      "id": "01d72ac9-35c5-4248-8eac-737d9c272918",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pool Open",
       "start": "2026-06-16T11:00:00.000",
       "end": "2026-06-16T12:00:00.000",
@@ -640,10 +640,19 @@
       "allDay": false
     },
     {
-      "id": "11f34cec-5726-41a6-b616-a764e6a14959__20260616T120000Z",
+      "id": "9553e151-41b2-4232-ade9-5b85aba65c3f",
       "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-16T12:00:00.000",
       "end": "2026-06-16T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7c6da1eb-7ea1-4d38-b4c0-faa8b101e373",
+      "title": "Closed for Maintenance",
+      "start": "2026-06-16T13:00:00.000",
+      "end": "2026-06-16T14:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -748,15 +757,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-09T12:01:35.890Z",
+  "lastUpdated": "2026-06-09T16:55:28.446Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-09T00:00:00.000Z",
       "end": "2026-06-17T23:59:00.000Z"
     },
-    "eventCount": 83,
-    "generatedAt": "2026-06-09T12:01:35.890Z",
+    "eventCount": 84,
+    "generatedAt": "2026-06-09T16:55:28.446Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
