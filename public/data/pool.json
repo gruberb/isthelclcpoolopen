@@ -58,7 +58,7 @@
       "id": "419d8285-5f14-4b68-b043-16d8d03a0f2f",
       "title": "Recreational Swimming - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-09T14:00:00.000",
-      "end": "2026-06-09T19:00:00.000",
+      "end": "2026-06-09T17:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -66,7 +66,7 @@
     {
       "id": "193d2f82-e894-4e1a-b0af-32fedf0747d2",
       "title": "Bronze Cross Using 2 Lanes - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-09T19:00:00.000",
+      "start": "2026-06-09T17:00:00.000",
       "end": "2026-06-09T20:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -245,7 +245,7 @@
     },
     {
       "id": "971a7774-fdea-4211-918f-ebf4e5066a45",
-      "title": "Multi-Sport Using 2 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "title": "Multi-Sport Using 2 Lanes - 2 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-11T18:00:00.000",
       "end": "2026-06-11T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -757,7 +757,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-09T16:55:28.446Z",
+  "lastUpdated": "2026-06-09T19:42:04.563Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -765,7 +765,7 @@
       "end": "2026-06-17T23:59:00.000Z"
     },
     "eventCount": 84,
-    "generatedAt": "2026-06-09T16:55:28.446Z",
+    "generatedAt": "2026-06-09T19:42:04.563Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
