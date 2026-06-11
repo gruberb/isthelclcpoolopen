@@ -1,12 +1,12 @@
 {
   "data": [],
-  "lastUpdated": "2026-06-10T06:30:00.581Z",
+  "lastUpdated": "2026-06-11T06:32:47.661Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 20,
     "publicEvents": 0,
-    "generatedAt": "2026-06-10T06:30:00.581Z",
+    "generatedAt": "2026-06-11T06:32:47.661Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
