@@ -370,6 +370,15 @@
       "allDay": false
     },
     {
+      "id": "e58619c2-85df-4a17-b40c-cc2a3bda15d1",
+      "title": "Closed for Maintenance",
+      "start": "2026-06-15T13:00:00.000",
+      "end": "2026-06-15T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "9953c5b7-fd20-496d-bafe-15eb7e6e3857",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-15T14:00:00.000",
@@ -748,15 +757,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-11T01:20:13.782Z",
+  "lastUpdated": "2026-06-11T19:00:15.364Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-11T00:00:00.000Z",
       "end": "2026-06-19T23:59:00.000Z"
     },
-    "eventCount": 83,
-    "generatedAt": "2026-06-11T01:20:13.782Z",
+    "eventCount": 84,
+    "generatedAt": "2026-06-11T19:00:15.364Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
