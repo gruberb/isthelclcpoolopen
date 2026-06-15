@@ -1,96 +1,6 @@
 {
   "data": [
     {
-      "id": "eee6c460-5b6e-4ddb-a0ba-cd07f5bb55a0",
-      "title": "Recreational Swim - Lap Pool Closed, Play & Therapy Pools Open",
-      "start": "2026-06-14T07:30:00.000",
-      "end": "2026-06-14T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "657b8614-771b-4953-bf25-875e820dee52",
-      "title": "Lessons & Lanes - Lap Pool Closed,Play & Therapy Pool Open",
-      "start": "2026-06-14T09:00:00.000",
-      "end": "2026-06-14T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "131ce1aa-f737-4ed4-8f2c-e5ab6b0b8754",
-      "title": "Lifesaving Sport & Swim Lessons- Lap Pool Closed, Play and Therapy Pool Open",
-      "start": "2026-06-14T11:30:00.000",
-      "end": "2026-06-14T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ef1f7375-e471-473d-98a7-a04a82f401b7",
-      "title": "Closed for Maintenance",
-      "start": "2026-06-14T12:30:00.000",
-      "end": "2026-06-14T13:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "857c6b5e-a6e8-49b9-86b2-2c1d4e67812e",
-      "title": "Public Swim - Lap Pool Closed, Play and Therapy Pools Open",
-      "start": "2026-06-14T13:30:00.000",
-      "end": "2026-06-14T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "53a090e0-69e0-4860-9a36-11b0b8959469",
-      "title": "Private Pool Party",
-      "start": "2026-06-14T16:00:00.000",
-      "end": "2026-06-14T17:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
-      "id": "b3fc4c1c-ef7d-4cb9-8eff-2f9458d0c518",
-      "title": "Sensory Swim",
-      "start": "2026-06-14T17:00:00.000",
-      "end": "2026-06-14T17:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "5b72d956-8368-4d05-9746-2b40625d2051",
-      "title": "Multi-Sport Using 2 Lanes - 1 Lane, Play & Therapy Pools Open",
-      "start": "2026-06-14T18:00:00.000",
-      "end": "2026-06-14T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0dc18c95-12af-4696-9184-25618f1f39c3",
-      "title": "Cudas Using 3 Lanes - 1 Lane, Play & Therapy Pool Open",
-      "start": "2026-06-14T18:00:00.000",
-      "end": "2026-06-14T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "8c7b1cf0-cfc6-4054-9a5c-671b383a1cb1",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-14T19:00:00.000",
-      "end": "2026-06-14T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "cf25bc00-5156-469e-a58a-5f7b4fd1fe42__20260615T063000Z",
       "title": "Members Swim",
       "start": "2026-06-15T06:30:00.000",
@@ -746,17 +656,80 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "cf25bc00-5156-469e-a58a-5f7b4fd1fe42__20260623T063000Z",
+      "title": "Members Swim",
+      "start": "2026-06-23T06:30:00.000",
+      "end": "2026-06-23T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b80a3325-d1ea-482b-bea7-6069b06f17ee__20260623T073000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-06-23T07:30:00.000",
+      "end": "2026-06-23T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "14cec5c4-51d0-441d-b914-3da5979b0b08__20260623T100000Z",
+      "title": "Elderfit Using Lap Pool - All Other Pools Not Available",
+      "start": "2026-06-23T10:00:00.000",
+      "end": "2026-06-23T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "350b8d0c-593b-4d9a-a4dc-c95c8f5945e0__20260623T110000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pool Open",
+      "start": "2026-06-23T11:00:00.000",
+      "end": "2026-06-23T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f4b98fd9-f57b-432c-ae87-bbbae3c6fb8f",
+      "title": "Aqua Tabata using Lap Pool - All Other Pools Closed to the Public",
+      "start": "2026-06-23T12:05:00.000",
+      "end": "2026-06-23T12:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "36058c9f-12e3-43fa-aa99-daa9dc84efd9",
+      "title": "Closed for maintenance",
+      "start": "2026-06-23T13:00:00.000",
+      "end": "2026-06-23T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "58ba3903-95e3-4efa-8364-3d6ff7e801d7",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-06-23T14:00:00.000",
+      "end": "2026-06-23T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-14T00:48:25.481Z",
+  "lastUpdated": "2026-06-15T00:57:17.097Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-06-14T00:00:00.000Z",
-      "end": "2026-06-22T23:59:00.000Z"
+      "start": "2026-06-15T00:00:00.000Z",
+      "end": "2026-06-23T23:59:00.000Z"
     },
-    "eventCount": 83,
-    "generatedAt": "2026-06-14T00:48:25.481Z",
+    "eventCount": 80,
+    "generatedAt": "2026-06-15T00:57:17.097Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
