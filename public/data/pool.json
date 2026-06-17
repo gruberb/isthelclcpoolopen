@@ -442,6 +442,15 @@
       "allDay": false
     },
     {
+      "id": "7ee0e9e0-c3af-446c-96e9-f452e187e3c5",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-06-22T16:45:00.000",
+      "end": "2026-06-22T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "38261530-0161-4af2-a4f9-c33e79aeb9a2",
       "title": "Special Olympics Using Lap Pool - Play & Therapy Pools Open",
       "start": "2026-06-22T18:00:00.000",
@@ -658,15 +667,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-17T13:16:43.182Z",
+  "lastUpdated": "2026-06-17T16:17:41.965Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-17T00:00:00.000Z",
       "end": "2026-06-25T23:59:00.000Z"
     },
-    "eventCount": 73,
-    "generatedAt": "2026-06-17T13:16:43.182Z",
+    "eventCount": 74,
+    "generatedAt": "2026-06-17T16:17:41.965Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
