@@ -199,8 +199,8 @@
       "allDay": false
     },
     {
-      "id": "f3f9804d-f85e-45b5-a3a0-ca54d2a90fca",
-      "title": "Private Rental - SSRCE / Pools Closed to the Public",
+      "id": "601ab297-4e2f-49db-8ca8-7f88c0a93fb2",
+      "title": "School Booking",
       "start": "2026-06-19T11:30:00.000",
       "end": "2026-06-19T12:30:00.000",
       "backgroundColor": "#0000FF",
@@ -208,8 +208,8 @@
       "allDay": false
     },
     {
-      "id": "601ab297-4e2f-49db-8ca8-7f88c0a93fb2",
-      "title": "School Booking",
+      "id": "f3f9804d-f85e-45b5-a3a0-ca54d2a90fca",
+      "title": "Private Rental - SSRCE / Pools Closed to the Public",
       "start": "2026-06-19T11:30:00.000",
       "end": "2026-06-19T12:30:00.000",
       "backgroundColor": "#0000FF",
@@ -442,15 +442,6 @@
       "allDay": false
     },
     {
-      "id": "01b8ced0-fc00-4603-b076-c8ae23ef39ac",
-      "title": "Aqua Dance using Lap Pool - All Other Pools not Available",
-      "start": "2026-06-22T17:00:00.000",
-      "end": "2026-06-22T17:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "38261530-0161-4af2-a4f9-c33e79aeb9a2",
       "title": "Special Olympics Using Lap Pool - Play & Therapy Pools Open",
       "start": "2026-06-22T18:00:00.000",
@@ -667,15 +658,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-17T01:24:04.495Z",
+  "lastUpdated": "2026-06-17T13:16:43.182Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-17T00:00:00.000Z",
       "end": "2026-06-25T23:59:00.000Z"
     },
-    "eventCount": 74,
-    "generatedAt": "2026-06-17T01:24:04.495Z",
+    "eventCount": 73,
+    "generatedAt": "2026-06-17T13:16:43.182Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
