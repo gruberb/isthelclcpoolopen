@@ -496,6 +496,15 @@
       "allDay": false
     },
     {
+      "id": "45d6795b-6f1d-4093-9735-22538e2e624c",
+      "title": "Closed for Maintenance",
+      "start": "2026-06-25T13:00:00.000",
+      "end": "2026-06-25T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "2ae5bcd9-23fe-4254-8fec-11c671fc3211",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-25T14:00:00.000",
@@ -550,6 +559,15 @@
       "allDay": false
     },
     {
+      "id": "7f900ed4-1534-4a56-ad8f-65c548c9a074",
+      "title": "Closed for Maintenance",
+      "start": "2026-06-26T13:00:00.000",
+      "end": "2026-06-26T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "dd851332-7210-4719-b622-19e0f593216f",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-26T14:00:00.000",
@@ -586,6 +604,15 @@
       "allDay": false
     },
     {
+      "id": "5cc5ce3c-4192-4ef8-8c1a-d5e0cee0407c",
+      "title": "Closed for Maintenance",
+      "start": "2026-06-27T12:00:00.000",
+      "end": "2026-06-27T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "08424435-fcc6-45f9-8427-015c82e6e35e",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-06-27T13:00:00.000",
@@ -613,15 +640,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-19T00:03:23.579Z",
+  "lastUpdated": "2026-06-19T15:40:01.923Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-19T00:00:00.000Z",
       "end": "2026-06-27T23:59:00.000Z"
     },
-    "eventCount": 68,
-    "generatedAt": "2026-06-19T00:03:23.579Z",
+    "eventCount": 71,
+    "generatedAt": "2026-06-19T15:40:01.923Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
