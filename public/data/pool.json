@@ -244,9 +244,18 @@
       "allDay": false
     },
     {
+      "id": "61754b55-0141-48ca-a7c6-b807db1cb90d",
+      "title": "Aqua Fitness using Lap Pool - All Other Pools Not Available",
+      "start": "2026-06-24T19:00:00.000",
+      "end": "2026-06-24T19:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "7ad450a5-d1ce-404f-a9c0-ddae0be37ed6",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-24T19:00:00.000",
+      "start": "2026-06-24T20:00:00.000",
       "end": "2026-06-24T21:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -640,15 +649,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-22T00:49:26.524Z",
+  "lastUpdated": "2026-06-22T15:17:34.561Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-22T00:00:00.000Z",
       "end": "2026-06-30T23:59:00.000Z"
     },
-    "eventCount": 71,
-    "generatedAt": "2026-06-22T00:49:26.524Z",
+    "eventCount": 72,
+    "generatedAt": "2026-06-22T15:17:34.561Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
