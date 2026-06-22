@@ -89,15 +89,33 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "412376d8-a33d-449e-9608-e4f4894e8759",
+      "title": "Adult Skate",
+      "start": "2026-07-02T12:00:00.000",
+      "end": "2026-07-02T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4ea13928-4598-4bc2-ad3b-550cb7122904",
+      "title": "Public Skate",
+      "start": "2026-07-02T15:00:00.000",
+      "end": "2026-07-02T16:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-21T06:34:56.991Z",
+  "lastUpdated": "2026-06-22T06:47:10.831Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 45,
-    "publicEvents": 10,
-    "generatedAt": "2026-06-21T06:34:56.991Z",
+    "totalEvents": 43,
+    "publicEvents": 12,
+    "generatedAt": "2026-06-22T06:47:10.831Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
