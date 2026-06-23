@@ -28,7 +28,7 @@
       "allDay": false
     },
     {
-      "id": "350b8d0c-593b-4d9a-a4dc-c95c8f5945e0__20260623T110000Z",
+      "id": "0c6f190c-0b8b-47af-badc-b3306ad61ca0",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pool Open",
       "start": "2026-06-23T11:00:00.000",
       "end": "2026-06-23T12:00:00.000",
@@ -37,10 +37,10 @@
       "allDay": false
     },
     {
-      "id": "f4b98fd9-f57b-432c-ae87-bbbae3c6fb8f",
-      "title": "Aqua Tabata using Lap Pool - All Other Pools Closed to the Public",
-      "start": "2026-06-23T12:05:00.000",
-      "end": "2026-06-23T12:50:00.000",
+      "id": "dd27fcf2-5da7-401e-8cbd-16fe8548a774",
+      "title": "Lane Swim - ",
+      "start": "2026-06-23T12:00:00.000",
+      "end": "2026-06-23T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -541,7 +541,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-23T00:44:02.120Z",
+  "lastUpdated": "2026-06-23T13:26:26.326Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -549,7 +549,7 @@
       "end": "2026-07-01T23:59:00.000Z"
     },
     "eventCount": 60,
-    "generatedAt": "2026-06-23T00:44:02.120Z",
+    "generatedAt": "2026-06-23T13:26:26.326Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
