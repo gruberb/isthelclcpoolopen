@@ -38,7 +38,7 @@
     },
     {
       "id": "dd27fcf2-5da7-401e-8cbd-16fe8548a774",
-      "title": "Lane Swim - ",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-23T12:00:00.000",
       "end": "2026-06-23T13:00:00.000",
       "backgroundColor": "#0000FF",
@@ -541,7 +541,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-23T13:26:26.326Z",
+  "lastUpdated": "2026-06-23T14:20:22.389Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -549,7 +549,7 @@
       "end": "2026-07-01T23:59:00.000Z"
     },
     "eventCount": 60,
-    "generatedAt": "2026-06-23T13:26:26.326Z",
+    "generatedAt": "2026-06-23T14:20:22.389Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
