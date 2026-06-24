@@ -1,69 +1,6 @@
 {
   "data": [
     {
-      "id": "cf25bc00-5156-469e-a58a-5f7b4fd1fe42__20260623T063000Z",
-      "title": "Members Swim",
-      "start": "2026-06-23T06:30:00.000",
-      "end": "2026-06-23T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b80a3325-d1ea-482b-bea7-6069b06f17ee__20260623T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-23T07:30:00.000",
-      "end": "2026-06-23T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "14cec5c4-51d0-441d-b914-3da5979b0b08__20260623T100000Z",
-      "title": "Elderfit Using Lap Pool - All Other Pools Not Available",
-      "start": "2026-06-23T10:00:00.000",
-      "end": "2026-06-23T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0c6f190c-0b8b-47af-badc-b3306ad61ca0",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pool Open",
-      "start": "2026-06-23T11:00:00.000",
-      "end": "2026-06-23T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "dd27fcf2-5da7-401e-8cbd-16fe8548a774",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-23T12:00:00.000",
-      "end": "2026-06-23T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "36058c9f-12e3-43fa-aa99-daa9dc84efd9",
-      "title": "Closed for maintenance",
-      "start": "2026-06-23T13:00:00.000",
-      "end": "2026-06-23T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "58ba3903-95e3-4efa-8364-3d6ff7e801d7",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-23T14:00:00.000",
-      "end": "2026-06-23T21:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "cf25bc00-5156-469e-a58a-5f7b4fd1fe42__20260624T063000Z",
       "title": "Members Swim",
       "start": "2026-06-24T06:30:00.000",
@@ -541,15 +478,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-23T14:20:22.389Z",
+  "lastUpdated": "2026-06-24T00:39:32.542Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-06-23T00:00:00.000Z",
-      "end": "2026-07-01T23:59:00.000Z"
+      "start": "2026-06-24T00:00:00.000Z",
+      "end": "2026-07-02T23:59:00.000Z"
     },
-    "eventCount": 60,
-    "generatedAt": "2026-06-23T14:20:22.389Z",
+    "eventCount": 53,
+    "generatedAt": "2026-06-24T00:39:32.542Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
