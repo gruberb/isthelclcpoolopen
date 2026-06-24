@@ -496,6 +496,15 @@
       "allDay": false
     },
     {
+      "id": "f62d90fb-389b-4f75-b487-98af68fa79a1",
+      "title": "Closed for Canada Day",
+      "start": "2026-07-01T00:00:00.000",
+      "end": "2026-07-01T22:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "99873760-37c6-4165-8905-dacdbc65d94d",
       "title": "Members Swim",
       "start": "2026-07-02T06:30:00.000",
@@ -559,15 +568,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-24T16:45:12.331Z",
+  "lastUpdated": "2026-06-24T17:37:52.960Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-24T00:00:00.000Z",
       "end": "2026-07-02T23:59:00.000Z"
     },
-    "eventCount": 62,
-    "generatedAt": "2026-06-24T16:45:12.331Z",
+    "eventCount": 63,
+    "generatedAt": "2026-06-24T17:37:52.960Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
