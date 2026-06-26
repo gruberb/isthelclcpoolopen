@@ -1,69 +1,6 @@
 {
   "data": [
     {
-      "id": "cf25bc00-5156-469e-a58a-5f7b4fd1fe42__20260625T063000Z",
-      "title": "Members Swim",
-      "start": "2026-06-25T06:30:00.000",
-      "end": "2026-06-25T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b80a3325-d1ea-482b-bea7-6069b06f17ee__20260625T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-25T07:30:00.000",
-      "end": "2026-06-25T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "14cec5c4-51d0-441d-b914-3da5979b0b08__20260625T100000Z",
-      "title": "Elderfit Using Lap Pool - All Other Pools Not Available",
-      "start": "2026-06-25T10:00:00.000",
-      "end": "2026-06-25T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "350b8d0c-593b-4d9a-a4dc-c95c8f5945e0__20260625T110000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pool Open",
-      "start": "2026-06-25T11:00:00.000",
-      "end": "2026-06-25T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1890b787-0d98-4377-b029-347c4d860f90",
-      "title": "Bayview Community School",
-      "start": "2026-06-25T12:00:00.000",
-      "end": "2026-06-25T13:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
-      "id": "45d6795b-6f1d-4093-9735-22538e2e624c",
-      "title": "Closed for Maintenance",
-      "start": "2026-06-25T13:00:00.000",
-      "end": "2026-06-25T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2ae5bcd9-23fe-4254-8fec-11c671fc3211",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-25T14:00:00.000",
-      "end": "2026-06-25T21:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "cf25bc00-5156-469e-a58a-5f7b4fd1fe42__20260626T063000Z",
       "title": "Members Swim",
       "start": "2026-06-26T06:30:00.000",
@@ -539,17 +476,62 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "32bbeae2-8cda-4adc-907e-6de8115d3dbb",
+      "title": "Members Swim",
+      "start": "2026-07-04T09:00:00.000",
+      "end": "2026-07-04T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "98d80e7d-6865-4f2c-99a8-b8afd2225422",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-04T10:00:00.000",
+      "end": "2026-07-04T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "813f4b45-bc09-4bc1-8cbe-53c43d4ca414",
+      "title": "Closed For Maintenance",
+      "start": "2026-07-04T13:00:00.000",
+      "end": "2026-07-04T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0667d473-2273-43c1-baa5-027f793a38c1",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-07-04T14:00:00.000",
+      "end": "2026-07-04T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20260704T160000Z",
+      "title": "MODL / LCLC Women's Only Swim",
+      "start": "2026-07-04T16:00:00.000",
+      "end": "2026-07-04T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-25T12:17:01.729Z",
+  "lastUpdated": "2026-06-26T00:45:41.075Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-06-25T00:00:00.000Z",
-      "end": "2026-07-03T23:59:00.000Z"
+      "start": "2026-06-26T00:00:00.000Z",
+      "end": "2026-07-04T23:59:00.000Z"
     },
-    "eventCount": 60,
-    "generatedAt": "2026-06-25T12:17:01.729Z",
+    "eventCount": 58,
+    "generatedAt": "2026-06-26T00:45:41.075Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
