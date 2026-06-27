@@ -28,8 +28,8 @@
       "allDay": false
     },
     {
-      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20260627T160000Z",
-      "title": "MODL / LCLC Women's Only Swim",
+      "id": "9912691d-53b0-402d-ad7d-ea6b9702eb1d",
+      "title": "MODL / LCLC Women and Girls Only Swim",
       "start": "2026-06-27T16:00:00.000",
       "end": "2026-06-27T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -487,7 +487,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-27T00:42:48.549Z",
+  "lastUpdated": "2026-06-27T20:24:39.022Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -495,7 +495,7 @@
       "end": "2026-07-05T23:59:00.000Z"
     },
     "eventCount": 54,
-    "generatedAt": "2026-06-27T00:42:48.549Z",
+    "generatedAt": "2026-06-27T20:24:39.022Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
