@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "13f7933a-f445-47af-a1df-f87870a42187",
-      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
-      "start": "2026-06-27T07:30:00.000",
-      "end": "2026-06-27T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "5cc5ce3c-4192-4ef8-8c1a-d5e0cee0407c",
-      "title": "Closed for Maintenance",
-      "start": "2026-06-27T12:00:00.000",
-      "end": "2026-06-27T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "08424435-fcc6-45f9-8427-015c82e6e35e",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-06-27T13:00:00.000",
-      "end": "2026-06-27T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9912691d-53b0-402d-ad7d-ea6b9702eb1d",
-      "title": "MODL / LCLC Women and Girls Only Swim",
-      "start": "2026-06-27T16:00:00.000",
-      "end": "2026-06-27T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "be2b4c7b-ea52-43da-adf3-73505218441d",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-27T17:00:00.000",
-      "end": "2026-06-27T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "0c7c5b48-d98d-4c8c-ad29-f85ca7e382d8",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-06-28T07:30:00.000",
@@ -487,15 +442,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-27T20:24:39.022Z",
+  "lastUpdated": "2026-06-28T00:44:20.152Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-06-27T00:00:00.000Z",
-      "end": "2026-07-05T23:59:00.000Z"
+      "start": "2026-06-28T00:00:00.000Z",
+      "end": "2026-07-06T23:59:00.000Z"
     },
-    "eventCount": 54,
-    "generatedAt": "2026-06-27T20:24:39.022Z",
+    "eventCount": 49,
+    "generatedAt": "2026-06-28T00:44:20.152Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
