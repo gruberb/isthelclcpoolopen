@@ -325,10 +325,19 @@
       "allDay": false
     },
     {
-      "id": "ea03da3c-45ad-4ae3-9af6-6a65c2e9e638__20260706T130000Z",
-      "title": "Maintenance ",
+      "id": "bf5ab071-ac7d-4f44-939a-fe0e630be06c",
+      "title": "Closed For Maintenance",
       "start": "2026-07-06T13:00:00.000",
       "end": "2026-07-06T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7159feb2-b8e7-4459-b291-d433f95e1ea7",
+      "title": "Senior Swim",
+      "start": "2026-07-06T15:00:00.000",
+      "end": "2026-07-06T16:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -371,7 +380,7 @@
     },
     {
       "id": "ea03da3c-45ad-4ae3-9af6-6a65c2e9e638__20260707T130000Z",
-      "title": "Maintenance ",
+      "title": "Closed For Maintenance ",
       "start": "2026-07-07T13:00:00.000",
       "end": "2026-07-07T14:00:00.000",
       "backgroundColor": "#0000FF",
@@ -416,7 +425,7 @@
     },
     {
       "id": "ea03da3c-45ad-4ae3-9af6-6a65c2e9e638__20260708T130000Z",
-      "title": "Maintenance ",
+      "title": "Closed For Maintenance ",
       "start": "2026-07-08T13:00:00.000",
       "end": "2026-07-08T14:00:00.000",
       "backgroundColor": "#0000FF",
@@ -424,15 +433,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-30T15:51:53.598Z",
+  "lastUpdated": "2026-06-30T16:44:52.737Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-06-30T00:00:00.000Z",
       "end": "2026-07-08T23:59:00.000Z"
     },
-    "eventCount": 47,
-    "generatedAt": "2026-06-30T15:51:53.598Z",
+    "eventCount": 48,
+    "generatedAt": "2026-06-30T16:44:52.737Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
