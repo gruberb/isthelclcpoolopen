@@ -1,69 +1,6 @@
 {
   "data": [
     {
-      "id": "cf25bc00-5156-469e-a58a-5f7b4fd1fe42__20260630T063000Z",
-      "title": "Members Swim",
-      "start": "2026-06-30T06:30:00.000",
-      "end": "2026-06-30T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b80a3325-d1ea-482b-bea7-6069b06f17ee__20260630T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-30T07:30:00.000",
-      "end": "2026-06-30T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "14cec5c4-51d0-441d-b914-3da5979b0b08__20260630T100000Z",
-      "title": "Elderfit Using Lap Pool - All Other Pools Not Available",
-      "start": "2026-06-30T10:00:00.000",
-      "end": "2026-06-30T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "350b8d0c-593b-4d9a-a4dc-c95c8f5945e0__20260630T110000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pool Open",
-      "start": "2026-06-30T11:00:00.000",
-      "end": "2026-06-30T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "abcaf5bb-4ad6-45e1-a211-1ea7b18c73a6",
-      "title": "Aqua Tabata using Lap Pool - All Other Pools Not Available",
-      "start": "2026-06-30T12:05:00.000",
-      "end": "2026-06-30T12:50:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "14eb0394-7082-46ba-b098-ffbcf0298f02",
-      "title": "Closed for Maintenance",
-      "start": "2026-06-30T13:00:00.000",
-      "end": "2026-06-30T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "706068ee-58e7-4a56-8c8f-58c1a3e1c6b7",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-06-30T14:00:00.000",
-      "end": "2026-06-30T21:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "f62d90fb-389b-4f75-b487-98af68fa79a1",
       "title": "Closed for Canada Day",
       "start": "2026-07-01T00:00:00.000",
@@ -494,17 +431,62 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260709T063000Z",
+      "title": "Members Swim",
+      "start": "2026-07-09T06:30:00.000",
+      "end": "2026-07-09T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1619dbc9-8c99-45f2-9a2c-a056ff554bc6__20260709T073000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-09T07:30:00.000",
+      "end": "2026-07-09T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2cfd6d84-5fa1-4b27-9bf1-8c4c49cec0fd__20260709T090000Z",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2026-07-09T09:00:00.000",
+      "end": "2026-07-09T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0ca8fbc1-1f9c-4ed7-bf55-54c331d9c6dc__20260709T120500Z",
+      "title": "Aqua Tabata Using Lap Pool - All Other Pools Not Available",
+      "start": "2026-07-09T12:05:00.000",
+      "end": "2026-07-09T12:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ea03da3c-45ad-4ae3-9af6-6a65c2e9e638__20260709T130000Z",
+      "title": "Closed For Maintenance ",
+      "start": "2026-07-09T13:00:00.000",
+      "end": "2026-07-09T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-06-30T17:36:20.813Z",
+  "lastUpdated": "2026-07-01T00:46:02.628Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-06-30T00:00:00.000Z",
-      "end": "2026-07-08T23:59:00.000Z"
+      "start": "2026-07-01T00:00:00.000Z",
+      "end": "2026-07-09T23:59:00.000Z"
     },
-    "eventCount": 55,
-    "generatedAt": "2026-06-30T17:36:20.813Z",
+    "eventCount": 53,
+    "generatedAt": "2026-07-01T00:46:02.628Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
