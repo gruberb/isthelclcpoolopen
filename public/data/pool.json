@@ -19,8 +19,8 @@
       "allDay": false
     },
     {
-      "id": "0ca8fbc1-1f9c-4ed7-bf55-54c331d9c6dc__20260702T120500Z",
-      "title": "Aqua Tabata Using Lap Pool - All Other Pools Not Available",
+      "id": "02c3f4b1-b913-4020-a67e-d47a05663433",
+      "title": "Aqua Tabata Cancelled - Lap Pool Closed UFN",
       "start": "2026-07-02T12:05:00.000",
       "end": "2026-07-02T12:50:00.000",
       "backgroundColor": "#0000FF",
@@ -47,7 +47,7 @@
     },
     {
       "id": "6c8b884b-b7ff-4939-901a-0d5c33b3e937",
-      "title": "Public Swim - No Lanes, All Pools Open",
+      "title": "Public Swim - No Lanes, Play & Therapy Pools Open. Lap Pool Closed UFN",
       "start": "2026-07-02T15:00:00.000",
       "end": "2026-07-02T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -56,7 +56,7 @@
     },
     {
       "id": "93bf701e-c853-4e2f-88d9-56b87fe17792",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "title": "Recreational Swim - Lap Pool Closed UFN -  Play & Therapy Pools Open",
       "start": "2026-07-02T17:00:00.000",
       "end": "2026-07-02T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -65,7 +65,7 @@
     },
     {
       "id": "b8f6b7f3-db35-49cc-9fa4-f9bf480bd4d7",
-      "title": "Members Swim",
+      "title": "Members Swim - Lap Pool Closed UFN",
       "start": "2026-07-03T06:30:00.000",
       "end": "2026-07-03T07:30:00.000",
       "backgroundColor": "#0000FF",
@@ -74,7 +74,7 @@
     },
     {
       "id": "4bba630e-7105-40a6-8fda-7fc0959630dc",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "title": "Recreational Swim - Lap Pool Closed - Play & Therapy Pools Open",
       "start": "2026-07-03T07:30:00.000",
       "end": "2026-07-03T12:00:00.000",
       "backgroundColor": "#0000FF",
@@ -505,7 +505,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-02T00:43:22.514Z",
+  "lastUpdated": "2026-07-02T18:11:26.056Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -513,7 +513,7 @@
       "end": "2026-07-10T23:59:00.000Z"
     },
     "eventCount": 56,
-    "generatedAt": "2026-07-02T00:43:22.514Z",
+    "generatedAt": "2026-07-02T18:11:26.056Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
