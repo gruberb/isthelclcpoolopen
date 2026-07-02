@@ -1,15 +1,6 @@
 {
   "data": [
     {
-      "id": "f62d90fb-389b-4f75-b487-98af68fa79a1",
-      "title": "Closed for Canada Day",
-      "start": "2026-07-01T00:00:00.000",
-      "end": "2026-07-01T22:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "99873760-37c6-4165-8905-dacdbc65d94d",
       "title": "Members Swim",
       "start": "2026-07-02T06:30:00.000",
@@ -476,17 +467,53 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260710T063000Z",
+      "title": "Members Swim",
+      "start": "2026-07-10T06:30:00.000",
+      "end": "2026-07-10T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f55bec93-2328-4d6e-8d24-d601a5331d72",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-10T07:30:00.000",
+      "end": "2026-07-10T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d6cf5c7a-a1fe-4c21-9fda-a353062049bf",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2026-07-10T12:00:00.000",
+      "end": "2026-07-10T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ea03da3c-45ad-4ae3-9af6-6a65c2e9e638__20260710T130000Z",
+      "title": "Closed For Maintenance ",
+      "start": "2026-07-10T13:00:00.000",
+      "end": "2026-07-10T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-01T00:46:02.628Z",
+  "lastUpdated": "2026-07-02T00:43:22.514Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-07-01T00:00:00.000Z",
-      "end": "2026-07-09T23:59:00.000Z"
+      "start": "2026-07-02T00:00:00.000Z",
+      "end": "2026-07-10T23:59:00.000Z"
     },
-    "eventCount": 53,
-    "generatedAt": "2026-07-01T00:46:02.628Z",
+    "eventCount": 56,
+    "generatedAt": "2026-07-02T00:43:22.514Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
