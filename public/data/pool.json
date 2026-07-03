@@ -13,15 +13,6 @@
       "id": "4bba630e-7105-40a6-8fda-7fc0959630dc",
       "title": "Recreational Swim - Lap Pool Closed - Play & Therapy Pools Open",
       "start": "2026-07-03T07:30:00.000",
-      "end": "2026-07-03T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "cf15fb37-8ac5-4eb4-999c-047feda960a6",
-      "title": "Elderfit Using Lap Pool - All Other Pools Not Available",
-      "start": "2026-07-03T12:00:00.000",
       "end": "2026-07-03T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -236,7 +227,7 @@
     },
     {
       "id": "22431de1-ccaf-43a8-a411-f2678da642a7",
-      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
+      "title": "Water Polo Clinic in Lap Pool - Play and Therapy Open ",
       "start": "2026-07-06T19:00:00.000",
       "end": "2026-07-06T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -406,6 +397,15 @@
       "allDay": false
     },
     {
+      "id": "720ee83e-e574-4911-a167-980692cbdea4",
+      "title": "Water Polo Clinic in Lap Pool - Play and Therapy Pool Open",
+      "start": "2026-07-09T19:00:00.000",
+      "end": "2026-07-09T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260710T063000Z",
       "title": "Members Swim",
       "start": "2026-07-10T06:30:00.000",
@@ -451,7 +451,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-03T00:02:12.701Z",
+  "lastUpdated": "2026-07-03T15:06:59.357Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -459,7 +459,7 @@
       "end": "2026-07-11T23:59:00.000Z"
     },
     "eventCount": 50,
-    "generatedAt": "2026-07-03T00:02:12.701Z",
+    "generatedAt": "2026-07-03T15:06:59.357Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
