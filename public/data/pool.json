@@ -451,6 +451,24 @@
       "allDay": false
     },
     {
+      "id": "8b619b54-2907-446e-96f2-8741699e7b32",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-09T15:00:00.000",
+      "end": "2026-07-09T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0d780939-2424-444d-9637-11b5cc7b60a3",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2026-07-09T15:30:00.000",
+      "end": "2026-07-09T18:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "720ee83e-e574-4911-a167-980692cbdea4",
       "title": "Water Polo Clinic in Lap Pool - Play and Therapy Pool Open",
       "start": "2026-07-09T19:00:00.000",
@@ -505,6 +523,51 @@
       "allDay": false
     },
     {
+      "id": "91ab02fc-1fc2-45e1-b2ad-cb04a8b51a74",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-07-10T15:00:00.000",
+      "end": "2026-07-10T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "27123eab-6f47-4527-bf15-bec142c93e21",
+      "title": "Members Swim",
+      "start": "2026-07-11T09:00:00.000",
+      "end": "2026-07-11T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "24ad7599-6824-4d4e-901c-759524f903f1",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-11T10:00:00.000",
+      "end": "2026-07-11T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "98e09dee-382b-48d4-8fce-6045a30eede4",
+      "title": "Closed for Maintenance",
+      "start": "2026-07-11T13:00:00.000",
+      "end": "2026-07-11T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5a45cc2f-3eb1-4051-8648-aebfde82c1fd",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-07-11T14:00:00.000",
+      "end": "2026-07-11T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20260711T160000Z",
       "title": "MODL / LCLC Women's Only Swim",
       "start": "2026-07-11T16:00:00.000",
@@ -514,15 +577,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-03T21:05:37.026Z",
+  "lastUpdated": "2026-07-03T22:31:57.629Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-07-03T00:00:00.000Z",
       "end": "2026-07-11T23:59:00.000Z"
     },
-    "eventCount": 57,
-    "generatedAt": "2026-07-03T21:05:37.026Z",
+    "eventCount": 64,
+    "generatedAt": "2026-07-03T22:31:57.629Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
