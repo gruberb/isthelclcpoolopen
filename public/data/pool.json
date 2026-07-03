@@ -190,6 +190,15 @@
       "allDay": false
     },
     {
+      "id": "8b7109d2-694b-440d-a089-e0ad6d6bc5de__20260706T140000Z",
+      "title": "Day Camp Using Aquatic Facility - No Pools Available",
+      "start": "2026-07-06T14:00:00.000",
+      "end": "2026-07-06T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "7159feb2-b8e7-4459-b291-d433f95e1ea7",
       "title": "Senior Swim",
       "start": "2026-07-06T15:00:00.000",
@@ -280,6 +289,15 @@
       "allDay": false
     },
     {
+      "id": "8b7109d2-694b-440d-a089-e0ad6d6bc5de__20260707T140000Z",
+      "title": "Day Camp Using Aquatic Facility - No Pools Available",
+      "start": "2026-07-07T14:00:00.000",
+      "end": "2026-07-07T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "9d17fda3-b5ea-43e2-beac-3253859b7b4a",
       "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-07-07T15:00:00.000",
@@ -352,6 +370,33 @@
       "allDay": false
     },
     {
+      "id": "8b7109d2-694b-440d-a089-e0ad6d6bc5de__20260708T140000Z",
+      "title": "Day Camp Using Aquatic Facility - No Pools Available",
+      "start": "2026-07-08T14:00:00.000",
+      "end": "2026-07-08T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5e562cdf-9eb1-46bf-b485-a93908bf2bdb",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-07-08T15:00:00.000",
+      "end": "2026-07-08T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e0ff06d3-a76e-4742-89ce-0912670aa886",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-08T17:15:00.000",
+      "end": "2026-07-08T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260709T063000Z",
       "title": "Members Swim",
       "start": "2026-07-09T06:30:00.000",
@@ -392,6 +437,15 @@
       "title": "Closed For Maintenance ",
       "start": "2026-07-09T13:00:00.000",
       "end": "2026-07-09T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8b7109d2-694b-440d-a089-e0ad6d6bc5de__20260709T140000Z",
+      "title": "Day Camp Using Aquatic Facility - No Pools Available",
+      "start": "2026-07-09T14:00:00.000",
+      "end": "2026-07-09T15:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -442,6 +496,15 @@
       "allDay": false
     },
     {
+      "id": "8b7109d2-694b-440d-a089-e0ad6d6bc5de__20260710T140000Z",
+      "title": "Day Camp Using Aquatic Facility - No Pools Available",
+      "start": "2026-07-10T14:00:00.000",
+      "end": "2026-07-10T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20260711T160000Z",
       "title": "MODL / LCLC Women's Only Swim",
       "start": "2026-07-11T16:00:00.000",
@@ -451,15 +514,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-03T15:06:59.357Z",
+  "lastUpdated": "2026-07-03T21:05:37.026Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-07-03T00:00:00.000Z",
       "end": "2026-07-11T23:59:00.000Z"
     },
-    "eventCount": 50,
-    "generatedAt": "2026-07-03T15:06:59.357Z",
+    "eventCount": 57,
+    "generatedAt": "2026-07-03T21:05:37.026Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
