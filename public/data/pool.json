@@ -226,6 +226,15 @@
       "allDay": false
     },
     {
+      "id": "82ff1528-9e04-47ec-9b21-a1a9b39e63d2",
+      "title": "Busy",
+      "start": "2026-07-09T18:00:00.000",
+      "end": "2026-07-09T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "720ee83e-e574-4911-a167-980692cbdea4",
       "title": "Water Polo Clinic in Lap Pool - Play and Therapy Pool Open",
       "start": "2026-07-09T19:00:00.000",
@@ -496,15 +505,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-07T01:15:24.884Z",
+  "lastUpdated": "2026-07-07T22:36:25.994Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-07-07T00:00:00.000Z",
       "end": "2026-07-15T23:59:00.000Z"
     },
-    "eventCount": 55,
-    "generatedAt": "2026-07-07T01:15:24.884Z",
+    "eventCount": 56,
+    "generatedAt": "2026-07-07T22:36:25.994Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
