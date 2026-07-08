@@ -550,6 +550,15 @@
       "allDay": false
     },
     {
+      "id": "cf4d89dd-d1ca-4831-b859-7fbab5834d18",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-15T17:15:00.000",
+      "end": "2026-07-15T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260716T063000Z",
       "title": "Members Swim",
       "start": "2026-07-16T06:30:00.000",
@@ -593,17 +602,62 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "387bcb00-8329-4479-a11f-b70897758cbc",
+      "title": "Day Camps Using Aquatic Facility - No Pools Available",
+      "start": "2026-07-16T14:00:00.000",
+      "end": "2026-07-16T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4d38571b-757a-4b95-bef7-83fa225b4de7",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-16T15:00:00.000",
+      "end": "2026-07-16T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4ef08bb0-9495-4b04-8fdf-38d93dbd45d0",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2026-07-16T15:30:00.000",
+      "end": "2026-07-16T18:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1d09f1e1-b9d3-4ec5-bb58-2d2271bb75cb",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-16T18:30:00.000",
+      "end": "2026-07-16T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9a88222f-2bfe-482d-8e9e-57871fc21ead",
+      "title": "Cudas Using 3 Lanes - 1 Lane, Play & Therapy Pools Open",
+      "start": "2026-07-16T19:00:00.000",
+      "end": "2026-07-16T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-08T14:54:42.966Z",
+  "lastUpdated": "2026-07-08T16:27:28.061Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-07-08T00:00:00.000Z",
       "end": "2026-07-16T23:59:00.000Z"
     },
-    "eventCount": 66,
-    "generatedAt": "2026-07-08T14:54:42.966Z",
+    "eventCount": 72,
+    "generatedAt": "2026-07-08T16:27:28.061Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
