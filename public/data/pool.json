@@ -139,7 +139,7 @@
       "id": "0d780939-2424-444d-9637-11b5cc7b60a3",
       "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
       "start": "2026-07-09T15:30:00.000",
-      "end": "2026-07-09T18:30:00.000",
+      "end": "2026-07-09T19:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -147,15 +147,6 @@
     {
       "id": "82ff1528-9e04-47ec-9b21-a1a9b39e63d2",
       "title": "Busy",
-      "start": "2026-07-09T18:00:00.000",
-      "end": "2026-07-09T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "720ee83e-e574-4911-a167-980692cbdea4",
-      "title": "Water Polo Clinic in Lap Pool - Play and Therapy Pool Open",
       "start": "2026-07-09T19:00:00.000",
       "end": "2026-07-09T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -649,15 +640,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-08T16:27:28.061Z",
+  "lastUpdated": "2026-07-08T18:00:22.254Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-07-08T00:00:00.000Z",
       "end": "2026-07-16T23:59:00.000Z"
     },
-    "eventCount": 72,
-    "generatedAt": "2026-07-08T16:27:28.061Z",
+    "eventCount": 71,
+    "generatedAt": "2026-07-08T18:00:22.254Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
