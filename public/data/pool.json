@@ -37,8 +37,8 @@
       "allDay": false
     },
     {
-      "id": "8b11e8e2-8a7c-4af4-a5e9-75dbf266e973__20260712T160000Z",
-      "title": "Private Rental",
+      "id": "f9bd019f-5761-47ce-bab1-7d929a2f2ea6",
+      "title": "Recreational swim- 4 Lanes, Play and Therapy Pools open",
       "start": "2026-07-12T16:00:00.000",
       "end": "2026-07-12T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -577,7 +577,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-12T02:22:36.559Z",
+  "lastUpdated": "2026-07-12T13:10:12.009Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -585,7 +585,7 @@
       "end": "2026-07-20T23:59:00.000Z"
     },
     "eventCount": 64,
-    "generatedAt": "2026-07-12T02:22:36.559Z",
+    "generatedAt": "2026-07-12T13:10:12.009Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
