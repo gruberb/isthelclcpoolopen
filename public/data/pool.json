@@ -1,60 +1,6 @@
 {
   "data": [
     {
-      "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260717T063000Z",
-      "title": "Members Swim",
-      "start": "2026-07-17T06:30:00.000",
-      "end": "2026-07-17T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "071c3a6a-92b9-426f-b942-9cc02397e18d",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-07-17T07:30:00.000",
-      "end": "2026-07-17T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d79290ea-aa73-4e4e-a690-5c4ed78c267a",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-07-17T12:00:00.000",
-      "end": "2026-07-17T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ea03da3c-45ad-4ae3-9af6-6a65c2e9e638__20260717T130000Z",
-      "title": "Closed For Maintenance ",
-      "start": "2026-07-17T13:00:00.000",
-      "end": "2026-07-17T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "16fde79f-6230-41cf-9ab9-0bf12ff64a3b",
-      "title": "Day Camps Using Aquatic Facility - No Pools Available",
-      "start": "2026-07-17T14:00:00.000",
-      "end": "2026-07-17T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "09ba1110-5356-436e-b1f0-af242e26ff5b",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-07-17T15:00:00.000",
-      "end": "2026-07-17T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "e3399904-2a9e-4564-b332-7315b2b08f9a",
       "title": "Members Swim",
       "start": "2026-07-18T09:00:00.000",
@@ -584,17 +530,62 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "f2cd0688-aa67-4d9c-aad6-007e6e24d115",
+      "title": "Members Swim",
+      "start": "2026-07-26T09:00:00.000",
+      "end": "2026-07-26T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "890cbd99-70c5-4131-9529-119c7951d040",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-26T10:00:00.000",
+      "end": "2026-07-26T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "fce47860-9db3-4407-b176-99cd34cbbbc1",
+      "title": "Closed For Maintenance",
+      "start": "2026-07-26T13:00:00.000",
+      "end": "2026-07-26T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5b8fb85a-63a1-4593-8686-8eaed7629d92",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-07-26T14:00:00.000",
+      "end": "2026-07-26T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8b11e8e2-8a7c-4af4-a5e9-75dbf266e973__20260726T160000Z",
+      "title": "Private Rental",
+      "start": "2026-07-26T16:00:00.000",
+      "end": "2026-07-26T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-17T00:59:04.322Z",
+  "lastUpdated": "2026-07-18T00:53:31.641Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-07-17T00:00:00.000Z",
-      "end": "2026-07-25T23:59:00.000Z"
+      "start": "2026-07-18T00:00:00.000Z",
+      "end": "2026-07-26T23:59:00.000Z"
     },
-    "eventCount": 65,
-    "generatedAt": "2026-07-17T00:59:04.322Z",
+    "eventCount": 64,
+    "generatedAt": "2026-07-18T00:53:31.641Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
