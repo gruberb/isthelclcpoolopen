@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "7a5f3234-3331-4432-b7c1-33a4d77b46aa",
-      "title": "Members Swim",
-      "start": "2026-07-19T09:00:00.000",
-      "end": "2026-07-19T10:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "172f7cf8-fc68-4993-a084-27e3bea15599",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-07-19T10:00:00.000",
-      "end": "2026-07-19T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4b1c16f0-9fa2-4f2a-9e7c-48c073139319",
-      "title": "Closed For Maintenance",
-      "start": "2026-07-19T13:00:00.000",
-      "end": "2026-07-19T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c7ac5167-63a2-49b3-bb8c-3ea3ed1196f5",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-07-19T14:00:00.000",
-      "end": "2026-07-19T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "916b3a65-03fb-4428-ba5a-9de71e6e5074",
-      "title": "Private Rental - Birthday Party",
-      "start": "2026-07-19T16:00:00.000",
-      "end": "2026-07-19T17:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
       "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260720T063000Z",
       "title": "Members Swim",
       "start": "2026-07-20T06:30:00.000",
@@ -566,17 +521,71 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260728T063000Z",
+      "title": "Members Swim",
+      "start": "2026-07-28T06:30:00.000",
+      "end": "2026-07-28T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1619dbc9-8c99-45f2-9a2c-a056ff554bc6__20260728T073000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-28T07:30:00.000",
+      "end": "2026-07-28T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2cfd6d84-5fa1-4b27-9bf1-8c4c49cec0fd__20260728T090000Z",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2026-07-28T09:00:00.000",
+      "end": "2026-07-28T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7506159c-bc3c-4c76-b407-47f456a7eb37__20260728T120500Z",
+      "title": "Aqua Tabata using Lap Pool - All Other Pools Not Available",
+      "start": "2026-07-28T12:05:00.000",
+      "end": "2026-07-28T12:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ea03da3c-45ad-4ae3-9af6-6a65c2e9e638__20260728T130000Z",
+      "title": "Closed For Maintenance ",
+      "start": "2026-07-28T13:00:00.000",
+      "end": "2026-07-28T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3b503861-529f-4176-8cae-df658e6e3262",
+      "title": "Woodworth Hockey School",
+      "start": "2026-07-28T14:30:00.000",
+      "end": "2026-07-28T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-19T00:58:33.102Z",
+  "lastUpdated": "2026-07-20T01:04:48.416Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-07-19T00:00:00.000Z",
-      "end": "2026-07-27T23:59:00.000Z"
+      "start": "2026-07-20T00:00:00.000Z",
+      "end": "2026-07-28T23:59:00.000Z"
     },
-    "eventCount": 63,
-    "generatedAt": "2026-07-19T00:58:33.102Z",
+    "eventCount": 64,
+    "generatedAt": "2026-07-20T01:04:48.416Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
