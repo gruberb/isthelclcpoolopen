@@ -1,87 +1,6 @@
 {
   "data": [
     {
-      "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260720T063000Z",
-      "title": "Members Swim",
-      "start": "2026-07-20T06:30:00.000",
-      "end": "2026-07-20T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1619dbc9-8c99-45f2-9a2c-a056ff554bc6__20260720T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-07-20T07:30:00.000",
-      "end": "2026-07-20T09:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2cfd6d84-5fa1-4b27-9bf1-8c4c49cec0fd__20260720T090000Z",
-      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
-      "start": "2026-07-20T09:00:00.000",
-      "end": "2026-07-20T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d0715b47-e57f-4218-a39b-c06c1b52eded",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-07-20T12:00:00.000",
-      "end": "2026-07-20T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ea03da3c-45ad-4ae3-9af6-6a65c2e9e638__20260720T130000Z",
-      "title": "Closed For Maintenance ",
-      "start": "2026-07-20T13:00:00.000",
-      "end": "2026-07-20T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1d6781e3-574f-4a81-b609-33ec3645d116",
-      "title": "Day Camps Using Aquatic Facility - No Pools Available",
-      "start": "2026-07-20T14:00:00.000",
-      "end": "2026-07-20T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e770194f-b730-42fd-b52f-4d4290dc376e",
-      "title": "Senior Swim",
-      "start": "2026-07-20T15:00:00.000",
-      "end": "2026-07-20T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "fbfd7666-48cd-4b00-a89b-3546705ff7d2",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-07-20T16:00:00.000",
-      "end": "2026-07-20T18:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "79abce35-1586-4614-b9ae-ac4928af83f3",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-07-20T18:30:00.000",
-      "end": "2026-07-20T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260721T063000Z",
       "title": "Members Swim",
       "start": "2026-07-21T06:30:00.000",
@@ -575,17 +494,62 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260729T063000Z",
+      "title": "Members Swim",
+      "start": "2026-07-29T06:30:00.000",
+      "end": "2026-07-29T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1619dbc9-8c99-45f2-9a2c-a056ff554bc6__20260729T073000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-07-29T07:30:00.000",
+      "end": "2026-07-29T09:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2cfd6d84-5fa1-4b27-9bf1-8c4c49cec0fd__20260729T090000Z",
+      "title": "Lessons & Lanes - 2 Lanes & Therapy Pool Open",
+      "start": "2026-07-29T09:00:00.000",
+      "end": "2026-07-29T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ea03da3c-45ad-4ae3-9af6-6a65c2e9e638__20260729T130000Z",
+      "title": "Closed For Maintenance ",
+      "start": "2026-07-29T13:00:00.000",
+      "end": "2026-07-29T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "78c7aca2-a85e-4647-aeea-349ab6357d57",
+      "title": "Woodworth Hockey Camp",
+      "start": "2026-07-29T14:30:00.000",
+      "end": "2026-07-29T15:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-20T18:50:39.072Z",
+  "lastUpdated": "2026-07-21T02:13:26.290Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-07-20T00:00:00.000Z",
-      "end": "2026-07-28T23:59:00.000Z"
+      "start": "2026-07-21T00:00:00.000Z",
+      "end": "2026-07-29T23:59:00.000Z"
     },
-    "eventCount": 64,
-    "generatedAt": "2026-07-20T18:50:39.072Z",
+    "eventCount": 60,
+    "generatedAt": "2026-07-21T02:13:26.290Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
