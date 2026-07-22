@@ -271,6 +271,15 @@
       "allDay": false
     },
     {
+      "id": "376d9f3b-199b-4920-b541-a5a7e9502e29",
+      "title": "Busy",
+      "start": "2026-07-25T17:30:00.000",
+      "end": "2026-07-25T18:30:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
       "id": "850cabd4-7678-4127-94bd-4ea4c74b185f",
       "title": "Private Rental - Clarke Goaltending",
       "start": "2026-07-25T17:30:00.000",
@@ -505,15 +514,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-22T00:55:49.350Z",
+  "lastUpdated": "2026-07-22T18:38:59.208Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-07-22T00:00:00.000Z",
       "end": "2026-07-30T23:59:00.000Z"
     },
-    "eventCount": 56,
-    "generatedAt": "2026-07-22T00:55:49.350Z",
+    "eventCount": 57,
+    "generatedAt": "2026-07-22T18:38:59.208Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
