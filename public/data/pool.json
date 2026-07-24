@@ -166,15 +166,6 @@
       "id": "5b8fb85a-63a1-4593-8686-8eaed7629d92",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-07-26T14:00:00.000",
-      "end": "2026-07-26T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "8b11e8e2-8a7c-4af4-a5e9-75dbf266e973__20260726T160000Z",
-      "title": "Private Rental",
-      "start": "2026-07-26T16:00:00.000",
       "end": "2026-07-26T17:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -622,15 +613,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-24T00:55:08.743Z",
+  "lastUpdated": "2026-07-24T18:56:01.120Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-07-24T00:00:00.000Z",
       "end": "2026-08-01T23:59:00.000Z"
     },
-    "eventCount": 69,
-    "generatedAt": "2026-07-24T00:55:08.743Z",
+    "eventCount": 68,
+    "generatedAt": "2026-07-24T18:56:01.120Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
