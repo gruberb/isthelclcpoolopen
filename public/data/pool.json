@@ -1,69 +1,6 @@
 {
   "data": [
     {
-      "id": "6f90bc35-8dcb-402c-b5b3-b20fb1e292e4__20260724T063000Z",
-      "title": "Members Swim",
-      "start": "2026-07-24T06:30:00.000",
-      "end": "2026-07-24T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "559e55f0-4dc0-403e-86b0-9e69b782ccd5",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-07-24T07:30:00.000",
-      "end": "2026-07-24T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ffe772d6-4e1a-475e-acd2-85a422285ce1",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-07-24T12:00:00.000",
-      "end": "2026-07-24T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ea03da3c-45ad-4ae3-9af6-6a65c2e9e638__20260724T130000Z",
-      "title": "Closed For Maintenance ",
-      "start": "2026-07-24T13:00:00.000",
-      "end": "2026-07-24T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "02272669-5d8d-4883-afc7-5f5671852efd",
-      "title": "Day Camps Using Aquatic Facility - No Pools Available",
-      "start": "2026-07-24T14:00:00.000",
-      "end": "2026-07-24T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "443c2282-ad6d-4fe0-a02f-8f9f38003749",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-07-24T15:00:00.000",
-      "end": "2026-07-24T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "35708066-08df-4a4d-9a1d-a9a15f864c2e",
-      "title": "Option 3 Birthday Party",
-      "start": "2026-07-24T16:30:00.000",
-      "end": "2026-07-24T17:30:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
       "id": "9daed686-046a-4845-aed1-1bfc0b0913b6",
       "title": "Members Swim",
       "start": "2026-07-25T10:30:00.000",
@@ -611,17 +548,62 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "3950bd2a-6403-4ae8-b786-244d79d0a371",
+      "title": "Members Swim",
+      "start": "2026-08-02T09:00:00.000",
+      "end": "2026-08-02T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "78cd2dbc-b4cc-425c-a5d1-b3a30813a624",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-08-02T10:00:00.000",
+      "end": "2026-08-02T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "196a05a4-49a3-4c9f-b0c5-277d102551e4",
+      "title": "Closed For Maintenance",
+      "start": "2026-08-02T13:00:00.000",
+      "end": "2026-08-02T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5f9e84ff-60d8-41ac-ace6-b039932f234d",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-08-02T14:00:00.000",
+      "end": "2026-08-02T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "536e1b01-c933-4dff-888b-13e66a674b62",
+      "title": "Rental Space",
+      "start": "2026-08-02T16:00:00.000",
+      "end": "2026-08-02T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-24T18:56:01.120Z",
+  "lastUpdated": "2026-07-25T00:04:25.703Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-07-24T00:00:00.000Z",
-      "end": "2026-08-01T23:59:00.000Z"
+      "start": "2026-07-25T00:00:00.000Z",
+      "end": "2026-08-02T23:59:00.000Z"
     },
-    "eventCount": 68,
-    "generatedAt": "2026-07-24T18:56:01.120Z",
+    "eventCount": 66,
+    "generatedAt": "2026-07-25T00:04:25.703Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
