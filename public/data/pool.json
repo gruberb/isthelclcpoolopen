@@ -1,78 +1,6 @@
 {
   "data": [
     {
-      "id": "9daed686-046a-4845-aed1-1bfc0b0913b6",
-      "title": "Members Swim",
-      "start": "2026-07-25T10:30:00.000",
-      "end": "2026-07-25T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1bfa342a-99cf-4819-91db-2f7898ad437d",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-07-25T11:30:00.000",
-      "end": "2026-07-25T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c9c97629-075b-4651-b77c-71bdb127235c",
-      "title": "Closed For Maintenance",
-      "start": "2026-07-25T13:00:00.000",
-      "end": "2026-07-25T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "06437df6-1360-4da7-8f98-df8471880df0",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-07-25T14:00:00.000",
-      "end": "2026-07-25T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a9a936cf-d84c-4efe-9571-1f388d1aee8e",
-      "title": "MODL / LCLC Women's Only Swim",
-      "start": "2026-07-25T16:00:00.000",
-      "end": "2026-07-25T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "725f36ab-8f6d-44ed-b801-e36bd14fcd3d",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-07-25T17:00:00.000",
-      "end": "2026-07-25T17:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "850cabd4-7678-4127-94bd-4ea4c74b185f",
-      "title": "Private Rental - Clarke Goaltending",
-      "start": "2026-07-25T17:30:00.000",
-      "end": "2026-07-25T18:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "376d9f3b-199b-4920-b541-a5a7e9502e29",
-      "title": "Busy",
-      "start": "2026-07-25T17:30:00.000",
-      "end": "2026-07-25T18:30:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
       "id": "f2cd0688-aa67-4d9c-aad6-007e6e24d115",
       "title": "Members Swim",
       "start": "2026-07-26T09:00:00.000",
@@ -595,15 +523,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-25T00:04:25.703Z",
+  "lastUpdated": "2026-07-26T02:40:21.593Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-07-25T00:00:00.000Z",
-      "end": "2026-08-02T23:59:00.000Z"
+      "start": "2026-07-26T00:00:00.000Z",
+      "end": "2026-08-03T23:59:00.000Z"
     },
-    "eventCount": 66,
-    "generatedAt": "2026-07-25T00:04:25.703Z",
+    "eventCount": 58,
+    "generatedAt": "2026-07-26T02:40:21.593Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
