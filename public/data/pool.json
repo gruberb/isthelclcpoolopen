@@ -46,15 +46,6 @@
       "allDay": false
     },
     {
-      "id": "4e2c4980-d81a-45ae-922b-aa768b9aae41",
-      "title": "Closed For Maintenance ",
-      "start": "2026-07-29T13:00:00.000",
-      "end": "2026-07-29T13:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "ef64890f-fa6d-4ee8-b18a-9b84f2edf9cc",
       "title": "Day Camps Using Aquatic Facility - Other Pools Not Available",
       "start": "2026-07-29T13:15:00.000",
@@ -676,15 +667,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-07-29T02:10:21.945Z",
+  "lastUpdated": "2026-07-29T16:49:45.805Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-07-29T00:00:00.000Z",
       "end": "2026-08-06T23:59:00.000Z"
     },
-    "eventCount": 75,
-    "generatedAt": "2026-07-29T02:10:21.945Z",
+    "eventCount": 74,
+    "generatedAt": "2026-07-29T16:49:45.805Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
