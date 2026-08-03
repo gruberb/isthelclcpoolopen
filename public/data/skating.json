@@ -1,42 +1,6 @@
 {
   "data": [
     {
-      "id": "7df54a79-6fcc-4092-91cd-100c5f12c91e",
-      "title": "Public Skate",
-      "start": "2026-07-30T16:30:00.000",
-      "end": "2026-07-30T18:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "8482625e-be2f-4ab8-a77b-95edd643ec4a",
-      "title": "Public Skate",
-      "start": "2026-07-31T13:30:00.000",
-      "end": "2026-07-31T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "df9ed49b-cf13-479d-868a-93d594182b82",
-      "title": "Public Skate",
-      "start": "2026-08-01T10:00:00.000",
-      "end": "2026-08-01T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "208ce6a7-5be7-4719-ba51-2cdb2fbf7787",
-      "title": "Public Skate",
-      "start": "2026-08-02T15:30:00.000",
-      "end": "2026-08-02T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "2f31a67c-bf7f-4085-9ea3-f410d2516eb3",
       "title": "Adult Skate",
       "start": "2026-08-03T12:00:00.000",
@@ -98,15 +62,33 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "094bc44d-724a-4b4d-ac6c-0ea6e0dc9fc0",
+      "title": "Adult Skate",
+      "start": "2026-08-14T12:00:00.000",
+      "end": "2026-08-14T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ae9bde19-7585-4c1c-b378-641dc21ff5cc",
+      "title": "Public Skate",
+      "start": "2026-08-14T13:15:00.000",
+      "end": "2026-08-14T14:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-02T07:28:32.427Z",
+  "lastUpdated": "2026-08-03T08:22:14.319Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 82,
-    "publicEvents": 11,
-    "generatedAt": "2026-08-02T07:28:32.427Z",
+    "totalEvents": 66,
+    "publicEvents": 9,
+    "generatedAt": "2026-08-03T08:22:14.319Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
