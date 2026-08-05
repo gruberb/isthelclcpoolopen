@@ -1,87 +1,6 @@
 {
   "data": [
     {
-      "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260804T063000Z",
-      "title": "Members Swim",
-      "start": "2026-08-04T06:30:00.000",
-      "end": "2026-08-04T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1d225e37-c307-4ecc-842d-0647e06ee335__20260804T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-04T07:30:00.000",
-      "end": "2026-08-04T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b2321d99-71a0-4be5-81df-3ab09bf06c30__20260804T100000Z",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-08-04T10:00:00.000",
-      "end": "2026-08-04T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e004dbce-ad30-4658-8351-bd263fc1b618__20260804T110000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-04T11:00:00.000",
-      "end": "2026-08-04T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "92447354-5f71-41df-993b-edaf0b917a89__20260804T120500Z",
-      "title": "Aqua Tribata Using Lap Pool - Other Pools Not Available",
-      "start": "2026-08-04T12:05:00.000",
-      "end": "2026-08-04T12:50:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b5d875af-91dd-44ee-8be8-954999096115__20260804T130000Z",
-      "title": "Closed For Maintenance",
-      "start": "2026-08-04T13:00:00.000",
-      "end": "2026-08-04T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7eda2801-ca20-4754-9977-0ddcfdfb1221__20260804T140000Z",
-      "title": "Day Camps Using Aquatic Facility - No Pools Available",
-      "start": "2026-08-04T14:00:00.000",
-      "end": "2026-08-04T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "597217d5-fb03-4c7c-ae6a-3b123af4f07a",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-08-04T15:00:00.000",
-      "end": "2026-08-04T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "597215c1-e0e6-4daf-be21-24d0d1a5cd72",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-04T17:15:00.000",
-      "end": "2026-08-04T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260805T063000Z",
       "title": "Members Swim",
       "start": "2026-08-05T06:30:00.000",
@@ -701,17 +620,107 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260813T063000Z",
+      "title": "Members Swim",
+      "start": "2026-08-13T06:30:00.000",
+      "end": "2026-08-13T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1d225e37-c307-4ecc-842d-0647e06ee335__20260813T073000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-08-13T07:30:00.000",
+      "end": "2026-08-13T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b2321d99-71a0-4be5-81df-3ab09bf06c30__20260813T100000Z",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2026-08-13T10:00:00.000",
+      "end": "2026-08-13T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e004dbce-ad30-4658-8351-bd263fc1b618__20260813T110000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-08-13T11:00:00.000",
+      "end": "2026-08-13T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "92447354-5f71-41df-993b-edaf0b917a89__20260813T120500Z",
+      "title": "Aqua Tribata Using Lap Pool - Other Pools Not Available",
+      "start": "2026-08-13T12:05:00.000",
+      "end": "2026-08-13T12:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2bf21ca2-547e-4fca-a6cd-970a1e586871",
+      "title": "Day Camps Using Aquatic Facility - No Pools Available",
+      "start": "2026-08-13T13:00:00.000",
+      "end": "2026-08-13T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "59964005-a37a-4761-b6b7-f693657decd0__20260813T140000Z",
+      "title": "Hold: Muggy's Hockey Camp",
+      "start": "2026-08-13T14:00:00.000",
+      "end": "2026-08-13T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "850b6860-76cc-4d6f-bc65-98b7a1434e07",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-08-13T15:00:00.000",
+      "end": "2026-08-13T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7ce141a6-0036-43fa-875b-072c801a61ad",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-08-13T17:15:00.000",
+      "end": "2026-08-13T19:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "010f0e20-4901-4c36-b0a9-ad4f48e4b245__20260813T193000Z",
+      "title": "Hold: Muggy's Hockey Camp",
+      "start": "2026-08-13T19:30:00.000",
+      "end": "2026-08-13T20:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-04T02:05:38.078Z",
+  "lastUpdated": "2026-08-05T02:04:38.110Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-08-04T00:00:00.000Z",
-      "end": "2026-08-12T23:59:00.000Z"
+      "start": "2026-08-05T00:00:00.000Z",
+      "end": "2026-08-13T23:59:00.000Z"
     },
-    "eventCount": 78,
-    "generatedAt": "2026-08-04T02:05:38.078Z",
+    "eventCount": 79,
+    "generatedAt": "2026-08-05T02:04:38.110Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
