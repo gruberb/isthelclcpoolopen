@@ -10,8 +10,8 @@
       "allDay": false
     },
     {
-      "id": "1d225e37-c307-4ecc-842d-0647e06ee335__20260806T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "id": "3391a00e-2338-44df-af54-f9be421212b1",
+      "title": "Recreational Swim - 4 Lanes & Therapy Pools Open",
       "start": "2026-08-06T07:30:00.000",
       "end": "2026-08-06T09:45:00.000",
       "backgroundColor": "#0000FF",
@@ -28,8 +28,8 @@
       "allDay": false
     },
     {
-      "id": "e004dbce-ad30-4658-8351-bd263fc1b618__20260806T110000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "id": "b0bc2de5-7a5e-4ea5-aa32-10e715549b00",
+      "title": "Recreational Swim - 4 Lanes & Therapy Pool Open",
       "start": "2026-08-06T11:00:00.000",
       "end": "2026-08-06T12:00:00.000",
       "backgroundColor": "#0000FF",
@@ -694,7 +694,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-06T02:25:15.574Z",
+  "lastUpdated": "2026-08-06T11:00:59.440Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -702,7 +702,7 @@
       "end": "2026-08-14T23:59:00.000Z"
     },
     "eventCount": 77,
-    "generatedAt": "2026-08-06T02:25:15.574Z",
+    "generatedAt": "2026-08-06T11:00:59.440Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
