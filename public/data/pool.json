@@ -37,10 +37,19 @@
       "allDay": false
     },
     {
-      "id": "92447354-5f71-41df-993b-edaf0b917a89__20260806T120500Z",
-      "title": "Aqua Tribata Using Lap Pool - Other Pools Not Available",
-      "start": "2026-08-06T12:05:00.000",
-      "end": "2026-08-06T12:50:00.000",
+      "id": "f9f285d1-ca13-4773-bd68-e30dc6239c3c",
+      "title": "Public Swim - No Lanes, Therapy Pool Open",
+      "start": "2026-08-06T12:00:00.000",
+      "end": "2026-08-06T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c98aa1f0-35c0-43d4-a006-af25531b8786",
+      "title": "Public Swim No Lanes, Therapy Pool Open",
+      "start": "2026-08-06T12:00:00.000",
+      "end": "2026-08-06T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -694,15 +703,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-06T11:00:59.440Z",
+  "lastUpdated": "2026-08-06T23:54:04.709Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-08-06T00:00:00.000Z",
       "end": "2026-08-14T23:59:00.000Z"
     },
-    "eventCount": 77,
-    "generatedAt": "2026-08-06T11:00:59.440Z",
+    "eventCount": 78,
+    "generatedAt": "2026-08-06T23:54:04.709Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
