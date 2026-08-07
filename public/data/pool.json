@@ -100,6 +100,15 @@
       "allDay": false
     },
     {
+      "id": "ffbd6998-d4f5-4f03-aae5-21684dd7eff3",
+      "title": "Birthday Party",
+      "start": "2026-08-08T14:00:00.000",
+      "end": "2026-08-08T15:00:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
       "id": "bf413e8a-9738-48fe-bd5f-a02344f0e6d0",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-08-08T14:00:00.000",
@@ -649,15 +658,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-07T02:27:01.025Z",
+  "lastUpdated": "2026-08-07T17:20:59.358Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-08-07T00:00:00.000Z",
       "end": "2026-08-15T23:59:00.000Z"
     },
-    "eventCount": 72,
-    "generatedAt": "2026-08-07T02:27:01.025Z",
+    "eventCount": 73,
+    "generatedAt": "2026-08-07T17:20:59.358Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
