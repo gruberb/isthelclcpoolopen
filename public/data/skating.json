@@ -91,13 +91,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-07T06:05:48.170Z",
+  "lastUpdated": "2026-08-08T05:36:41.907Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 69,
     "publicEvents": 10,
-    "generatedAt": "2026-08-07T06:05:48.170Z",
+    "generatedAt": "2026-08-08T05:36:41.907Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
