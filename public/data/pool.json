@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "d0945711-f376-47b7-b49b-42c921b49849",
-      "title": "Members Swim",
-      "start": "2026-08-09T09:00:00.000",
-      "end": "2026-08-09T10:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ec3172c5-83de-4f57-b053-d51de14fa2b4",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-09T10:00:00.000",
-      "end": "2026-08-09T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "21f74c5c-8a53-4a26-af11-8d0ebbaf914b",
-      "title": "Closed for Maintenance",
-      "start": "2026-08-09T13:00:00.000",
-      "end": "2026-08-09T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "accb3e50-ed02-493e-8e22-f2a07c57a238",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-08-09T14:00:00.000",
-      "end": "2026-08-09T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "dde5d808-0a04-4c9b-8792-f7bda999fa94",
-      "title": "Rental Space",
-      "start": "2026-08-09T16:00:00.000",
-      "end": "2026-08-09T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260810T063000Z",
       "title": "Members Swim",
       "start": "2026-08-10T06:30:00.000",
@@ -665,17 +620,98 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260818T063000Z",
+      "title": "Members Swim",
+      "start": "2026-08-18T06:30:00.000",
+      "end": "2026-08-18T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1d225e37-c307-4ecc-842d-0647e06ee335__20260818T073000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-08-18T07:30:00.000",
+      "end": "2026-08-18T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b2321d99-71a0-4be5-81df-3ab09bf06c30__20260818T100000Z",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2026-08-18T10:00:00.000",
+      "end": "2026-08-18T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e004dbce-ad30-4658-8351-bd263fc1b618__20260818T110000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-08-18T11:00:00.000",
+      "end": "2026-08-18T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "92447354-5f71-41df-993b-edaf0b917a89__20260818T120500Z",
+      "title": "Aqua Tribata Using Lap Pool - Other Pools Not Available",
+      "start": "2026-08-18T12:05:00.000",
+      "end": "2026-08-18T12:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b5d875af-91dd-44ee-8be8-954999096115__20260818T130000Z",
+      "title": "Closed For Maintenance",
+      "start": "2026-08-18T13:00:00.000",
+      "end": "2026-08-18T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7eda2801-ca20-4754-9977-0ddcfdfb1221__20260818T140000Z",
+      "title": "Day Camps Using Aquatic Facility - No Pools Available",
+      "start": "2026-08-18T14:00:00.000",
+      "end": "2026-08-18T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "71320d01-edff-41da-8eb7-92095678b877",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-08-18T15:00:00.000",
+      "end": "2026-08-18T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5ead7a1c-9bbf-4c5a-a7eb-be2679333251",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-08-18T17:15:00.000",
+      "end": "2026-08-18T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-09T01:19:29.481Z",
+  "lastUpdated": "2026-08-10T01:58:53.454Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-08-09T00:00:00.000Z",
-      "end": "2026-08-17T23:59:00.000Z"
+      "start": "2026-08-10T00:00:00.000Z",
+      "end": "2026-08-18T23:59:00.000Z"
     },
-    "eventCount": 74,
-    "generatedAt": "2026-08-09T01:19:29.481Z",
+    "eventCount": 78,
+    "generatedAt": "2026-08-10T01:58:53.454Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
