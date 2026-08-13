@@ -1,96 +1,6 @@
 {
   "data": [
     {
-      "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260812T063000Z",
-      "title": "Members Swim",
-      "start": "2026-08-12T06:30:00.000",
-      "end": "2026-08-12T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ebcfe6d6-1908-407e-962c-ecf7b2a64061",
-      "title": "Cudas Using 2 Lanes - 2 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-12T07:30:00.000",
-      "end": "2026-08-12T08:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9fc6393a-3cb7-4f95-b4a3-9a3b029ca2b1",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-12T08:30:00.000",
-      "end": "2026-08-12T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b2321d99-71a0-4be5-81df-3ab09bf06c30__20260812T100000Z",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-08-12T10:00:00.000",
-      "end": "2026-08-12T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f0dcf24a-42d5-499c-b92f-ca1f936d3559",
-      "title": "Day Camps Using Aquatic Facility - No Pools Available",
-      "start": "2026-08-12T11:00:00.000",
-      "end": "2026-08-12T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1c8de096-e0c7-469c-9d6c-770ccb230c72",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-12T12:00:00.000",
-      "end": "2026-08-12T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b5d875af-91dd-44ee-8be8-954999096115__20260812T130000Z",
-      "title": "Closed For Maintenance",
-      "start": "2026-08-12T13:00:00.000",
-      "end": "2026-08-12T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c307d278-ea26-4c1a-87cb-9c45d7ca39ea",
-      "title": "Hold: Muggy's Hockey Camp",
-      "start": "2026-08-12T14:00:00.000",
-      "end": "2026-08-12T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "99e43888-f414-49a1-9f2f-3deae4e4e889",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-08-12T15:00:00.000",
-      "end": "2026-08-12T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "970db542-d7c7-4377-a7b5-d3ef33a99461",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-12T17:15:00.000",
-      "end": "2026-08-12T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260813T063000Z",
       "title": "Members Swim",
       "start": "2026-08-13T06:30:00.000",
@@ -674,17 +584,89 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260821T063000Z",
+      "title": "Members Swim",
+      "start": "2026-08-21T06:30:00.000",
+      "end": "2026-08-21T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1d225e37-c307-4ecc-842d-0647e06ee335__20260821T073000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-08-21T07:30:00.000",
+      "end": "2026-08-21T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b2321d99-71a0-4be5-81df-3ab09bf06c30__20260821T100000Z",
+      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
+      "start": "2026-08-21T10:00:00.000",
+      "end": "2026-08-21T10:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e004dbce-ad30-4658-8351-bd263fc1b618__20260821T110000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-08-21T11:00:00.000",
+      "end": "2026-08-21T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b58d2b80-7aff-4104-a2ed-d2c5d5238e30",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-08-21T12:00:00.000",
+      "end": "2026-08-21T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b5d875af-91dd-44ee-8be8-954999096115__20260821T130000Z",
+      "title": "Closed For Maintenance",
+      "start": "2026-08-21T13:00:00.000",
+      "end": "2026-08-21T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7eda2801-ca20-4754-9977-0ddcfdfb1221__20260821T140000Z",
+      "title": "Day Camps Using Aquatic Facility - No Pools Available",
+      "start": "2026-08-21T14:00:00.000",
+      "end": "2026-08-21T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e9e35280-d3a9-465f-90b4-3e0e21d7f8b7",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-08-21T15:00:00.000",
+      "end": "2026-08-21T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-12T17:27:35.254Z",
+  "lastUpdated": "2026-08-13T01:38:29.299Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-08-12T00:00:00.000Z",
-      "end": "2026-08-20T23:59:00.000Z"
+      "start": "2026-08-13T00:00:00.000Z",
+      "end": "2026-08-21T23:59:00.000Z"
     },
-    "eventCount": 75,
-    "generatedAt": "2026-08-12T17:27:35.254Z",
+    "eventCount": 73,
+    "generatedAt": "2026-08-13T01:38:29.299Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
