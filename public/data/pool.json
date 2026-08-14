@@ -29,7 +29,7 @@
     },
     {
       "id": "1cb6ccac-89da-49ff-975a-b161cd646d04",
-      "title": "Recreational Swim - 4 Lanes & Therapy Pool Open - Play Pool Closed",
+      "title": "Recreational Swim - 4 Lanes & Play, and Therapy Pools Open ",
       "start": "2026-08-14T11:00:00.000",
       "end": "2026-08-14T12:00:00.000",
       "backgroundColor": "#0000FF",
@@ -613,7 +613,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-14T12:56:03.477Z",
+  "lastUpdated": "2026-08-14T15:20:12.317Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -621,7 +621,7 @@
       "end": "2026-08-22T23:59:00.000Z"
     },
     "eventCount": 68,
-    "generatedAt": "2026-08-14T12:56:03.477Z",
+    "generatedAt": "2026-08-14T15:20:12.317Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
