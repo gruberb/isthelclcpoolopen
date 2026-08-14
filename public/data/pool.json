@@ -38,7 +38,7 @@
     },
     {
       "id": "7473b779-9875-4c95-b925-91458e16dbd5",
-      "title": "Lane Swim - 4 Lanes & Therapy Pool Open - Play Pool Closed",
+      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open ",
       "start": "2026-08-14T12:00:00.000",
       "end": "2026-08-14T13:00:00.000",
       "backgroundColor": "#0000FF",
@@ -65,7 +65,7 @@
     },
     {
       "id": "94d3f2aa-c46c-441d-a94f-3aec84838a19",
-      "title": "Public Swim - No Lanes, Lap & Therapy Pool Open - Play Pool Closed",
+      "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-08-14T15:00:00.000",
       "end": "2026-08-14T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -613,7 +613,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-14T15:20:12.317Z",
+  "lastUpdated": "2026-08-14T16:13:54.705Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -621,7 +621,7 @@
       "end": "2026-08-22T23:59:00.000Z"
     },
     "eventCount": 68,
-    "generatedAt": "2026-08-14T15:20:12.317Z",
+    "generatedAt": "2026-08-14T16:13:54.705Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
