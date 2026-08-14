@@ -1,96 +1,6 @@
 {
   "data": [
     {
-      "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260813T063000Z",
-      "title": "Members Swim",
-      "start": "2026-08-13T06:30:00.000",
-      "end": "2026-08-13T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1d225e37-c307-4ecc-842d-0647e06ee335__20260813T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-13T07:30:00.000",
-      "end": "2026-08-13T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b2321d99-71a0-4be5-81df-3ab09bf06c30__20260813T100000Z",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-08-13T10:00:00.000",
-      "end": "2026-08-13T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e004dbce-ad30-4658-8351-bd263fc1b618__20260813T110000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-13T11:00:00.000",
-      "end": "2026-08-13T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2a857627-c66b-4883-ab3f-f299a4234c95",
-      "title": "Aqua Tabata Using Lap Pool - Other Pools Not Available",
-      "start": "2026-08-13T12:05:00.000",
-      "end": "2026-08-13T12:50:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2bf21ca2-547e-4fca-a6cd-970a1e586871",
-      "title": "Day Camps Using Aquatic Facility - No Pools Available",
-      "start": "2026-08-13T13:00:00.000",
-      "end": "2026-08-13T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "59964005-a37a-4761-b6b7-f693657decd0__20260813T140000Z",
-      "title": "Hold: Muggy's Hockey Camp",
-      "start": "2026-08-13T14:00:00.000",
-      "end": "2026-08-13T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "850b6860-76cc-4d6f-bc65-98b7a1434e07",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-08-13T15:00:00.000",
-      "end": "2026-08-13T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7ce141a6-0036-43fa-875b-072c801a61ad",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-13T17:15:00.000",
-      "end": "2026-08-13T19:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "010f0e20-4901-4c36-b0a9-ad4f48e4b245__20260813T193000Z",
-      "title": "Hold: Muggy's Hockey Camp",
-      "start": "2026-08-13T19:30:00.000",
-      "end": "2026-08-13T20:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260814T063000Z",
       "title": "Members Swim",
       "start": "2026-08-14T06:30:00.000",
@@ -656,17 +566,62 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "20e29bb8-b97b-4b16-b81d-9c72f57493fe",
+      "title": "Members Swim",
+      "start": "2026-08-22T09:00:00.000",
+      "end": "2026-08-22T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "70ce9da3-3855-4af1-893e-68b797587f5a",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pool",
+      "start": "2026-08-22T10:00:00.000",
+      "end": "2026-08-22T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "5443e3df-1a43-4c61-b4e5-2ff53355e548",
+      "title": "Closed For Maintenance",
+      "start": "2026-08-22T13:00:00.000",
+      "end": "2026-08-22T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f6cfa221-bed0-4ee5-b2bc-bdc9e3c0ad9f",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-08-22T14:00:00.000",
+      "end": "2026-08-22T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20260822T160000Z",
+      "title": "MODL / LCLC Women's Only Swim",
+      "start": "2026-08-22T16:00:00.000",
+      "end": "2026-08-22T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-13T01:38:29.299Z",
+  "lastUpdated": "2026-08-14T01:29:03.839Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-08-13T00:00:00.000Z",
-      "end": "2026-08-21T23:59:00.000Z"
+      "start": "2026-08-14T00:00:00.000Z",
+      "end": "2026-08-22T23:59:00.000Z"
     },
-    "eventCount": 73,
-    "generatedAt": "2026-08-13T01:38:29.299Z",
+    "eventCount": 68,
+    "generatedAt": "2026-08-14T01:29:03.839Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
