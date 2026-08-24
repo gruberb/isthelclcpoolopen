@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "1b4d211b-e19a-4502-ac9e-8613e034e2cb",
-      "title": "Members Swim",
-      "start": "2026-08-23T09:00:00.000",
-      "end": "2026-08-23T10:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "df1d9bbb-213c-4e64-941b-f1f406809c56",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-23T10:00:00.000",
-      "end": "2026-08-23T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2e5ac5df-47d7-47ab-9317-99c35936c889",
-      "title": "Closed For Maintenance",
-      "start": "2026-08-23T13:00:00.000",
-      "end": "2026-08-23T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "54dd7105-8636-481f-be01-f40d8dfe589b",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-08-23T14:00:00.000",
-      "end": "2026-08-23T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f4781292-1f5c-4920-b798-95a81ab4f37d",
-      "title": "Rental Space",
-      "start": "2026-08-23T16:00:00.000",
-      "end": "2026-08-23T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260824T063000Z",
       "title": "Members Swim",
       "start": "2026-08-24T06:30:00.000",
@@ -629,17 +584,35 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20260901T100000Z",
+      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
+      "start": "2026-09-01T10:00:00.000",
+      "end": "2026-09-01T10:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c78c6cd1-cbc8-4b33-9207-29fa7798380f__20260901T120500Z",
+      "title": "Aqua Tabata using Lap Pool - All Other Pools Closed to Public",
+      "start": "2026-09-01T12:05:00.000",
+      "end": "2026-09-01T12:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-23T01:03:13.039Z",
+  "lastUpdated": "2026-08-24T01:01:06.185Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-08-23T00:00:00.000Z",
-      "end": "2026-08-31T23:59:00.000Z"
+      "start": "2026-08-24T00:00:00.000Z",
+      "end": "2026-09-01T23:59:00.000Z"
     },
-    "eventCount": 70,
-    "generatedAt": "2026-08-23T01:03:13.039Z",
+    "eventCount": 67,
+    "generatedAt": "2026-08-24T01:01:06.185Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
