@@ -1,87 +1,6 @@
 {
   "data": [
     {
-      "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260826T063000Z",
-      "title": "Members Swim",
-      "start": "2026-08-26T06:30:00.000",
-      "end": "2026-08-26T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1d225e37-c307-4ecc-842d-0647e06ee335__20260826T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-26T07:30:00.000",
-      "end": "2026-08-26T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b2321d99-71a0-4be5-81df-3ab09bf06c30__20260826T100000Z",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-08-26T10:00:00.000",
-      "end": "2026-08-26T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e004dbce-ad30-4658-8351-bd263fc1b618__20260826T110000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-26T11:00:00.000",
-      "end": "2026-08-26T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "692a04db-1aa2-4e74-aa84-24697b8f4d8c",
-      "title": "Lane Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-26T12:00:00.000",
-      "end": "2026-08-26T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b5d875af-91dd-44ee-8be8-954999096115__20260826T130000Z",
-      "title": "Closed For Maintenance",
-      "start": "2026-08-26T13:00:00.000",
-      "end": "2026-08-26T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7eda2801-ca20-4754-9977-0ddcfdfb1221__20260826T140000Z",
-      "title": "Day Camps Using Aquatic Facility - No Pools Available",
-      "start": "2026-08-26T14:00:00.000",
-      "end": "2026-08-26T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "fc75b941-6bd6-469d-8d4b-c5fe1029e5ce",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-08-26T15:00:00.000",
-      "end": "2026-08-26T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "35f01768-0694-4233-854d-dfa4766c6442",
-      "title": "Recreational Swim - 4 Lanes, PLay & Therapy Pools Open",
-      "start": "2026-08-26T17:15:00.000",
-      "end": "2026-08-26T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260827T063000Z",
       "title": "Members Swim",
       "start": "2026-08-27T06:30:00.000",
@@ -458,17 +377,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20260904T100000Z",
+      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
+      "start": "2026-09-04T10:00:00.000",
+      "end": "2026-09-04T10:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-26T01:02:01.547Z",
+  "lastUpdated": "2026-08-27T00:00:37.233Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-08-26T00:00:00.000Z",
-      "end": "2026-09-03T23:59:00.000Z"
+      "start": "2026-08-27T00:00:00.000Z",
+      "end": "2026-09-04T23:59:00.000Z"
     },
-    "eventCount": 51,
-    "generatedAt": "2026-08-26T01:02:01.547Z",
+    "eventCount": 43,
+    "generatedAt": "2026-08-27T00:00:37.233Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
