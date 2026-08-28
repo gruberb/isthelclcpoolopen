@@ -1,87 +1,6 @@
 {
   "data": [
     {
-      "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260827T063000Z",
-      "title": "Members Swim",
-      "start": "2026-08-27T06:30:00.000",
-      "end": "2026-08-27T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1d225e37-c307-4ecc-842d-0647e06ee335__20260827T073000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-27T07:30:00.000",
-      "end": "2026-08-27T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b2321d99-71a0-4be5-81df-3ab09bf06c30__20260827T100000Z",
-      "title": "Elderfit Using Lap Pool - Other Pools Not Available",
-      "start": "2026-08-27T10:00:00.000",
-      "end": "2026-08-27T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e004dbce-ad30-4658-8351-bd263fc1b618__20260827T110000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-27T11:00:00.000",
-      "end": "2026-08-27T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "126d848c-dbff-4811-a520-97c1f338c0a9",
-      "title": "Aqua Tabata Using Lap Pool - Other Pools Not Available",
-      "start": "2026-08-27T12:05:00.000",
-      "end": "2026-08-27T12:50:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b5d875af-91dd-44ee-8be8-954999096115__20260827T130000Z",
-      "title": "Closed For Maintenance",
-      "start": "2026-08-27T13:00:00.000",
-      "end": "2026-08-27T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7eda2801-ca20-4754-9977-0ddcfdfb1221__20260827T140000Z",
-      "title": "Day Camps Using Aquatic Facility - No Pools Available",
-      "start": "2026-08-27T14:00:00.000",
-      "end": "2026-08-27T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c68b2fc2-fe88-43b5-a233-5d8bee24bd07",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-08-27T15:00:00.000",
-      "end": "2026-08-27T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e7e11a99-ad7b-48a0-bb22-e5cbb884b86d",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-27T17:15:00.000",
-      "end": "2026-08-27T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260828T063000Z",
       "title": "Members Swim",
       "start": "2026-08-28T06:30:00.000",
@@ -386,17 +305,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20260905T160000Z",
+      "title": "MODL / LCLC Women's Only Swim",
+      "start": "2026-09-05T16:00:00.000",
+      "end": "2026-09-05T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-27T00:00:37.233Z",
+  "lastUpdated": "2026-08-28T05:03:53.326Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-08-27T00:00:00.000Z",
-      "end": "2026-09-04T23:59:00.000Z"
+      "start": "2026-08-28T00:00:00.000Z",
+      "end": "2026-09-05T23:59:00.000Z"
     },
-    "eventCount": 43,
-    "generatedAt": "2026-08-27T00:00:37.233Z",
+    "eventCount": 35,
+    "generatedAt": "2026-08-28T05:03:53.326Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
