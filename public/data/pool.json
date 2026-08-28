@@ -217,8 +217,8 @@
       "allDay": false
     },
     {
-      "id": "7eda2801-ca20-4754-9977-0ddcfdfb1221__20260831T140000Z",
-      "title": "Day Camps Using Aquatic Facility - No Pools Available",
+      "id": "bbb93a56-7f19-47d1-a61d-dc65a5311c8d",
+      "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-08-31T14:00:00.000",
       "end": "2026-08-31T15:00:00.000",
       "backgroundColor": "#0000FF",
@@ -316,7 +316,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-28T05:03:53.326Z",
+  "lastUpdated": "2026-08-28T17:33:42.530Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -324,7 +324,7 @@
       "end": "2026-09-05T23:59:00.000Z"
     },
     "eventCount": 35,
-    "generatedAt": "2026-08-28T05:03:53.326Z",
+    "generatedAt": "2026-08-28T17:33:42.530Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
