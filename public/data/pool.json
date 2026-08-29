@@ -76,15 +76,6 @@
       "id": "55bc0213-10d8-4185-ae0f-3ba542f91ccc",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-08-30T14:00:00.000",
-      "end": "2026-08-30T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "fb4ca65c-da13-4ea1-bbb0-5f8a81d515f8",
-      "title": "Rental Space",
-      "start": "2026-08-30T16:00:00.000",
       "end": "2026-08-30T17:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -244,15 +235,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-29T01:24:38.849Z",
+  "lastUpdated": "2026-08-29T13:54:37.848Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-08-29T00:00:00.000Z",
       "end": "2026-09-06T23:59:00.000Z"
     },
-    "eventCount": 27,
-    "generatedAt": "2026-08-29T01:24:38.849Z",
+    "eventCount": 26,
+    "generatedAt": "2026-08-29T13:54:37.848Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
