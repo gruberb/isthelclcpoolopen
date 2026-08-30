@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "ce7a024b-5e80-4f29-91a3-732cdccefbb3",
-      "title": "Members Swim",
-      "start": "2026-08-29T09:00:00.000",
-      "end": "2026-08-29T10:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "5c06c490-81f6-4f34-9a2f-ccf66093052d",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-29T10:00:00.000",
-      "end": "2026-08-29T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "5930e9c8-9427-4c8c-89dd-92c567afcb19",
-      "title": "Closed For Maintenance",
-      "start": "2026-08-29T13:00:00.000",
-      "end": "2026-08-29T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0ff9e1e0-6258-417b-84c2-0d74b45c3078",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-08-29T14:00:00.000",
-      "end": "2026-08-29T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20260829T160000Z",
-      "title": "MODL / LCLC Women's Only Swim",
-      "start": "2026-08-29T16:00:00.000",
-      "end": "2026-08-29T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "0d8c635b-0c27-4d4e-a3b2-00246d751289",
       "title": "Members Swim",
       "start": "2026-08-30T09:00:00.000",
@@ -233,17 +188,26 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "530371ff-df48-447e-ae45-4087a2852c5e",
+      "title": "Labour Day - Facility Closed",
+      "start": "2026-09-07T06:00:00.000",
+      "end": "2026-09-07T22:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-29T13:54:37.848Z",
+  "lastUpdated": "2026-08-30T00:31:03.490Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-08-29T00:00:00.000Z",
-      "end": "2026-09-06T23:59:00.000Z"
+      "start": "2026-08-30T00:00:00.000Z",
+      "end": "2026-09-07T23:59:00.000Z"
     },
-    "eventCount": 26,
-    "generatedAt": "2026-08-29T13:54:37.848Z",
+    "eventCount": 22,
+    "generatedAt": "2026-08-30T00:31:03.490Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
