@@ -1,42 +1,6 @@
 {
   "data": [
     {
-      "id": "0d8c635b-0c27-4d4e-a3b2-00246d751289",
-      "title": "Members Swim",
-      "start": "2026-08-30T09:00:00.000",
-      "end": "2026-08-30T10:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "cb712f86-398b-4769-8ef5-7a13be0af897",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
-      "start": "2026-08-30T10:00:00.000",
-      "end": "2026-08-30T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a9a947e9-e8f6-4542-a2d6-1669e722e7e9",
-      "title": "Closed For Maintenance",
-      "start": "2026-08-30T13:00:00.000",
-      "end": "2026-08-30T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "55bc0213-10d8-4185-ae0f-3ba542f91ccc",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-08-30T14:00:00.000",
-      "end": "2026-08-30T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "3a861b9b-c5f0-4ee6-b863-c369b2039c12__20260831T063000Z",
       "title": "Members Swim",
       "start": "2026-08-31T06:30:00.000",
@@ -197,17 +161,35 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20260908T100000Z",
+      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
+      "start": "2026-09-08T10:00:00.000",
+      "end": "2026-09-08T10:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c78c6cd1-cbc8-4b33-9207-29fa7798380f__20260908T120500Z",
+      "title": "Aqua Tabata using Lap Pool - All Other Pools Closed to Public",
+      "start": "2026-09-08T12:05:00.000",
+      "end": "2026-09-08T12:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-08-30T00:31:03.490Z",
+  "lastUpdated": "2026-08-31T00:43:45.353Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-08-30T00:00:00.000Z",
-      "end": "2026-09-07T23:59:00.000Z"
+      "start": "2026-08-31T00:00:00.000Z",
+      "end": "2026-09-08T23:59:00.000Z"
     },
-    "eventCount": 22,
-    "generatedAt": "2026-08-30T00:31:03.490Z",
+    "eventCount": 20,
+    "generatedAt": "2026-08-31T00:43:45.353Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
