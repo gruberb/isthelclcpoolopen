@@ -55,10 +55,19 @@
       "allDay": false
     },
     {
-      "id": "6255ebdd-db35-4864-9827-ac7f0bc52d94__20260902T153000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
+      "id": "e1d028c1-e3b0-4ab0-a7b4-2c3277e4408c",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
       "start": "2026-09-02T15:30:00.000",
       "end": "2026-09-02T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "10731cfa-51ab-4f41-99b7-72f300003779",
+      "title": "Recreational Swim - 3  Lanes, Play and Therapy Pools Open",
+      "start": "2026-09-02T15:30:00.000",
+      "end": "2026-09-02T18:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -127,10 +136,19 @@
       "allDay": false
     },
     {
-      "id": "6255ebdd-db35-4864-9827-ac7f0bc52d94__20260903T153000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
+      "id": "e5ce8130-2ec2-460d-9fce-668b4516d56c",
+      "title": "Recreational  Swim - 3  Lanes,Play and Therapy Pools Open",
       "start": "2026-09-03T15:30:00.000",
       "end": "2026-09-03T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "df901361-bbc0-48f1-b29f-06582e5dbc45",
+      "title": "Members Swim",
+      "start": "2026-09-03T19:00:00.000",
+      "end": "2026-09-03T20:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -181,8 +199,8 @@
       "allDay": false
     },
     {
-      "id": "4e81c18a-b260-4ed5-a23e-ea6a8b708c75__20260904T140000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "id": "deea9dd1-7f98-4495-bb42-efa679e7e98f",
+      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
       "start": "2026-09-04T14:00:00.000",
       "end": "2026-09-04T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -263,7 +281,7 @@
     },
     {
       "id": "6255ebdd-db35-4864-9827-ac7f0bc52d94__20260908T153000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
+      "title": "Recreatoinal Swim - 3 Lanes, All Pools Open",
       "start": "2026-09-08T15:30:00.000",
       "end": "2026-09-08T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -334,8 +352,8 @@
       "allDay": false
     },
     {
-      "id": "6255ebdd-db35-4864-9827-ac7f0bc52d94__20260909T153000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
+      "id": "da838385-bb7a-43a5-94b0-218570802ea1",
+      "title": "Recreational Swim - 3 Lanes, Play and Therapy Pools Open",
       "start": "2026-09-09T15:30:00.000",
       "end": "2026-09-09T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -416,7 +434,7 @@
     },
     {
       "id": "55807872-a442-43a2-858a-e5c40c82c285",
-      "title": "Public Swim - No Lanes, All Pools Open",
+      "title": "Recreatoinal Swim - 3 Lanes, All Pools Open",
       "start": "2026-09-10T15:30:00.000",
       "end": "2026-09-10T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -433,15 +451,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-02T02:36:32.569Z",
+  "lastUpdated": "2026-09-02T16:48:12.184Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-09-02T00:00:00.000Z",
       "end": "2026-09-10T23:59:00.000Z"
     },
-    "eventCount": 48,
-    "generatedAt": "2026-09-02T02:36:32.569Z",
+    "eventCount": 50,
+    "generatedAt": "2026-09-02T16:48:12.184Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
