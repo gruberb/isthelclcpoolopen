@@ -136,10 +136,91 @@
       "allDay": false
     },
     {
+      "id": "b8fd3a3f-bc81-4bb7-9651-368e0b1c607e__20260905T093000Z",
+      "title": "Members Swim",
+      "start": "2026-09-05T09:30:00.000",
+      "end": "2026-09-05T10:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8ec96de0-b4e0-4b6a-a2b3-ca4ba6ab0f50__20260905T103000Z",
+      "title": "Recreational Swim - 3 Lanes, All Pools Open",
+      "start": "2026-09-05T10:30:00.000",
+      "end": "2026-09-05T12:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a469caa6-f126-4d4a-bca1-5636476bd942",
+      "title": "Lane Swim",
+      "start": "2026-09-05T12:30:00.000",
+      "end": "2026-09-05T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "50154d21-a627-432b-960e-4ae1268bc76c__20260905T140000Z",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-09-05T14:00:00.000",
+      "end": "2026-09-05T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20260905T160000Z",
       "title": "MODL / LCLC Women's Only Swim",
       "start": "2026-09-05T16:00:00.000",
       "end": "2026-09-05T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2020c26d-6c4e-4d15-95f6-9aaa18ab7c76__20260906T110000Z",
+      "title": "Members Swim",
+      "start": "2026-09-06T11:00:00.000",
+      "end": "2026-09-06T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "db08dcde-d49c-4e0a-827a-559b1d76b11c__20260906T120000Z",
+      "title": "Rental Space - Party Swim",
+      "start": "2026-09-06T12:00:00.000",
+      "end": "2026-09-06T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0f6fc99c-932d-487d-a272-1f7a17490ab7__20260906T130000Z",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-09-06T13:00:00.000",
+      "end": "2026-09-06T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d12aaf5e-47f5-4c5d-aac8-a8f0cdad29ff",
+      "title": "Lane Swim",
+      "start": "2026-09-06T16:00:00.000",
+      "end": "2026-09-06T17:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e8a25811-429e-4f04-a3bd-7b97affd51df",
+      "title": "Recreational Swim - 3 Lanes, All Pools Open",
+      "start": "2026-09-06T17:30:00.000",
+      "end": "2026-09-06T19:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -433,15 +514,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-03T00:27:59.967Z",
+  "lastUpdated": "2026-09-03T22:46:51.236Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-09-03T00:00:00.000Z",
       "end": "2026-09-11T23:59:00.000Z"
     },
-    "eventCount": 48,
-    "generatedAt": "2026-09-03T00:27:59.967Z",
+    "eventCount": 57,
+    "generatedAt": "2026-09-03T22:46:51.236Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
