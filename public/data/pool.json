@@ -55,10 +55,10 @@
       "allDay": false
     },
     {
-      "id": "84dd438f-204d-4702-8ae6-0deab24c0837__20260904T180000Z",
+      "id": "44663b4c-6f8d-476e-9471-c69b218c7eac__20260904T180000Z",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-09-04T18:00:00.000",
-      "end": "2026-09-04T21:00:00.000",
+      "end": "2026-09-04T20:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -139,16 +139,7 @@
       "id": "d12aaf5e-47f5-4c5d-aac8-a8f0cdad29ff",
       "title": "Lane Swim",
       "start": "2026-09-06T16:00:00.000",
-      "end": "2026-09-06T17:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e8a25811-429e-4f04-a3bd-7b97affd51df",
-      "title": "Recreational Swim - 3 Lanes, All Pools Open",
-      "start": "2026-09-06T17:30:00.000",
-      "end": "2026-09-06T19:00:00.000",
+      "end": "2026-09-06T17:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -433,10 +424,10 @@
       "allDay": false
     },
     {
-      "id": "84dd438f-204d-4702-8ae6-0deab24c0837__20260911T180000Z",
+      "id": "44663b4c-6f8d-476e-9471-c69b218c7eac__20260911T180000Z",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-09-11T18:00:00.000",
-      "end": "2026-09-11T21:00:00.000",
+      "end": "2026-09-11T20:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -487,15 +478,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-04T19:45:56.177Z",
+  "lastUpdated": "2026-09-04T22:03:09.204Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-09-04T00:00:00.000Z",
       "end": "2026-09-12T23:59:00.000Z"
     },
-    "eventCount": 54,
-    "generatedAt": "2026-09-04T19:45:56.177Z",
+    "eventCount": 53,
+    "generatedAt": "2026-09-04T22:03:09.204Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
