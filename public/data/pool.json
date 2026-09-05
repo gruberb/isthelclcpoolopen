@@ -46,18 +46,9 @@
       "allDay": false
     },
     {
-      "id": "2020c26d-6c4e-4d15-95f6-9aaa18ab7c76__20260906T110000Z",
+      "id": "74db17f4-a8ec-4941-8454-555527157015",
       "title": "Members Swim",
       "start": "2026-09-06T11:00:00.000",
-      "end": "2026-09-06T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "db08dcde-d49c-4e0a-827a-559b1d76b11c__20260906T120000Z",
-      "title": "Rental Space - Party Swim",
-      "start": "2026-09-06T12:00:00.000",
       "end": "2026-09-06T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -451,15 +442,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-05T00:14:50.122Z",
+  "lastUpdated": "2026-09-05T15:24:38.534Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-09-05T00:00:00.000Z",
       "end": "2026-09-13T23:59:00.000Z"
     },
-    "eventCount": 50,
-    "generatedAt": "2026-09-05T00:14:50.122Z",
+    "eventCount": 49,
+    "generatedAt": "2026-09-05T15:24:38.534Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
