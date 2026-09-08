@@ -1,6 +1,15 @@
 {
   "data": [
     {
+      "id": "918fa27a-79ae-4abe-a4c8-0735c369325f",
+      "title": "Member Swim",
+      "start": "2026-09-08T06:30:00.000",
+      "end": "2026-09-08T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20260908T073000Z",
       "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
       "start": "2026-09-08T07:30:00.000",
@@ -595,15 +604,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-08T03:03:08.769Z",
+  "lastUpdated": "2026-09-08T12:58:12.472Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-09-08T00:00:00.000Z",
       "end": "2026-09-16T23:59:00.000Z"
     },
-    "eventCount": 66,
-    "generatedAt": "2026-09-08T03:03:08.769Z",
+    "eventCount": 67,
+    "generatedAt": "2026-09-08T12:58:12.472Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
