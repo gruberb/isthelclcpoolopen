@@ -109,12 +109,12 @@
       "allDay": false
     },
     {
-      "id": "af16e868-357c-475a-a096-0a5496807af7__20260910T110000Z",
-      "title": "Closed for Maintenance ",
+      "id": "db5172c4-07a4-4fa0-8a1d-e8b602e82d73",
+      "title": "Lawrencetown Education Centre",
       "start": "2026-09-10T11:00:00.000",
       "end": "2026-09-10T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
       "allDay": false
     },
     {
@@ -604,7 +604,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-09T01:00:09.925Z",
+  "lastUpdated": "2026-09-09T18:28:12.933Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -612,7 +612,7 @@
       "end": "2026-09-17T23:59:00.000Z"
     },
     "eventCount": 67,
-    "generatedAt": "2026-09-09T01:00:09.925Z",
+    "generatedAt": "2026-09-09T18:28:12.933Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
