@@ -17,16 +17,17 @@ function TabNavigation({ tabs, activeTab, setActiveTab }) {
   };
 
   // Scrolls rather than wraps: the five labels need ~355px against the 358px a 390px phone
-  // gives, so it is borderline on the narrowest phones, and wrapping cost a whole second row
-  // on every one of them. The negative margin lets a clipped tab meet the screen edge instead
-  // of stopping 16px short, and py-1.5 on the track keeps the active tab's offset shadow and
-  // the focus ring outside the overflow clip.
+  // gives, so wrapping cost a whole second row on every phone. mx-auto on a w-max track
+  // centres it wherever it fits and resolves to zero once it does not, so a narrow phone
+  // gets a left-aligned scrollable row with nothing unreachable. The negative margin lets a
+  // clipped tab meet the screen edge instead of stopping 16px short, and py-1.5 keeps the
+  // active tab's offset shadow and the focus ring outside the overflow clip.
   return (
     <div
       data-tabs
-      className="-mx-4 mb-3 md:mb-5 overflow-x-auto no-scrollbar scroll-pl-4"
+      className="-mx-4 mb-3 md:mb-5 overflow-x-auto no-scrollbar"
     >
-      <div className="flex w-max gap-1 md:gap-3 px-4 py-1.5 md:w-auto md:flex-wrap">
+      <div className="flex w-max mx-auto gap-1 md:gap-3 px-4 py-1.5">
         {tabs.map((tab) => {
           const isActive = activeTab === tab.id;
 

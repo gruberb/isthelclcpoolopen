@@ -36,8 +36,8 @@ function DateSelector({ selectedDate, onDateChange }) {
   // were bound to the same state and could contradict each other on screen. Eight chips need
   // ~680px, so this scrolls by design; Today and Tomorrow lead and are both visible at rest.
   return (
-    <div className="-mx-4 mb-3 md:mb-4 overflow-x-auto no-scrollbar scroll-pl-4">
-      <div className="flex w-max gap-2 px-4 py-1.5 md:w-auto md:flex-wrap">
+    <div className="-mx-4 mb-3 md:mb-4 overflow-x-auto no-scrollbar">
+      <div className="flex w-max mx-auto gap-2 px-4 py-1.5">
         {days.map(({ date, label }) => {
           const isSelected =
             date.toDateString() === selectedDate.toDateString();

@@ -22,7 +22,7 @@ function TimeZoneNotice() {
 
   return (
     <span
-      className="brutal-badge bg-brutal-cream text-brutal-black shrink-0"
+      className="brutal-badge bg-brutal-cream text-brutal-black shrink-0 md:justify-self-end"
       title={explanation}
     >
       {abbreviation}&nbsp;{signed}
@@ -37,8 +37,11 @@ function Layout({ children, title }) {
     <div className="min-h-screen bg-brutal-white">
       <div className="max-w-6xl mx-auto px-4 py-2 md:py-6">
         {title && (
-          <header className="flex items-baseline justify-between gap-3 border-b-3 border-brutal-blue pb-2 mb-3 md:pb-3 md:mb-5">
-            <h1 className="font-display text-lg md:text-3xl font-bold leading-tight text-brutal-black uppercase tracking-wider">
+          <header className="flex items-baseline justify-between gap-3 border-b-3 border-brutal-blue pb-2 mb-3 md:grid md:grid-cols-[1fr_auto_1fr] md:pb-3 md:mb-5">
+            {/* Empty first column so the wordmark stays centred whether or not the
+                timezone chip is rendered. */}
+            <span className="hidden md:block" aria-hidden="true" />
+            <h1 className="font-display text-lg md:text-4xl font-bold leading-tight text-brutal-black uppercase tracking-wider md:text-center">
               {title}
             </h1>
             <TimeZoneNotice />

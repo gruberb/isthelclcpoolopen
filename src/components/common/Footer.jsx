@@ -16,7 +16,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="text-brutal-black/50 hover:text-brutal-blue transition-colors uppercase tracking-wider font-display font-bold"
           >
-            Made by Bastian
+            Made with ❤️ by Bastian
           </a>
         </p>
       </div>

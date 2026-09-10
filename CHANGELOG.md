@@ -5,6 +5,25 @@ All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.1] - 2026-09-10
+
+### Fixed
+
+- The compact header from 1.2.0 was a mobile treatment applied at every width, which left
+  desktop with the wordmark and tabs hard left while the content stayed centred, and the
+  timezone chip stranded ~1150px from the title. On md+ the wordmark is centred again at
+  `text-4xl` with the chip pinned right, via a three-column grid so it stays centred whether
+  or not the chip renders.
+- Both scrolling rows were left-aligned at every width. `mx-auto` on the `w-max` track centres
+  it wherever it fits and resolves to zero once it does not, so desktop and roomier phones get
+  a centred row while a narrow phone still gets a left-aligned scrollable one. Using
+  `justify-center` here would have made the left overflow unreachable, since `scrollLeft`
+  cannot go negative.
+
+### Changed
+
+- Footer byline reads "Made with love by Bastian".
+
 ## [1.2.0] - 2026-09-10
 
 ### Changed
@@ -84,5 +103,6 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `getWeekBounds` had two identical copies. `useSkatingData` now imports the one in `dateUtils`.
 
+[1.2.1]: https://github.com/gruberb/isthelclcpoolopen/releases/tag/v1.2.1
 [1.2.0]: https://github.com/gruberb/isthelclcpoolopen/releases/tag/v1.2.0
 [1.1.0]: https://github.com/gruberb/isthelclcpoolopen/releases/tag/v1.1.0
