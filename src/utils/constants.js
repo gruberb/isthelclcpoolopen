@@ -135,14 +135,14 @@ export const CONSTANTS = {
   TABS: {
     SWIMMING: [
       { id: "status", label: "Status" },
-      { id: "schedule", label: "Full Schedule" },
+      { id: "schedule", label: "Schedule" },
       { id: "family", label: "Family" },
-      { id: "swimmers", label: "Lane Swimmers" },
-      { id: "special", label: "Special Events" },
+      { id: "swimmers", label: "Lanes" },
+      { id: "special", label: "Events" },
     ],
     LIBRARIES: [
       { id: "status", label: "Status" },
-      { id: "schedule", label: "Full Schedule" },
+      { id: "schedule", label: "Schedule" },
     ],
   },
 };

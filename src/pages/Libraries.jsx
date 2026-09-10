@@ -8,17 +8,15 @@ import { useLibrariesData } from "../hooks/useLibrariesData";
 import { useTabState } from "../hooks/useTabState";
 import { CONSTANTS } from "../utils/constants";
 
+const TITLE = "South Shore Libraries";
+
 function Libraries() {
-  const { libraries, loading, error, lastUpdated, isLibraryOpen } =
-    useLibrariesData();
+  const { libraries, loading, error, isLibraryOpen } = useLibrariesData();
   const { activeTab, setActiveTab } = useTabState("status");
 
   if (loading) {
     return (
-      <Layout
-        title="South Shore Libraries Dashboard"
-        subtitle="Library hours and availability information"
-      >
+      <Layout title={TITLE}>
         <Loading />
       </Layout>
     );
@@ -26,10 +24,7 @@ function Libraries() {
 
   if (error) {
     return (
-      <Layout
-        title="South Shore Libraries Dashboard"
-        subtitle="Library hours and availability information"
-      >
+      <Layout title={TITLE}>
         <div className="border-2 border-brutal-red p-4 text-brutal-red font-display uppercase tracking-wide">
           <p>Error: {error}</p>
           <p className="mt-2 text-sm">Refresh the page to try again.</p>
@@ -39,11 +34,7 @@ function Libraries() {
   }
 
   return (
-    <Layout
-      title="South Shore Libraries Dashboard"
-      subtitle="Library hours and availability information"
-      lastUpdated={lastUpdated}
-    >
+    <Layout title={TITLE}>
       <TabNavigation
         tabs={CONSTANTS.TABS.LIBRARIES}
         activeTab={activeTab}
@@ -51,7 +42,7 @@ function Libraries() {
       />
 
       {activeTab === "status" ? (
-        <div className="flex flex-wrap justify-center gap-6 mb-8">
+        <div className="flex flex-wrap justify-center gap-6">
           {libraries &&
             Object.entries(libraries).map(([key, library]) => (
               <LibraryStatusBox

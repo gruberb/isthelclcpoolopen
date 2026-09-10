@@ -72,7 +72,7 @@ function StatusDisplay({ data }) {
   };
 
   return (
-    <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-4 md:mb-6">
+    <div className="flex flex-wrap justify-center gap-4 md:gap-6">
       <div
         className={`brutal-card p-4 md:p-6 min-w-[250px] flex flex-col items-center ${getLeftBorder(statuses.lanesStatus)}`}
       >

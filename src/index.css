@@ -51,11 +51,13 @@
 
     *:focus {
         outline: none;
-        box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.2);
     }
 
-    button:focus {
-        outline: none;
+    /* An outline, not a box-shadow: .brutal-btn and shadow-brutal-* own box-shadow and sit in
+       later cascade layers, so a ring built from it would never paint on a brutal button. */
+    *:focus-visible {
+        outline: 3px solid #2563eb;
+        outline-offset: 2px;
     }
 }
 
@@ -108,5 +110,16 @@
 @layer utilities {
     .text-balance {
         text-wrap: balance;
+    }
+
+    /* The tab and day rows scroll rather than wrap. Touch platforms hide the bar anyway, and
+       on desktop both rows fit, so the bar would only ever add noise. */
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
     }
 }

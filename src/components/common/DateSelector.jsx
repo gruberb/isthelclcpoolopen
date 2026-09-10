@@ -1,81 +1,63 @@
-import React, { useEffect, useState } from "react";
+import React, { useMemo } from "react";
 import { facilityNow } from "../../utils/timezone";
 
+const DAYS_AHEAD = 8;
+
+// Composed by hand rather than one toLocaleDateString call: the en-US pattern for weekday
+// plus day-of-month is "12 Sat", which reads as a time on a row of buttons.
+function chipLabel(date, todayKey, tomorrowKey) {
+  const key = date.toDateString();
+  if (key === todayKey) return "Today";
+  if (key === tomorrowKey) return "Tomorrow";
+
+  const weekday = date.toLocaleDateString("en-US", { weekday: "short" });
+  return `${weekday} ${date.getDate()}`;
+}
+
 function DateSelector({ selectedDate, onDateChange }) {
-  const [dates, setDates] = useState([]);
-
-  useEffect(() => {
-    const today = facilityNow();
-    const options = [];
-
-    for (let i = 0; i < 8; i++) {
-      const date = new Date(today);
-      date.setDate(today.getDate() + i);
-      options.push(date);
-    }
-
-    setDates(options);
-  }, []);
-
-  const formatOptionLabel = (date) => {
+  // Built during render, not in an effect. An effect leaves the first paint without the row
+  // and then drops the schedule card once the state lands.
+  const days = useMemo(() => {
     const today = facilityNow();
     const tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1);
 
-    if (date.toDateString() === today.toDateString()) {
-      return "Today";
-    } else if (date.toDateString() === tomorrow.toDateString()) {
-      return "Tomorrow";
-    } else {
-      return date.toLocaleDateString("en-US", {
-        weekday: "short",
-        month: "short",
-        day: "numeric",
-      });
-    }
-  };
+    const todayKey = today.toDateString();
+    const tomorrowKey = tomorrow.toDateString();
 
+    return Array.from({ length: DAYS_AHEAD }, (_, offset) => {
+      const date = new Date(today);
+      date.setDate(today.getDate() + offset);
+      return { date, label: chipLabel(date, todayKey, tomorrowKey) };
+    });
+  }, []);
+
+  // One scrolling row replaces the previous Today/Tomorrow buttons plus an 8-day select. Both
+  // were bound to the same state and could contradict each other on screen. Eight chips need
+  // ~680px, so this scrolls by design; Today and Tomorrow lead and are both visible at rest.
   return (
-    <div className="mb-6 flex flex-col items-center">
-      <div className="flex items-center gap-2 mb-4">
-        <button
-          onClick={() => onDateChange(dates[0])}
-          className={`brutal-btn px-6 py-2 text-sm ${
-            selectedDate.toDateString() === dates[0]?.toDateString()
-              ? "bg-brutal-blue text-white"
-              : "bg-white text-brutal-black hover:bg-brutal-cream"
-          }`}
-        >
-          Today
-        </button>
-        <button
-          onClick={() => onDateChange(dates[1])}
-          className={`brutal-btn px-6 py-2 text-sm ${
-            selectedDate.toDateString() === dates[1]?.toDateString()
-              ? "bg-brutal-blue text-white"
-              : "bg-white text-brutal-black hover:bg-brutal-cream"
-          }`}
-        >
-          Tomorrow
-        </button>
-      </div>
+    <div className="-mx-4 mb-3 md:mb-4 overflow-x-auto no-scrollbar scroll-pl-4">
+      <div className="flex w-max gap-2 px-4 py-1.5 md:w-auto md:flex-wrap">
+        {days.map(({ date, label }) => {
+          const isSelected =
+            date.toDateString() === selectedDate.toDateString();
 
-      <select
-        className="px-4 py-2 text-sm bg-white border-2 border-brutal-black font-display font-bold uppercase tracking-wider hover:bg-brutal-cream transition-colors"
-        value={selectedDate.toDateString()}
-        onChange={(e) => {
-          const selected = dates.find(
-            (date) => date.toDateString() === e.target.value,
+          return (
+            <button
+              key={date.toDateString()}
+              onClick={() => onDateChange(date)}
+              aria-pressed={isSelected}
+              className={`brutal-btn shrink-0 px-3 py-3 text-xs ${
+                isSelected
+                  ? "bg-brutal-blue text-white"
+                  : "bg-white text-brutal-black hover:bg-brutal-cream"
+              }`}
+            >
+              {label}
+            </button>
           );
-          if (selected) onDateChange(selected);
-        }}
-      >
-        {dates.map((date) => (
-          <option key={date.toDateString()} value={date.toDateString()}>
-            {formatOptionLabel(date)}
-          </option>
-        ))}
-      </select>
+        })}
+      </div>
     </div>
   );
 }

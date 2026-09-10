@@ -7,8 +7,10 @@ import Loading from "../components/common/Loading";
 import { useSkatingData } from "../hooks/useSkatingData";
 import { facilityNow } from "../utils/timezone";
 
+const TITLE = "LCLC Skating";
+
 function Skating() {
-  const { loading, error, lastUpdated, getEventsForWeek } = useSkatingData();
+  const { loading, error, getEventsForWeek } = useSkatingData();
   const [selectedWeek, setSelectedWeek] = useState(0);
   const [events, setEvents] = useState([]);
   const currentEventRef = useRef(null);
@@ -59,10 +61,7 @@ function Skating() {
 
   if (loading) {
     return (
-      <Layout
-        title="LCLC Skating Dashboard"
-        subtitle="Weekly skating schedule and availability"
-      >
+      <Layout title={TITLE}>
         <Loading />
       </Layout>
     );
@@ -70,10 +69,7 @@ function Skating() {
 
   if (error) {
     return (
-      <Layout
-        title="LCLC Skating Dashboard"
-        subtitle="Weekly skating schedule and availability"
-      >
+      <Layout title={TITLE}>
         <div className="border-2 border-brutal-red p-4 text-brutal-red font-display uppercase tracking-wide">
           <p>Error: {error}</p>
           <p className="mt-2 text-sm">Refresh the page to try again.</p>
@@ -113,12 +109,8 @@ function Skating() {
   }
 
   return (
-    <Layout
-      title="LCLC Skating Dashboard"
-      subtitle="Weekly skating schedule and availability"
-      lastUpdated={lastUpdated}
-    >
-      <div className="mb-6 flex justify-center">
+    <Layout title={TITLE}>
+      <div className="mb-3 md:mb-5 flex justify-center">
         <WeekSelector
           selectedWeek={selectedWeek}
           onWeekChange={handleWeekChange}
@@ -128,7 +120,7 @@ function Skating() {
       {events.length === 0 ? (
         <SkatingEmptyState selectedWeek={selectedWeek} />
       ) : (
-        <div className="space-y-4 mt-6 mb-28 max-w-4xl mx-auto">
+        <div className="space-y-4 max-w-4xl mx-auto">
           {events.map((event, index) => {
             const key = `${event.id}-${event.start.getTime()}`;
             const isCurrent =

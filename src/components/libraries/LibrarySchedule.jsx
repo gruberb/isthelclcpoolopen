@@ -27,10 +27,10 @@ function LibrarySchedule({ libraries }) {
   ];
 
   return (
-    <div className="flex flex-col items-center max-w-4xl mx-auto mb-24">
-      <div className="mb-6 w-full max-w-md">
+    <div className="flex flex-col items-center max-w-4xl mx-auto">
+      <div className="mb-3 md:mb-5 w-full max-w-md">
         <select
-          className="w-full px-4 py-2 text-sm bg-white border-2 border-brutal-black font-display font-bold uppercase tracking-wider hover:bg-brutal-cream transition-colors"
+          className="w-full pl-4 pr-8 py-2 text-base bg-white border-2 border-brutal-black font-display font-bold uppercase tracking-wider hover:bg-brutal-cream transition-colors"
           value={selectedLibrary}
           onChange={(e) => setSelectedLibrary(e.target.value)}
         >

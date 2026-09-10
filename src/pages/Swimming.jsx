@@ -11,16 +11,15 @@ import { useSwimmingData } from "../hooks/useSwimmingData";
 import { useTabState } from "../hooks/useTabState";
 import { CONSTANTS } from "../utils/constants";
 
+const TITLE = "LCLC Pool";
+
 function Swimming() {
-  const { data, loading, error, lastUpdated } = useSwimmingData();
+  const { data, loading, error } = useSwimmingData();
   const { activeTab, setActiveTab } = useTabState("status");
 
   if (loading) {
     return (
-      <Layout
-        title="LCLC Pool Dashboard"
-        subtitle="Real-time pool availability and schedule information"
-      >
+      <Layout title={TITLE}>
         <Loading />
       </Layout>
     );
@@ -28,10 +27,7 @@ function Swimming() {
 
   if (error) {
     return (
-      <Layout
-        title="LCLC Pool Dashboard"
-        subtitle="Real-time pool availability and schedule information"
-      >
+      <Layout title={TITLE}>
         <div className="border-2 border-brutal-red p-4 text-brutal-red font-display uppercase tracking-wide">
           <p>Error: {error}</p>
           <p className="mt-2 text-sm">Refresh the page to try again.</p>
@@ -41,11 +37,7 @@ function Swimming() {
   }
 
   return (
-    <Layout
-      title="LCLC Pool Dashboard"
-      subtitle="Real-time pool availability and schedule information"
-      lastUpdated={lastUpdated}
-    >
+    <Layout title={TITLE}>
       <TabNavigation
         tabs={CONSTANTS.TABS.SWIMMING}
         activeTab={activeTab}

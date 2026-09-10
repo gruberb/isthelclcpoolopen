@@ -63,44 +63,11 @@ function ScheduleDisplay({ data }) {
       : "text-brutal-red font-bold";
   };
 
-  const getScheduleTitle = () => {
-    const today = facilityNow();
-    const tomorrow = new Date(today);
-    tomorrow.setDate(today.getDate() + 1);
-
-    if (selectedDate.toDateString() === today.toDateString()) {
-      return "Today";
-    } else if (selectedDate.toDateString() === tomorrow.toDateString()) {
-      return "Tomorrow";
-    } else {
-      return selectedDate.toLocaleDateString("en-US", {
-        weekday: "long",
-        month: "long",
-        day: "numeric",
-      });
-    }
-  };
-
   return (
-    <div className="flex flex-col items-center">
-      <div className="mb-6 w-full max-w-md">
-        <DateSelector
-          selectedDate={selectedDate}
-          onDateChange={setSelectedDate}
-        />
-      </div>
+    <div>
+      <DateSelector selectedDate={selectedDate} onDateChange={setSelectedDate} />
 
-      <div className="border-2 border-brutal-black shadow-brutal mb-24 w-full max-w-2xl">
-        <div className="px-6 py-6 text-center border-b-2 border-brutal-black bg-brutal-cream">
-          <h2 className="font-display text-xl font-bold text-brutal-black uppercase tracking-wider">
-            {getScheduleTitle() === "Today"
-              ? "Today's Swimming Schedule"
-              : getScheduleTitle() === "Tomorrow"
-                ? "Tomorrow's Swimming Schedule"
-                : `Swimming Schedule for ${getScheduleTitle()}`}
-          </h2>
-        </div>
-
+      <div className="border-2 border-brutal-black shadow-brutal w-full max-w-2xl mx-auto">
         {eventsForDate.length === 0 ? (
           <div className="p-6 text-center text-brutal-black/50 font-display uppercase tracking-wide">
             No swimming events scheduled for this day.

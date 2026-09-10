@@ -2,7 +2,7 @@ function SkatingEmptyState({ selectedWeek }) {
   const weekText = selectedWeek === 0 ? "this week" : "next week";
 
   return (
-    <div className="mt-8 mb-28">
+    <div>
       <div className="border-2 border-brutal-black shadow-brutal p-12 text-center max-w-md mx-auto">
         <img
           src="/icons/Ice-Skating--Streamline-Flex.png"

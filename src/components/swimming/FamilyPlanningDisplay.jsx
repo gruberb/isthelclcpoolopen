@@ -124,7 +124,7 @@ function FamilyPlanningDisplay({ data }) {
   );
 
   return (
-    <div className="max-w-4xl mx-auto mb-24 space-y-8">
+    <div className="max-w-4xl mx-auto space-y-8">
       <div className="border-2 border-brutal-black shadow-brutal overflow-hidden">
         <div className="px-6 py-4 border-b-2 border-brutal-black bg-brutal-cream">
           <h3 className="font-display text-base font-bold text-brutal-black uppercase tracking-wider">

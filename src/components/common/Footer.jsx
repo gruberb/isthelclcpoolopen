@@ -4,11 +4,9 @@ function Footer() {
   return (
     <div className="footer fixed bottom-0 left-0 w-full bg-brutal-white py-4 px-4 z-10">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-2">
-        <div className="flex flex-wrap justify-center items-center gap-4 text-sm">
+        <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-sm">
           <FooterLink to="/" icon="/icons/Swimming--Streamline-Flex.png" text="Swimming" />
-          <span className="text-brutal-black/30 font-bold">|</span>
           <FooterLink to="/skating" icon="/icons/Ice-Skating--Streamline-Flex.png" text="Skating" />
-          <span className="text-brutal-black/30 font-bold">|</span>
           <FooterLink to="/libraries" icon="/icons/Open-Book--Streamline-Flex.png" text="Libraries" />
         </div>
         <p className="text-xs text-brutal-black/50">

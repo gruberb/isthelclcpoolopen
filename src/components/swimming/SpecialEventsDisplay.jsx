@@ -107,7 +107,7 @@ function SpecialEventsDisplay({ data }) {
   };
 
   return (
-    <div className="max-w-4xl mx-auto mb-24">
+    <div className="max-w-4xl mx-auto">
       <div className="border-2 border-brutal-black shadow-brutal overflow-hidden">
         <div className="px-6 py-6 text-center border-b-2 border-brutal-black bg-brutal-cream">
           <h2 className="font-display text-xl font-bold text-brutal-black uppercase tracking-wider">
