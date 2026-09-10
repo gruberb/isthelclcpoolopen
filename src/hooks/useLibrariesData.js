@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { facilityNow } from "../utils/timezone";
 
 export function useLibrariesData() {
   const [libraries, setLibraries] = useState(null);
@@ -60,7 +61,7 @@ export function useLibrariesData() {
     }
 
     const library = libraries[libraryKey];
-    const now = new Date();
+    const now = facilityNow();
     const dayOfWeek = now
       .toLocaleDateString("en-US", { weekday: "long" })
       .toLowerCase();

@@ -1,9 +1,10 @@
 import React, { useMemo } from "react";
 import { formatTime } from "../../utils/dateUtils";
 import { findSpecialEvents } from "../../utils/eventParser";
+import { facilityNow } from "../../utils/timezone";
 
 function SpecialEventsDisplay({ data }) {
-  const now = useMemo(() => new Date(), []);
+  const now = useMemo(() => facilityNow(), []);
 
   const specialEvents = useMemo(
     () => findSpecialEvents(data, now, 15),
@@ -23,7 +24,7 @@ function SpecialEventsDisplay({ data }) {
   };
 
   const formatDate = (date) => {
-    const today = new Date();
+    const today = facilityNow();
     const tomorrow = new Date(today);
     tomorrow.setDate(tomorrow.getDate() + 1);
 

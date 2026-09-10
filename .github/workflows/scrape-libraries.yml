@@ -12,6 +12,11 @@ permissions:
 jobs:
   scrape-libraries:
     runs-on: ubuntu-latest
+    # Scrapers derive their fetch window from the local calendar date. Runners are UTC,
+    # which rolls over while it is still the previous evening in Halifax and truncates
+    # that evening's events.
+    env:
+      TZ: America/Halifax
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

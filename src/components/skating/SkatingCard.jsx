@@ -1,10 +1,12 @@
 import React from "react";
 import { formatTime } from "../../utils/dateUtils";
+import { facilityNow } from "../../utils/timezone";
 
 function SkatingCard({ event, isCurrent, isPast }) {
   const eventDate =
     event.start instanceof Date ? event.start : new Date(event.start);
-  const isTodayEvent = eventDate.toDateString() === new Date().toDateString();
+  const isTodayEvent =
+    eventDate.toDateString() === facilityNow().toDateString();
 
   const formatDate = (date) =>
     date.toLocaleDateString("en-US", {

@@ -1,10 +1,11 @@
 import React, { useMemo } from "react";
 import { findFeatureStatus } from "../../utils/eventParser";
 import { formatTime, formatTimeRemaining } from "../../utils/dateUtils";
+import { facilityNow } from "../../utils/timezone";
 
 function StatusDisplay({ data }) {
   const statuses = useMemo(() => {
-    const now = new Date();
+    const now = facilityNow();
     const lanesStatus = findFeatureStatus(data, now, "lanes");
     const kidsStatus = findFeatureStatus(data, now, "kids");
 

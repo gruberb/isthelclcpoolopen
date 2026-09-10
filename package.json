@@ -1,7 +1,7 @@
 {
   "name": "lclc-facilities-dashboard",
   "homepage": "https://isthelclcpoolopen.ca",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": false,
   "dependencies": {
     "react": "^18.2.0",
@@ -21,6 +21,25 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "rules": {
+      "no-restricted-syntax": [
+        "error",
+        {
+          "selector": "NewExpression[callee.name='Date'][arguments.length=0]",
+          "message": "Use facilityNow() from src/utils/timezone.js. Schedule data is Halifax wall-clock time, so a viewer-local now breaks every comparison against it."
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "src/utils/timezone.js"
+        ],
+        "rules": {
+          "no-restricted-syntax": "off"
+        }
+      }
     ]
   },
   "browserslist": {

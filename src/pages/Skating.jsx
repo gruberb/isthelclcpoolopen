@@ -5,6 +5,7 @@ import SkatingCard from "../components/skating/SkatingCard";
 import SkatingEmptyState from "../components/skating/SkatingEmptyState";
 import Loading from "../components/common/Loading";
 import { useSkatingData } from "../hooks/useSkatingData";
+import { facilityNow } from "../utils/timezone";
 
 function Skating() {
   const { loading, error, lastUpdated, getEventsForWeek } = useSkatingData();
@@ -81,7 +82,7 @@ function Skating() {
     );
   }
 
-  const now = new Date();
+  const now = facilityNow();
 
   // Find if there's a current event or a next event to scroll to
   let hasCurrentEvent = false;

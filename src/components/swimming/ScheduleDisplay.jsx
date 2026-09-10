@@ -2,10 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import DateSelector from "../common/DateSelector";
 import { analyzeEvent } from "../../utils/eventParser";
 import { formatTime } from "../../utils/dateUtils";
+import { facilityNow } from "../../utils/timezone";
 
 function ScheduleDisplay({ data }) {
-  const [selectedDate, setSelectedDate] = useState(new Date());
+  const [selectedDate, setSelectedDate] = useState(() => facilityNow());
   const currentEventRef = useRef(null);
+
+  const now = facilityNow();
 
   const eventsForDate = data.filter((event) => {
     const eventStart =
@@ -15,7 +18,7 @@ function ScheduleDisplay({ data }) {
 
   useEffect(() => {
     if (
-      selectedDate.toDateString() === new Date().toDateString() &&
+      selectedDate.toDateString() === facilityNow().toDateString() &&
       currentEventRef.current
     ) {
       currentEventRef.current.scrollIntoView({
@@ -61,12 +64,13 @@ function ScheduleDisplay({ data }) {
   };
 
   const getScheduleTitle = () => {
-    if (selectedDate.toDateString() === new Date().toDateString()) {
+    const today = facilityNow();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(today.getDate() + 1);
+
+    if (selectedDate.toDateString() === today.toDateString()) {
       return "Today";
-    } else if (
-      selectedDate.toDateString() ===
-      new Date(Date.now() + 86400000).toDateString()
-    ) {
+    } else if (selectedDate.toDateString() === tomorrow.toDateString()) {
       return "Tomorrow";
     } else {
       return selectedDate.toLocaleDateString("en-US", {
@@ -104,7 +108,6 @@ function ScheduleDisplay({ data }) {
         ) : (
           <div className="divide-y divide-brutal-black/10">
             {eventsForDate.map((event) => {
-              const now = new Date();
               const analysis = analyzeEvent(event);
               const eventStart =
                 event.start instanceof Date

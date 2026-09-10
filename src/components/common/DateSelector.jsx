@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { facilityNow } from "../../utils/timezone";
 
 function DateSelector({ selectedDate, onDateChange }) {
   const [dates, setDates] = useState([]);
 
   useEffect(() => {
-    const today = new Date();
+    const today = facilityNow();
     const options = [];
 
     for (let i = 0; i < 8; i++) {
@@ -17,7 +18,7 @@ function DateSelector({ selectedDate, onDateChange }) {
   }, []);
 
   const formatOptionLabel = (date) => {
-    const today = new Date();
+    const today = facilityNow();
     const tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1);
 

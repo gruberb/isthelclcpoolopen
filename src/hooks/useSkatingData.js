@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { getWeekBounds } from "../utils/dateUtils";
 
 export function useSkatingData() {
   const [data, setData] = useState([]);
@@ -101,20 +102,4 @@ function processData(rawData) {
     })
     .filter((evt) => evt !== null)
     .sort((a, b) => a.start - b.start);
-}
-
-// Monday 00:00:00 of this week + offset, through Sunday 23:59:59
-function getWeekBounds(offsetWeeks = 0) {
-  const today = new Date();
-  const dow = today.getDay();
-  const toMon = (dow + 6) % 7;
-  const mon = new Date(today);
-  mon.setDate(today.getDate() - toMon + offsetWeeks * 7);
-  mon.setHours(0, 0, 0, 0);
-
-  const sun = new Date(mon);
-  sun.setDate(mon.getDate() + 6);
-  sun.setHours(23, 59, 59, 999);
-
-  return { start: mon, end: sun };
 }

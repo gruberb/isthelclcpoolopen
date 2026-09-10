@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import { formatTime } from "../../utils/dateUtils";
+import { facilityNow } from "../../utils/timezone";
 import {
   findNextSlots,
   findNextMorningSlots,
@@ -9,7 +10,7 @@ import {
 } from "../../utils/eventParser";
 
 function FamilyPlanningDisplay({ data }) {
-  const now = useMemo(() => new Date(), []);
+  const now = useMemo(() => facilityNow(), []);
 
   const nextSlots = useMemo(
     () => findNextSlots(data, now, "kids", 3),
@@ -45,7 +46,7 @@ function FamilyPlanningDisplay({ data }) {
   };
 
   const formatDate = (date) => {
-    const today = new Date();
+    const today = facilityNow();
     const tomorrow = new Date(today);
     tomorrow.setDate(tomorrow.getDate() + 1);
 

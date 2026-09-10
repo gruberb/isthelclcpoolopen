@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CONSTANTS } from "../../utils/constants";
+import { facilityNow } from "../../utils/timezone";
 
 function LibrarySchedule({ libraries }) {
   const [selectedLibrary, setSelectedLibrary] = useState(
@@ -11,7 +12,7 @@ function LibrarySchedule({ libraries }) {
   }
 
   const library = libraries[selectedLibrary];
-  const today = new Date()
+  const today = facilityNow()
     .toLocaleDateString("en-US", { weekday: "long" })
     .toLowerCase();
 

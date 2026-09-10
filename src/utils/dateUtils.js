@@ -1,4 +1,6 @@
- /**
+import { facilityNow } from "./timezone";
+
+/**
  * Format a time (e.g., "7:30 PM")
  * @param {Date} date - Date to format
  * @returns {string} - Formatted time string
@@ -20,7 +22,7 @@ export function formatTime(date) {
 export function formatTimeRemaining(endTime) {
   if (!endTime) return "Unknown";
 
-  const now = new Date();
+  const now = facilityNow();
   const diff = endTime - now;
 
   if (diff <= 0) return "Ended";
@@ -74,21 +76,13 @@ export function formatMinutes(minutes) {
  * @returns {Object} - { start, end } dates of the week
  */
 export function getWeekBounds(offsetWeeks = 0) {
-  // Use the current date
-  const today = new Date();
+  const today = facilityNow();
+  const daysToMonday = (today.getDay() + 6) % 7; // shift Sunday=0 to Monday=0
 
-  // Calculate day of week (0 = Sunday, 1 = Monday, etc.)
-  const dow = today.getDay();
-
-  // Calculate days to subtract to get to Monday of this week
-  const daysToMonday = (dow + 6) % 7; // Convert Sunday=0 to Monday=0
-
-  // Create start date (Monday of the week)
   const startDate = new Date(today);
   startDate.setDate(today.getDate() - daysToMonday + offsetWeeks * 7);
   startDate.setHours(0, 0, 0, 0);
 
-  // Create end date (Sunday of the week)
   const endDate = new Date(startDate);
   endDate.setDate(startDate.getDate() + 6);
   endDate.setHours(23, 59, 59, 999);

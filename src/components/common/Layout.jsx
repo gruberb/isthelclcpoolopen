@@ -1,5 +1,33 @@
 import React from "react";
 import Footer from "./Footer";
+import {
+  FACILITY_CITY,
+  facilityZoneAbbreviation,
+  formatOffset,
+  viewerOffsetMinutes,
+  viewerTimeZone,
+} from "../../utils/timezone";
+
+// Every schedule on the site is rendered in facility time. Say so, but only to viewers whose
+// clock disagrees with it, so locals never see chrome they do not need. The offset is the
+// load-bearing part and stays visible at every width; the zone id is supplementary.
+function TimeZoneNotice() {
+  const offset = viewerOffsetMinutes();
+  if (offset === 0) return null;
+
+  const zone = viewerTimeZone();
+  const signed = formatOffset(offset);
+
+  return (
+    <span
+      className="brutal-badge bg-brutal-cream text-brutal-black mt-2"
+      title={`Schedules are shown in ${FACILITY_CITY} time (${facilityZoneAbbreviation()}). Your device timezone is ${zone}, ${signed}.`}
+    >
+      {FACILITY_CITY} time &middot; you&rsquo;re {signed}
+      {zone && <span className="hidden sm:inline">&nbsp;({zone})</span>}
+    </span>
+  );
+}
 
 function Layout({ children, title, subtitle }) {
   return (
@@ -15,6 +43,7 @@ function Layout({ children, title, subtitle }) {
                 {subtitle}
               </p>
             )}
+            <TimeZoneNotice />
           </div>
         )}
         <div className="border-b-3 border-brutal-blue mb-4 md:mb-6" />
