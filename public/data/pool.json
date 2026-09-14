@@ -1,33 +1,6 @@
 {
   "data": [
     {
-      "id": "2020c26d-6c4e-4d15-95f6-9aaa18ab7c76__20260913T110000Z",
-      "title": "Members Swim",
-      "start": "2026-09-13T11:00:00.000",
-      "end": "2026-09-13T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b7480293-a7da-4892-8439-6424b562a15c",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-09-13T12:00:00.000",
-      "end": "2026-09-13T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b61279bb-285a-4ffc-a9ac-4dd4dac9aa85",
-      "title": "Lane Swim - Play and Therapy Pools Open",
-      "start": "2026-09-13T16:00:00.000",
-      "end": "2026-09-13T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20260914T063000Z",
       "title": "Members Swim",
       "start": "2026-09-14T06:30:00.000",
@@ -584,17 +557,89 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20260922T063000Z",
+      "title": "Members Swim",
+      "start": "2026-09-22T06:30:00.000",
+      "end": "2026-09-22T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20260922T073000Z",
+      "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
+      "start": "2026-09-22T07:30:00.000",
+      "end": "2026-09-22T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20260922T100000Z",
+      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
+      "start": "2026-09-22T10:00:00.000",
+      "end": "2026-09-22T10:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "af16e868-357c-475a-a096-0a5496807af7__20260922T110000Z",
+      "title": "Closed for Maintenance ",
+      "start": "2026-09-22T11:00:00.000",
+      "end": "2026-09-22T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c78c6cd1-cbc8-4b33-9207-29fa7798380f__20260922T120500Z",
+      "title": "Aqua Tabata using Lap Pool - All Other Pools Closed to Public",
+      "start": "2026-09-22T12:05:00.000",
+      "end": "2026-09-22T12:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3e4d9382-376b-4419-bdd1-3ea5230f2d5b__20260922T130000Z",
+      "title": "Lane Swim / Parent n' Tot",
+      "start": "2026-09-22T13:00:00.000",
+      "end": "2026-09-22T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "6255ebdd-db35-4864-9827-ac7f0bc52d94__20260922T153000Z",
+      "title": "Recreatoinal Swim - 3 Lanes, All Pools Open",
+      "start": "2026-09-22T15:30:00.000",
+      "end": "2026-09-22T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "29695da0-6c2c-4a82-9408-ce97d0efb826__20260922T190000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pool Open",
+      "start": "2026-09-22T19:00:00.000",
+      "end": "2026-09-22T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-13T17:53:07.330Z",
+  "lastUpdated": "2026-09-14T05:42:29.321Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-09-13T03:00:00.000Z",
-      "end": "2026-09-22T02:59:00.000Z"
+      "start": "2026-09-14T03:00:00.000Z",
+      "end": "2026-09-23T02:59:00.000Z"
     },
-    "eventCount": 65,
-    "generatedAt": "2026-09-13T17:53:07.330Z",
+    "eventCount": 70,
+    "generatedAt": "2026-09-14T05:42:29.321Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
