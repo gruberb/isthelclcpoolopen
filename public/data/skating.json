@@ -1,19 +1,19 @@
 {
   "data": [
     {
-      "id": "4faba3d5-e3de-4511-9574-ce3c907856d7",
-      "title": "Public Skate",
-      "start": "2026-09-15T10:30:00.000",
-      "end": "2026-09-15T11:45:00.000",
+      "id": "d87335ce-bdf9-4c58-ae77-2715773f9b5e",
+      "title": "Public Skate ",
+      "start": "2026-09-14T10:30:00.000",
+      "end": "2026-09-14T11:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     },
     {
-      "id": "b6e8e563-e38f-41b0-b913-2fe324f471df",
+      "id": "0a05aeb0-8d70-4e71-a8f3-8df084c9d410",
       "title": "Adult Skate",
-      "start": "2026-09-15T12:00:00.000",
-      "end": "2026-09-15T13:00:00.000",
+      "start": "2026-09-14T12:00:00.000",
+      "end": "2026-09-14T13:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -127,13 +127,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-14T10:14:31.224Z",
+  "lastUpdated": "2026-09-15T09:43:25.045Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 98,
+    "totalEvents": 93,
     "publicEvents": 14,
-    "generatedAt": "2026-09-14T10:14:31.224Z",
+    "generatedAt": "2026-09-15T09:43:25.045Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
