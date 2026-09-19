@@ -1,69 +1,6 @@
 {
   "data": [
     {
-      "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20260918T063000Z",
-      "title": "Members Swim",
-      "start": "2026-09-18T06:30:00.000",
-      "end": "2026-09-18T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20260918T073000Z",
-      "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
-      "start": "2026-09-18T07:30:00.000",
-      "end": "2026-09-18T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20260918T100000Z",
-      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
-      "start": "2026-09-18T10:00:00.000",
-      "end": "2026-09-18T10:50:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "af16e868-357c-475a-a096-0a5496807af7__20260918T110000Z",
-      "title": "Closed for Maintenance ",
-      "start": "2026-09-18T11:00:00.000",
-      "end": "2026-09-18T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "705b93cb-7245-4bdf-a066-cd0b7f0347bc__20260918T120000Z",
-      "title": "Lane Swim Lap Pool / Parent n' Tot Play Pool",
-      "start": "2026-09-18T12:00:00.000",
-      "end": "2026-09-18T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4e81c18a-b260-4ed5-a23e-ea6a8b708c75__20260918T140000Z",
-      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
-      "start": "2026-09-18T14:00:00.000",
-      "end": "2026-09-18T18:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "44663b4c-6f8d-476e-9471-c69b218c7eac__20260918T180000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-09-18T18:00:00.000",
-      "end": "2026-09-18T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "b8fd3a3f-bc81-4bb7-9651-368e0b1c607e__20260919T093000Z",
       "title": "Members Swim",
       "start": "2026-09-19T09:30:00.000",
@@ -593,17 +530,62 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "2020c26d-6c4e-4d15-95f6-9aaa18ab7c76__20260927T110000Z",
+      "title": "Members Swim",
+      "start": "2026-09-27T11:00:00.000",
+      "end": "2026-09-27T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "db08dcde-d49c-4e0a-827a-559b1d76b11c__20260927T120000Z",
+      "title": "Rental Space - Party Swim",
+      "start": "2026-09-27T12:00:00.000",
+      "end": "2026-09-27T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0f6fc99c-932d-487d-a272-1f7a17490ab7__20260927T130000Z",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-09-27T13:00:00.000",
+      "end": "2026-09-27T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "88b7ebfa-b5d3-4526-bad0-e0c6e3aa9834__20260927T160000Z",
+      "title": "Lane Swim",
+      "start": "2026-09-27T16:00:00.000",
+      "end": "2026-09-27T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ccbe22a3-933b-4acf-9d10-40daad426439__20260927T180000Z",
+      "title": "Bridgewater Barracudas",
+      "start": "2026-09-27T18:00:00.000",
+      "end": "2026-09-27T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-18T14:34:44.070Z",
+  "lastUpdated": "2026-09-19T06:14:06.062Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-09-18T03:00:00.000Z",
-      "end": "2026-09-27T02:59:00.000Z"
+      "start": "2026-09-19T03:00:00.000Z",
+      "end": "2026-09-28T02:59:00.000Z"
     },
-    "eventCount": 66,
-    "generatedAt": "2026-09-18T14:34:44.070Z",
+    "eventCount": 64,
+    "generatedAt": "2026-09-19T06:14:06.062Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
