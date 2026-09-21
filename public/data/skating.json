@@ -1,78 +1,6 @@
 {
   "data": [
     {
-      "id": "d87335ce-bdf9-4c58-ae77-2715773f9b5e",
-      "title": "Public Skate ",
-      "start": "2026-09-14T10:30:00.000",
-      "end": "2026-09-14T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0a05aeb0-8d70-4e71-a8f3-8df084c9d410",
-      "title": "Adult Skate",
-      "start": "2026-09-14T12:00:00.000",
-      "end": "2026-09-14T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d0d22d28-2b7b-402a-8685-706c01ab22ca",
-      "title": "Public Skate",
-      "start": "2026-09-16T10:30:00.000",
-      "end": "2026-09-16T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "955808ee-50d9-40d5-b3d4-f582fede647c",
-      "title": "Adult Skate",
-      "start": "2026-09-16T12:00:00.000",
-      "end": "2026-09-16T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d0607d99-5b82-43f7-a873-ccefe2389321",
-      "title": "Public Skate",
-      "start": "2026-09-17T10:30:00.000",
-      "end": "2026-09-17T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b38c9713-a0e2-4be6-8880-38ff3caeb172",
-      "title": "Adult Skate",
-      "start": "2026-09-17T12:00:00.000",
-      "end": "2026-09-17T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ffa3bada-a58e-43f2-8725-c1accc2d319e",
-      "title": "Public Skate",
-      "start": "2026-09-18T10:30:00.000",
-      "end": "2026-09-18T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "1045d131-e806-48a2-a696-e1bcca0c029f",
-      "title": "Adult Skate",
-      "start": "2026-09-18T12:00:00.000",
-      "end": "2026-09-18T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "cc3b39fc-9cff-43bc-bb35-92d1a9ffd60c",
       "title": "Public Skate",
       "start": "2026-09-22T10:30:00.000",
@@ -143,15 +71,69 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "3ece08e3-ec06-4d7b-b4f1-f3e9458afb50__20260929T103000Z",
+      "title": "Public Skate",
+      "start": "2026-09-29T10:30:00.000",
+      "end": "2026-09-29T11:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "cb3b217d-b6a0-4d86-ad60-b343682de17d__20260929T120000Z",
+      "title": "Adult Skate",
+      "start": "2026-09-29T12:00:00.000",
+      "end": "2026-09-29T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3ece08e3-ec06-4d7b-b4f1-f3e9458afb50__20261001T103000Z",
+      "title": "Public Skate",
+      "start": "2026-10-01T10:30:00.000",
+      "end": "2026-10-01T11:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "cb3b217d-b6a0-4d86-ad60-b343682de17d__20261001T120000Z",
+      "title": "Adult Skate",
+      "start": "2026-10-01T12:00:00.000",
+      "end": "2026-10-01T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3ece08e3-ec06-4d7b-b4f1-f3e9458afb50__20261002T103000Z",
+      "title": "Public Skate",
+      "start": "2026-10-02T10:30:00.000",
+      "end": "2026-10-02T11:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "cb3b217d-b6a0-4d86-ad60-b343682de17d__20261002T120000Z",
+      "title": "Adult Skate",
+      "start": "2026-10-02T12:00:00.000",
+      "end": "2026-10-02T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-20T09:32:56.291Z",
+  "lastUpdated": "2026-09-21T10:20:23.069Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 93,
-    "publicEvents": 16,
-    "generatedAt": "2026-09-20T09:32:56.291Z",
+    "totalEvents": 92,
+    "publicEvents": 14,
+    "generatedAt": "2026-09-21T10:20:23.069Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
