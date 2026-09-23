@@ -307,10 +307,19 @@
       "allDay": false
     },
     {
-      "id": "88b7ebfa-b5d3-4526-bad0-e0c6e3aa9834__20260927T160000Z",
-      "title": "Lane Swim",
+      "id": "c91072fe-583e-4679-aa54-40dc93c6bec9",
+      "title": "Lane Swim-All Pools Open",
       "start": "2026-09-27T16:00:00.000",
       "end": "2026-09-27T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9104ac35-d448-4861-a53a-19558c8786ee",
+      "title": "Lane Swim-All Pools Open",
+      "start": "2026-09-27T17:00:00.000",
+      "end": "2026-09-27T18:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -505,15 +514,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-23T07:14:44.215Z",
+  "lastUpdated": "2026-09-23T17:39:58.779Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-09-23T03:00:00.000Z",
       "end": "2026-10-02T02:59:00.000Z"
     },
-    "eventCount": 56,
-    "generatedAt": "2026-09-23T07:14:44.215Z",
+    "eventCount": 57,
+    "generatedAt": "2026-09-23T17:39:58.779Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
