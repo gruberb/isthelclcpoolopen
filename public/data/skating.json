@@ -57,17 +57,8 @@
     {
       "id": "fbbd7692-ba39-4b27-9581-7ca1734e4677",
       "title": "Public Skate",
-      "start": "2026-09-25T10:30:00.000",
-      "end": "2026-09-25T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "061e2632-b902-4447-9b5f-3661863612cf",
-      "title": "Adult Skate",
-      "start": "2026-09-25T12:00:00.000",
-      "end": "2026-09-25T13:00:00.000",
+      "start": "2026-09-25T10:00:00.000",
+      "end": "2026-09-25T11:15:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -82,16 +73,7 @@
       "allDay": false
     },
     {
-      "id": "50087587-5c26-477e-9d67-657d4ba96663",
-      "title": "Public Skate",
-      "start": "2026-09-27T10:45:00.000",
-      "end": "2026-09-27T11:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "3ece08e3-ec06-4d7b-b4f1-f3e9458afb50__20260929T103000Z",
+      "id": "0ce61d36-d41b-49c5-bfcc-3ca70e5eaff9",
       "title": "Public Skate",
       "start": "2026-09-29T10:30:00.000",
       "end": "2026-09-29T11:45:00.000",
@@ -100,7 +82,7 @@
       "allDay": false
     },
     {
-      "id": "cb3b217d-b6a0-4d86-ad60-b343682de17d__20260929T120000Z",
+      "id": "6d134f81-1195-46be-935d-eaff540cdcf1",
       "title": "Adult Skate",
       "start": "2026-09-29T12:00:00.000",
       "end": "2026-09-29T13:00:00.000",
@@ -127,6 +109,15 @@
       "allDay": false
     },
     {
+      "id": "99ee5aad-e93f-4421-90a7-d97c195ad6be",
+      "title": "Public Skate",
+      "start": "2026-10-01T16:30:00.000",
+      "end": "2026-10-01T17:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "3ece08e3-ec06-4d7b-b4f1-f3e9458afb50__20261002T103000Z",
       "title": "Public Skate",
       "start": "2026-10-02T10:30:00.000",
@@ -143,15 +134,24 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "01a4b521-6de7-4e0e-bbf4-f95ac52bb116",
+      "title": "Public Skate",
+      "start": "2026-10-03T17:00:00.000",
+      "end": "2026-10-03T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-23T09:40:19.758Z",
+  "lastUpdated": "2026-09-24T09:39:18.159Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 96,
+    "totalEvents": 100,
     "publicEvents": 16,
-    "generatedAt": "2026-09-23T09:40:19.758Z",
+    "generatedAt": "2026-09-24T09:39:18.159Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
