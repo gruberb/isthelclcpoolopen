@@ -64,8 +64,8 @@
       "allDay": false
     },
     {
-      "id": "26896900-3d8a-4ce9-b205-b1fa4556562d__20260924T190000Z",
-      "title": "Bridgewater Barracudas",
+      "id": "3572772a-a24b-417a-a086-754e18a11fca",
+      "title": "Bridgewater Barracudas Using 3 Lanes",
       "start": "2026-09-24T19:00:00.000",
       "end": "2026-09-24T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -442,7 +442,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-24T08:05:13.400Z",
+  "lastUpdated": "2026-09-24T21:39:17.899Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -450,7 +450,7 @@
       "end": "2026-10-03T02:59:00.000Z"
     },
     "eventCount": 49,
-    "generatedAt": "2026-09-24T08:05:13.400Z",
+    "generatedAt": "2026-09-24T21:39:17.899Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
