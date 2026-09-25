@@ -46,19 +46,28 @@
       "allDay": false
     },
     {
-      "id": "4e81c18a-b260-4ed5-a23e-ea6a8b708c75__20260925T140000Z",
+      "id": "0025eae9-1c77-4f57-a66e-f8e763d1b582",
       "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
       "start": "2026-09-25T14:00:00.000",
-      "end": "2026-09-25T18:00:00.000",
+      "end": "2026-09-25T16:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     },
     {
-      "id": "44663b4c-6f8d-476e-9471-c69b218c7eac__20260925T180000Z",
+      "id": "022345e0-169a-457d-b305-84877e904055",
+      "title": "Lifeguard Inservice - All pools closed",
+      "start": "2026-09-25T16:00:00.000",
+      "end": "2026-09-25T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ef94e4e6-b851-48ae-b0be-1640214ef599",
       "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-09-25T18:00:00.000",
-      "end": "2026-09-25T20:00:00.000",
+      "start": "2026-09-25T17:00:00.000",
+      "end": "2026-09-25T19:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -388,15 +397,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-25T05:10:28.396Z",
+  "lastUpdated": "2026-09-25T15:23:35.144Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-09-25T03:00:00.000Z",
       "end": "2026-10-04T02:59:00.000Z"
     },
-    "eventCount": 43,
-    "generatedAt": "2026-09-25T05:10:28.396Z",
+    "eventCount": 44,
+    "generatedAt": "2026-09-25T15:23:35.144Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
