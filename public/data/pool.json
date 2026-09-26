@@ -181,8 +181,8 @@
       "allDay": false
     },
     {
-      "id": "7bd5f0bd-8d25-484e-b136-ddfd3a5c2b70__20260928T190000Z",
-      "title": "Bridgewater Barracudas",
+      "id": "769bd410-4c82-4d10-a097-35e0b170f4ca",
+      "title": "Bridgewater Barracudas - 1 Lane, Play & Therapy Pools Open",
       "start": "2026-09-28T19:00:00.000",
       "end": "2026-09-28T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -361,7 +361,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-26T06:21:07.127Z",
+  "lastUpdated": "2026-09-26T15:39:01.884Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -369,7 +369,7 @@
       "end": "2026-10-05T02:59:00.000Z"
     },
     "eventCount": 40,
-    "generatedAt": "2026-09-26T06:21:07.127Z",
+    "generatedAt": "2026-09-26T15:39:01.884Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
