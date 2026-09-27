@@ -1,51 +1,6 @@
 {
   "data": [
     {
-      "id": "b8fd3a3f-bc81-4bb7-9651-368e0b1c607e__20260926T093000Z",
-      "title": "Members Swim",
-      "start": "2026-09-26T09:30:00.000",
-      "end": "2026-09-26T10:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "8ec96de0-b4e0-4b6a-a2b3-ca4ba6ab0f50__20260926T103000Z",
-      "title": "Recreational Swim - 3 Lanes, All Pools Open",
-      "start": "2026-09-26T10:30:00.000",
-      "end": "2026-09-26T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7b0813e9-9b24-48a2-a1f9-3de2b5ca4d79__20260926T123000Z",
-      "title": "Lane Swim",
-      "start": "2026-09-26T12:30:00.000",
-      "end": "2026-09-26T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "50154d21-a627-432b-960e-4ae1268bc76c__20260926T140000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-09-26T14:00:00.000",
-      "end": "2026-09-26T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b6be0f4a-997d-4791-8412-9e8cb4c1c94c",
-      "title": "MODL / LCLC Women and Girls Only Swim",
-      "start": "2026-09-26T16:00:00.000",
-      "end": "2026-09-26T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "2020c26d-6c4e-4d15-95f6-9aaa18ab7c76__20260927T110000Z",
       "title": "Members Swim",
       "start": "2026-09-27T11:00:00.000",
@@ -359,17 +314,35 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "c9dcb0d0-06ab-47f8-9e77-f7b81d703b84__20261005T180000Z",
+      "title": "Special Olympics",
+      "start": "2026-10-05T18:00:00.000",
+      "end": "2026-10-05T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7bd5f0bd-8d25-484e-b136-ddfd3a5c2b70__20261005T190000Z",
+      "title": "Bridgewater Barracudas",
+      "start": "2026-10-05T19:00:00.000",
+      "end": "2026-10-05T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-26T15:39:01.884Z",
+  "lastUpdated": "2026-09-27T05:31:38.480Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-09-26T03:00:00.000Z",
-      "end": "2026-10-05T02:59:00.000Z"
+      "start": "2026-09-27T03:00:00.000Z",
+      "end": "2026-10-06T02:59:00.000Z"
     },
-    "eventCount": 40,
-    "generatedAt": "2026-09-26T15:39:01.884Z",
+    "eventCount": 37,
+    "generatedAt": "2026-09-27T05:31:38.480Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
