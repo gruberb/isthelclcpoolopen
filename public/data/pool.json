@@ -1,69 +1,6 @@
 {
   "data": [
     {
-      "id": "2020c26d-6c4e-4d15-95f6-9aaa18ab7c76__20260927T110000Z",
-      "title": "Members Swim",
-      "start": "2026-09-27T11:00:00.000",
-      "end": "2026-09-27T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "db08dcde-d49c-4e0a-827a-559b1d76b11c__20260927T120000Z",
-      "title": "Rental Space - Party Swim",
-      "start": "2026-09-27T12:00:00.000",
-      "end": "2026-09-27T13:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7de6ffe0-9f8f-47f8-9ad4-d1c003a4c48a",
-      "title": "Shauna Leighton",
-      "start": "2026-09-27T12:00:00.000",
-      "end": "2026-09-27T13:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
-      "id": "0f6fc99c-932d-487d-a272-1f7a17490ab7__20260927T130000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-09-27T13:00:00.000",
-      "end": "2026-09-27T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c91072fe-583e-4679-aa54-40dc93c6bec9",
-      "title": "Lane Swim-All Pools Open",
-      "start": "2026-09-27T16:00:00.000",
-      "end": "2026-09-27T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9104ac35-d448-4861-a53a-19558c8786ee",
-      "title": "Lane Swim-All Pools Open",
-      "start": "2026-09-27T17:00:00.000",
-      "end": "2026-09-27T18:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ccbe22a3-933b-4acf-9d10-40daad426439__20260927T180000Z",
-      "title": "Bridgewater Barracudas",
-      "start": "2026-09-27T18:00:00.000",
-      "end": "2026-09-27T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20260928T063000Z",
       "title": "Members Swim",
       "start": "2026-09-28T06:30:00.000",
@@ -334,15 +271,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-28T01:05:27.355Z",
+  "lastUpdated": "2026-09-28T07:15:14.158Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-09-27T03:00:00.000Z",
-      "end": "2026-10-06T02:59:00.000Z"
+      "start": "2026-09-28T03:00:00.000Z",
+      "end": "2026-10-07T02:59:00.000Z"
     },
-    "eventCount": 37,
-    "generatedAt": "2026-09-28T01:05:27.355Z",
+    "eventCount": 30,
+    "generatedAt": "2026-09-28T07:15:14.158Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
