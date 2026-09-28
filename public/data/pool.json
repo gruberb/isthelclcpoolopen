@@ -73,8 +73,8 @@
       "allDay": false
     },
     {
-      "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20260928T073000Z",
-      "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
+      "id": "d03fdd1b-c287-4346-a781-c2f41385da5f",
+      "title": "Recreation Swim - 4 Lanes, Play Pool Closed & Therapy Pool Open",
       "start": "2026-09-28T07:30:00.000",
       "end": "2026-09-28T09:45:00.000",
       "backgroundColor": "#0000FF",
@@ -334,7 +334,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-27T05:31:38.480Z",
+  "lastUpdated": "2026-09-28T01:05:27.355Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -342,7 +342,7 @@
       "end": "2026-10-06T02:59:00.000Z"
     },
     "eventCount": 37,
-    "generatedAt": "2026-09-27T05:31:38.480Z",
+    "generatedAt": "2026-09-28T01:05:27.355Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
