@@ -82,15 +82,6 @@
       "allDay": false
     },
     {
-      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20260930T100000Z",
-      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
-      "start": "2026-09-30T10:00:00.000",
-      "end": "2026-09-30T10:50:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261001T063000Z",
       "title": "Members Swim",
       "start": "2026-10-01T06:30:00.000",
@@ -253,6 +244,15 @@
       "allDay": false
     },
     {
+      "id": "5a8cb1b9-b4a3-431a-983f-1b73704cd6fc",
+      "title": "2026 Fall - Lifesaving Society Swim Instructor Course - Lifesaving Society Swim Instructor Course",
+      "start": "2026-10-02T16:00:00.000",
+      "end": "2026-10-02T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "c4ef598e-6eba-4676-88fd-ba9f44051991",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-10-02T17:00:00.000",
@@ -266,6 +266,15 @@
       "title": "Members Swim",
       "start": "2026-10-03T09:00:00.000",
       "end": "2026-10-03T10:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "54b23d53-1c03-416f-a4c3-77fae8d712c2",
+      "title": "2026 Fall - Lifesaving Society Swim Instructor Course - Lifesaving Society Swim Instructor Course",
+      "start": "2026-10-03T09:00:00.000",
+      "end": "2026-10-03T17:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -302,6 +311,15 @@
       "title": "MODL / LCLC Women and Girls Only Swim",
       "start": "2026-10-03T16:00:00.000",
       "end": "2026-10-03T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1741ed87-acb3-48e9-b97f-7d7a35910595",
+      "title": "2026 Fall - Lifesaving Society Swim Instructor Course - Lifesaving Society Swim Instructor Course",
+      "start": "2026-10-04T09:00:00.000",
+      "end": "2026-10-04T17:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -631,15 +649,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-29T14:12:06.455Z",
+  "lastUpdated": "2026-09-29T19:32:02.354Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-09-29T03:00:00.000Z",
       "end": "2026-10-08T02:59:00.000Z"
     },
-    "eventCount": 70,
-    "generatedAt": "2026-09-29T14:12:06.455Z",
+    "eventCount": 72,
+    "generatedAt": "2026-09-29T19:32:02.354Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
