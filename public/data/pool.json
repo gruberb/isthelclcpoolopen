@@ -47,7 +47,7 @@
     },
     {
       "id": "a9227792-6e2f-4af0-845c-177f8b9632a3",
-      "title": "Lane Swim  Play Pool Closed UFN",
+      "title": "Lane Swim/Parent & Tot",
       "start": "2026-09-29T13:00:00.000",
       "end": "2026-09-29T15:00:00.000",
       "backgroundColor": "#0000FF",
@@ -418,6 +418,15 @@
       "id": "9086491f-c883-4697-ab79-bb7a88bb6fa5__20261005T160000Z",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-10-05T16:00:00.000",
+      "end": "2026-10-05T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "94a1f7b9-6017-41d1-8c95-8667a119c7a2__20261005T170000Z",
+      "title": "Aqua Tabata - All Other Pools Closed to Public",
+      "start": "2026-10-05T17:00:00.000",
       "end": "2026-10-05T17:45:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -425,7 +434,7 @@
     },
     {
       "id": "c9dcb0d0-06ab-47f8-9e77-f7b81d703b84__20261005T180000Z",
-      "title": "Special Olympics",
+      "title": "Special Olympics using Lap Pool - Play & Therapy Pools Open",
       "start": "2026-10-05T18:00:00.000",
       "end": "2026-10-05T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -434,7 +443,7 @@
     },
     {
       "id": "7bd5f0bd-8d25-484e-b136-ddfd3a5c2b70__20261005T190000Z",
-      "title": "Bridgewater Barracudas",
+      "title": "Bridgewater Barracudas using 3 Lanes, Play & Therapy Open",
       "start": "2026-10-05T19:00:00.000",
       "end": "2026-10-05T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -622,15 +631,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-29T07:14:08.506Z",
+  "lastUpdated": "2026-09-29T14:12:06.455Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-09-29T03:00:00.000Z",
       "end": "2026-10-08T02:59:00.000Z"
     },
-    "eventCount": 69,
-    "generatedAt": "2026-09-29T07:14:08.506Z",
+    "eventCount": 70,
+    "generatedAt": "2026-09-29T14:12:06.455Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
