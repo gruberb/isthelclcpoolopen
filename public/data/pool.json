@@ -64,10 +64,37 @@
       "allDay": false
     },
     {
+      "id": "3ec9a004-e9f3-4125-8ef8-f2a5a4190cc0",
+      "title": "6:30 AM-7:30 AM Subject: Member Swim",
+      "start": "2026-09-29T06:30:00.000",
+      "end": "2026-09-29T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8eec5546-cb2d-447e-94ba-6f1f36104b09",
+      "title": "7:30 AM - 9:45 AM Subject: Recreational Swim -All Pools Open",
+      "start": "2026-09-29T07:30:00.000",
+      "end": "2026-09-29T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20260929T100000Z",
       "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
       "start": "2026-09-29T10:00:00.000",
       "end": "2026-09-29T10:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "24149a1b-c54d-4612-a7e6-1a15b38fb418",
+      "title": "11:00 AM -12:00 PM Subject : Closed for Maintenance",
+      "start": "2026-09-29T11:00:00.000",
+      "end": "2026-09-29T12:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -568,15 +595,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-28T21:32:27.626Z",
+  "lastUpdated": "2026-09-29T01:25:39.106Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-09-28T03:00:00.000Z",
       "end": "2026-10-07T02:59:00.000Z"
     },
-    "eventCount": 63,
-    "generatedAt": "2026-09-28T21:32:27.626Z",
+    "eventCount": 66,
+    "generatedAt": "2026-09-29T01:25:39.106Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
