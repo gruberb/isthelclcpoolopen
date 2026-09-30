@@ -19,7 +19,7 @@
       "allDay": false
     },
     {
-      "id": "3ece08e3-ec06-4d7b-b4f1-f3e9458afb50__20261001T103000Z",
+      "id": "02a5d1df-6512-4aab-a47d-5d6ecb7e3e70",
       "title": "Public Skate",
       "start": "2026-10-01T10:30:00.000",
       "end": "2026-10-01T11:45:00.000",
@@ -28,7 +28,7 @@
       "allDay": false
     },
     {
-      "id": "cb3b217d-b6a0-4d86-ad60-b343682de17d__20261001T120000Z",
+      "id": "1b2bd771-5c8e-4694-927d-33912620254e",
       "title": "Adult Skate",
       "start": "2026-10-01T12:00:00.000",
       "end": "2026-10-01T13:00:00.000",
@@ -39,8 +39,8 @@
     {
       "id": "99ee5aad-e93f-4421-90a7-d97c195ad6be",
       "title": "Public Skate",
-      "start": "2026-10-01T16:30:00.000",
-      "end": "2026-10-01T17:30:00.000",
+      "start": "2026-10-01T16:00:00.000",
+      "end": "2026-10-01T17:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -68,6 +68,15 @@
       "title": "Public Skate",
       "start": "2026-10-03T17:00:00.000",
       "end": "2026-10-03T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "93810f24-0c35-4884-92a2-ec0ebc24fdc2",
+      "title": "Public Skate",
+      "start": "2026-10-04T18:00:00.000",
+      "end": "2026-10-04T19:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -148,19 +157,19 @@
       "id": "baab7b8d-d21b-4ad0-bd13-1fd68c4ea5f4",
       "title": "Public Skate",
       "start": "2026-10-10T16:00:00.000",
-      "end": "2026-10-10T18:00:00.000",
+      "end": "2026-10-10T17:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-29T11:00:22.560Z",
+  "lastUpdated": "2026-09-30T10:50:38.674Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 97,
-    "publicEvents": 17,
-    "generatedAt": "2026-09-29T11:00:22.560Z",
+    "totalEvents": 102,
+    "publicEvents": 18,
+    "generatedAt": "2026-09-30T10:50:38.674Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
