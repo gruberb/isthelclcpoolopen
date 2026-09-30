@@ -1,78 +1,6 @@
 {
   "data": [
     {
-      "id": "3ec9a004-e9f3-4125-8ef8-f2a5a4190cc0",
-      "title": "6:30 AM-7:30 AM Subject: Member Swim",
-      "start": "2026-09-29T06:30:00.000",
-      "end": "2026-09-29T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "8eec5546-cb2d-447e-94ba-6f1f36104b09",
-      "title": "7:30 AM - 9:45 AM Subject: Recreational Swim -All Pools Open",
-      "start": "2026-09-29T07:30:00.000",
-      "end": "2026-09-29T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20260929T100000Z",
-      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
-      "start": "2026-09-29T10:00:00.000",
-      "end": "2026-09-29T10:50:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "24149a1b-c54d-4612-a7e6-1a15b38fb418",
-      "title": "11:00 AM -12:00 PM Subject : Closed for Maintenance",
-      "start": "2026-09-29T11:00:00.000",
-      "end": "2026-09-29T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c78c6cd1-cbc8-4b33-9207-29fa7798380f__20260929T120500Z",
-      "title": "Aqua Tabata using Lap Pool - All Other Pools Closed to Public",
-      "start": "2026-09-29T12:05:00.000",
-      "end": "2026-09-29T12:50:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "a9227792-6e2f-4af0-845c-177f8b9632a3",
-      "title": "Lane Swim/Parent & Tot",
-      "start": "2026-09-29T13:00:00.000",
-      "end": "2026-09-29T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "28702c96-a27e-4f69-bad9-00c525526cb9",
-      "title": "Recreational Swim - 3 Lanes & Therapy Pool Open",
-      "start": "2026-09-29T15:30:00.000",
-      "end": "2026-09-29T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "29695da0-6c2c-4a82-9408-ce97d0efb826__20260929T190000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pool Open",
-      "start": "2026-09-29T19:00:00.000",
-      "end": "2026-09-29T21:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "d3e7f4c0-fe56-46a6-96a7-5fa69d23ec9b",
       "title": "Facility Closed - Truth and Reconciliation Day",
       "start": "2026-09-30T06:00:00.000",
@@ -262,19 +190,19 @@
       "allDay": false
     },
     {
-      "id": "63835fda-d3e3-4c2c-ad23-8394b2e2a615__20261003T090000Z",
-      "title": "Members Swim",
+      "id": "54b23d53-1c03-416f-a4c3-77fae8d712c2",
+      "title": "2026 Fall - Lifesaving Society Swim Instructor Course - Lifesaving Society Swim Instructor Course",
       "start": "2026-10-03T09:00:00.000",
-      "end": "2026-10-03T10:00:00.000",
+      "end": "2026-10-03T17:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     },
     {
-      "id": "54b23d53-1c03-416f-a4c3-77fae8d712c2",
-      "title": "2026 Fall - Lifesaving Society Swim Instructor Course - Lifesaving Society Swim Instructor Course",
+      "id": "63835fda-d3e3-4c2c-ad23-8394b2e2a615__20261003T090000Z",
+      "title": "Members Swim",
       "start": "2026-10-03T09:00:00.000",
-      "end": "2026-10-03T17:00:00.000",
+      "end": "2026-10-03T10:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -647,17 +575,107 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261008T063000Z",
+      "title": "Members Swim",
+      "start": "2026-10-08T06:30:00.000",
+      "end": "2026-10-08T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20261008T073000Z",
+      "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
+      "start": "2026-10-08T07:30:00.000",
+      "end": "2026-10-08T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20261008T100000Z",
+      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
+      "start": "2026-10-08T10:00:00.000",
+      "end": "2026-10-08T10:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f1aedf16-603f-4a08-98a5-5aeb44fbea55__20261008T110000Z",
+      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pool Open",
+      "start": "2026-10-08T11:00:00.000",
+      "end": "2026-10-08T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c4d7a107-b756-47db-bc20-bf28dea3a572__20261008T120500Z",
+      "title": "Aqua Tabata using Lap Pool - All Other Pools Closed to Public",
+      "start": "2026-10-08T12:05:00.000",
+      "end": "2026-10-08T12:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7bbc868d-6db8-42c4-8800-81517a4e56f6",
+      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
+      "start": "2026-10-08T13:00:00.000",
+      "end": "2026-10-08T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "af16e868-357c-475a-a096-0a5496807af7__20261008T150000Z",
+      "title": "Closed for Maintenance ",
+      "start": "2026-10-08T15:00:00.000",
+      "end": "2026-10-08T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f2ce54bc-ec70-4576-b1e8-0e3105f6f2a1__20261008T160000Z",
+      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
+      "start": "2026-10-08T16:00:00.000",
+      "end": "2026-10-08T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "26896900-3d8a-4ce9-b205-b1fa4556562d__20261008T190000Z",
+      "title": "Bridgewater Barracudas",
+      "start": "2026-10-08T19:00:00.000",
+      "end": "2026-10-08T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "14dacc8f-1540-46a0-8a70-1cc01155c954__20261008T200000Z",
+      "title": "Lane Swim",
+      "start": "2026-10-08T20:00:00.000",
+      "end": "2026-10-08T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-29T19:32:02.354Z",
+  "lastUpdated": "2026-09-30T08:49:38.119Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-09-29T03:00:00.000Z",
-      "end": "2026-10-08T02:59:00.000Z"
+      "start": "2026-09-30T03:00:00.000Z",
+      "end": "2026-10-09T02:59:00.000Z"
     },
-    "eventCount": 72,
-    "generatedAt": "2026-09-29T19:32:02.354Z",
+    "eventCount": 74,
+    "generatedAt": "2026-09-30T08:49:38.119Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
