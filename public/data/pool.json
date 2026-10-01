@@ -163,28 +163,10 @@
       "allDay": false
     },
     {
-      "id": "5a8cb1b9-b4a3-431a-983f-1b73704cd6fc",
-      "title": "2026 Fall - Lifesaving Society Swim Instructor Course - Lifesaving Society Swim Instructor Course",
-      "start": "2026-10-02T16:00:00.000",
-      "end": "2026-10-02T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "c4ef598e-6eba-4676-88fd-ba9f44051991",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-10-02T17:00:00.000",
       "end": "2026-10-02T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "54b23d53-1c03-416f-a4c3-77fae8d712c2",
-      "title": "2026 Fall - Lifesaving Society Swim Instructor Course - Lifesaving Society Swim Instructor Course",
-      "start": "2026-10-03T09:00:00.000",
-      "end": "2026-10-03T17:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -238,7 +220,7 @@
       "id": "1741ed87-acb3-48e9-b97f-7d7a35910595",
       "title": "2026 Fall - Lifesaving Society Swim Instructor Course - Lifesaving Society Swim Instructor Course",
       "start": "2026-10-04T09:00:00.000",
-      "end": "2026-10-04T17:00:00.000",
+      "end": "2026-10-04T17:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -685,18 +667,27 @@
       "allDay": false
     },
     {
-      "id": "f1aedf16-603f-4a08-98a5-5aeb44fbea55__20261009T110000Z",
+      "id": "19bba08d-fe6c-4ec6-8c4b-d92865619ae1",
       "title": "Recreational Swim - 3 Lanes, Play & Therapy Pool Open",
       "start": "2026-10-09T11:00:00.000",
-      "end": "2026-10-09T12:00:00.000",
+      "end": "2026-10-09T11:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     },
     {
-      "id": "a447ae48-bd41-4a4f-a3f1-a4bdfa7a5cb4__20261009T120000Z",
+      "id": "92899bcc-b841-423f-b125-46130691d3c5",
+      "title": "SSRCE Pool Rental - All Pools Closed to the Public",
+      "start": "2026-10-09T11:30:00.000",
+      "end": "2026-10-09T12:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "53b38177-8f41-4cff-b1ef-e0fc697d9c7d",
       "title": "Lane Swim Lap Pool / Parent n' Tot Play Pool",
-      "start": "2026-10-09T12:00:00.000",
+      "start": "2026-10-09T12:30:00.000",
       "end": "2026-10-09T14:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -739,15 +730,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-01T06:18:16.446Z",
+  "lastUpdated": "2026-10-01T19:13:39.060Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-10-01T03:00:00.000Z",
       "end": "2026-10-10T02:59:00.000Z"
     },
-    "eventCount": 82,
-    "generatedAt": "2026-10-01T06:18:16.446Z",
+    "eventCount": 81,
+    "generatedAt": "2026-10-01T19:13:39.060Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
