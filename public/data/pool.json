@@ -1,15 +1,6 @@
 {
   "data": [
     {
-      "id": "d3e7f4c0-fe56-46a6-96a7-5fa69d23ec9b",
-      "title": "Facility Closed - Truth and Reconciliation Day",
-      "start": "2026-09-30T06:00:00.000",
-      "end": "2026-09-30T22:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261001T063000Z",
       "title": "Members Swim",
       "start": "2026-10-01T06:30:00.000",
@@ -665,17 +656,98 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261009T063000Z",
+      "title": "Members Swim",
+      "start": "2026-10-09T06:30:00.000",
+      "end": "2026-10-09T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20261009T073000Z",
+      "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
+      "start": "2026-10-09T07:30:00.000",
+      "end": "2026-10-09T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20261009T100000Z",
+      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
+      "start": "2026-10-09T10:00:00.000",
+      "end": "2026-10-09T10:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f1aedf16-603f-4a08-98a5-5aeb44fbea55__20261009T110000Z",
+      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pool Open",
+      "start": "2026-10-09T11:00:00.000",
+      "end": "2026-10-09T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a447ae48-bd41-4a4f-a3f1-a4bdfa7a5cb4__20261009T120000Z",
+      "title": "Lane Swim Lap Pool / Parent n' Tot Play Pool",
+      "start": "2026-10-09T12:00:00.000",
+      "end": "2026-10-09T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "4e81c18a-b260-4ed5-a23e-ea6a8b708c75__20261009T140000Z",
+      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
+      "start": "2026-10-09T14:00:00.000",
+      "end": "2026-10-09T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "af16e868-357c-475a-a096-0a5496807af7__20261009T150000Z",
+      "title": "Closed for Maintenance ",
+      "start": "2026-10-09T15:00:00.000",
+      "end": "2026-10-09T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c05e09ab-d733-4eea-b44d-379055a53632__20261009T160000Z",
+      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
+      "start": "2026-10-09T16:00:00.000",
+      "end": "2026-10-09T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f40b5f15-73c1-4f7c-88a2-0ff1b8376a1e__20261009T170000Z",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-10-09T17:00:00.000",
+      "end": "2026-10-09T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-09-30T08:49:38.119Z",
+  "lastUpdated": "2026-10-01T06:18:16.446Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-09-30T03:00:00.000Z",
-      "end": "2026-10-09T02:59:00.000Z"
+      "start": "2026-10-01T03:00:00.000Z",
+      "end": "2026-10-10T02:59:00.000Z"
     },
-    "eventCount": 74,
-    "generatedAt": "2026-09-30T08:49:38.119Z",
+    "eventCount": 82,
+    "generatedAt": "2026-10-01T06:18:16.446Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
