@@ -65,7 +65,7 @@
     },
     {
       "id": "c05e09ab-d733-4eea-b44d-379055a53632__20261002T160000Z",
-      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
+      "title": "Staff Inservice - All Pools Closed to Public",
       "start": "2026-10-02T16:00:00.000",
       "end": "2026-10-02T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -127,10 +127,19 @@
       "allDay": false
     },
     {
-      "id": "0da13c41-f719-4f0d-8e45-44bd1e2e4d84__20261004T113000Z",
+      "id": "2ad2a2b0-bb22-4279-9d70-f50763706aea__20261004T110000Z",
+      "title": "Drop-In Water Polo",
+      "start": "2026-10-04T11:00:00.000",
+      "end": "2026-10-04T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a1f43382-c8ef-4274-a8bf-0d8ffae65bf7",
       "title": "Drop In Water Polo",
-      "start": "2026-10-04T11:30:00.000",
-      "end": "2026-10-04T12:30:00.000",
+      "start": "2026-10-04T11:00:00.000",
+      "end": "2026-10-04T12:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -614,7 +623,7 @@
     },
     {
       "id": "c05e09ab-d733-4eea-b44d-379055a53632__20261009T160000Z",
-      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
+      "title": "Staff Inservice - All Pools Closed to Public",
       "start": "2026-10-09T16:00:00.000",
       "end": "2026-10-09T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -676,15 +685,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-02T15:17:50.022Z",
+  "lastUpdated": "2026-10-02T20:03:19.750Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-10-02T03:00:00.000Z",
       "end": "2026-10-11T02:59:00.000Z"
     },
-    "eventCount": 75,
-    "generatedAt": "2026-10-02T15:17:50.022Z",
+    "eventCount": 76,
+    "generatedAt": "2026-10-02T20:03:19.750Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
