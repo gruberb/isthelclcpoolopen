@@ -127,15 +127,6 @@
       "allDay": false
     },
     {
-      "id": "1741ed87-acb3-48e9-b97f-7d7a35910595",
-      "title": "2026 Fall - Lifesaving Society Swim Instructor Course - Lifesaving Society Swim Instructor Course",
-      "start": "2026-10-04T09:00:00.000",
-      "end": "2026-10-04T17:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "0da13c41-f719-4f0d-8e45-44bd1e2e4d84__20261004T113000Z",
       "title": "Drop In Water Polo",
       "start": "2026-10-04T11:30:00.000",
@@ -685,15 +676,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-02T08:47:11.442Z",
+  "lastUpdated": "2026-10-02T15:17:50.022Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-10-02T03:00:00.000Z",
       "end": "2026-10-11T02:59:00.000Z"
     },
-    "eventCount": 76,
-    "generatedAt": "2026-10-02T08:47:11.442Z",
+    "eventCount": 75,
+    "generatedAt": "2026-10-02T15:17:50.022Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
