@@ -1,10 +1,10 @@
 {
   "data": [
     {
-      "id": "63835fda-d3e3-4c2c-ad23-8394b2e2a615__20261003T090000Z",
-      "title": "Members Swim",
-      "start": "2026-10-03T09:00:00.000",
-      "end": "2026-10-03T10:00:00.000",
+      "id": "9b173b06-5de1-4def-a605-4375b2bc5980",
+      "title": "9:30 am-10:00 am: Subject Members Swim",
+      "start": "2026-10-03T09:30:00.000",
+      "end": "2026-10-03T10:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -46,8 +46,8 @@
       "allDay": false
     },
     {
-      "id": "2ad2a2b0-bb22-4279-9d70-f50763706aea__20261004T110000Z",
-      "title": "Drop-In Water Polo",
+      "id": "a1f43382-c8ef-4274-a8bf-0d8ffae65bf7",
+      "title": "Drop In Water Polo",
       "start": "2026-10-04T11:00:00.000",
       "end": "2026-10-04T12:00:00.000",
       "backgroundColor": "#0000FF",
@@ -55,8 +55,8 @@
       "allDay": false
     },
     {
-      "id": "a1f43382-c8ef-4274-a8bf-0d8ffae65bf7",
-      "title": "Drop In Water Polo",
+      "id": "2ad2a2b0-bb22-4279-9d70-f50763706aea__20261004T110000Z",
+      "title": "Drop-In Water Polo",
       "start": "2026-10-04T11:00:00.000",
       "end": "2026-10-04T12:00:00.000",
       "backgroundColor": "#0000FF",
@@ -658,7 +658,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-03T03:38:07.387Z",
+  "lastUpdated": "2026-10-03T14:31:50.772Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -666,7 +666,7 @@
       "end": "2026-10-12T02:59:00.000Z"
     },
     "eventCount": 73,
-    "generatedAt": "2026-10-03T03:38:07.387Z",
+    "generatedAt": "2026-10-03T14:31:50.772Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
