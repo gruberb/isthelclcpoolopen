@@ -1,8 +1,8 @@
 {
   "data": [
     {
-      "id": "a1f43382-c8ef-4274-a8bf-0d8ffae65bf7",
-      "title": "Drop In Water Polo",
+      "id": "2ad2a2b0-bb22-4279-9d70-f50763706aea__20261004T110000Z",
+      "title": "Drop-In Water Polo",
       "start": "2026-10-04T11:00:00.000",
       "end": "2026-10-04T12:00:00.000",
       "backgroundColor": "#0000FF",
@@ -10,8 +10,8 @@
       "allDay": false
     },
     {
-      "id": "2ad2a2b0-bb22-4279-9d70-f50763706aea__20261004T110000Z",
-      "title": "Drop-In Water Polo",
+      "id": "a1f43382-c8ef-4274-a8bf-0d8ffae65bf7",
+      "title": "Drop In Water Polo",
       "start": "2026-10-04T11:00:00.000",
       "end": "2026-10-04T12:00:00.000",
       "backgroundColor": "#0000FF",
@@ -622,7 +622,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-04T06:09:19.361Z",
+  "lastUpdated": "2026-10-04T12:41:35.251Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -630,7 +630,7 @@
       "end": "2026-10-13T02:59:00.000Z"
     },
     "eventCount": 69,
-    "generatedAt": "2026-10-04T06:09:19.361Z",
+    "generatedAt": "2026-10-04T12:41:35.251Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
