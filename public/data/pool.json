@@ -55,15 +55,6 @@
       "allDay": false
     },
     {
-      "id": "af16e868-357c-475a-a096-0a5496807af7__20261005T150000Z",
-      "title": "Closed for Maintenance ",
-      "start": "2026-10-05T15:00:00.000",
-      "end": "2026-10-05T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "9086491f-c883-4697-ab79-bb7a88bb6fa5__20261005T160000Z",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-10-05T16:00:00.000",
@@ -163,15 +154,6 @@
       "allDay": false
     },
     {
-      "id": "af16e868-357c-475a-a096-0a5496807af7__20261006T150000Z",
-      "title": "Closed for Maintenance ",
-      "start": "2026-10-06T15:00:00.000",
-      "end": "2026-10-06T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "0adae7ec-7ad8-4470-8215-f7279dcbf23b__20261006T160000Z",
       "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
       "start": "2026-10-06T16:00:00.000",
@@ -244,16 +226,7 @@
       "allDay": false
     },
     {
-      "id": "af16e868-357c-475a-a096-0a5496807af7__20261007T150000Z",
-      "title": "Closed for Maintenance ",
-      "start": "2026-10-07T15:00:00.000",
-      "end": "2026-10-07T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "8e96db39-9356-4c5e-b8c7-c438da31f5db__20261007T160000Z",
+      "id": "7710b78a-7215-4364-a2dd-ae0133b8fd5e__20261007T160000Z",
       "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
       "start": "2026-10-07T16:00:00.000",
       "end": "2026-10-07T19:00:00.000",
@@ -334,16 +307,7 @@
       "allDay": false
     },
     {
-      "id": "af16e868-357c-475a-a096-0a5496807af7__20261008T150000Z",
-      "title": "Closed for Maintenance ",
-      "start": "2026-10-08T15:00:00.000",
-      "end": "2026-10-08T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f2ce54bc-ec70-4576-b1e8-0e3105f6f2a1__20261008T160000Z",
+      "id": "1294147f-4afa-4b36-9508-1ccbeb1188f8__20261008T160000Z",
       "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
       "start": "2026-10-08T16:00:00.000",
       "end": "2026-10-08T19:00:00.000",
@@ -352,8 +316,8 @@
       "allDay": false
     },
     {
-      "id": "26896900-3d8a-4ce9-b205-b1fa4556562d__20261008T190000Z",
-      "title": "Bridgewater Barracudas",
+      "id": "81ebdf45-af2f-43d8-bccd-f96e6b695960",
+      "title": "Bridgewater Barracudas - 1 Lane, Play & Therapy Pools Open",
       "start": "2026-10-08T19:00:00.000",
       "end": "2026-10-08T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -361,8 +325,8 @@
       "allDay": false
     },
     {
-      "id": "14dacc8f-1540-46a0-8a70-1cc01155c954__20261008T200000Z",
-      "title": "Lane Swim",
+      "id": "a42a53d1-e4bd-4764-92d5-dcc5c6a23729",
+      "title": "Lane Swim - Play & Therapy Pools Open",
       "start": "2026-10-08T20:00:00.000",
       "end": "2026-10-08T21:00:00.000",
       "backgroundColor": "#0000FF",
@@ -424,18 +388,9 @@
       "allDay": false
     },
     {
-      "id": "4e81c18a-b260-4ed5-a23e-ea6a8b708c75__20261009T140000Z",
+      "id": "0844dbaa-a8e9-4f3e-bf30-beca66260e83",
       "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
       "start": "2026-10-09T14:00:00.000",
-      "end": "2026-10-09T15:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "af16e868-357c-475a-a096-0a5496807af7__20261009T150000Z",
-      "title": "Closed for Maintenance ",
-      "start": "2026-10-09T15:00:00.000",
       "end": "2026-10-09T16:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -509,15 +464,6 @@
       "title": "Drop-In Water Polo",
       "start": "2026-10-11T11:00:00.000",
       "end": "2026-10-11T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0da13c41-f719-4f0d-8e45-44bd1e2e4d84__20261011T113000Z",
-      "title": "Drop In Water Polo",
-      "start": "2026-10-11T11:30:00.000",
-      "end": "2026-10-11T12:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -622,15 +568,6 @@
       "allDay": false
     },
     {
-      "id": "af16e868-357c-475a-a096-0a5496807af7__20261013T150000Z",
-      "title": "Closed for Maintenance ",
-      "start": "2026-10-13T15:00:00.000",
-      "end": "2026-10-13T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "0adae7ec-7ad8-4470-8215-f7279dcbf23b__20261013T160000Z",
       "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
       "start": "2026-10-13T16:00:00.000",
@@ -649,15 +586,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-05T09:24:11.982Z",
+  "lastUpdated": "2026-10-05T18:42:02.672Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-10-05T03:00:00.000Z",
       "end": "2026-10-14T02:59:00.000Z"
     },
-    "eventCount": 72,
-    "generatedAt": "2026-10-05T09:24:11.982Z",
+    "eventCount": 65,
+    "generatedAt": "2026-10-05T18:42:02.672Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
