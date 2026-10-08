@@ -217,7 +217,7 @@
       "allDay": false
     },
     {
-      "id": "2ad2a2b0-bb22-4279-9d70-f50763706aea__20261011T110000Z",
+      "id": "a9755cea-dae9-4b6e-a4c7-3f7622fb2207",
       "title": "Drop-In Water Polo",
       "start": "2026-10-11T11:00:00.000",
       "end": "2026-10-11T12:00:00.000",
@@ -586,7 +586,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-08T16:44:11.906Z",
+  "lastUpdated": "2026-10-08T21:46:35.073Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -594,7 +594,7 @@
       "end": "2026-10-17T02:59:00.000Z"
     },
     "eventCount": 65,
-    "generatedAt": "2026-10-08T16:44:11.906Z",
+    "generatedAt": "2026-10-08T21:46:35.073Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
