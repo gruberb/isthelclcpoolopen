@@ -1,87 +1,6 @@
 {
   "data": [
     {
-      "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261009T063000Z",
-      "title": "Members Swim",
-      "start": "2026-10-09T06:30:00.000",
-      "end": "2026-10-09T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20261009T073000Z",
-      "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
-      "start": "2026-10-09T07:30:00.000",
-      "end": "2026-10-09T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20261009T100000Z",
-      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
-      "start": "2026-10-09T10:00:00.000",
-      "end": "2026-10-09T10:50:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "19bba08d-fe6c-4ec6-8c4b-d92865619ae1",
-      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pool Open",
-      "start": "2026-10-09T11:00:00.000",
-      "end": "2026-10-09T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "92899bcc-b841-423f-b125-46130691d3c5",
-      "title": "SSRCE Pool Rental - All Pools Closed to the Public",
-      "start": "2026-10-09T11:30:00.000",
-      "end": "2026-10-09T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "53b38177-8f41-4cff-b1ef-e0fc697d9c7d",
-      "title": "Lane Swim Lap Pool / Parent n' Tot Play Pool",
-      "start": "2026-10-09T12:30:00.000",
-      "end": "2026-10-09T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0844dbaa-a8e9-4f3e-bf30-beca66260e83",
-      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
-      "start": "2026-10-09T14:00:00.000",
-      "end": "2026-10-09T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c05e09ab-d733-4eea-b44d-379055a53632__20261009T160000Z",
-      "title": "Staff Inservice - All Pools Closed to Public",
-      "start": "2026-10-09T16:00:00.000",
-      "end": "2026-10-09T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f40b5f15-73c1-4f7c-88a2-0ff1b8376a1e__20261009T170000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-10-09T17:00:00.000",
-      "end": "2026-10-09T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "63835fda-d3e3-4c2c-ad23-8394b2e2a615__20261010T090000Z",
       "title": "Members Swim",
       "start": "2026-10-10T09:00:00.000",
@@ -548,17 +467,89 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "141dc992-33ca-469f-9832-cec100e60576__20261018T100000Z",
+      "title": "Member's Swim",
+      "start": "2026-10-18T10:00:00.000",
+      "end": "2026-10-18T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2ad2a2b0-bb22-4279-9d70-f50763706aea__20261018T110000Z",
+      "title": "Drop-In Water Polo",
+      "start": "2026-10-18T11:00:00.000",
+      "end": "2026-10-18T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "8f227fd6-b370-4544-9775-c3dbaffab084",
+      "title": "Birthday Party",
+      "start": "2026-10-18T12:00:00.000",
+      "end": "2026-10-18T13:00:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
+      "id": "41591d56-40b5-477e-92b5-f029118f4506",
+      "title": "Private Rental Birthday Party",
+      "start": "2026-10-18T12:00:00.000",
+      "end": "2026-10-18T13:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0f6fc99c-932d-487d-a272-1f7a17490ab7__20261018T130000Z",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-10-18T13:00:00.000",
+      "end": "2026-10-18T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "bf6ee624-c5a2-4a8b-a4f0-f39b75675af0",
+      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
+      "start": "2026-10-18T16:00:00.000",
+      "end": "2026-10-18T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "608f05df-0f0b-4c32-9957-14727bd4fbd7",
+      "title": "MODL Sensory Swim",
+      "start": "2026-10-18T17:00:00.000",
+      "end": "2026-10-18T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ccbe22a3-933b-4acf-9d10-40daad426439__20261018T180000Z",
+      "title": "Bridgewater Barracudas",
+      "start": "2026-10-18T18:00:00.000",
+      "end": "2026-10-18T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-09T08:24:19.349Z",
+  "lastUpdated": "2026-10-10T06:10:25.498Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-10-09T03:00:00.000Z",
-      "end": "2026-10-18T02:59:00.000Z"
+      "start": "2026-10-10T03:00:00.000Z",
+      "end": "2026-10-19T02:59:00.000Z"
     },
-    "eventCount": 61,
-    "generatedAt": "2026-10-09T08:24:19.349Z",
+    "eventCount": 60,
+    "generatedAt": "2026-10-10T06:10:25.498Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
