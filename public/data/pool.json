@@ -64,8 +64,8 @@
       "allDay": false
     },
     {
-      "id": "db08dcde-d49c-4e0a-827a-559b1d76b11c__20261011T120000Z",
-      "title": "Rental Space - Party Swim",
+      "id": "e085a2dd-de9d-4f3d-9444-1ab981a1b68e",
+      "title": "Public Swim -No lanes, All Pools Open",
       "start": "2026-10-11T12:00:00.000",
       "end": "2026-10-11T13:00:00.000",
       "backgroundColor": "#0000FF",
@@ -541,7 +541,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-10T06:10:25.498Z",
+  "lastUpdated": "2026-10-10T12:50:27.034Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -549,7 +549,7 @@
       "end": "2026-10-19T02:59:00.000Z"
     },
     "eventCount": 60,
-    "generatedAt": "2026-10-10T06:10:25.498Z",
+    "generatedAt": "2026-10-10T12:50:27.034Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
