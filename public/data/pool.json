@@ -163,6 +163,15 @@
       "allDay": false
     },
     {
+      "id": "597608e9-7eac-4ce7-aa90-ffd628444524",
+      "title": "Aquatics Centre Closed for Maintenance",
+      "start": "2026-10-13T15:00:00.000",
+      "end": "2026-10-13T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "0adae7ec-7ad8-4470-8215-f7279dcbf23b__20261013T160000Z",
       "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
       "start": "2026-10-13T16:00:00.000",
@@ -541,15 +550,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-10T12:50:27.034Z",
+  "lastUpdated": "2026-10-11T00:18:36.625Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-10-10T03:00:00.000Z",
       "end": "2026-10-19T02:59:00.000Z"
     },
-    "eventCount": 60,
-    "generatedAt": "2026-10-10T12:50:27.034Z",
+    "eventCount": 61,
+    "generatedAt": "2026-10-11T00:18:36.625Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
