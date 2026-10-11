@@ -20,7 +20,7 @@
     },
     {
       "id": "e085a2dd-de9d-4f3d-9444-1ab981a1b68e",
-      "title": "Public Swim -No lanes, All Pools Open",
+      "title": "Public Swim -No lanes, Play Pool Open. Therapy Pool Closed",
       "start": "2026-10-11T12:00:00.000",
       "end": "2026-10-11T13:00:00.000",
       "backgroundColor": "#0000FF",
@@ -28,8 +28,8 @@
       "allDay": false
     },
     {
-      "id": "0f6fc99c-932d-487d-a272-1f7a17490ab7__20261011T130000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
+      "id": "c3f67817-6aed-45c4-aacd-92e23384983f",
+      "title": "Public Swim - Lap Pool and Play Pool Open - Therapy Pool Closed",
       "start": "2026-10-11T13:00:00.000",
       "end": "2026-10-11T16:00:00.000",
       "backgroundColor": "#0000FF",
@@ -38,7 +38,7 @@
     },
     {
       "id": "c412a16f-71a3-4039-8af7-633833cebf70",
-      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
+      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool Therapy Pool Closed",
       "start": "2026-10-11T16:00:00.000",
       "end": "2026-10-11T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -47,7 +47,7 @@
     },
     {
       "id": "73256f4f-4989-43d8-9c72-57a36d725dc4",
-      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
+      "title": "Recreational Swim - 3 Lanes and Play Pool. Therapy Pool Closed",
       "start": "2026-10-11T17:00:00.000",
       "end": "2026-10-11T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -604,7 +604,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-11T06:07:48.135Z",
+  "lastUpdated": "2026-10-11T18:15:27.305Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -612,7 +612,7 @@
       "end": "2026-10-20T02:59:00.000Z"
     },
     "eventCount": 67,
-    "generatedAt": "2026-10-11T06:07:48.135Z",
+    "generatedAt": "2026-10-11T18:15:27.305Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
