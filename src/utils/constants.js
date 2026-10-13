@@ -131,18 +131,4 @@ export const CONSTANTS = {
     "Liverpool Branch Library": "Liverpool",
     "Alean Freeman Library": "Greenfield",
   },
-
-  TABS: {
-    SWIMMING: [
-      { id: "status", label: "Status" },
-      { id: "schedule", label: "Schedule" },
-      { id: "family", label: "Family" },
-      { id: "swimmers", label: "Lanes" },
-      { id: "special", label: "Events" },
-    ],
-    LIBRARIES: [
-      { id: "status", label: "Status" },
-      { id: "schedule", label: "Schedule" },
-    ],
-  },
 };

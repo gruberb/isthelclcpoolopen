@@ -1,5 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
-import { getWeekBounds } from "../utils/dateUtils";
+import { useState, useEffect } from "react";
 
 export function useSkatingData(dataFile = "skating") {
   const [data, setData] = useState([]);
@@ -53,24 +52,11 @@ export function useSkatingData(dataFile = "skating") {
     fetchData();
   }, [dataFile]);
 
-  // Returns only events for the given week offset (0 = this week, 1 = next)
-  const getEventsForWeek = useCallback(
-    (weekOffset = 0) => {
-      const { start, end } = getWeekBounds(weekOffset);
-      return data.filter((ev) => {
-        const d = new Date(ev.start);
-        return d >= start && d <= end;
-      });
-    },
-    [data],
-  );
-
   return {
     data,
     loading,
     error,
     lastUpdated,
-    getEventsForWeek,
   };
 }
 
@@ -92,7 +78,8 @@ function processData(rawData) {
 
       return {
         id: event.id,
-        title: event.title,
+        // The arena feed pads some names (" Mustangs Game", "Pickup Hockey- ").
+        title: event.title.trim().replace(/\s*-$/, ""),
         start: start,
         end: end,
         backgroundColor: event.backgroundColor,

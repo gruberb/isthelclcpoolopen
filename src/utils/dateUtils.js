@@ -1,5 +1,3 @@
-import { facilityNow } from "./timezone";
-
 /**
  * Format a time (e.g., "7:30 PM")
  * @param {Date} date - Date to format
@@ -11,45 +9,6 @@ export function formatTime(date) {
   return date.toLocaleTimeString([], {
     hour: "numeric",
     minute: "2-digit",
-  });
-}
-
-/**
- * Format time remaining until a specific time
- * @param {Date} endTime - End time
- * @returns {string} - Formatted time remaining
- */
-export function formatTimeRemaining(endTime) {
-  if (!endTime) return "Unknown";
-
-  const now = facilityNow();
-  const diff = endTime - now;
-
-  if (diff <= 0) return "Ended";
-
-  const hours = Math.floor(diff / (1000 * 60 * 60));
-  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-  if (hours > 0) {
-    return `${hours}h ${minutes}m remaining`;
-  } else {
-    return `${minutes}m remaining`;
-  }
-}
-
-/**
- * Format a date to display (e.g., "Monday, January 1")
- * @param {Date} date - Date to format
- * @returns {string} - Formatted date string
- */
-export function formatDate(date) {
-  if (!date) return "";
-
-  return date.toLocaleDateString([], {
-    weekday: "long",
-    month: "long",
-    day: "numeric",
-    year: "numeric",
   });
 }
 
@@ -68,24 +27,4 @@ export function formatMinutes(minutes) {
     return `${hours}h ${mins}m`;
   }
   return `${mins}m`;
-}
-
-/**
- * Get the bounds of a week (Monday to Sunday)
- * @param {number} offsetWeeks - Number of weeks to offset from current week
- * @returns {Object} - { start, end } dates of the week
- */
-export function getWeekBounds(offsetWeeks = 0) {
-  const today = facilityNow();
-  const daysToMonday = (today.getDay() + 6) % 7; // shift Sunday=0 to Monday=0
-
-  const startDate = new Date(today);
-  startDate.setDate(today.getDate() - daysToMonday + offsetWeeks * 7);
-  startDate.setHours(0, 0, 0, 0);
-
-  const endDate = new Date(startDate);
-  endDate.setDate(startDate.getDate() + 6);
-  endDate.setHours(23, 59, 59, 999);
-
-  return { start: startDate, end: endDate };
 }

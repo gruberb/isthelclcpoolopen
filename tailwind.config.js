@@ -9,8 +9,11 @@ module.exports = {
           white: '#FAFAFA',
           cream: '#F5F0E8',
           blue: '#2563EB',
-          green: '#16A34A',
-          red: '#EF4444',
+          // Darkened for 4.5:1 on white: the redesign is a high-contrast light theme.
+          green: '#15803D',
+          red: '#DC2626',
+          muted: '#3D3D3D',
+          faint: '#595959',
           purple: '#8B5CF6',
           teal: '#14B8A6',
           yellow: '#FACC15',

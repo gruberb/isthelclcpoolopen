@@ -11,8 +11,8 @@
             sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-color: #fafafa;
-        color: #1a1a1a;
+        background-color: #ffffff;
+        color: #000000;
     }
 
     * {
@@ -45,7 +45,7 @@
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h8L8 4z'/%3E%3C/svg%3E");
         background-position: right 0.5rem center;
         background-repeat: no-repeat;
-        background-size: 8px 10px;
+        background-size: 16px 4px;
         padding-right: 2rem;
     }
 
@@ -100,10 +100,6 @@
         padding: 0.125rem 0.5rem;
         display: inline-flex;
         align-items: center;
-    }
-
-    .footer {
-        border-top: 3px solid #1a1a1a;
     }
 }
 

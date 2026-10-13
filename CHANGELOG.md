@@ -5,6 +5,35 @@ All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2026-10-13
+
+### Changed
+
+- Redesigned every page around one question. The landing view of Swimming, Skating, Hockey and
+  Libraries is now only the YES/NO boxes, stacked and stretched to fill the screen: Lanes and
+  Kids pool, Public and Adult skate, Hockey (naming what is on the ice), and the four libraries.
+- One header on every page and in every state: a facility dropdown (Swimming, Skating, Hockey,
+  Libraries, with their icons) on the left and a Schedule item on the right. It replaces the
+  wordmark, the tab row and the fixed footer nav, which cost about 80px on every phone screen.
+- The schedule view (`?view=schedule`) is a week chart on a shared hour axis plus the selected
+  day's sessions. Chart rows and the previous/next buttons pick the day; the current session
+  keeps the yellow NOW highlight. Libraries show a week of opening hours per library instead.
+- Lanes are blue and kids are orange everywhere: session badges, the chart toggle and the bars.
+  Members, women, seniors and sensory sessions are striped bars and a text badge rather than
+  extra colours.
+- High-contrast light theme: white background, black text, `#3D3D3D` secondary text, and the
+  green and red darkened to pass 4.5:1 on white.
+- The timezone notice for viewers outside Halifax time moved from the header to the footer.
+- Old `?tab=` links still work: any tab other than `status` opens the schedule view.
+
+### Removed
+
+- The Family, Lanes and Events tabs. The week chart answers next, morning, afternoon and
+  longest session at a glance, and restricted sessions are marked inline. The slot finders in
+  `eventParser.js` that only those tabs used are gone.
+- The Skating This Week / Next Week toggle; the chart covers every day in the feed, up to two
+  weeks.
+
 ## [1.3.0] - 2026-10-13
 
 ### Added
