@@ -8,7 +8,7 @@ function StepButton({ label, rotate, disabled, onClick }) {
       onClick={onClick}
       disabled={disabled}
       aria-label={label}
-      className="brutal-btn w-10 h-10 flex items-center justify-center bg-white hover:bg-brutal-cream disabled:opacity-30 disabled:shadow-none disabled:cursor-default"
+      className="brutal-btn w-10 h-10 flex items-center justify-center bg-white enabled:hover:bg-brutal-cream disabled:opacity-30 disabled:shadow-none disabled:cursor-default"
     >
       <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" className={rotate}>
         <path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="square" />
