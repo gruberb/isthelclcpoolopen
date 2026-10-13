@@ -1,15 +1,6 @@
 {
   "data": [
     {
-      "id": "7a70a101-a5fd-4560-a828-aa5caf034c82",
-      "title": "Facility Closed - Thanksgiving Day",
-      "start": "2026-10-12T06:00:00.000",
-      "end": "2026-10-12T22:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261013T063000Z",
       "title": "Members Swim",
       "start": "2026-10-13T06:30:00.000",
@@ -620,17 +611,98 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261021T063000Z",
+      "title": "Members Swim",
+      "start": "2026-10-21T06:30:00.000",
+      "end": "2026-10-21T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20261021T073000Z",
+      "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
+      "start": "2026-10-21T07:30:00.000",
+      "end": "2026-10-21T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "903cbed3-ea40-44ec-bf84-da5b0f17abee__20261021T100000Z",
+      "title": "Elderfit using Lap Pool - All Other Pools Closed to the Public",
+      "start": "2026-10-21T10:00:00.000",
+      "end": "2026-10-21T10:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f1aedf16-603f-4a08-98a5-5aeb44fbea55__20261021T110000Z",
+      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pool Open",
+      "start": "2026-10-21T11:00:00.000",
+      "end": "2026-10-21T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a447ae48-bd41-4a4f-a3f1-a4bdfa7a5cb4__20261021T120000Z",
+      "title": "Lane Swim Lap Pool / Parent n' Tot Play Pool",
+      "start": "2026-10-21T12:00:00.000",
+      "end": "2026-10-21T14:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "b3c212e3-6ac4-46d4-9b8f-17488908b6f2__20261021T140000Z",
+      "title": "Senior Swim",
+      "start": "2026-10-21T14:00:00.000",
+      "end": "2026-10-21T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "107b6e07-6ff4-48f2-8103-05ce82e36634",
+      "title": "Swimming Lessons - 2 Lanes & Therapy Pool Open",
+      "start": "2026-10-21T16:00:00.000",
+      "end": "2026-10-21T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "404d3e10-28f3-4cc1-914b-77a02f832b4c__20261021T190000Z",
+      "title": "Aquafit - All Other Pools Closed to Public",
+      "start": "2026-10-21T19:00:00.000",
+      "end": "2026-10-21T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "dcfab253-d595-4452-8591-e35331de5825__20261021T200000Z",
+      "title": "Members Swim",
+      "start": "2026-10-21T20:00:00.000",
+      "end": "2026-10-21T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-12T07:55:13.791Z",
+  "lastUpdated": "2026-10-13T05:12:59.093Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-10-12T03:00:00.000Z",
-      "end": "2026-10-21T02:59:00.000Z"
+      "start": "2026-10-13T03:00:00.000Z",
+      "end": "2026-10-22T02:59:00.000Z"
     },
-    "eventCount": 69,
-    "generatedAt": "2026-10-12T07:55:13.791Z",
+    "eventCount": 77,
+    "generatedAt": "2026-10-13T05:12:59.093Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
