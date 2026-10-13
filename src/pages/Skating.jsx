@@ -7,10 +7,8 @@ import Loading from "../components/common/Loading";
 import { useSkatingData } from "../hooks/useSkatingData";
 import { facilityNow } from "../utils/timezone";
 
-const TITLE = "LCLC Skating";
-
-function Skating() {
-  const { loading, error, getEventsForWeek } = useSkatingData();
+function Skating({ title: TITLE = "LCLC Skating", dataFile = "skating", sport = "skating" }) {
+  const { loading, error, getEventsForWeek } = useSkatingData(dataFile);
   const [selectedWeek, setSelectedWeek] = useState(0);
   const [events, setEvents] = useState([]);
   const currentEventRef = useRef(null);
@@ -118,7 +116,7 @@ function Skating() {
       </div>
 
       {events.length === 0 ? (
-        <SkatingEmptyState selectedWeek={selectedWeek} />
+        <SkatingEmptyState selectedWeek={selectedWeek} sport={sport} />
       ) : (
         <div className="space-y-4 max-w-4xl mx-auto">
           {events.map((event, index) => {

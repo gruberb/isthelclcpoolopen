@@ -37,6 +37,49 @@ function isPublicSkateEvent(event) {
   );
 }
 
+// Everything on the ice that is not public skating or a non-ice/admin entry.
+// Exclude-list so new team names show up without a scraper change.
+const NON_HOCKEY_KEYWORDS = [
+  "busy",
+  "maintenance",
+  "hold:",
+  "closed",
+  "opening at noon",
+  "rental",
+  "skating club",
+  "power skating",
+  "arena floor",
+  "cheer",
+  "graduation",
+  "sprinkler",
+  "rememberance",
+];
+
+function isHockeyEvent(event) {
+  if (isPublicSkateEvent(event)) return false;
+  const t = (event.title || "").toLowerCase();
+  return !NON_HOCKEY_KEYWORDS.some((k) => t.includes(k));
+}
+
+function writeEventFile(outputDir, fileName, events, totalEvents, timestamp) {
+  const output = {
+    data: events,
+    lastUpdated: timestamp.toISOString(),
+    metadata: {
+      facilityId: FACILITY_ID,
+      weeksToFetch: WEEKS_TO_FETCH,
+      totalEvents,
+      publicEvents: events.length,
+      generatedAt: timestamp.toISOString(),
+      generatedBy: process.env.GITHUB_ACTIONS ? "GitHub Actions" : "Local Development",
+      scraperVersion: "v2",
+    },
+  };
+  const outputPath = path.join(outputDir, fileName);
+  fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
+  return outputPath;
+}
+
 async function fetchSkatingData() {
   const OUTPUT_DIR = getOutputDirectory();
   console.log(`⛸️  Starting skating data scraper v2...`);
@@ -97,24 +140,13 @@ async function fetchSkatingData() {
       fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     }
 
+    const hockeyEvents = dedupedAll.filter(isHockeyEvent);
     const timestamp = new Date();
-    const output = {
-      data: publicSkatingEvents,
-      lastUpdated: timestamp.toISOString(),
-      metadata: {
-        facilityId: FACILITY_ID,
-        weeksToFetch: WEEKS_TO_FETCH,
-        totalEvents: dedupedAll.length,
-        publicEvents: publicSkatingEvents.length,
-        generatedAt: timestamp.toISOString(),
-        generatedBy: process.env.GITHUB_ACTIONS ? "GitHub Actions" : "Local Development",
-        scraperVersion: "v2",
-      },
-    };
 
-    const outputPath = path.join(OUTPUT_DIR, "skating.json");
-    fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
+    const outputPath = writeEventFile(OUTPUT_DIR, "skating.json", publicSkatingEvents, dedupedAll.length, timestamp);
+    const hockeyPath = writeEventFile(OUTPUT_DIR, "hockey.json", hockeyEvents, dedupedAll.length, timestamp);
 
+    console.log(`🏒 ${hockeyEvents.length} hockey events saved to: ${hockeyPath}`);
     console.log(`💾 Skating data saved to: ${outputPath}`);
     console.log(`🎉 Skating scraper v2 completed successfully!`);
 

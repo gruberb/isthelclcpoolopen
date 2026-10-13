@@ -5,6 +5,22 @@ All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-10-13
+
+### Added
+
+- Hockey page at `/hockey` with a footer link, listing games, league nights, practices, camps
+  and pickup from the arena schedule, with the same This Week / Next Week view as Skating.
+- The skating scraper now also writes `public/data/hockey.json` from the same API fetch. Hockey
+  is every ice event except public/adult skate and non-ice entries (Busy, maintenance, holds,
+  closures, rentals, skating clubs), so new team names appear without a scraper change.
+
+### Changed
+
+- `useSkatingData`, the Skating page and its empty state take a data file and sport so Hockey
+  reuses them instead of duplicating them.
+- The skating workflow commits `skating.json` and `hockey.json` together.
+
 ## [1.2.1] - 2026-09-10
 
 ### Fixed

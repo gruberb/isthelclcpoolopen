@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { getWeekBounds } from "../utils/dateUtils";
 
-export function useSkatingData() {
+export function useSkatingData(dataFile = "skating") {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -15,7 +15,7 @@ export function useSkatingData() {
         const random = Math.random().toString(36).substring(2, 15);
 
         // Use regular GitHub Pages URL with cache busting
-        const dataUrl = `${process.env.PUBLIC_URL}/data/skating.json?_t=${timestamp}&_r=${random}`;
+        const dataUrl = `${process.env.PUBLIC_URL}/data/${dataFile}.json?_t=${timestamp}&_r=${random}`;
 
         console.log('Fetching skating data from:', dataUrl);
 
@@ -51,7 +51,7 @@ export function useSkatingData() {
     }
 
     fetchData();
-  }, []);
+  }, [dataFile]);
 
   // Returns only events for the given week offset (0 = this week, 1 = next)
   const getEventsForWeek = useCallback(

@@ -46,11 +46,11 @@ jobs:
           git config --local user.email "foreach@me.com"
           git config --local user.name "gruberb"
 
-          if [[ `git status --porcelain public/data/skating.json` ]]; then
-            git add public/data/skating.json
-            git commit -m "⛸️ Update skating data - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          if [[ `git status --porcelain public/data/skating.json public/data/hockey.json` ]]; then
+            git add public/data/skating.json public/data/hockey.json
+            git commit -m "⛸️ Update skating and hockey data - $(date -u '+%Y-%m-%d %H:%M UTC')"
             git push
-            echo "Skating data updated and committed"
+            echo "Skating and hockey data updated and committed"
           else
-            echo "No changes to skating data"
+            echo "No changes to skating or hockey data"
           fi

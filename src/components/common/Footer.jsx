@@ -7,6 +7,7 @@ function Footer() {
         <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-sm">
           <FooterLink to="/" icon="/icons/Swimming--Streamline-Flex.png" text="Swimming" />
           <FooterLink to="/skating" icon="/icons/Ice-Skating--Streamline-Flex.png" text="Skating" />
+          <FooterLink to="/hockey" icon="/icons/Hockey--Streamline-Flex.png" text="Hockey" />
           <FooterLink to="/libraries" icon="/icons/Open-Book--Streamline-Flex.png" text="Libraries" />
         </div>
         <p className="text-xs text-brutal-black/50">
