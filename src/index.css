@@ -66,12 +66,6 @@
         border: 2px solid #1a1a1a;
         box-shadow: 4px 4px 0px 0px #1a1a1a;
         background-color: white;
-        transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .brutal-card:hover {
-        transform: translate(2px, 2px);
-        box-shadow: none;
     }
 
     .brutal-btn {
@@ -85,7 +79,7 @@
         cursor: pointer;
     }
 
-    .brutal-btn:hover {
+    .brutal-btn:enabled:hover {
         transform: translate(1px, 1px);
         box-shadow: none;
     }
