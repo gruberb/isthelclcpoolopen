@@ -5,6 +5,19 @@ All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-10-13
+
+### Changed
+
+- Restricted swim sessions have their own colours again: members only (slate), women only
+  (pink), seniors 60+ (purple), sensory (teal). They are clear of the lanes blue, kids orange,
+  the green and red answers and the yellow NOW highlight, and pass 4.5:1 with white text.
+- On the Swimming status boxes a running restricted session tints the left edge, the YES and
+  the detail line, e.g. "Women only - 45m left".
+- In the schedule view the badge on a session row is filled with its restriction colour, and
+  week chart bars are striped in the lanes or kids colour plus the restriction colour. The
+  legend lists each restriction present instead of one combined entry.
+
 ## [2.0.2] - 2026-10-13
 
 ### Fixed

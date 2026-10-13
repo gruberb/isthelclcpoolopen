@@ -33,7 +33,11 @@ function SessionRow({ session, now, aside }) {
           {isNow && <span className="brutal-badge bg-brutal-yellow text-black">Now</span>}
         </div>
         <div className="font-display font-bold leading-snug mt-0.5">{session.title}</div>
-        {session.badge && <span className="brutal-badge mt-1.5 bg-white text-black">{session.badge}</span>}
+        {session.badge && (
+          <span className="brutal-badge mt-1.5 text-white" style={{ background: session.badge.color }}>
+            {session.badge.label}
+          </span>
+        )}
       </div>
       {aside && <div className="flex flex-col gap-1 shrink-0">{aside}</div>}
     </li>
@@ -42,7 +46,7 @@ function SessionRow({ session, now, aside }) {
 
 /**
  * The selected day's sessions with previous/next stepping. Sessions: { key, title, start,
- * end, badge? }. Shares `selected` with the WeekChart above it so both always agree.
+ * end, badge?: { label, color } }. Shares `selected` with the WeekChart above it so both always agree.
  */
 function DayList({ days, selected, onSelect, now, renderAside }) {
   const [showEarlier, setShowEarlier] = useState(false);

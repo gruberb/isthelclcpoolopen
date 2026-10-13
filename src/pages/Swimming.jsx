@@ -20,18 +20,18 @@ const FEATURES = {
   kids: { label: "Kids", fill: "#ea580c", ink: "#000" },
 };
 
-// Restrictions are text badges and chart stripes rather than more colours, which would
-// collide with the two feature colours.
+// Each restriction has its own colour, kept clear of the lanes blue, kids orange, the green
+// and red answers and the yellow NOW highlight. All pass 4.5:1 with white text.
 const RESTRICTION_BY_TYPE = {
-  [ACCESS_TYPE_LABELS[ACCESS_TYPES.MEMBERS]]: "Members only",
-  [ACCESS_TYPE_LABELS[ACCESS_TYPES.WOMENS]]: "Women only",
-  [ACCESS_TYPE_LABELS[ACCESS_TYPES.SENIORS]]: "Seniors 60+",
-  [ACCESS_TYPE_LABELS[ACCESS_TYPES.SENSORY]]: "Sensory",
-  [ACCESS_TYPE_LABELS[ACCESS_TYPES.CLOSED]]: "Closed to public",
+  [ACCESS_TYPE_LABELS[ACCESS_TYPES.MEMBERS]]: { label: "Members only", color: "#475569" },
+  [ACCESS_TYPE_LABELS[ACCESS_TYPES.WOMENS]]: { label: "Women only", color: "#be185d" },
+  [ACCESS_TYPE_LABELS[ACCESS_TYPES.SENIORS]]: { label: "Seniors 60+", color: "#7c3aed" },
+  [ACCESS_TYPE_LABELS[ACCESS_TYPES.SENSORY]]: { label: "Sensory", color: "#0f766e" },
+  [ACCESS_TYPE_LABELS[ACCESS_TYPES.CLOSED]]: { label: "Closed to public", color: "#374151" },
 };
 
 function statusDetail(status, now) {
-  const restriction = RESTRICTION_BY_TYPE[status.restrictionType];
+  const restriction = RESTRICTION_BY_TYPE[status.restrictionType]?.label;
   if (status.isActive) {
     const left = `${formatMinutes(Math.floor((status.endTime - now) / 60000))} left`;
     return restriction ? `${restriction} · ${left}` : left;
@@ -99,15 +99,15 @@ function Schedule({ data, now }) {
   }, [data, now]);
 
   const { fill } = FEATURES[feature];
-  let hasRestricted = false;
+  const restrictions = new Map();
   const chartDays = days.map((day) => {
     const open = day.sessions.filter((s) => s.analysis[feature]);
-    hasRestricted ||= open.some((s) => s.badge);
+    open.forEach((s) => s.badge && restrictions.set(s.badge.label, s.badge.color));
     return {
       key: day.key,
       label: dayLabel(day.date, now),
       summary: hoursLabel(open.reduce((sum, s) => sum + (s.end - s.start) / 60000, 0)),
-      segments: open.map((s) => ({ key: s.key, start: s.start, end: s.end, fill, striped: Boolean(s.badge) })),
+      segments: open.map((s) => ({ key: s.key, start: s.start, end: s.end, fill, striped: s.badge?.color })),
     };
   });
 
@@ -122,7 +122,7 @@ function Schedule({ data, now }) {
         summaryLabel="Open"
         legend={[
           { label: "Open to all", fill },
-          ...(hasRestricted ? [{ label: "Members, women, seniors or sensory only", fill, striped: true }] : []),
+          ...[...restrictions].map(([label, striped]) => ({ label, fill, striped })),
         ]}
       />
       <DayList
@@ -164,7 +164,11 @@ function Swimming() {
 }
 
 function cardProps(status, now) {
-  return { open: status.isActive, detail: statusDetail(status, now) };
+  return {
+    open: status.isActive,
+    detail: statusDetail(status, now),
+    color: RESTRICTION_BY_TYPE[status.restrictionType]?.color,
+  };
 }
 
 export default Swimming;

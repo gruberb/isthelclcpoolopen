@@ -17,17 +17,20 @@ const SIZES = {
 
 // The answer is the page: cards stretch to fill their grid cell, so on a phone two of them
 // take half the screen each.
-function StatusCard({ title, open, detail, size = "lg" }) {
+function StatusCard({ title, open, detail, size = "lg", color }) {
   const s = SIZES[size];
+  // `color` overrides the green of an open answer, for sessions with a restriction.
+  const tint = open && color ? { color } : undefined;
   return (
     <div
       className={`brutal-card border-l-8 ${open ? "border-l-brutal-green" : "border-l-brutal-red"} ${s.box} flex flex-col items-center justify-center text-center`}
+      style={open && color ? { borderLeftColor: color } : undefined}
     >
       <h2 className={`font-display font-bold uppercase tracking-wider ${s.title}`}>{title}</h2>
-      <div className={`font-display font-bold leading-none ${s.answer} ${open ? "text-brutal-green" : "text-brutal-red"}`}>
+      <div className={`font-display font-bold leading-none ${s.answer} ${open ? "text-brutal-green" : "text-brutal-red"}`} style={tint}>
         {open ? "YES" : "NO"}
       </div>
-      <div className={`font-display uppercase tracking-wide text-brutal-muted ${s.detail}`}>{detail}</div>
+      <div className={`font-display uppercase tracking-wide text-brutal-muted ${s.detail}`} style={tint}>{detail}</div>
     </div>
   );
 }

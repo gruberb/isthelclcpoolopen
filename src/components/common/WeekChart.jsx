@@ -1,8 +1,9 @@
 import React from "react";
 
+// `striped` is the second stripe colour, or falsy for a solid bar.
 export function barStyle(fill, striped) {
   return {
-    background: striped ? `repeating-linear-gradient(135deg, ${fill} 0 4px, #fff 4px 7px)` : fill,
+    background: striped ? `repeating-linear-gradient(135deg, ${fill} 0 4px, ${striped} 4px 7px)` : fill,
   };
 }
 

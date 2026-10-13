@@ -1,7 +1,7 @@
 {
   "name": "lclc-facilities-dashboard",
   "homepage": "https://isthelclcpoolopen.ca",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "private": false,
   "dependencies": {
     "react": "^18.2.0",
