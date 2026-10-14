@@ -1,5 +1,7 @@
 # Is the LCLC Pool Open?
 
-![App main screen](assets/images/01.png)
+![Swimming status view](assets/images/swimming-status.png)
 
-![Schedule View](assets/images/02.png)
+![Swimming schedule view](assets/images/swimming-schedule.png)
+
+![Facility menu](assets/images/facility-menu.png)
