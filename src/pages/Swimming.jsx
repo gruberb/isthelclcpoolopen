@@ -20,14 +20,14 @@ const FEATURES = {
   kids: { label: "Kids", fill: "#ea580c", ink: "#000" },
 };
 
-// Each restriction has its own colour, kept clear of the lanes blue, kids orange, the green
-// and red answers and the yellow NOW highlight. All pass 4.5:1 with white text.
+// Badge colours keep white text readable; lighter chart stripes stand apart from the blue
+// lanes bars and the orange kids bars.
 const RESTRICTION_BY_TYPE = {
-  [ACCESS_TYPE_LABELS[ACCESS_TYPES.MEMBERS]]: { label: "Members only", color: "#475569" },
-  [ACCESS_TYPE_LABELS[ACCESS_TYPES.WOMENS]]: { label: "Women only", color: "#be185d" },
-  [ACCESS_TYPE_LABELS[ACCESS_TYPES.SENIORS]]: { label: "Seniors 60+", color: "#7c3aed" },
-  [ACCESS_TYPE_LABELS[ACCESS_TYPES.SENSORY]]: { label: "Sensory", color: "#0f766e" },
-  [ACCESS_TYPE_LABELS[ACCESS_TYPES.CLOSED]]: { label: "Closed to public", color: "#374151" },
+  [ACCESS_TYPE_LABELS[ACCESS_TYPES.MEMBERS]]: { label: "Members only", color: "#374151", stripe: "#e5e7eb" },
+  [ACCESS_TYPE_LABELS[ACCESS_TYPES.WOMENS]]: { label: "Women only", color: "#9a3412", stripe: "#fdba74" },
+  [ACCESS_TYPE_LABELS[ACCESS_TYPES.SENIORS]]: { label: "Seniors 60+", color: "#6b21a8", stripe: "#e9d5ff" },
+  [ACCESS_TYPE_LABELS[ACCESS_TYPES.SENSORY]]: { label: "Sensory", color: "#166534", stripe: "#86efac" },
+  [ACCESS_TYPE_LABELS[ACCESS_TYPES.CLOSED]]: { label: "Closed to public", color: "#1f2937", stripe: "#e5e7eb" },
 };
 
 function statusDetail(status, now) {
@@ -102,12 +102,12 @@ function Schedule({ data, now }) {
   const restrictions = new Map();
   const chartDays = days.map((day) => {
     const open = day.sessions.filter((s) => s.analysis[feature]);
-    open.forEach((s) => s.badge && restrictions.set(s.badge.label, s.badge.color));
+    open.forEach((s) => s.badge && restrictions.set(s.badge.label, s.badge.stripe));
     return {
       key: day.key,
       label: dayLabel(day.date, now),
       summary: hoursLabel(open.reduce((sum, s) => sum + (s.end - s.start) / 60000, 0)),
-      segments: open.map((s) => ({ key: s.key, start: s.start, end: s.end, fill, striped: s.badge?.color })),
+      segments: open.map((s) => ({ key: s.key, start: s.start, end: s.end, fill, striped: s.badge?.stripe })),
     };
   });
 

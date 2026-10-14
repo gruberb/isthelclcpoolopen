@@ -5,6 +5,14 @@ All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.2] - 2026-10-14
+
+### Fixed
+
+- Restricted swim sessions use lighter chart stripes with a dark divider so they remain visible
+  against both lanes and kids bars. Session badges use darker matching colours with readable
+  white text.
+
 ## [2.1.1] - 2026-10-14
 
 ### Fixed
@@ -183,6 +191,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - `getWeekBounds` had two identical copies. `useSkatingData` now imports the one in `dateUtils`.
 
+[2.1.2]: https://github.com/gruberb/isthelclcpoolopen/releases/tag/v2.1.2
 [2.1.1]: https://github.com/gruberb/isthelclcpoolopen/releases/tag/v2.1.1
 [1.2.1]: https://github.com/gruberb/isthelclcpoolopen/releases/tag/v1.2.1
 [1.2.0]: https://github.com/gruberb/isthelclcpoolopen/releases/tag/v1.2.0

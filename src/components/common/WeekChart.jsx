@@ -1,9 +1,11 @@
 import React from "react";
 
-// `striped` is the second stripe colour, or falsy for a solid bar.
+// The dark edge keeps restriction stripes distinct on both blue and orange open bars.
 export function barStyle(fill, striped) {
   return {
-    background: striped ? `repeating-linear-gradient(135deg, ${fill} 0 4px, ${striped} 4px 7px)` : fill,
+    background: striped
+      ? `repeating-linear-gradient(135deg, ${fill} 0 4px, #1a1a1a 4px 5px, ${striped} 5px 10px)`
+      : fill,
   };
 }
 
