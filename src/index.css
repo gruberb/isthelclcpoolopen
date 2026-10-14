@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+    html {
+        /* Keep centered layouts in place when a longer schedule needs a scrollbar. */
+        scrollbar-gutter: stable;
+    }
+
     body {
         margin: 0;
         font-family:
