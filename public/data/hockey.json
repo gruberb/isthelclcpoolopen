@@ -604,14 +604,14 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-13T19:22:33.490Z",
+  "lastUpdated": "2026-10-14T09:51:53.476Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 102,
     "publicEvents": 67,
-    "generatedAt": "2026-10-13T19:22:33.490Z",
-    "generatedBy": "Local Development",
+    "generatedAt": "2026-10-14T09:51:53.476Z",
+    "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
 }
