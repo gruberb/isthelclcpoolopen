@@ -136,6 +136,15 @@
       "allDay": false
     },
     {
+      "id": "adc94f00-a092-48a3-b7a0-dfe826fa0b25",
+      "title": "3:00 PM-4:00 PM - Subject: Closed for Maintenance",
+      "start": "2026-10-15T15:00:00.000",
+      "end": "2026-10-15T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "1294147f-4afa-4b36-9508-1ccbeb1188f8__20261015T160000Z",
       "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
       "start": "2026-10-15T16:00:00.000",
@@ -694,15 +703,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-14T03:19:03.574Z",
+  "lastUpdated": "2026-10-15T00:42:10.181Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-10-14T03:00:00.000Z",
       "end": "2026-10-23T02:59:00.000Z"
     },
-    "eventCount": 77,
-    "generatedAt": "2026-10-14T03:19:03.574Z",
+    "eventCount": 78,
+    "generatedAt": "2026-10-15T00:42:10.181Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
