@@ -73,8 +73,8 @@
       "allDay": false
     },
     {
-      "id": "26896900-3d8a-4ce9-b205-b1fa4556562d__20261015T190000Z",
-      "title": "Bridgewater Barracudas",
+      "id": "55faf570-b831-4a17-8973-4a1c910bf737",
+      "title": "Bridgewater Barracudas using Lap Pool - Play & Therapy Pools Open",
       "start": "2026-10-15T19:00:00.000",
       "end": "2026-10-15T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -208,8 +208,8 @@
       "allDay": false
     },
     {
-      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20261017T160000Z",
-      "title": "MODL / LCLC Women's Only Swim",
+      "id": "bcc0437b-46a8-45e4-b1a1-8a3550cc9a9f",
+      "title": "MODL/ LCLC Women and Girls Only Swim - Other Pools Closed",
       "start": "2026-10-17T16:00:00.000",
       "end": "2026-10-17T17:00:00.000",
       "backgroundColor": "#0000FF",
@@ -640,8 +640,8 @@
       "allDay": false
     },
     {
-      "id": "26896900-3d8a-4ce9-b205-b1fa4556562d__20261022T190000Z",
-      "title": "Bridgewater Barracudas",
+      "id": "ed170d8e-dbd1-480e-b82f-c481cc0ef64d",
+      "title": "Bridgewater Barracudas using Lap Pool - Play & Therapy Pools Open",
       "start": "2026-10-22T19:00:00.000",
       "end": "2026-10-22T20:00:00.000",
       "backgroundColor": "#0000FF",
@@ -730,7 +730,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-15T15:28:10.257Z",
+  "lastUpdated": "2026-10-15T22:33:09.953Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -738,7 +738,7 @@
       "end": "2026-10-24T02:59:00.000Z"
     },
     "eventCount": 81,
-    "generatedAt": "2026-10-15T15:28:10.257Z",
+    "generatedAt": "2026-10-15T22:33:09.953Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
