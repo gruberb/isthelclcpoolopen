@@ -118,7 +118,7 @@
       "allDay": false
     },
     {
-      "id": "2433c765-3ded-4dba-ab4b-44f30583d417__20261016T131500Z",
+      "id": "2876a717-71eb-4898-a494-6e837fd1540f",
       "title": "Silver Bullets Hockey",
       "start": "2026-10-16T13:15:00.000",
       "end": "2026-10-16T14:45:00.000",
@@ -613,13 +613,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-15T09:32:46.075Z",
+  "lastUpdated": "2026-10-16T09:25:18.416Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 105,
     "publicEvents": 68,
-    "generatedAt": "2026-10-15T09:32:46.075Z",
+    "generatedAt": "2026-10-16T09:25:18.416Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
