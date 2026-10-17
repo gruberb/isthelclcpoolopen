@@ -154,7 +154,7 @@
       "allDay": false
     },
     {
-      "id": "0f310fe2-d76f-400a-8c72-07405993fc42__20261017T083000Z",
+      "id": "e6dc56fa-a195-4e96-ac0e-c45e6536af3d",
       "title": "Western Riptide",
       "start": "2026-10-17T08:30:00.000",
       "end": "2026-10-17T09:30:00.000",
@@ -163,7 +163,7 @@
       "allDay": false
     },
     {
-      "id": "df3f006c-ac05-4f7b-b87a-68eecc902748__20261017T094500Z",
+      "id": "7df1d305-5c47-42ed-b920-57f3ee49a50c",
       "title": "SSMHA",
       "start": "2026-10-17T09:45:00.000",
       "end": "2026-10-17T15:45:00.000",
@@ -172,7 +172,7 @@
       "allDay": false
     },
     {
-      "id": "fc81dc4d-b57c-4fbf-8e6a-e9c89f6b0890__20261017T160000Z",
+      "id": "f011ad06-5ca7-4a65-b496-00eec24579ce",
       "title": "Western Riptide",
       "start": "2026-10-17T16:00:00.000",
       "end": "2026-10-17T17:30:00.000",
@@ -199,7 +199,7 @@
       "allDay": false
     },
     {
-      "id": "a71196d0-7604-48c8-9c4e-5155f04c8140__20261018T074500Z",
+      "id": "78a9fc24-e699-4bf3-b100-74e1707ca083",
       "title": "Northfield Capitals",
       "start": "2026-10-18T07:45:00.000",
       "end": "2026-10-18T09:00:00.000",
@@ -208,7 +208,7 @@
       "allDay": false
     },
     {
-      "id": "b5058ba0-41f4-4cdc-85c7-a5163d62235d__20261018T091500Z",
+      "id": "083c6ea4-5b5f-41c2-88a6-6d6c7c3bde36",
       "title": "Western Riptide",
       "start": "2026-10-18T09:15:00.000",
       "end": "2026-10-18T10:45:00.000",
@@ -217,7 +217,7 @@
       "allDay": false
     },
     {
-      "id": "c7172f91-6809-411b-ba4f-f505e04d881f__20261018T110000Z",
+      "id": "87759357-d03a-4e7f-a78a-c1a02487cc9b",
       "title": "SSMHA",
       "start": "2026-10-18T11:00:00.000",
       "end": "2026-10-18T15:30:00.000",
@@ -235,7 +235,7 @@
       "allDay": false
     },
     {
-      "id": "feb02fa6-2942-44bb-9852-7b7d3fd03183__20261018T175000Z",
+      "id": "d8ccbbe8-c5ee-49b0-8efb-b8e0222050bf",
       "title": "SSMHA",
       "start": "2026-10-18T17:50:00.000",
       "end": "2026-10-18T19:15:00.000",
@@ -244,7 +244,7 @@
       "allDay": false
     },
     {
-      "id": "e6d193ad-6d1c-4609-82a8-3564466a27ec__20261018T193000Z",
+      "id": "4265f4e5-c486-4bab-a866-491445c509b5",
       "title": "Bella Dental Sharks",
       "start": "2026-10-18T19:30:00.000",
       "end": "2026-10-18T20:30:00.000",
@@ -253,7 +253,7 @@
       "allDay": false
     },
     {
-      "id": "10b92976-0f91-418b-bbcb-9baf03bcd5df__20261018T204500Z",
+      "id": "9d75d0c7-8e48-457c-a5b7-17952bfe88c3",
       "title": "Reliable Towing",
       "start": "2026-10-18T20:45:00.000",
       "end": "2026-10-18T21:45:00.000",
@@ -262,7 +262,7 @@
       "allDay": false
     },
     {
-      "id": "08f99991-5f73-4a0a-82f4-041eb97b4a6e__20261018T220000Z",
+      "id": "71fedb0d-901c-4b35-b787-1f83e30a34fb",
       "title": "South Shore Pickup Hockey",
       "start": "2026-10-18T22:00:00.000",
       "end": "2026-10-18T23:00:00.000",
@@ -613,13 +613,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-16T09:25:18.416Z",
+  "lastUpdated": "2026-10-17T08:57:24.029Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 105,
+    "totalEvents": 104,
     "publicEvents": 68,
-    "generatedAt": "2026-10-16T09:25:18.416Z",
+    "generatedAt": "2026-10-17T08:57:24.029Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
