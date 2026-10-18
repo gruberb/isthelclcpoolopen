@@ -55,8 +55,8 @@
       "allDay": false
     },
     {
-      "id": "ccbe22a3-933b-4acf-9d10-40daad426439__20261018T180000Z",
-      "title": "Bridgewater Barracudas",
+      "id": "8f12540b-db33-494f-ad9b-7e914c47c448",
+      "title": "Bridgewater Barracudas using 4 Lanes. Play & Therapy Pools Open",
       "start": "2026-10-18T18:00:00.000",
       "end": "2026-10-18T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -712,7 +712,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-18T06:17:28.499Z",
+  "lastUpdated": "2026-10-18T20:56:28.341Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -720,7 +720,7 @@
       "end": "2026-10-27T02:59:00.000Z"
     },
     "eventCount": 79,
-    "generatedAt": "2026-10-18T06:17:28.499Z",
+    "generatedAt": "2026-10-18T20:56:28.341Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
