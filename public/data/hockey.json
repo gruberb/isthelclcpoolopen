@@ -487,7 +487,7 @@
       "allDay": false
     },
     {
-      "id": "df3f006c-ac05-4f7b-b87a-68eecc902748__20261024T094500Z",
+      "id": "c83dcfb5-70d2-4293-afcb-8d3603bbcdf8",
       "title": "SSMHA",
       "start": "2026-10-24T09:45:00.000",
       "end": "2026-10-24T15:45:00.000",
@@ -613,13 +613,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-17T08:57:24.029Z",
+  "lastUpdated": "2026-10-18T09:15:59.461Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 104,
     "publicEvents": 68,
-    "generatedAt": "2026-10-17T08:57:24.029Z",
+    "generatedAt": "2026-10-18T09:15:59.461Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
