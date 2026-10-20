@@ -100,16 +100,16 @@
       "allDay": false
     },
     {
-      "id": "1a3ab639-16cd-4dd1-a2f1-e1f8c536867f__20261021T070000Z",
+      "id": "983cb750-4eba-4dd7-bb5a-2b427f2d3103",
       "title": "PVEC Girls Hockey Practice",
-      "start": "2026-10-21T07:00:00.000",
+      "start": "2026-10-21T08:15:00.000",
       "end": "2026-10-21T08:15:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     },
     {
-      "id": "2433c765-3ded-4dba-ab4b-44f30583d417__20261021T131500Z",
+      "id": "03c97e77-c678-4631-b875-cb1cd6033e42",
       "title": "Silver Bullets Hockey",
       "start": "2026-10-21T13:15:00.000",
       "end": "2026-10-21T14:45:00.000",
@@ -118,7 +118,7 @@
       "allDay": false
     },
     {
-      "id": "ae8f4d90-4c72-4f8f-8d37-7bb448413fa6__20261021T163000Z",
+      "id": "7dfe70b5-a1b3-4886-adbb-4f9d7d2db53a",
       "title": "SSMHA",
       "start": "2026-10-21T16:30:00.000",
       "end": "2026-10-21T21:30:00.000",
@@ -145,7 +145,7 @@
       "allDay": false
     },
     {
-      "id": "0c0c43e0-7b35-45fa-928c-c1d8bdcf5e64__20261022T163000Z",
+      "id": "c82df6d2-310b-4816-954a-b2ca54acf2a8",
       "title": "SSMHA",
       "start": "2026-10-22T16:30:00.000",
       "end": "2026-10-22T19:45:00.000",
@@ -676,13 +676,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-19T10:25:58.920Z",
+  "lastUpdated": "2026-10-20T09:44:42.643Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 109,
+    "totalEvents": 111,
     "publicEvents": 75,
-    "generatedAt": "2026-10-19T10:25:58.920Z",
+    "generatedAt": "2026-10-20T09:44:42.643Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
