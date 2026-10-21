@@ -37,8 +37,8 @@
       "allDay": false
     },
     {
-      "id": "a447ae48-bd41-4a4f-a3f1-a4bdfa7a5cb4__20261021T120000Z",
-      "title": "Lane Swim Lap Pool / Parent n' Tot Play Pool",
+      "id": "9296110b-3905-4eb8-aa31-c7529cb0e13d__20261021T120000Z",
+      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
       "start": "2026-10-21T12:00:00.000",
       "end": "2026-10-21T14:00:00.000",
       "backgroundColor": "#0000FF",
@@ -136,8 +136,8 @@
       "allDay": false
     },
     {
-      "id": "c68fca33-4338-4b44-8492-b76c49e7aad4",
-      "title": "Lane Swim Play Pool / Parent & Tot Lap Pool",
+      "id": "a2a51898-cf97-417d-8289-659dd82643ff__20261022T130000Z",
+      "title": "Lane Swim / Parent & Tot",
       "start": "2026-10-22T13:00:00.000",
       "end": "2026-10-22T15:00:00.000",
       "backgroundColor": "#0000FF",
@@ -217,8 +217,8 @@
       "allDay": false
     },
     {
-      "id": "a447ae48-bd41-4a4f-a3f1-a4bdfa7a5cb4__20261023T120000Z",
-      "title": "Lane Swim Lap Pool / Parent n' Tot Play Pool",
+      "id": "3b9e14bb-e82e-4ac5-84ac-11c0a6c52475__20261023T120000Z",
+      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
       "start": "2026-10-23T12:00:00.000",
       "end": "2026-10-23T14:00:00.000",
       "backgroundColor": "#0000FF",
@@ -226,7 +226,7 @@
       "allDay": false
     },
     {
-      "id": "ecb397fb-b363-4668-b5c4-d6efac3516ce",
+      "id": "4e81c18a-b260-4ed5-a23e-ea6a8b708c75__20261023T140000Z",
       "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
       "start": "2026-10-23T14:00:00.000",
       "end": "2026-10-23T16:00:00.000",
@@ -391,15 +391,6 @@
       "id": "a447ae48-bd41-4a4f-a3f1-a4bdfa7a5cb4__20261026T120000Z",
       "title": "Lane Swim Lap Pool / Parent n' Tot Play Pool",
       "start": "2026-10-26T12:00:00.000",
-      "end": "2026-10-26T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7121397a-c430-4bc9-9738-5cde334ee57d__20261026T140000Z",
-      "title": "Senior Swim",
-      "start": "2026-10-26T14:00:00.000",
       "end": "2026-10-26T15:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -505,8 +496,8 @@
       "allDay": false
     },
     {
-      "id": "bc11779a-8bfd-4ed7-acfc-2fd61182f433",
-      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
+      "id": "42839990-df37-40fb-b8b6-dc6616a6134a__20261027T130000Z",
+      "title": "Lane Swim / Parent & Tot",
       "start": "2026-10-27T13:00:00.000",
       "end": "2026-10-27T15:00:00.000",
       "backgroundColor": "#0000FF",
@@ -577,8 +568,8 @@
       "allDay": false
     },
     {
-      "id": "a447ae48-bd41-4a4f-a3f1-a4bdfa7a5cb4__20261028T120000Z",
-      "title": "Lane Swim Lap Pool / Parent n' Tot Play Pool",
+      "id": "9296110b-3905-4eb8-aa31-c7529cb0e13d__20261028T120000Z",
+      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
       "start": "2026-10-28T12:00:00.000",
       "end": "2026-10-28T14:00:00.000",
       "backgroundColor": "#0000FF",
@@ -676,8 +667,8 @@
       "allDay": false
     },
     {
-      "id": "edd12c2d-374f-4036-a970-a5044638168f",
-      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
+      "id": "a2a51898-cf97-417d-8289-659dd82643ff__20261029T130000Z",
+      "title": "Lane Swim / Parent & Tot",
       "start": "2026-10-29T13:00:00.000",
       "end": "2026-10-29T15:00:00.000",
       "backgroundColor": "#0000FF",
@@ -721,15 +712,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-21T06:57:38.644Z",
+  "lastUpdated": "2026-10-21T17:51:34.303Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-10-21T03:00:00.000Z",
       "end": "2026-10-30T02:59:00.000Z"
     },
-    "eventCount": 80,
-    "generatedAt": "2026-10-21T06:57:38.644Z",
+    "eventCount": 79,
+    "generatedAt": "2026-10-21T17:51:34.303Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
