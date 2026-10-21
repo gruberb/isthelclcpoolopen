@@ -28,15 +28,6 @@
       "allDay": false
     },
     {
-      "id": "19d99752-a7de-4901-bba3-ddd7a2afa58e",
-      "title": "Rusty Blades",
-      "start": "2026-10-19T21:45:00.000",
-      "end": "2026-10-19T22:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "28132f6c-a3b6-42ca-bc1f-2382b767cd99__20261020T070000Z",
       "title": "PVEC Boys Hockey Practice",
       "start": "2026-10-20T07:00:00.000",
@@ -136,7 +127,7 @@
       "allDay": false
     },
     {
-      "id": "9057cdae-3a98-4c35-a1c0-d5fafc76ef2a__20261022T070000Z",
+      "id": "9e19cbac-bab1-4b2e-a8fe-931175c2d15f",
       "title": "PVEC Boys Practice",
       "start": "2026-10-22T07:00:00.000",
       "end": "2026-10-22T08:15:00.000",
@@ -154,7 +145,7 @@
       "allDay": false
     },
     {
-      "id": "0a706320-8a61-4605-b39e-a1ebde9ed9ae__20261022T200000Z",
+      "id": "95b7941d-7f16-433f-8ecb-07d087b7417e",
       "title": "Mustangs Practice",
       "start": "2026-10-22T20:00:00.000",
       "end": "2026-10-22T21:30:00.000",
@@ -163,7 +154,7 @@
       "allDay": false
     },
     {
-      "id": "0832cf5b-36ab-4595-82fe-a7b2a6d3a43d__20261022T214500Z",
+      "id": "f6198794-7224-4b04-8926-163d8cc41a2e",
       "title": "Belliveau Veinotte",
       "start": "2026-10-22T21:45:00.000",
       "end": "2026-10-22T22:45:00.000",
@@ -613,15 +604,6 @@
       "allDay": false
     },
     {
-      "id": "b5058ba0-41f4-4cdc-85c7-a5163d62235d__20261101T091500Z",
-      "title": "Western Riptide",
-      "start": "2026-11-01T09:15:00.000",
-      "end": "2026-11-01T10:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "c7172f91-6809-411b-ba4f-f505e04d881f__20261101T110000Z",
       "title": "SSMHA",
       "start": "2026-11-01T11:00:00.000",
@@ -676,13 +658,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-20T09:44:42.643Z",
+  "lastUpdated": "2026-10-21T09:46:12.020Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 111,
-    "publicEvents": 75,
-    "generatedAt": "2026-10-20T09:44:42.643Z",
+    "totalEvents": 107,
+    "publicEvents": 73,
+    "generatedAt": "2026-10-21T09:46:12.020Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
