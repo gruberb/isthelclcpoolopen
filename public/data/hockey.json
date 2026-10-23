@@ -163,9 +163,18 @@
       "allDay": false
     },
     {
+      "id": "d8e0d93a-6262-45b4-a9fd-52bc475353c6",
+      "title": "Sticks n' Pucks",
+      "start": "2026-10-23T11:30:00.000",
+      "end": "2026-10-23T12:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "5a684553-6b73-4341-8cc6-30698bdec638",
       "title": "SSMHA",
-      "start": "2026-10-23T08:30:00.000",
+      "start": "2026-10-23T13:00:00.000",
       "end": "2026-10-23T15:15:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -658,13 +667,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-22T09:46:18.969Z",
+  "lastUpdated": "2026-10-23T09:41:37.794Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 107,
-    "publicEvents": 73,
-    "generatedAt": "2026-10-22T09:46:18.969Z",
+    "totalEvents": 110,
+    "publicEvents": 74,
+    "generatedAt": "2026-10-23T09:41:37.794Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
