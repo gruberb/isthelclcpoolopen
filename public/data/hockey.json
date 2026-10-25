@@ -334,7 +334,7 @@
       "allDay": false
     },
     {
-      "id": "1b54a46b-ae00-4f74-b31d-c4520871b8ed__20261026T070000Z",
+      "id": "1a435fd2-8064-4605-9059-061b54b378b8",
       "title": "Mustangs Practice",
       "start": "2026-10-26T07:00:00.000",
       "end": "2026-10-26T08:00:00.000",
@@ -343,7 +343,7 @@
       "allDay": false
     },
     {
-      "id": "2433c765-3ded-4dba-ab4b-44f30583d417__20261026T131500Z",
+      "id": "5598d0b3-7e03-4ca5-8340-14484aa1ac7e",
       "title": "Silver Bullets Hockey",
       "start": "2026-10-26T13:15:00.000",
       "end": "2026-10-26T14:45:00.000",
@@ -658,13 +658,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-24T09:14:01.443Z",
+  "lastUpdated": "2026-10-25T09:31:09.777Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 109,
     "publicEvents": 73,
-    "generatedAt": "2026-10-24T09:14:01.443Z",
+    "generatedAt": "2026-10-25T09:31:09.777Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
