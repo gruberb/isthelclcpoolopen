@@ -74,9 +74,9 @@
     },
     {
       "id": "32863163-eb3e-42a2-a6f6-c530190e1463",
-      "title": "Halloween Public Skate",
+      "title": "Toonie Halloween Public Skate",
       "start": "2026-10-31T16:00:00.000",
-      "end": "2026-10-31T17:30:00.000",
+      "end": "2026-10-31T18:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -136,13 +136,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-30T11:07:16.352Z",
+  "lastUpdated": "2026-10-31T10:40:58.291Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 101,
+    "totalEvents": 116,
     "publicEvents": 15,
-    "generatedAt": "2026-10-30T11:07:16.352Z",
+    "generatedAt": "2026-10-31T10:40:58.291Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
