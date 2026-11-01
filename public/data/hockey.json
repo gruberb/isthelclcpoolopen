@@ -316,7 +316,7 @@
       "allDay": false
     },
     {
-      "id": "1b54a46b-ae00-4f74-b31d-c4520871b8ed__20261102T070000Z",
+      "id": "17656a7a-c6cd-45bd-a5a4-f460ea842f10",
       "title": "Mustangs Practice",
       "start": "2026-11-02T07:00:00.000",
       "end": "2026-11-02T08:00:00.000",
@@ -325,7 +325,7 @@
       "allDay": false
     },
     {
-      "id": "2433c765-3ded-4dba-ab4b-44f30583d417__20261102T131500Z",
+      "id": "9e2a540d-8185-4f0b-84d6-06c5401d74ec",
       "title": "Silver Bullets Hockey",
       "start": "2026-11-02T13:15:00.000",
       "end": "2026-11-02T14:45:00.000",
@@ -334,7 +334,7 @@
       "allDay": false
     },
     {
-      "id": "52238160-3656-40b2-a85e-221c229afe00__20261102T193000Z",
+      "id": "27e1ea80-4573-47cf-b3b3-baa7469b95ca",
       "title": "SSMHA",
       "start": "2026-11-02T19:30:00.000",
       "end": "2026-11-02T21:30:00.000",
@@ -343,7 +343,7 @@
       "allDay": false
     },
     {
-      "id": "1a105fd0-62fd-42ba-841f-98a68a56c4be__20261102T214500Z",
+      "id": "db0fdc81-2f80-4dfe-bcf6-71f63c116d2a",
       "title": "Rusty Blades",
       "start": "2026-11-02T21:45:00.000",
       "end": "2026-11-02T22:45:00.000",
@@ -514,13 +514,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-10-31T10:40:58.291Z",
+  "lastUpdated": "2026-11-01T11:36:23.086Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 116,
     "publicEvents": 57,
-    "generatedAt": "2026-10-31T10:40:58.291Z",
+    "generatedAt": "2026-11-01T11:36:23.086Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
