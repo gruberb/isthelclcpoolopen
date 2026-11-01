@@ -38,7 +38,7 @@
     },
     {
       "id": "f5763849-f2b3-4788-95b1-e76514519a95",
-      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
+      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool/ Therapy Pool Closed",
       "start": "2026-11-01T16:00:00.000",
       "end": "2026-11-01T18:00:00.000",
       "backgroundColor": "#0000FF",
@@ -46,8 +46,8 @@
       "allDay": false
     },
     {
-      "id": "ccbe22a3-933b-4acf-9d10-40daad426439__20261101T180000Z",
-      "title": "Bridgewater Barracudas",
+      "id": "009ac663-3b96-4f19-8fce-10175292dc9b",
+      "title": "Bridgewater Barracudas using Lap Pool. Therapy Pool Closed",
       "start": "2026-11-01T18:00:00.000",
       "end": "2026-11-01T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -703,7 +703,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-01T17:12:26.207Z",
+  "lastUpdated": "2026-11-01T21:18:45.419Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -711,7 +711,7 @@
       "end": "2026-11-10T03:59:00.000Z"
     },
     "eventCount": 78,
-    "generatedAt": "2026-11-01T17:12:26.207Z",
+    "generatedAt": "2026-11-01T21:18:45.419Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
