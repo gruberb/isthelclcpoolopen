@@ -406,7 +406,7 @@
       "allDay": false
     },
     {
-      "id": "a71196d0-7604-48c8-9c4e-5155f04c8140__20261115T074500Z",
+      "id": "9568b9dd-a0a4-43dc-9ad7-30cc6a94ac00",
       "title": "Northfield Capitals",
       "start": "2026-11-15T07:45:00.000",
       "end": "2026-11-15T09:00:00.000",
@@ -460,13 +460,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-04T12:43:03.403Z",
+  "lastUpdated": "2026-11-05T12:52:35.558Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 85,
+    "totalEvents": 86,
     "publicEvents": 51,
-    "generatedAt": "2026-11-04T12:43:03.403Z",
+    "generatedAt": "2026-11-05T12:52:35.558Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
