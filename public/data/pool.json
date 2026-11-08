@@ -514,6 +514,15 @@
       "allDay": false
     },
     {
+      "id": "fe142169-e55c-4a0b-9b73-b815c7b6f4aa",
+      "title": "Birthday Pool Party",
+      "start": "2026-11-14T14:00:00.000",
+      "end": "2026-11-14T15:00:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
       "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20261114T160000Z",
       "title": "MODL / LCLC Women's Only Swim",
       "start": "2026-11-14T16:00:00.000",
@@ -694,15 +703,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-08T06:27:08.419Z",
+  "lastUpdated": "2026-11-08T22:38:03.084Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-11-08T04:00:00.000Z",
       "end": "2026-11-17T03:59:00.000Z"
     },
-    "eventCount": 77,
-    "generatedAt": "2026-11-08T06:27:08.419Z",
+    "eventCount": 78,
+    "generatedAt": "2026-11-08T22:38:03.084Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
