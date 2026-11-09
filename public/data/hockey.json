@@ -1,204 +1,6 @@
 {
   "data": [
     {
-      "id": "17656a7a-c6cd-45bd-a5a4-f460ea842f10",
-      "title": "Mustangs Practice",
-      "start": "2026-11-02T07:00:00.000",
-      "end": "2026-11-02T08:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "9e2a540d-8185-4f0b-84d6-06c5401d74ec",
-      "title": "Silver Bullets Hockey",
-      "start": "2026-11-02T13:15:00.000",
-      "end": "2026-11-02T14:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "27e1ea80-4573-47cf-b3b3-baa7469b95ca",
-      "title": "SSMHA",
-      "start": "2026-11-02T19:30:00.000",
-      "end": "2026-11-02T21:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "db0fdc81-2f80-4dfe-bcf6-71f63c116d2a",
-      "title": "Rusty Blades",
-      "start": "2026-11-02T21:45:00.000",
-      "end": "2026-11-02T22:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "28132f6c-a3b6-42ca-bc1f-2382b767cd99__20261103T070000Z",
-      "title": "PVEC Boys Hockey Practice",
-      "start": "2026-11-03T07:00:00.000",
-      "end": "2026-11-03T08:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "962cfbd0-9b2e-47ec-abcd-5dd0cecf0f20__20261103T131500Z",
-      "title": "55+ Shinny",
-      "start": "2026-11-03T13:15:00.000",
-      "end": "2026-11-03T14:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "dd2ec1ae-80ab-4718-8060-3ccad8921dbd",
-      "title": "SSMHA",
-      "start": "2026-11-03T16:25:00.000",
-      "end": "2026-11-03T17:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0ec95c17-e74e-4daf-9e64-d9ff6a7d510e",
-      "title": "Western Riptide",
-      "start": "2026-11-03T17:30:00.000",
-      "end": "2026-11-03T18:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "91f6a0be-83e7-497d-91c2-a8aedbf1eaaf",
-      "title": "Western Riptide",
-      "start": "2026-11-03T18:45:00.000",
-      "end": "2026-11-03T19:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "efec88b7-c79b-4d15-be8e-681fca2625b8",
-      "title": "Mustangs Practice",
-      "start": "2026-11-03T20:00:00.000",
-      "end": "2026-11-03T21:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0b87d042-1589-4487-b26e-6724b3288588",
-      "title": "OCR Hockey",
-      "start": "2026-11-03T21:45:00.000",
-      "end": "2026-11-03T22:35:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "54d6195b-4996-420c-a1e3-a5418913cb70",
-      "title": "PVEC Girls Hockey Practice",
-      "start": "2026-11-04T07:00:00.000",
-      "end": "2026-11-04T08:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2433c765-3ded-4dba-ab4b-44f30583d417__20261104T131500Z",
-      "title": "Silver Bullets Hockey",
-      "start": "2026-11-04T13:15:00.000",
-      "end": "2026-11-04T14:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "0cd26a75-f371-42a3-b52c-d1432ff7e92b",
-      "title": "SSMHA",
-      "start": "2026-11-04T16:30:00.000",
-      "end": "2026-11-04T21:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "753d6555-d05c-47c4-8b81-bdadd253fa48",
-      "title": "PVEC Boys Practice",
-      "start": "2026-11-05T07:00:00.000",
-      "end": "2026-11-05T08:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b83d75a1-28ce-4b8b-a84d-12e379eed6d4",
-      "title": "SSMHA",
-      "start": "2026-11-05T16:30:00.000",
-      "end": "2026-11-05T19:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7e6e66eb-f411-438c-a2ee-07fef86d9612",
-      "title": "Mustangs Practice",
-      "start": "2026-11-05T20:00:00.000",
-      "end": "2026-11-05T21:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f82dd558-1aa3-426e-b528-3d240f538a32",
-      "title": "PVEC Boys Game",
-      "start": "2026-11-08T13:00:00.000",
-      "end": "2026-11-08T15:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "5268589b-a764-4544-a252-39491cad4caf",
-      "title": "South Shore ICE Storm",
-      "start": "2026-11-08T16:45:00.000",
-      "end": "2026-11-08T17:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "feb02fa6-2942-44bb-9852-7b7d3fd03183__20261108T175000Z",
-      "title": "SSMHA",
-      "start": "2026-11-08T17:50:00.000",
-      "end": "2026-11-08T19:15:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "5d38970f-e7e0-4b42-b602-2ea9e0feae99",
-      "title": "Bella Dental",
-      "start": "2026-11-08T19:30:00.000",
-      "end": "2026-11-08T20:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b495c597-55a8-4e86-97d7-f67d5a3dd86b",
-      "title": "Reliable Towing",
-      "start": "2026-11-08T20:45:00.000",
-      "end": "2026-11-08T21:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "04d34ccb-9143-4a6d-812a-958c34cdace9",
       "title": "Mustangs Practice",
       "start": "2026-11-09T07:00:00.000",
@@ -244,7 +46,7 @@
       "allDay": false
     },
     {
-      "id": "70cbcea9-7879-41ba-8618-62aff066f464__20261110T162500Z",
+      "id": "86a0f790-7ab7-401e-8af8-bffb252b501c",
       "title": "SSMHA",
       "start": "2026-11-10T16:25:00.000",
       "end": "2026-11-10T17:15:00.000",
@@ -253,7 +55,7 @@
       "allDay": false
     },
     {
-      "id": "cc859fae-f9a4-4a52-bf86-42f43bcee7a3__20261110T173000Z",
+      "id": "14aad17d-ef45-4a6f-8895-3d56d346cfb3",
       "title": "Western Riptide",
       "start": "2026-11-10T17:30:00.000",
       "end": "2026-11-10T18:30:00.000",
@@ -262,7 +64,7 @@
       "allDay": false
     },
     {
-      "id": "40733ad6-e463-4e01-ae18-ecd585b294f0__20261110T184500Z",
+      "id": "bf5d6993-2e28-498b-8058-42d22d282b22",
       "title": "Western Riptide",
       "start": "2026-11-10T18:45:00.000",
       "end": "2026-11-10T19:45:00.000",
@@ -271,7 +73,7 @@
       "allDay": false
     },
     {
-      "id": "0a706320-8a61-4605-b39e-a1ebde9ed9ae__20261110T200000Z",
+      "id": "d3be3bef-5932-49bc-a7a4-dc0d2cd617fa",
       "title": "Mustangs Practice",
       "start": "2026-11-10T20:00:00.000",
       "end": "2026-11-10T21:30:00.000",
@@ -280,7 +82,7 @@
       "allDay": false
     },
     {
-      "id": "123420a3-e9b1-437a-9fdc-1a3fc5602c84__20261110T214500Z",
+      "id": "ef07a795-12c5-4c50-9c10-a8d617384cdc",
       "title": "OCR Hockey",
       "start": "2026-11-10T21:45:00.000",
       "end": "2026-11-10T22:35:00.000",
@@ -309,14 +111,14 @@
     {
       "id": "ba271793-5240-4b6b-83c6-62b9b1bcbd38",
       "title": "SSMHA",
-      "start": "2026-11-11T18:00:00.000",
+      "start": "2026-11-11T17:45:00.000",
       "end": "2026-11-11T21:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
     },
     {
-      "id": "d57cbfc4-1668-4acc-bff9-5339a7de7fac__20261111T214500Z",
+      "id": "bb2b4832-96ce-4896-85b8-ef065541b00f",
       "title": "Bridgewater Blues",
       "start": "2026-11-11T21:45:00.000",
       "end": "2026-11-11T22:45:00.000",
@@ -325,7 +127,7 @@
       "allDay": false
     },
     {
-      "id": "9057cdae-3a98-4c35-a1c0-d5fafc76ef2a__20261112T070000Z",
+      "id": "4e357e85-6caf-40be-b3b1-67018007b67d",
       "title": "PVEC Boys Practice",
       "start": "2026-11-12T07:00:00.000",
       "end": "2026-11-12T08:15:00.000",
@@ -334,7 +136,7 @@
       "allDay": false
     },
     {
-      "id": "0c0c43e0-7b35-45fa-928c-c1d8bdcf5e64__20261112T163000Z",
+      "id": "a0ee16ee-89a2-4c32-8a78-dab98b1693d5",
       "title": "SSMHA",
       "start": "2026-11-12T16:30:00.000",
       "end": "2026-11-12T19:45:00.000",
@@ -458,15 +260,267 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "1b54a46b-ae00-4f74-b31d-c4520871b8ed__20261116T070000Z",
+      "title": "Mustangs Practice",
+      "start": "2026-11-16T07:00:00.000",
+      "end": "2026-11-16T08:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2433c765-3ded-4dba-ab4b-44f30583d417__20261116T131500Z",
+      "title": "Silver Bullets Hockey",
+      "start": "2026-11-16T13:15:00.000",
+      "end": "2026-11-16T14:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "52238160-3656-40b2-a85e-221c229afe00__20261116T193000Z",
+      "title": "SSMHA",
+      "start": "2026-11-16T19:30:00.000",
+      "end": "2026-11-16T21:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1a105fd0-62fd-42ba-841f-98a68a56c4be__20261116T214500Z",
+      "title": "Rusty Blades",
+      "start": "2026-11-16T21:45:00.000",
+      "end": "2026-11-16T22:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "28132f6c-a3b6-42ca-bc1f-2382b767cd99__20261117T070000Z",
+      "title": "PVEC Boys Hockey Practice",
+      "start": "2026-11-17T07:00:00.000",
+      "end": "2026-11-17T08:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "962cfbd0-9b2e-47ec-abcd-5dd0cecf0f20__20261117T131500Z",
+      "title": "55+ Shinny",
+      "start": "2026-11-17T13:15:00.000",
+      "end": "2026-11-17T14:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "70cbcea9-7879-41ba-8618-62aff066f464__20261117T162500Z",
+      "title": "SSMHA",
+      "start": "2026-11-17T16:25:00.000",
+      "end": "2026-11-17T17:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "cc859fae-f9a4-4a52-bf86-42f43bcee7a3__20261117T173000Z",
+      "title": "Western Riptide",
+      "start": "2026-11-17T17:30:00.000",
+      "end": "2026-11-17T18:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "40733ad6-e463-4e01-ae18-ecd585b294f0__20261117T184500Z",
+      "title": "Western Riptide",
+      "start": "2026-11-17T18:45:00.000",
+      "end": "2026-11-17T19:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0a706320-8a61-4605-b39e-a1ebde9ed9ae__20261117T200000Z",
+      "title": "Mustangs Practice",
+      "start": "2026-11-17T20:00:00.000",
+      "end": "2026-11-17T21:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "123420a3-e9b1-437a-9fdc-1a3fc5602c84__20261117T214500Z",
+      "title": "OCR Hockey",
+      "start": "2026-11-17T21:45:00.000",
+      "end": "2026-11-17T22:35:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1a3ab639-16cd-4dd1-a2f1-e1f8c536867f__20261118T070000Z",
+      "title": "PVEC Girls Hockey Practice",
+      "start": "2026-11-18T07:00:00.000",
+      "end": "2026-11-18T08:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2433c765-3ded-4dba-ab4b-44f30583d417__20261118T131500Z",
+      "title": "Silver Bullets Hockey",
+      "start": "2026-11-18T13:15:00.000",
+      "end": "2026-11-18T14:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ae8f4d90-4c72-4f8f-8d37-7bb448413fa6__20261118T163000Z",
+      "title": "SSMHA",
+      "start": "2026-11-18T16:30:00.000",
+      "end": "2026-11-18T21:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d57cbfc4-1668-4acc-bff9-5339a7de7fac__20261118T214500Z",
+      "title": "Bridgewater Blues",
+      "start": "2026-11-18T21:45:00.000",
+      "end": "2026-11-18T22:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9057cdae-3a98-4c35-a1c0-d5fafc76ef2a__20261119T070000Z",
+      "title": "PVEC Boys Practice",
+      "start": "2026-11-19T07:00:00.000",
+      "end": "2026-11-19T08:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0c0c43e0-7b35-45fa-928c-c1d8bdcf5e64__20261119T163000Z",
+      "title": "SSMHA",
+      "start": "2026-11-19T16:30:00.000",
+      "end": "2026-11-19T19:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0832cf5b-36ab-4595-82fe-a7b2a6d3a43d__20261119T214500Z",
+      "title": "Belliveau Veinotte",
+      "start": "2026-11-19T21:45:00.000",
+      "end": "2026-11-19T22:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "117f2980-d1e5-413b-9044-ecd441686b07",
+      "title": "SSMHA",
+      "start": "2026-11-20T08:30:00.000",
+      "end": "2026-11-20T15:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7c4c5ad8-741c-4564-8b7e-0ed9317ad869",
+      "title": "South Shore Hockey League",
+      "start": "2026-11-20T22:15:00.000",
+      "end": "2026-11-20T23:15:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "99731d65-6fc1-4311-8db5-f344cad81b93__20261121T080000Z",
+      "title": "ICE Storm Tournament ",
+      "start": "2026-11-21T08:00:00.000",
+      "end": "2026-11-21T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "67755834-8df3-4997-8609-ae5270743a08",
+      "title": "Lumberjacks Game vs. Sackville Blazers",
+      "start": "2026-11-21T18:30:00.000",
+      "end": "2026-11-21T21:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "46f7081d-83f4-4221-9ecc-77d6bdfa47ea",
+      "title": "South Shore Hockey League",
+      "start": "2026-11-21T21:30:00.000",
+      "end": "2026-11-21T22:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "acbc121d-79f9-485a-aa50-897e3583e54e",
+      "title": "South Shore Hockey League",
+      "start": "2026-11-21T22:45:00.000",
+      "end": "2026-11-21T23:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f53a3584-870e-4dae-b2bf-6533f3d6046b",
+      "title": "ICE Storm Tournament ",
+      "start": "2026-11-22T08:30:00.000",
+      "end": "2026-11-22T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e6d193ad-6d1c-4609-82a8-3564466a27ec__20261122T193000Z",
+      "title": "Bella Dental Sharks",
+      "start": "2026-11-22T19:30:00.000",
+      "end": "2026-11-22T20:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "10b92976-0f91-418b-bbcb-9baf03bcd5df__20261122T204500Z",
+      "title": "Reliable Towing",
+      "start": "2026-11-22T20:45:00.000",
+      "end": "2026-11-22T21:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "08f99991-5f73-4a0a-82f4-041eb97b4a6e__20261122T220000Z",
+      "title": "South Shore Pickup Hockey",
+      "start": "2026-11-22T22:00:00.000",
+      "end": "2026-11-22T23:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-08T11:37:53.441Z",
+  "lastUpdated": "2026-11-09T13:31:02.764Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 86,
-    "publicEvents": 51,
-    "generatedAt": "2026-11-08T11:37:53.441Z",
+    "totalEvents": 92,
+    "publicEvents": 57,
+    "generatedAt": "2026-11-09T13:31:02.764Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
