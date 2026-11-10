@@ -442,10 +442,10 @@
       "allDay": false
     },
     {
-      "id": "99731d65-6fc1-4311-8db5-f344cad81b93__20261121T080000Z",
+      "id": "ea1c9625-26fb-4b5d-b379-d1200441bd49",
       "title": "ICE Storm Tournament ",
       "start": "2026-11-21T08:00:00.000",
-      "end": "2026-11-21T18:00:00.000",
+      "end": "2026-11-21T18:15:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -514,13 +514,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-09T13:31:02.764Z",
+  "lastUpdated": "2026-11-10T13:10:41.464Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 92,
     "publicEvents": 57,
-    "generatedAt": "2026-11-09T13:31:02.764Z",
+    "generatedAt": "2026-11-10T13:10:41.464Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
