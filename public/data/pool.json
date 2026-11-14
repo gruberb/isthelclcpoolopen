@@ -1,87 +1,6 @@
 {
   "data": [
     {
-      "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261113T063000Z",
-      "title": "Members Swim",
-      "start": "2026-11-13T06:30:00.000",
-      "end": "2026-11-13T07:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20261113T073000Z",
-      "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
-      "start": "2026-11-13T07:30:00.000",
-      "end": "2026-11-13T09:45:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "d02bc39a-d7aa-482a-8dd7-6d3a5f9ddbeb__20261113T100000Z",
-      "title": "Aquafit - All Other Pools Closed to Public",
-      "start": "2026-11-13T10:00:00.000",
-      "end": "2026-11-13T11:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "999f2f3a-c3fa-4b6a-9797-1687d5207e99",
-      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pool Open",
-      "start": "2026-11-13T11:00:00.000",
-      "end": "2026-11-13T11:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "15a011e1-e53c-4802-a857-98e18a44f53b",
-      "title": "SSRCE Pool Rental - All Pools Closed to the Public",
-      "start": "2026-11-13T11:30:00.000",
-      "end": "2026-11-13T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "e0a8c7c2-bbaf-4118-93e9-0eebc5c3b770",
-      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
-      "start": "2026-11-13T12:30:00.000",
-      "end": "2026-11-13T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "4e81c18a-b260-4ed5-a23e-ea6a8b708c75__20261113T140000Z",
-      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
-      "start": "2026-11-13T14:00:00.000",
-      "end": "2026-11-13T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "c05e09ab-d733-4eea-b44d-379055a53632__20261113T160000Z",
-      "title": "Staff Inservice - All Pools Closed to Public",
-      "start": "2026-11-13T16:00:00.000",
-      "end": "2026-11-13T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "f40b5f15-73c1-4f7c-88a2-0ff1b8376a1e__20261113T170000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-11-13T17:00:00.000",
-      "end": "2026-11-13T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "63835fda-d3e3-4c2c-ad23-8394b2e2a615__20261114T090000Z",
       "title": "Members Swim",
       "start": "2026-11-14T09:00:00.000",
@@ -683,17 +602,71 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "141dc992-33ca-469f-9832-cec100e60576__20261122T100000Z",
+      "title": "Member's Swim",
+      "start": "2026-11-22T10:00:00.000",
+      "end": "2026-11-22T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "2ad2a2b0-bb22-4279-9d70-f50763706aea__20261122T110000Z",
+      "title": "Drop-In Water Polo",
+      "start": "2026-11-22T11:00:00.000",
+      "end": "2026-11-22T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "e55f31b9-aab4-4aa4-a0aa-35a25e149be2",
+      "title": "Busy",
+      "start": "2026-11-22T12:00:00.000",
+      "end": "2026-11-22T13:00:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
+      "id": "0f6fc99c-932d-487d-a272-1f7a17490ab7__20261122T130000Z",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-11-22T13:00:00.000",
+      "end": "2026-11-22T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c976c0bb-dca1-4e90-bca8-17e2626a4cef",
+      "title": "Lane Swim Lap Pool / Parent & Tot Therapy Pool",
+      "start": "2026-11-22T16:00:00.000",
+      "end": "2026-11-22T18:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ccbe22a3-933b-4acf-9d10-40daad426439__20261122T180000Z",
+      "title": "Bridgewater Barracudas",
+      "start": "2026-11-22T18:00:00.000",
+      "end": "2026-11-22T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-13T04:06:54.514Z",
+  "lastUpdated": "2026-11-14T04:05:48.056Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-11-13T04:00:00.000Z",
-      "end": "2026-11-22T03:59:00.000Z"
+      "start": "2026-11-14T04:00:00.000Z",
+      "end": "2026-11-23T03:59:00.000Z"
     },
-    "eventCount": 76,
-    "generatedAt": "2026-11-13T04:06:54.514Z",
+    "eventCount": 73,
+    "generatedAt": "2026-11-14T04:05:48.056Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
