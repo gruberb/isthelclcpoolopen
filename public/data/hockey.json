@@ -235,7 +235,7 @@
       "allDay": false
     },
     {
-      "id": "e6d193ad-6d1c-4609-82a8-3564466a27ec__20261115T193000Z",
+      "id": "b55b4bf3-e79c-48d5-90c4-fb6ecd4b6507",
       "title": "Bella Dental Sharks",
       "start": "2026-11-15T19:30:00.000",
       "end": "2026-11-15T20:30:00.000",
@@ -244,7 +244,7 @@
       "allDay": false
     },
     {
-      "id": "10b92976-0f91-418b-bbcb-9baf03bcd5df__20261115T204500Z",
+      "id": "c244508c-c404-4b59-87ea-76b0482a2de9",
       "title": "Reliable Towing",
       "start": "2026-11-15T20:45:00.000",
       "end": "2026-11-15T21:45:00.000",
@@ -253,7 +253,7 @@
       "allDay": false
     },
     {
-      "id": "08f99991-5f73-4a0a-82f4-041eb97b4a6e__20261115T220000Z",
+      "id": "03f86c7f-600b-4ed0-a69e-b3a18b2b49b4",
       "title": "South Shore Pickup Hockey",
       "start": "2026-11-15T22:00:00.000",
       "end": "2026-11-15T23:00:00.000",
@@ -262,7 +262,7 @@
       "allDay": false
     },
     {
-      "id": "1b54a46b-ae00-4f74-b31d-c4520871b8ed__20261116T070000Z",
+      "id": "14639409-0e95-4afd-aeae-3a4a8ff0fd9e",
       "title": "Mustangs Practice",
       "start": "2026-11-16T07:00:00.000",
       "end": "2026-11-16T08:00:00.000",
@@ -271,7 +271,7 @@
       "allDay": false
     },
     {
-      "id": "2433c765-3ded-4dba-ab4b-44f30583d417__20261116T131500Z",
+      "id": "0c52c843-35e3-4399-8730-2b11b9ce3f85",
       "title": "Silver Bullets Hockey",
       "start": "2026-11-16T13:15:00.000",
       "end": "2026-11-16T14:15:00.000",
@@ -280,7 +280,7 @@
       "allDay": false
     },
     {
-      "id": "52238160-3656-40b2-a85e-221c229afe00__20261116T193000Z",
+      "id": "04810281-8d7d-4cc5-98a0-19d665dfb672",
       "title": "SSMHA",
       "start": "2026-11-16T19:30:00.000",
       "end": "2026-11-16T21:30:00.000",
@@ -289,7 +289,7 @@
       "allDay": false
     },
     {
-      "id": "1a105fd0-62fd-42ba-841f-98a68a56c4be__20261116T214500Z",
+      "id": "2149a8f6-163f-4da9-9e10-7053a2336f0e",
       "title": "Rusty Blades",
       "start": "2026-11-16T21:45:00.000",
       "end": "2026-11-16T22:45:00.000",
@@ -514,13 +514,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-14T05:03:40.253Z",
+  "lastUpdated": "2026-11-15T05:03:45.355Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 93,
+    "totalEvents": 94,
     "publicEvents": 57,
-    "generatedAt": "2026-11-14T05:03:40.253Z",
+    "generatedAt": "2026-11-15T05:03:45.355Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
