@@ -1,60 +1,6 @@
 {
   "data": [
     {
-      "id": "63835fda-d3e3-4c2c-ad23-8394b2e2a615__20261114T090000Z",
-      "title": "Members Swim",
-      "start": "2026-11-14T09:00:00.000",
-      "end": "2026-11-14T10:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ab5c01d8-d9eb-43ed-a472-ebda06f7714b__20261114T100000Z",
-      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
-      "start": "2026-11-14T10:00:00.000",
-      "end": "2026-11-14T12:30:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "7b0813e9-9b24-48a2-a1f9-3de2b5ca4d79__20261114T123000Z",
-      "title": "Lane Swim",
-      "start": "2026-11-14T12:30:00.000",
-      "end": "2026-11-14T14:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "50154d21-a627-432b-960e-4ae1268bc76c__20261114T140000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-11-14T14:00:00.000",
-      "end": "2026-11-14T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "fe142169-e55c-4a0b-9b73-b815c7b6f4aa",
-      "title": "Birthday Pool Party",
-      "start": "2026-11-14T14:00:00.000",
-      "end": "2026-11-14T15:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
-      "id": "54ec6738-8ec7-42d7-9a23-c600f912510d__20261114T160000Z",
-      "title": "MODL / LCLC Women's Only Swim",
-      "start": "2026-11-14T16:00:00.000",
-      "end": "2026-11-14T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "141dc992-33ca-469f-9832-cec100e60576__20261115T100000Z",
       "title": "Member's Swim",
       "start": "2026-11-15T10:00:00.000",
@@ -656,17 +602,116 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261123T063000Z",
+      "title": "Members Swim",
+      "start": "2026-11-23T06:30:00.000",
+      "end": "2026-11-23T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20261123T073000Z",
+      "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
+      "start": "2026-11-23T07:30:00.000",
+      "end": "2026-11-23T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "d02bc39a-d7aa-482a-8dd7-6d3a5f9ddbeb__20261123T100000Z",
+      "title": "Aquafit - All Other Pools Closed to Public",
+      "start": "2026-11-23T10:00:00.000",
+      "end": "2026-11-23T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f1aedf16-603f-4a08-98a5-5aeb44fbea55__20261123T110000Z",
+      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pool Open",
+      "start": "2026-11-23T11:00:00.000",
+      "end": "2026-11-23T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "a447ae48-bd41-4a4f-a3f1-a4bdfa7a5cb4__20261123T120000Z",
+      "title": "Lane Swim Lap Pool / Parent n' Tot Play Pool",
+      "start": "2026-11-23T12:00:00.000",
+      "end": "2026-11-23T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "74678c27-e660-4dd5-bcf2-0ee7bb64ad68__20261123T150000Z",
+      "title": "Closed for Maintenance",
+      "start": "2026-11-23T15:00:00.000",
+      "end": "2026-11-23T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9086491f-c883-4697-ab79-bb7a88bb6fa5__20261123T160000Z",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-11-23T16:00:00.000",
+      "end": "2026-11-23T17:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "94a1f7b9-6017-41d1-8c95-8667a119c7a2__20261123T170000Z",
+      "title": "Aqua Tabata - All Other Pools Closed to Public",
+      "start": "2026-11-23T17:00:00.000",
+      "end": "2026-11-23T17:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c9dcb0d0-06ab-47f8-9e77-f7b81d703b84__20261123T180000Z",
+      "title": "Special Olympics using Lap Pool - Play & Therapy Pools Open",
+      "start": "2026-11-23T18:00:00.000",
+      "end": "2026-11-23T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "7bd5f0bd-8d25-484e-b136-ddfd3a5c2b70__20261123T190000Z",
+      "title": "Bridgewater Barracudas using 3 Lanes, Play & Therapy Open",
+      "start": "2026-11-23T19:00:00.000",
+      "end": "2026-11-23T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "1221ac57-81df-45fc-8f72-082df1cf7c6f__20261123T200000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-11-23T20:00:00.000",
+      "end": "2026-11-23T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-14T04:05:48.056Z",
+  "lastUpdated": "2026-11-15T04:06:06.212Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-11-14T04:00:00.000Z",
-      "end": "2026-11-23T03:59:00.000Z"
+      "start": "2026-11-15T04:00:00.000Z",
+      "end": "2026-11-24T03:59:00.000Z"
     },
-    "eventCount": 73,
-    "generatedAt": "2026-11-14T04:05:48.056Z",
+    "eventCount": 78,
+    "generatedAt": "2026-11-15T04:06:06.212Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
