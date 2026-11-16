@@ -1,78 +1,6 @@
 {
   "data": [
     {
-      "id": "141dc992-33ca-469f-9832-cec100e60576__20261115T100000Z",
-      "title": "Member's Swim",
-      "start": "2026-11-15T10:00:00.000",
-      "end": "2026-11-15T11:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "2ad2a2b0-bb22-4279-9d70-f50763706aea__20261115T110000Z",
-      "title": "Drop-In Water Polo",
-      "start": "2026-11-15T11:00:00.000",
-      "end": "2026-11-15T12:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "13f91ede-2326-4e68-888e-fc2c7095112c",
-      "title": "Busy",
-      "start": "2026-11-15T12:00:00.000",
-      "end": "2026-11-15T13:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
-      "id": "0094bd40-02c7-4d80-86a3-fe63c2b3583d",
-      "title": "Deanna Wentzell- semi Private",
-      "start": "2026-11-15T12:00:00.000",
-      "end": "2026-11-15T13:00:00.000",
-      "backgroundColor": "#00FF00",
-      "textColor": "#000000",
-      "allDay": false
-    },
-    {
-      "id": "0f6fc99c-932d-487d-a272-1f7a17490ab7__20261115T130000Z",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-11-15T13:00:00.000",
-      "end": "2026-11-15T16:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "b901552b-af76-4a40-9761-dca4a4368934",
-      "title": "Lane Swim Lap Pool / Parent & Tot Play Pool",
-      "start": "2026-11-15T16:00:00.000",
-      "end": "2026-11-15T17:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "17db52a8-fd56-4c2a-9993-f001393b6828",
-      "title": "MODL Sensory Swim",
-      "start": "2026-11-15T17:00:00.000",
-      "end": "2026-11-15T18:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
-      "id": "ccbe22a3-933b-4acf-9d10-40daad426439__20261115T180000Z",
-      "title": "Bridgewater Barracudas",
-      "start": "2026-11-15T18:00:00.000",
-      "end": "2026-11-15T19:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261116T063000Z",
       "title": "Members Swim",
       "start": "2026-11-16T06:30:00.000",
@@ -701,17 +629,98 @@
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
+    },
+    {
+      "id": "933b40ef-ad0c-4101-9dee-20140bd35e01__20261124T063000Z",
+      "title": "Members Swim",
+      "start": "2026-11-24T06:30:00.000",
+      "end": "2026-11-24T07:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "ef21dd0e-1611-4a22-b445-051c0246d8ca__20261124T073000Z",
+      "title": "Recreation Swim - 4 Lanes, Play & Therapy Open",
+      "start": "2026-11-24T07:30:00.000",
+      "end": "2026-11-24T09:45:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "c8f6efa5-6b67-453d-acae-7ac46fe8e917__20261124T100000Z",
+      "title": "Aqua Walking/Jogging - All Other Pools Closed to the Public",
+      "start": "2026-11-24T10:00:00.000",
+      "end": "2026-11-24T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "f1aedf16-603f-4a08-98a5-5aeb44fbea55__20261124T110000Z",
+      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pool Open",
+      "start": "2026-11-24T11:00:00.000",
+      "end": "2026-11-24T12:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "dad571f5-32c0-4ee0-8474-1471e95a1b72__20261124T120500Z",
+      "title": "Aqua Tabata using Lap Pool, All Other Pools Closed to Public",
+      "start": "2026-11-24T12:05:00.000",
+      "end": "2026-11-24T12:50:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "42839990-df37-40fb-b8b6-dc6616a6134a__20261124T130000Z",
+      "title": "Lane Swim / Parent & Tot",
+      "start": "2026-11-24T13:00:00.000",
+      "end": "2026-11-24T15:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "74678c27-e660-4dd5-bcf2-0ee7bb64ad68__20261124T150000Z",
+      "title": "Closed for Maintenance",
+      "start": "2026-11-24T15:00:00.000",
+      "end": "2026-11-24T16:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "0adae7ec-7ad8-4470-8215-f7279dcbf23b__20261124T160000Z",
+      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
+      "start": "2026-11-24T16:00:00.000",
+      "end": "2026-11-24T19:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "9438bc04-220e-4e72-80de-718fd4704dba__20261124T190000Z",
+      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "start": "2026-11-24T19:00:00.000",
+      "end": "2026-11-24T21:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-15T04:06:06.212Z",
+  "lastUpdated": "2026-11-16T04:07:01.809Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
-      "start": "2026-11-15T04:00:00.000Z",
-      "end": "2026-11-24T03:59:00.000Z"
+      "start": "2026-11-16T04:00:00.000Z",
+      "end": "2026-11-25T03:59:00.000Z"
     },
-    "eventCount": 78,
-    "generatedAt": "2026-11-15T04:06:06.212Z",
+    "eventCount": 79,
+    "generatedAt": "2026-11-16T04:07:01.809Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
