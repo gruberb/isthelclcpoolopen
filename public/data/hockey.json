@@ -184,7 +184,7 @@
       "id": "ea1c9625-26fb-4b5d-b379-d1200441bd49",
       "title": "ICE Storm Tournament ",
       "start": "2026-11-21T08:00:00.000",
-      "end": "2026-11-21T18:15:00.000",
+      "end": "2026-11-21T21:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -220,7 +220,7 @@
       "id": "f53a3584-870e-4dae-b2bf-6533f3d6046b",
       "title": "ICE Storm Tournament ",
       "start": "2026-11-22T08:30:00.000",
-      "end": "2026-11-22T15:00:00.000",
+      "end": "2026-11-22T18:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -444,7 +444,7 @@
     {
       "id": "763e0352-2358-4616-bfd3-bbf60d2ec05b",
       "title": "SSMHA",
-      "start": "2026-11-28T09:45:00.000",
+      "start": "2026-11-28T11:00:00.000",
       "end": "2026-11-28T12:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
@@ -541,13 +541,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-17T05:04:22.306Z",
+  "lastUpdated": "2026-11-18T05:04:18.355Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 99,
     "publicEvents": 60,
-    "generatedAt": "2026-11-17T05:04:22.306Z",
+    "generatedAt": "2026-11-18T05:04:18.355Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
