@@ -136,7 +136,7 @@
       "allDay": false
     },
     {
-      "id": "9057cdae-3a98-4c35-a1c0-d5fafc76ef2a__20261119T070000Z",
+      "id": "bf436c4d-5324-4740-b039-f6f2fdbb3808",
       "title": "PVEC Boys Practice",
       "start": "2026-11-19T07:00:00.000",
       "end": "2026-11-19T08:15:00.000",
@@ -154,7 +154,7 @@
       "allDay": false
     },
     {
-      "id": "0832cf5b-36ab-4595-82fe-a7b2a6d3a43d__20261119T214500Z",
+      "id": "ff6d3cc7-d58c-46f5-b134-3bc5d2bfc96a",
       "title": "Belliveau Veinotte",
       "start": "2026-11-19T21:45:00.000",
       "end": "2026-11-19T22:45:00.000",
@@ -163,10 +163,10 @@
       "allDay": false
     },
     {
-      "id": "117f2980-d1e5-413b-9044-ecd441686b07",
-      "title": "SSMHA",
-      "start": "2026-11-20T08:30:00.000",
-      "end": "2026-11-20T15:15:00.000",
+      "id": "a77ec312-6db4-41de-b143-9dcaf3d7bd88",
+      "title": "Sticks and Pucks",
+      "start": "2026-11-20T10:30:00.000",
+      "end": "2026-11-20T12:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -541,13 +541,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-18T05:04:18.355Z",
+  "lastUpdated": "2026-11-19T05:04:35.720Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 99,
+    "totalEvents": 100,
     "publicEvents": 60,
-    "generatedAt": "2026-11-18T05:04:18.355Z",
+    "generatedAt": "2026-11-19T05:04:35.720Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
