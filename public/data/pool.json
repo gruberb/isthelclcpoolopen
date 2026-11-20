@@ -595,21 +595,21 @@
       "allDay": false
     },
     {
-      "id": "037472c8-3031-4900-8bfa-9d676fcf5a96",
-      "title": "Public Swim - No Lanes, All Pools Open",
-      "start": "2026-11-27T17:00:00.000",
-      "end": "2026-11-27T20:00:00.000",
-      "backgroundColor": "#0000FF",
-      "textColor": "#FFFFFF",
-      "allDay": false
-    },
-    {
       "id": "2ae2f45f-748f-4d52-addb-92d7070c3a38",
       "title": "Birthday Party - Oliver",
       "start": "2026-11-27T17:00:00.000",
       "end": "2026-11-27T18:00:00.000",
       "backgroundColor": "#00FF00",
       "textColor": "#000000",
+      "allDay": false
+    },
+    {
+      "id": "037472c8-3031-4900-8bfa-9d676fcf5a96",
+      "title": "Public Swim - No Lanes, All Pools Open",
+      "start": "2026-11-27T17:00:00.000",
+      "end": "2026-11-27T20:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
       "allDay": false
     },
     {
@@ -658,7 +658,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-20T04:06:30.955Z",
+  "lastUpdated": "2026-11-20T13:32:58.602Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -666,7 +666,7 @@
       "end": "2026-11-29T03:59:00.000Z"
     },
     "eventCount": 73,
-    "generatedAt": "2026-11-20T04:06:30.955Z",
+    "generatedAt": "2026-11-20T13:32:58.602Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
