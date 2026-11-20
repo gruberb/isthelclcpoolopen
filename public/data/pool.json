@@ -100,6 +100,15 @@
       "allDay": false
     },
     {
+      "id": "c057c580-0ef1-4696-9fb8-451885294c2b",
+      "title": "Pool and Party Room",
+      "start": "2026-11-21T12:30:00.000",
+      "end": "2026-11-21T13:30:00.000",
+      "backgroundColor": "#00FF00",
+      "textColor": "#000000",
+      "allDay": false
+    },
+    {
       "id": "50154d21-a627-432b-960e-4ae1268bc76c__20261121T140000Z",
       "title": "Public Swim - No Lanes, All Pools Open",
       "start": "2026-11-21T14:00:00.000",
@@ -658,15 +667,15 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-20T14:05:25.444Z",
+  "lastUpdated": "2026-11-20T18:06:44.658Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
       "start": "2026-11-20T04:00:00.000Z",
       "end": "2026-11-29T03:59:00.000Z"
     },
-    "eventCount": 73,
-    "generatedAt": "2026-11-20T14:05:25.444Z",
+    "eventCount": 74,
+    "generatedAt": "2026-11-20T18:06:44.658Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
