@@ -181,10 +181,10 @@
       "allDay": false
     },
     {
-      "id": "ea1c9625-26fb-4b5d-b379-d1200441bd49",
-      "title": "ICE Storm Tournament ",
-      "start": "2026-11-21T08:00:00.000",
-      "end": "2026-11-21T17:45:00.000",
+      "id": "295d5b64-59ed-4aeb-a108-4048a231d923",
+      "title": "South Shore Ice Storm Tournament",
+      "start": "2026-11-21T09:00:00.000",
+      "end": "2026-11-21T18:00:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -217,10 +217,19 @@
       "allDay": false
     },
     {
-      "id": "f53a3584-870e-4dae-b2bf-6533f3d6046b",
-      "title": "ICE Storm Tournament ",
+      "id": "00868be5-1f74-4275-99f7-12e5c7e8b6b0",
+      "title": "South Shore Ice Storm Tournament",
       "start": "2026-11-22T08:30:00.000",
       "end": "2026-11-22T13:30:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
+      "id": "3f0c49c4-c91d-4cdc-9113-026852973c4c",
+      "title": "Sticks n' Pucks ",
+      "start": "2026-11-22T14:00:00.000",
+      "end": "2026-11-22T15:30:00.000",
       "backgroundColor": "#0000FF",
       "textColor": "#FFFFFF",
       "allDay": false
@@ -541,13 +550,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-20T05:04:37.736Z",
+  "lastUpdated": "2026-11-21T05:03:34.202Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 99,
-    "publicEvents": 60,
-    "generatedAt": "2026-11-20T05:04:37.736Z",
+    "totalEvents": 101,
+    "publicEvents": 61,
+    "generatedAt": "2026-11-21T05:03:34.202Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
