@@ -235,7 +235,7 @@
       "allDay": false
     },
     {
-      "id": "e6d193ad-6d1c-4609-82a8-3564466a27ec__20261122T193000Z",
+      "id": "4fccb69a-8df5-41c9-8446-9c1f565ab64d",
       "title": "Bella Dental Sharks",
       "start": "2026-11-22T19:30:00.000",
       "end": "2026-11-22T20:30:00.000",
@@ -244,7 +244,7 @@
       "allDay": false
     },
     {
-      "id": "10b92976-0f91-418b-bbcb-9baf03bcd5df__20261122T204500Z",
+      "id": "0d2e9dec-bd16-44ff-9f1a-86c7cb01b657",
       "title": "Reliable Towing",
       "start": "2026-11-22T20:45:00.000",
       "end": "2026-11-22T21:45:00.000",
@@ -253,7 +253,7 @@
       "allDay": false
     },
     {
-      "id": "08f99991-5f73-4a0a-82f4-041eb97b4a6e__20261122T220000Z",
+      "id": "cfe95d1d-2869-467c-bce7-0fd0c4793e2d",
       "title": "South Shore Pickup Hockey",
       "start": "2026-11-22T22:00:00.000",
       "end": "2026-11-22T23:00:00.000",
@@ -262,7 +262,7 @@
       "allDay": false
     },
     {
-      "id": "2433c765-3ded-4dba-ab4b-44f30583d417__20261123T131500Z",
+      "id": "c42f9b42-2dce-4827-9e70-1537d6120c69",
       "title": "Silver Bullets Hockey",
       "start": "2026-11-23T13:15:00.000",
       "end": "2026-11-23T14:15:00.000",
@@ -271,7 +271,7 @@
       "allDay": false
     },
     {
-      "id": "52238160-3656-40b2-a85e-221c229afe00__20261123T193000Z",
+      "id": "88f283d1-29c7-496f-9044-16939ac0df5a",
       "title": "SSMHA",
       "start": "2026-11-23T19:30:00.000",
       "end": "2026-11-23T21:30:00.000",
@@ -280,7 +280,7 @@
       "allDay": false
     },
     {
-      "id": "1a105fd0-62fd-42ba-841f-98a68a56c4be__20261123T214500Z",
+      "id": "3ed9cc65-bef3-4684-9800-a9d5e33c7f63",
       "title": "Rusty Blades",
       "start": "2026-11-23T21:45:00.000",
       "end": "2026-11-23T22:45:00.000",
@@ -550,13 +550,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-21T05:03:34.202Z",
+  "lastUpdated": "2026-11-22T05:04:04.673Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
     "totalEvents": 101,
     "publicEvents": 61,
-    "generatedAt": "2026-11-21T05:03:34.202Z",
+    "generatedAt": "2026-11-22T05:04:04.673Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
