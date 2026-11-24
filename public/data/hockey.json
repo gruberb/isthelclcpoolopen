@@ -91,7 +91,7 @@
       "allDay": false
     },
     {
-      "id": "1a3ab639-16cd-4dd1-a2f1-e1f8c536867f__20261125T070000Z",
+      "id": "660ec062-1d24-4eaa-b760-701e55fb9ac7",
       "title": "PVEC Girls Hockey Practice",
       "start": "2026-11-25T07:00:00.000",
       "end": "2026-11-25T08:15:00.000",
@@ -100,7 +100,7 @@
       "allDay": false
     },
     {
-      "id": "ae8f4d90-4c72-4f8f-8d37-7bb448413fa6__20261125T163000Z",
+      "id": "d81df5ce-1d80-4d76-9421-af6259a29954",
       "title": "SSMHA",
       "start": "2026-11-25T16:30:00.000",
       "end": "2026-11-25T21:30:00.000",
@@ -109,7 +109,7 @@
       "allDay": false
     },
     {
-      "id": "d57cbfc4-1668-4acc-bff9-5339a7de7fac__20261125T214500Z",
+      "id": "a8854180-dcbb-46c6-9a4f-9f8e6e388cd2",
       "title": "Bridgewater Blues",
       "start": "2026-11-25T21:45:00.000",
       "end": "2026-11-25T22:45:00.000",
@@ -127,7 +127,7 @@
       "allDay": false
     },
     {
-      "id": "0c0c43e0-7b35-45fa-928c-c1d8bdcf5e64__20261126T163000Z",
+      "id": "c48295a4-e50a-4638-9b2e-3bcf1e81d0fb",
       "title": "SSMHA",
       "start": "2026-11-26T16:30:00.000",
       "end": "2026-11-26T19:45:00.000",
@@ -478,6 +478,15 @@
       "allDay": false
     },
     {
+      "id": "b11c3877-e249-41b7-af75-5a68b7f93909",
+      "title": "Sticks n' Pucks",
+      "start": "2026-12-04T09:30:00.000",
+      "end": "2026-12-04T11:00:00.000",
+      "backgroundColor": "#0000FF",
+      "textColor": "#FFFFFF",
+      "allDay": false
+    },
+    {
       "id": "91fd5f10-8783-4695-af3f-fc8a7f92f7be",
       "title": "Silver Bullets",
       "start": "2026-12-04T13:15:00.000",
@@ -649,13 +658,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-23T05:04:57.857Z",
+  "lastUpdated": "2026-11-24T05:04:21.975Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 107,
-    "publicEvents": 72,
-    "generatedAt": "2026-11-23T05:04:57.857Z",
+    "totalEvents": 109,
+    "publicEvents": 73,
+    "generatedAt": "2026-11-24T05:04:21.975Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
