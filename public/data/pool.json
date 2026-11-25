@@ -64,8 +64,8 @@
       "allDay": false
     },
     {
-      "id": "0adae7ec-7ad8-4470-8215-f7279dcbf23b__20261124T160000Z",
-      "title": "Recreational Swim - 3 Lanes, Play & Therapy Pools Open",
+      "id": "12af5906-819f-4943-a62e-65b86fd538fc",
+      "title": "Recreational Swim - 3 Lanes &  Play Open",
       "start": "2026-11-24T16:00:00.000",
       "end": "2026-11-24T19:00:00.000",
       "backgroundColor": "#0000FF",
@@ -73,8 +73,8 @@
       "allDay": false
     },
     {
-      "id": "9438bc04-220e-4e72-80de-718fd4704dba__20261124T190000Z",
-      "title": "Recreational Swim - 4 Lanes, Play & Therapy Pools Open",
+      "id": "6c91bcce-8e69-419a-9837-0230983dcbb8",
+      "title": "Recreational Swim - 4 Lanes &  Play Pool Open",
       "start": "2026-11-24T19:00:00.000",
       "end": "2026-11-24T21:00:00.000",
       "backgroundColor": "#0000FF",
@@ -406,8 +406,8 @@
       "allDay": false
     },
     {
-      "id": "a0118325-4221-40ad-891f-1ce256cef2fd",
-      "title": "Birthday Pool Party",
+      "id": "b8d0b23b-d459-491b-a38b-dcfcbcce0e7c",
+      "title": "Courtney Siddalll",
       "start": "2026-11-29T12:00:00.000",
       "end": "2026-11-29T13:00:00.000",
       "backgroundColor": "#00FF00",
@@ -415,8 +415,8 @@
       "allDay": false
     },
     {
-      "id": "b8d0b23b-d459-491b-a38b-dcfcbcce0e7c",
-      "title": "Courtney Siddalll",
+      "id": "a0118325-4221-40ad-891f-1ce256cef2fd",
+      "title": "Birthday Pool Party",
       "start": "2026-11-29T12:00:00.000",
       "end": "2026-11-29T13:00:00.000",
       "backgroundColor": "#00FF00",
@@ -730,7 +730,7 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-24T04:06:57.204Z",
+  "lastUpdated": "2026-11-25T00:14:25.828Z",
   "metadata": {
     "facilityId": "3121e68a-d46d-4865-b4ce-fc085f688529",
     "dateRange": {
@@ -738,7 +738,7 @@
       "end": "2026-12-03T03:59:00.000Z"
     },
     "eventCount": 81,
-    "generatedAt": "2026-11-24T04:06:57.204Z",
+    "generatedAt": "2026-11-25T00:14:25.828Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
