@@ -181,7 +181,7 @@
       "allDay": false
     },
     {
-      "id": "0f310fe2-d76f-400a-8c72-07405993fc42__20261128T083000Z",
+      "id": "b2908fa1-1a2f-4963-9acd-ac864e728a4c",
       "title": "Western Riptide",
       "start": "2026-11-28T08:30:00.000",
       "end": "2026-11-28T09:30:00.000",
@@ -649,13 +649,13 @@
       "allDay": false
     }
   ],
-  "lastUpdated": "2026-11-26T05:04:28.680Z",
+  "lastUpdated": "2026-11-27T05:04:25.429Z",
   "metadata": {
     "facilityId": "3981fb3b-0cd1-42a3-a538-e6c3f35e50ee",
     "weeksToFetch": 2,
-    "totalEvents": 109,
+    "totalEvents": 124,
     "publicEvents": 72,
-    "generatedAt": "2026-11-26T05:04:28.680Z",
+    "generatedAt": "2026-11-27T05:04:25.429Z",
     "generatedBy": "GitHub Actions",
     "scraperVersion": "v2"
   }
